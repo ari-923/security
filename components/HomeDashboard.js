@@ -20,7 +20,6 @@ export default function HomeDashboard({ chapters, progressShape, lessonCount, le
       <p>I have studied, watched videos, read articles, taken notes, and reviewed everything prior to posting everything here on this website I have created. I hope this helps you as much as it has helped me.</p>
       <div className="pills"><span className="pill">{lessonCount} lesson decks</span><span className="pill">{learningCount} learning sections</span><span className="pill">{quizCount} scenario questions</span><span className="pill">{chapters.length} uploaded chapters</span></div>
     </div>
-    <div className="notice"><strong>Course:</strong> The website teaches the material directly. Original slide wording is only an optional reference inside lessons.</div>
     <div className="stats">
       <Stat value={`${completedLessons}/${lessonCount}`} label="Lessons completed" pct={completedLessons / lessonCount * 100} />
       <Stat value={`${mastered.size}/${learningCount}`} label="Learning sections mastered" pct={mastered.size / learningCount * 100} />
