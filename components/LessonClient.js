@@ -50,7 +50,7 @@ function LearningSection({ lesson, section, done, onDone, onTutor }) {
       {c.example && <div className="course-block example"><h5>Example</h5><p>{c.example}</p></div>}
       {c.exam && <div className="course-block exam"><h5>Security+ exam focus</h5><p>{c.exam}</p></div>}
       {c.check_q && <details className="recall"><summary>Check your understanding</summary><p><strong>Question:</strong> {c.check_q}</p><div className="answer"><strong>Answer:</strong> {c.check_a}</div></details>}
-      <details className="raw"><summary>Source reference — optional</summary><pre>{section.raw}</pre></details>
+      <details className="raw"><summary>Vocabulary</summary><pre>{section.raw}</pre></details>
     </div>
   </article>;
 }
