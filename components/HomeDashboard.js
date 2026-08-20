@@ -29,7 +29,7 @@ export default function HomeDashboard({ chapters, progressShape, lessonCount, le
     </div>
     <div className="action-grid">
       <Link className="action" href="/course"><strong>Start the Full Course</strong><span>Study the lessons in order and learn each concept directly on the website.</span></Link>
-      <Link className="action" href={`/course/${firstOpen?.id || "01.01"}`}><strong>Resume Learning</strong><span>Jump to the first lesson that still has an unmastered learning section.</span></Link>
+      <Link className="action" href={`/course/${firstOpen?.id || "01.02"}`}><strong>Resume Learning</strong><span>Jump to the first lesson that still has an unmastered learning section.</span></Link>
       <Link className="action" href="/flashcards"><strong>Active-Recall Flashcards</strong><span>Review every learning section after you study it.</span></Link>
       <Link className="action" href="/quiz"><strong>Scenario Practice</strong><span>Practice Security+ style questions with explanations.</span></Link>
     </div>
