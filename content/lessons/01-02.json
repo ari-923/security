@@ -290,15 +290,15 @@
         "breakdown": [
           {
             "term": "Manual security reviews",
-            "explanation": "This contributes to reducing risk in the broader Security Control Types design and should be evaluated as part of defense in depth."
+            "explanation": "When an automated or preferred security control cannot be used, a person can manually review activity, configurations, or records to identify security issues."
           },
           {
             "term": "Increased user training",
-            "explanation": "Within Compensating, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Security Control Types rather than memorizing the phrase by itself."
+            "explanation": "Provides additional security education and guidance when technical controls are limited, helping reduce mistakes and risky user behavior."
           },
           {
             "term": "Multi-factor authentication",
-            "explanation": "Require authentication factors from more than one factor category, reducing dependence on one stolen secret."
+            "explanation": "Adds an additional layer of identity verification when another preferred access control cannot be implemented, helping reduce the risk of unauthorized access."
           }
         ],
         "defs": [
@@ -340,7 +340,7 @@
           },
           {
             "term": "Training materials and awareness campaigns",
-            "explanation": "Within Directive, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Security Control Types rather than memorizing the phrase by itself."
+            "explanation": "Educate users about security policies, common threats, and expected behaviors to help reduce security risks and human error."
           },
           {
             "term": "Risk assessments and compliance audits",
@@ -365,6 +365,10 @@
       "instructional": false,
       "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
       "defs": [
+        [
+          "Confidentiality",
+          "Ensuring information is accessible only to authorized users and protected from unauthorized disclosure."
+        ],
         [
           "Availability",
           "Ensuring authorized users can access systems and data when needed."
