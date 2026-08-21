@@ -104,7 +104,7 @@
           "Integrity",
           "Availability"
         ],
-        "image": "/images/cia-triad.png",
+        "image": "/cia-triad.png",
         "imageAlt": "CIA Triad showing confidentiality, integrity, and availability"
       }
     },
