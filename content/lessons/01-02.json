@@ -219,11 +219,11 @@
       "n": 6,
       "title": "Corrective",
       "points": [
-        "Backups and",
-        "disaster",
+        "Backups and disaster",
         "recovery plans",
-        "Incident",
-        "response plans",
+        "Recovery plans",
+        "Incident response",
+        "plans",
         "Software",
         "patching"
       ],
@@ -238,20 +238,19 @@
         "exam": "Look for restore, remediate, recover, repair, remove, or after the incident.",
         "breakdown": [
           {
-            "term": "Backups and disaster",
-            "explanation": "Keep recoverable copies and documented recovery procedures so operations can be restored after disruption."
-          },
-          {
-            "term": "recovery plans",
-            "explanation": "Keep recoverable copies and documented recovery procedures so operations can be restored after disruption."
+            "term": "Backups and disaster recovery plans",
+            "explanation": "Maintain recoverable copies of data and documented recovery procedures so systems and operations can be restored after a failure or security incident."
           },
           {
             "term": "Incident response plans",
-            "explanation": "Define how an organization prepares for, detects, contains, eradicates, and recovers from security incidents."
+            "explanation": "Provide procedures for containing, eradicating, and recovering from security incidents to reduce damage and restore normal operations."
           },
           {
             "term": "Software patching",
-            "explanation": "Apply vendor updates that fix known security flaws or bugs."
+            "explanation": "Applies updates that correct known vulnerabilities, security flaws, or software defects."
+          },
+          {
+           
           }
         ],
         "defs": [],
