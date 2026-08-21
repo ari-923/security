@@ -248,10 +248,8 @@
           {
             "term": "Software patching",
             "explanation": "Applies updates that correct known vulnerabilities, security flaws, or software defects."
-          },
-          {
-           
           }
+
         ],
         "defs": [],
         "check_q": "Without looking back, explain Corrective and describe at least two key ideas from this section.",
