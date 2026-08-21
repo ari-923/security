@@ -53,7 +53,7 @@
         ]
       ],
       "course": {
-        "learn": "The CIA triad organizes security goals into confidentiality, integrity, and availability. Confidentiality limits unauthorized disclosure, integrity protects accuracy and trustworthiness, and availability keeps systems and data accessible to authorized users when needed.",
+        "learn": "The CIA Triad organizes security goals into confidentiality, integrity, and availability. Confidentiality limits unauthorized disclosure, integrity protects accuracy and trustworthiness, and availability keeps systems and data accessible to authorized users when needed.",
         "why": "Most security controls protect one or more of these three objectives, so the triad gives you a quick way to classify what a scenario is trying to protect.",
         "example": "Encrypting a stolen laptop protects confidentiality; hashing a file can verify integrity; redundant servers protect availability.",
         "exam": "CompTIA often asks which CIA component is MOST directly affected. Ask: was data exposed, changed, or made unavailable?",
@@ -127,29 +127,33 @@
         "breakdown": [
           {
             "term": "Confidentiality and integrity",
-            "explanation": "Within Relationship Between the CIA Components, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Confidentiality, Integrity, and Availability (CIA) rather than memorizing the phrase by itself."
+            "explanation": "Controls that restrict unauthorized access can also help prevent unauthorized changes. For example, access controls can protect both who can view data and who can modify it."
           },
           {
             "term": "Integrity and availability",
-            "explanation": "Within Relationship Between the CIA Components, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Confidentiality, Integrity, and Availability (CIA) rather than memorizing the phrase by itself."
+            "explanation": "Information must be both accurate and accessible to be useful. Backups, redundancy, and integrity checks can help ensure reliable data remains available after a failure or attack."
           },
           {
             "term": "Confidentiality and availability",
-            "explanation": "Within Relationship Between the CIA Components, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Confidentiality, Integrity, and Availability (CIA) rather than memorizing the phrase by itself."
+            "explanation": "Security must protect information from unauthorized access while keeping it accessible to authorized users. Controls that are too restrictive can improve confidentiality but reduce availability."
           }
         ],
         "defs": [
+           {
+            "term": "Confidentiality",
+            "definition": "Ensuring information is protected from unauthorized access or disclosure."
+          },
+          {
+            "term": "Integrity",
+            "definition": "Ensuring data remains accurate, complete, and protected from unauthorized modification."
+          },
           {
             "term": "Availability",
             "definition": "Ensuring authorized users can access systems and data when needed."
           },
           {
-            "term": "Integrity",
-            "definition": "Ensuring data stays accurate, complete, and protected from unauthorized modification."
-          },
-          {
             "term": "CIA",
-            "definition": "Confidentiality, Integrity, Availability—the three foundational information-security objectives."
+            "definition": "Confidentiality, Integrity, Availability—the three foundational objectives of information security."
           }
         ],
         "check_q": "Without looking back, explain Relationship Between the CIA Components and describe at least two key ideas from this section.",
