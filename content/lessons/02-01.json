@@ -60,15 +60,15 @@
         "breakdown": [
           {
             "term": "Confidentiality",
-            "explanation": "Within The CIA Triad, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Confidentiality, Integrity, and Availability (CIA) rather than memorizing the phrase by itself."
+            "explanation": "Protects information from unauthorized access or disclosure. Common protections include encryption, access controls, and authentication."
           },
           {
             "term": "Integrity",
-            "explanation": "Within The CIA Triad, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Confidentiality, Integrity, and Availability (CIA) rather than memorizing the phrase by itself."
+            "explanation": "Ensures data remains accurate, complete, and unaltered without authorization. Hashing, digital signatures, and permissions can help protect integrity."
           },
           {
             "term": "Availability",
-            "explanation": "Within The CIA Triad, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Confidentiality, Integrity, and Availability (CIA) rather than memorizing the phrase by itself."
+            "explanation": "Ensures authorized users can access systems and data when needed. Redundancy, backups, fault tolerance, and disaster recovery help maintain availability."
           }
         ],
         "defs": [
