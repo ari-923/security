@@ -2,7 +2,7 @@
   "id": "01.01",
   "chapter": 1,
   "sub": 1,
-  "title": "Security Control Types",
+  "title": "Security Controls",
   "chapter_name": "Security Controls",
   "slides": [
     {
@@ -249,7 +249,6 @@
             "term": "Software patching",
             "explanation": "Applies updates that correct known vulnerabilities, security flaws, or software defects."
           }
-
         ],
         "defs": [],
         "check_q": "Without looking back, explain Corrective and describe at least two key ideas from this section.",
@@ -392,5 +391,212 @@
     "Compensating",
     "Directive"
   ],
-  "source_filename": "01.02_Security_Control_Types.pdf"
+  "source_filename": "01.02_Security_Control_Types.pdf",
+  "security_controls_layout": {
+    "intro": "Security controls can be classified in two different ways: by how they are implemented and by what they are trying to accomplish.",
+    "categories": [
+      {
+        "name": "Technical",
+        "definition": "Technology that directly protects systems or data.",
+        "examples": [
+          "Firewalls",
+          "Antivirus",
+          "Encryption",
+          "Multifactor authentication (MFA)"
+        ],
+        "memory": "Technology"
+      },
+      {
+        "name": "Managerial",
+        "definition": "Management decisions, policies, and planning that guide how the organization manages security and risk.",
+        "examples": [
+          "Risk assessments",
+          "Security policies",
+          "Compliance requirements",
+          "Audits",
+          "Business impact analysis"
+        ],
+        "memory": "Management makes the rules"
+      },
+      {
+        "name": "Operational",
+        "definition": "People carrying out security procedures and day-to-day security activities.",
+        "examples": [
+          "Security awareness training",
+          "Incident response",
+          "Change management"
+        ],
+        "memory": "People doing the work"
+      },
+      {
+        "name": "Physical",
+        "definition": "Things that physically protect people, buildings, equipment, or access to a location.",
+        "examples": [
+          "Door locks",
+          "Security guards",
+          "Fences",
+          "Gates",
+          "Security cameras"
+        ],
+        "memory": "Physical protection"
+      }
+    ],
+    "types": [
+      {
+        "name": "Preventive",
+        "definition": "Stops a security problem before it happens.",
+        "examples": [
+          "Firewall",
+          "MFA",
+          "Door locks"
+        ],
+        "memory": "STOP"
+      },
+      {
+        "name": "Deterrent",
+        "definition": "Discourages someone from attempting a security violation.",
+        "examples": [
+          "Warning signs",
+          "Visible security cameras",
+          "Security guards"
+        ],
+        "memory": "SCARE AWAY"
+      },
+      {
+        "name": "Detective",
+        "definition": "Identifies or discovers a security problem or suspicious activity.",
+        "examples": [
+          "Intrusion Detection System (IDS)",
+          "Log monitoring",
+          "Security alerts"
+        ],
+        "memory": "DETECT"
+      },
+      {
+        "name": "Corrective",
+        "definition": "Fixes or reduces damage after a security problem occurs.",
+        "examples": [
+          "Restore data from backups",
+          "Remove malware",
+          "Patch the exploited vulnerability"
+        ],
+        "memory": "FIX"
+      },
+      {
+        "name": "Compensating",
+        "definition": "An alternative safeguard used when the preferred control cannot be implemented.",
+        "examples": [
+          "Extra monitoring when MFA cannot be installed",
+          "Hardened jump server for a legacy system",
+          "Manual security reviews"
+        ],
+        "memory": "PLAN B"
+      },
+      {
+        "name": "Directive",
+        "definition": "Tells people what they are required or expected to do.",
+        "examples": [
+          "Security policies",
+          "Employee procedures",
+          "Required security awareness training"
+        ],
+        "memory": "DIRECTIONS / RULES"
+      }
+    ],
+    "exam_tip": {
+      "category": "Category = HOW is it implemented?",
+      "type": "Type = WHAT PURPOSE does it serve?",
+      "example": "Firewall = Technical + Preventive"
+    },
+    "questions": [
+      {
+        "q": "A company configures a firewall to block unauthorized inbound traffic before it reaches an internal server. Which control type is BEST represented?",
+        "choices": [
+          "Detective",
+          "Preventive",
+          "Corrective",
+          "Directive"
+        ],
+        "answer": 1,
+        "explanation": "Preventive. The firewall is stopping the unwanted traffic before the security event succeeds."
+      },
+      {
+        "q": "An organization places a large sign outside a restricted facility stating, “24-hour video surveillance in use.” Which control type is the sign primarily providing?",
+        "choices": [
+          "Corrective",
+          "Detective",
+          "Deterrent",
+          "Compensating"
+        ],
+        "answer": 2,
+        "explanation": "Deterrent. The sign is intended to discourage someone from attempting an unauthorized action."
+      },
+      {
+        "q": "A security analyst receives an alert from an IDS after suspicious traffic is identified on the network. Which control type is the IDS functioning as?",
+        "choices": [
+          "Preventive",
+          "Detective",
+          "Directive",
+          "Compensating"
+        ],
+        "answer": 1,
+        "explanation": "Detective. The IDS identifies suspicious activity and alerts defenders."
+      },
+      {
+        "q": "After a ransomware incident is contained, administrators restore clean data from backups and return affected systems to normal operation. Which control type BEST describes this action?",
+        "choices": [
+          "Deterrent",
+          "Preventive",
+          "Corrective",
+          "Directive"
+        ],
+        "answer": 2,
+        "explanation": "Corrective. The control is being used after the incident to restore systems and reduce damage."
+      },
+      {
+        "q": "A legacy application cannot support the organization’s required MFA solution. The security team restricts access through a hardened jump server and adds additional monitoring. Which control type BEST describes the additional safeguards?",
+        "choices": [
+          "Detective",
+          "Directive",
+          "Compensating",
+          "Deterrent"
+        ],
+        "answer": 2,
+        "explanation": "Compensating. The preferred control cannot be implemented, so an alternative safeguard is used to reduce the same risk."
+      },
+      {
+        "q": "An acceptable use policy tells employees which activities are prohibited on company-owned computers. Which control type is this?",
+        "choices": [
+          "Corrective",
+          "Directive",
+          "Detective",
+          "Preventive"
+        ],
+        "answer": 1,
+        "explanation": "Directive. The policy tells users what they are required or prohibited from doing."
+      },
+      {
+        "q": "A company requires employees to use multifactor authentication when accessing a cloud application. Which control category BEST describes MFA?",
+        "choices": [
+          "Technical",
+          "Managerial",
+          "Operational",
+          "Physical"
+        ],
+        "answer": 0,
+        "explanation": "Technical. MFA is implemented and enforced using technology."
+      },
+      {
+        "q": "Senior leadership performs a formal risk assessment to determine which security risks should receive the highest priority. Which control category BEST describes the risk assessment?",
+        "choices": [
+          "Technical",
+          "Managerial",
+          "Operational",
+          "Physical"
+        ],
+        "answer": 1,
+        "explanation": "Managerial. Risk assessment is part of management planning and decision-making."
+      }
+    ]
+  }
 }
