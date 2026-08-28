@@ -38,6 +38,22 @@ export default function LessonClient({ lesson, previous, next, nextPreview }) {
     />;
   }
 
+  if (lesson.fundamental_concepts_layout) {
+    return <FundamentalConceptsLesson
+      lesson={lesson}
+      previous={previous}
+      next={next}
+      learning={learning}
+      done={done}
+      mastered={mastered}
+      setMastered={setMastered}
+      tutorOpen={tutorOpen}
+      setTutorOpen={setTutorOpen}
+      tutorSection={tutorSection}
+      askTutor={askTutor}
+    />;
+  }
+
   return <div className="lesson-page">
     <div className="crumb"><Link className="btn" href="/course">← Full Course</Link> &nbsp; Chapter {lesson.chapter}: {lesson.chapter_name}</div>
     <h2 className="lesson-title">{lesson.id} {lesson.title}</h2>
@@ -135,11 +151,125 @@ function SecurityControlsLesson({ lesson, previous, next, learning, done, master
   </div>;
 }
 
-function SecurityGroup({ eyebrow, title, prompt, cards, columns, sectionByTitle, lesson, mastered, setMastered, askTutor }) {
+
+function FundamentalConceptsLesson({ lesson, previous, next, learning, done, mastered, setMastered, tutorOpen, setTutorOpen, tutorSection, askTutor }) {
+  const layout = lesson.fundamental_concepts_layout;
+  const sectionByTitle = Object.fromEntries(learning.map((s) => [s.title, s]));
+
+  return <div className="lesson-page security-controls-page">
+    <div className="crumb"><Link className="btn" href="/course">← Full Course</Link> &nbsp; Chapter {lesson.chapter}: {lesson.chapter_name}</div>
+    <h2 className="lesson-title">{lesson.id} {lesson.title}</h2>
+    <div className="lesson-meta">
+      <span className="pill">{learning.length} learning sections</span>
+      <span className="pill">{done}/{learning.length} mastered</span>
+      <button className="btn ai-inline" onClick={() => { setTutorSection(null); setTutorOpen(true); }}>✦ Ask AI about this lesson</button>
+    </div>
+
+    <section className="sc-hero">
+      <span className="sc-kicker">Security+ Foundation</span>
+      <h3>Fundamental security concepts at a glance</h3>
+      <p>{layout.intro}</p>
+      <div className="sc-overview-grid">
+        {layout.overview.map((item) => <div className="sc-overview-card" key={item.label}>
+          <span className="sc-label">{item.label}</span>
+          <strong>{item.question}</strong>
+          <p>{item.summary}</p>
+        </div>)}
+      </div>
+    </section>
+
+    <SecurityGroup
+      eyebrow="Part 1"
+      title="CIA Triad"
+      prompt="Which security goal is affected in the scenario?"
+      badge="CIA"
+      cards={layout.cia}
+      columns="three"
+      sectionByTitle={sectionByTitle}
+      lesson={lesson}
+      mastered={mastered}
+      setMastered={setMastered}
+      askTutor={askTutor}
+    />
+
+    <ComparisonTable
+      title="CIA scenario recognition"
+      headers={["Principle", "Ask yourself", "Security+ scenario example", "Memory"]}
+      rows={layout.cia.map((x) => [x.name, x.exam_question, x.scenario, x.memory])}
+    />
+
+    <SecurityGroup
+      eyebrow="Part 2"
+      title="AAA — Authentication, Authorization, Accounting"
+      prompt="Who are you, what can you do, and what did you do?"
+      badge="AAA"
+      cards={layout.identity}
+      columns="four"
+      sectionByTitle={sectionByTitle}
+      lesson={lesson}
+      mastered={mastered}
+      setMastered={setMastered}
+      askTutor={askTutor}
+    />
+
+    <ComparisonTable
+      title="AAA shortcut"
+      headers={["Concept", "Question to remember", "Example"]}
+      rows={layout.aaa_rows}
+    />
+
+    <SecurityGroup
+      eyebrow="Part 3"
+      title="Security Strategies & Assurance"
+      prompt="How is the organization managing trust, attackers, and proof?"
+      badge="STRATEGY"
+      cards={layout.strategies}
+      columns="four"
+      sectionByTitle={sectionByTitle}
+      lesson={lesson}
+      mastered={mastered}
+      setMastered={setMastered}
+      askTutor={askTutor}
+    />
+
+    <div className="sc-section" style={{ marginTop: 20 }}>
+      <div className="sc-section-head">
+        <div>
+          <span className="sc-kicker">Deception Technology Detail</span>
+          <h3>Know all four “honey” technologies</h3>
+          <p>Honeypot = system · Honeynet = network · Honeyfile = file · Honeytoken = data or credential.</p>
+        </div>
+      </div>
+    </div>
+
+    <ComparisonTable
+      title="Deception technology quick reference"
+      headers={["Technology", "What is fake?", "What it does", "Memory"]}
+      rows={layout.deception_rows}
+    />
+
+    <aside className="sc-exam-tip">
+      <span className="sc-kicker">Security+ Exam Memory</span>
+      <h3>Recognize the clue in the scenario.</h3>
+      <div className="sc-tip-grid">
+        <div><strong>CIA</strong><p>Exposed = Confidentiality · Changed = Integrity · Unavailable = Availability</p></div>
+        <div><strong>AAA</strong><p>Who are you? = Authentication · What can you do? = Authorization · What did you do? = Accounting</p></div>
+      </div>
+      <div className="sc-example"><strong>Other shortcuts:</strong> Can't deny it = Non-repudiation · Never trust automatically = Zero Trust · Trick = Deception · Interrupt = Disruption</div>
+    </aside>
+
+    <ExamPractice questions={layout.questions} />
+
+    <LessonNav previous={previous} next={next} />
+    <AITutor open={tutorOpen} onClose={() => setTutorOpen(false)} lesson={lesson} section={tutorSection} />
+  </div>;
+}
+
+function SecurityGroup({ eyebrow, title, prompt, cards, columns, sectionByTitle, lesson, mastered, setMastered, askTutor, badge }) {
   return <section className="sc-section">
     <div className="sc-section-head">
       <div><span className="sc-kicker">{eyebrow}</span><h3>{title}</h3><p>Ask yourself: <strong>{prompt}</strong></p></div>
-      <span className="sc-question-badge">{prompt.startsWith("How") ? "HOW?" : "PURPOSE?"}</span>
+      <span className="sc-question-badge">{badge || (prompt.startsWith("How") ? "HOW?" : "PURPOSE?")}</span>
     </div>
     <div className={`sc-card-grid ${columns === "four" ? "sc-four" : "sc-three"}`}>
       {cards.map((card) => {
