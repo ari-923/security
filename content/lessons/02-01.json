@@ -2,561 +2,673 @@
   "id": "02.01",
   "chapter": 2,
   "sub": 1,
-  "title": "Confidentiality, Integrity, and Availability (CIA)",
+  "title": "Fundamental Security Concepts Overview",
   "chapter_name": "Fundamental Security Concepts",
   "slides": [
     {
       "n": 1,
-      "title": "Confidentiality, Integrity, and Availability (CIA)",
-      "points": [],
-      "raw": "Confidentiality, Integrity, and\nAvailability (CIA)",
+      "title": "Fundamental Security Concepts Overview",
       "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "",
+      "points": [
+        "CIA Triad",
+        "Non-repudiation",
+        "AAA",
+        "Zero Trust",
+        "Deception and disruption technology"
+      ],
       "defs": [
         [
-          "Confidentiality",
-          "Ensuring information is protected from unauthorized access or disclosure."
+          "CIA",
+          "Confidentiality, Integrity, and Availability—the three foundational information-security objectives."
         ],
         [
-          "Integrity",
-          "Ensuring data stays accurate, complete, and protected from unauthorized modification."
+          "AAA",
+          "Authentication, Authorization, and Accounting."
         ],
         [
-          "Availability",
-          "Ensuring authorized users can access systems and data when needed."
-        ],
-        [
-          "CIA Triad",
-          "Confidentiality, Integrity, and Availability—the three foundational objectives of information security."
+          "Zero Trust",
+          "A security model that does not automatically trust users, devices, or connections."
         ]
-      ]
+      ],
+      "raw": ""
     },
     {
       "n": 2,
-      "title": "The CIA Triad",
-      "points": [
-        "Confidentiality",
-        "Integrity",
-        "Availability"
-      ],
-      "raw": "The CIA Triad\nConfidentiality\nIntegrity\nAvailability",
+      "title": "Confidentiality",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "Confidentiality",
-          "Ensuring information is protected from unauthorized access or disclosure."
-        ],
-        [
-          "Integrity",
-          "Ensuring data stays accurate, complete, and protected from unauthorized modification."
-        ],
-        [
-          "Availability",
-          "Ensuring authorized users can access systems and data when needed."
-        ],
-        [
-          "CIA Triad",
-          "Confidentiality, Integrity, and Availability—the three foundational objectives of information security."
-        ]
+      "teach": "Confidentiality means keeping information private from people who are not authorized to see it.",
+      "points": [
+        "Basically",
+        "Common protections"
       ],
+      "defs": [],
+      "raw": "",
       "course": {
-        "learn": "The CIA Triad organizes security goals into confidentiality, integrity, and availability. Confidentiality limits unauthorized disclosure, integrity protects accuracy and trustworthiness, and availability keeps systems and data accessible to authorized users when needed.",
-        "why": "Most security controls protect one or more of these three objectives, so the triad gives you a quick way to classify what a scenario is trying to protect.",
-        "example": "Full-disk encryption protects data on a stolen laptop; hashing can detect unauthorized file changes; redundant servers help maintain availability.",
-        "exam": "CompTIA often asks which CIA component is MOST directly affected. Ask: was data exposed, changed, or made unavailable?",
+        "learn": "Confidentiality means keeping information private from people who are not authorized to see it.",
         "breakdown": [
           {
-            "term": "Confidentiality",
-            "explanation": "Protects information from unauthorized access or disclosure. Common protections include encryption, access controls, and authentication."
+            "term": "Basically",
+            "explanation": "Only approved people should be able to see sensitive information."
           },
           {
-            "term": "Integrity",
-            "explanation": "Ensures data remains accurate, complete, and unaltered without authorization. Hashing, digital signatures, and permissions can help protect integrity."
-          },
-          {
-            "term": "Availability",
-            "explanation": "Ensures authorized users can access systems and data when needed. Redundancy, backups, fault tolerance, and disaster recovery help maintain availability."
+            "term": "Common protections",
+            "explanation": "Encryption, passwords, MFA, access controls, and file permissions help protect confidentiality."
           }
         ],
-        "defs": [
-          {
-            "term": "Confidentiality",
-            "definition": "Ensuring information is protected from unauthorized access or disclosure."
-          },
-          {
-            "term": "Integrity",
-            "definition": "Ensuring data remains accurate, complete, and protected from unauthorized modification."
-          },
-          {
-            "term": "Availability",
-            "definition": "Ensuring authorized users can access systems and data when needed."
-          },
-          {
-            "term": "CIA Triad",
-            "definition": "Confidentiality, Integrity, and Availability—the three foundational objectives of information security."
-          }
-        ],
-        "check_q": "Without looking back, explain The CIA Triad and describe at least two key ideas from this section.",
-        "check_a": "The CIA triad organizes security goals into confidentiality, integrity, and availability. Confidentiality limits unauthorized disclosure, integrity protects accuracy and trustworthiness, and availability keeps systems and data accessible to authorized users when needed. Key ideas include: Confidentiality; Integrity; Availability.",
-        "points": [
-          "Confidentiality",
-          "Integrity",
-          "Availability"
-        ],
-        "image": "/cia-triad.png",
-        "imageAlt": "CIA Triad showing confidentiality, integrity, and availability"
+        "defs": [],
+        "why": "A confidentiality failure can expose passwords, personal information, financial records, or other sensitive data.",
+        "example": "An employee emails a customer database containing Social Security numbers to the wrong person.",
+        "exam": "If the scenario emphasizes unauthorized disclosure, exposure, reading, or viewing of data, think confidentiality.",
+        "check_q": "A hacker reads unencrypted employee credentials while they travel across a network. Which CIA principle is affected?",
+        "check_a": "Confidentiality, because someone who was not authorized was able to see the information."
       }
     },
     {
       "n": 3,
-      "title": "Relationship Between the CIA Components",
-      "points": [
-        "• Confidentiality and integrity",
-        "• Integrity and availability",
-        "• Confidentiality and availability"
-      ],
-      "raw": "Relationship Between\nthe CIA Components\n• Confidentiality and integrity\n• Integrity and availability\n• Confidentiality and availability",
+      "title": "Integrity",
       "instructional": true,
-      "teach": "Know what each component does and how the components work together. CompTIA often asks which component best fits a scenario.",
-      "defs": [
-        [
-          "Availability",
-          "Ensuring authorized users can access systems and data when needed."
-        ],
-        [
-          "Integrity",
-          "Ensuring data stays accurate, complete, and protected from unauthorized modification."
-        ],
-        [
-          "CIA",
-          "Confidentiality, Integrity, Availability—the three foundational information-security objectives."
-        ]
+      "teach": "Integrity means keeping information accurate, complete, and protected from unauthorized changes.",
+      "points": [
+        "Basically",
+        "Common protections"
       ],
+      "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Confidentiality, integrity, and availability overlap. A single control can protect multiple CIA objectives, and improving one objective can sometimes create tradeoffs with another.",
-        "why": "Security design usually requires balancing all three CIA objectives. Strengthening one objective should not unnecessarily weaken another.",
-        "example": "Encrypting a database protects confidentiality, but if the encryption keys are lost or unavailable, authorized users may no longer be able to access the data, creating an availability problem.",
-        "exam": "When several CIA components seem affected, choose the one MOST directly described by the scenario.",
+        "learn": "Integrity means keeping information accurate, complete, and protected from unauthorized changes.",
         "breakdown": [
           {
-            "term": "Confidentiality and integrity",
-            "explanation": "Controls that restrict unauthorized access can also help prevent unauthorized changes. For example, access controls can protect both who can view data and who can modify it."
+            "term": "Basically",
+            "explanation": "You need to be able to trust that the data is still correct."
           },
           {
-            "term": "Integrity and availability",
-            "explanation": "Information must be both accurate and accessible to be useful. Backups, redundancy, and integrity checks can help ensure reliable data remains available after a failure or attack."
-          },
-          {
-            "term": "Confidentiality and availability",
-            "explanation": "Security must protect information from unauthorized access while keeping it accessible to authorized users. Controls that are too restrictive can improve confidentiality but reduce availability."
+            "term": "Common protections",
+            "explanation": "Hashing, digital signatures, checksums, permissions, and version controls can help protect integrity."
           }
         ],
-        "defs": [
-          {
-            "term": "Confidentiality",
-            "definition": "Ensuring information is protected from unauthorized access or disclosure."
-          },
-          {
-            "term": "Integrity",
-            "definition": "Ensuring data remains accurate, complete, and protected from unauthorized modification."
-          },
-          {
-            "term": "Availability",
-            "definition": "Ensuring authorized users can access systems and data when needed."
-          },
-          {
-            "term": "CIA Triad",
-            "definition": "Confidentiality, Integrity, and Availability—the three foundational objectives of information security."
-          }
-        ],
-        "check_q": "Without looking back, explain Relationship Between the CIA Components and describe at least two key ideas from this section.",
-        "check_a": "Confidentiality, integrity, and availability overlap. A single control can protect multiple CIA objectives, and improving one objective can sometimes create tradeoffs with another. Key ideas include: Confidentiality and integrity; Integrity and availability; Confidentiality and availability.",
-        "points": [
-          "Confidentiality and integrity",
-          "Integrity and availability",
-          "Confidentiality and availability"
-        ]
+        "defs": [],
+        "why": "If data can be secretly altered, decisions made from that data may be wrong even if the system is still available.",
+        "example": "An attacker changes employees' direct-deposit bank account numbers in a payroll system.",
+        "exam": "If the scenario emphasizes modification, tampering, alteration, or whether data can be trusted, think integrity.",
+        "check_q": "Malware modifies financial records without permission. Which CIA principle is affected?",
+        "check_a": "Integrity, because the information was changed without authorization."
       }
     },
     {
       "n": 4,
-      "title": "Confidentiality Compromise",
-      "points": [
-        "Human error",
-        "Technical",
-        "failures",
-        "Social",
-        "engineering",
-        "Malicious",
-        "insiders",
-        "Physical",
-        "security",
-        "breaches"
-      ],
-      "raw": "Confidentiality Compromise\nHuman error\nTechnical\nfailures\nSocial\nengineering\nMalicious\ninsiders\nPhysical\nsecurity\nbreaches",
+      "title": "Availability",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "Availability means making sure authorized users can access systems and information when they need them.",
+      "points": [
+        "Basically",
+        "Common protections"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "A confidentiality compromise happens when information is disclosed to someone who is not authorized to see it. The cause can be technical, physical, or human.",
-        "why": "Sensitive information loses value and can create legal, financial, or safety consequences once unauthorized parties gain access.",
-        "example": "An employee emails a confidential report to the wrong external address, or an attacker steals unencrypted customer records.",
-        "exam": "Exposure, disclosure, eavesdropping, data leakage, and unauthorized viewing point toward confidentiality.",
+        "learn": "Availability means making sure authorized users can access systems and information when they need them.",
         "breakdown": [
           {
-            "term": "Human error",
-            "explanation": "Accidental actions can expose sensitive information, such as sending data to the wrong recipient, sharing credentials, or misconfiguring permissions."
+            "term": "Basically",
+            "explanation": "The system or data needs to be usable when legitimate users need it."
           },
           {
-            "term": "Technical failures",
-            "explanation": "Software bugs, system failures, or incorrect technical configurations can expose information that should remain private."
-          },
-          {
-            "term": "Social engineering",
-            "explanation": "Attackers manipulate people into revealing sensitive information, granting access, or bypassing security procedures by exploiting trust, urgency, fear, or authority."
-          },
-          {
-            "term": "Malicious insiders",
-            "explanation": "Authorized users can intentionally steal, disclose, or misuse sensitive information because their legitimate access gives them a path to the data."
-          },
-          {
-            "term": "Physical security breaches",
-            "explanation": "Theft, tailgating, unauthorized facility access, or exposed documents and devices can allow sensitive information to be viewed or removed."
+            "term": "Common protections",
+            "explanation": "Backups, redundancy, failover, load balancing, disaster recovery, and UPS systems can improve availability."
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Confidentiality Compromise and describe at least two key ideas from this section.",
-        "check_a": "A confidentiality compromise happens when information is disclosed to someone who is not authorized to see it. The cause can be technical, physical, or human. Key ideas include: Human error; Technical failures; Social engineering; Malicious insiders; Physical security breaches.",
-        "points": [
-          "Human error",
-          "Technical failures",
-          "Social engineering",
-          "Malicious insiders",
-          "Physical security breaches"
-        ]
+        "why": "A secure system still fails its users if they cannot access it when it is needed.",
+        "example": "A DDoS attack overwhelms an online store and legitimate customers cannot connect.",
+        "exam": "If the scenario emphasizes downtime, outages, denial of service, or users being unable to access something, think availability.",
+        "check_q": "A company's only database server fails and employees cannot access records. Which CIA principle is affected?",
+        "check_a": "Availability, because authorized users cannot access the system when needed."
       }
     },
     {
       "n": 5,
-      "title": "Methods to Protect Confidentiality",
-      "points": [
-        "Physical security",
-        "Access control &",
-        "authentication",
-        "Security awareness &",
-        "training",
-        "Monitoring & auditing"
-      ],
-      "raw": "Methods to Protect Confidentiality\nPhysical security\nAccess control &\nauthentication\nSecurity awareness &\ntraining\nMonitoring & auditing",
+      "title": "Non-repudiation",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "Authentication",
-          "Proving an identity—answering “who are you?”"
-        ]
+      "teach": "Non-repudiation means providing proof that someone performed an action so they cannot reasonably deny doing it later.",
+      "points": [
+        "Basically",
+        "Examples"
       ],
+      "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Protecting confidentiality means controlling who can view information and preventing unauthorized disclosure. Common layers include physical security, authentication, authorization, encryption, training, and monitoring.",
-        "why": "No single control protects every path to sensitive data, so confidentiality normally requires defense in depth.",
-        "example": "A company encrypts laptops, requires MFA, limits file permissions, and monitors unusual downloads.",
-        "exam": "When the goal is secrecy, favor access control and encryption over availability controls such as clustering.",
+        "learn": "Non-repudiation means providing proof that someone performed an action so they cannot reasonably deny doing it later.",
         "breakdown": [
           {
-            "term": "Physical security",
-            "explanation": "Physical security limits unauthorized access to buildings, devices, documents, and other locations where sensitive information is stored or processed."
+            "term": "Basically",
+            "explanation": "You cannot say you did not do it when there is reliable evidence tying the action to you."
           },
           {
-            "term": "Access control & authentication",
-            "explanation": "Authentication verifies identity, while access controls and authorization determine which resources an authenticated user is allowed to view or use."
-          },
-          {
-            "term": "Security awareness & training",
-            "explanation": "Training teaches users how to recognize phishing, protect credentials, handle sensitive information, and follow procedures that reduce accidental disclosure."
-          },
-          {
-            "term": "Monitoring & auditing",
-            "explanation": "Monitoring and auditing track access and activity so organizations can identify unusual behavior, policy violations, and possible unauthorized disclosure."
+            "term": "Examples",
+            "explanation": "Digital signatures, audit logs, timestamps, and signed transactions can support non-repudiation."
           }
         ],
-        "defs": [
-          {
-            "term": "Authentication",
-            "definition": "Proving an identity—answering “who are you?”"
-          }
-        ],
-        "check_q": "Without looking back, explain Methods to Protect Confidentiality and describe at least two key ideas from this section.",
-        "check_a": "Protecting confidentiality means controlling who can view information and preventing unauthorized disclosure. Common layers include physical security, authentication, authorization, encryption, training, and monitoring. Key ideas include: Physical security; Access control & authentication; Security awareness & training; Monitoring & auditing.",
-        "points": [
-          "Physical security",
-          "Access control & authentication",
-          "Security awareness & training",
-          "Monitoring & auditing"
-        ]
+        "defs": [],
+        "why": "Organizations may need evidence showing who approved, sent, signed, or performed an important action.",
+        "example": "A manager digitally signs a financial transaction and later claims they never approved it.",
+        "exam": "Look for phrases such as prove who performed the action, cannot deny, signed, or evidence of approval.",
+        "check_q": "A company needs proof that a manager approved a transaction and cannot later deny the approval. Which concept applies?",
+        "check_a": "Non-repudiation."
       }
     },
     {
       "n": 6,
-      "title": "Integrity Compromise",
-      "points": [
-        "Accidental Errors",
-        "Malicious Actions",
-        "Systemic Weaknesses",
-        "Environmental Factors"
-      ],
-      "raw": "Integrity Compromise\nAccidental Errors\nMalicious Actions\nSystemic Weaknesses\nEnvironmental Factors",
+      "title": "Authentication",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "Integrity",
-          "Ensuring data stays accurate, complete, and protected from unauthorized modification."
-        ]
+      "teach": "Authentication means proving that you are who you claim to be.",
+      "points": [
+        "Basically",
+        "Examples"
       ],
+      "defs": [],
+      "raw": "",
       "course": {
-        "learn": "An integrity compromise means data, software, or configuration has been changed in an unauthorized or untrustworthy way. Changes may be malicious or accidental.",
-        "why": "Organizations make decisions based on data. If the data cannot be trusted, the system can produce harmful or incorrect results.",
-        "example": "An attacker modifies payroll records, or a corrupted update changes application files unexpectedly.",
-        "exam": "Unauthorized modification, tampering, corruption, and incorrect data point toward integrity.",
+        "learn": "Authentication means proving that you are who you claim to be.",
         "breakdown": [
           {
-            "term": "Accidental Errors",
-            "explanation": "Mistakes such as incorrect data entry, accidental deletion, or unintended configuration changes can make information incomplete, inaccurate, or unreliable."
+            "term": "Basically",
+            "explanation": "Prove your identity."
           },
           {
-            "term": "Malicious Actions",
-            "explanation": "Attackers or insiders may intentionally alter files, records, software, or configurations to manipulate information or disrupt trusted operations."
-          },
-          {
-            "term": "Systemic Weaknesses",
-            "explanation": "Weak change controls, poor permissions, software defects, or insecure processes can allow incorrect or unauthorized changes to spread through a system."
-          },
-          {
-            "term": "Environmental Factors",
-            "explanation": "Power loss, overheating, water damage, storage failures, and other environmental problems can corrupt data or damage systems that store and process it."
+            "term": "Examples",
+            "explanation": "Passwords, fingerprints, Face ID, smart cards, security tokens, and MFA are authentication methods."
           }
         ],
-        "defs": [
-          {
-            "term": "Integrity",
-            "definition": "Ensuring data stays accurate, complete, and protected from unauthorized modification."
-          }
-        ],
-        "check_q": "Without looking back, explain Integrity Compromise and describe at least two key ideas from this section.",
-        "check_a": "An integrity compromise means data, software, or configuration has been changed in an unauthorized or untrustworthy way. Changes may be malicious or accidental. Key ideas include: Accidental Errors; Malicious Actions; Systemic Weaknesses; Environmental Factors.",
-        "points": [
-          "Accidental Errors",
-          "Malicious Actions",
-          "Systemic Weaknesses",
-          "Environmental Factors"
-        ]
+        "defs": [],
+        "why": "Before a system decides what you are allowed to access, it first needs confidence in who you are.",
+        "example": "A user enters a password and MFA code to sign in to a university account.",
+        "exam": "Authentication answers: Who are you?",
+        "check_q": "A user scans a fingerprint before signing in. Which AAA function is being performed?",
+        "check_a": "Authentication."
       }
     },
     {
       "n": 7,
-      "title": "Methods to Protect Integrity",
-      "points": [
-        "Strengthening your",
-        "system",
-        "Empowering your users",
-        "Physical security",
-        "measures",
-        "Continuous",
-        "improvement"
-      ],
-      "raw": "Methods to Protect Integrity\nStrengthening your\nsystem\nEmpowering your users\nPhysical security\nmeasures\nContinuous\nimprovement",
+      "title": "Authorization",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "Integrity",
-          "Ensuring data stays accurate, complete, and protected from unauthorized modification."
-        ]
+      "teach": "Authorization means determining what an authenticated user is allowed to access or do.",
+      "points": [
+        "Basically",
+        "Examples"
       ],
+      "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Integrity controls help prove that information is complete, accurate, and unchanged except by authorized processes. Hashing, digital signatures, permissions, change control, and file-integrity monitoring are common examples.",
-        "why": "Integrity lets users trust that the information or software they receive is the same information that was intended.",
-        "example": "A software publisher signs an update, and the client verifies the signature before installing it.",
-        "exam": "Hashing and digital signatures are strong integrity clues. Remember that a digital signature also supports authentication and non-repudiation.",
+        "learn": "Authorization means determining what an authenticated user is allowed to access or do.",
         "breakdown": [
           {
-            "term": "Strengthening your system",
-            "explanation": "Secure configurations, patching, least privilege, hashing, digital signatures, and file-integrity monitoring help prevent or detect unauthorized changes."
+            "term": "Basically",
+            "explanation": "Okay, I know who you are. Now what are you allowed to do?"
           },
           {
-            "term": "Empowering your users",
-            "explanation": "Training users to follow approved change procedures, verify information, protect credentials, and report suspicious activity helps prevent accidental and unauthorized modifications."
-          },
-          {
-            "term": "Physical security measures",
-            "explanation": "Locks, access controls, surveillance, and secure storage protect devices and media from theft, tampering, or unauthorized physical changes."
-          },
-          {
-            "term": "Continuous improvement",
-            "explanation": "Regular audits, reviews, testing, patching, and lessons learned help organizations find weaknesses and improve integrity controls over time."
+            "term": "Examples",
+            "explanation": "File permissions, administrator privileges, role-based access, and read/write permissions are authorization decisions."
           }
         ],
-        "defs": [
-          {
-            "term": "Integrity",
-            "definition": "Ensuring data stays accurate, complete, and protected from unauthorized modification."
-          }
-        ],
-        "check_q": "Without looking back, explain Methods to Protect Integrity and describe at least two key ideas from this section.",
-        "check_a": "Integrity controls help prove that information is complete, accurate, and unchanged except by authorized processes. Hashing, digital signatures, permissions, change control, and file-integrity monitoring are common examples. Key ideas include: Strengthening your system; Empowering your users; Physical security measures; Continuous improvement.",
-        "points": [
-          "Strengthening your system",
-          "Empowering your users",
-          "Physical security measures",
-          "Continuous improvement"
-        ]
+        "defs": [],
+        "why": "Two authenticated users can have very different permissions depending on their jobs or roles.",
+        "example": "A student can view grades, while a professor can enter or modify grades.",
+        "exam": "Authorization answers: What can you do? It normally comes after authentication.",
+        "check_q": "A signed-in employee can read a file but cannot edit it. Which AAA function determines this?",
+        "check_a": "Authorization."
       }
     },
     {
       "n": 8,
-      "title": "Availability Compromise",
-      "points": [
-        "Technical glitches",
-        "Cybersecurity threats",
-        "External factors",
-        "Human errors"
-      ],
-      "raw": "Availability Compromise\nTechnical glitches\nCybersecurity threats\nExternal factors\nHuman errors",
+      "title": "Accounting",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "Availability",
-          "Ensuring authorized users can access systems and data when needed."
-        ]
+      "teach": "Accounting means recording and tracking what users or systems do.",
+      "points": [
+        "Basically",
+        "Examples"
       ],
+      "defs": [],
+      "raw": "",
       "course": {
-        "learn": "An availability compromise prevents authorized users from accessing a system, service, or data when they need it. Outages can be caused by attacks, failures, disasters, or mistakes.",
-        "why": "Security is not useful if legitimate users cannot perform required work. Availability is especially important for critical services.",
-        "example": "A DDoS attack overwhelms a web service, or a failed power supply takes down a server with no redundancy.",
-        "exam": "Outage, downtime, denial of service, failed hardware, and inaccessible resources point toward availability.",
+        "learn": "Accounting means recording and tracking what users or systems do.",
         "breakdown": [
           {
-            "term": "Technical glitches",
-            "explanation": "Hardware failures, software crashes, network problems, and capacity issues can interrupt services and prevent authorized users from accessing resources."
+            "term": "Basically",
+            "explanation": "Keep a record of their activity."
           },
           {
-            "term": "Cybersecurity threats",
-            "explanation": "DDoS attacks, ransomware, malware, and resource-exhaustion attacks can intentionally make systems, services, or data unavailable."
-          },
-          {
-            "term": "External factors",
-            "explanation": "Power outages, natural disasters, internet service failures, fires, floods, and other events outside the organization can cause downtime."
-          },
-          {
-            "term": "Human errors",
-            "explanation": "Accidental deletion, incorrect configuration changes, failed maintenance, or unplugging critical equipment can disrupt otherwise healthy systems."
+            "term": "Examples",
+            "explanation": "Login records, audit logs, session activity, file access logs, timestamps, and resource usage."
           }
         ],
-        "defs": [
-          {
-            "term": "Availability",
-            "definition": "Ensuring authorized users can access systems and data when needed."
-          }
-        ],
-        "check_q": "Without looking back, explain Availability Compromise and describe at least two key ideas from this section.",
-        "check_a": "An availability compromise prevents authorized users from accessing a system, service, or data when they need it. Outages can be caused by attacks, failures, disasters, or mistakes. Key ideas include: Technical glitches; Cybersecurity threats; External factors; Human errors.",
-        "points": [
-          "Technical glitches",
-          "Cybersecurity threats",
-          "External factors",
-          "Human errors"
-        ]
+        "defs": [],
+        "why": "Accounting creates evidence that can support investigations, audits, troubleshooting, and accountability.",
+        "example": "A log records when a user signed in, which files they opened, what they modified, and when they signed out.",
+        "exam": "Accounting answers: What did you do?",
+        "check_q": "A security system records every file an administrator accessed during a session. Which AAA function is this?",
+        "check_a": "Accounting."
       }
     },
     {
       "n": 9,
-      "title": "Methods to Protect Availability",
-      "points": [
-        "Redundancy and",
-        "Disaster Recovery",
-        "Proactive Maintenance",
-        "and Security",
-        "Cybersecurity",
-        "Measures",
-        "Human Factors and",
-        "Awareness"
-      ],
-      "raw": "Methods to Protect Availability\nRedundancy and\nDisaster Recovery\nProactive Maintenance\nand Security\nCybersecurity\nMeasures\nHuman Factors and\nAwareness",
+      "title": "Zero Trust",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "Availability",
-          "Ensuring authorized users can access systems and data when needed."
-        ]
+      "teach": "Zero Trust is a security approach where no user, device, or connection is automatically trusted, even if it is already inside the organization's network.",
+      "points": [
+        "Basically",
+        "Common ideas"
       ],
+      "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Availability is protected through redundancy, maintenance, monitoring, backups, disaster recovery, failover, resilient power, and capacity planning.",
-        "why": "Resilient design removes single points of failure and reduces recovery time after disruption.",
-        "example": "Two web servers sit behind a load balancer so traffic can continue if one server fails.",
-        "exam": "Look for uptime, redundancy, failover, backups, alternate sites, UPS, generators, clustering, and load balancing.",
+        "learn": "Zero Trust is a security approach where no user, device, or connection is automatically trusted, even if it is already inside the organization's network.",
         "breakdown": [
           {
-            "term": "Redundancy and Disaster Recovery",
-            "explanation": "Redundant systems, backups, alternate sites, and recovery plans provide replacement resources and restore operations after a failure or disaster."
+            "term": "Basically",
+            "explanation": "Being inside the network does not automatically make you trusted. Prove that you should have access."
           },
           {
-            "term": "Proactive Maintenance and Security",
-            "explanation": "Regular patching, monitoring, capacity planning, hardware maintenance, and testing help identify problems before they cause outages."
-          },
-          {
-            "term": "Cybersecurity Measures",
-            "explanation": "Firewalls, DDoS protections, segmentation, endpoint security, and monitoring help prevent attacks from interrupting critical services."
-          },
-          {
-            "term": "Human Factors and Awareness",
-            "explanation": "Training, documented procedures, change management, and clear responsibilities reduce outages caused by mistakes or improper system changes."
+            "term": "Common ideas",
+            "explanation": "Least privilege, MFA, device health checks, continuous evaluation, microsegmentation, and context-based access."
           }
         ],
-        "defs": [
-          {
-            "term": "Availability",
-            "definition": "Ensuring authorized users can access systems and data when needed."
-          }
-        ],
-        "check_q": "Without looking back, explain Methods to Protect Availability and describe at least two key ideas from this section.",
-        "check_a": "Availability is protected through redundancy, maintenance, monitoring, backups, disaster recovery, failover, resilient power, and capacity planning. Key ideas include: Redundancy and Disaster Recovery; Proactive Maintenance and Security; Cybersecurity Measures; Human Factors and Awareness.",
-        "points": [
-          "Redundancy and Disaster Recovery",
-          "Proactive Maintenance and Security",
-          "Cybersecurity Measures",
-          "Human Factors and Awareness"
-        ]
+        "defs": [],
+        "why": "Attackers may already be inside a network, so trust should be based on verified identity, device condition, context, and need.",
+        "example": "An employee successfully signs in, but each sensitive resource request is still evaluated before access is allowed.",
+        "exam": "Remember: never trust automatically; always verify. Zero Trust also emphasizes least privilege and continuous evaluation.",
+        "check_q": "A company requires identity and device checks before every sensitive application request, even for internal users. Which model is being used?",
+        "check_a": "Zero Trust."
       }
     },
     {
       "n": 10,
-      "title": "Non-repudiation",
-      "points": [],
-      "raw": "Non-repudiation",
-      "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "Non-repudiation",
-          "Evidence that makes it difficult for a party to credibly deny an action they performed."
-        ]
-      ]
+      "title": "Deception Technology",
+      "instructional": true,
+      "teach": "Deception technology uses fake resources to trick attackers into interacting with something that looks real.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Deception technology uses fake resources to trick attackers into interacting with something that looks real.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Give the attacker believable bait so defenders can detect or observe them."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Honeypots, honeynets, honeyfiles, and honeytokens are common deception technologies."
+          }
+        ],
+        "defs": [],
+        "why": "Legitimate users normally have no reason to interact with a decoy, so activity involving one can be a strong sign of suspicious behavior.",
+        "example": "A fake server is intentionally made attractive to attackers so defenders can observe their actions.",
+        "exam": "Deception means trick or bait. Know the difference between a honeypot, honeynet, honeyfile, and honeytoken.",
+        "check_q": "A fake API key is planted in a repository and generates an alert if anyone uses it. What kind of deception resource is this?",
+        "check_a": "A honeytoken."
+      }
+    },
+    {
+      "n": 11,
+      "title": "Disruption Technology",
+      "instructional": true,
+      "teach": "Disruption technology uses security techniques to interfere with, redirect, isolate, or slow down an attack.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Disruption technology uses security techniques to interfere with, redirect, isolate, or slow down an attack.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Do not just detect the attacker—interrupt what they are trying to accomplish."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Redirecting malicious traffic, sinkholing, isolating compromised systems, or sending attackers toward decoys can disrupt an attack."
+          }
+        ],
+        "defs": [],
+        "why": "Disruption can reduce an attacker's ability to communicate, move through the environment, or complete an attack.",
+        "example": "Malware attempts to contact a malicious command-and-control server, but the traffic is redirected to a controlled sinkhole.",
+        "exam": "Deception = trick the attacker. Disruption = interrupt the attacker.",
+        "check_q": "Malware traffic is redirected away from its real command-and-control server to a controlled destination. Which concept is being used?",
+        "check_a": "Disruption technology."
+      }
     }
   ],
-  "slide_count": 10,
-  "instructional_count": 8,
+  "slide_count": 11,
+  "instructional_count": 10,
   "concepts": [
-    "The CIA Triad",
-    "Relationship Between the CIA Components",
-    "Confidentiality Compromise",
-    "Methods to Protect Confidentiality",
-    "Integrity Compromise",
-    "Methods to Protect Integrity",
-    "Availability Compromise",
-    "Methods to Protect Availability"
+    "Confidentiality",
+    "Integrity",
+    "Availability",
+    "Non-repudiation",
+    "Authentication",
+    "Authorization",
+    "Accounting",
+    "Zero Trust",
+    "Deception Technology",
+    "Disruption Technology",
+    "Honeypot",
+    "Honeynet",
+    "Honeyfile",
+    "Honeytoken"
   ],
-  "source_filename": "02.01_Confidentiality_Integrity_and_Availability_CIA.pdf"
+  "source_filename": "02-01.json",
+  "fundamental_concepts_layout": {
+    "intro": "This overview summarizes the fundamental security concepts you should recognize in Security+ scenarios. Focus on the simple meaning, the clue in the question, realistic examples, and the memory shortcuts.",
+    "overview": [
+      {
+        "label": "CIA Triad",
+        "question": "What security goal is affected?",
+        "summary": "Confidentiality · Integrity · Availability"
+      },
+      {
+        "label": "AAA",
+        "question": "Who are you, what can you do, and what did you do?",
+        "summary": "Authentication · Authorization · Accounting"
+      },
+      {
+        "label": "Security Strategies & Assurance",
+        "question": "How do we manage trust, attackers, and proof?",
+        "summary": "Deception · Disruption · Zero Trust · Non-repudiation"
+      }
+    ],
+    "cia": [
+      {
+        "name": "Confidentiality",
+        "definition": "Keeping information private from people who are not authorized to see it.",
+        "examples": [
+          "Encryption",
+          "Passwords and MFA",
+          "Access controls",
+          "File permissions"
+        ],
+        "memory": "SECRET",
+        "exam_question": "Was data exposed to someone who should not see it?",
+        "scenario": "An employee accidentally emails a customer database containing SSNs to the wrong person."
+      },
+      {
+        "name": "Integrity",
+        "definition": "Keeping information accurate and protected from unauthorized changes.",
+        "examples": [
+          "Hashing",
+          "Digital signatures",
+          "Checksums",
+          "Permissions"
+        ],
+        "memory": "CORRECT",
+        "exam_question": "Was data changed or tampered with?",
+        "scenario": "An attacker changes employees' direct-deposit bank account numbers in payroll."
+      },
+      {
+        "name": "Availability",
+        "definition": "Making sure authorized users can access systems and data when needed.",
+        "examples": [
+          "Backups",
+          "Redundancy",
+          "Failover",
+          "Disaster recovery"
+        ],
+        "memory": "ACCESSIBLE",
+        "exam_question": "Can authorized users access it when they need it?",
+        "scenario": "A DDoS attack overwhelms a website so legitimate customers cannot connect."
+      }
+    ],
+    "identity": [
+      {
+        "name": "Authentication",
+        "definition": "Proving that you are who you claim to be.",
+        "examples": [
+          "Password",
+          "Fingerprint",
+          "Smart card",
+          "MFA"
+        ],
+        "memory": "WHO are you?"
+      },
+      {
+        "name": "Authorization",
+        "definition": "Determining what an authenticated user is allowed to access or do.",
+        "examples": [
+          "File permissions",
+          "Role-based access",
+          "Admin privileges",
+          "Read/write rights"
+        ],
+        "memory": "WHAT can you do?"
+      },
+      {
+        "name": "Accounting",
+        "definition": "Recording and tracking what users or systems do.",
+        "examples": [
+          "Login records",
+          "Audit logs",
+          "Session records",
+          "File access logs"
+        ],
+        "memory": "WHAT did you do?"
+      }
+    ],
+    "aaa_rows": [
+      [
+        "Authentication",
+        "WHO are you?",
+        "A user enters a password and MFA code."
+      ],
+      [
+        "Authorization",
+        "WHAT can you do?",
+        "A signed-in user can read a file but cannot edit it."
+      ],
+      [
+        "Accounting",
+        "WHAT did you do?",
+        "Logs record which files the user accessed and when."
+      ]
+    ],
+    "strategies": [
+      {
+        "name": "Deception Technology",
+        "definition": "Fake resources are intentionally created to trick attackers into interacting with something that looks real. The specific honey technologies are summarized in the detail chart below.",
+        "examples": [
+          "Honeypot",
+          "Honeynet",
+          "Honeyfile",
+          "Honeytoken"
+        ],
+        "memory": "TRICK / BAIT"
+      },
+      {
+        "name": "Disruption Technology",
+        "definition": "Security techniques that interfere with, redirect, isolate, or slow down an attack.",
+        "examples": [
+          "Traffic redirection",
+          "Sinkholing",
+          "Isolation",
+          "Sending attackers to decoys"
+        ],
+        "memory": "INTERRUPT"
+      },
+      {
+        "name": "Zero Trust",
+        "definition": "No user, device, or connection is automatically trusted, even if it is already inside the organization's network.",
+        "examples": [
+          "MFA",
+          "Least privilege",
+          "Device health checks",
+          "Continuous evaluation"
+        ],
+        "memory": "NEVER TRUST automatically; ALWAYS VERIFY"
+      },
+      {
+        "name": "Non-repudiation",
+        "definition": "Providing proof that someone performed an action so they cannot reasonably deny doing it later.",
+        "examples": [
+          "Digital signatures",
+          "Audit logs",
+          "Timestamps",
+          "Signed transactions"
+        ],
+        "memory": "CAN'T DENY IT"
+      }
+    ],
+    "deception_rows": [
+      [
+        "Honeypot",
+        "A system or service",
+        "Attracts attackers to a decoy machine or service so their behavior can be observed",
+        "Fake SYSTEM"
+      ],
+      [
+        "Honeynet",
+        "A network",
+        "Creates a decoy environment with multiple systems so attacker movement can be studied",
+        "Fake NETWORK"
+      ],
+      [
+        "Honeyfile",
+        "A file",
+        "Looks valuable and helps detect unauthorized access when someone opens or copies it",
+        "Fake FILE"
+      ],
+      [
+        "Honeytoken",
+        "Data or credentials",
+        "Triggers detection if fake credentials, API keys, accounts, or records are used",
+        "Fake DATA / CREDENTIAL"
+      ]
+    ],
+    "questions": [
+      {
+        "q": "A stolen laptop contains unencrypted customer records. Which CIA principle is MOST directly at risk?",
+        "choices": [
+          "Availability",
+          "Integrity",
+          "Confidentiality",
+          "Accounting"
+        ],
+        "answer": 2,
+        "explanation": "Confidentiality is concerned with preventing unauthorized disclosure of information."
+      },
+      {
+        "q": "An attacker modifies product prices in an e-commerce database. Which CIA principle has been compromised?",
+        "choices": [
+          "Integrity",
+          "Availability",
+          "Confidentiality",
+          "Authentication"
+        ],
+        "answer": 0,
+        "explanation": "Integrity is affected because data was changed without authorization."
+      },
+      {
+        "q": "A DDoS attack prevents customers from reaching a company's website. Which CIA principle is MOST affected?",
+        "choices": [
+          "Confidentiality",
+          "Non-repudiation",
+          "Integrity",
+          "Availability"
+        ],
+        "answer": 3,
+        "explanation": "Availability is affected because legitimate users cannot access the service."
+      },
+      {
+        "q": "A company needs to prove that a manager approved a financial transaction and prevent the manager from later denying the approval. Which concept BEST addresses this?",
+        "choices": [
+          "Authorization",
+          "Non-repudiation",
+          "Availability",
+          "Deception"
+        ],
+        "answer": 1,
+        "explanation": "Non-repudiation provides evidence that ties an action to a person so the action cannot reasonably be denied later."
+      },
+      {
+        "q": "A user enters a password and an MFA code before being allowed to sign in. Which AAA function is being performed?",
+        "choices": [
+          "Authorization",
+          "Accounting",
+          "Authentication",
+          "Non-repudiation"
+        ],
+        "answer": 2,
+        "explanation": "Authentication verifies who the user is."
+      },
+      {
+        "q": "After a user signs in, the system determines that the user may view reports but may not modify them. Which AAA function is this?",
+        "choices": [
+          "Accounting",
+          "Authorization",
+          "Authentication",
+          "Availability"
+        ],
+        "answer": 1,
+        "explanation": "Authorization determines what an authenticated user is permitted to do."
+      },
+      {
+        "q": "A system records the time a user logged in, which files were opened, and when the user logged out. Which AAA function is being performed?",
+        "choices": [
+          "Authentication",
+          "Authorization",
+          "Accounting",
+          "Integrity"
+        ],
+        "answer": 2,
+        "explanation": "Accounting records and tracks user activity."
+      },
+      {
+        "q": "An organization verifies identity, device health, and access context before allowing each sensitive request, even for users already on the internal network. Which model is this?",
+        "choices": [
+          "Zero Trust",
+          "Non-repudiation",
+          "Availability",
+          "Honeynet"
+        ],
+        "answer": 0,
+        "explanation": "Zero Trust does not automatically trust users or devices based on network location and continually evaluates access."
+      },
+      {
+        "q": "A security team deploys a fake server that is intentionally attractive to attackers so their behavior can be observed. What is this?",
+        "choices": [
+          "Honeytoken",
+          "Honeypot",
+          "Honeynet",
+          "Honeyfile"
+        ],
+        "answer": 1,
+        "explanation": "A honeypot is a decoy system designed to attract attackers."
+      },
+      {
+        "q": "A fake API key is planted where an attacker may find it. Security is alerted if the key is ever used. What is this BEST described as?",
+        "choices": [
+          "Honeyfile",
+          "Honeypot",
+          "Honeytoken",
+          "Honeynet"
+        ],
+        "answer": 2,
+        "explanation": "A honeytoken is fake data or a fake credential that should never be legitimately used."
+      },
+      {
+        "q": "Malware attempts to contact a known command-and-control server, but the organization redirects the traffic to a controlled sinkhole. Which concept BEST describes this action?",
+        "choices": [
+          "Disruption technology",
+          "Authentication",
+          "Non-repudiation",
+          "Confidentiality"
+        ],
+        "answer": 0,
+        "explanation": "The organization is interfering with the attacker's communication, which is disruption."
+      }
+    ]
+  }
 }
