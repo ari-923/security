@@ -236,6 +236,12 @@ function FundamentalTopicLesson({ lesson, previous, next, learning, done, master
           askTutor={askTutor}
         />;
       }
+      if (block.type === "image") {
+        return <figure className="sc-visual-card" key={`image-${i}`}>
+          <img src={block.src} alt={block.alt || ""} />
+          {block.caption && <figcaption>{block.caption}</figcaption>}
+        </figure>;
+      }
       if (block.type === "table") {
         return <ComparisonTable key={`table-${i}`} title={block.title} headers={block.headers} rows={block.rows} />;
       }
