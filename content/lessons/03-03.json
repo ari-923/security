@@ -8,71 +8,263 @@
     {
       "n": 1,
       "title": "Documentation",
-      "points": [],
-      "raw": "Documentation",
       "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": []
+      "teach": "",
+      "points": [
+        "Change management is not complete when the technical work ends.",
+        "Diagrams, policies, procedures, and version history must stay synchronized with the real environment."
+      ],
+      "defs": [],
+      "raw": ""
     },
     {
       "n": 2,
-      "title": "Documentation",
-      "points": [
-        "Updating Diagrams",
-        "Updating Policies and",
-        "Procedures",
-        "Version Control"
-      ],
-      "raw": "Documentation\nUpdating Diagrams\nUpdating Policies and\nProcedures\nVersion Control",
+      "title": "Updating Diagrams",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "Diagrams should be updated when architecture, devices, connections, trust boundaries, data flows, or other documented relationships change.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Security documentation keeps diagrams, policies, procedures, configurations, and versions synchronized with the real environment.",
-        "why": "Outdated documentation creates operational mistakes and slows incident response because staff make decisions using incorrect assumptions.",
-        "example": "After segmenting a network, the team updates the architecture diagram, firewall procedure, and configuration repository.",
-        "exam": "Version control answers who changed what and when; documentation should be updated as part of the change process, not months later.",
+        "learn": "Diagrams should be updated when architecture, devices, connections, trust boundaries, data flows, or other documented relationships change.",
         "breakdown": [
           {
-            "term": "Updating Diagrams",
-            "explanation": "Within Documentation, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Documentation rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "The picture of the environment should match the real environment."
           },
           {
-            "term": "Updating Policies and Procedures",
-            "explanation": "Within Documentation, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Documentation rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Version Control",
-            "explanation": "Tracks revisions so teams know what changed, who changed it, and can recover earlier versions."
+            "term": "Examples",
+            "explanation": "Network diagrams, data-flow diagrams, architecture diagrams, rack diagrams, trust-boundary diagrams."
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Documentation and describe at least two key ideas from this section.",
-        "check_a": "Security documentation keeps diagrams, policies, procedures, configurations, and versions synchronized with the real environment. Key ideas include: Updating Diagrams; Updating Policies and Procedures; Version Control.",
-        "points": [
-          "Updating Diagrams",
-          "Updating Policies and Procedures",
-          "Version Control"
-        ]
+        "why": "Outdated diagrams can mislead administrators, auditors, and incident responders about what actually exists or how systems connect.",
+        "example": "A new firewall and network segment are added, so the network diagram is revised to show the new path and security boundary.",
+        "exam": "Scenario clue: topology, architecture, devices, or data flows changed → UPDATE DIAGRAMS.",
+        "check_q": "A new network segment and firewall are added to production. Which documentation should be updated to reflect the new topology?",
+        "check_a": "Diagrams."
       }
     },
     {
       "n": 3,
-      "title": "Public Key Infrastructure (PKI)",
-      "points": [],
-      "raw": "Public Key Infrastructure (PKI)",
-      "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "PKI",
-          "Public Key Infrastructure: the ecosystem of certificates, public/private keys, certificate authorities, revocation, and trust relationships."
-        ]
-      ]
+      "title": "Updating Policies / Procedures",
+      "instructional": true,
+      "teach": "Policies and procedures should be updated when approved requirements, responsibilities, workflows, or operational practices change.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Policies and procedures should be updated when approved requirements, responsibilities, workflows, or operational practices change.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Written rules and instructions should describe what the organization actually requires and does."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Authentication policy, incident-response procedure, patching procedure, access-control procedure."
+          }
+        ],
+        "defs": [],
+        "why": "Outdated policies and procedures create inconsistent behavior, compliance problems, and confusion about the approved process.",
+        "example": "The organization requires MFA for administrators, so the authentication policy and account-provisioning procedure are updated to include the new requirement.",
+        "exam": "Scenario clue: rules, requirements, or approved operating steps changed → UPDATE POLICIES/PROCEDURES.",
+        "check_q": "A company begins requiring MFA for all administrators. Which documentation should be revised to reflect the requirement?",
+        "check_a": "Policies and procedures."
+      }
+    },
+    {
+      "n": 4,
+      "title": "Version Control",
+      "instructional": true,
+      "teach": "Version control tracks revisions so teams can identify what changed, who changed it, when it changed, and—when supported—restore an earlier version.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Version control tracks revisions so teams can identify what changed, who changed it, when it changed, and—when supported—restore an earlier version.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "It provides a history of changes to documents, code, configurations, or other controlled content."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Git history, document revision history, configuration versions, policy revision numbers."
+          }
+        ],
+        "defs": [],
+        "why": "Version control improves traceability, accountability, collaboration, and recovery from unwanted changes.",
+        "example": "A security team compares the current firewall configuration with last week's version to determine what was modified and by whom.",
+        "exam": "Scenario clue: revision history, previous version, who changed it, or what changed → VERSION CONTROL.",
+        "check_q": "A team needs to determine what changed in a configuration, who changed it, and recover the previous revision. Which concept is most relevant?",
+        "check_a": "Version control."
+      }
     }
   ],
-  "slide_count": 3,
-  "instructional_count": 1,
-  "concepts": [],
-  "source_filename": "03.03_Documentation.pdf"
+  "slide_count": 4,
+  "instructional_count": 3,
+  "concepts": [
+    "Updating Diagrams",
+    "Updating Policies / Procedures",
+    "Version Control"
+  ],
+  "source_filename": "03-03.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 1.3",
+      "title": "Documentation",
+      "intro": "Security documentation must stay synchronized with the real environment after a change."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Objective 1.3",
+        "title": "Keep Documentation Current",
+        "prompt": "Which documentation needs to change when the environment changes?",
+        "badge": "DOCS",
+        "cards": [
+          {
+            "name": "Updating Diagrams",
+            "definition": "Diagrams should be updated when architecture, devices, connections, trust boundaries, data flows, or other documented relationships change.",
+            "examples": [
+              "Network diagrams",
+              "data-flow diagrams",
+              "architecture diagrams",
+              "rack diagrams",
+              "trust-boundary diagrams."
+            ],
+            "memory": "WHAT EXISTS / HOW IT CONNECTS"
+          },
+          {
+            "name": "Updating Policies / Procedures",
+            "definition": "Policies and procedures should be updated when approved requirements, responsibilities, workflows, or operational practices change.",
+            "examples": [
+              "Authentication policy",
+              "incident-response procedure",
+              "patching procedure",
+              "access-control procedure."
+            ],
+            "memory": "WHAT WE REQUIRE / DO"
+          },
+          {
+            "name": "Version Control",
+            "definition": "Version control tracks revisions so teams can identify what changed, who changed it, when it changed, and—when supported—restore an earlier version.",
+            "examples": [
+              "Git history",
+              "document revision history",
+              "configuration versions",
+              "policy revision numbers."
+            ],
+            "memory": "HISTORY OF CHANGES"
+          }
+        ],
+        "columns": "three"
+      },
+      {
+        "type": "table",
+        "title": "Documentation shortcuts",
+        "headers": [
+          "If this changed...",
+          "Update...",
+          "Memory"
+        ],
+        "rows": [
+          [
+            "Topology, architecture, devices, connections, data flows",
+            "Diagrams",
+            "WHAT EXISTS"
+          ],
+          [
+            "Requirements, rules, responsibilities, or operating steps",
+            "Policies / procedures",
+            "WHAT WE REQUIRE / DO"
+          ],
+          [
+            "Revisions to documents, code, or configurations",
+            "Version control",
+            "HISTORY OF CHANGES"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "What kind of information became outdated?",
+        "items": [
+          [
+            "Environment changed → Update diagrams",
+            "If the actual topology, architecture, connections, or data flows changed, the diagram should be revised.",
+            "Example: A new firewall and subnet are added, so the network diagram must show them."
+          ],
+          [
+            "Rules or process changed → Update policies/procedures",
+            "If the organization changes a requirement or approved workflow, its written policy or procedure should match.",
+            "Example: MFA becomes mandatory for administrators, so authentication documentation is revised."
+          ],
+          [
+            "Need the history → Version Control",
+            "If the question asks what changed, who changed it, when it changed, or how to recover an earlier revision, think version control.",
+            "Example: The team compares today's firewall configuration with last week's version."
+          ]
+        ],
+        "example": "Fast memory: Diagram = environment · Policy/Procedure = rules and steps · Version Control = revision history"
+      }
+    ],
+    "questions": [
+      {
+        "q": "A company adds a new firewall and network segment. Which documentation should be updated to show the changed topology?",
+        "choices": [
+          "Network diagram",
+          "Backout plan only",
+          "Allow list only",
+          "Ownership record only"
+        ],
+        "answer": 0,
+        "explanation": "Diagrams should be updated when architecture, connections, or network topology changes."
+      },
+      {
+        "q": "An organization begins requiring MFA for all administrators. Which documentation should be revised to reflect the new requirement and operating steps?",
+        "choices": [
+          "Policies and procedures",
+          "Version history only",
+          "Network diagram",
+          "Maintenance window"
+        ],
+        "answer": 0,
+        "explanation": "Policies and procedures should reflect current approved requirements and processes."
+      },
+      {
+        "q": "A security team needs to see what changed in a configuration, who changed it, and restore an earlier revision. Which concept is most relevant?",
+        "choices": [
+          "Version control",
+          "Stakeholder analysis",
+          "Downtime",
+          "Restricted activities"
+        ],
+        "answer": 0,
+        "explanation": "Version control tracks revisions and supports traceability and rollback to earlier versions."
+      },
+      {
+        "q": "Incident responders rely on an old network diagram and initially investigate the wrong traffic path. What change-management practice was most likely missed?",
+        "choices": [
+          "Updating diagrams",
+          "Application restart",
+          "Approval process",
+          "Allowlisting"
+        ],
+        "answer": 0,
+        "explanation": "The diagram should have been updated when the environment changed."
+      }
+    ]
+  }
 }
