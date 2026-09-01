@@ -84,23 +84,16 @@
       },
       {
         "type": "tip",
-        "kicker": "Security+ Exam Clue",
-        "title": "Look for proof of an action",
+        "kicker": "Exam Shortcut",
+        "title": "Can they deny the action later?",
         "items": [
           [
-            "Digital signatures",
-            "Evidence tied to a signer"
-          ],
-          [
-            "Audit logs",
-            "Recorded activity"
-          ],
-          [
-            "Timestamps",
-            "Evidence of when an action occurred"
+            "Can’t deny it → Non-repudiation",
+            "Non-repudiation provides evidence tying an action to a person or system so they cannot reasonably deny performing it later.",
+            "Example: A manager digitally signs a transaction and later claims they never approved it."
           ]
         ],
-        "example": "If the question says “cannot deny” or asks for proof of approval, think non-repudiation."
+        "example": "Common clues: digital signatures, signed transactions, timestamps, and audit evidence."
       }
     ],
     "questions": [
