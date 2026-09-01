@@ -38,6 +38,22 @@ export default function LessonClient({ lesson, previous, next, nextPreview }) {
     />;
   }
 
+  if (lesson.fundamental_topic_layout) {
+    return <FundamentalTopicLesson
+      lesson={lesson}
+      previous={previous}
+      next={next}
+      learning={learning}
+      done={done}
+      mastered={mastered}
+      setMastered={setMastered}
+      tutorOpen={tutorOpen}
+      setTutorOpen={setTutorOpen}
+      tutorSection={tutorSection}
+      askTutor={askTutor}
+    />;
+  }
+
   if (lesson.fundamental_concepts_layout) {
     return <FundamentalConceptsLesson
       lesson={lesson}
@@ -182,6 +198,65 @@ function SecurityControlsLesson({ lesson, previous, next, learning, done, master
   </div>;
 }
 
+
+
+function FundamentalTopicLesson({ lesson, previous, next, learning, done, mastered, setMastered, tutorOpen, setTutorOpen, tutorSection, askTutor }) {
+  const layout = lesson.fundamental_topic_layout;
+  const sectionByTitle = Object.fromEntries(learning.map((s) => [s.title, s]));
+
+  return <div className="lesson-page security-controls-page">
+    <div className="crumb"><Link className="btn" href="/course">← Full Course</Link> &nbsp; Chapter {lesson.chapter}: {lesson.chapter_name}</div>
+    <h2 className="lesson-title">{lesson.id} {lesson.title}</h2>
+    <div className="lesson-meta">
+      <span className="pill">{learning.length} learning sections</span>
+      <span className="pill">{done}/{learning.length} mastered</span>
+      <button className="btn ai-inline" onClick={() => { setTutorSection(null); setTutorOpen(true); }}>✦ Ask AI about this lesson</button>
+    </div>
+
+    <section className="sc-hero">
+      <span className="sc-kicker">{layout.hero.kicker}</span>
+      <h3>{layout.hero.title}</h3>
+      <p>{layout.hero.intro}</p>
+    </section>
+
+    {layout.blocks.map((block, i) => {
+      if (block.type === "group") {
+        return <SecurityGroup
+          key={`group-${i}`}
+          eyebrow={block.eyebrow}
+          title={block.title}
+          prompt={block.prompt}
+          badge={block.badge}
+          cards={block.cards}
+          columns={block.columns}
+          sectionByTitle={sectionByTitle}
+          lesson={lesson}
+          mastered={mastered}
+          setMastered={setMastered}
+          askTutor={askTutor}
+        />;
+      }
+      if (block.type === "table") {
+        return <ComparisonTable key={`table-${i}`} title={block.title} headers={block.headers} rows={block.rows} />;
+      }
+      if (block.type === "tip") {
+        return <aside className="sc-exam-tip" key={`tip-${i}`}>
+          <span className="sc-kicker">{block.kicker}</span>
+          <h3>{block.title}</h3>
+          <div className="sc-tip-grid">
+            {block.items.map((item, j) => <div key={`${item[0]}-${j}`}><strong>{item[0]}</strong><p>{item[1]}</p></div>)}
+          </div>
+          {block.example && <div className="sc-example">{block.example}</div>}
+        </aside>;
+      }
+      return null;
+    })}
+
+    <ExamPractice questions={layout.questions} />
+    <LessonNav previous={previous} next={next} />
+    <AITutor open={tutorOpen} onClose={() => setTutorOpen(false)} lesson={lesson} section={tutorSection} />
+  </div>;
+}
 
 function FundamentalConceptsLesson({ lesson, previous, next, learning, done, mastered, setMastered, tutorOpen, setTutorOpen, tutorSection, askTutor }) {
   const layout = lesson.fundamental_concepts_layout;
@@ -408,7 +483,7 @@ function SecurityGroup({ eyebrow, title, prompt, cards, columns, sectionByTitle,
       <div><span className="sc-kicker">{eyebrow}</span><h3>{title}</h3><p>Ask yourself: <strong>{prompt}</strong></p></div>
       <span className="sc-question-badge">{badge || (prompt.startsWith("How") ? "HOW?" : "PURPOSE?")}</span>
     </div>
-    <div className={`sc-card-grid ${columns === "four" ? "sc-four" : "sc-three"}`}>
+    <div className={`sc-card-grid ${columns === "four" ? "sc-four" : columns === "two" ? "sc-two" : columns === "one" ? "sc-one" : "sc-three"}`}>
       {cards.map((card) => {
         const section = sectionByTitle?.[card.name];
         const isDone = section ? mastered.has(keyFor(lesson.id, section.n)) : false;
