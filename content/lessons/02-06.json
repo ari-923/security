@@ -540,6 +540,34 @@
             "Detects movement using high-frequency sound"
           ]
         ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Match the clue to the physical control",
+        "items": [
+          [
+            "Bollards → VEHICLES",
+            "Bollards are strong posts or barriers designed to stop or redirect vehicles.",
+            "Example: Steel posts are installed in front of a data-center entrance."
+          ],
+          [
+            "Access control vestibule → TWO DOORS",
+            "A secured two-door entry controls passage so one door normally closes before the next opens.",
+            "Example: An employee badges through the first door and waits for it to close before the second unlocks."
+          ],
+          [
+            "Fencing → PERIMETER",
+            "Fencing creates a physical boundary around a property or restricted area.",
+            "Example: Anti-climb fencing surrounds the facility."
+          ],
+          [
+            "Infrared → HEAT · Pressure → WEIGHT · Microwave → RADIO/MOTION · Ultrasonic → SOUND",
+            "These sensor clues describe what each sensor primarily detects or uses.",
+            "Example: A hidden floor mat that triggers when stepped on is a pressure sensor."
+          ]
+        ],
+        "example": "Use the scenario clue first: vehicles, two doors, perimeter, heat, weight, radio/motion, or sound."
       }
     ],
     "questions": [
