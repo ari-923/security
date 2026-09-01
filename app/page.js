@@ -1,20 +1,32 @@
-import { chapters, lessons, learningSections, scenarioQuestions, sectionKey } from "@/content";
-import HomeDashboard from "@/components/HomeDashboard";
+import { lessons } from "@/content";
+import FlashcardsClient from "@/components/FlashcardsClient";
 
-export default function HomePage() {
-  const progressShape = lessons.map((lesson) => ({
-    id: lesson.id,
-    chapter: lesson.chapter,
-    keys: learningSections(lesson).map((section) => sectionKey(lesson.id, section.n)),
-  }));
+export const metadata = { title: "Flashcards | Security+ Study Guide" };
 
-  return (
-    <HomeDashboard
-      chapters={chapters}
-      progressShape={progressShape}
-      lessonCount={lessons.length}
-      learningCount={progressShape.reduce((sum, lesson) => sum + lesson.keys.length, 0)}
-      quizCount={scenarioQuestions.length}
-    />
+export default function FlashcardsPage() {
+  const cards = lessons.flatMap((lesson) =>
+    lesson.slides.filter((section) => section.instructional).map((section) => ({
+      key: `${lesson.id}-${section.n}`,
+      lessonId: lesson.id,
+      lessonTitle: lesson.title,
+      sectionNumber: section.n,
+      title: section.title,
+      answer: section.course?.learn || section.teach || section.points.join(" · "),
+      exam: section.course?.exam || "Explain the concept and recognize it in a Security+ scenario.",
+    }))
   );
+
+  const extraCards = lessons.flatMap((lesson) =>
+    (lesson.flashcards || []).map((card, i) => ({
+      key: `${lesson.id}-extra-${i + 1}`,
+      lessonId: lesson.id,
+      lessonTitle: lesson.title,
+      sectionNumber: `extra-${i + 1}`,
+      title: card.title,
+      answer: card.answer,
+      exam: card.exam || "Explain the concept and recognize it in a Security+ scenario.",
+    }))
+  );
+
+  return <FlashcardsClient cards={[...cards, ...extraCards]} />;
 }
