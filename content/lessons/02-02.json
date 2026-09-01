@@ -2,152 +2,430 @@
   "id": "02.02",
   "chapter": 2,
   "sub": 2,
-  "title": "Non-repudiation",
+  "title": "Authentication, Authorization, and Accounting (AAA)",
   "chapter_name": "Fundamental Security Concepts",
   "slides": [
     {
       "n": 1,
-      "title": "Non-repudiation",
-      "points": [],
-      "raw": "Non-repudiation",
+      "title": "Lesson Overview",
       "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "Non-repudiation",
-          "Evidence that makes it difficult for a party to credibly deny an action they performed."
-        ]
-      ]
+      "teach": "",
+      "points": [
+        "Authentication",
+        "Authorization",
+        "Accounting",
+        "Authenticating People",
+        "Authenticating Systems",
+        "Authorization Models"
+      ],
+      "defs": [],
+      "raw": ""
     },
     {
       "n": 2,
-      "title": "Non-repudiation",
-      "points": [
-        "Digital Signatures",
-        "Time Stamps",
-        "Audit Logs"
-      ],
-      "raw": "Non-repudiation\nDigital Signatures\nTime Stamps\nAudit Logs",
+      "title": "Authentication",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "Non-repudiation",
-          "Evidence that makes it difficult for a party to credibly deny an action they performed."
-        ]
+      "teach": "Authentication means proving that you are who you claim to be.",
+      "points": [
+        "Basically",
+        "Examples"
       ],
+      "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Non-repudiation provides evidence that makes it difficult for a person or system to credibly deny an action they performed. Digital signatures, trustworthy timestamps, and protected audit logs are common supporting mechanisms.",
-        "why": "Organizations may need to prove who approved, sent, signed, or changed something—especially for legal, financial, or administrative actions.",
-        "example": "A sender digitally signs a contract. The signature can later be verified with the sender's public key.",
-        "exam": "Digital signature questions often involve integrity, authentication, and non-repudiation—not confidentiality by itself.",
+        "learn": "Authentication means proving that you are who you claim to be.",
         "breakdown": [
           {
-            "term": "Digital Signatures",
-            "explanation": "A digital signature uses asymmetric cryptography to prove that data came from the holder of a private key and that the signed data has not changed."
+            "term": "Basically",
+            "explanation": "Prove your identity."
           },
           {
-            "term": "Time Stamps",
-            "explanation": "Within Non-repudiation, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Non-repudiation rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Audit Logs",
-            "explanation": "Within Non-repudiation, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Non-repudiation rather than memorizing the phrase by itself."
+            "term": "Examples",
+            "explanation": "Passwords, fingerprints, Face ID, smart cards, security tokens, and MFA."
           }
         ],
-        "defs": [
-          {
-            "term": "Non-repudiation",
-            "definition": "Evidence that makes it difficult for a party to credibly deny an action they performed."
-          }
-        ],
-        "check_q": "Without looking back, explain Non-repudiation and describe at least two key ideas from this section.",
-        "check_a": "Non-repudiation provides evidence that makes it difficult for a person or system to credibly deny an action they performed. Digital signatures, trustworthy timestamps, and protected audit logs are common supporting mechanisms. Key ideas include: Digital Signatures; Time Stamps; Audit Logs.",
-        "points": [
-          "Digital Signatures",
-          "Time Stamps",
-          "Audit Logs"
-        ]
+        "defs": [],
+        "why": "Identity must be verified before a system can make an informed access decision.",
+        "example": "A user enters a password and MFA code before signing in.",
+        "exam": "Authentication answers: Who are you?",
+        "check_q": "A user scans a fingerprint before signing in. Which AAA function is this?",
+        "check_a": "Authentication."
       }
     },
     {
       "n": 3,
-      "title": "Challenges and Considerations",
-      "points": [
-        "Security of Keys",
-        "System Integrity",
-        "Legal Recognition"
-      ],
-      "raw": "Challenges and Considerations\nSecurity of Keys\nSystem Integrity\nLegal Recognition",
+      "title": "Authorization",
       "instructional": true,
-      "teach": "These are design tradeoffs. Learn why each factor matters rather than memorizing the words alone.",
-      "defs": [
-        [
-          "Integrity",
-          "Ensuring data stays accurate, complete, and protected from unauthorized modification."
-        ]
+      "teach": "Authorization means determining what an authenticated user or system is allowed to access or do.",
+      "points": [
+        "Basically",
+        "Examples"
       ],
+      "defs": [],
+      "raw": "",
       "course": {
-        "learn": "This section focuses on **Challenges and Considerations** within **Non-repudiation**. Non-repudiation provides evidence that makes it difficult for a person or system to credibly deny an action they performed. Digital signatures, trustworthy timestamps, and protected audit logs are common supporting mechanisms.",
-        "why": "Organizations may need to prove who approved, sent, signed, or changed something—especially for legal, financial, or administrative actions.",
-        "example": "A sender digitally signs a contract. The signature can later be verified with the sender's public key.",
-        "exam": "Digital signature questions often involve integrity, authentication, and non-repudiation—not confidentiality by itself.",
+        "learn": "Authorization means determining what an authenticated user or system is allowed to access or do.",
         "breakdown": [
           {
-            "term": "Security of Keys",
-            "explanation": "This is a factor that must be evaluated when using Non-repudiation; ignoring it can create operational, security, cost, or compatibility risk."
+            "term": "Basically",
+            "explanation": "I know who you are. Now what are you allowed to do?"
           },
           {
-            "term": "System Integrity",
-            "explanation": "This is a factor that must be evaluated when using Non-repudiation; ignoring it can create operational, security, cost, or compatibility risk."
-          },
-          {
-            "term": "Legal Recognition",
-            "explanation": "This is a factor that must be evaluated when using Non-repudiation; ignoring it can create operational, security, cost, or compatibility risk."
+            "term": "Examples",
+            "explanation": "Read/write permissions, role-based access, administrator privileges, and application permissions."
           }
         ],
-        "defs": [
-          {
-            "term": "Integrity",
-            "definition": "Ensuring data stays accurate, complete, and protected from unauthorized modification."
-          }
-        ],
-        "check_q": "Without looking back, explain Challenges and Considerations and describe at least two key ideas from this section.",
-        "check_a": "This section focuses on **Challenges and Considerations** within **Non-repudiation**. Non-repudiation provides evidence that makes it difficult for a person or system to credibly deny an action they performed. Digital signatures, trustworthy timestamps, and protected audit logs are common supporting mechanisms. Key ideas include: Security of Keys; System Integrity; Legal Recognition.",
-        "points": [
-          "Security of Keys",
-          "System Integrity",
-          "Legal Recognition"
-        ]
+        "defs": [],
+        "why": "Different authenticated users can require different levels of access.",
+        "example": "A student may view grades, while a professor may enter or modify grades.",
+        "exam": "Authorization answers: What can you do?",
+        "check_q": "A signed-in user can read a file but cannot edit it. Which AAA function determines this?",
+        "check_a": "Authorization."
       }
     },
     {
       "n": 4,
-      "title": "Authentication, Authorization, and Accounting (AAA)",
-      "points": [],
-      "raw": "Authentication, Authorization,\nand Accounting (AAA)",
-      "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "Authentication",
-          "Proving an identity—answering “who are you?”"
+      "title": "Accounting",
+      "instructional": true,
+      "teach": "Accounting means recording and tracking what users or systems do.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Accounting means recording and tracking what users or systems do.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Keep a record of activity."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Login records, audit logs, session activity, file-access logs, timestamps, and resource usage."
+          }
         ],
-        [
-          "Authorization",
-          "Determining what an authenticated identity is allowed to access or do."
+        "defs": [],
+        "why": "Accounting supports investigations, auditing, troubleshooting, and accountability.",
+        "example": "A log records when a user signed in, which files were opened, what changed, and when the user logged out.",
+        "exam": "Accounting answers: What did you do?",
+        "check_q": "A system records every file an administrator accessed. Which AAA function is this?",
+        "check_a": "Accounting."
+      }
+    },
+    {
+      "n": 5,
+      "title": "Authenticating People",
+      "instructional": true,
+      "teach": "Authenticating people means verifying the identity of a human user.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Authenticating people means verifying the identity of a human user.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Prove that this person really is who they claim to be."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Passwords, PINs, biometrics, smart cards, security tokens, and MFA."
+          }
         ],
-        [
-          "Accounting",
-          "Recording activity through logs, audit trails, and session records."
-        ]
-      ]
+        "defs": [],
+        "why": "Human identities must be validated before access can be trusted.",
+        "example": "An employee scans a fingerprint and enters a PIN before accessing a sensitive system.",
+        "exam": "Look for a human user proving identity with knowledge, possession, biometric, or multiple factors.",
+        "check_q": "An employee uses a fingerprint and PIN to sign in. What is being authenticated?",
+        "check_a": "A person."
+      }
+    },
+    {
+      "n": 6,
+      "title": "Authenticating Systems",
+      "instructional": true,
+      "teach": "Authenticating systems means verifying the identity of a device, server, application, or service.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Authenticating systems means verifying the identity of a device, server, application, or service.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Prove that this computer or service is legitimate."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Digital certificates, machine certificates, cryptographic keys, service credentials, and mutual authentication."
+          }
+        ],
+        "defs": [],
+        "why": "Systems also need trusted identities so devices and services do not communicate with impostors.",
+        "example": "A client verifies a server's certificate before establishing a secure connection.",
+        "exam": "Look for certificates, machine identities, service identities, or systems verifying each other.",
+        "check_q": "A client validates a server certificate before connecting. What is being authenticated?",
+        "check_a": "A system."
+      }
+    },
+    {
+      "n": 7,
+      "title": "Authorization Models",
+      "instructional": true,
+      "teach": "Authorization models are methods used to determine who or what receives access to specific resources.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Authorization models are methods used to determine who or what receives access to specific resources.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "They define how permissions are decided."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Role-based access control uses roles; attribute-based access control uses attributes and context; rule-based access uses defined rules."
+          }
+        ],
+        "defs": [],
+        "why": "Organizations need repeatable models for assigning and enforcing access permissions.",
+        "example": "Everyone assigned to the HR role automatically receives access to the payroll application.",
+        "exam": "If the question asks how permissions are assigned or what criteria determine access, think authorization model.",
+        "check_q": "Access to payroll is automatically granted to members of the HR role. What concept is being demonstrated?",
+        "check_a": "An authorization model, specifically role-based access."
+      }
     }
   ],
-  "slide_count": 4,
-  "instructional_count": 2,
+  "slide_count": 7,
+  "instructional_count": 6,
   "concepts": [
-    "Challenges and Considerations"
+    "Authentication",
+    "Authorization",
+    "Accounting",
+    "Authenticating People",
+    "Authenticating Systems",
+    "Authorization Models"
   ],
-  "source_filename": "02.02_Non-repudiation.pdf"
+  "source_filename": "02-02.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Identity & Access",
+      "title": "Authentication, Authorization, and Accounting",
+      "intro": "Learn who the user is, what the user can do, how activity is recorded, and how people and systems prove identity."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Core AAA",
+        "title": "AAA",
+        "prompt": "Who are you, what can you do, and what did you do?",
+        "badge": "AAA",
+        "cards": [
+          {
+            "name": "Authentication",
+            "definition": "Proving that you are who you claim to be.",
+            "examples": [
+              "Password",
+              "Fingerprint",
+              "Smart card",
+              "MFA"
+            ],
+            "memory": "WHO are you?"
+          },
+          {
+            "name": "Authorization",
+            "definition": "Determining what an authenticated user or system is allowed to access or do.",
+            "examples": [
+              "File permissions",
+              "Role-based access",
+              "Admin privileges",
+              "Read/write rights"
+            ],
+            "memory": "WHAT can you do?"
+          },
+          {
+            "name": "Accounting",
+            "definition": "Recording and tracking what users or systems do.",
+            "examples": [
+              "Login records",
+              "Audit logs",
+              "Session records",
+              "File-access logs"
+            ],
+            "memory": "WHAT did you do?"
+          }
+        ],
+        "columns": "three"
+      },
+      {
+        "type": "table",
+        "title": "AAA shortcut",
+        "headers": [
+          "Concept",
+          "Question to remember",
+          "Example"
+        ],
+        "rows": [
+          [
+            "Authentication",
+            "WHO are you?",
+            "A user enters a password and MFA code."
+          ],
+          [
+            "Authorization",
+            "WHAT can you do?",
+            "A signed-in user can read a file but cannot edit it."
+          ],
+          [
+            "Accounting",
+            "WHAT did you do?",
+            "Logs record which files the user accessed and when."
+          ]
+        ]
+      },
+      {
+        "type": "group",
+        "eyebrow": "AAA Detail",
+        "title": "People, Systems, and Authorization Models",
+        "prompt": "What is being authenticated, and how are permissions decided?",
+        "badge": "ACCESS",
+        "cards": [
+          {
+            "name": "Authenticating People",
+            "definition": "Verifying the identity of a human user.",
+            "examples": [
+              "Passwords",
+              "PINs",
+              "Biometrics",
+              "Smart cards",
+              "MFA"
+            ],
+            "memory": "HUMAN identity"
+          },
+          {
+            "name": "Authenticating Systems",
+            "definition": "Verifying the identity of a device, server, application, or service.",
+            "examples": [
+              "Digital certificates",
+              "Machine certificates",
+              "Cryptographic keys",
+              "Service credentials"
+            ],
+            "memory": "SYSTEM identity"
+          },
+          {
+            "name": "Authorization Models",
+            "definition": "Methods used to determine how permissions are assigned and evaluated.",
+            "examples": [
+              "Role-based access",
+              "Attribute-based access",
+              "Rule-based access"
+            ],
+            "memory": "HOW permissions are decided"
+          }
+        ],
+        "columns": "three"
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Memory",
+        "title": "AAA in one line",
+        "items": [
+          [
+            "Authentication",
+            "WHO are you?"
+          ],
+          [
+            "Authorization",
+            "WHAT can you do?"
+          ],
+          [
+            "Accounting",
+            "WHAT did you do?"
+          ]
+        ],
+        "example": "Authentication normally happens before authorization."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A user enters a password and MFA code before signing in. Which AAA function is being performed?",
+        "choices": [
+          "Authorization",
+          "Accounting",
+          "Authentication",
+          "Non-repudiation"
+        ],
+        "answer": 2,
+        "explanation": "Authentication verifies who the user is."
+      },
+      {
+        "q": "A signed-in employee may view reports but cannot modify them. Which AAA function determines this?",
+        "choices": [
+          "Accounting",
+          "Authorization",
+          "Authentication",
+          "Availability"
+        ],
+        "answer": 1,
+        "explanation": "Authorization determines what an authenticated user is permitted to do."
+      },
+      {
+        "q": "A system records when a user logs in, which files are opened, and when the user logs out. Which AAA function is this?",
+        "choices": [
+          "Authentication",
+          "Authorization",
+          "Accounting",
+          "Integrity"
+        ],
+        "answer": 2,
+        "explanation": "Accounting records and tracks user activity."
+      },
+      {
+        "q": "A client validates a server's digital certificate before connecting. What is being authenticated?",
+        "choices": [
+          "A person",
+          "A system",
+          "An authorization rule",
+          "An audit record"
+        ],
+        "answer": 1,
+        "explanation": "The client is verifying the identity of a server, which is system authentication."
+      },
+      {
+        "q": "Every member of the HR role automatically receives access to payroll. Which concept is being demonstrated?",
+        "choices": [
+          "Accounting",
+          "An authorization model",
+          "Non-repudiation",
+          "Availability"
+        ],
+        "answer": 1,
+        "explanation": "Permissions are being assigned according to a role, which is an authorization model."
+      },
+      {
+        "q": "An employee scans a fingerprint and enters a PIN before accessing a system. What is being authenticated?",
+        "choices": [
+          "A person",
+          "A server",
+          "A policy",
+          "A network segment"
+        ],
+        "answer": 0,
+        "explanation": "The system is verifying the identity of a human user."
+      }
+    ]
+  }
 }
