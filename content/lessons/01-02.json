@@ -596,7 +596,222 @@
         ],
         "answer": 1,
         "explanation": "Managerial. Risk assessment is part of management planning and decision-making."
+      },
+      {
+        "q": "A company deploys a firewall that automatically blocks unauthorized inbound connections. Which combination BEST classifies the control?",
+        "choices": [
+          "Technical + Preventive",
+          "Technical + Detective",
+          "Managerial + Directive",
+          "Physical + Preventive"
+        ],
+        "answer": 0,
+        "explanation": "The firewall is implemented through technology, making it technical, and it blocks the unwanted connection before it succeeds, making it preventive."
+      },
+      {
+        "q": "A visible security camera is installed mainly to make would-be intruders reconsider entering a restricted area. Which combination BEST classifies the control?",
+        "choices": [
+          "Technical + Detective",
+          "Physical + Deterrent",
+          "Physical + Corrective",
+          "Operational + Directive"
+        ],
+        "answer": 1,
+        "explanation": "The camera is a physical security control, and in this scenario its main purpose is to discourage an intruder, making it deterrent."
+      },
+      {
+        "q": "An IDS monitors network traffic and alerts an analyst when suspicious activity is found. Which combination BEST classifies the IDS in this scenario?",
+        "choices": [
+          "Technical + Detective",
+          "Technical + Preventive",
+          "Operational + Corrective",
+          "Managerial + Compensating"
+        ],
+        "answer": 0,
+        "explanation": "An IDS is technology, so it is technical, and its role here is to detect and alert rather than block, so it is detective."
+      },
+      {
+        "q": "An organization publishes a security policy requiring employees to follow approved password practices. Which combination BEST classifies the policy?",
+        "choices": [
+          "Operational + Detective",
+          "Physical + Directive",
+          "Managerial + Directive",
+          "Technical + Preventive"
+        ],
+        "answer": 2,
+        "explanation": "A security policy is a managerial control, and because it tells employees what they are required to do, it is directive."
+      },
+      {
+        "q": "Antivirus software finds malware on an endpoint and then removes the malicious files. Which control type BEST describes the removal action?",
+        "choices": [
+          "Deterrent",
+          "Detective",
+          "Corrective",
+          "Directive"
+        ],
+        "answer": 2,
+        "explanation": "The malware has already been found. Removing it is an action that fixes the problem, so that function is corrective."
       }
-    ]
-  }
+    ],
+    "classification_method": {
+      "title": "How to Classify Security Controls",
+      "intro": "Use this two-step method when a Security+ scenario asks you to classify a security control.",
+      "steps": [
+        {
+          "step": "Step 1",
+          "title": "Identify the CATEGORY",
+          "question": "How is the control implemented?",
+          "items": [
+            [
+              "Technical",
+              "Technology"
+            ],
+            [
+              "Managerial",
+              "Policies / planning"
+            ],
+            [
+              "Operational",
+              "People / processes"
+            ],
+            [
+              "Physical",
+              "Physical protection"
+            ]
+          ]
+        },
+        {
+          "step": "Step 2",
+          "title": "Identify the TYPE",
+          "question": "What is the control trying to do?",
+          "items": [
+            [
+              "Preventive",
+              "Stop"
+            ],
+            [
+              "Deterrent",
+              "Discourage"
+            ],
+            [
+              "Detective",
+              "Find / detect"
+            ],
+            [
+              "Corrective",
+              "Fix"
+            ],
+            [
+              "Compensating",
+              "Alternative / Plan B"
+            ],
+            [
+              "Directive",
+              "Tell / instruct"
+            ]
+          ]
+        }
+      ],
+      "shortcut": "First ask HOW? Then ask PURPOSE?",
+      "examples": [
+        [
+          "Firewall blocking unauthorized traffic",
+          "Technical",
+          "Preventive"
+        ],
+        [
+          "IDS alerting on suspicious traffic",
+          "Technical",
+          "Detective"
+        ],
+        [
+          "Door lock preventing entry",
+          "Physical",
+          "Preventive"
+        ],
+        [
+          "Security policy telling employees what is required",
+          "Managerial",
+          "Directive"
+        ],
+        [
+          "Visible security camera intended to discourage intruders",
+          "Physical",
+          "Deterrent"
+        ],
+        [
+          "Security camera footage reviewed after an incident",
+          "Physical",
+          "Detective"
+        ],
+        [
+          "Antivirus detecting malware",
+          "Technical",
+          "Detective"
+        ],
+        [
+          "Antivirus blocking malware before execution",
+          "Technical",
+          "Preventive"
+        ],
+        [
+          "Antivirus removing malware",
+          "Technical",
+          "Corrective"
+        ]
+      ]
+    }
+  },
+  "flashcards": [
+    {
+      "title": "Security control category vs. type",
+      "answer": "Category = HOW the control is implemented. Type = WHAT PURPOSE the control serves.",
+      "exam": "Use the two-step method: first ask HOW? Then ask PURPOSE?"
+    },
+    {
+      "title": "Technical security control",
+      "answer": "A control implemented through technology, hardware, or software.",
+      "exam": "Think firewall, MFA, encryption, IDS, and antivirus."
+    },
+    {
+      "title": "Managerial security control",
+      "answer": "A control based on management decisions, policies, planning, risk, or governance.",
+      "exam": "Think policies, risk assessments, compliance requirements, and management decisions."
+    },
+    {
+      "title": "Operational security control",
+      "answer": "A control carried out through people and day-to-day security processes.",
+      "exam": "Think training, incident response, manual reviews, and operational procedures."
+    },
+    {
+      "title": "Physical security control",
+      "answer": "A control that physically protects people, facilities, or equipment.",
+      "exam": "Think locks, fences, guards, gates, cameras, and sensors."
+    },
+    {
+      "title": "Control type memory shortcut",
+      "answer": "Preventive = stop; Deterrent = discourage; Detective = find; Corrective = fix; Compensating = Plan B; Directive = instruct.",
+      "exam": "Focus on the verb describing what the control is doing."
+    },
+    {
+      "title": "Firewall classification",
+      "answer": "A firewall blocking unauthorized traffic is Technical + Preventive.",
+      "exam": "Technical tells you HOW it is implemented; Preventive tells you its purpose."
+    },
+    {
+      "title": "IDS classification",
+      "answer": "An IDS that monitors and alerts is Technical + Detective.",
+      "exam": "IDS normally detects and alerts; an IPS can actively block."
+    },
+    {
+      "title": "Security camera classification",
+      "answer": "A camera can be Physical + Deterrent when its visibility discourages intruders, or Physical + Detective when footage is used to identify activity.",
+      "exam": "The same control can have a different type depending on how the scenario says it is used."
+    },
+    {
+      "title": "Antivirus classification",
+      "answer": "Antivirus can be Detective when it finds malware, Preventive when it blocks malware, or Corrective when it removes malware.",
+      "exam": "Do not memorize one permanent type for a tool; classify the function described in the scenario."
+    }
+  ]
 }
