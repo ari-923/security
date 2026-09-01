@@ -197,7 +197,7 @@ function FundamentalConceptsLesson({ lesson, previous, next, learning, done, mas
     </div>
 
     <section className="sc-hero">
-      <span className="sc-kicker">Security+ Foundation</span>
+      <span className="sc-kicker">Security+ Objective 1.2</span>
       <h3>Fundamental security concepts at a glance</h3>
       <p>{layout.intro}</p>
       <div className="sc-overview-grid">
@@ -235,7 +235,7 @@ function FundamentalConceptsLesson({ lesson, previous, next, learning, done, mas
       prompt="Who are you, what can you do, and what did you do?"
       badge="AAA"
       cards={layout.identity}
-      columns="four"
+      columns="three"
       sectionByTitle={sectionByTitle}
       lesson={lesson}
       mastered={mastered}
@@ -250,12 +250,118 @@ function FundamentalConceptsLesson({ lesson, previous, next, learning, done, mas
     />
 
     <SecurityGroup
+      eyebrow="AAA Detail"
+      title="People, Systems, and Authorization Models"
+      prompt="What is being authenticated, and how are permissions decided?"
+      badge="ACCESS"
+      cards={layout.aaa_details}
+      columns="three"
+      sectionByTitle={sectionByTitle}
+      lesson={lesson}
+      mastered={mastered}
+      setMastered={setMastered}
+      askTutor={askTutor}
+    />
+
+    <SecurityGroup
       eyebrow="Part 3"
-      title="Security Strategies & Assurance"
-      prompt="How is the organization managing trust, attackers, and proof?"
+      title="Gap Analysis"
+      prompt="Where are we now versus where should we be?"
+      badge="GAP"
+      cards={[layout.gap_analysis]}
+      columns="one"
+      sectionByTitle={sectionByTitle}
+      lesson={lesson}
+      mastered={mastered}
+      setMastered={setMastered}
+      askTutor={askTutor}
+    />
+
+    <ComparisonTable
+      title="Gap analysis process"
+      headers={["Step", "What to determine"]}
+      rows={layout.gap_steps}
+    />
+
+    <SecurityGroup
+      eyebrow="Part 4"
+      title="Zero Trust"
+      prompt="How are access decisions made, communicated, and enforced?"
+      badge="VERIFY"
+      cards={layout.zero_trust_core}
+      columns="three"
+      sectionByTitle={sectionByTitle}
+      lesson={lesson}
+      mastered={mastered}
+      setMastered={setMastered}
+      askTutor={askTutor}
+    />
+
+    <SecurityGroup
+      eyebrow="Zero Trust — Control Plane"
+      title="Control Plane Components"
+      prompt="What information and components determine the access decision?"
+      badge="DECIDES"
+      cards={layout.zero_trust_control_plane}
+      columns="three"
+      sectionByTitle={sectionByTitle}
+      lesson={lesson}
+      mastered={mastered}
+      setMastered={setMastered}
+      askTutor={askTutor}
+    />
+
+    <SecurityGroup
+      eyebrow="Zero Trust — Data Plane"
+      title="Data Plane Components"
+      prompt="Where is access used and enforced?"
+      badge="ENFORCES"
+      cards={layout.zero_trust_data_plane}
+      columns="three"
+      sectionByTitle={sectionByTitle}
+      lesson={lesson}
+      mastered={mastered}
+      setMastered={setMastered}
+      askTutor={askTutor}
+    />
+
+    <aside className="sc-exam-tip">
+      <span className="sc-kicker">Zero Trust Memory</span>
+      <h3>How a Zero Trust access decision is made and enforced</h3>
+      <div className="sc-tip-grid">
+        <div><strong>Policy Engine</strong><p>Decides whether the request should be allowed.</p></div>
+        <div><strong>Policy Administrator</strong><p>Acts on the decision to establish or terminate access.</p></div>
+      </div>
+      <div className="sc-example"><strong>Policy Enforcement Point:</strong> actually enforces the decision by allowing, denying, or terminating the connection.</div>
+    </aside>
+
+    <SecurityGroup
+      eyebrow="Part 5"
+      title="Physical Security"
+      prompt="Which physical control best addresses the scenario?"
+      badge="PHYSICAL"
+      cards={layout.physical_controls}
+      columns="four"
+      sectionByTitle={sectionByTitle}
+      lesson={lesson}
+      mastered={mastered}
+      setMastered={setMastered}
+      askTutor={askTutor}
+    />
+
+    <ComparisonTable
+      title="Physical security sensors"
+      headers={["Sensor", "What it detects / uses", "Memory", "Scenario clue"]}
+      rows={layout.sensor_rows}
+    />
+
+    <SecurityGroup
+      eyebrow="Part 6"
+      title="Deception, Disruption, and Assurance"
+      prompt="Is the organization tricking an attacker, interrupting an attack, or proving an action?"
       badge="STRATEGY"
       cards={layout.strategies}
-      columns="four"
+      columns="three"
       sectionByTitle={sectionByTitle}
       lesson={lesson}
       mastered={mastered}
@@ -286,7 +392,7 @@ function FundamentalConceptsLesson({ lesson, previous, next, learning, done, mas
         <div><strong>CIA</strong><p>Exposed = Confidentiality · Changed = Integrity · Unavailable = Availability</p></div>
         <div><strong>AAA</strong><p>Who are you? = Authentication · What can you do? = Authorization · What did you do? = Accounting</p></div>
       </div>
-      <div className="sc-example"><strong>Other shortcuts:</strong> Can't deny it = Non-repudiation · Never trust automatically = Zero Trust · Trick = Deception · Interrupt = Disruption</div>
+      <div className="sc-example"><strong>Other shortcuts:</strong> Current vs. desired = Gap analysis · Can't deny it = Non-repudiation · Never trust automatically = Zero Trust · Trick = Deception · Interrupt = Disruption</div>
     </aside>
 
     <ExamPractice questions={layout.questions} />
