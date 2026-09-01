@@ -2,382 +2,646 @@
   "id": "02.04",
   "chapter": 2,
   "sub": 4,
-  "title": "Gap analysis",
+  "title": "Zero Trust",
   "chapter_name": "Fundamental Security Concepts",
   "slides": [
     {
       "n": 1,
-      "title": "Gap Analysis",
-      "points": [],
-      "raw": "Gap Analysis",
+      "title": "Lesson Overview",
       "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": []
+      "teach": "",
+      "points": [
+        "Zero Trust",
+        "Control Plane",
+        "Adaptive Identity",
+        "Threat Scope Reduction",
+        "Policy-driven Access Control",
+        "Policy Engine",
+        "Policy Administrator",
+        "Data Plane",
+        "Implicit Trust Zones",
+        "Subject/System",
+        "Policy Enforcement Point"
+      ],
+      "defs": [],
+      "raw": ""
     },
     {
       "n": 2,
-      "title": "Gap Analysis",
-      "points": [
-        "• Systematic Evaluation",
-        "• On-going Process"
-      ],
-      "raw": "Gap Analysis\n• Systematic Evaluation\n• On-going Process",
+      "title": "Zero Trust",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "Zero Trust is a security approach in which no user, device, or connection is automatically trusted, even if it is already inside the network.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Gap analysis compares the current security state with a desired target such as a standard, policy, architecture, or maturity level. The “gap” is what must change to reach the target.",
-        "why": "It turns broad goals into concrete improvement work and helps prioritize resources.",
-        "example": "A company requires MFA for all privileged accounts, discovers that 30% of admin systems still use passwords only, and creates a remediation plan.",
-        "exam": "Current state versus desired state is the strongest clue for gap analysis.",
+        "learn": "Zero Trust is a security approach in which no user, device, or connection is automatically trusted, even if it is already inside the network.",
         "breakdown": [
           {
-            "term": "Systematic Evaluation",
-            "explanation": "Within Gap Analysis, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Gap analysis rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "Never trust automatically. Always verify."
           },
           {
-            "term": "On-going Process",
-            "explanation": "Within Gap Analysis, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Gap analysis rather than memorizing the phrase by itself."
+            "term": "Examples",
+            "explanation": "MFA, least privilege, device health checks, continuous evaluation, microsegmentation, and context-based access."
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Gap Analysis and describe at least two key ideas from this section.",
-        "check_a": "Gap analysis compares the current security state with a desired target such as a standard, policy, architecture, or maturity level. The “gap” is what must change to reach the target. Key ideas include: Systematic Evaluation; On-going Process.",
-        "points": [
-          "Systematic Evaluation",
-          "On-going Process"
-        ]
+        "why": "Attackers may already be inside a network, so network location alone should not establish trust.",
+        "example": "An employee is on the corporate network but still must satisfy identity and device checks before reaching a sensitive application.",
+        "exam": "Remember: never trust automatically; always verify.",
+        "check_q": "Internal users must be verified before every sensitive request. Which security model is this?",
+        "check_a": "Zero Trust."
       }
     },
     {
       "n": 3,
-      "title": "The Need",
-      "points": [
-        "Identify",
-        "Identify vulnerabilities",
-        "Prioritize",
-        "Prioritize resources",
-        "Track",
-        "Track progress",
-        "Demonstrate Demonstrate compliance"
-      ],
-      "raw": "The Need\nIdentify\nIdentify vulnerabilities\nPrioritize\nPrioritize resources\nTrack\nTrack progress\nDemonstrate Demonstrate compliance",
+      "title": "Control Plane",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "The Zero Trust control plane evaluates context and makes access decisions.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "This section focuses on **The Need** within **Gap analysis**. Gap analysis compares the current security state with a desired target such as a standard, policy, architecture, or maturity level. The “gap” is what must change to reach the target.",
-        "why": "It turns broad goals into concrete improvement work and helps prioritize resources.",
-        "example": "A company requires MFA for all privileged accounts, discovers that 30% of admin systems still use passwords only, and creates a remediation plan.",
-        "exam": "Current state versus desired state is the strongest clue for gap analysis.",
+        "learn": "The Zero Trust control plane evaluates context and makes access decisions.",
         "breakdown": [
           {
-            "term": "Identify vulnerabilities",
-            "explanation": "The goal is to discover and clearly document the condition so the organization can decide what action to take next."
+            "term": "Basically",
+            "explanation": "The brain that decides whether access should be allowed, denied, or restricted."
           },
           {
-            "term": "Prioritize resources",
-            "explanation": "Within The Need, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Gap analysis rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Track progress",
-            "explanation": "Within The Need, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Gap analysis rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Demonstrate Demonstrate compliance",
-            "explanation": "This relates to meeting and demonstrating required legal, regulatory, contractual, or policy obligations."
+            "term": "Examples",
+            "explanation": "Policy Engine, Policy Administrator, adaptive identity, threat scope reduction, and policy-driven access control."
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain The Need and describe at least two key ideas from this section.",
-        "check_a": "This section focuses on **The Need** within **Gap analysis**. Gap analysis compares the current security state with a desired target such as a standard, policy, architecture, or maturity level. The “gap” is what must change to reach the target. Key ideas include: Identify vulnerabilities; Prioritize resources; Track progress; Demonstrate Demonstrate compliance.",
-        "points": [
-          "Identify vulnerabilities",
-          "Prioritize resources",
-          "Track progress",
-          "Demonstrate Demonstrate compliance"
-        ]
+        "why": "Separating decision-making from traffic enforcement allows access decisions to be continuously evaluated.",
+        "example": "A Zero Trust system evaluates user identity, device condition, and policy before deciding whether a request may proceed.",
+        "exam": "Control plane = decides.",
+        "check_q": "Which Zero Trust plane is responsible for making access decisions?",
+        "check_a": "The control plane."
       }
     },
     {
       "n": 4,
-      "title": "Advantages",
-      "points": [
-        "Enhanced security",
-        "Reduced risk",
-        "Improved decision-making",
-        "Increased ROI",
-        "Compliance readiness"
-      ],
-      "raw": "Advantages\nEnhanced security\nReduced risk\nImproved decision-making\nIncreased ROI\nCompliance readiness",
+      "title": "Adaptive Identity",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "Adaptive identity changes authentication or access requirements based on risk and context.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "This section focuses on **Advantages** within **Gap analysis**. Gap analysis compares the current security state with a desired target such as a standard, policy, architecture, or maturity level. The “gap” is what must change to reach the target.",
-        "why": "It turns broad goals into concrete improvement work and helps prioritize resources.",
-        "example": "A company requires MFA for all privileged accounts, discovers that 30% of admin systems still use passwords only, and creates a remediation plan.",
-        "exam": "Current state versus desired state is the strongest clue for gap analysis.",
+        "learn": "Adaptive identity changes authentication or access requirements based on risk and context.",
         "breakdown": [
           {
-            "term": "Enhanced security",
-            "explanation": "This is a practical benefit of Gap analysis: it describes an outcome the organization can gain when the concept is implemented effectively."
+            "term": "Basically",
+            "explanation": "The amount of proof required can change when the situation becomes riskier."
           },
           {
-            "term": "Reduced risk",
-            "explanation": "This is a practical benefit of Gap analysis: it describes an outcome the organization can gain when the concept is implemented effectively."
-          },
-          {
-            "term": "Improved decision-making",
-            "explanation": "This is a practical benefit of Gap analysis: it describes an outcome the organization can gain when the concept is implemented effectively."
-          },
-          {
-            "term": "Increased ROI",
-            "explanation": "This is a practical benefit of Gap analysis: it describes an outcome the organization can gain when the concept is implemented effectively."
-          },
-          {
-            "term": "Compliance readiness",
-            "explanation": "This is a practical benefit of Gap analysis: it describes an outcome the organization can gain when the concept is implemented effectively."
+            "term": "Examples",
+            "explanation": "Location, device condition, time, user behavior, and risk level."
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Advantages and describe at least two key ideas from this section.",
-        "check_a": "This section focuses on **Advantages** within **Gap analysis**. Gap analysis compares the current security state with a desired target such as a standard, policy, architecture, or maturity level. The “gap” is what must change to reach the target. Key ideas include: Enhanced security; Reduced risk; Improved decision-making; Increased ROI; Compliance readiness.",
-        "points": [
-          "Enhanced security",
-          "Reduced risk",
-          "Improved decision-making",
-          "Increased ROI",
-          "Compliance readiness"
-        ]
+        "why": "A fixed authentication requirement may not be sufficient for every risk level.",
+        "example": "A user normally signs in from Washington but suddenly signs in from another country, so the system requires additional authentication.",
+        "exam": "Adaptive identity = authentication or access requirements change with context and risk.",
+        "check_q": "A login from an unusual location triggers additional verification. Which Zero Trust concept is this?",
+        "check_a": "Adaptive identity."
       }
     },
     {
       "n": 5,
-      "title": "Types",
-      "points": [
-        "Technical",
-        "Gap Analysis",
-        "Operational",
-        "Gap Analysis",
-        "Managerial",
-        "Gap Analysis"
-      ],
-      "raw": "Types\nTechnical\nGap Analysis\nOperational\nGap Analysis\nManagerial\nGap Analysis",
+      "title": "Threat Scope Reduction",
       "instructional": true,
-      "teach": "Focus on the differences between the listed types and the clue words that distinguish them in exam questions.",
+      "teach": "Threat scope reduction limits how much damage an attacker can cause if an account, device, or workload is compromised.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "This section focuses on **Types** within **Gap analysis**. Gap analysis compares the current security state with a desired target such as a standard, policy, architecture, or maturity level. The “gap” is what must change to reach the target.",
-        "why": "It turns broad goals into concrete improvement work and helps prioritize resources.",
-        "example": "A company requires MFA for all privileged accounts, discovers that 30% of admin systems still use passwords only, and creates a remediation plan.",
-        "exam": "Current state versus desired state is the strongest clue for gap analysis.",
+        "learn": "Threat scope reduction limits how much damage an attacker can cause if an account, device, or workload is compromised.",
         "breakdown": [
           {
-            "term": "Technical",
-            "explanation": "Within Types, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Gap analysis rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "Limit the blast radius."
           },
           {
-            "term": "Gap Analysis",
-            "explanation": "Gap analysis compares the current security state with a desired target such as a standard, policy, architecture, or maturity level. The “gap” is what must change to reach the target."
-          },
-          {
-            "term": "Operational",
-            "explanation": "Within Types, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Gap analysis rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Gap Analysis",
-            "explanation": "Gap analysis compares the current security state with a desired target such as a standard, policy, architecture, or maturity level. The “gap” is what must change to reach the target."
-          },
-          {
-            "term": "Managerial",
-            "explanation": "Within Types, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Gap analysis rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Gap Analysis",
-            "explanation": "Gap analysis compares the current security state with a desired target such as a standard, policy, architecture, or maturity level. The “gap” is what must change to reach the target."
+            "term": "Examples",
+            "explanation": "Least privilege, segmentation, restricted permissions, and limiting lateral movement."
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Types and describe at least two key ideas from this section.",
-        "check_a": "This section focuses on **Types** within **Gap analysis**. Gap analysis compares the current security state with a desired target such as a standard, policy, architecture, or maturity level. The “gap” is what must change to reach the target. Key ideas include: Technical; Gap Analysis; Operational; Gap Analysis; Managerial.",
-        "points": [
-          "Technical",
-          "Gap Analysis",
-          "Operational",
-          "Gap Analysis",
-          "Managerial",
-          "Gap Analysis"
-        ]
+        "why": "Compromise is less damaging when access is tightly limited.",
+        "example": "A compromised employee account can reach only one required application instead of the entire internal network.",
+        "exam": "Think least privilege, segmentation, or limiting the impact of compromise.",
+        "check_q": "A company limits each account to only the systems required for its job to reduce damage from compromise. Which concept applies?",
+        "check_a": "Threat scope reduction."
       }
     },
     {
       "n": 6,
-      "title": "Steps in Gap Analysis",
-      "points": [
-        "Define",
-        "Scope",
-        "Gather Data",
-        "Benchmark",
-        "and Analyze",
-        "Monitor and",
-        "Report",
-        "Develop",
-        "Action Plan",
-        "Identify",
-        "Gaps"
-      ],
-      "raw": "Steps in Gap Analysis\nDefine\nScope\nGather Data\nBenchmark\nand Analyze\nMonitor and\nReport\nDevelop\nAction Plan\nIdentify\nGaps",
+      "title": "Policy-driven Access Control",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "Policy-driven access control makes access decisions according to defined security policies.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Gap analysis compares the current security state with a desired target such as a standard, policy, architecture, or maturity level. The “gap” is what must change to reach the target.",
-        "why": "It turns broad goals into concrete improvement work and helps prioritize resources.",
-        "example": "A company requires MFA for all privileged accounts, discovers that 30% of admin systems still use passwords only, and creates a remediation plan.",
-        "exam": "Current state versus desired state is the strongest clue for gap analysis.",
+        "learn": "Policy-driven access control makes access decisions according to defined security policies.",
         "breakdown": [
           {
-            "term": "Define",
-            "explanation": "Within Steps in Gap Analysis, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Gap analysis rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "Rules decide whether the request is allowed."
           },
           {
-            "term": "Scope",
-            "explanation": "Within Steps in Gap Analysis, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Gap analysis rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Gather Data",
-            "explanation": "Within Steps in Gap Analysis, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Gap analysis rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Benchmark and Analyze",
-            "explanation": "Within Steps in Gap Analysis, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Gap analysis rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Monitor and Report",
-            "explanation": "Continuously observe activity or state so abnormal behavior, drift, or failure can be detected early."
-          },
-          {
-            "term": "Develop",
-            "explanation": "Within Steps in Gap Analysis, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Gap analysis rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Action Plan",
-            "explanation": "Within Steps in Gap Analysis, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Gap analysis rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Identify",
-            "explanation": "The goal is to discover and clearly document the condition so the organization can decide what action to take next."
-          },
-          {
-            "term": "Gaps",
-            "explanation": "Gap analysis compares the current security state with a desired target such as a standard, policy, architecture, or maturity level. The “gap” is what must change to reach the target."
+            "term": "Examples",
+            "explanation": "Policies can consider role, device health, location, resource sensitivity, time, and other context."
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Steps in Gap Analysis and describe at least two key ideas from this section.",
-        "check_a": "Gap analysis compares the current security state with a desired target such as a standard, policy, architecture, or maturity level. The “gap” is what must change to reach the target. Key ideas include: Define; Scope; Gather Data; Benchmark and Analyze; Monitor and Report.",
-        "points": [
-          "Define",
-          "Scope",
-          "Gather Data",
-          "Benchmark and Analyze",
-          "Monitor and Report",
-          "Develop",
-          "Action Plan",
-          "Identify",
-          "Gaps"
-        ]
+        "why": "Consistent policy evaluation supports Zero Trust's requirement to verify every request.",
+        "example": "Company policy blocks access to financial records from unmanaged devices.",
+        "exam": "If access is allowed or denied because a defined policy condition was met, think policy-driven access control.",
+        "check_q": "Access to sensitive data is denied from unmanaged devices because of company policy. What concept is this?",
+        "check_a": "Policy-driven access control."
       }
     },
     {
       "n": 7,
-      "title": "Tools and Resources",
-      "points": [
-        "Security Assessment",
-        "Tools",
-        "Compliance",
-        "Frameworks",
-        "Gap Analysis Templates",
-        "Security Consulting",
-        "Services"
-      ],
-      "raw": "Tools and Resources\nSecurity Assessment\nTools\nCompliance\nFrameworks\nGap Analysis Templates\nSecurity Consulting\nServices",
+      "title": "Policy Engine",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "The Policy Engine evaluates information and determines whether access should be granted.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Security monitoring and automation tools include SIEM for event correlation, SCAP for standardized security-content automation, DLP for controlling sensitive data movement, and SNMP for device monitoring and traps.",
-        "why": "Different tools answer different questions; knowing the purpose prevents choosing a tool that cannot observe the required layer.",
-        "example": "A network switch sends an SNMP trap for a failed interface while the SIEM correlates that event with other security logs.",
-        "exam": "SCAP = standardized security automation/content, SIEM = log/event correlation, DLP = sensitive-data movement, SNMP trap = device-generated management alert.",
+        "learn": "The Policy Engine evaluates information and determines whether access should be granted.",
         "breakdown": [
           {
-            "term": "Security Assessment",
-            "explanation": "This is one of the mechanisms used to implement or support Gap analysis. On the exam, focus on what problem it solves and where it fits."
+            "term": "Basically",
+            "explanation": "Should this request be allowed?"
           },
           {
-            "term": "Tools",
-            "explanation": "Security monitoring and automation tools include SIEM for event correlation, SCAP for standardized security-content automation, DLP for controlling sensitive data movement, and SNMP for device monitoring and traps."
-          },
-          {
-            "term": "Compliance",
-            "explanation": "Evaluate risk and verify whether controls meet organizational, legal, or regulatory requirements."
-          },
-          {
-            "term": "Frameworks",
-            "explanation": "This is one of the mechanisms used to implement or support Gap analysis. On the exam, focus on what problem it solves and where it fits."
-          },
-          {
-            "term": "Gap Analysis Templates",
-            "explanation": "Gap analysis compares the current security state with a desired target such as a standard, policy, architecture, or maturity level. The “gap” is what must change to reach the target."
-          },
-          {
-            "term": "Security Consulting",
-            "explanation": "This is one of the mechanisms used to implement or support Gap analysis. On the exam, focus on what problem it solves and where it fits."
-          },
-          {
-            "term": "Services",
-            "explanation": "This is one of the mechanisms used to implement or support Gap analysis. On the exam, focus on what problem it solves and where it fits."
+            "term": "Examples",
+            "explanation": "Identity, device posture, policy, context, and risk information can contribute to the decision."
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Tools and Resources and describe at least two key ideas from this section.",
-        "check_a": "Security monitoring and automation tools include SIEM for event correlation, SCAP for standardized security-content automation, DLP for controlling sensitive data movement, and SNMP for device monitoring and traps. Key ideas include: Security Assessment; Tools; Compliance; Frameworks; Gap Analysis Templates.",
-        "points": [
-          "Security Assessment",
-          "Tools",
-          "Compliance",
-          "Frameworks",
-          "Gap Analysis Templates",
-          "Security Consulting",
-          "Services"
-        ]
+        "why": "The Policy Engine is the decision-making component of Zero Trust access.",
+        "example": "A component analyzes identity, device health, and policy and decides to allow a request.",
+        "exam": "Policy Engine = decides.",
+        "check_q": "Which Zero Trust component determines whether a request should be allowed?",
+        "check_a": "The Policy Engine."
       }
     },
     {
       "n": 8,
-      "title": "Zero Trust",
-      "points": [],
-      "raw": "Zero Trust",
-      "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "Zero Trust",
-          "Security model that assumes no implicit trust and continuously verifies identities, devices, context, and access requests."
-        ]
-      ]
+      "title": "Policy Administrator",
+      "instructional": true,
+      "teach": "The Policy Administrator carries out the Policy Engine's decision by establishing, changing, or terminating the connection through the enforcement mechanism.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "The Policy Administrator carries out the Policy Engine's decision by establishing, changing, or terminating the connection through the enforcement mechanism.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "The Policy Engine decides; the Policy Administrator makes that decision happen."
+          },
+          {
+            "term": "Examples",
+            "explanation": "It communicates the decision so access can be established or removed."
+          }
+        ],
+        "defs": [],
+        "why": "The decision must be translated into an action that can be enforced.",
+        "example": "The Policy Engine approves a request, and another component coordinates creation of the permitted connection.",
+        "exam": "Policy Administrator = executes the Policy Engine's decision.",
+        "check_q": "Which component acts on the Policy Engine's decision to establish or end access?",
+        "check_a": "The Policy Administrator."
+      }
+    },
+    {
+      "n": 9,
+      "title": "Data Plane",
+      "instructional": true,
+      "teach": "The Zero Trust data plane is where subjects communicate with and use protected resources after policy decisions are enforced.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "The Zero Trust data plane is where subjects communicate with and use protected resources after policy decisions are enforced.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "This is where the actual connection and data traffic occur."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Subject/system communication and the Policy Enforcement Point operate in the data plane."
+          }
+        ],
+        "defs": [],
+        "why": "The control plane decides; the data plane carries the permitted communication.",
+        "example": "After access is approved, a user's traffic passes through the enforcement point to the application.",
+        "exam": "Data plane = actual access and communication.",
+        "check_q": "Which Zero Trust plane carries the permitted communication to the resource?",
+        "check_a": "The data plane."
+      }
+    },
+    {
+      "n": 10,
+      "title": "Implicit Trust Zones",
+      "instructional": true,
+      "teach": "Implicit trust zones are areas where users or devices are trusted automatically because of their location or network position.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Implicit trust zones are areas where users or devices are trusted automatically because of their location or network position.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "You're inside, so you're trusted—the assumption Zero Trust tries to remove."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Traditional internal network trust is a common example."
+          }
+        ],
+        "defs": [],
+        "why": "Zero Trust seeks to reduce or eliminate automatic trust based solely on network location.",
+        "example": "An old network design assumes every device on the internal LAN is trusted without further verification.",
+        "exam": "Implicit trust = automatic trust based on location; Zero Trust minimizes it.",
+        "check_q": "An internal network automatically trusts any connected device. What Zero Trust concern is this?",
+        "check_a": "An implicit trust zone."
+      }
+    },
+    {
+      "n": 11,
+      "title": "Subject/System",
+      "instructional": true,
+      "teach": "In Zero Trust, the subject is the user, device, application, or service requesting access, and the system is the protected resource being accessed.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "In Zero Trust, the subject is the user, device, application, or service requesting access, and the system is the protected resource being accessed.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Subject wants access; system has the resource."
+          },
+          {
+            "term": "Examples",
+            "explanation": "A user's laptop can be the subject and a payroll application can be the system/resource."
+          }
+        ],
+        "defs": [],
+        "why": "Understanding who is requesting access and what resource is targeted is necessary for policy evaluation.",
+        "example": "An employee laptop requests access to a payroll server.",
+        "exam": "Subject = requester; system/resource = destination being requested.",
+        "check_q": "A laptop requests access to a payroll server. Which one is the subject?",
+        "check_a": "The laptop/requesting user or device."
+      }
+    },
+    {
+      "n": 12,
+      "title": "Policy Enforcement Point",
+      "instructional": true,
+      "teach": "The Policy Enforcement Point (PEP) is the component that actually enforces the access decision.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "The Policy Enforcement Point (PEP) is the component that actually enforces the access decision.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "The gatekeeper."
+          },
+          {
+            "term": "Examples",
+            "explanation": "It can allow, deny, or terminate connections according to policy decisions."
+          }
+        ],
+        "defs": [],
+        "why": "A Zero Trust decision has no effect unless something enforces it at the point of access.",
+        "example": "After a request is denied, the PEP blocks the user's connection to the application.",
+        "exam": "PEP = enforces.",
+        "check_q": "Which Zero Trust component actually allows or blocks the connection?",
+        "check_a": "The Policy Enforcement Point."
+      }
     }
   ],
-  "slide_count": 8,
-  "instructional_count": 6,
+  "slide_count": 12,
+  "instructional_count": 11,
   "concepts": [
-    "The Need",
-    "Advantages",
-    "Types",
-    "Steps in Gap Analysis",
-    "Tools and Resources"
+    "Zero Trust",
+    "Control Plane",
+    "Adaptive Identity",
+    "Threat Scope Reduction",
+    "Policy-driven Access Control",
+    "Policy Engine",
+    "Policy Administrator",
+    "Data Plane",
+    "Implicit Trust Zones",
+    "Subject/System",
+    "Policy Enforcement Point"
   ],
-  "source_filename": "02.04_Gap_analysis.pdf"
+  "source_filename": "02-04.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Zero Trust",
+      "title": "Never trust automatically. Always verify.",
+      "intro": "Learn the Zero Trust model, its Control Plane and Data Plane, and how access decisions move from decision to enforcement."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Foundation",
+        "title": "Zero Trust Overview",
+        "prompt": "How are access decisions made and enforced?",
+        "badge": "VERIFY",
+        "cards": [
+          {
+            "name": "Zero Trust",
+            "definition": "No user, device, or connection is automatically trusted, even when already inside the network.",
+            "examples": [
+              "MFA",
+              "Least privilege",
+              "Device health checks",
+              "Continuous evaluation"
+            ],
+            "memory": "NEVER TRUST automatically; ALWAYS VERIFY"
+          },
+          {
+            "name": "Control Plane",
+            "definition": "The part of Zero Trust that evaluates context and makes access decisions.",
+            "examples": [
+              "Policy Engine",
+              "Policy Administrator",
+              "Adaptive identity",
+              "Policy-driven access"
+            ],
+            "memory": "DECIDES"
+          },
+          {
+            "name": "Data Plane",
+            "definition": "The part where permitted communication and resource access actually occur.",
+            "examples": [
+              "Subject/System traffic",
+              "Policy Enforcement Point"
+            ],
+            "memory": "CARRIES ACCESS"
+          }
+        ],
+        "columns": "three"
+      },
+      {
+        "type": "group",
+        "eyebrow": "Control Plane",
+        "title": "Control Plane Components",
+        "prompt": "What information and components determine the access decision?",
+        "badge": "DECIDES",
+        "cards": [
+          {
+            "name": "Adaptive Identity",
+            "definition": "Authentication or access requirements change based on risk and context.",
+            "examples": [
+              "Location",
+              "Device condition",
+              "Time",
+              "User behavior"
+            ],
+            "memory": "RISK changes verification"
+          },
+          {
+            "name": "Threat Scope Reduction",
+            "definition": "Limiting how much damage an attacker can cause after a compromise.",
+            "examples": [
+              "Least privilege",
+              "Segmentation",
+              "Restricted permissions"
+            ],
+            "memory": "LIMIT THE BLAST RADIUS"
+          },
+          {
+            "name": "Policy-driven Access Control",
+            "definition": "Access decisions are based on defined security policies and context.",
+            "examples": [
+              "Role",
+              "Device health",
+              "Location",
+              "Resource sensitivity"
+            ],
+            "memory": "RULES decide access"
+          },
+          {
+            "name": "Policy Administrator",
+            "definition": "Carries out the Policy Engine's decision by establishing, changing, or terminating access.",
+            "examples": [
+              "Coordinates allowed connection",
+              "Ends denied/expired access"
+            ],
+            "memory": "EXECUTES the decision"
+          },
+          {
+            "name": "Policy Engine",
+            "definition": "Evaluates information and decides whether access should be granted.",
+            "examples": [
+              "Identity",
+              "Device posture",
+              "Policy",
+              "Risk"
+            ],
+            "memory": "DECIDES"
+          }
+        ],
+        "columns": "three"
+      },
+      {
+        "type": "group",
+        "eyebrow": "Data Plane",
+        "title": "Data Plane Components",
+        "prompt": "Where is access used and enforced?",
+        "badge": "ENFORCES",
+        "cards": [
+          {
+            "name": "Implicit Trust Zones",
+            "definition": "Areas where users or devices are trusted automatically because of location or network position.",
+            "examples": [
+              "Traditional trusted LAN",
+              "Automatic internal trust"
+            ],
+            "memory": "AUTOMATIC trust — minimize it"
+          },
+          {
+            "name": "Subject/System",
+            "definition": "The subject requests access; the system is the protected resource being requested.",
+            "examples": [
+              "User/device → application",
+              "Service → protected resource"
+            ],
+            "memory": "REQUESTER → RESOURCE"
+          },
+          {
+            "name": "Policy Enforcement Point",
+            "definition": "The component that actually enforces the access decision.",
+            "examples": [
+              "Allow connection",
+              "Deny connection",
+              "Terminate connection"
+            ],
+            "memory": "GATEKEEPER / ENFORCES"
+          }
+        ],
+        "columns": "three"
+      },
+      {
+        "type": "tip",
+        "kicker": "Zero Trust Memory",
+        "title": "How a Zero Trust access decision is made and enforced",
+        "items": [
+          [
+            "Policy Engine",
+            "Decides whether the request should be allowed"
+          ],
+          [
+            "Policy Administrator",
+            "Acts on the decision to establish or terminate access"
+          ],
+          [
+            "Policy Enforcement Point",
+            "Actually enforces the decision"
+          ]
+        ],
+        "example": "Control Plane = decides · Data Plane = carries permitted access."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A user on the internal network must still pass identity and device checks before accessing a sensitive application. Which model is this?",
+        "choices": [
+          "Zero Trust",
+          "Implicit trust",
+          "Gap analysis",
+          "Honeynet"
+        ],
+        "answer": 0,
+        "explanation": "Zero Trust does not automatically trust a user or device based on network location."
+      },
+      {
+        "q": "Which Zero Trust component evaluates context and decides whether access should be allowed?",
+        "choices": [
+          "Policy Enforcement Point",
+          "Policy Engine",
+          "Subject/System",
+          "Data Plane"
+        ],
+        "answer": 1,
+        "explanation": "The Policy Engine makes the access decision."
+      },
+      {
+        "q": "Which component acts on the Policy Engine's decision to establish or terminate access?",
+        "choices": [
+          "Policy Administrator",
+          "Policy Enforcement Point",
+          "Subject",
+          "Implicit trust zone"
+        ],
+        "answer": 0,
+        "explanation": "The Policy Administrator carries out the Policy Engine's decision."
+      },
+      {
+        "q": "Which component actually allows, blocks, or terminates a connection at the access point?",
+        "choices": [
+          "Policy Engine",
+          "Policy Administrator",
+          "Policy Enforcement Point",
+          "Adaptive identity"
+        ],
+        "answer": 2,
+        "explanation": "The Policy Enforcement Point enforces the decision."
+      },
+      {
+        "q": "A login from an unusual country causes the system to require additional verification. Which Zero Trust concept is this?",
+        "choices": [
+          "Adaptive identity",
+          "Threat scope reduction",
+          "Implicit trust zone",
+          "Accounting"
+        ],
+        "answer": 0,
+        "explanation": "Adaptive identity changes verification requirements based on risk and context."
+      },
+      {
+        "q": "A compromised account can reach only one required application instead of the entire network. Which concept is being used?",
+        "choices": [
+          "Threat scope reduction",
+          "Non-repudiation",
+          "Availability",
+          "Honeytoken"
+        ],
+        "answer": 0,
+        "explanation": "Threat scope reduction limits the blast radius of a compromise."
+      },
+      {
+        "q": "Company policy blocks access to sensitive data from unmanaged devices. Which Zero Trust concept is MOST directly demonstrated?",
+        "choices": [
+          "Policy-driven access control",
+          "Implicit trust",
+          "Accounting",
+          "Disruption"
+        ],
+        "answer": 0,
+        "explanation": "The access decision is being made according to a defined security policy."
+      },
+      {
+        "q": "An internal LAN automatically trusts every connected device. Which Zero Trust concern does this represent?",
+        "choices": [
+          "Implicit trust zone",
+          "Adaptive identity",
+          "Policy Administrator",
+          "Threat scope reduction"
+        ],
+        "answer": 0,
+        "explanation": "An implicit trust zone grants automatic trust based on location, which Zero Trust seeks to reduce."
+      }
+    ]
+  }
 }
