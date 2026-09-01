@@ -250,7 +250,11 @@ function FundamentalTopicLesson({ lesson, previous, next, learning, done, master
           <span className="sc-kicker">{block.kicker}</span>
           <h3>{block.title}</h3>
           <div className="sc-tip-grid">
-            {block.items.map((item, j) => <div key={`${item[0]}-${j}`}><strong>{item[0]}</strong><p>{item[1]}</p></div>)}
+            {block.items.map((item, j) => <div className="sc-tip-item" key={`${item[0]}-${j}`}>
+              <strong>{item[0]}</strong>
+              <p>{item[1]}</p>
+              {item[2] && <div className="sc-tip-example">{item[2]}</div>}
+            </div>)}
           </div>
           {block.example && <div className="sc-example">{block.example}</div>}
         </aside>;
