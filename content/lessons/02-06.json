@@ -2,266 +2,624 @@
   "id": "02.06",
   "chapter": 2,
   "sub": 6,
-  "title": "Physical security",
+  "title": "Physical Security",
   "chapter_name": "Fundamental Security Concepts",
   "slides": [
     {
       "n": 1,
-      "title": "Physical Security",
-      "points": [],
-      "raw": "Physical Security",
+      "title": "Lesson Overview",
       "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": []
+      "teach": "",
+      "points": [
+        "Bollards",
+        "Access Control Vestibule",
+        "Fencing",
+        "Video Surveillance",
+        "Security Guard",
+        "Access Badge",
+        "Lighting",
+        "Infrared Sensor",
+        "Pressure Sensor",
+        "Microwave Sensor",
+        "Ultrasonic Sensor"
+      ],
+      "defs": [],
+      "raw": ""
     },
     {
       "n": 2,
-      "title": "Physical Security",
-      "points": [
-        "Perimeter",
-        "security",
-        "Data center",
-        "security",
-        "Device security",
-        "Document",
-        "security",
-        "Inventory",
-        "management",
-        "Disaster",
-        "preparedness"
-      ],
-      "raw": "Physical Security\nPerimeter\nsecurity\nData center\nsecurity\nDevice security\nDocument\nsecurity\nInventory\nmanagement\nDisaster\npreparedness",
+      "title": "Bollards",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "Bollards are strong physical posts or barriers placed around facilities to stop or redirect vehicles.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Physical security protects people, buildings, devices, documents, and infrastructure from unauthorized physical access, theft, tampering, or environmental harm.",
-        "why": "An attacker who can physically reach equipment may bypass many logical controls, so cybersecurity includes doors, barriers, surveillance, and environmental protections.",
-        "example": "A data center uses fencing, bollards, badge access, an access-control vestibule, guards, cameras, and locked racks.",
-        "exam": "Match the control to the threat: bollards stop vehicles; vestibules reduce tailgating; cameras detect/deter; badges control entry.",
+        "learn": "Bollards are strong physical posts or barriers placed around facilities to stop or redirect vehicles.",
         "breakdown": [
           {
-            "term": "Perimeter security",
-            "explanation": "This contributes to reducing risk in the broader Physical security design and should be evaluated as part of defense in depth."
+            "term": "Basically",
+            "explanation": "Vehicle blockers."
           },
           {
-            "term": "Data center security",
-            "explanation": "This contributes to reducing risk in the broader Physical security design and should be evaluated as part of defense in depth."
-          },
-          {
-            "term": "Device security",
-            "explanation": "This contributes to reducing risk in the broader Physical security design and should be evaluated as part of defense in depth."
-          },
-          {
-            "term": "Document security",
-            "explanation": "This contributes to reducing risk in the broader Physical security design and should be evaluated as part of defense in depth."
-          },
-          {
-            "term": "Inventory management",
-            "explanation": "Within Physical Security, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Physical security rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Disaster preparedness",
-            "explanation": "Within Physical Security, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Physical security rather than memorizing the phrase by itself."
+            "term": "Examples",
+            "explanation": "Steel posts, concrete posts, and protective vehicle barriers."
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Physical Security and describe at least two key ideas from this section.",
-        "check_a": "Physical security protects people, buildings, devices, documents, and infrastructure from unauthorized physical access, theft, tampering, or environmental harm. Key ideas include: Perimeter security; Data center security; Device security; Document security; Inventory management.",
-        "points": [
-          "Perimeter security",
-          "Data center security",
-          "Device security",
-          "Document security",
-          "Inventory management",
-          "Disaster preparedness"
-        ]
+        "why": "Bollards protect entrances, buildings, and pedestrian areas from vehicle intrusion.",
+        "example": "A data center installs reinforced steel posts in front of its entrance to prevent vehicles from reaching the doors.",
+        "exam": "Bollards = stop vehicles.",
+        "check_q": "Which physical control is specifically designed to stop vehicles from reaching a building?",
+        "check_a": "Bollards."
       }
     },
     {
       "n": 3,
-      "title": "Benefits",
-      "points": [
-        "• Prevents data breaches",
-        "• Mitigates cyberattacks",
-        "• Improves compliance",
-        "• Reduces overall risk"
-      ],
-      "raw": "Benefits\n• Prevents data breaches\n• Mitigates cyberattacks\n• Improves compliance\n• Reduces overall risk",
+      "title": "Access Control Vestibule",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "An access control vestibule is a small secured area with two controlled doors used to regulate entry into a protected space.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "This section focuses on **Benefits** within **Physical security**. Physical security protects people, buildings, devices, documents, and infrastructure from unauthorized physical access, theft, tampering, or environmental harm.",
-        "why": "An attacker who can physically reach equipment may bypass many logical controls, so cybersecurity includes doors, barriers, surveillance, and environmental protections.",
-        "example": "A data center uses fencing, bollards, badge access, an access-control vestibule, guards, cameras, and locked racks.",
-        "exam": "Match the control to the threat: bollards stop vehicles; vestibules reduce tailgating; cameras detect/deter; badges control entry.",
+        "learn": "An access control vestibule is a small secured area with two controlled doors used to regulate entry into a protected space.",
         "breakdown": [
           {
-            "term": "Prevents data breaches",
-            "explanation": "This is a practical benefit of Physical security: it describes an outcome the organization can gain when the concept is implemented effectively."
+            "term": "Basically",
+            "explanation": "One door closes before the next opens."
           },
           {
-            "term": "Mitigates cyberattacks",
-            "explanation": "This is a practical benefit of Physical security: it describes an outcome the organization can gain when the concept is implemented effectively."
-          },
-          {
-            "term": "Improves compliance",
-            "explanation": "This is a practical benefit of Physical security: it describes an outcome the organization can gain when the concept is implemented effectively."
-          },
-          {
-            "term": "Reduces overall risk",
-            "explanation": "This is a practical benefit of Physical security: it describes an outcome the organization can gain when the concept is implemented effectively."
+            "term": "Examples",
+            "explanation": "Two-door vestibules and mantrap-style entry areas."
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Benefits and describe at least two key ideas from this section.",
-        "check_a": "This section focuses on **Benefits** within **Physical security**. Physical security protects people, buildings, devices, documents, and infrastructure from unauthorized physical access, theft, tampering, or environmental harm. Key ideas include: Prevents data breaches; Mitigates cyberattacks; Improves compliance; Reduces overall risk.",
-        "points": [
-          "Prevents data breaches",
-          "Mitigates cyberattacks",
-          "Improves compliance",
-          "Reduces overall risk"
-        ]
+        "why": "The vestibule helps prevent tailgating and unauthorized entry.",
+        "example": "A user badges through the first door and must wait for it to close before the second door unlocks.",
+        "exam": "Access control vestibule = two controlled doors.",
+        "check_q": "Which control uses two doors so one closes before the other opens?",
+        "check_a": "An access control vestibule."
       }
     },
     {
       "n": 4,
-      "title": "Physical Security Elements",
-      "points": [
-        "Bollards",
-        "Access",
-        "control",
-        "vestibule",
-        "Security",
-        "guard",
-        "Fencing",
-        "Access badge",
-        "Video",
-        "surveillance",
-        "Lighting"
-      ],
-      "raw": "Physical Security Elements\nBollards\nAccess\ncontrol\nvestibule\nSecurity\nguard\nFencing\nAccess badge\nVideo\nsurveillance\nLighting",
+      "title": "Fencing",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "Fencing is a physical barrier used to define and protect a perimeter.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Physical security protects people, buildings, devices, documents, and infrastructure from unauthorized physical access, theft, tampering, or environmental harm.",
-        "why": "An attacker who can physically reach equipment may bypass many logical controls, so cybersecurity includes doors, barriers, surveillance, and environmental protections.",
-        "example": "A data center uses fencing, bollards, badge access, an access-control vestibule, guards, cameras, and locked racks.",
-        "exam": "Match the control to the threat: bollards stop vehicles; vestibules reduce tailgating; cameras detect/deter; badges control entry.",
+        "learn": "Fencing is a physical barrier used to define and protect a perimeter.",
         "breakdown": [
           {
-            "term": "Bollards",
-            "explanation": "Strong posts or barriers that prevent vehicles from reaching protected buildings or areas."
+            "term": "Basically",
+            "explanation": "Keep unauthorized people away from the protected area."
           },
           {
-            "term": "Access control",
-            "explanation": "Use hard-to-guess credentials and limit what authenticated users can reach."
-          },
-          {
-            "term": "vestibule",
-            "explanation": "A two-door controlled-entry space (often called a mantrap) designed to reduce tailgating and unauthorized entry."
-          },
-          {
-            "term": "Security guard",
-            "explanation": "This contributes to reducing risk in the broader Physical security design and should be evaluated as part of defense in depth."
-          },
-          {
-            "term": "Fencing",
-            "explanation": "Within Physical Security Elements, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Physical security rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Access badge",
-            "explanation": "This concerns who or what can reach a resource and what actions are permitted once access is granted."
-          },
-          {
-            "term": "Video surveillance",
-            "explanation": "Records or monitors physical areas to deter activity and provide evidence."
-          },
-          {
-            "term": "Lighting",
-            "explanation": "Improves visibility and can deter physical intrusion by reducing concealment."
+            "term": "Examples",
+            "explanation": "Chain-link fencing, anti-climb fencing, and other perimeter barriers."
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Physical Security Elements and describe at least two key ideas from this section.",
-        "check_a": "Physical security protects people, buildings, devices, documents, and infrastructure from unauthorized physical access, theft, tampering, or environmental harm. Key ideas include: Bollards; Access control; vestibule; Security guard; Fencing.",
-        "points": [
-          "Bollards",
-          "Access control",
-          "vestibule",
-          "Security guard",
-          "Fencing",
-          "Access badge",
-          "Video surveillance",
-          "Lighting"
-        ]
+        "why": "Fencing increases distance and difficulty for unauthorized physical access.",
+        "example": "A facility installs anti-climb fencing around its entire property boundary.",
+        "exam": "Fencing = perimeter protection.",
+        "check_q": "Which physical control primarily protects the perimeter of a property?",
+        "check_a": "Fencing."
       }
     },
     {
       "n": 5,
-      "title": "Sensors",
-      "points": [
-        "Infrared",
-        "Pressure",
-        "Microwave",
-        "Ultrasonic"
-      ],
-      "raw": "Sensors\nInfrared\nPressure\nMicrowave\nUltrasonic",
+      "title": "Video Surveillance",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "Video surveillance uses cameras to monitor and record activity around protected areas.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Physical sensors detect environmental or movement conditions that may indicate intrusion or danger. Different sensors detect heat, pressure, microwave reflection, sound, motion, moisture, or other changes.",
-        "why": "Sensors extend monitoring into the physical environment and can provide early warning before damage occurs.",
-        "example": "An infrared motion sensor detects a person entering a restricted room after hours and triggers an alarm.",
-        "exam": "CompTIA may ask which sensor best fits a physical condition. Focus on what each technology detects.",
+        "learn": "Video surveillance uses cameras to monitor and record activity around protected areas.",
         "breakdown": [
           {
-            "term": "Infrared",
-            "explanation": "Within Sensors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Physical security rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "See and record what happens."
           },
           {
-            "term": "Pressure",
-            "explanation": "Within Sensors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Physical security rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Microwave",
-            "explanation": "Within Sensors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Physical security rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Ultrasonic",
-            "explanation": "Within Sensors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Physical security rather than memorizing the phrase by itself."
+            "term": "Examples",
+            "explanation": "CCTV, security cameras, recorded video, and monitored camera feeds."
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Sensors and describe at least two key ideas from this section.",
-        "check_a": "Physical sensors detect environmental or movement conditions that may indicate intrusion or danger. Different sensors detect heat, pressure, microwave reflection, sound, motion, moisture, or other changes. Key ideas include: Infrared; Pressure; Microwave; Ultrasonic.",
-        "points": [
-          "Infrared",
-          "Pressure",
-          "Microwave",
-          "Ultrasonic"
-        ]
+        "why": "Video can deter intruders, detect activity, and provide evidence after an incident.",
+        "example": "Security personnel review recorded camera footage to identify who entered a server room.",
+        "exam": "Video surveillance = see and record.",
+        "check_q": "Which physical control provides recorded visual evidence of activity?",
+        "check_a": "Video surveillance."
       }
     },
     {
       "n": 6,
-      "title": "Deception and Disruption Technology",
-      "points": [],
-      "raw": "Deception and Disruption\nTechnology",
-      "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": []
+      "title": "Security Guard",
+      "instructional": true,
+      "teach": "A security guard is a person who monitors and protects a physical location.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "A security guard is a person who monitors and protects a physical location.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Human physical security."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Checking identification, patrolling, monitoring entrances, and responding to incidents."
+          }
+        ],
+        "defs": [],
+        "why": "Human guards can make contextual decisions and respond to events that automated controls may not handle.",
+        "example": "A guard checks visitor identification before allowing entry to a restricted facility.",
+        "exam": "Security guard = human protection.",
+        "check_q": "Which physical control uses a person to verify visitors and respond to incidents?",
+        "check_a": "A security guard."
+      }
+    },
+    {
+      "n": 7,
+      "title": "Access Badge",
+      "instructional": true,
+      "teach": "An access badge is a physical credential used to identify a person and control entry to a protected area.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "An access badge is a physical credential used to identify a person and control entry to a protected area.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "A physical access credential."
+          },
+          {
+            "term": "Examples",
+            "explanation": "RFID badge, smart badge, proximity card, and employee ID credential."
+          }
+        ],
+        "defs": [],
+        "why": "Badges help restrict physical entry to authorized personnel.",
+        "example": "An employee taps an RFID badge to unlock the server-room door.",
+        "exam": "Access badge = physical credential.",
+        "check_q": "Which physical security mechanism commonly uses RFID to control door access?",
+        "check_a": "An access badge."
+      }
+    },
+    {
+      "n": 8,
+      "title": "Lighting",
+      "instructional": true,
+      "teach": "Security lighting uses adequate illumination to make suspicious activity easier to see and less attractive to attackers.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Security lighting uses adequate illumination to make suspicious activity easier to see and less attractive to attackers.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Improve visibility."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Exterior lighting, parking-lot lighting, and illuminated entrances."
+          }
+        ],
+        "defs": [],
+        "why": "Lighting can deter intruders and improve camera and guard effectiveness.",
+        "example": "A company improves lighting around a dark loading area so cameras can capture clearer images at night.",
+        "exam": "Lighting = visibility.",
+        "check_q": "Which physical control improves visibility for guards and cameras at night?",
+        "check_a": "Lighting."
+      }
+    },
+    {
+      "n": 9,
+      "title": "Infrared Sensor",
+      "instructional": true,
+      "teach": "An infrared sensor detects infrared energy, commonly body heat or changes associated with movement.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "An infrared sensor detects infrared energy, commonly body heat or changes associated with movement.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Detect heat."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Passive infrared motion detectors are common physical-security sensors."
+          }
+        ],
+        "defs": [],
+        "why": "Infrared detection can identify a person entering a protected area.",
+        "example": "A sensor detects a person's body heat as they enter a room.",
+        "exam": "Infrared = heat.",
+        "check_q": "Which sensor commonly detects body heat?",
+        "check_a": "An infrared sensor."
+      }
+    },
+    {
+      "n": 10,
+      "title": "Pressure Sensor",
+      "instructional": true,
+      "teach": "A pressure sensor detects physical pressure or weight.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "A pressure sensor detects physical pressure or weight.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Something stepped on or pressed it."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Pressure mats, floor sensors, and weight-sensitive pads."
+          }
+        ],
+        "defs": [],
+        "why": "Pressure sensors can reveal when someone stands on or crosses a monitored area.",
+        "example": "A hidden mat triggers an alarm when someone steps on it.",
+        "exam": "Pressure = weight.",
+        "check_q": "Which sensor is activated when someone steps on a monitored mat?",
+        "check_a": "A pressure sensor."
+      }
+    },
+    {
+      "n": 11,
+      "title": "Microwave Sensor",
+      "instructional": true,
+      "teach": "A microwave sensor transmits microwave energy and detects changes caused by movement.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "A microwave sensor transmits microwave energy and detects changes caused by movement.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Use microwave/radio energy to detect motion."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Microwave motion detectors."
+          }
+        ],
+        "defs": [],
+        "why": "These sensors can detect movement by measuring changes in reflected microwave signals.",
+        "example": "A detector identifies movement by measuring changes in reflected microwave energy.",
+        "exam": "Microwave = radio/motion.",
+        "check_q": "Which sensor uses microwave energy to detect movement?",
+        "check_a": "A microwave sensor."
+      }
+    },
+    {
+      "n": 12,
+      "title": "Ultrasonic Sensor",
+      "instructional": true,
+      "teach": "An ultrasonic sensor uses high-frequency sound waves to detect movement or distance.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "An ultrasonic sensor uses high-frequency sound waves to detect movement or distance.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Use sound to detect movement."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Ultrasonic motion and proximity sensors."
+          }
+        ],
+        "defs": [],
+        "why": "Changes in reflected sound can reveal movement in a protected space.",
+        "example": "A sensor sends high-frequency sound waves and detects movement from the returning signal.",
+        "exam": "Ultrasonic = sound.",
+        "check_q": "Which sensor uses high-frequency sound waves?",
+        "check_a": "An ultrasonic sensor."
+      }
     }
   ],
-  "slide_count": 6,
-  "instructional_count": 4,
+  "slide_count": 12,
+  "instructional_count": 11,
   "concepts": [
-    "Benefits",
-    "Physical Security Elements",
-    "Sensors"
+    "Bollards",
+    "Access Control Vestibule",
+    "Fencing",
+    "Video Surveillance",
+    "Security Guard",
+    "Access Badge",
+    "Lighting",
+    "Infrared Sensor",
+    "Pressure Sensor",
+    "Microwave Sensor",
+    "Ultrasonic Sensor"
   ],
-  "source_filename": "02.06_Physical_security.pdf"
+  "source_filename": "02-06.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Physical Security",
+      "title": "Protect facilities, people, and equipment",
+      "intro": "Learn the physical controls and sensor types listed in Security+ Objective 1.2."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Physical Controls",
+        "title": "Barriers, Monitoring, and Access",
+        "prompt": "Which physical control best addresses the scenario?",
+        "badge": "PHYSICAL",
+        "cards": [
+          {
+            "name": "Bollards",
+            "definition": "Strong posts or barriers used to stop or redirect vehicles.",
+            "examples": [
+              "Steel posts",
+              "Concrete vehicle barriers"
+            ],
+            "memory": "STOP VEHICLES"
+          },
+          {
+            "name": "Access Control Vestibule",
+            "definition": "A secured two-door entry area used to control access to a protected space.",
+            "examples": [
+              "Two controlled doors",
+              "Mantrap-style entry"
+            ],
+            "memory": "TWO DOORS"
+          },
+          {
+            "name": "Fencing",
+            "definition": "A physical barrier used to define and protect a perimeter.",
+            "examples": [
+              "Chain-link fence",
+              "Anti-climb fencing"
+            ],
+            "memory": "PERIMETER"
+          },
+          {
+            "name": "Video Surveillance",
+            "definition": "Cameras used to monitor and record activity.",
+            "examples": [
+              "CCTV",
+              "Recorded security footage"
+            ],
+            "memory": "SEE + RECORD"
+          },
+          {
+            "name": "Security Guard",
+            "definition": "A person who monitors and protects a physical location.",
+            "examples": [
+              "Check IDs",
+              "Patrol",
+              "Respond to incidents"
+            ],
+            "memory": "HUMAN protection"
+          },
+          {
+            "name": "Access Badge",
+            "definition": "A physical credential used to identify a person and control entry.",
+            "examples": [
+              "RFID badge",
+              "Smart badge",
+              "Proximity card"
+            ],
+            "memory": "PHYSICAL credential"
+          },
+          {
+            "name": "Lighting",
+            "definition": "Illumination used to improve visibility and deter suspicious activity.",
+            "examples": [
+              "Exterior lighting",
+              "Parking-lot lighting"
+            ],
+            "memory": "VISIBILITY"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "group",
+        "eyebrow": "Sensors",
+        "title": "Physical Security Sensors",
+        "prompt": "What does the sensor detect or use?",
+        "badge": "SENSORS",
+        "cards": [
+          {
+            "name": "Infrared Sensor",
+            "definition": "Detects infrared energy, commonly body heat or changes associated with movement.",
+            "examples": [
+              "Body heat",
+              "Passive infrared motion detection"
+            ],
+            "memory": "HEAT"
+          },
+          {
+            "name": "Pressure Sensor",
+            "definition": "Detects physical pressure or weight.",
+            "examples": [
+              "Pressure mat",
+              "Floor sensor"
+            ],
+            "memory": "WEIGHT"
+          },
+          {
+            "name": "Microwave Sensor",
+            "definition": "Uses microwave energy and detects movement from changes in reflected signals.",
+            "examples": [
+              "Microwave motion detector"
+            ],
+            "memory": "RADIO / MOTION"
+          },
+          {
+            "name": "Ultrasonic Sensor",
+            "definition": "Uses high-frequency sound waves to detect movement or distance.",
+            "examples": [
+              "Ultrasonic motion sensor"
+            ],
+            "memory": "SOUND"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Sensor shortcut",
+        "headers": [
+          "Sensor",
+          "Remember",
+          "Scenario clue"
+        ],
+        "rows": [
+          [
+            "Infrared",
+            "HEAT",
+            "Detects body heat / infrared energy"
+          ],
+          [
+            "Pressure",
+            "WEIGHT",
+            "Triggers when something presses or steps on it"
+          ],
+          [
+            "Microwave",
+            "RADIO / MOTION",
+            "Detects movement using microwave energy"
+          ],
+          [
+            "Ultrasonic",
+            "SOUND",
+            "Detects movement using high-frequency sound"
+          ]
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "q": "A company installs reinforced posts in front of a data-center entrance to prevent vehicle intrusion. Which physical control is being used?",
+        "choices": [
+          "Bollards",
+          "Fencing",
+          "Lighting",
+          "Access badges"
+        ],
+        "answer": 0,
+        "explanation": "Bollards are strong posts or barriers designed to stop or redirect vehicles."
+      },
+      {
+        "q": "An employee badges through one door and must wait for it to close before the next door unlocks. Which control is this?",
+        "choices": [
+          "Access control vestibule",
+          "Video surveillance",
+          "Fencing",
+          "Bollard"
+        ],
+        "answer": 0,
+        "explanation": "An access control vestibule uses two controlled doors to regulate entry."
+      },
+      {
+        "q": "A hidden floor mat triggers an alarm when someone steps on it. Which sensor is being used?",
+        "choices": [
+          "Pressure",
+          "Infrared",
+          "Microwave",
+          "Ultrasonic"
+        ],
+        "answer": 0,
+        "explanation": "A pressure sensor detects physical pressure or weight."
+      },
+      {
+        "q": "A motion detector senses body heat entering a restricted room. Which sensor type is MOST likely being used?",
+        "choices": [
+          "Infrared",
+          "Pressure",
+          "Microwave",
+          "Ultrasonic"
+        ],
+        "answer": 0,
+        "explanation": "Infrared sensors commonly detect changes in infrared energy such as body heat."
+      },
+      {
+        "q": "A detector uses high-frequency sound waves to identify movement. Which sensor type is this?",
+        "choices": [
+          "Ultrasonic",
+          "Microwave",
+          "Infrared",
+          "Pressure"
+        ],
+        "answer": 0,
+        "explanation": "Ultrasonic sensors use high-frequency sound waves."
+      },
+      {
+        "q": "Which sensor detects movement by measuring changes in reflected microwave energy?",
+        "choices": [
+          "Microwave",
+          "Pressure",
+          "Infrared",
+          "Ultrasonic"
+        ],
+        "answer": 0,
+        "explanation": "Microwave sensors use microwave energy and changes in reflected signals to detect motion."
+      },
+      {
+        "q": "Which physical control is primarily used to define and protect the perimeter of a property?",
+        "choices": [
+          "Fencing",
+          "Access badge",
+          "Lighting",
+          "Video surveillance"
+        ],
+        "answer": 0,
+        "explanation": "Fencing is a physical perimeter barrier."
+      }
+    ]
+  }
 }
