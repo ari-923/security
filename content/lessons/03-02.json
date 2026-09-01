@@ -8,87 +8,500 @@
     {
       "n": 1,
       "title": "Technical Implications",
-      "points": [],
-      "raw": "Technical Implications",
       "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": []
+      "teach": "",
+      "points": [
+        "Security changes can affect connectivity, compatibility, availability, restarts, older applications, and dependent systems.",
+        "Objective 1.3 requires recognizing the technical consequences of a change before it reaches production."
+      ],
+      "defs": [],
+      "raw": ""
     },
     {
       "n": 2,
-      "title": "Technical Implications",
-      "points": [
-        "Allow lists/deny",
-        "lists",
-        "Legacy",
-        "applications",
-        "Restricted",
-        "activities",
-        "Downtime/Service",
-        "restart/Application",
-        "restart",
-        "Dependencies"
-      ],
-      "raw": "Technical Implications\nAllow lists/deny\nlists\nLegacy\napplications\nRestricted\nactivities\nDowntime/Service\nrestart/Application\nrestart\nDependencies",
+      "title": "Allow Lists / Deny Lists",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "Allow lists define what is explicitly permitted; deny lists define what is explicitly blocked.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Technical implications are the downstream effects a change can have on systems, dependencies, compatibility, downtime, and security policy. A change that is safe in isolation may break another application or control.",
-        "why": "Understanding dependencies prevents a security improvement from accidentally causing an outage or bypass.",
-        "example": "Blocking a legacy protocol improves security but also breaks an old application that still depends on that port, so the change must be planned and tested.",
-        "exam": "When CompTIA asks what to consider before a change, think dependencies, legacy systems, restarts, downtime, allow/deny lists, and rollback.",
+        "learn": "Allow lists define what is explicitly permitted; deny lists define what is explicitly blocked.",
         "breakdown": [
           {
-            "term": "Allow lists/deny lists",
-            "explanation": "This is a factor that must be evaluated when using Technical implications; ignoring it can create operational, security, cost, or compatibility risk."
+            "term": "Basically",
+            "explanation": "A change can require these lists to be updated so legitimate traffic is not blocked and unauthorized traffic is not accidentally permitted."
           },
           {
-            "term": "Legacy applications",
-            "explanation": "Application monitoring measures application behavior, performance, errors, and security events. APM focuses on health/performance, while a WAF inspects and protects web requests."
-          },
-          {
-            "term": "Restricted activities",
-            "explanation": "This is a factor that must be evaluated when using Technical implications; ignoring it can create operational, security, cost, or compatibility risk."
-          },
-          {
-            "term": "Downtime/Service restart/Application",
-            "explanation": "Application monitoring measures application behavior, performance, errors, and security events. APM focuses on health/performance, while a WAF inspects and protects web requests."
-          },
-          {
-            "term": "restart",
-            "explanation": "This is a factor that must be evaluated when using Technical implications; ignoring it can create operational, security, cost, or compatibility risk."
-          },
-          {
-            "term": "Dependencies",
-            "explanation": "This is a factor that must be evaluated when using Technical implications; ignoring it can create operational, security, cost, or compatibility risk."
+            "term": "Examples",
+            "explanation": "Firewall allow/deny rules, application allowlisting, email block lists, IP access lists."
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Technical Implications and describe at least two key ideas from this section.",
-        "check_a": "Technical implications are the downstream effects a change can have on systems, dependencies, compatibility, downtime, and security policy. A change that is safe in isolation may break another application or control. Key ideas include: Allow lists/deny lists; Legacy applications; Restricted activities; Downtime/Service restart/Application; restart.",
-        "points": [
-          "Allow lists/deny lists",
-          "Legacy applications",
-          "Restricted activities",
-          "Downtime/Service restart/Application",
-          "restart",
-          "Dependencies"
-        ]
+        "why": "Security changes often affect access-control rules. An incorrect list entry can break a service or unintentionally expose a resource.",
+        "example": "A new application server cannot communicate with a database because its IP address was never added to the firewall allow list.",
+        "exam": "Scenario clue: legitimate traffic is unexpectedly blocked or newly permitted after a change → ALLOW/DENY LISTS.",
+        "check_q": "A new server cannot connect through a firewall because its address was not added to the permitted list. Which technical implication is most relevant?",
+        "check_a": "Allow list."
       }
     },
     {
       "n": 3,
-      "title": "Documentation",
-      "points": [],
-      "raw": "Documentation",
-      "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": []
+      "title": "Restricted Activities",
+      "instructional": true,
+      "teach": "Restricted activities are actions that organizational policy, operational rules, or change controls prohibit under certain conditions.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Restricted activities are actions that organizational policy, operational rules, or change controls prohibit under certain conditions.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Some changes or activities are not allowed during particular times, environments, or business conditions."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Change freezes, no production changes during peak business periods, prohibited software installations, restricted administrative actions."
+          }
+        ],
+        "defs": [],
+        "why": "Restrictions protect critical operations and reduce the chance that high-risk activity occurs at the wrong time or without proper authorization.",
+        "example": "During a holiday sales freeze, administrators are not allowed to make non-emergency production changes.",
+        "exam": "Scenario clue: 'This action is not permitted right now or under this policy' → RESTRICTED ACTIVITIES.",
+        "check_q": "A company prohibits non-emergency production changes during its busiest sales week. What does this represent?",
+        "check_a": "Restricted activities."
+      }
+    },
+    {
+      "n": 4,
+      "title": "Downtime",
+      "instructional": true,
+      "teach": "Downtime is a period when a system or service is unavailable because of maintenance, failure, or a planned change.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Downtime is a period when a system or service is unavailable because of maintenance, failure, or a planned change.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Some changes temporarily take services offline, so the organization must understand and plan for the availability impact."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Planned outage, patching downtime, database migration outage, network maintenance interruption."
+          }
+        ],
+        "defs": [],
+        "why": "Downtime affects availability and business operations, so it should be evaluated, communicated, and scheduled appropriately.",
+        "example": "A database upgrade requires the customer portal to be offline for 45 minutes.",
+        "exam": "Scenario clue: service becomes temporarily unavailable during a change → DOWNTIME.",
+        "check_q": "A planned upgrade makes an application unavailable for 30 minutes. Which technical implication is this?",
+        "check_a": "Downtime."
+      }
+    },
+    {
+      "n": 5,
+      "title": "Service Restart",
+      "instructional": true,
+      "teach": "A service restart stops and starts an individual operating-system or application service so a change can take effect.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "A service restart stops and starts an individual operating-system or application service so a change can take effect.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "The whole system may stay online, but the specific service can be temporarily unavailable."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Restarting a web service, database service, authentication service, print service."
+          }
+        ],
+        "defs": [],
+        "why": "Restarting a service can interrupt users or systems that depend on that service, even when the underlying server remains running.",
+        "example": "After changing a web-server configuration, the administrator must restart the web service before the new settings take effect.",
+        "exam": "Scenario clue: one service must be restarted after a configuration change → SERVICE RESTART.",
+        "check_q": "A configuration change requires restarting only the web service, not the entire application server. What is the technical implication?",
+        "check_a": "Service restart."
+      }
+    },
+    {
+      "n": 6,
+      "title": "Application Restart",
+      "instructional": true,
+      "teach": "An application restart stops and starts an application so new code, configuration, or settings can be loaded.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "An application restart stops and starts an application so new code, configuration, or settings can be loaded.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "The application itself may need to restart, potentially interrupting users, sessions, or transactions."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Restarting an ERP application, restarting a web application, restarting a desktop application after an update."
+          }
+        ],
+        "defs": [],
+        "why": "Application restarts can affect availability and active user sessions, so they must be included in change planning.",
+        "example": "After deploying a new configuration, the payroll application must restart and all active sessions will disconnect.",
+        "exam": "Scenario clue: the application itself must restart and users may lose sessions → APPLICATION RESTART.",
+        "check_q": "A configuration change requires the payroll application to restart, disconnecting active users. Which technical implication is this?",
+        "check_a": "Application restart."
+      }
+    },
+    {
+      "n": 7,
+      "title": "Legacy Applications",
+      "instructional": true,
+      "teach": "Legacy applications are older systems that may depend on outdated operating systems, protocols, libraries, hardware, or security settings.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Legacy applications are older systems that may depend on outdated operating systems, protocols, libraries, hardware, or security settings.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "A modern security change can break an older application that cannot support the new requirement."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Old software requiring TLS 1.0, applications that require deprecated libraries, unsupported operating systems, old authentication protocols."
+          }
+        ],
+        "defs": [],
+        "why": "Legacy compatibility is a major change risk because security hardening can disrupt applications that were built for older technology.",
+        "example": "The security team disables TLS 1.0, but an old finance application stops working because it cannot use newer TLS versions.",
+        "exam": "Scenario clue: an older application breaks after a modern security change → LEGACY APPLICATION.",
+        "check_q": "After TLS 1.0 is disabled, an older application stops connecting because it does not support newer TLS versions. What is the main issue?",
+        "check_a": "Legacy application compatibility."
+      }
+    },
+    {
+      "n": 8,
+      "title": "Dependencies",
+      "instructional": true,
+      "teach": "Dependencies are systems, services, applications, libraries, or infrastructure components that another component relies on.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Dependencies are systems, services, applications, libraries, or infrastructure components that another component relies on.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Changing one thing can break something else that depends on it."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Database dependency, DNS dependency, authentication service, API, shared library, network route."
+          }
+        ],
+        "defs": [],
+        "why": "Dependencies create downstream risk. A change can succeed on the target system but still cause failures elsewhere.",
+        "example": "A server change works correctly, but another application fails because both systems rely on the same authentication service.",
+        "exam": "Scenario clue: another system breaks because it relies on the changed component → DEPENDENCIES.",
+        "check_q": "A change to an authentication service causes several unrelated applications to fail. Which technical implication should have been evaluated?",
+        "check_a": "Dependencies."
+      }
     }
   ],
-  "slide_count": 3,
-  "instructional_count": 1,
-  "concepts": [],
-  "source_filename": "03.02_Technical_implications.pdf"
+  "slide_count": 8,
+  "instructional_count": 7,
+  "concepts": [
+    "Allow Lists / Deny Lists",
+    "Restricted Activities",
+    "Downtime",
+    "Service Restart",
+    "Application Restart",
+    "Legacy Applications",
+    "Dependencies"
+  ],
+  "source_filename": "03-02.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 1.3",
+      "title": "Technical implications",
+      "intro": "A change that is safe in isolation can still break connectivity, compatibility, availability, or a dependent system."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Objective 1.3",
+        "title": "Technical Implications of Change",
+        "prompt": "What technical effect is the scenario describing?",
+        "badge": "IMPACT",
+        "cards": [
+          {
+            "name": "Allow Lists / Deny Lists",
+            "definition": "Allow lists define what is explicitly permitted; deny lists define what is explicitly blocked.",
+            "examples": [
+              "Firewall allow/deny rules",
+              "application allowlisting",
+              "email block lists",
+              "IP access lists."
+            ],
+            "memory": "PERMIT / BLOCK"
+          },
+          {
+            "name": "Restricted Activities",
+            "definition": "Restricted activities are actions that organizational policy, operational rules, or change controls prohibit under certain conditions.",
+            "examples": [
+              "Change freezes",
+              "no production changes during peak business periods",
+              "prohibited software installations",
+              "restricted administrative actions."
+            ],
+            "memory": "NOT ALLOWED"
+          },
+          {
+            "name": "Downtime",
+            "definition": "Downtime is a period when a system or service is unavailable because of maintenance, failure, or a planned change.",
+            "examples": [
+              "Planned outage",
+              "patching downtime",
+              "database migration outage",
+              "network maintenance interruption."
+            ],
+            "memory": "UNAVAILABLE"
+          },
+          {
+            "name": "Service Restart",
+            "definition": "A service restart stops and starts an individual operating-system or application service so a change can take effect.",
+            "examples": [
+              "Restarting a web service",
+              "database service",
+              "authentication service",
+              "print service."
+            ],
+            "memory": "RESTART ONE SERVICE"
+          },
+          {
+            "name": "Application Restart",
+            "definition": "An application restart stops and starts an application so new code, configuration, or settings can be loaded.",
+            "examples": [
+              "Restarting an ERP application",
+              "restarting a web application",
+              "restarting a desktop application after an update."
+            ],
+            "memory": "RESTART THE APP"
+          },
+          {
+            "name": "Legacy Applications",
+            "definition": "Legacy applications are older systems that may depend on outdated operating systems, protocols, libraries, hardware, or security settings.",
+            "examples": [
+              "Old software requiring TLS 1.0",
+              "applications that require deprecated libraries",
+              "unsupported operating systems",
+              "old authentication protocols."
+            ],
+            "memory": "OLD = COMPATIBILITY RISK"
+          },
+          {
+            "name": "Dependencies",
+            "definition": "Dependencies are systems, services, applications, libraries, or infrastructure components that another component relies on.",
+            "examples": [
+              "Database dependency",
+              "DNS dependency",
+              "authentication service",
+              "API",
+              "shared library",
+              "network route."
+            ],
+            "memory": "WHAT RELIES ON THIS?"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Technical implication scenario recognition",
+        "headers": [
+          "Scenario clue",
+          "Think"
+        ],
+        "rows": [
+          [
+            "Legitimate traffic unexpectedly blocked or permitted",
+            "Allow lists / deny lists"
+          ],
+          [
+            "Action prohibited during a defined period or condition",
+            "Restricted activities"
+          ],
+          [
+            "Service or system unavailable during change",
+            "Downtime"
+          ],
+          [
+            "One service must stop and start",
+            "Service restart"
+          ],
+          [
+            "The application itself must restart",
+            "Application restart"
+          ],
+          [
+            "Old software breaks after modern security change",
+            "Legacy applications"
+          ],
+          [
+            "Another system fails because it relies on the changed component",
+            "Dependencies"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Identify what the change affected",
+        "items": [
+          [
+            "Blocked or permitted traffic → Allow/Deny Lists",
+            "Access-control lists can accidentally block required traffic or permit something that should remain blocked.",
+            "Example: A new server cannot connect because its IP address is missing from a firewall allow list."
+          ],
+          [
+            "Not allowed right now → Restricted Activities",
+            "Policies or change freezes may prohibit certain actions during specific times or conditions.",
+            "Example: Non-emergency production changes are prohibited during a holiday sales freeze."
+          ],
+          [
+            "Unavailable → Downtime",
+            "If the system or service cannot be used during the change, the implication is downtime.",
+            "Example: A database migration takes the customer portal offline for 45 minutes."
+          ],
+          [
+            "One service reloads → Service Restart",
+            "A specific service may need to restart even though the whole server stays running.",
+            "Example: New web-server settings require restarting the web service."
+          ],
+          [
+            "The app reloads → Application Restart",
+            "The application itself restarts, which may disconnect users or interrupt sessions.",
+            "Example: A payroll application restart signs out all active users."
+          ],
+          [
+            "Old software breaks → Legacy Application",
+            "Older applications may not support modern protocols, libraries, or security controls.",
+            "Example: An old finance app fails after TLS 1.0 is disabled."
+          ],
+          [
+            "Something else breaks → Dependencies",
+            "If another system fails because it relies on the changed component, think dependencies.",
+            "Example: Several applications fail after a shared authentication service is modified."
+          ]
+        ],
+        "example": "Fast memory: Permit/Block · Not Allowed · Unavailable · Service · App · Old · Depends"
+      }
+    ],
+    "questions": [
+      {
+        "q": "A new application server cannot reach a database because its address was never added to the firewall's permitted entries. Which technical implication is most relevant?",
+        "choices": [
+          "Allow list",
+          "Legacy application",
+          "Downtime",
+          "Version control"
+        ],
+        "answer": 0,
+        "explanation": "The connection is blocked because the required system was not included in the allow list."
+      },
+      {
+        "q": "A company prohibits non-emergency production changes during its busiest sales week. What does this represent?",
+        "choices": [
+          "Restricted activities",
+          "Dependencies",
+          "Application restart",
+          "Test results"
+        ],
+        "answer": 0,
+        "explanation": "The organization has restricted certain activities during a defined period."
+      },
+      {
+        "q": "A planned database upgrade makes the customer portal unavailable for 45 minutes. Which technical implication is this?",
+        "choices": [
+          "Downtime",
+          "Ownership",
+          "Version control",
+          "Allow list"
+        ],
+        "answer": 0,
+        "explanation": "Downtime is the period when the service is unavailable."
+      },
+      {
+        "q": "A configuration change requires restarting only the web service so the new settings take effect. Which implication is most relevant?",
+        "choices": [
+          "Service restart",
+          "Application restart",
+          "Legacy application",
+          "Restricted activity"
+        ],
+        "answer": 0,
+        "explanation": "The individual service must be restarted."
+      },
+      {
+        "q": "A payroll application must be restarted after deployment, disconnecting active user sessions. Which implication is most relevant?",
+        "choices": [
+          "Application restart",
+          "Service restart",
+          "Allow list",
+          "Stakeholder ownership"
+        ],
+        "answer": 0,
+        "explanation": "The application itself must restart, affecting active users."
+      },
+      {
+        "q": "After TLS 1.0 is disabled, an older finance application can no longer connect because it does not support newer TLS versions. Which issue is this?",
+        "choices": [
+          "Legacy application",
+          "Downtime only",
+          "Deny list",
+          "Version control"
+        ],
+        "answer": 0,
+        "explanation": "The security improvement created a compatibility problem with an older application."
+      },
+      {
+        "q": "A change to an authentication server causes several other applications to fail because they rely on that server. Which implication should have been evaluated?",
+        "choices": [
+          "Dependencies",
+          "Restricted activities",
+          "Application restart",
+          "Documentation"
+        ],
+        "answer": 0,
+        "explanation": "Those applications depend on the authentication server, so dependencies are the key concern."
+      }
+    ]
+  }
 }
