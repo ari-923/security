@@ -504,5 +504,181 @@
     ],
     "answer": 0,
     "why": "The control is fixing the condition after the problem occurred, which makes the action corrective."
+  },
+  {
+    "q": "A company discovers that its current password policy does not meet a newly required security baseline. The team documents the differences and plans remediation. What process is this?",
+    "choices": [
+      "Gap analysis",
+      "Accounting",
+      "Non-repudiation",
+      "Deception technology"
+    ],
+    "answer": 0,
+    "why": "Gap analysis compares the current state with the desired or required state and identifies what must change."
+  },
+  {
+    "q": "A client checks a server's digital certificate before establishing a secure connection. Which concept is being demonstrated?",
+    "choices": [
+      "Authenticating systems",
+      "Accounting",
+      "Threat scope reduction",
+      "Authorization"
+    ],
+    "answer": 0,
+    "why": "The client is verifying the identity of a server, which is authenticating a system."
+  },
+  {
+    "q": "A company automatically grants payroll access to every account assigned to the HR role. What is this an example of?",
+    "choices": [
+      "An authorization model",
+      "Accounting",
+      "Availability",
+      "Gap analysis"
+    ],
+    "answer": 0,
+    "why": "The user's role is being used to determine permissions, which is an authorization model."
+  },
+  {
+    "q": "A Zero Trust system evaluates identity, device health, and policy and decides whether a request may proceed. Which component made the decision?",
+    "choices": [
+      "Policy Engine",
+      "Policy Enforcement Point",
+      "Policy Administrator",
+      "Subject/System"
+    ],
+    "answer": 0,
+    "why": "The Policy Engine evaluates context and makes the access decision."
+  },
+  {
+    "q": "A Zero Trust decision has already been made. Which component coordinates establishing or terminating access based on that decision?",
+    "choices": [
+      "Policy Administrator",
+      "Policy Engine",
+      "Data Plane",
+      "Implicit trust zone"
+    ],
+    "answer": 0,
+    "why": "The Policy Administrator acts on the Policy Engine's decision."
+  },
+  {
+    "q": "Which Zero Trust component actually blocks a denied connection at the point of access?",
+    "choices": [
+      "Policy Enforcement Point",
+      "Policy Engine",
+      "Policy Administrator",
+      "Adaptive identity"
+    ],
+    "answer": 0,
+    "why": "The Policy Enforcement Point enforces the access decision."
+  },
+  {
+    "q": "A login from an unusual device and location triggers stronger authentication requirements. Which Zero Trust concept is this?",
+    "choices": [
+      "Adaptive identity",
+      "Implicit trust",
+      "Threat scope reduction",
+      "Accounting"
+    ],
+    "answer": 0,
+    "why": "Adaptive identity adjusts verification requirements based on risk and context."
+  },
+  {
+    "q": "A company segments resources and gives users only the access required for their roles so a compromised account cannot move widely. Which Zero Trust goal is MOST directly supported?",
+    "choices": [
+      "Threat scope reduction",
+      "Non-repudiation",
+      "Availability",
+      "Honeytoken deployment"
+    ],
+    "answer": 0,
+    "why": "Least privilege and segmentation reduce the potential blast radius of compromise."
+  },
+  {
+    "q": "A company installs reinforced posts in front of a data-center entrance to prevent vehicle intrusion. Which physical control is being used?",
+    "choices": [
+      "Bollards",
+      "Fencing",
+      "Lighting",
+      "Access badges"
+    ],
+    "answer": 0,
+    "why": "Bollards are strong posts or barriers designed to stop or redirect vehicles."
+  },
+  {
+    "q": "An employee badges through one door and must wait for it to close before the next door unlocks. Which control is this?",
+    "choices": [
+      "Access control vestibule",
+      "Video surveillance",
+      "Fencing",
+      "Bollard"
+    ],
+    "answer": 0,
+    "why": "An access control vestibule uses two controlled doors to regulate entry."
+  },
+  {
+    "q": "A hidden floor mat triggers an alarm when someone steps on it. Which sensor is being used?",
+    "choices": [
+      "Pressure",
+      "Infrared",
+      "Microwave",
+      "Ultrasonic"
+    ],
+    "answer": 0,
+    "why": "A pressure sensor detects physical pressure or weight."
+  },
+  {
+    "q": "A motion detector senses body heat entering a restricted room. Which sensor type is MOST likely being used?",
+    "choices": [
+      "Infrared",
+      "Pressure",
+      "Microwave",
+      "Ultrasonic"
+    ],
+    "answer": 0,
+    "why": "Infrared sensors commonly detect changes in infrared energy such as body heat."
+  },
+  {
+    "q": "A detector uses high-frequency sound waves to identify movement. Which sensor type is this?",
+    "choices": [
+      "Ultrasonic",
+      "Microwave",
+      "Infrared",
+      "Pressure"
+    ],
+    "answer": 0,
+    "why": "Ultrasonic sensors use high-frequency sound waves."
+  },
+  {
+    "q": "A fake credential is planted where an attacker may find it and generates an alert if it is ever used. What is this?",
+    "choices": [
+      "Honeytoken",
+      "Honeyfile",
+      "Honeypot",
+      "Honeynet"
+    ],
+    "answer": 0,
+    "why": "A honeytoken is fake data or a fake credential that should never be legitimately used."
+  },
+  {
+    "q": "A fake network of multiple decoy systems is deployed to observe attacker movement. What is this?",
+    "choices": [
+      "Honeynet",
+      "Honeypot",
+      "Honeyfile",
+      "Honeytoken"
+    ],
+    "answer": 0,
+    "why": "A honeynet is a decoy network containing multiple systems."
+  },
+  {
+    "q": "A manager digitally signs an approval and later claims it was never authorized. Which security concept provides evidence against that claim?",
+    "choices": [
+      "Non-repudiation",
+      "Availability",
+      "Authorization",
+      "Gap analysis"
+    ],
+    "answer": 0,
+    "why": "Non-repudiation provides evidence tying an action to the person who performed it."
   }
 ]
