@@ -534,23 +534,31 @@
       },
       {
         "type": "tip",
-        "kicker": "Zero Trust Memory",
+        "kicker": "Zero Trust Exam Shortcuts",
         "title": "How a Zero Trust access decision is made and enforced",
         "items": [
           [
-            "Policy Engine",
-            "Decides whether the request should be allowed"
+            "Zero Trust → Never trust automatically",
+            "A user, device, or connection is not trusted merely because it is inside the network. Identity, device health, policy, risk, and context are evaluated.",
+            "Example: An employee on the internal network still must pass identity and device checks before opening a sensitive application."
           ],
           [
-            "Policy Administrator",
-            "Acts on the decision to establish or terminate access"
+            "Policy Engine → DECIDES",
+            "The Policy Engine evaluates the request and decides whether access should be allowed.",
+            "Example: It checks identity, device health, risk, and policy and returns an allow or deny decision."
           ],
           [
-            "Policy Enforcement Point",
-            "Actually enforces the decision"
+            "Policy Administrator → ACTS",
+            "The Policy Administrator takes the Policy Engine’s decision and coordinates establishing, changing, or terminating access.",
+            "Example: After approval, it coordinates setting up the permitted connection."
+          ],
+          [
+            "Policy Enforcement Point → ENFORCES",
+            "The Policy Enforcement Point is the gatekeeper that actually allows, blocks, or terminates the connection.",
+            "Example: A denied request reaches the PEP and the PEP blocks the connection."
           ]
         ],
-        "example": "Control Plane = decides · Data Plane = carries permitted access."
+        "example": "Fast flow: Policy Engine decides → Policy Administrator acts → Policy Enforcement Point enforces."
       }
     ],
     "questions": [
