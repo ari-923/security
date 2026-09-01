@@ -134,6 +134,37 @@ function SecurityControlsLesson({ lesson, previous, next, learning, done, master
       rows={layout.types.map((x) => [x.name, x.definition, x.memory])}
     />
 
+
+    {layout.classification_method && <section className="sc-section">
+      <div className="sc-section-head">
+        <div>
+          <span className="sc-kicker">Exam Strategy</span>
+          <h3>{layout.classification_method.title}</h3>
+          <p>{layout.classification_method.intro}</p>
+        </div>
+        <span className="sc-question-badge">2 STEPS</span>
+      </div>
+
+      <div className="sc-overview-grid">
+        {layout.classification_method.steps.map((step) => <div className="sc-overview-card" key={step.step}>
+          <span className="sc-label">{step.step}</span>
+          <strong>{step.title}</strong>
+          <p><strong>{step.question}</strong></p>
+          <div>
+            {step.items.map(([name, meaning]) => <p key={name}><strong>{name}</strong> — {meaning}</p>)}
+          </div>
+        </div>)}
+      </div>
+
+      <div className="sc-example"><strong>Exam shortcut:</strong> {layout.classification_method.shortcut}</div>
+
+      <ComparisonTable
+        title="Category + type examples"
+        headers={["Security control / scenario", "Category", "Type"]}
+        rows={layout.classification_method.examples}
+      />
+    </section>}
+
     <aside className="sc-exam-tip">
       <span className="sc-kicker">Security+ Exam Tip</span>
       <h3>Do not mix up category and type.</h3>
