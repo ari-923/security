@@ -438,5 +438,71 @@
     ],
     "answer": 1,
     "why": "Cross-site scripting (XSS) executes malicious client-side script in users' browsers."
+  },
+  {
+    "q": "A firewall blocks an unauthorized inbound connection before it reaches an internal server. Which classification is BEST?",
+    "choices": [
+      "Technical and preventive",
+      "Technical and detective",
+      "Managerial and directive",
+      "Physical and deterrent"
+    ],
+    "answer": 0,
+    "why": "A firewall is implemented through technology, so it is technical. Blocking the connection before it succeeds makes this use preventive."
+  },
+  {
+    "q": "A visible camera is installed outside a restricted room mainly to discourage unauthorized entry. Which classification is BEST?",
+    "choices": [
+      "Physical and deterrent",
+      "Physical and corrective",
+      "Technical and detective",
+      "Operational and directive"
+    ],
+    "answer": 0,
+    "why": "The camera is a physical control. Because the scenario emphasizes discouraging people from trying to enter, its type is deterrent."
+  },
+  {
+    "q": "An IDS identifies suspicious traffic and sends an alert to the SOC. Which classification is BEST?",
+    "choices": [
+      "Technical and detective",
+      "Technical and preventive",
+      "Operational and corrective",
+      "Managerial and compensating"
+    ],
+    "answer": 0,
+    "why": "The IDS is implemented through technology and is detecting and alerting on suspicious activity, making it technical and detective."
+  },
+  {
+    "q": "A written security policy tells employees that administrative accounts may only be used for approved tasks. Which classification is BEST?",
+    "choices": [
+      "Managerial and directive",
+      "Operational and detective",
+      "Technical and preventive",
+      "Physical and directive"
+    ],
+    "answer": 0,
+    "why": "A policy is a managerial control, and its purpose is to direct or instruct required behavior."
+  },
+  {
+    "q": "Antimalware software detects a malicious file and quarantines it before the file can execute. Which control type is MOST directly demonstrated by the quarantine action?",
+    "choices": [
+      "Preventive",
+      "Detective",
+      "Corrective",
+      "Deterrent"
+    ],
+    "answer": 0,
+    "why": "Although detection occurred first, the quarantine action stops the malicious file from executing, so that action is preventive."
+  },
+  {
+    "q": "After malware has infected an endpoint, security software removes the malicious files and restores the endpoint to a clean state. Which control type is MOST directly demonstrated?",
+    "choices": [
+      "Corrective",
+      "Directive",
+      "Deterrent",
+      "Compensating"
+    ],
+    "answer": 0,
+    "why": "The control is fixing the condition after the problem occurred, which makes the action corrective."
   }
 ]
