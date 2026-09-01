@@ -110,23 +110,21 @@
       },
       {
         "type": "tip",
-        "kicker": "Exam Memory",
+        "kicker": "Exam Shortcut",
         "title": "Current → Desired → Gap → Remediation",
         "items": [
           [
-            "Current state",
-            "What exists now"
+            "Current vs. Desired → Gap Analysis",
+            "Gap analysis compares what exists now with what should exist, then identifies what is missing.",
+            "Example: MFA is required for every administrator, but only 60% currently use it. The missing 40% is the gap."
           ],
           [
-            "Desired state",
-            "What should exist"
-          ],
-          [
-            "Gap",
-            "What is missing"
+            "Remediation → Close the gap",
+            "After the gap is identified, remediation is the plan used to bring the current state closer to the desired state.",
+            "Example: Enroll the remaining administrator accounts in MFA."
           ]
         ],
-        "example": "The remediation plan closes the identified gap."
+        "example": "Ask: Where are we now? Where should we be? What is missing? How do we fix it?"
       }
     ],
     "questions": [
