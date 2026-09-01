@@ -128,6 +128,12 @@
     },
     "blocks": [
       {
+        "type": "image",
+        "src": "/images/cia-triad.png",
+        "alt": "CIA Triad diagram showing Integrity, Availability, and Confidentiality in a triangle",
+        "caption": "The CIA Triad represents the three foundational security goals: Confidentiality, Integrity, and Availability."
+      },
+      {
         "type": "group",
         "eyebrow": "Learn",
         "title": "CIA Triad",
