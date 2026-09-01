@@ -218,19 +218,22 @@
         "title": "Exposed, changed, or unavailable?",
         "items": [
           [
-            "Exposed",
-            "Confidentiality"
+            "Exposed → Confidentiality",
+            "If unauthorized people can see, read, receive, intercept, or disclose the information, confidentiality is affected.",
+            "Example: An attacker intercepts unencrypted employee credentials and reads them."
           ],
           [
-            "Changed",
-            "Integrity"
+            "Changed → Integrity",
+            "If information is modified, altered, corrupted, or tampered with without authorization, integrity is affected.",
+            "Example: An attacker changes employees’ direct-deposit information in payroll."
           ],
           [
-            "Unavailable",
-            "Availability"
+            "Unavailable → Availability",
+            "If authorized users cannot reach or use a system, service, or data when needed, availability is affected.",
+            "Example: A DDoS attack makes a customer website unreachable."
           ]
         ],
-        "example": "Confidentiality = SECRET · Integrity = CORRECT · Availability = ACCESSIBLE"
+        "example": "Memory: Confidentiality = SECRET · Integrity = CORRECT · Availability = ACCESSIBLE"
       }
     ],
     "questions": [
