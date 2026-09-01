@@ -346,27 +346,36 @@
       },
       {
         "type": "tip",
-        "kicker": "Exam Memory",
-        "title": "Pot, Net, File, Token",
+        "kicker": "Exam Shortcut",
+        "title": "Deception = trick · Disruption = interrupt",
         "items": [
           [
-            "Honeypot",
-            "Fake system"
+            "Deception → TRICK / BAIT",
+            "Deception technology uses fake resources that look real so attackers interact with them instead of legitimate assets.",
+            "Example: A fake server is deployed to attract attackers and let defenders observe them."
           ],
           [
-            "Honeynet",
-            "Fake network"
+            "Honeypot → fake SYSTEM",
+            "A honeypot is one fake system or service.",
+            "Example: A decoy SSH server attracts brute-force attempts."
           ],
           [
-            "Honeyfile",
-            "Fake file"
+            "Honeynet → fake NETWORK",
+            "A honeynet is a fake network containing multiple decoy systems.",
+            "Example: A decoy subnet lets defenders observe attacker lateral movement."
           ],
           [
-            "Honeytoken",
-            "Fake data or credential"
+            "Honeyfile → fake FILE · Honeytoken → fake DATA/CREDENTIAL",
+            "A honeyfile is a fake document; a honeytoken is fake data or a fake credential that should never be legitimately used.",
+            "Example: A fake payroll spreadsheet is a honeyfile; a planted fake API key is a honeytoken."
+          ],
+          [
+            "Disruption → INTERRUPT",
+            "Disruption interferes with, redirects, isolates, or slows an attack.",
+            "Example: Malicious traffic is redirected away from its intended destination."
           ]
         ],
-        "example": "Deception = trick / bait · Disruption = interrupt."
+        "example": "Memory: Pot = system · Net = network · File = file · Token = data/credential."
       }
     ],
     "questions": [
