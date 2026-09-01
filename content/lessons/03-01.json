@@ -8,229 +8,605 @@
     {
       "n": 1,
       "title": "Business Processes Impacting Security Operation",
-      "points": [],
-      "raw": "Business Processes\nImpacting Security Operation",
       "instructional": false,
-      "teach": "Study the order and purpose of each step. Process questions often ask what should happen next.",
-      "defs": []
+      "teach": "",
+      "points": [
+        "Change management helps organizations make changes in a controlled, documented, and reversible way.",
+        "Objective 1.3 focuses on the business processes that reduce security and operational risk during change."
+      ],
+      "defs": [],
+      "raw": ""
     },
     {
       "n": 2,
       "title": "Change Management",
-      "points": [
-        "Minimize vulnerabilities",
-        "introduced by changes",
-        "Improve incident",
-        "response",
-        "Foster a culture of",
-        "security"
-      ],
-      "raw": "Change Management\nMinimize vulnerabilities\nintroduced by changes\nImprove incident\nresponse\nFoster a culture of\nsecurity",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "Change management is the controlled process for planning, reviewing, approving, testing, implementing, documenting, and—when necessary—reversing changes.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Change management is the controlled process for planning, approving, testing, implementing, documenting, and—if necessary—reversing technical changes.",
-        "why": "Uncontrolled changes can create outages and security gaps. A repeatable process reduces surprise and preserves accountability.",
-        "example": "Before updating a production firewall, the team documents the change, assesses impact, gets approval, tests it, schedules a maintenance window, and prepares a rollback plan.",
-        "exam": "Common exam clues: approval, impact analysis, maintenance window, test results, backout plan, ownership, stakeholders, SOP, and documentation.",
+        "learn": "Change management is the controlled process for planning, reviewing, approving, testing, implementing, documenting, and—when necessary—reversing changes.",
         "breakdown": [
           {
-            "term": "Minimize vulnerabilities introduced by changes",
-            "explanation": "Within Change Management, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Business processes impacting security operation rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "Instead of changing production systems whenever someone wants, the organization uses a defined process so changes are understood, authorized, tested, and traceable."
           },
           {
-            "term": "Improve incident response",
-            "explanation": "Within Change Management, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Business processes impacting security operation rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Foster a culture of security",
-            "explanation": "This contributes to reducing risk in the broader Business processes impacting security operation design and should be evaluated as part of defense in depth."
+            "term": "Examples",
+            "explanation": "Software updates, firewall-rule changes, server migrations, configuration changes, network upgrades."
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Change Management and describe at least two key ideas from this section.",
-        "check_a": "Change management is the controlled process for planning, approving, testing, implementing, documenting, and—if necessary—reversing technical changes. Key ideas include: Minimize vulnerabilities introduced by changes; Improve incident response; Foster a culture of security.",
-        "points": [
-          "Minimize vulnerabilities introduced by changes",
-          "Improve incident response",
-          "Foster a culture of security"
-        ]
+        "why": "Poorly controlled changes can introduce vulnerabilities, cause outages, break dependencies, or make incident response harder because nobody knows exactly what changed.",
+        "example": "A network administrator needs to modify production firewall rules. The change is reviewed, approved, tested, scheduled, documented, and given a backout plan before deployment.",
+        "exam": "If a scenario emphasizes approval, impact analysis, test results, a maintenance window, ownership, stakeholders, documentation, or a backout plan, think CHANGE MANAGEMENT.",
+        "check_q": "Why is change management important to security?",
+        "check_a": "It reduces the risk that changes introduce vulnerabilities, outages, undocumented configurations, or other unintended consequences."
       }
     },
     {
       "n": 3,
-      "title": "Key Processes",
-      "points": [
-        "Approval Process",
-        "Ownership",
-        "Stakeholders",
-        "Impact Analysis"
-      ],
-      "raw": "Key Processes\nApproval Process\nOwnership\nStakeholders\nImpact Analysis",
+      "title": "Approval Process",
       "instructional": true,
-      "teach": "Study the order and purpose of each step. Process questions often ask what should happen next.",
+      "teach": "The approval process requires an authorized person or group to review and approve a proposed change before implementation.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Change management is the controlled process for planning, approving, testing, implementing, documenting, and—if necessary—reversing technical changes.",
-        "why": "Uncontrolled changes can create outages and security gaps. A repeatable process reduces surprise and preserves accountability.",
-        "example": "Before updating a production firewall, the team documents the change, assesses impact, gets approval, tests it, schedules a maintenance window, and prepares a rollback plan.",
-        "exam": "Common exam clues: approval, impact analysis, maintenance window, test results, backout plan, ownership, stakeholders, SOP, and documentation.",
+        "learn": "The approval process requires an authorized person or group to review and approve a proposed change before implementation.",
         "breakdown": [
           {
-            "term": "Approval Process",
-            "explanation": "Requires an authorized person or group to review a proposed change before implementation."
+            "term": "Basically",
+            "explanation": "Someone with the proper authority gives permission before the change reaches production."
           },
           {
-            "term": "Ownership",
-            "explanation": "Within Key Processes, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Business processes impacting security operation rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Stakeholders",
-            "explanation": "Within Key Processes, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Business processes impacting security operation rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Impact Analysis",
-            "explanation": "Examines how a proposed change could affect systems, users, dependencies, risk, and availability."
+            "term": "Examples",
+            "explanation": "Change Advisory Board approval, manager approval, security review, formal change ticket approval."
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Key Processes and describe at least two key ideas from this section.",
-        "check_a": "Change management is the controlled process for planning, approving, testing, implementing, documenting, and—if necessary—reversing technical changes. Key ideas include: Approval Process; Ownership; Stakeholders; Impact Analysis.",
-        "points": [
-          "Approval Process",
-          "Ownership",
-          "Stakeholders",
-          "Impact Analysis"
-        ]
+        "why": "Approval prevents unauthorized or poorly evaluated changes from being introduced into the environment.",
+        "example": "An engineer prepares a production firewall change, but cannot deploy it until the designated change authority approves the request.",
+        "exam": "Scenario clue: 'Who gives permission before the change?' → APPROVAL PROCESS.",
+        "check_q": "A production change cannot be deployed until a manager signs off on the request. Which process is being used?",
+        "check_a": "Approval process."
       }
     },
     {
       "n": 4,
-      "title": "Key Processes",
-      "points": [
-        "Test Results",
-        "Backout Plan",
-        "Maintenance Window",
-        "Standard Operating",
-        "Procedure (SOP)"
-      ],
-      "raw": "Key Processes\nTest Results\nBackout Plan\nMaintenance Window\nStandard Operating\nProcedure (SOP)",
+      "title": "Ownership",
       "instructional": true,
-      "teach": "Study the order and purpose of each step. Process questions often ask what should happen next.",
+      "teach": "Ownership identifies the person or team responsible for the change from planning through completion.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Change management is the controlled process for planning, approving, testing, implementing, documenting, and—if necessary—reversing technical changes.",
-        "why": "Uncontrolled changes can create outages and security gaps. A repeatable process reduces surprise and preserves accountability.",
-        "example": "Before updating a production firewall, the team documents the change, assesses impact, gets approval, tests it, schedules a maintenance window, and prepares a rollback plan.",
-        "exam": "Common exam clues: approval, impact analysis, maintenance window, test results, backout plan, ownership, stakeholders, SOP, and documentation.",
+        "learn": "Ownership identifies the person or team responsible for the change from planning through completion.",
         "breakdown": [
           {
-            "term": "Test Results",
-            "explanation": "Evidence from testing that shows whether a proposed change behaves safely before production deployment."
+            "term": "Basically",
+            "explanation": "There should be a clearly accountable owner who coordinates the work and makes sure the change is completed correctly."
           },
           {
-            "term": "Backout Plan",
-            "explanation": "Documented steps for returning to the prior known-good state if a change fails."
-          },
-          {
-            "term": "Maintenance Window",
-            "explanation": "Approved period when disruptive technical work can be performed with managed business impact."
-          },
-          {
-            "term": "Standard Operating",
-            "explanation": "Within Key Processes, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Business processes impacting security operation rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Procedure (SOP)",
-            "explanation": "Within Key Processes, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Business processes impacting security operation rather than memorizing the phrase by itself."
+            "term": "Examples",
+            "explanation": "Change owner, application owner, service owner, implementation owner."
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Key Processes and describe at least two key ideas from this section.",
-        "check_a": "Change management is the controlled process for planning, approving, testing, implementing, documenting, and—if necessary—reversing technical changes. Key ideas include: Test Results; Backout Plan; Maintenance Window; Standard Operating; Procedure (SOP).",
-        "points": [
-          "Test Results",
-          "Backout Plan",
-          "Maintenance Window",
-          "Standard Operating",
-          "Procedure (SOP)"
-        ]
+        "why": "Without clear ownership, tasks can be missed, communication can fail, and nobody may be accountable when a change causes a problem.",
+        "example": "A database upgrade has one engineer assigned as the change owner who coordinates testing, deployment, validation, and rollback if needed.",
+        "exam": "Scenario clue: 'Who is responsible for the change?' → OWNERSHIP.",
+        "check_q": "Which change-management concept identifies who is accountable for coordinating a change?",
+        "check_a": "Ownership."
       }
     },
     {
       "n": 5,
-      "title": "Key Steps",
-      "points": [
-        "1. Planning and",
-        "Assessment",
-        "2. Design and",
-        "Implementation",
-        "3. Deployment",
-        "and Monitoring",
-        "4. Backout and",
-        "Continuous",
-        "Improvement"
-      ],
-      "raw": "Key Steps\n1. Planning and\nAssessment\n2. Design and\nImplementation\n3. Deployment\nand Monitoring\n4. Backout and\nContinuous\nImprovement",
+      "title": "Stakeholders",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "Stakeholders are people or groups who are affected by, depend on, approve, support, or have an interest in the change.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Change management is the controlled process for planning, approving, testing, implementing, documenting, and—if necessary—reversing technical changes.",
-        "why": "Uncontrolled changes can create outages and security gaps. A repeatable process reduces surprise and preserves accountability.",
-        "example": "Before updating a production firewall, the team documents the change, assesses impact, gets approval, tests it, schedules a maintenance window, and prepares a rollback plan.",
-        "exam": "Common exam clues: approval, impact analysis, maintenance window, test results, backout plan, ownership, stakeholders, SOP, and documentation.",
+        "learn": "Stakeholders are people or groups who are affected by, depend on, approve, support, or have an interest in the change.",
         "breakdown": [
           {
-            "term": "1. Planning and Assessment",
-            "explanation": "Within Key Steps, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Business processes impacting security operation rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "Before making the change, identify who could be impacted and who needs to know about it."
           },
           {
-            "term": "2. Design and Implementation",
-            "explanation": "Within Key Steps, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Business processes impacting security operation rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "3. Deployment and Monitoring",
-            "explanation": "Security monitoring continuously observes systems, networks, applications, and logs for suspicious activity, failures, policy violations, and indicators of compromise."
-          },
-          {
-            "term": "4. Backout and Continuous",
-            "explanation": "Within Key Steps, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Business processes impacting security operation rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Improvement",
-            "explanation": "Within Key Steps, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Business processes impacting security operation rather than memorizing the phrase by itself."
+            "term": "Examples",
+            "explanation": "Users, application owners, security teams, help desk, business managers, vendors, compliance teams."
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Key Steps and describe at least two key ideas from this section.",
-        "check_a": "Change management is the controlled process for planning, approving, testing, implementing, documenting, and—if necessary—reversing technical changes. Key ideas include: 1. Planning and Assessment; 2. Design and Implementation; 3. Deployment and Monitoring; 4. Backout and Continuous; Improvement.",
-        "points": [
-          "1. Planning and Assessment",
-          "2. Design and Implementation",
-          "3. Deployment and Monitoring",
-          "4. Backout and Continuous",
-          "Improvement"
-        ]
+        "why": "Stakeholder communication reduces surprises and ensures important business or technical impacts are considered before implementation.",
+        "example": "A payroll-system upgrade may affect HR, finance, IT support, security, and employees who use payroll services.",
+        "exam": "Scenario clue: 'Who is affected or needs to be informed?' → STAKEHOLDERS.",
+        "check_q": "A planned server change may affect HR, finance, and the help desk. What should the change team identify?",
+        "check_a": "Stakeholders."
       }
     },
     {
       "n": 6,
-      "title": "Technical Implications",
-      "points": [],
-      "raw": "Technical Implications",
-      "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": []
+      "title": "Impact Analysis",
+      "instructional": true,
+      "teach": "Impact analysis evaluates how a proposed change could affect systems, users, security controls, dependencies, availability, and business operations.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Impact analysis evaluates how a proposed change could affect systems, users, security controls, dependencies, availability, and business operations.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Ask what could break, who could be affected, and what new risks the change could introduce."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Dependency review, security-impact review, outage analysis, compatibility assessment, business-impact evaluation."
+          }
+        ],
+        "defs": [],
+        "why": "A change that looks safe on one system may disrupt another service, weaken a control, or create downtime elsewhere.",
+        "example": "Before disabling an old protocol, the team checks which applications still depend on it and what business services could fail.",
+        "exam": "Scenario clue: 'What could this change affect or break?' → IMPACT ANALYSIS.",
+        "check_q": "Which process would most likely identify that a firewall-rule change could break payroll connectivity?",
+        "check_a": "Impact analysis."
+      }
+    },
+    {
+      "n": 7,
+      "title": "Test Results",
+      "instructional": true,
+      "teach": "Test results provide evidence that a proposed change was tested and behaved as expected before or during deployment.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Test results provide evidence that a proposed change was tested and behaved as expected before or during deployment.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Testing shows whether the change works safely before it is trusted in production."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Lab test results, staging-environment results, validation checks, security testing, regression testing."
+          }
+        ],
+        "defs": [],
+        "why": "Testing helps identify failures, compatibility problems, and security issues before users or production systems are affected.",
+        "example": "A software patch is installed in a staging environment and tested for application compatibility before production deployment.",
+        "exam": "Scenario clue: 'Did the change work safely in testing?' → TEST RESULTS.",
+        "check_q": "A team reviews evidence from a staging environment before approving a production patch. What are they reviewing?",
+        "check_a": "Test results."
+      }
+    },
+    {
+      "n": 8,
+      "title": "Backout Plan",
+      "instructional": true,
+      "teach": "A backout plan contains the documented steps needed to reverse a failed change and restore the previous known-good state.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "A backout plan contains the documented steps needed to reverse a failed change and restore the previous known-good state.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "It is the 'undo plan' prepared before the change is deployed."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Restore previous configuration, uninstall an update, revert a virtual-machine snapshot, reinstall the previous software version."
+          }
+        ],
+        "defs": [],
+        "why": "Changes can fail even after testing. A backout plan reduces recovery time and limits downtime when implementation goes wrong.",
+        "example": "A new network configuration causes an outage, so the administrator follows the prewritten steps to restore the old configuration.",
+        "exam": "Scenario clue: 'How do we undo the change?' → BACKOUT PLAN.",
+        "check_q": "A production update causes a failure and the team follows documented steps to restore the previous version. What are they using?",
+        "check_a": "Backout plan."
+      }
+    },
+    {
+      "n": 9,
+      "title": "Maintenance Window",
+      "instructional": true,
+      "teach": "A maintenance window is an approved period when potentially disruptive changes can be performed.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "A maintenance window is an approved period when potentially disruptive changes can be performed.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "The organization schedules risky or outage-producing work for a time when the business impact will be lower."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Sunday 2:00–4:00 AM maintenance, scheduled patching period, planned network outage window."
+          }
+        ],
+        "defs": [],
+        "why": "Scheduling changes helps control downtime, coordinate support staff, and communicate expected service interruptions.",
+        "example": "A database upgrade that requires two hours of downtime is scheduled for early Sunday morning when usage is lowest.",
+        "exam": "Scenario clue: 'When are we allowed to perform the change?' → MAINTENANCE WINDOW.",
+        "check_q": "A company waits until 2:00 AM Sunday to perform a change that may interrupt service. What concept is this?",
+        "check_a": "Maintenance window."
+      }
+    },
+    {
+      "n": 10,
+      "title": "Standard Operating Procedure",
+      "instructional": true,
+      "teach": "A standard operating procedure (SOP) is documented, repeatable guidance for performing a routine task consistently.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "A standard operating procedure (SOP) is documented, repeatable guidance for performing a routine task consistently.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "It describes the approved normal way to perform an operation."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Patch-deployment procedure, account-provisioning procedure, backup procedure, server-build checklist."
+          }
+        ],
+        "defs": [],
+        "why": "SOPs reduce inconsistency, help staff follow approved practices, and make recurring work easier to train, audit, and repeat.",
+        "example": "Every monthly patch cycle follows the same documented sequence for testing, approval, deployment, verification, and documentation.",
+        "exam": "Scenario clue: 'How do we normally perform this repeatable task?' → STANDARD OPERATING PROCEDURE.",
+        "check_q": "Which document describes the approved repeatable steps for a routine operational task?",
+        "check_a": "Standard operating procedure."
+      }
     }
   ],
-  "slide_count": 6,
-  "instructional_count": 4,
+  "slide_count": 10,
+  "instructional_count": 9,
   "concepts": [
     "Change Management",
-    "Key Processes",
-    "Key Steps"
+    "Approval Process",
+    "Ownership",
+    "Stakeholders",
+    "Impact Analysis",
+    "Test Results",
+    "Backout Plan",
+    "Maintenance Window",
+    "Standard Operating Procedure"
   ],
-  "source_filename": "03.01_Business_processes_impacting_security_operation.pdf"
+  "source_filename": "03-01.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 1.3",
+      "title": "Business processes impacting security operation",
+      "intro": "Change management reduces security and operational risk by making changes authorized, tested, documented, accountable, and reversible."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Foundation",
+        "title": "Why Change Management Matters",
+        "prompt": "What makes a production change controlled instead of ad hoc?",
+        "badge": "CHANGE",
+        "cards": [
+          {
+            "name": "Change Management",
+            "definition": "A controlled process for planning, approving, testing, implementing, documenting, and reversing changes when necessary.",
+            "examples": [
+              "Software updates",
+              "Firewall rules",
+              "Server migrations",
+              "Configuration changes"
+            ],
+            "memory": "CONTROL THE CHANGE"
+          }
+        ],
+        "columns": "one"
+      },
+      {
+        "type": "group",
+        "eyebrow": "Objective 1.3",
+        "title": "Business Processes",
+        "prompt": "Match each scenario to the process it describes.",
+        "badge": "PROCESS",
+        "cards": [
+          {
+            "name": "Approval Process",
+            "definition": "Authorized review and permission before a change is implemented.",
+            "examples": [
+              "Manager approval",
+              "Change board approval",
+              "Security review"
+            ],
+            "memory": "PERMISSION"
+          },
+          {
+            "name": "Ownership",
+            "definition": "Identifies the person or team accountable for the change.",
+            "examples": [
+              "Change owner",
+              "Application owner"
+            ],
+            "memory": "WHO OWNS IT?"
+          },
+          {
+            "name": "Stakeholders",
+            "definition": "People or groups affected by or interested in the change.",
+            "examples": [
+              "Users",
+              "Business owners",
+              "Help desk",
+              "Security team"
+            ],
+            "memory": "WHO IS AFFECTED?"
+          },
+          {
+            "name": "Impact Analysis",
+            "definition": "Evaluates the possible technical, security, user, and business effects of a change.",
+            "examples": [
+              "Dependency review",
+              "Downtime analysis",
+              "Security impact"
+            ],
+            "memory": "WHAT COULD BREAK?"
+          },
+          {
+            "name": "Test Results",
+            "definition": "Evidence showing how the change behaved during testing.",
+            "examples": [
+              "Staging results",
+              "Regression tests",
+              "Validation checks"
+            ],
+            "memory": "DID IT WORK SAFELY?"
+          },
+          {
+            "name": "Backout Plan",
+            "definition": "Documented steps for reversing a failed change.",
+            "examples": [
+              "Restore old config",
+              "Revert snapshot",
+              "Rollback software"
+            ],
+            "memory": "HOW DO WE UNDO IT?"
+          },
+          {
+            "name": "Maintenance Window",
+            "definition": "Approved time period for potentially disruptive work.",
+            "examples": [
+              "Scheduled patching",
+              "Planned outage period"
+            ],
+            "memory": "WHEN CAN WE DO IT?"
+          },
+          {
+            "name": "Standard Operating Procedure",
+            "definition": "Documented repeatable instructions for a routine task.",
+            "examples": [
+              "Patch procedure",
+              "Backup procedure",
+              "Account provisioning"
+            ],
+            "memory": "HOW DO WE NORMALLY DO IT?"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Change management exam shortcuts",
+        "headers": [
+          "Term",
+          "Ask yourself",
+          "Memory"
+        ],
+        "rows": [
+          [
+            "Approval process",
+            "Who gives permission?",
+            "PERMISSION"
+          ],
+          [
+            "Ownership",
+            "Who is responsible?",
+            "WHO OWNS IT?"
+          ],
+          [
+            "Stakeholders",
+            "Who is affected or needs to know?",
+            "WHO IS AFFECTED?"
+          ],
+          [
+            "Impact analysis",
+            "What could break or be affected?",
+            "WHAT COULD BREAK?"
+          ],
+          [
+            "Test results",
+            "Did it work safely in testing?",
+            "DID IT WORK?"
+          ],
+          [
+            "Backout plan",
+            "How do we undo the change?",
+            "UNDO PLAN"
+          ],
+          [
+            "Maintenance window",
+            "When can we perform disruptive work?",
+            "WHEN?"
+          ],
+          [
+            "SOP",
+            "How do we normally perform this task?",
+            "REPEATABLE STEPS"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Read the scenario and ask what part of the change process is missing",
+        "items": [
+          [
+            "Permission → Approval Process",
+            "If the question asks who must authorize the change before implementation, think approval process.",
+            "Example: A firewall rule cannot be deployed until the change board signs off."
+          ],
+          [
+            "Responsibility → Ownership",
+            "If the question asks who is accountable for coordinating the change, think ownership.",
+            "Example: One engineer is assigned to oversee testing, deployment, and rollback."
+          ],
+          [
+            "What could break? → Impact Analysis",
+            "If the question asks about downstream effects, dependencies, outages, or security risks, think impact analysis.",
+            "Example: The team checks whether disabling TLS 1.0 will break an older application."
+          ],
+          [
+            "Undo the change → Backout Plan",
+            "If the question asks how to restore the previous known-good state after failure, think backout plan.",
+            "Example: A failed update is reversed using documented rollback steps."
+          ],
+          [
+            "When can we do it? → Maintenance Window",
+            "If a disruptive change is scheduled for a low-impact approved time, think maintenance window.",
+            "Example: A network upgrade is scheduled for Sunday at 2:00 AM."
+          ],
+          [
+            "Repeatable normal process → SOP",
+            "If the task is routine and follows the same documented steps each time, think standard operating procedure.",
+            "Example: Monthly patching follows an approved checklist."
+          ]
+        ],
+        "example": "Fast memory: Permission · Owner · Affected people · Impact · Test · Undo · Time · Repeatable procedure"
+      }
+    ],
+    "questions": [
+      {
+        "q": "A firewall change must be reviewed and formally authorized before it can be deployed to production. Which change-management process is being used?",
+        "choices": [
+          "Approval process",
+          "Impact analysis",
+          "Backout plan",
+          "Version control"
+        ],
+        "answer": 0,
+        "explanation": "The approval process provides authorized permission before implementation."
+      },
+      {
+        "q": "A database upgrade has one engineer responsible for coordinating testing, deployment, validation, and rollback. Which concept does this describe?",
+        "choices": [
+          "Ownership",
+          "Stakeholders",
+          "Maintenance window",
+          "Documentation"
+        ],
+        "answer": 0,
+        "explanation": "Ownership identifies the person or team accountable for the change."
+      },
+      {
+        "q": "Before a payroll upgrade, the team identifies HR, finance, the help desk, and security as groups that may be affected. What is the team identifying?",
+        "choices": [
+          "Stakeholders",
+          "Test results",
+          "Backout steps",
+          "Allow lists"
+        ],
+        "answer": 0,
+        "explanation": "Stakeholders are people or groups affected by or interested in the change."
+      },
+      {
+        "q": "A team checks whether disabling an old protocol will break any applications that still depend on it. Which change-management activity is this?",
+        "choices": [
+          "Impact analysis",
+          "Approval process",
+          "Version control",
+          "Maintenance window"
+        ],
+        "answer": 0,
+        "explanation": "Impact analysis evaluates what a proposed change could affect or break."
+      },
+      {
+        "q": "A patch is installed in staging and validated before production deployment. What artifact helps demonstrate that the patch behaved as expected?",
+        "choices": [
+          "Test results",
+          "Ownership",
+          "Stakeholder list",
+          "Maintenance window"
+        ],
+        "answer": 0,
+        "explanation": "Test results provide evidence about how the change behaved during testing."
+      },
+      {
+        "q": "A software update causes a production failure, so the team restores the previous known-good version using prewritten steps. What are they using?",
+        "choices": [
+          "Backout plan",
+          "Impact analysis",
+          "Approval process",
+          "SOP only"
+        ],
+        "answer": 0,
+        "explanation": "A backout plan defines how to reverse a failed change."
+      },
+      {
+        "q": "A disruptive upgrade is scheduled for Sunday at 2:00 AM when business activity is lowest. Which concept is this?",
+        "choices": [
+          "Maintenance window",
+          "Ownership",
+          "Version control",
+          "Restricted activity"
+        ],
+        "answer": 0,
+        "explanation": "A maintenance window is an approved period for potentially disruptive work."
+      },
+      {
+        "q": "Every monthly patch cycle follows the same approved, documented sequence. What best describes that document?",
+        "choices": [
+          "Standard operating procedure",
+          "Stakeholder register",
+          "Impact analysis",
+          "Backout plan"
+        ],
+        "answer": 0,
+        "explanation": "An SOP defines repeatable instructions for a routine process."
+      }
+    ]
+  }
 }
