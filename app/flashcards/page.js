@@ -15,5 +15,18 @@ export default function FlashcardsPage() {
       exam: section.course?.exam || "Explain the concept and recognize it in a Security+ scenario.",
     }))
   );
-  return <FlashcardsClient cards={cards} />;
+
+  const extraCards = lessons.flatMap((lesson) =>
+    (lesson.flashcards || []).map((card, i) => ({
+      key: `${lesson.id}-extra-${i + 1}`,
+      lessonId: lesson.id,
+      lessonTitle: lesson.title,
+      sectionNumber: `extra-${i + 1}`,
+      title: card.title,
+      answer: card.answer,
+      exam: card.exam || "Explain the concept and recognize it in a Security+ scenario.",
+    }))
+  );
+
+  return <FlashcardsClient cards={[...cards, ...extraCards]} />;
 }
