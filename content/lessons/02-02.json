@@ -340,23 +340,26 @@
       },
       {
         "type": "tip",
-        "kicker": "Exam Memory",
+        "kicker": "Exam Shortcut",
         "title": "AAA in one line",
         "items": [
           [
-            "Authentication",
-            "WHO are you?"
+            "Authentication → WHO are you?",
+            "Authentication verifies identity. The user or system must prove who or what it claims to be.",
+            "Example: A user enters a password and MFA code before signing in."
           ],
           [
-            "Authorization",
-            "WHAT can you do?"
+            "Authorization → WHAT can you do?",
+            "Authorization determines permissions after identity is known.",
+            "Example: A signed-in employee can view reports but cannot modify them."
           ],
           [
-            "Accounting",
-            "WHAT did you do?"
+            "Accounting → WHAT did you do?",
+            "Accounting records activity so actions can be tracked later.",
+            "Example: Logs record login time, files accessed, and logout time."
           ]
         ],
-        "example": "Authentication normally happens before authorization."
+        "example": "Order to remember: Authenticate first → Authorize access → Account for activity."
       }
     ],
     "questions": [
