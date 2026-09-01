@@ -16,6 +16,6 @@ body.dark{--bg:#0a0f16;--surface:#111923;--surface2:#182231;--surface3:#202c3d;-
 @media(max-width:950px){.sc-four{grid-template-columns:repeat(2,minmax(0,1fr))}.sc-three{grid-template-columns:repeat(2,minmax(0,1fr))}.sc-two{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:650px){.sc-overview-grid,.sc-four,.sc-three,.sc-two,.sc-one,.sc-tip-grid,.sc-choices{grid-template-columns:1fr}.sc-section-head{align-items:flex-start;flex-direction:column}.sc-hero,.sc-practice{padding:17px}}
 
 
-.sc-visual-card{margin:18px auto 28px;padding:18px;border:1px solid var(--border);border-radius:15px;background:var(--surface);box-shadow:var(--shadow);text-align:center}
-.sc-visual-card img{display:block;width:min(100%,760px);height:auto;margin:0 auto;border-radius:10px}
-.sc-visual-card figcaption{max-width:760px;margin:12px auto 0;color:var(--muted);font-size:13px;line-height:1.55}
+.sc-visual-card{margin:14px auto 22px;padding:10px 14px 12px;border:1px solid var(--border);border-radius:15px;background:var(--surface);box-shadow:var(--shadow);text-align:center}
+.sc-visual-card img{display:block;width:min(100%,620px);height:auto;margin:0 auto;border-radius:8px}
+.sc-visual-card figcaption{max-width:680px;margin:8px auto 0;color:var(--muted);font-size:13px;line-height:1.45}
