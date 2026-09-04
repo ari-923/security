@@ -1,0 +1,433 @@
+{
+  "id": "06.02",
+  "chapter": 6,
+  "sub": 2,
+  "title": "Unsupported Systems, Networks, and Exposed Services",
+  "chapter_name": "Threat Vectors & Attack Surfaces",
+  "slides": [
+    {
+      "n": 1,
+      "title": "Unsupported Systems, Networks, and Exposed Services",
+      "instructional": false,
+      "teach": "",
+      "points": [
+        "Attack surfaces grow when systems are unsupported, networks are insecure, ports are unnecessarily open, or devices retain default credentials.",
+        "Security+ Objective 2.2: explain common threat vectors and attack surfaces."
+      ],
+      "defs": [],
+      "raw": ""
+    },
+    {
+      "n": 2,
+      "title": "Unsupported Systems and Applications",
+      "instructional": true,
+      "teach": "Systems or applications no longer receiving vendor updates or security fixes.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Systems or applications no longer receiving vendor updates or security fixes.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "The vendor has stopped supporting it, so known flaws may remain unpatched."
+          },
+          {
+            "term": "Examples",
+            "explanation": "End-of-life OS, Unsupported application"
+          }
+        ],
+        "defs": [],
+        "why": "Unsupported technology accumulates risk because newly discovered vulnerabilities may never be fixed.",
+        "example": "A legacy operating system has a known vulnerability but no vendor patch exists.",
+        "exam": "End-of-life / no patches → UNSUPPORTED SYSTEM.",
+        "check_q": "What risk exists when a vendor no longer provides fixes?",
+        "check_a": "Unsupported system/application."
+      }
+    },
+    {
+      "n": 3,
+      "title": "Wireless Networks",
+      "instructional": true,
+      "teach": "Wireless networks use radio communication and can be attacked through weak encryption, rogue access points, or poor configuration.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Wireless networks use radio communication and can be attacked through weak encryption, rogue access points, or poor configuration.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "The network is reachable over radio rather than only through a cable."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Weak Wi-Fi security, Rogue AP"
+          }
+        ],
+        "defs": [],
+        "why": "Wireless expands the physical reach of the network beyond the building's wired ports.",
+        "example": "An attacker connects through a poorly secured wireless access point from outside the office.",
+        "exam": "Wi-Fi/rogue AP → WIRELESS.",
+        "check_q": "Which attack surface uses Wi-Fi radio communication?",
+        "check_a": "Wireless network."
+      }
+    },
+    {
+      "n": 4,
+      "title": "Wired Networks",
+      "instructional": true,
+      "teach": "Wired networks can be exposed when physical access, switch ports, segmentation, or port security are weak.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Wired networks can be exposed when physical access, switch ports, segmentation, or port security are weak.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "The attacker gains or abuses a physical LAN connection."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Open wall jack, Rogue device on LAN"
+          }
+        ],
+        "defs": [],
+        "why": "A physical connection can place an unauthorized device directly on the internal network.",
+        "example": "A visitor plugs a rogue laptop into an unused wall jack.",
+        "exam": "Physical Ethernet/LAN connection → WIRED.",
+        "check_q": "Which network attack surface involves plugging into a LAN port?",
+        "check_a": "Wired network."
+      }
+    },
+    {
+      "n": 5,
+      "title": "Bluetooth",
+      "instructional": true,
+      "teach": "Bluetooth is short-range wireless technology that can expose nearby devices through pairing abuse, weak configuration, or implementation flaws.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Bluetooth is short-range wireless technology that can expose nearby devices through pairing abuse, weak configuration, or implementation flaws.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "The attack happens over short-range device-to-device wireless communication."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Unauthorized pairing, Nearby-device attack"
+          }
+        ],
+        "defs": [],
+        "why": "Bluetooth-enabled devices may accept connections or expose services to nearby attackers.",
+        "example": "An attacker near a conference room attempts unauthorized Bluetooth pairing with company devices.",
+        "exam": "Nearby pairing / short-range wireless → BLUETOOTH.",
+        "check_q": "Which attack surface involves nearby pairing attempts?",
+        "check_a": "Bluetooth."
+      }
+    },
+    {
+      "n": 6,
+      "title": "Open Service Ports",
+      "instructional": true,
+      "teach": "Open ports expose listening services that attackers can enumerate or exploit.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Open ports expose listening services that attackers can enumerate or exploit.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "An open port is like a network door to a service."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Exposed RDP, Unused database port"
+          }
+        ],
+        "defs": [],
+        "why": "Every unnecessary exposed service increases the attack surface.",
+        "example": "RDP is exposed directly to the internet even though remote access is not required.",
+        "exam": "Listening service exposed → OPEN SERVICE PORT.",
+        "check_q": "What attack surface is created by an unnecessary listening service?",
+        "check_a": "Open service port."
+      }
+    },
+    {
+      "n": 7,
+      "title": "Default Credentials",
+      "instructional": true,
+      "teach": "Factory or vendor-default usernames and passwords are predictable and often publicly known.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Factory or vendor-default usernames and passwords are predictable and often publicly known.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "The device still uses the login it shipped with."
+          },
+          {
+            "term": "Examples",
+            "explanation": "admin/admin, Default router password"
+          }
+        ],
+        "defs": [],
+        "why": "Attackers can easily try known default credentials during reconnaissance or automated attacks.",
+        "example": "A router is compromised because the administrator never changed admin/admin.",
+        "exam": "Factory login still active → DEFAULT CREDENTIALS.",
+        "check_q": "What weakness exists when a device still uses its factory password?",
+        "check_a": "Default credentials."
+      }
+    }
+  ],
+  "slide_count": 7,
+  "instructional_count": 6,
+  "concepts": [
+    "Unsupported Systems and Applications",
+    "Wireless Networks",
+    "Wired Networks",
+    "Bluetooth",
+    "Open Service Ports",
+    "Default Credentials"
+  ],
+  "source_filename": "06-02.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 2.2",
+      "title": "Unsupported Systems, Networks, and Exposed Services",
+      "intro": "Attack surfaces grow when systems are unsupported, networks are insecure, ports are unnecessarily open, or devices retain default credentials."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Unsupported Systems, Networks, and Exposed Services",
+        "prompt": "Recognize the delivery path, attack surface, or social-engineering technique from the scenario.",
+        "badge": "2.2",
+        "cards": [
+          {
+            "name": "Unsupported Systems and Applications",
+            "definition": "Systems or applications no longer receiving vendor updates or security fixes.",
+            "examples": [
+              "End-of-life OS",
+              "Unsupported application"
+            ],
+            "memory": "NO MORE PATCHES"
+          },
+          {
+            "name": "Wireless Networks",
+            "definition": "Wireless networks use radio communication and can be attacked through weak encryption, rogue access points, or poor configuration.",
+            "examples": [
+              "Weak Wi-Fi security",
+              "Rogue AP"
+            ],
+            "memory": "RADIO NETWORK"
+          },
+          {
+            "name": "Wired Networks",
+            "definition": "Wired networks can be exposed when physical access, switch ports, segmentation, or port security are weak.",
+            "examples": [
+              "Open wall jack",
+              "Rogue device on LAN"
+            ],
+            "memory": "PHYSICAL/LAN ACCESS"
+          },
+          {
+            "name": "Bluetooth",
+            "definition": "Bluetooth is short-range wireless technology that can expose nearby devices through pairing abuse, weak configuration, or implementation flaws.",
+            "examples": [
+              "Unauthorized pairing",
+              "Nearby-device attack"
+            ],
+            "memory": "SHORT-RANGE WIRELESS"
+          },
+          {
+            "name": "Open Service Ports",
+            "definition": "Open ports expose listening services that attackers can enumerate or exploit.",
+            "examples": [
+              "Exposed RDP",
+              "Unused database port"
+            ],
+            "memory": "OPEN DOOR"
+          },
+          {
+            "name": "Default Credentials",
+            "definition": "Factory or vendor-default usernames and passwords are predictable and often publicly known.",
+            "examples": [
+              "admin/admin",
+              "Default router password"
+            ],
+            "memory": "CHANGE THE DEFAULT"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Unsupported Systems, Networks, and Exposed Services comparison",
+        "headers": [
+          "Attack surface",
+          "Why risky",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Unsupported systems",
+            "No vendor fixes",
+            "End-of-life / no patches"
+          ],
+          [
+            "Wireless",
+            "Radio-accessible",
+            "Weak Wi-Fi / rogue AP"
+          ],
+          [
+            "Wired",
+            "Physical LAN access",
+            "Rogue device / open wall jack"
+          ],
+          [
+            "Bluetooth",
+            "Short-range wireless",
+            "Pairing abuse"
+          ],
+          [
+            "Open service port",
+            "Exposed service",
+            "Listening port / exposed RDP"
+          ],
+          [
+            "Default credentials",
+            "Known preset login",
+            "Factory username/password"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Identify what is exposed",
+        "items": [
+          [
+            "End-of-life / no patches → UNSUPPORTED",
+            "If the vendor no longer provides security updates, the system remains exposed to known flaws.",
+            "Example: A legacy OS has a known vulnerability but no fix."
+          ],
+          [
+            "Weak Wi-Fi / rogue AP → WIRELESS",
+            "The attack surface is the wireless network.",
+            "Example: An attacker connects through a poorly secured access point."
+          ],
+          [
+            "Unused service listening → OPEN PORT",
+            "An open port exposes a service even when it is unnecessary.",
+            "Example: RDP is exposed directly to the internet."
+          ],
+          [
+            "Factory login still active → DEFAULT CREDENTIALS",
+            "Predictable preset credentials are an easy entry point.",
+            "Example: A router still uses admin/admin."
+          ],
+          [
+            "Nearby pairing abuse → BLUETOOTH",
+            "The attacker targets short-range Bluetooth connectivity.",
+            "Example: A device accepts unauthorized pairing attempts."
+          ]
+        ],
+        "example": "Memory: Unsupported · Wireless · Wired · Bluetooth · Open port · Default login."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A legacy operating system has a known vulnerability, but the vendor no longer provides patches. Which attack-surface issue is most relevant?",
+        "choices": [
+          "Unsupported systems and applications",
+          "Open service ports",
+          "Default credentials",
+          "Bluetooth"
+        ],
+        "answer": 0,
+        "explanation": "Unsupported systems no longer receive vendor security fixes."
+      },
+      {
+        "q": "An attacker connects to a poorly secured office access point from outside the building. Which attack surface is being exploited?",
+        "choices": [
+          "Wireless network",
+          "Wired network",
+          "Bluetooth",
+          "Open service port"
+        ],
+        "answer": 0,
+        "explanation": "The attacker is using Wi-Fi radio access."
+      },
+      {
+        "q": "A visitor plugs a rogue laptop into an unused Ethernet wall jack and gains network access. Which attack surface is most relevant?",
+        "choices": [
+          "Wired network",
+          "Wireless network",
+          "Bluetooth",
+          "Supply chain"
+        ],
+        "answer": 0,
+        "explanation": "The attacker uses a physical wired LAN connection."
+      },
+      {
+        "q": "An attacker nearby repeatedly attempts unauthorized pairing with company devices. Which attack surface is being targeted?",
+        "choices": [
+          "Bluetooth",
+          "Wired network",
+          "Open service port",
+          "Email"
+        ],
+        "answer": 0,
+        "explanation": "The scenario describes short-range Bluetooth pairing."
+      },
+      {
+        "q": "An unused RDP service is reachable directly from the internet. Which attack-surface issue is most relevant?",
+        "choices": [
+          "Open service port",
+          "Default credentials",
+          "Unsupported application",
+          "Shadow IT"
+        ],
+        "answer": 0,
+        "explanation": "RDP is a listening service exposed through an open port."
+      },
+      {
+        "q": "A router is compromised because it still uses the vendor's default administrator password. Which issue is this?",
+        "choices": [
+          "Default credentials",
+          "Open service port",
+          "Wireless only",
+          "Typosquatting"
+        ],
+        "answer": 0,
+        "explanation": "The device retained a predictable factory login."
+      }
+    ]
+  }
+}
