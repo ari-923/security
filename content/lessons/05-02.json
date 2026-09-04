@@ -7,164 +7,291 @@
   "slides": [
     {
       "n": 1,
-      "title": "Attributes of Actors",
-      "points": [],
-      "raw": "Attributes of Actors",
+      "title": "Attributes of actors",
       "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": []
+      "teach": "",
+      "points": [
+        "Actor attributes help you compare threat actors by where they operate, the resources available to them, and their technical sophistication.",
+        "Security+ Objective 2.1: compare and contrast common threat actors and motivations."
+      ],
+      "defs": [],
+      "raw": ""
     },
     {
       "n": 2,
-      "title": "Attributes",
-      "points": [
-        "Internal/external",
-        "• Internal = insider threat",
-        "• External = black hat",
-        "hacker",
-        "Level of",
-        "sophistication/capability",
-        "• Depends on the tools",
-        "and capabilities of a",
-        "hacker"
-      ],
-      "raw": "Attributes\nInternal/external\n• Internal = insider threat\n• External = black hat\nhacker\nLevel of\nsophistication/capability\n• Depends on the tools\nand capabilities of a\nhacker",
+      "title": "Internal / External",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "Describes whether the actor originates from inside the organization or outside it.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "This section focuses on **Attributes** within **Attributes of actors**. Threat-actor attributes describe where an attacker is located, what access they already have, how skilled they are, and what resources they can use.",
-        "why": "Two actors can use the same attack but present very different risk depending on privilege and capability.",
-        "example": "A low-skill external attacker may rely on public tools, while a privileged insider may need little technical sophistication to steal sensitive files.",
-        "exam": "Internal/external, resources, sophistication, and access are common classification clues.",
+        "learn": "Describes whether the actor originates from inside the organization or outside it.",
         "breakdown": [
           {
-            "term": "Internal/external",
-            "explanation": "Within Attributes, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Attributes of actors rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "Ask where the actor starts relative to the organization."
           },
           {
-            "term": "Internal = insider threat",
-            "explanation": "Within Attributes, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Attributes of actors rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "External = black hat hacker",
-            "explanation": "Within Attributes, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Attributes of actors rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Level of sophistication/capability",
-            "explanation": "Encryption can be applied at different levels of granularity: full disk, partition, volume, file, database, or individual record/field. The best level depends on what threats and workflows must be protected."
-          },
-          {
-            "term": "Depends on the tools and capabilities of a",
-            "explanation": "Security monitoring and automation tools include SIEM for event correlation, SCAP for standardized security-content automation, DLP for controlling sensitive data movement, and SNMP for device monitoring and traps."
-          },
-          {
-            "term": "hacker",
-            "explanation": "Within Attributes, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Attributes of actors rather than memorizing the phrase by itself."
+            "term": "Examples",
+            "explanation": "Employee with access, External attacker on the internet"
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Attributes and describe at least two key ideas from this section.",
-        "check_a": "This section focuses on **Attributes** within **Attributes of actors**. Threat-actor attributes describe where an attacker is located, what access they already have, how skilled they are, and what resources they can use. Key ideas include: Internal/external; Internal = insider threat; External = black hat hacker; Level of sophistication/capability; Depends on the tools and capabilities of a.",
-        "points": [
-          "Internal/external",
-          "Internal = insider threat",
-          "External = black hat hacker",
-          "Level of sophistication/capability",
-          "Depends on the tools and capabilities of a",
-          "hacker"
-        ]
+        "why": "Location and trust position affect the defenses, visibility, and access paths available to the attacker.",
+        "example": "A database administrator misuses valid credentials from inside the organization.",
+        "exam": "Inside the company → INTERNAL; outside the organization → EXTERNAL.",
+        "check_q": "What attribute distinguishes an employee from an internet-based attacker?",
+        "check_a": "Internal/external."
       }
     },
     {
       "n": 3,
-      "title": "Attributes",
-      "points": [
-        "Resources/funding",
-        "Intent/motivation",
-        "• Can be funded or selfmotivated",
-        "• Can use their own or",
-        "borrowed tools",
-        "• Can now also hire tools –",
-        "as a service on the dark",
-        "web",
-        "• Can have a specific motive",
-        "or objective",
-        "• Can be doing it to test their",
-        "skills or to learn"
-      ],
-      "raw": "Attributes\nResources/funding\nIntent/motivation\n• Can be funded or selfmotivated\n• Can use their own or\nborrowed tools\n• Can now also hire tools –\nas a service on the dark\nweb\n• Can have a specific motive\nor objective\n• Can be doing it to test their\nskills or to learn",
+      "title": "Resources / Funding",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "Describes how much money, infrastructure, time, staffing, and tooling an actor can use.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "This section focuses on **Attributes** within **Attributes of actors**. Threat-actor attributes describe where an attacker is located, what access they already have, how skilled they are, and what resources they can use.",
-        "why": "Two actors can use the same attack but present very different risk depending on privilege and capability.",
-        "example": "A low-skill external attacker may rely on public tools, while a privileged insider may need little technical sophistication to steal sensitive files.",
-        "exam": "Internal/external, resources, sophistication, and access are common classification clues.",
+        "learn": "Describes how much money, infrastructure, time, staffing, and tooling an actor can use.",
         "breakdown": [
           {
-            "term": "Resources/funding",
-            "explanation": "Within Attributes, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Attributes of actors rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "Ask how much support the actor has available."
           },
           {
-            "term": "Intent/motivation",
-            "explanation": "Within Attributes, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Attributes of actors rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Can be funded or selfmotivated",
-            "explanation": "Within Attributes, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Attributes of actors rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Can use their own or borrowed tools",
-            "explanation": "Security monitoring and automation tools include SIEM for event correlation, SCAP for standardized security-content automation, DLP for controlling sensitive data movement, and SNMP for device monitoring and traps."
-          },
-          {
-            "term": "Can now also hire tools – as a service on the dark",
-            "explanation": "Security monitoring and automation tools include SIEM for event correlation, SCAP for standardized security-content automation, DLP for controlling sensitive data movement, and SNMP for device monitoring and traps."
-          },
-          {
-            "term": "web",
-            "explanation": "Threat-actor attributes describe where an attacker is located, what access they already have, how skilled they are, and what resources they can use."
-          },
-          {
-            "term": "Can have a specific motive or objective",
-            "explanation": "Within Attributes, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Attributes of actors rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Can be doing it to test their skills or to learn",
-            "explanation": "Within Attributes, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Attributes of actors rather than memorizing the phrase by itself."
+            "term": "Examples",
+            "explanation": "Government funding, Criminal infrastructure, Minimal personal resources"
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Attributes and describe at least two key ideas from this section.",
-        "check_a": "This section focuses on **Attributes** within **Attributes of actors**. Threat-actor attributes describe where an attacker is located, what access they already have, how skilled they are, and what resources they can use. Key ideas include: Resources/funding; Intent/motivation; Can be funded or selfmotivated; Can use their own or borrowed tools; Can now also hire tools – as a service on the dark.",
-        "points": [
-          "Resources/funding",
-          "Intent/motivation",
-          "Can be funded or selfmotivated",
-          "Can use their own or borrowed tools",
-          "Can now also hire tools – as a service on the dark",
-          "web",
-          "Can have a specific motive or objective",
-          "Can be doing it to test their skills or to learn"
-        ]
+        "why": "Greater resources can enable persistence, custom tooling, large infrastructure, and longer campaigns.",
+        "example": "A state-backed group maintains multiple command-and-control networks and dedicated research teams.",
+        "exam": "Large budget/infrastructure → HIGH RESOURCES.",
+        "check_q": "Which attribute describes the money and infrastructure available to an actor?",
+        "check_a": "Resources/funding."
       }
     },
     {
       "n": 4,
-      "title": "Motivations",
-      "points": [],
-      "raw": "Motivations",
-      "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": []
+      "title": "Level of Sophistication / Capability",
+      "instructional": true,
+      "teach": "Describes the actor’s technical skill, operational maturity, tooling, and ability to conduct complex attacks.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Describes the actor’s technical skill, operational maturity, tooling, and ability to conduct complex attacks.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Ask how advanced the actor is."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Custom malware, Zero-day capability, Basic public scripts"
+          }
+        ],
+        "defs": [],
+        "why": "Capability affects the complexity, stealth, persistence, and technical difficulty of the attacks an actor can perform.",
+        "example": "An attacker develops custom malware, exploits an unknown vulnerability, and remains undetected for months.",
+        "exam": "Custom tools + stealth + long campaign → HIGH SOPHISTICATION.",
+        "check_q": "Which attribute describes how technically advanced an actor is?",
+        "check_a": "Level of sophistication/capability."
+      }
     }
   ],
   "slide_count": 4,
-  "instructional_count": 2,
+  "instructional_count": 3,
   "concepts": [
-    "Attributes"
+    "Internal / External",
+    "Resources / Funding",
+    "Level of Sophistication / Capability"
   ],
-  "source_filename": "05.02_Attributes_of_actors.pdf"
+  "source_filename": "05-02.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 2.1",
+      "title": "Attributes of actors",
+      "intro": "Actor attributes help you compare threat actors by where they operate, the resources available to them, and their technical sophistication."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Attributes of actors",
+        "prompt": "Compare the clues in the scenario and identify the most likely actor, attribute, or motivation.",
+        "badge": "2.1",
+        "cards": [
+          {
+            "name": "Internal / External",
+            "definition": "Describes whether the actor originates from inside the organization or outside it.",
+            "examples": [
+              "Employee with access",
+              "External attacker on the internet"
+            ],
+            "memory": "WHERE ARE THEY?"
+          },
+          {
+            "name": "Resources / Funding",
+            "definition": "Describes how much money, infrastructure, time, staffing, and tooling an actor can use.",
+            "examples": [
+              "Government funding",
+              "Criminal infrastructure",
+              "Minimal personal resources"
+            ],
+            "memory": "HOW MUCH SUPPORT?"
+          },
+          {
+            "name": "Level of Sophistication / Capability",
+            "definition": "Describes the actor’s technical skill, operational maturity, tooling, and ability to conduct complex attacks.",
+            "examples": [
+              "Custom malware",
+              "Zero-day capability",
+              "Basic public scripts"
+            ],
+            "memory": "HOW CAPABLE?"
+          }
+        ],
+        "columns": "three"
+      },
+      {
+        "type": "table",
+        "title": "Attributes of actors comparison",
+        "headers": [
+          "Attribute",
+          "What it asks",
+          "Example contrast"
+        ],
+        "rows": [
+          [
+            "Internal / external",
+            "Where the actor originates",
+            "Employee vs. internet attacker"
+          ],
+          [
+            "Resources / funding",
+            "How much support is available",
+            "Nation-state vs. lone attacker"
+          ],
+          [
+            "Sophistication / capability",
+            "How advanced the actor is",
+            "Custom tooling vs. public scripts"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Where are they, how much support, and how capable?",
+        "items": [
+          [
+            "Inside the company → INTERNAL",
+            "Internal actors already have some degree of organizational access or trust.",
+            "Example: A database administrator misuses legitimate credentials."
+          ],
+          [
+            "Outside the organization → EXTERNAL",
+            "External actors begin outside the trusted organization.",
+            "Example: A criminal group attacks an internet-facing VPN."
+          ],
+          [
+            "Large budget/infrastructure → HIGH RESOURCES",
+            "Funding affects persistence, tooling, staffing, and operational scale.",
+            "Example: A state-backed team maintains multiple command-and-control infrastructures."
+          ],
+          [
+            "Custom tools + stealth + long campaign → HIGH SOPHISTICATION",
+            "Advanced actors can build custom tools and sustain complex operations.",
+            "Example: An actor develops custom malware and evades detection for months."
+          ],
+          [
+            "Public scripts + obvious mistakes → LOW SOPHISTICATION",
+            "Less-capable actors often rely on existing tools and make noisy mistakes.",
+            "Example: An attacker runs a common script without modifying it."
+          ]
+        ],
+        "example": "Memory: Internal/external = WHERE · Resources = SUPPORT · Sophistication = CAPABILITY."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A database administrator misuses valid credentials to steal data. Which actor attribute is most directly highlighted?",
+        "choices": [
+          "Internal",
+          "External",
+          "Low funding",
+          "Low sophistication"
+        ],
+        "answer": 0,
+        "explanation": "The administrator originates inside the organization and already has legitimate access."
+      },
+      {
+        "q": "A criminal group attacks an internet-facing VPN from infrastructure outside the company. Which attribute best describes its position?",
+        "choices": [
+          "External",
+          "Internal",
+          "Ethical",
+          "Shadow IT"
+        ],
+        "answer": 0,
+        "explanation": "The actor begins outside the organization."
+      },
+      {
+        "q": "A state-backed team maintains global infrastructure, dedicated staff, and expensive research capabilities. Which attribute is most clearly demonstrated?",
+        "choices": [
+          "High resources/funding",
+          "Low sophistication",
+          "Internal access",
+          "Shadow IT"
+        ],
+        "answer": 0,
+        "explanation": "Large infrastructure and dedicated staffing indicate substantial resources and funding."
+      },
+      {
+        "q": "An attacker develops custom malware, exploits a previously unknown flaw, and remains undetected for months. Which attribute is most evident?",
+        "choices": [
+          "High sophistication/capability",
+          "Low resources",
+          "Internal position",
+          "Ethical motivation"
+        ],
+        "answer": 0,
+        "explanation": "Custom malware, advanced exploitation, and stealth indicate high sophistication."
+      },
+      {
+        "q": "An attacker uses a common public script without modification and makes obvious operational mistakes. Which attribute is most likely?",
+        "choices": [
+          "Low sophistication/capability",
+          "High sophistication/capability",
+          "High funding",
+          "Internal position"
+        ],
+        "answer": 0,
+        "explanation": "Reliance on unmodified public tools and obvious mistakes indicates lower sophistication."
+      },
+      {
+        "q": "Which actor attribute asks how much money, infrastructure, time, and staffing are available?",
+        "choices": [
+          "Resources/funding",
+          "Internal/external",
+          "Motivation",
+          "Data exfiltration"
+        ],
+        "answer": 0,
+        "explanation": "Resources/funding describes the support available to an actor."
+      }
+    ]
+  }
 }
