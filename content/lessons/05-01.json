@@ -7,447 +7,467 @@
   "slides": [
     {
       "n": 1,
-      "title": "Threat Actors",
-      "points": [],
-      "raw": "Threat Actors",
+      "title": "Threat actors",
       "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": []
+      "teach": "",
+      "points": [
+        "Threat actors differ in goals, resources, access, and capability. Security+ expects you to recognize who is most likely behind a scenario.",
+        "Security+ Objective 2.1: compare and contrast common threat actors and motivations."
+      ],
+      "defs": [],
+      "raw": ""
     },
     {
       "n": 2,
-      "title": "Threat Actors",
-      "points": [
-        "Advanced Persistent",
-        "Threat (APT)",
-        "• Use sophisticated",
-        "methods and tools",
-        "• Are not easy to detect",
-        "once inside the system",
-        "or network",
-        "• Have tendency to remain",
-        "low profile",
-        "• Have specific objectives",
-        "to meet",
-        "Insider Threats",
-        "State Actors",
-        "• Are part of an",
-        "organization – not easy",
-        "to detect them as insider",
-        "threat",
-        "• Have access to the data,",
-        "applications, and",
-        "network",
-        "• Can exfiltrate data and",
-        "cause damage to",
-        "applications and",
-        "networks",
-        "• Are working for",
-        "governments to attack",
-        "other governments",
-        "• Are funded by the",
-        "government"
-      ],
-      "raw": "Threat Actors\nAdvanced Persistent\nThreat (APT)\n• Use sophisticated\nmethods and tools\n• Are not easy to detect\nonce inside the system\nor network\n• Have tendency to remain\nlow profile\n• Have specific objectives\nto meet\nInsider Threats\nState Actors\n• Are part of an\norganization – not easy\nto detect them as insider\nthreat\n• Have access to the data,\napplications, and\nnetwork\n• Can exfiltrate data and\ncause damage to\napplications and\nnetworks\n• Are working for\ngovernments to attack\nother governments\n• Are funded by the\ngovernment",
+      "title": "Nation-state",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "A government-backed or government-aligned threat actor that may conduct cyber operations for intelligence, military, political, or strategic objectives.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Threat actors are people or groups that can cause security harm. They differ in access, resources, skill, objectives, and willingness to take risk.",
-        "why": "Identifying the likely actor helps defenders predict tactics, persistence, and targets.",
-        "example": "A nation-state spends months quietly stealing research, while organized crime deploys ransomware for payment.",
-        "exam": "Use motive and capability clues: nation-state = strategic/espionage; organized crime = money; hacktivist = ideology; insider = legitimate access.",
+        "learn": "A government-backed or government-aligned threat actor that may conduct cyber operations for intelligence, military, political, or strategic objectives.",
         "breakdown": [
           {
-            "term": "Advanced Persistent",
-            "explanation": "Within Threat Actors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Threat actors rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "Think a country or state-backed group with significant resources and long-term goals."
           },
           {
-            "term": "Threat (APT)",
-            "explanation": "Within Threat Actors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Threat actors rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Use sophisticated methods and tools",
-            "explanation": "Security monitoring and automation tools include SIEM for event correlation, SCAP for standardized security-content automation, DLP for controlling sensitive data movement, and SNMP for device monitoring and traps."
-          },
-          {
-            "term": "Are not easy to detect once inside the system",
-            "explanation": "Within Threat Actors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Threat actors rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "or network",
-            "explanation": "Within Threat Actors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Threat actors rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Have tendency to remain low profile",
-            "explanation": "Within Threat Actors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Threat actors rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Have specific objectives to meet",
-            "explanation": "Within Threat Actors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Threat actors rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Insider Threats",
-            "explanation": "Within Threat Actors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Threat actors rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "State Actors",
-            "explanation": "Within Threat Actors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Threat actors rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Are part of an organization – not easy",
-            "explanation": "Within Threat Actors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Threat actors rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "to detect them as insider threat",
-            "explanation": "Within Threat Actors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Threat actors rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Have access to the data, applications, and",
-            "explanation": "Application monitoring measures application behavior, performance, errors, and security events. APM focuses on health/performance, while a WAF inspects and protects web requests."
-          },
-          {
-            "term": "network",
-            "explanation": "Networks that lack trustworthy encryption, authentication, segmentation, or monitoring."
-          },
-          {
-            "term": "Can exfiltrate data and cause damage to",
-            "explanation": "Within Threat Actors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Threat actors rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "applications and networks",
-            "explanation": "Application monitoring measures application behavior, performance, errors, and security events. APM focuses on health/performance, while a WAF inspects and protects web requests."
-          },
-          {
-            "term": "Are working for governments to attack",
-            "explanation": "Within Threat Actors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Threat actors rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "other governments",
-            "explanation": "Within Threat Actors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Threat actors rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Are funded by the government",
-            "explanation": "Within Threat Actors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Threat actors rather than memorizing the phrase by itself."
+            "term": "Examples",
+            "explanation": "Espionage, Critical infrastructure targeting, Long-term campaigns"
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Threat Actors and describe at least two key ideas from this section.",
-        "check_a": "Threat actors are people or groups that can cause security harm. They differ in access, resources, skill, objectives, and willingness to take risk. Key ideas include: Advanced Persistent; Threat (APT); Use sophisticated methods and tools; Are not easy to detect once inside the system; or network.",
-        "points": [
-          "Advanced Persistent",
-          "Threat (APT)",
-          "Use sophisticated methods and tools",
-          "Are not easy to detect once inside the system",
-          "or network",
-          "Have tendency to remain low profile",
-          "Have specific objectives to meet",
-          "Insider Threats",
-          "State Actors",
-          "Are part of an organization – not easy",
-          "to detect them as insider threat",
-          "Have access to the data, applications, and",
-          "network",
-          "Can exfiltrate data and cause damage to",
-          "applications and networks",
-          "Are working for governments to attack",
-          "other governments",
-          "Are funded by the government"
-        ]
+        "why": "Nation-state actors may have substantial funding, patience, intelligence support, and access to advanced capabilities.",
+        "example": "A foreign government-linked group quietly steals defense research over several years.",
+        "exam": "Government resources + strategic goal → NATION-STATE.",
+        "check_q": "Which actor is most associated with state sponsorship and strategic geopolitical goals?",
+        "check_a": "Nation-state."
       }
     },
     {
       "n": 3,
-      "title": "Threat Actors",
-      "points": [
-        "Hacktivists",
-        "Script Kiddies",
-        "• Have specific",
-        "political motives",
-        "• Go after",
-        "organizations and",
-        "government who are",
-        "not having the same",
-        "motives",
-        "• Use tools",
-        "developed by other",
-        "hackers",
-        "• Use tools for hit and",
-        "try or learn",
-        "something",
-        "Criminal Syndicates",
-        "• Have an",
-        "organizational",
-        "structure like an",
-        "organization",
-        "• Have motives to",
-        "earn money",
-        "• Use various",
-        "methods like",
-        "ransomware"
-      ],
-      "raw": "Threat Actors\nHacktivists\nScript Kiddies\n• Have specific\npolitical motives\n• Go after\norganizations and\ngovernment who are\nnot having the same\nmotives\n• Use tools\ndeveloped by other\nhackers\n• Use tools for hit and\ntry or learn\nsomething\nCriminal Syndicates\n• Have an\norganizational\nstructure like an\norganization\n• Have motives to\nearn money\n• Use various\nmethods like\nransomware",
+      "title": "Unskilled attacker",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "Ransomware",
-          "Malware that encrypts/locks data or systems and demands payment or another concession."
-        ]
+      "teach": "An attacker with limited technical skill who relies heavily on existing tools, scripts, or public exploits.",
+      "points": [
+        "Basically",
+        "Examples"
       ],
+      "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Threat actors are people or groups that can cause security harm. They differ in access, resources, skill, objectives, and willingness to take risk.",
-        "why": "Identifying the likely actor helps defenders predict tactics, persistence, and targets.",
-        "example": "A nation-state spends months quietly stealing research, while organized crime deploys ransomware for payment.",
-        "exam": "Use motive and capability clues: nation-state = strategic/espionage; organized crime = money; hacktivist = ideology; insider = legitimate access.",
+        "learn": "An attacker with limited technical skill who relies heavily on existing tools, scripts, or public exploits.",
         "breakdown": [
           {
-            "term": "Hacktivists",
-            "explanation": "Within Threat Actors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Threat actors rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "Think low skill, ready-made tools."
           },
           {
-            "term": "Script Kiddies",
-            "explanation": "Within Threat Actors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Threat actors rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Have specific political motives",
-            "explanation": "Within Threat Actors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Threat actors rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Go after organizations and",
-            "explanation": "Within Threat Actors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Threat actors rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "government who are not having the same",
-            "explanation": "Within Threat Actors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Threat actors rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "motives",
-            "explanation": "Within Threat Actors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Threat actors rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Use tools developed by other",
-            "explanation": "Security monitoring and automation tools include SIEM for event correlation, SCAP for standardized security-content automation, DLP for controlling sensitive data movement, and SNMP for device monitoring and traps."
-          },
-          {
-            "term": "hackers",
-            "explanation": "Within Threat Actors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Threat actors rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Use tools for hit and try or learn",
-            "explanation": "Security monitoring and automation tools include SIEM for event correlation, SCAP for standardized security-content automation, DLP for controlling sensitive data movement, and SNMP for device monitoring and traps."
-          },
-          {
-            "term": "something",
-            "explanation": "Within Threat Actors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Threat actors rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Criminal Syndicates",
-            "explanation": "Within Threat Actors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Threat actors rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Have an organizational",
-            "explanation": "Within Threat Actors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Threat actors rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "structure like an organization",
-            "explanation": "Within Threat Actors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Threat actors rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Have motives to earn money",
-            "explanation": "Within Threat Actors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Threat actors rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Use various methods like",
-            "explanation": "Within Threat Actors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Threat actors rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "ransomware",
-            "explanation": "Ransomware is malware that denies access to data or systems—commonly by encryption—and demands payment. Modern ransomware operations may also steal data for double extortion."
+            "term": "Examples",
+            "explanation": "Prebuilt exploit kits, Copied attack scripts, Public scanning tools"
           }
         ],
-        "defs": [
-          {
-            "term": "Ransomware",
-            "definition": "Malware that encrypts/locks data or systems and demands payment or another concession."
-          }
-        ],
-        "check_q": "Without looking back, explain Threat Actors and describe at least two key ideas from this section.",
-        "check_a": "Threat actors are people or groups that can cause security harm. They differ in access, resources, skill, objectives, and willingness to take risk. Key ideas include: Hacktivists; Script Kiddies; Have specific political motives; Go after organizations and; government who are not having the same.",
-        "points": [
-          "Hacktivists",
-          "Script Kiddies",
-          "Have specific political motives",
-          "Go after organizations and",
-          "government who are not having the same",
-          "motives",
-          "Use tools developed by other",
-          "hackers",
-          "Use tools for hit and try or learn",
-          "something",
-          "Criminal Syndicates",
-          "Have an organizational",
-          "structure like an organization",
-          "Have motives to earn money",
-          "Use various methods like",
-          "ransomware"
-        ]
+        "defs": [],
+        "why": "These attackers may still cause damage even without advanced capability because powerful tools are widely available.",
+        "example": "A teenager launches a public exploit script against exposed systems without understanding the underlying vulnerability.",
+        "exam": "Limited skill + downloaded tools → UNSKILLED ATTACKER.",
+        "check_q": "Which actor typically relies most on public tools and copied scripts?",
+        "check_a": "Unskilled attacker."
       }
     },
     {
       "n": 4,
-      "title": "Threat Actors",
-      "points": [
-        "Hackers",
-        "Shadow IT",
-        "• Can be classified in",
-        "three categories:",
-        "• Authorized – white",
-        "hat",
-        "• Unauthorized –",
-        "black hat",
-        "• Semi-authorized –",
-        "gray hat",
-        "• Is the IT systems or",
-        "applications",
-        "installed by users",
-        "without authorization",
-        "and approval from IT",
-        "team",
-        "• Is installed and",
-        "uninstalled as and",
-        "when required by the",
-        "users",
-        "Competitors",
-        "• Are on lookout for",
-        "confidential",
-        "information from",
-        "competitors",
-        "• Can hire black hat",
-        "hackers to steal",
-        "confidential",
-        "information"
-      ],
-      "raw": "Threat Actors\nHackers\nShadow IT\n• Can be classified in\nthree categories:\n• Authorized – white\nhat\n• Unauthorized –\nblack hat\n• Semi-authorized –\ngray hat\n• Is the IT systems or\napplications\ninstalled by users\nwithout authorization\nand approval from IT\nteam\n• Is installed and\nuninstalled as and\nwhen required by the\nusers\nCompetitors\n• Are on lookout for\nconfidential\ninformation from\ncompetitors\n• Can hire black hat\nhackers to steal\nconfidential\ninformation",
+      "title": "Hacktivist",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "Authorization",
-          "Determining what an authenticated identity is allowed to access or do."
-        ]
+      "teach": "An attacker or group motivated primarily by a social, political, or ideological cause.",
+      "points": [
+        "Basically",
+        "Examples"
       ],
+      "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Threat actors are people or groups that can cause security harm. They differ in access, resources, skill, objectives, and willingness to take risk.",
-        "why": "Identifying the likely actor helps defenders predict tactics, persistence, and targets.",
-        "example": "A nation-state spends months quietly stealing research, while organized crime deploys ransomware for payment.",
-        "exam": "Use motive and capability clues: nation-state = strategic/espionage; organized crime = money; hacktivist = ideology; insider = legitimate access.",
+        "learn": "An attacker or group motivated primarily by a social, political, or ideological cause.",
         "breakdown": [
           {
-            "term": "Hackers",
-            "explanation": "Within Threat Actors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Threat actors rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "Think activism performed through cyberattacks."
           },
           {
-            "term": "Shadow IT",
-            "explanation": "Within Threat Actors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Threat actors rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Can be classified in three categories:",
-            "explanation": "Within Threat Actors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Threat actors rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Authorized – white hat",
-            "explanation": "Within Threat Actors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Threat actors rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Unauthorized – black hat",
-            "explanation": "Within Threat Actors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Threat actors rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Semi-authorized – gray hat",
-            "explanation": "Within Threat Actors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Threat actors rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Is the IT systems or applications",
-            "explanation": "Application monitoring measures application behavior, performance, errors, and security events. APM focuses on health/performance, while a WAF inspects and protects web requests."
-          },
-          {
-            "term": "installed by users without authorization",
-            "explanation": "Authorization determines what an authenticated subject is allowed to access or do. Models include DAC, MAC, RBAC, and ABAC."
-          },
-          {
-            "term": "and approval from IT team",
-            "explanation": "Within Threat Actors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Threat actors rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Is installed and uninstalled as and",
-            "explanation": "Within Threat Actors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Threat actors rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "when required by the users",
-            "explanation": "Within Threat Actors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Threat actors rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Competitors",
-            "explanation": "Within Threat Actors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Threat actors rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Are on lookout for confidential",
-            "explanation": "Within Threat Actors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Threat actors rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "information from competitors",
-            "explanation": "Within Threat Actors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Threat actors rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Can hire black hat hackers to steal",
-            "explanation": "Within Threat Actors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Threat actors rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "confidential information",
-            "explanation": "Within Threat Actors, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Threat actors rather than memorizing the phrase by itself."
+            "term": "Examples",
+            "explanation": "Website defacement, Data leaks, DDoS for a cause"
           }
         ],
-        "defs": [
-          {
-            "term": "Authorization",
-            "definition": "Determining what an authenticated identity is allowed to access or do."
-          }
-        ],
-        "check_q": "Without looking back, explain Threat Actors and describe at least two key ideas from this section.",
-        "check_a": "Threat actors are people or groups that can cause security harm. They differ in access, resources, skill, objectives, and willingness to take risk. Key ideas include: Hackers; Shadow IT; Can be classified in three categories:; Authorized – white hat; Unauthorized – black hat.",
-        "points": [
-          "Hackers",
-          "Shadow IT",
-          "Can be classified in three categories:",
-          "Authorized – white hat",
-          "Unauthorized – black hat",
-          "Semi-authorized – gray hat",
-          "Is the IT systems or applications",
-          "installed by users without authorization",
-          "and approval from IT team",
-          "Is installed and uninstalled as and",
-          "when required by the users",
-          "Competitors",
-          "Are on lookout for confidential",
-          "information from competitors",
-          "Can hire black hat hackers to steal",
-          "confidential information"
-        ]
+        "defs": [],
+        "why": "The goal is usually publicity, protest, disruption, or advancing a cause rather than simple financial gain.",
+        "example": "A group defaces a company website to protest the company's political position.",
+        "exam": "Cause or ideology → HACKTIVIST.",
+        "check_q": "Which actor is most associated with political or philosophical causes?",
+        "check_a": "Hacktivist."
       }
     },
     {
       "n": 5,
-      "title": "Attributes of Actors",
-      "points": [],
-      "raw": "Attributes of Actors",
-      "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": []
+      "title": "Insider threat",
+      "instructional": true,
+      "teach": "A person with legitimate access who intentionally or accidentally creates security risk.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "A person with legitimate access who intentionally or accidentally creates security risk.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "The person is already inside the organization or already trusted."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Malicious employee, Careless administrator, Departing employee stealing data"
+          }
+        ],
+        "defs": [],
+        "why": "Insiders can bypass some external defenses because they already possess legitimate access, knowledge, or trust.",
+        "example": "An employee exports customer records before resigning.",
+        "exam": "Already has legitimate access → INSIDER THREAT.",
+        "check_q": "Which actor already has legitimate organizational access?",
+        "check_a": "Insider threat."
+      }
+    },
+    {
+      "n": 6,
+      "title": "Organized crime",
+      "instructional": true,
+      "teach": "A coordinated criminal group that uses cybercrime for profit or other criminal objectives.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "A coordinated criminal group that uses cybercrime for profit or other criminal objectives.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Think professional cybercrime run like a business."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Ransomware groups, Fraud rings, Credential theft operations"
+          }
+        ],
+        "defs": [],
+        "why": "Organized groups can fund infrastructure, specialize roles, and scale attacks for financial return.",
+        "example": "A ransomware group operates affiliates, payment infrastructure, and support channels to extort hundreds of organizations.",
+        "exam": "Profit + coordinated criminal operation → ORGANIZED CRIME.",
+        "check_q": "Which actor is most associated with coordinated, scalable cybercrime for profit?",
+        "check_a": "Organized crime."
+      }
+    },
+    {
+      "n": 7,
+      "title": "Shadow IT",
+      "instructional": true,
+      "teach": "Technology, services, or systems used without formal approval or oversight from the organization’s IT or security team.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Technology, services, or systems used without formal approval or oversight from the organization’s IT or security team.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Employees use technology the organization did not approve."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Unsanctioned cloud storage, Unapproved SaaS, Personal devices used for business"
+          }
+        ],
+        "defs": [],
+        "why": "Unapproved technology can bypass security controls, logging, data governance, and compliance requirements.",
+        "example": "Employees upload confidential company files to an unapproved cloud-storage service because it is easier to use.",
+        "exam": "Unapproved business technology → SHADOW IT.",
+        "check_q": "What term describes business technology used without IT approval?",
+        "check_a": "Shadow IT."
+      }
     }
   ],
-  "slide_count": 5,
-  "instructional_count": 3,
-  "concepts": [],
-  "source_filename": "05.01_Threat_actors.pdf"
+  "slide_count": 7,
+  "instructional_count": 6,
+  "concepts": [
+    "Nation-state",
+    "Unskilled attacker",
+    "Hacktivist",
+    "Insider threat",
+    "Organized crime",
+    "Shadow IT"
+  ],
+  "source_filename": "05-01.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 2.1",
+      "title": "Threat actors",
+      "intro": "Threat actors differ in goals, resources, access, and capability. Security+ expects you to recognize who is most likely behind a scenario."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Threat actors",
+        "prompt": "Compare the clues in the scenario and identify the most likely actor, attribute, or motivation.",
+        "badge": "2.1",
+        "cards": [
+          {
+            "name": "Nation-state",
+            "definition": "A government-backed or government-aligned threat actor that may conduct cyber operations for intelligence, military, political, or strategic objectives.",
+            "examples": [
+              "Espionage",
+              "Critical infrastructure targeting",
+              "Long-term campaigns"
+            ],
+            "memory": "GOVERNMENT-BACKED"
+          },
+          {
+            "name": "Unskilled attacker",
+            "definition": "An attacker with limited technical skill who relies heavily on existing tools, scripts, or public exploits.",
+            "examples": [
+              "Prebuilt exploit kits",
+              "Copied attack scripts",
+              "Public scanning tools"
+            ],
+            "memory": "LOW SKILL · READY-MADE TOOLS"
+          },
+          {
+            "name": "Hacktivist",
+            "definition": "An attacker or group motivated primarily by a social, political, or ideological cause.",
+            "examples": [
+              "Website defacement",
+              "Data leaks",
+              "DDoS for a cause"
+            ],
+            "memory": "CAUSE / IDEOLOGY"
+          },
+          {
+            "name": "Insider threat",
+            "definition": "A person with legitimate access who intentionally or accidentally creates security risk.",
+            "examples": [
+              "Malicious employee",
+              "Careless administrator",
+              "Departing employee stealing data"
+            ],
+            "memory": "ALREADY INSIDE"
+          },
+          {
+            "name": "Organized crime",
+            "definition": "A coordinated criminal group that uses cybercrime for profit or other criminal objectives.",
+            "examples": [
+              "Ransomware groups",
+              "Fraud rings",
+              "Credential theft operations"
+            ],
+            "memory": "PROFIT-DRIVEN CRIME"
+          },
+          {
+            "name": "Shadow IT",
+            "definition": "Technology, services, or systems used without formal approval or oversight from the organization’s IT or security team.",
+            "examples": [
+              "Unsanctioned cloud storage",
+              "Unapproved SaaS",
+              "Personal devices used for business"
+            ],
+            "memory": "UNAPPROVED TECHNOLOGY"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Threat actors comparison",
+        "headers": [
+          "Actor",
+          "Typical resources",
+          "Typical capability",
+          "Common motivation"
+        ],
+        "rows": [
+          [
+            "Nation-state",
+            "Usually high",
+            "Usually high",
+            "Espionage, war, disruption"
+          ],
+          [
+            "Unskilled attacker",
+            "Low",
+            "Low",
+            "Curiosity, opportunism, chaos"
+          ],
+          [
+            "Hacktivist",
+            "Varies",
+            "Varies",
+            "Political/philosophical beliefs"
+          ],
+          [
+            "Insider threat",
+            "Already has legitimate access",
+            "Varies",
+            "Revenge, financial gain, espionage"
+          ],
+          [
+            "Organized crime",
+            "Often substantial",
+            "Moderate–high",
+            "Financial gain, blackmail"
+          ],
+          [
+            "Shadow IT",
+            "Internal usage",
+            "Varies",
+            "Convenience / bypassing process"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Identify the actor from the clues",
+        "items": [
+          [
+            "Government resources + long-term strategic goal → Nation-state",
+            "Nation-state actors are commonly associated with significant resources, patience, and strategic objectives.",
+            "Example: A foreign government-linked group steals defense research over several years."
+          ],
+          [
+            "Limited skill + downloaded tools → Unskilled attacker",
+            "The actor relies on existing scripts or tools rather than advanced custom capability.",
+            "Example: A teenager launches a public exploit script against exposed systems."
+          ],
+          [
+            "Cause or ideology → Hacktivist",
+            "The attack is tied to political, social, or philosophical beliefs.",
+            "Example: A group defaces a website to promote a political message."
+          ],
+          [
+            "Already has legitimate access → Insider threat",
+            "The actor is inside the organization or already has authorized access.",
+            "Example: An employee exports customer records before resigning."
+          ],
+          [
+            "Profit + coordinated criminal operation → Organized crime",
+            "Organized criminal groups commonly pursue scalable financial gain.",
+            "Example: A ransomware group encrypts hundreds of organizations for payment."
+          ],
+          [
+            "Unapproved business technology → Shadow IT",
+            "The risk comes from technology used without IT/security approval or governance.",
+            "Example: Employees upload company files to an unsanctioned cloud-storage service."
+          ]
+        ],
+        "example": "Memory: Nation-state = government · Unskilled = public tools · Hacktivist = cause · Insider = access · Organized crime = profit · Shadow IT = unapproved tech."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A foreign government-linked group spends years stealing defense research and avoids detection using custom tools. Which threat actor is most likely?",
+        "choices": [
+          "Nation-state",
+          "Unskilled attacker",
+          "Hacktivist",
+          "Shadow IT"
+        ],
+        "answer": 0,
+        "explanation": "Nation-state actors are associated with state sponsorship, strategic goals, significant resources, and long-term operations."
+      },
+      {
+        "q": "An attacker with little technical knowledge launches a public exploit script exactly as downloaded from the internet. Which actor best fits?",
+        "choices": [
+          "Unskilled attacker",
+          "Nation-state",
+          "Organized crime",
+          "Insider threat"
+        ],
+        "answer": 0,
+        "explanation": "Unskilled attackers commonly rely on public scripts and ready-made tools."
+      },
+      {
+        "q": "A group launches a DDoS attack to protest a company’s political position. Which threat actor is most likely?",
+        "choices": [
+          "Hacktivist",
+          "Organized crime",
+          "Insider threat",
+          "Shadow IT"
+        ],
+        "answer": 0,
+        "explanation": "Hacktivists are primarily motivated by political, social, or ideological causes."
+      },
+      {
+        "q": "An employee with legitimate database access copies customer information before resigning. Which threat actor is this?",
+        "choices": [
+          "Insider threat",
+          "Nation-state",
+          "Unskilled attacker",
+          "Hacktivist"
+        ],
+        "answer": 0,
+        "explanation": "The employee already has legitimate internal access, making this an insider threat."
+      },
+      {
+        "q": "A coordinated ransomware group uses affiliates, payment infrastructure, and specialized teams to extort victims for money. Which actor best fits?",
+        "choices": [
+          "Organized crime",
+          "Hacktivist",
+          "Unskilled attacker",
+          "Shadow IT"
+        ],
+        "answer": 0,
+        "explanation": "Organized crime groups often run coordinated cybercrime operations for profit."
+      },
+      {
+        "q": "Employees begin using an unapproved cloud-storage service to share company files without IT approval. What is this?",
+        "choices": [
+          "Shadow IT",
+          "Nation-state activity",
+          "Hacktivism",
+          "Key escrow"
+        ],
+        "answer": 0,
+        "explanation": "Shadow IT is technology used without formal IT or security approval."
+      },
+      {
+        "q": "Which actor is most likely to have significant government funding and geopolitical objectives?",
+        "choices": [
+          "Nation-state",
+          "Unskilled attacker",
+          "Shadow IT",
+          "Insider threat"
+        ],
+        "answer": 0,
+        "explanation": "Nation-state actors are typically associated with government backing and strategic geopolitical goals."
+      },
+      {
+        "q": "Which actor category can include both malicious employees and careless authorized users?",
+        "choices": [
+          "Insider threat",
+          "Organized crime",
+          "Hacktivist",
+          "Nation-state"
+        ],
+        "answer": 0,
+        "explanation": "Insider threats include intentional and accidental risks created by people with legitimate access."
+      }
+    ]
+  }
 }
