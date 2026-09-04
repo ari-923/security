@@ -8,144 +8,225 @@
     {
       "n": 1,
       "title": "Hashing and Salting",
-      "points": [],
-      "raw": "Hashing and Salting",
       "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "Hashing",
-          "A one-way function that maps data to a fixed-size digest; commonly used for integrity verification and password storage."
-        ]
-      ]
+      "teach": "",
+      "points": [
+        "Hashing creates a one-way digest; salting adds random uniqueness before hashing to make precomputed attacks harder.",
+        "Security+ Objective 1.4: explain the importance of using appropriate cryptographic solutions."
+      ],
+      "defs": [],
+      "raw": ""
     },
     {
       "n": 2,
       "title": "Hashing",
-      "points": [
-        "Message Digest 5 (MD5)",
-        "Secure Hash Algorithm (SHA)",
-        "Hash-based Message Authentication Code (HMAC)"
-      ],
-      "raw": "Hashing\nMessage Digest 5 (MD5)\nSecure Hash Algorithm (SHA)\nHash-based Message Authentication Code (HMAC)",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "Authentication",
-          "Proving an identity—answering “who are you?”"
-        ],
-        [
-          "Hashing",
-          "A one-way function that maps data to a fixed-size digest; commonly used for integrity verification and password storage."
-        ]
+      "teach": "A one-way transformation that produces a fixed-size digest for a given algorithm.",
+      "points": [
+        "Basically",
+        "Examples"
       ],
+      "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Hashing produces a fixed-size digest from input data using a one-way function. It is used to verify integrity and to store password verifiers when combined with appropriate password-hashing techniques.",
-        "why": "If the input changes, the digest should change, allowing systems to detect tampering without needing the original content to be secret.",
-        "example": "A downloaded ISO is hashed with SHA-256 and compared with the publisher's published digest.",
-        "exam": "Hashing is not encryption: there is no decryption key. Hash comparison is an integrity clue.",
+        "learn": "A one-way transformation that produces a fixed-size digest for a given algorithm.",
         "breakdown": [
           {
-            "term": "Message Digest 5 (MD5)",
-            "explanation": "Within Hashing, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Hashing and Salting rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "You compare the digest; you do not normally reverse it to recover the original input."
           },
           {
-            "term": "Secure Hash Algorithm (SHA)",
-            "explanation": "Within Hashing, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Hashing and Salting rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Hash-based Message Authentication Code (HMAC)",
-            "explanation": "Authentication is the process of proving an identity. Factors can be something you know, have, are, do, or somewhere you are; MFA requires factors from more than one category."
+            "term": "Examples",
+            "explanation": "File integrity hash, Password hash"
           }
         ],
-        "defs": [
-          {
-            "term": "Authentication",
-            "definition": "Proving an identity—answering “who are you?”"
-          },
-          {
-            "term": "Hashing",
-            "definition": "A one-way function that maps data to a fixed-size digest; commonly used for integrity verification and password storage."
-          }
-        ],
-        "check_q": "Without looking back, explain Hashing and describe at least two key ideas from this section.",
-        "check_a": "Hashing produces a fixed-size digest from input data using a one-way function. It is used to verify integrity and to store password verifiers when combined with appropriate password-hashing techniques. Key ideas include: Message Digest 5 (MD5); Secure Hash Algorithm (SHA); Hash-based Message Authentication Code (HMAC).",
-        "points": [
-          "Message Digest 5 (MD5)",
-          "Secure Hash Algorithm (SHA)",
-          "Hash-based Message Authentication Code (HMAC)"
-        ]
+        "defs": [],
+        "why": "Hashing supports integrity verification and secure password-storage designs.",
+        "example": "A downloaded file's hash is compared with the publisher's hash.",
+        "exam": "Hashing = ONE-WAY.",
+        "check_q": "Which one-way operation is used for integrity checking?",
+        "check_a": "Hashing."
       }
     },
     {
       "n": 3,
       "title": "Salting",
-      "points": [
-        "• Random Salt Generation",
-        "• Combining Salt and Password",
-        "• Storing Salt and Hashed Password",
-        "• Preventing Rainbow Table Attacks",
-        "• Enhancing Security"
-      ],
-      "raw": "Salting\n• Random Salt Generation\n• Combining Salt and Password\n• Storing Salt and Hashed Password\n• Preventing Rainbow Table Attacks\n• Enhancing Security",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "Adds a random value to input before hashing so identical inputs do not produce identical stored hashes.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "A salt is unique random data combined with a password before hashing. It ensures that two users with the same password do not end up with the same stored hash.",
-        "why": "Salts make precomputed rainbow tables far less useful and force attackers to crack each password hash separately.",
-        "example": "Two users both choose “Winter2026!”, but different salts produce different stored hashes.",
-        "exam": "Salt does not need to be secret; uniqueness/randomness is the key property.",
+        "learn": "Adds a random value to input before hashing so identical inputs do not produce identical stored hashes.",
         "breakdown": [
           {
-            "term": "Random Salt Generation",
-            "explanation": "Within Salting, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Hashing and Salting rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "Add randomness before hashing."
           },
           {
-            "term": "Combining Salt and Password",
-            "explanation": "Within Salting, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Hashing and Salting rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Storing Salt and Hashed Password",
-            "explanation": "Within Salting, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Hashing and Salting rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Preventing Rainbow Table Attacks",
-            "explanation": "Within Salting, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Hashing and Salting rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Enhancing Security",
-            "explanation": "This contributes to reducing risk in the broader Hashing and Salting design and should be evaluated as part of defense in depth."
+            "term": "Examples",
+            "explanation": "Unique password salt"
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Salting and describe at least two key ideas from this section.",
-        "check_a": "A salt is unique random data combined with a password before hashing. It ensures that two users with the same password do not end up with the same stored hash. Key ideas include: Random Salt Generation; Combining Salt and Password; Storing Salt and Hashed Password; Preventing Rainbow Table Attacks; Enhancing Security.",
-        "points": [
-          "Random Salt Generation",
-          "Combining Salt and Password",
-          "Storing Salt and Hashed Password",
-          "Preventing Rainbow Table Attacks",
-          "Enhancing Security"
-        ]
+        "why": "It makes precomputed comparisons and rainbow-table attacks less effective.",
+        "example": "Two users with the same password have different stored hashes because each password has a unique salt.",
+        "exam": "Salt = RANDOM UNIQUENESS.",
+        "check_q": "What is added before hashing to make identical passwords produce different hashes?",
+        "check_a": "A salt."
       }
-    },
-    {
-      "n": 4,
-      "title": "Digital Signatures",
-      "points": [],
-      "raw": "Digital Signatures",
-      "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": []
     }
   ],
-  "slide_count": 4,
+  "slide_count": 3,
   "instructional_count": 2,
   "concepts": [
     "Hashing",
     "Salting"
   ],
-  "source_filename": "04.05_Hashing_and_Salting.pdf"
+  "source_filename": "04-05.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 1.4",
+      "title": "Hashing and Salting",
+      "intro": "Hashing creates a one-way digest; salting adds random uniqueness before hashing to make precomputed attacks harder."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Hashing and Salting",
+        "prompt": "Recognize the concept, understand why it matters, and identify it in a Security+ scenario.",
+        "badge": "1.4",
+        "cards": [
+          {
+            "name": "Hashing",
+            "definition": "A one-way transformation that produces a fixed-size digest for a given algorithm.",
+            "examples": [
+              "File integrity hash",
+              "Password hash"
+            ],
+            "memory": "ONE-WAY"
+          },
+          {
+            "name": "Salting",
+            "definition": "Adds a random value to input before hashing so identical inputs do not produce identical stored hashes.",
+            "examples": [
+              "Unique password salt"
+            ],
+            "memory": "RANDOM UNIQUENESS"
+          }
+        ],
+        "columns": "two"
+      },
+      {
+        "type": "table",
+        "title": "Hashing and Salting comparison",
+        "headers": [
+          "Concept",
+          "Reversible?",
+          "Primary idea"
+        ],
+        "rows": [
+          [
+            "Encryption",
+            "Yes, with proper key",
+            "Confidentiality"
+          ],
+          [
+            "Hashing",
+            "No",
+            "Digest / integrity"
+          ],
+          [
+            "Salting",
+            "N/A",
+            "Randomize input before hashing"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Encryption, hashing, or salting?",
+        "items": [
+          [
+            "Encryption → REVERSIBLE WITH KEY",
+            "Encrypted data is intended to be decrypted by an authorized party.",
+            "Example: A file is encrypted and later decrypted with the correct key."
+          ],
+          [
+            "Hashing → ONE-WAY",
+            "A hash is used for comparison or verification, not normal recovery of the original input.",
+            "Example: A file hash is compared with a known-good hash."
+          ],
+          [
+            "Salt → RANDOMIZE",
+            "A unique salt makes identical passwords produce different hashes.",
+            "Example: Two users with the same password still have different stored hash values."
+          ]
+        ],
+        "example": "Memory: Encryption = reversible · Hashing = one-way · Salt = random uniqueness."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A company compares a downloaded file's digest with the publisher's digest to detect modification. Which cryptographic concept is being used?",
+        "choices": [
+          "Hashing",
+          "Encryption",
+          "Tokenization",
+          "Key escrow"
+        ],
+        "answer": 0,
+        "explanation": "Hashing is commonly used to verify integrity by comparing digests."
+      },
+      {
+        "q": "Two users choose the same password, but their stored password hashes are different because each password has a unique random value added first. What is that value?",
+        "choices": [
+          "Salt",
+          "Token",
+          "Certificate",
+          "Nonce for encryption only"
+        ],
+        "answer": 0,
+        "explanation": "A salt is a random value added before hashing."
+      },
+      {
+        "q": "Which statement best distinguishes hashing from encryption?",
+        "choices": [
+          "Hashing is one-way, while encryption is intended to be reversible with a key",
+          "Hashing always uses a public key",
+          "Encryption produces no ciphertext",
+          "Hashing provides confidentiality by itself"
+        ],
+        "answer": 0,
+        "explanation": "Hashing is one-way; encryption is designed to be decrypted with the proper key."
+      },
+      {
+        "q": "What security benefit does salting provide for stored passwords?",
+        "choices": [
+          "It makes identical passwords produce different hashes",
+          "It allows the original password to be decrypted",
+          "It replaces the password with a reusable token",
+          "It signs the password with a private key"
+        ],
+        "answer": 0,
+        "explanation": "Unique salts prevent identical passwords from producing identical stored hashes."
+      },
+      {
+        "q": "Which concept is most directly associated with producing a digest used to detect whether data changed?",
+        "choices": [
+          "Hashing",
+          "Key escrow",
+          "Wildcard certificates",
+          "OCSP"
+        ],
+        "answer": 0,
+        "explanation": "Hashing produces digests used in integrity checks."
+      }
+    ]
+  }
 }
