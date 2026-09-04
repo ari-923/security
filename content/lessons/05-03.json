@@ -8,124 +8,672 @@
     {
       "n": 1,
       "title": "Motivations",
-      "points": [],
-      "raw": "Motivations",
       "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": []
+      "teach": "",
+      "points": [
+        "Motivation explains why an actor attacks. Security+ scenarios often give you the goal and expect you to identify the likely motivation.",
+        "Security+ Objective 2.1: compare and contrast common threat actors and motivations."
+      ],
+      "defs": [],
+      "raw": ""
     },
     {
       "n": 2,
-      "title": "Motivations",
-      "points": [
-        "Data Exfiltration",
-        "Espionage",
-        "Service Disruption",
-        "Blackmail",
-        "Financial Gain"
-      ],
-      "raw": "Motivations\nData Exfiltration\nEspionage\nService Disruption\nBlackmail\nFinancial Gain",
+      "title": "Data Exfiltration",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "Stealing or transferring data out of an environment without authorization.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "This section focuses on **Motivations** within **Motivations**. Motivation explains what the attacker wants: financial gain, espionage, ideology, disruption, revenge, blackmail, data theft, or strategic advantage.",
-        "why": "Motivation often predicts target selection and the behavior an organization should expect after compromise.",
-        "example": "An extortion group steals data before encrypting systems so it can threaten publication if the victim refuses to pay.",
-        "exam": "CompTIA frequently gives motive clues. Follow the goal to identify the actor or attack pattern.",
+        "learn": "Stealing or transferring data out of an environment without authorization.",
         "breakdown": [
           {
-            "term": "Data Exfiltration",
-            "explanation": "Within Motivations, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Motivations rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "The attacker wants to remove protected data from the organization."
           },
           {
-            "term": "Espionage",
-            "explanation": "Within Motivations, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Motivations rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Service Disruption",
-            "explanation": "Within Motivations, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Motivations rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Blackmail",
-            "explanation": "Within Motivations, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Motivations rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Financial Gain",
-            "explanation": "Within Motivations, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Motivations rather than memorizing the phrase by itself."
+            "term": "Examples",
+            "explanation": "Customer database theft, Source code theft, Sensitive file extraction"
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Motivations and describe at least two key ideas from this section.",
-        "check_a": "This section focuses on **Motivations** within **Motivations**. Motivation explains what the attacker wants: financial gain, espionage, ideology, disruption, revenge, blackmail, data theft, or strategic advantage. Key ideas include: Data Exfiltration; Espionage; Service Disruption; Blackmail; Financial Gain.",
-        "points": [
-          "Data Exfiltration",
-          "Espionage",
-          "Service Disruption",
-          "Blackmail",
-          "Financial Gain"
-        ]
+        "why": "Stolen data can be sold, leaked, used for espionage, or used as leverage.",
+        "example": "An attacker uploads a customer database to an external server.",
+        "exam": "Steal the files → DATA EXFILTRATION.",
+        "check_q": "What motivation describes unauthorized transfer of data out of an environment?",
+        "check_a": "Data exfiltration."
       }
     },
     {
       "n": 3,
-      "title": "Motivations",
-      "points": [
-        "Philosophical/Political Beliefs",
-        "Ethical - Revenge",
-        "Disruption/Chaos",
-        "War"
-      ],
-      "raw": "Motivations\nPhilosophical/Political Beliefs\nEthical - Revenge\nDisruption/Chaos\nWar",
+      "title": "Espionage",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "Obtaining confidential information for strategic, political, military, or competitive advantage.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "This section focuses on **Motivations** within **Motivations**. Motivation explains what the attacker wants: financial gain, espionage, ideology, disruption, revenge, blackmail, data theft, or strategic advantage.",
-        "why": "Motivation often predicts target selection and the behavior an organization should expect after compromise.",
-        "example": "An extortion group steals data before encrypting systems so it can threaten publication if the victim refuses to pay.",
-        "exam": "CompTIA frequently gives motive clues. Follow the goal to identify the actor or attack pattern.",
+        "learn": "Obtaining confidential information for strategic, political, military, or competitive advantage.",
         "breakdown": [
           {
-            "term": "Philosophical/Political Beliefs",
-            "explanation": "Within Motivations, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Motivations rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "The attacker wants secret intelligence."
           },
           {
-            "term": "Ethical - Revenge",
-            "explanation": "Within Motivations, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Motivations rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Disruption/Chaos",
-            "explanation": "Within Motivations, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Motivations rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "War",
-            "explanation": "Detect, block, quarantine, or remove malicious software on endpoints."
+            "term": "Examples",
+            "explanation": "Government intelligence gathering, Trade-secret theft"
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Motivations and describe at least two key ideas from this section.",
-        "check_a": "This section focuses on **Motivations** within **Motivations**. Motivation explains what the attacker wants: financial gain, espionage, ideology, disruption, revenge, blackmail, data theft, or strategic advantage. Key ideas include: Philosophical/Political Beliefs; Ethical - Revenge; Disruption/Chaos; War.",
-        "points": [
-          "Philosophical/Political Beliefs",
-          "Ethical - Revenge",
-          "Disruption/Chaos",
-          "War"
-        ]
+        "why": "The stolen information itself provides strategic advantage beyond immediate resale value.",
+        "example": "A foreign actor steals defense research to gain strategic insight.",
+        "exam": "Secret strategic intelligence → ESPIONAGE.",
+        "check_q": "Which motivation focuses on gaining strategic intelligence?",
+        "check_a": "Espionage."
       }
     },
     {
       "n": 4,
-      "title": "Common Threat Vectors and Attack Surfaces",
-      "points": [],
-      "raw": "Common Threat Vectors and\nAttack Surfaces",
-      "instructional": false,
-      "teach": "Learn the attacker behavior, the evidence it leaves behind, and the control that best detects or mitigates it.",
-      "defs": []
+      "title": "Service Disruption",
+      "instructional": true,
+      "teach": "Making a system or service unavailable or unreliable.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Making a system or service unavailable or unreliable.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "The attacker wants the service to stop working."
+          },
+          {
+            "term": "Examples",
+            "explanation": "DDoS, Sabotage, Operational outage"
+          }
+        ],
+        "defs": [],
+        "why": "Disruption can create financial loss, reputational damage, or operational impact.",
+        "example": "Attackers overwhelm an online service so customers cannot use it.",
+        "exam": "Take the service down → SERVICE DISRUPTION.",
+        "check_q": "Which motivation targets service availability?",
+        "check_a": "Service disruption."
+      }
+    },
+    {
+      "n": 5,
+      "title": "Blackmail",
+      "instructional": true,
+      "teach": "Using threatened disclosure, harm, or leverage to force a victim to comply or pay.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Using threatened disclosure, harm, or leverage to force a victim to comply or pay.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Do what I want or I expose/harm something."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Threat to leak stolen data, Extortion"
+          }
+        ],
+        "defs": [],
+        "why": "The attacker uses the threat itself as leverage against the victim.",
+        "example": "A group threatens to publish stolen records unless the organization pays.",
+        "exam": "Pay or I leak it → BLACKMAIL.",
+        "check_q": "What motivation uses threatened disclosure as leverage?",
+        "check_a": "Blackmail."
+      }
+    },
+    {
+      "n": 6,
+      "title": "Financial Gain",
+      "instructional": true,
+      "teach": "Seeking money or economic benefit.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Seeking money or economic benefit.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "The attacker wants profit."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Fraud, Ransomware, Credential resale, Cryptocurrency theft"
+          }
+        ],
+        "defs": [],
+        "why": "Financial gain is one of the most common motivations for cybercrime.",
+        "example": "Criminals steal payment-card data to sell it.",
+        "exam": "Money → FINANCIAL GAIN.",
+        "check_q": "Which motivation best fits theft for resale?",
+        "check_a": "Financial gain."
+      }
+    },
+    {
+      "n": 7,
+      "title": "Philosophical / Political Beliefs",
+      "instructional": true,
+      "teach": "Acting to promote or defend an ideology, cause, or political position.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Acting to promote or defend an ideology, cause, or political position.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "The attacker is motivated by a belief or cause."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Hacktivism, Protest attacks"
+          }
+        ],
+        "defs": [],
+        "why": "The goal may be attention, protest, influence, or ideological pressure rather than profit.",
+        "example": "A group attacks an organization because it opposes the organization's political position.",
+        "exam": "Cause / ideology → PHILOSOPHICAL OR POLITICAL BELIEFS.",
+        "check_q": "Which motivation is based on ideology or political position?",
+        "check_a": "Philosophical/political beliefs."
+      }
+    },
+    {
+      "n": 8,
+      "title": "Ethical",
+      "instructional": true,
+      "teach": "Acting for a perceived defensive, research, or public-good purpose rather than malicious personal benefit.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Acting for a perceived defensive, research, or public-good purpose rather than malicious personal benefit.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "The goal is to improve or protect security, typically with authorization or responsible intent."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Authorized security research, Responsible vulnerability testing"
+          }
+        ],
+        "defs": [],
+        "why": "Ethical motivation distinguishes defensive or public-good activity from malicious exploitation.",
+        "example": "An authorized researcher tests a system and reports the vulnerability to the owner.",
+        "exam": "Defensive/public-good purpose → ETHICAL.",
+        "check_q": "Which motivation best fits authorized security research intended to improve defenses?",
+        "check_a": "Ethical."
+      }
+    },
+    {
+      "n": 9,
+      "title": "Revenge",
+      "instructional": true,
+      "teach": "Retaliating against a person or organization because of a grievance.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Retaliating against a person or organization because of a grievance.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "The actor wants to get even."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Disgruntled employee sabotage, Data deletion after termination"
+          }
+        ],
+        "defs": [],
+        "why": "Personal grievances can motivate destructive or unauthorized actions.",
+        "example": "A terminated employee deletes company files to retaliate.",
+        "exam": "Get even → REVENGE.",
+        "check_q": "Which motivation is based on retaliation for a grievance?",
+        "check_a": "Revenge."
+      }
+    },
+    {
+      "n": 10,
+      "title": "Disruption / Chaos",
+      "instructional": true,
+      "teach": "Causing disorder, confusion, damage, or instability for its own sake or as a primary objective.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Causing disorder, confusion, damage, or instability for its own sake or as a primary objective.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "The attacker wants chaos or destruction."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Destructive malware, Random destructive attacks"
+          }
+        ],
+        "defs": [],
+        "why": "The objective may be instability rather than profit, intelligence, or a specific political demand.",
+        "example": "Destructive malware is released broadly with no demand for payment.",
+        "exam": "Cause disorder → DISRUPTION / CHAOS.",
+        "check_q": "Which motivation best fits destruction without a clear financial or intelligence goal?",
+        "check_a": "Disruption/chaos."
+      }
+    },
+    {
+      "n": 11,
+      "title": "War",
+      "instructional": true,
+      "teach": "Supporting military or national conflict objectives through cyber operations.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Supporting military or national conflict objectives through cyber operations.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Cyber activity is part of national or military conflict."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Critical infrastructure attacks, Military network targeting"
+          }
+        ],
+        "defs": [],
+        "why": "Cyber operations can support strategic, military, and national objectives during conflict.",
+        "example": "A state-backed group attacks power infrastructure during an armed conflict.",
+        "exam": "National conflict → WAR.",
+        "check_q": "Which motivation is tied directly to military or national conflict?",
+        "check_a": "War."
+      }
     }
   ],
-  "slide_count": 4,
-  "instructional_count": 2,
-  "concepts": [],
-  "source_filename": "05.03_Motivations.pdf"
+  "slide_count": 11,
+  "instructional_count": 10,
+  "concepts": [
+    "Data Exfiltration",
+    "Espionage",
+    "Service Disruption",
+    "Blackmail",
+    "Financial Gain",
+    "Philosophical / Political Beliefs",
+    "Ethical",
+    "Revenge",
+    "Disruption / Chaos",
+    "War"
+  ],
+  "source_filename": "05-03.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 2.1",
+      "title": "Motivations",
+      "intro": "Motivation explains why an actor attacks. Security+ scenarios often give you the goal and expect you to identify the likely motivation."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Motivations",
+        "prompt": "Compare the clues in the scenario and identify the most likely actor, attribute, or motivation.",
+        "badge": "2.1",
+        "cards": [
+          {
+            "name": "Data Exfiltration",
+            "definition": "Stealing or transferring data out of an environment without authorization.",
+            "examples": [
+              "Customer database theft",
+              "Source code theft",
+              "Sensitive file extraction"
+            ],
+            "memory": "STEAL DATA"
+          },
+          {
+            "name": "Espionage",
+            "definition": "Obtaining confidential information for strategic, political, military, or competitive advantage.",
+            "examples": [
+              "Government intelligence gathering",
+              "Trade-secret theft"
+            ],
+            "memory": "SECRET INTELLIGENCE"
+          },
+          {
+            "name": "Service Disruption",
+            "definition": "Making a system or service unavailable or unreliable.",
+            "examples": [
+              "DDoS",
+              "Sabotage",
+              "Operational outage"
+            ],
+            "memory": "MAKE IT UNAVAILABLE"
+          },
+          {
+            "name": "Blackmail",
+            "definition": "Using threatened disclosure, harm, or leverage to force a victim to comply or pay.",
+            "examples": [
+              "Threat to leak stolen data",
+              "Extortion"
+            ],
+            "memory": "PAY OR I EXPOSE/HARM"
+          },
+          {
+            "name": "Financial Gain",
+            "definition": "Seeking money or economic benefit.",
+            "examples": [
+              "Fraud",
+              "Ransomware",
+              "Credential resale",
+              "Cryptocurrency theft"
+            ],
+            "memory": "MONEY"
+          },
+          {
+            "name": "Philosophical / Political Beliefs",
+            "definition": "Acting to promote or defend an ideology, cause, or political position.",
+            "examples": [
+              "Hacktivism",
+              "Protest attacks"
+            ],
+            "memory": "BELIEF / CAUSE"
+          },
+          {
+            "name": "Ethical",
+            "definition": "Acting for a perceived defensive, research, or public-good purpose rather than malicious personal benefit.",
+            "examples": [
+              "Authorized security research",
+              "Responsible vulnerability testing"
+            ],
+            "memory": "PROTECT / IMPROVE"
+          },
+          {
+            "name": "Revenge",
+            "definition": "Retaliating against a person or organization because of a grievance.",
+            "examples": [
+              "Disgruntled employee sabotage",
+              "Data deletion after termination"
+            ],
+            "memory": "GET EVEN"
+          },
+          {
+            "name": "Disruption / Chaos",
+            "definition": "Causing disorder, confusion, damage, or instability for its own sake or as a primary objective.",
+            "examples": [
+              "Destructive malware",
+              "Random destructive attacks"
+            ],
+            "memory": "CAUSE CHAOS"
+          },
+          {
+            "name": "War",
+            "definition": "Supporting military or national conflict objectives through cyber operations.",
+            "examples": [
+              "Critical infrastructure attacks",
+              "Military network targeting"
+            ],
+            "memory": "CONFLICT / WARFARE"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Motivations comparison",
+        "headers": [
+          "Scenario goal",
+          "Think"
+        ],
+        "rows": [
+          [
+            "Steal information",
+            "Data exfiltration"
+          ],
+          [
+            "Gather secret strategic intelligence",
+            "Espionage"
+          ],
+          [
+            "Take service offline",
+            "Service disruption"
+          ],
+          [
+            "Threaten victim for leverage/payment",
+            "Blackmail"
+          ],
+          [
+            "Make money",
+            "Financial gain"
+          ],
+          [
+            "Promote ideology/cause",
+            "Philosophical/political beliefs"
+          ],
+          [
+            "Protect/improve security",
+            "Ethical"
+          ],
+          [
+            "Retaliate for grievance",
+            "Revenge"
+          ],
+          [
+            "Create disorder",
+            "Disruption/chaos"
+          ],
+          [
+            "Support national conflict",
+            "War"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Identify the goal, then name the motivation",
+        "items": [
+          [
+            "Steal the files → Data Exfiltration",
+            "The immediate goal is moving protected information out of the environment.",
+            "Example: An attacker uploads a customer database to an external server."
+          ],
+          [
+            "Secret strategic intelligence → Espionage",
+            "The goal is intelligence advantage rather than simply selling the data.",
+            "Example: A foreign actor steals defense research to gain strategic insight."
+          ],
+          [
+            "Take the service down → Service Disruption",
+            "The target is availability.",
+            "Example: Attackers overwhelm an online service so customers cannot use it."
+          ],
+          [
+            "Pay or I leak it → Blackmail",
+            "The attacker uses threatened disclosure or harm as leverage.",
+            "Example: A group threatens to publish stolen records unless the victim pays."
+          ],
+          [
+            "Money → Financial Gain",
+            "The main objective is economic benefit.",
+            "Example: Criminals steal payment-card data for resale."
+          ],
+          [
+            "Cause / ideology → Philosophical or Political Beliefs",
+            "The action is driven by a political, social, or philosophical position.",
+            "Example: A hacktivist group attacks an organization it opposes."
+          ],
+          [
+            "Defensive/public-good purpose → Ethical",
+            "The intent is to improve or protect security rather than cause harm.",
+            "Example: An authorized researcher tests a system and reports the vulnerability."
+          ],
+          [
+            "Get even → Revenge",
+            "The actor retaliates because of a personal or organizational grievance.",
+            "Example: A terminated employee deletes company data."
+          ],
+          [
+            "Cause disorder → Disruption / Chaos",
+            "The attacker primarily wants instability or damage.",
+            "Example: Destructive malware is released without a clear financial objective."
+          ],
+          [
+            "National conflict → War",
+            "Cyber activity supports military or geopolitical conflict.",
+            "Example: A state-backed group attacks critical infrastructure during a conflict."
+          ]
+        ],
+        "example": "Memory: Steal data · Secret intelligence · Take it down · Threaten · Money · Belief · Ethical · Revenge · Chaos · War."
+      }
+    ],
+    "questions": [
+      {
+        "q": "An attacker uploads a company’s customer database to an external server. Which motivation is most directly demonstrated?",
+        "choices": [
+          "Data exfiltration",
+          "Service disruption",
+          "Ethical",
+          "War"
+        ],
+        "answer": 0,
+        "explanation": "Data exfiltration is the unauthorized transfer of data out of an environment."
+      },
+      {
+        "q": "A foreign actor steals defense research to gain strategic intelligence rather than sell it. Which motivation best fits?",
+        "choices": [
+          "Espionage",
+          "Financial gain",
+          "Revenge",
+          "Service disruption"
+        ],
+        "answer": 0,
+        "explanation": "Espionage focuses on obtaining confidential information for strategic advantage."
+      },
+      {
+        "q": "Attackers overwhelm an online service so customers cannot access it. Which motivation is most direct?",
+        "choices": [
+          "Service disruption",
+          "Data exfiltration",
+          "Blackmail",
+          "Ethical"
+        ],
+        "answer": 0,
+        "explanation": "The goal is to make the service unavailable."
+      },
+      {
+        "q": "A criminal group threatens to publish stolen medical records unless the victim pays. Which motivation best fits?",
+        "choices": [
+          "Blackmail",
+          "Espionage",
+          "War",
+          "Ethical"
+        ],
+        "answer": 0,
+        "explanation": "Blackmail uses threatened disclosure or harm as leverage."
+      },
+      {
+        "q": "Attackers steal payment-card data and sell it to other criminals. Which motivation is most likely?",
+        "choices": [
+          "Financial gain",
+          "Political beliefs",
+          "War",
+          "Ethical"
+        ],
+        "answer": 0,
+        "explanation": "The primary objective is economic benefit."
+      },
+      {
+        "q": "A group defaces a website to protest the organization’s political position. Which motivation best fits?",
+        "choices": [
+          "Philosophical/political beliefs",
+          "Financial gain",
+          "Espionage",
+          "War"
+        ],
+        "answer": 0,
+        "explanation": "The attack is driven by ideological or political beliefs."
+      },
+      {
+        "q": "An authorized security researcher tests a system and responsibly reports the vulnerability to the owner. Which motivation best fits?",
+        "choices": [
+          "Ethical",
+          "Blackmail",
+          "Revenge",
+          "Disruption/chaos"
+        ],
+        "answer": 0,
+        "explanation": "The activity is intended to improve security rather than cause harm."
+      },
+      {
+        "q": "A terminated employee deletes company files because of a personal grievance. Which motivation best fits?",
+        "choices": [
+          "Revenge",
+          "Espionage",
+          "Financial gain",
+          "War"
+        ],
+        "answer": 0,
+        "explanation": "The actor is retaliating because of a grievance."
+      },
+      {
+        "q": "Destructive malware is released broadly with no demand for payment and no apparent intelligence objective. Which motivation best fits?",
+        "choices": [
+          "Disruption/chaos",
+          "Financial gain",
+          "Espionage",
+          "Ethical"
+        ],
+        "answer": 0,
+        "explanation": "The primary objective is disorder and destruction."
+      },
+      {
+        "q": "A state-backed group attacks critical infrastructure during an armed conflict to support national military objectives. Which motivation best fits?",
+        "choices": [
+          "War",
+          "Blackmail",
+          "Ethical",
+          "Financial gain"
+        ],
+        "answer": 0,
+        "explanation": "The cyber activity directly supports national or military conflict."
+      }
+    ]
+  }
 }
