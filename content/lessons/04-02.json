@@ -8,234 +8,705 @@
     {
       "n": 1,
       "title": "Encryption",
-      "points": [],
-      "raw": "Encryption",
       "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "Encryption",
-          "Transforms readable plaintext into ciphertext using an algorithm and key so unauthorized parties cannot understand it."
-        ]
-      ]
+      "teach": "",
+      "points": [
+        "Encryption protects confidentiality by transforming readable plaintext into ciphertext using cryptographic keys and algorithms.",
+        "Security+ Objective 1.4: explain the importance of using appropriate cryptographic solutions."
+      ],
+      "defs": [],
+      "raw": ""
     },
     {
       "n": 2,
-      "title": "Level",
-      "points": [
-        "Full-disk",
-        "Partition",
-        "File",
-        "Volume",
-        "Database",
-        "Record"
-      ],
-      "raw": "Level\nFull-disk\nPartition\nFile\nVolume\nDatabase\nRecord",
+      "title": "Full-disk Encryption",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "Encrypts an entire storage device.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Encryption can be applied at different levels of granularity: full disk, partition, volume, file, database, or individual record/field. The best level depends on what threats and workflows must be protected.",
-        "why": "Broader encryption is easier to deploy consistently, while fine-grained encryption can protect selected sensitive data even from other parts of the system.",
-        "example": "A laptop uses full-disk encryption for theft protection, while a database also encrypts a sensitive customer identifier at the field level.",
-        "exam": "Choose the encryption layer that matches the threat: stolen device often favors full-disk; protecting selected database values may require field/record-level encryption.",
+        "learn": "Encrypts an entire storage device.",
         "breakdown": [
           {
-            "term": "Full-disk",
-            "explanation": "Within Level, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Encryption rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "Everything on the drive is protected when the device is powered off and locked."
           },
           {
-            "term": "Partition",
-            "explanation": "Within Level, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Encryption rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "File",
-            "explanation": "Encryption converts plaintext into ciphertext using an algorithm and key so unauthorized parties cannot understand the data. Symmetric encryption uses a shared secret; asymmetric encryption uses a public/private key pair."
-          },
-          {
-            "term": "Volume",
-            "explanation": "Within Level, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Encryption rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Database",
-            "explanation": "Within Level, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Encryption rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Record",
-            "explanation": "Within Level, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Encryption rather than memorizing the phrase by itself."
+            "term": "Examples",
+            "explanation": "BitLocker, FileVault"
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Level and describe at least two key ideas from this section.",
-        "check_a": "Encryption can be applied at different levels of granularity: full disk, partition, volume, file, database, or individual record/field. The best level depends on what threats and workflows must be protected. Key ideas include: Full-disk; Partition; File; Volume; Database.",
-        "points": [
-          "Full-disk",
-          "Partition",
-          "File",
-          "Volume",
-          "Database",
-          "Record"
-        ]
+        "why": "It protects data at rest if a laptop or drive is lost or stolen.",
+        "example": "A stolen laptop's entire SSD remains unreadable without the key.",
+        "exam": "Whole device → FULL-DISK.",
+        "check_q": "Which encryption level best protects an entire stolen laptop drive?",
+        "check_a": "Full-disk encryption."
       }
     },
     {
       "n": 3,
-      "title": "Types",
-      "points": [
-        "Asymmetric",
-        "Symmetric"
-      ],
-      "raw": "Types\nAsymmetric\nSymmetric",
+      "title": "Partition Encryption",
       "instructional": true,
-      "teach": "Focus on the differences between the listed types and the clue words that distinguish them in exam questions.",
+      "teach": "Encrypts a specific disk partition.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "This section focuses on **Types** within **Encryption**. Encryption converts plaintext into ciphertext using an algorithm and key so unauthorized parties cannot understand the data. Symmetric encryption uses a shared secret; asymmetric encryption uses a public/private key pair.",
-        "why": "Encryption is one of the primary ways to protect confidentiality for data at rest and in transit.",
-        "example": "A laptop uses full-disk encryption, while a TLS session protects web traffic crossing an untrusted network.",
-        "exam": "Encryption = confidentiality and reversible with the correct key. Hashing is one-way and primarily supports integrity.",
+        "learn": "Encrypts a specific disk partition.",
         "breakdown": [
           {
-            "term": "Asymmetric",
-            "explanation": "Within Types, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Encryption rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "Only one partition is encrypted, not necessarily the whole disk."
           },
           {
-            "term": "Symmetric",
-            "explanation": "Within Types, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Encryption rather than memorizing the phrase by itself."
+            "term": "Examples",
+            "explanation": "Encrypted data partition"
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Types and describe at least two key ideas from this section.",
-        "check_a": "This section focuses on **Types** within **Encryption**. Encryption converts plaintext into ciphertext using an algorithm and key so unauthorized parties cannot understand the data. Symmetric encryption uses a shared secret; asymmetric encryption uses a public/private key pair. Key ideas include: Asymmetric; Symmetric.",
-        "points": [
-          "Asymmetric",
-          "Symmetric"
-        ]
+        "why": "It can isolate protected data to a designated partition.",
+        "example": "Only the finance partition on a multi-partition disk is encrypted.",
+        "exam": "One partition → PARTITION.",
+        "check_q": "Which level encrypts only one disk partition?",
+        "check_a": "Partition encryption."
       }
     },
     {
       "n": 4,
-      "title": "Key Exchange",
-      "points": [
-        "Methods",
-        "Protocols"
-      ],
-      "raw": "Key Exchange\nMethods\nProtocols",
+      "title": "File Encryption",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "Encrypts individual files.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Cryptographic strength depends on using the correct key type, algorithm, key length, and exchange method. Keys must be generated, distributed, stored, rotated, and retired securely.",
-        "why": "A strong algorithm can still fail if keys are weak, exposed, reused too long, or exchanged insecurely.",
-        "example": "A server uses asymmetric cryptography to establish trust and exchange key material, then switches to fast symmetric encryption for the session.",
-        "exam": "Focus on purpose: symmetric = fast shared secret; asymmetric = public/private pair; longer keys generally increase brute-force difficulty but algorithm choice also matters.",
+        "learn": "Encrypts individual files.",
         "breakdown": [
           {
-            "term": "Methods",
-            "explanation": "Encryption converts plaintext into ciphertext using an algorithm and key so unauthorized parties cannot understand the data. Symmetric encryption uses a shared secret; asymmetric encryption uses a public/private key pair."
+            "term": "Basically",
+            "explanation": "Protection is applied to selected files rather than the whole disk."
           },
           {
-            "term": "Protocols",
-            "explanation": "Within Key Exchange, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Encryption rather than memorizing the phrase by itself."
+            "term": "Examples",
+            "explanation": "Encrypted document, Protected archive"
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Key Exchange and describe at least two key ideas from this section.",
-        "check_a": "Cryptographic strength depends on using the correct key type, algorithm, key length, and exchange method. Keys must be generated, distributed, stored, rotated, and retired securely. Key ideas include: Methods; Protocols.",
-        "points": [
-          "Methods",
-          "Protocols"
-        ]
+        "why": "It allows granular protection of specific sensitive files.",
+        "example": "Only an HR spreadsheet is encrypted.",
+        "exam": "One file → FILE.",
+        "check_q": "Which encryption level protects a single document?",
+        "check_a": "File encryption."
       }
     },
     {
       "n": 5,
-      "title": "Algorithms",
-      "points": [
-        "Symmetric",
-        "Asymmetric"
-      ],
-      "raw": "Algorithms\nSymmetric\nAsymmetric",
+      "title": "Volume Encryption",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "Encrypts a logical storage volume.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Cryptographic strength depends on using the correct key type, algorithm, key length, and exchange method. Keys must be generated, distributed, stored, rotated, and retired securely.",
-        "why": "A strong algorithm can still fail if keys are weak, exposed, reused too long, or exchanged insecurely.",
-        "example": "A server uses asymmetric cryptography to establish trust and exchange key material, then switches to fast symmetric encryption for the session.",
-        "exam": "Focus on purpose: symmetric = fast shared secret; asymmetric = public/private pair; longer keys generally increase brute-force difficulty but algorithm choice also matters.",
+        "learn": "Encrypts a logical storage volume.",
         "breakdown": [
           {
-            "term": "Symmetric",
-            "explanation": "Within Algorithms, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Encryption rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "A logical volume is protected as a unit."
           },
           {
-            "term": "Asymmetric",
-            "explanation": "Within Algorithms, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Encryption rather than memorizing the phrase by itself."
+            "term": "Examples",
+            "explanation": "Encrypted logical drive"
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Algorithms and describe at least two key ideas from this section.",
-        "check_a": "Cryptographic strength depends on using the correct key type, algorithm, key length, and exchange method. Keys must be generated, distributed, stored, rotated, and retired securely. Key ideas include: Symmetric; Asymmetric.",
-        "points": [
-          "Symmetric",
-          "Asymmetric"
-        ]
+        "why": "It provides storage-level protection for a defined volume.",
+        "example": "A logical data volume mounted as a drive is encrypted.",
+        "exam": "One logical volume → VOLUME.",
+        "check_q": "Which level protects a logical storage volume?",
+        "check_a": "Volume encryption."
       }
     },
     {
       "n": 6,
-      "title": "Key Length",
-      "points": [
-        "Longer key lengths offer higher security",
-        "Specific cryptographic algorithm offer different length"
-      ],
-      "raw": "Key Length\nLonger key lengths offer higher security\nSpecific cryptographic algorithm offer different length",
+      "title": "Database Encryption",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "Encrypts data stored in a database.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Cryptographic strength depends on using the correct key type, algorithm, key length, and exchange method. Keys must be generated, distributed, stored, rotated, and retired securely.",
-        "why": "A strong algorithm can still fail if keys are weak, exposed, reused too long, or exchanged insecurely.",
-        "example": "A server uses asymmetric cryptography to establish trust and exchange key material, then switches to fast symmetric encryption for the session.",
-        "exam": "Focus on purpose: symmetric = fast shared secret; asymmetric = public/private pair; longer keys generally increase brute-force difficulty but algorithm choice also matters.",
+        "learn": "Encrypts data stored in a database.",
         "breakdown": [
           {
-            "term": "Longer key lengths offer higher security",
-            "explanation": "Cryptographic strength depends on using the correct key type, algorithm, key length, and exchange method. Keys must be generated, distributed, stored, rotated, and retired securely."
+            "term": "Basically",
+            "explanation": "The database or its stored contents are protected at rest."
           },
           {
-            "term": "Specific cryptographic algorithm offer different length",
-            "explanation": "Within Key Length, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Encryption rather than memorizing the phrase by itself."
+            "term": "Examples",
+            "explanation": "Encrypted database files, TDE-style protection"
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Key Length and describe at least two key ideas from this section.",
-        "check_a": "Cryptographic strength depends on using the correct key type, algorithm, key length, and exchange method. Keys must be generated, distributed, stored, rotated, and retired securely. Key ideas include: Longer key lengths offer higher security; Specific cryptographic algorithm offer different length.",
-        "points": [
-          "Longer key lengths offer higher security",
-          "Specific cryptographic algorithm offer different length"
-        ]
+        "why": "It protects sensitive structured data if underlying storage is exposed.",
+        "example": "Customer records in a production database are encrypted at rest.",
+        "exam": "Database contents → DATABASE ENCRYPTION.",
+        "check_q": "Which level protects data stored in a database?",
+        "check_a": "Database encryption."
       }
     },
     {
       "n": 7,
-      "title": "Tools",
-      "points": [],
-      "raw": "Tools",
-      "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": []
+      "title": "Record Encryption",
+      "instructional": true,
+      "teach": "Encrypts selected rows or records.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Encrypts selected rows or records.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Only specific records are encrypted instead of the entire database."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Protect one customer record"
+          }
+        ],
+        "defs": [],
+        "why": "It provides more granular protection for selected sensitive data.",
+        "example": "Only records containing regulated data are encrypted.",
+        "exam": "One row/record → RECORD.",
+        "check_q": "Which level protects selected database records?",
+        "check_a": "Record encryption."
+      }
+    },
+    {
+      "n": 8,
+      "title": "Transport / Communication Encryption",
+      "instructional": true,
+      "teach": "Protects data while it moves between systems.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Protects data while it moves between systems.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "It protects data in transit."
+          },
+          {
+            "term": "Examples",
+            "explanation": "TLS, VPN"
+          }
+        ],
+        "defs": [],
+        "why": "It reduces the risk of interception or exposure across networks.",
+        "example": "HTTPS protects browser-to-server traffic.",
+        "exam": "Network traffic → TRANSPORT.",
+        "check_q": "Which encryption protects data moving across a network?",
+        "check_a": "Transport/communication encryption."
+      }
+    },
+    {
+      "n": 9,
+      "title": "Symmetric Encryption",
+      "instructional": true,
+      "teach": "Uses the same shared secret key for encryption and decryption.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Uses the same shared secret key for encryption and decryption.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Both sides rely on one shared secret."
+          },
+          {
+            "term": "Examples",
+            "explanation": "AES"
+          }
+        ],
+        "defs": [],
+        "why": "It is fast and efficient for bulk data encryption.",
+        "example": "A backup archive is encrypted with AES.",
+        "exam": "Symmetric = FAST + ONE SHARED SECRET.",
+        "check_q": "Which type uses one shared secret key?",
+        "check_a": "Symmetric encryption."
+      }
+    },
+    {
+      "n": 10,
+      "title": "Asymmetric Encryption",
+      "instructional": true,
+      "teach": "Uses a public/private key pair.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Uses a public/private key pair.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "One key can be shared and the other remains secret."
+          },
+          {
+            "term": "Examples",
+            "explanation": "RSA, ECC"
+          }
+        ],
+        "defs": [],
+        "why": "It supports key establishment, signatures, and trust without sharing the private key.",
+        "example": "A public key is used during certificate-based communication.",
+        "exam": "Asymmetric = KEY PAIR.",
+        "check_q": "Which type uses a public/private key pair?",
+        "check_a": "Asymmetric encryption."
+      }
+    },
+    {
+      "n": 11,
+      "title": "Key Exchange",
+      "instructional": true,
+      "teach": "A method for securely establishing or sharing cryptographic keys between parties.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "A method for securely establishing or sharing cryptographic keys between parties.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "It helps two parties agree on keying material."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Diffie-Hellman, ECDHE"
+          }
+        ],
+        "defs": [],
+        "why": "Symmetric encryption needs a secure way to establish shared keys.",
+        "example": "Two systems use ECDHE to derive shared session keys.",
+        "exam": "Need to establish a shared key → KEY EXCHANGE.",
+        "check_q": "What concept establishes cryptographic keys between parties?",
+        "check_a": "Key exchange."
+      }
+    },
+    {
+      "n": 12,
+      "title": "Algorithms",
+      "instructional": true,
+      "teach": "The mathematical procedures used to perform cryptographic operations.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "The mathematical procedures used to perform cryptographic operations.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "The algorithm defines how the cryptographic transformation works."
+          },
+          {
+            "term": "Examples",
+            "explanation": "AES, RSA, ECC, SHA family"
+          }
+        ],
+        "defs": [],
+        "why": "Appropriate algorithm selection affects security, compatibility, and performance.",
+        "example": "An organization selects AES for bulk data encryption.",
+        "exam": "Algorithm = HOW THE CRYPTO WORKS.",
+        "check_q": "What determines the mathematical procedure used for encryption?",
+        "check_a": "The algorithm."
+      }
+    },
+    {
+      "n": 13,
+      "title": "Key Length",
+      "instructional": true,
+      "teach": "The size of a cryptographic key.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "The size of a cryptographic key.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Key length is one factor affecting resistance to brute-force attacks."
+          },
+          {
+            "term": "Examples",
+            "explanation": "128-bit, 256-bit, 2048-bit"
+          }
+        ],
+        "defs": [],
+        "why": "Insufficient key length can weaken protection even when the algorithm is otherwise appropriate.",
+        "example": "An organization chooses a stronger approved key size for a long-lived key.",
+        "exam": "Key length = KEY SIZE MATTERS.",
+        "check_q": "What property describes the size of a cryptographic key?",
+        "check_a": "Key length."
+      }
     }
   ],
-  "slide_count": 7,
-  "instructional_count": 5,
+  "slide_count": 13,
+  "instructional_count": 12,
   "concepts": [
-    "Level",
-    "Types",
+    "Full-disk Encryption",
+    "Partition Encryption",
+    "File Encryption",
+    "Volume Encryption",
+    "Database Encryption",
+    "Record Encryption",
+    "Transport / Communication Encryption",
+    "Symmetric Encryption",
+    "Asymmetric Encryption",
     "Key Exchange",
     "Algorithms",
     "Key Length"
   ],
-  "source_filename": "04.02_Encryption.pdf"
+  "source_filename": "04-02.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 1.4",
+      "title": "Encryption",
+      "intro": "Encryption protects confidentiality by transforming readable plaintext into ciphertext using cryptographic keys and algorithms."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Encryption",
+        "prompt": "Recognize the concept, understand why it matters, and identify it in a Security+ scenario.",
+        "badge": "1.4",
+        "cards": [
+          {
+            "name": "Full-disk Encryption",
+            "definition": "Encrypts an entire storage device.",
+            "examples": [
+              "BitLocker",
+              "FileVault"
+            ],
+            "memory": "WHOLE DEVICE"
+          },
+          {
+            "name": "Partition Encryption",
+            "definition": "Encrypts a specific disk partition.",
+            "examples": [
+              "Encrypted data partition"
+            ],
+            "memory": "ONE PARTITION"
+          },
+          {
+            "name": "File Encryption",
+            "definition": "Encrypts individual files.",
+            "examples": [
+              "Encrypted document",
+              "Protected archive"
+            ],
+            "memory": "ONE FILE"
+          },
+          {
+            "name": "Volume Encryption",
+            "definition": "Encrypts a logical storage volume.",
+            "examples": [
+              "Encrypted logical drive"
+            ],
+            "memory": "ONE VOLUME"
+          },
+          {
+            "name": "Database Encryption",
+            "definition": "Encrypts data stored in a database.",
+            "examples": [
+              "Encrypted database files",
+              "TDE-style protection"
+            ],
+            "memory": "DATABASE"
+          },
+          {
+            "name": "Record Encryption",
+            "definition": "Encrypts selected rows or records.",
+            "examples": [
+              "Protect one customer record"
+            ],
+            "memory": "ONE RECORD"
+          },
+          {
+            "name": "Transport / Communication Encryption",
+            "definition": "Protects data while it moves between systems.",
+            "examples": [
+              "TLS",
+              "VPN"
+            ],
+            "memory": "DATA IN TRANSIT"
+          },
+          {
+            "name": "Symmetric Encryption",
+            "definition": "Uses the same shared secret key for encryption and decryption.",
+            "examples": [
+              "AES"
+            ],
+            "memory": "ONE SHARED SECRET"
+          },
+          {
+            "name": "Asymmetric Encryption",
+            "definition": "Uses a public/private key pair.",
+            "examples": [
+              "RSA",
+              "ECC"
+            ],
+            "memory": "KEY PAIR"
+          },
+          {
+            "name": "Key Exchange",
+            "definition": "A method for securely establishing or sharing cryptographic keys between parties.",
+            "examples": [
+              "Diffie-Hellman",
+              "ECDHE"
+            ],
+            "memory": "ESTABLISH THE KEY"
+          },
+          {
+            "name": "Algorithms",
+            "definition": "The mathematical procedures used to perform cryptographic operations.",
+            "examples": [
+              "AES",
+              "RSA",
+              "ECC",
+              "SHA family"
+            ],
+            "memory": "HOW CRYPTO WORKS"
+          },
+          {
+            "name": "Key Length",
+            "definition": "The size of a cryptographic key.",
+            "examples": [
+              "128-bit",
+              "256-bit",
+              "2048-bit"
+            ],
+            "memory": "KEY SIZE MATTERS"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Encryption comparison",
+        "headers": [
+          "Type",
+          "Key idea",
+          "Best clue"
+        ],
+        "rows": [
+          [
+            "Symmetric",
+            "One shared secret",
+            "Fast bulk encryption"
+          ],
+          [
+            "Asymmetric",
+            "Public/private key pair",
+            "Key exchange, signatures, trust"
+          ],
+          [
+            "Transport",
+            "Protect data in motion",
+            "Network traffic"
+          ],
+          [
+            "Full-disk",
+            "Protect whole storage device",
+            "Lost/stolen device"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Identify what is being protected and how",
+        "items": [
+          [
+            "Whole laptop stolen → Full-disk",
+            "Protect the entire drive when physical theft is the concern.",
+            "Example: A stolen laptop remains unreadable without the key."
+          ],
+          [
+            "One file only → File",
+            "Use file-level protection when only selected files need encryption.",
+            "Example: A single HR spreadsheet is encrypted."
+          ],
+          [
+            "Network traffic → Transport",
+            "Protect data while it moves across a network.",
+            "Example: HTTPS protects browser-to-server traffic."
+          ],
+          [
+            "Symmetric = FAST",
+            "A shared secret makes symmetric encryption efficient for large amounts of data.",
+            "Example: AES encrypts a backup archive."
+          ],
+          [
+            "Asymmetric = KEY PAIR",
+            "Public/private keys support trust, signatures, and secure key establishment.",
+            "Example: A public key is used during certificate-based communication."
+          ]
+        ],
+        "example": "Memory: Whole device · One file · Data in transit · One shared secret · Key pair."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A company wants a stolen laptop's entire drive to remain unreadable without authentication. Which solution best fits?",
+        "choices": [
+          "Full-disk encryption",
+          "File encryption",
+          "Record encryption",
+          "Tokenization"
+        ],
+        "answer": 0,
+        "explanation": "Full-disk encryption protects the entire storage device."
+      },
+      {
+        "q": "Only one sensitive spreadsheet needs cryptographic protection. Which encryption level is most appropriate?",
+        "choices": [
+          "File encryption",
+          "Full-disk encryption",
+          "Database encryption",
+          "Transport encryption"
+        ],
+        "answer": 0,
+        "explanation": "File encryption protects selected files individually."
+      },
+      {
+        "q": "A company needs to protect customer data while it travels between a browser and a web server. Which solution applies?",
+        "choices": [
+          "Transport/communication encryption",
+          "Full-disk encryption",
+          "Record encryption",
+          "Key escrow"
+        ],
+        "answer": 0,
+        "explanation": "Transport encryption protects data in transit."
+      },
+      {
+        "q": "Which cryptographic approach uses one shared secret and is generally preferred for efficient bulk encryption?",
+        "choices": [
+          "Symmetric encryption",
+          "Asymmetric encryption",
+          "Hashing",
+          "Digital signatures"
+        ],
+        "answer": 0,
+        "explanation": "Symmetric encryption uses one shared secret and is efficient for bulk data."
+      },
+      {
+        "q": "Which cryptographic approach uses a public key and a private key?",
+        "choices": [
+          "Asymmetric encryption",
+          "Symmetric encryption",
+          "Salting",
+          "Tokenization"
+        ],
+        "answer": 0,
+        "explanation": "Asymmetric encryption uses a public/private key pair."
+      },
+      {
+        "q": "Two systems need to securely establish shared session keying material. Which concept is most relevant?",
+        "choices": [
+          "Key exchange",
+          "Data masking",
+          "Key escrow",
+          "Hashing"
+        ],
+        "answer": 0,
+        "explanation": "Key exchange establishes cryptographic keys between parties."
+      },
+      {
+        "q": "A database protects only selected rows containing regulated information. Which encryption level is being used?",
+        "choices": [
+          "Record encryption",
+          "Database encryption",
+          "Volume encryption",
+          "Full-disk encryption"
+        ],
+        "answer": 0,
+        "explanation": "Record encryption protects selected rows or records."
+      },
+      {
+        "q": "A company encrypts an entire logical storage volume but not the rest of the physical disk. Which level is this?",
+        "choices": [
+          "Volume encryption",
+          "Partition encryption",
+          "File encryption",
+          "Transport encryption"
+        ],
+        "answer": 0,
+        "explanation": "Volume encryption protects a logical volume."
+      },
+      {
+        "q": "What cryptographic property refers to the size of a key, such as 128-bit or 256-bit?",
+        "choices": [
+          "Key length",
+          "Key escrow",
+          "Key exchange",
+          "Key stretching"
+        ],
+        "answer": 0,
+        "explanation": "Key length is the size of the cryptographic key."
+      },
+      {
+        "q": "Which term refers to the mathematical procedure used to perform cryptographic operations?",
+        "choices": [
+          "Algorithm",
+          "Certificate",
+          "Token",
+          "Ledger"
+        ],
+        "answer": 0,
+        "explanation": "The algorithm defines the mathematical cryptographic procedure."
+      }
+    ]
+  }
 }
