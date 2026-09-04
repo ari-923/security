@@ -2,113 +2,192 @@
   "id": "04.06",
   "chapter": 4,
   "sub": 6,
-  "title": "Digital signatures",
+  "title": "Digital Signatures",
   "chapter_name": "Cryptography & PKI",
   "slides": [
     {
       "n": 1,
       "title": "Digital Signatures",
-      "points": [],
-      "raw": "Digital Signatures",
       "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": []
+      "teach": "",
+      "points": [
+        "Digital signatures provide integrity, signer authentication, and non-repudiation by combining hashing with asymmetric cryptography.",
+        "Security+ Objective 1.4: explain the importance of using appropriate cryptographic solutions."
+      ],
+      "defs": [],
+      "raw": ""
     },
     {
       "n": 2,
-      "title": "Digital Signatures",
-      "points": [
-        "Authentication,",
-        "Integrity, and Nonrepudiation",
-        "Usage in Email and",
-        "Document Signing",
-        "Equivalent to a",
-        "Handwritten Signature",
-        "Signing Algorithms"
-      ],
-      "raw": "Digital Signatures\nAuthentication,\nIntegrity, and Nonrepudiation\nUsage in Email and\nDocument Signing\nEquivalent to a\nHandwritten Signature\nSigning Algorithms",
+      "title": "Digital Signature",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "Authentication",
-          "Proving an identity—answering “who are you?”"
-        ],
-        [
-          "Integrity",
-          "Ensuring data stays accurate, complete, and protected from unauthorized modification."
-        ]
+      "teach": "A cryptographic signature created with a private key and verified with the corresponding public key.",
+      "points": [
+        "Basically",
+        "Examples"
       ],
+      "defs": [],
+      "raw": "",
       "course": {
-        "learn": "A digital signature uses asymmetric cryptography to prove that data came from the holder of a private key and that the signed data has not changed.",
-        "why": "Signatures support trust in software, documents, certificates, and messages without requiring secrecy.",
-        "example": "A vendor signs a software update with its private key. The client verifies the signature using the vendor's public key before installation.",
-        "exam": "Digital signature = integrity + authentication + non-repudiation. It does not automatically encrypt the message for confidentiality.",
+        "learn": "A cryptographic signature created with a private key and verified with the corresponding public key.",
         "breakdown": [
           {
-            "term": "Authentication,",
-            "explanation": "Authentication is the process of proving an identity. Factors can be something you know, have, are, do, or somewhere you are; MFA requires factors from more than one category."
+            "term": "Basically",
+            "explanation": "Private key signs; public key verifies."
           },
           {
-            "term": "Integrity, and Nonrepudiation",
-            "explanation": "Within Digital Signatures, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Digital signatures rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Usage in Email and Document Signing",
-            "explanation": "Within Digital Signatures, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Digital signatures rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Equivalent to a",
-            "explanation": "Within Digital Signatures, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Digital signatures rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Handwritten Signature",
-            "explanation": "Within Digital Signatures, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Digital signatures rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Signing Algorithms",
-            "explanation": "Cryptographic strength depends on using the correct key type, algorithm, key length, and exchange method. Keys must be generated, distributed, stored, rotated, and retired securely."
+            "term": "Examples",
+            "explanation": "Signed software, Signed document, Signed email"
           }
         ],
-        "defs": [
-          {
-            "term": "Authentication",
-            "definition": "Proving an identity—answering “who are you?”"
-          },
-          {
-            "term": "Integrity",
-            "definition": "Ensuring data stays accurate, complete, and protected from unauthorized modification."
-          }
-        ],
-        "check_q": "Without looking back, explain Digital Signatures and describe at least two key ideas from this section.",
-        "check_a": "A digital signature uses asymmetric cryptography to prove that data came from the holder of a private key and that the signed data has not changed. Key ideas include: Authentication,; Integrity, and Nonrepudiation; Usage in Email and Document Signing; Equivalent to a; Handwritten Signature.",
-        "points": [
-          "Authentication,",
-          "Integrity, and Nonrepudiation",
-          "Usage in Email and Document Signing",
-          "Equivalent to a",
-          "Handwritten Signature",
-          "Signing Algorithms"
-        ]
+        "defs": [],
+        "why": "It can provide integrity, signer authentication, and non-repudiation.",
+        "example": "A software vendor signs an update with its private key and clients verify the signature with the vendor's public key.",
+        "exam": "Digital signatures do NOT automatically provide confidentiality.",
+        "check_q": "Which key creates a digital signature?",
+        "check_a": "The private key."
       }
-    },
-    {
-      "n": 3,
-      "title": "Key Stretching",
-      "points": [],
-      "raw": "Key Stretching",
-      "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "Key stretching",
-          "Intentionally making password/key derivation computationally expensive so guessing attacks take longer."
-        ]
-      ]
     }
   ],
-  "slide_count": 3,
+  "slide_count": 2,
   "instructional_count": 1,
-  "concepts": [],
-  "source_filename": "04.06_Digital_signatures.pdf"
+  "concepts": [
+    "Digital Signature"
+  ],
+  "source_filename": "04-06.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 1.4",
+      "title": "Digital Signatures",
+      "intro": "Digital signatures provide integrity, signer authentication, and non-repudiation by combining hashing with asymmetric cryptography."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Digital Signatures",
+        "prompt": "Recognize the concept, understand why it matters, and identify it in a Security+ scenario.",
+        "badge": "1.4",
+        "cards": [
+          {
+            "name": "Digital Signature",
+            "definition": "A cryptographic signature created with a private key and verified with the corresponding public key.",
+            "examples": [
+              "Signed software",
+              "Signed document",
+              "Signed email"
+            ],
+            "memory": "PRIVATE SIGNS · PUBLIC VERIFIES"
+          }
+        ],
+        "columns": "one"
+      },
+      {
+        "type": "table",
+        "title": "Digital Signatures comparison",
+        "headers": [
+          "Key / Result",
+          "Role",
+          "Memory"
+        ],
+        "rows": [
+          [
+            "Private key",
+            "Creates signature",
+            "SIGNS"
+          ],
+          [
+            "Public key",
+            "Verifies signature",
+            "VERIFIES"
+          ],
+          [
+            "Security result",
+            "Integrity + authentication + non-repudiation",
+            "NOT confidentiality by itself"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Who signs, who verifies, and what does it prove?",
+        "items": [
+          [
+            "Private key → SIGNS",
+            "The signer uses the private key to create the signature.",
+            "Example: A vendor signs an update with its private key."
+          ],
+          [
+            "Public key → VERIFIES",
+            "Others use the corresponding public key to verify the signature.",
+            "Example: A client verifies the vendor's signature."
+          ],
+          [
+            "Signature ≠ Confidentiality",
+            "A digital signature proves integrity and origin but does not automatically hide the message.",
+            "Example: A signed document may still be readable."
+          ]
+        ],
+        "example": "Memory: Private signs · Public verifies · Signature proves integrity/origin, not secrecy."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A software vendor wants customers to verify that an update came from the vendor and was not modified. Which solution best fits?",
+        "choices": [
+          "Digital signature",
+          "Data masking",
+          "Full-disk encryption",
+          "Key escrow"
+        ],
+        "answer": 0,
+        "explanation": "A digital signature supports integrity and signer authentication."
+      },
+      {
+        "q": "Which key is used to create a digital signature?",
+        "choices": [
+          "Private key",
+          "Public key",
+          "Escrow key",
+          "Shared symmetric key only"
+        ],
+        "answer": 0,
+        "explanation": "The signer uses the private key to create the signature."
+      },
+      {
+        "q": "Which key is used to verify a digital signature?",
+        "choices": [
+          "Public key",
+          "Private key",
+          "Salt",
+          "Token"
+        ],
+        "answer": 0,
+        "explanation": "The corresponding public key verifies the signature."
+      },
+      {
+        "q": "Which security properties are most directly associated with digital signatures?",
+        "choices": [
+          "Integrity, signer authentication, and non-repudiation",
+          "Confidentiality only",
+          "Availability and redundancy",
+          "Data masking and tokenization"
+        ],
+        "answer": 0,
+        "explanation": "Digital signatures support integrity, authentication of the signer, and non-repudiation."
+      },
+      {
+        "q": "A document is digitally signed but not encrypted. Which statement is correct?",
+        "choices": [
+          "The signature does not by itself make the document confidential",
+          "The signature automatically hides the document contents",
+          "The signature replaces the need for hashing",
+          "The signature makes the document unavailable to unauthorized users"
+        ],
+        "answer": 0,
+        "explanation": "Digital signatures do not automatically provide confidentiality."
+      }
+    ]
+  }
 }
