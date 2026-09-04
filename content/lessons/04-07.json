@@ -2,93 +2,172 @@
   "id": "04.07",
   "chapter": 4,
   "sub": 7,
-  "title": "Key stretching",
+  "title": "Key Stretching",
   "chapter_name": "Cryptography & PKI",
   "slides": [
     {
       "n": 1,
       "title": "Key Stretching",
-      "points": [],
-      "raw": "Key Stretching",
       "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "Key stretching",
-          "Intentionally making password/key derivation computationally expensive so guessing attacks take longer."
-        ]
-      ]
+      "teach": "",
+      "points": [
+        "Key stretching makes password-derived cryptographic operations deliberately expensive so brute-force guessing becomes slower.",
+        "Security+ Objective 1.4: explain the importance of using appropriate cryptographic solutions."
+      ],
+      "defs": [],
+      "raw": ""
     },
     {
       "n": 2,
       "title": "Key Stretching",
-      "points": [
-        "• Increases the strength of the",
-        "stored passwords",
-        "• Salts the password and then",
-        "stretches them",
-        "• Prevents password attacks"
-      ],
-      "raw": "Key Stretching\n• Increases the strength of the\nstored passwords\n• Salts the password and then\nstretches them\n• Prevents password attacks",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "Key stretching",
-          "Intentionally making password/key derivation computationally expensive so guessing attacks take longer."
-        ]
+      "teach": "Repeated or memory-intensive processing that increases the cost of deriving a key from a password.",
+      "points": [
+        "Basically",
+        "Examples"
       ],
+      "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Key stretching deliberately makes password hashing slower and more computationally expensive so each cracking attempt costs more time and resources.",
-        "why": "Humans choose passwords with limited entropy, so slowing each guess improves resistance to offline attacks.",
-        "example": "A system uses PBKDF2, bcrypt, scrypt, or Argon2 with many iterations/work factors instead of a single fast hash.",
-        "exam": "If the goal is “make password guesses expensive,” choose key stretching rather than ordinary hashing alone.",
+        "learn": "Repeated or memory-intensive processing that increases the cost of deriving a key from a password.",
         "breakdown": [
           {
-            "term": "Increases the strength of the stored passwords",
-            "explanation": "Within Key Stretching, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Key stretching rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "Make each password guess intentionally expensive."
           },
           {
-            "term": "Salts the password and then stretches them",
-            "explanation": "Within Key Stretching, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Key stretching rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Prevents password attacks",
-            "explanation": "Within Key Stretching, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Key stretching rather than memorizing the phrase by itself."
+            "term": "Examples",
+            "explanation": "PBKDF2, bcrypt, scrypt, Argon2"
           }
         ],
-        "defs": [
-          {
-            "term": "Key stretching",
-            "definition": "Intentionally making password/key derivation computationally expensive so guessing attacks take longer."
-          }
-        ],
-        "check_q": "Without looking back, explain Key Stretching and describe at least two key ideas from this section.",
-        "check_a": "Key stretching deliberately makes password hashing slower and more computationally expensive so each cracking attempt costs more time and resources. Key ideas include: Increases the strength of the stored passwords; Salts the password and then stretches them; Prevents password attacks.",
-        "points": [
-          "Increases the strength of the stored passwords",
-          "Salts the password and then stretches them",
-          "Prevents password attacks"
-        ]
+        "defs": [],
+        "why": "A small delay is tolerable for one legitimate login but expensive across millions or billions of attacker guesses.",
+        "example": "A password derivation takes a small deliberate amount of time to slow brute-force attempts.",
+        "exam": "Key stretching = MAKE EACH GUESS EXPENSIVE.",
+        "check_q": "What technique deliberately increases the cost of password guesses?",
+        "check_a": "Key stretching."
       }
-    },
-    {
-      "n": 3,
-      "title": "Blockchain",
-      "points": [],
-      "raw": "Blockchain",
-      "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "Blockchain",
-          "A distributed, append-oriented ledger where blocks of records are cryptographically linked, making unauthorized alteration difficult."
-        ]
-      ]
     }
   ],
-  "slide_count": 3,
+  "slide_count": 2,
   "instructional_count": 1,
-  "concepts": [],
-  "source_filename": "04.07_Key_stretching.pdf"
+  "concepts": [
+    "Key Stretching"
+  ],
+  "source_filename": "04-07.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 1.4",
+      "title": "Key Stretching",
+      "intro": "Key stretching makes password-derived cryptographic operations deliberately expensive so brute-force guessing becomes slower."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Key Stretching",
+        "prompt": "Recognize the concept, understand why it matters, and identify it in a Security+ scenario.",
+        "badge": "1.4",
+        "cards": [
+          {
+            "name": "Key Stretching",
+            "definition": "Repeated or memory-intensive processing that increases the cost of deriving a key from a password.",
+            "examples": [
+              "PBKDF2",
+              "bcrypt",
+              "scrypt",
+              "Argon2"
+            ],
+            "memory": "MAKE EACH GUESS EXPENSIVE"
+          }
+        ],
+        "columns": "one"
+      },
+      {
+        "type": "table",
+        "title": "Key Stretching comparison",
+        "headers": [
+          "Who",
+          "Number of derivations",
+          "Effect"
+        ],
+        "rows": [
+          [
+            "Legitimate user",
+            "One or few",
+            "Small acceptable delay"
+          ],
+          [
+            "Attacker",
+            "Millions/billions",
+            "Large cumulative cost"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Why deliberately slow it down?",
+        "items": [
+          [
+            "One login → tolerable",
+            "A small delay is usually acceptable for a legitimate user.",
+            "Example: Deriving a password key takes a fraction of a second."
+          ],
+          [
+            "Billions of guesses → expensive",
+            "The same delay multiplied across huge numbers of guesses slows attackers dramatically.",
+            "Example: Brute-force cracking becomes much more costly."
+          ]
+        ],
+        "example": "Memory: Small delay for user · huge cumulative cost for attacker."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A password-storage design deliberately makes each password-derived key computation slower to reduce brute-force efficiency. Which concept is this?",
+        "choices": [
+          "Key stretching",
+          "Key escrow",
+          "Tokenization",
+          "OCSP"
+        ],
+        "answer": 0,
+        "explanation": "Key stretching increases the computational cost of each password guess."
+      },
+      {
+        "q": "Why can key stretching help against brute-force attacks?",
+        "choices": [
+          "A small per-guess delay becomes expensive across huge numbers of guesses",
+          "It makes passwords reversible",
+          "It replaces the password with a public certificate",
+          "It hides the password inside an image"
+        ],
+        "answer": 0,
+        "explanation": "The cumulative cost grows dramatically for attackers making many guesses."
+      },
+      {
+        "q": "Which technology is an example associated with password key stretching?",
+        "choices": [
+          "PBKDF2",
+          "CRL",
+          "OCSP",
+          "HSM"
+        ],
+        "answer": 0,
+        "explanation": "PBKDF2 is a password-based key derivation function used for key stretching."
+      },
+      {
+        "q": "Which phrase best summarizes key stretching?",
+        "choices": [
+          "Make each guess expensive",
+          "Make every key public",
+          "Store a backup key",
+          "Replace data with a token"
+        ],
+        "answer": 0,
+        "explanation": "Key stretching deliberately increases the cost of deriving keys from passwords."
+      }
+    ]
+  }
 }
