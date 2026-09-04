@@ -1,0 +1,411 @@
+{
+  "id": "07.03",
+  "chapter": 7,
+  "sub": 3,
+  "title": "Cryptographic, Misconfiguration, and Mobile Vulnerabilities",
+  "chapter_name": "Vulnerabilities",
+  "slides": [
+    {
+      "n": 1,
+      "title": "Cryptographic, Misconfiguration, and Mobile Vulnerabilities",
+      "instructional": false,
+      "teach": "",
+      "points": [
+        "This lesson focuses on weaknesses caused by bad cryptography, insecure settings, mobile security restrictions being bypassed, and flaws with no available fix yet.",
+        "Security+ Objective 2.3: explain various types of vulnerabilities."
+      ],
+      "defs": [],
+      "raw": ""
+    },
+    {
+      "n": 2,
+      "title": "Cryptographic",
+      "instructional": true,
+      "teach": "A weakness caused by poor algorithm choice, weak keys, insecure implementation, or misuse of cryptography.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "A weakness caused by poor algorithm choice, weak keys, insecure implementation, or misuse of cryptography.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "The cryptography itself is weak or used incorrectly."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Weak cipher, Hardcoded key, Improper certificate validation"
+          }
+        ],
+        "defs": [],
+        "why": "Strong systems can still fail if crypto choices or implementations are weak.",
+        "example": "An application uses an obsolete cipher with a hardcoded key.",
+        "exam": "Weak cipher / bad key handling → CRYPTOGRAPHIC.",
+        "check_q": "Which category fits an obsolete cipher or hardcoded key?",
+        "check_a": "Cryptographic vulnerability."
+      }
+    },
+    {
+      "n": 3,
+      "title": "Misconfiguration",
+      "instructional": true,
+      "teach": "A security weakness caused by incorrect, insecure, or unintended configuration settings.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "A security weakness caused by incorrect, insecure, or unintended configuration settings.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "The product may be secure, but the settings are wrong."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Public storage bucket, Excessive permissions, Debug mode enabled"
+          }
+        ],
+        "defs": [],
+        "why": "Incorrect settings can expose otherwise secure technology.",
+        "example": "A cloud bucket is accidentally made public.",
+        "exam": "Secure product, unsafe settings → MISCONFIGURATION.",
+        "check_q": "Which category fits a secure product configured unsafely?",
+        "check_a": "Misconfiguration."
+      }
+    },
+    {
+      "n": 4,
+      "title": "Side Loading",
+      "instructional": true,
+      "teach": "Installing an application from a source outside the official or approved application store or management channel.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Installing an application from a source outside the official or approved application store or management channel.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Install an app from somewhere other than the approved store."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Manual APK install, Unapproved app package"
+          }
+        ],
+        "defs": [],
+        "why": "Unapproved sources may bypass vetting and introduce malicious or risky applications.",
+        "example": "An employee manually installs an APK downloaded from a website.",
+        "exam": "Install outside approved store → SIDE LOADING.",
+        "check_q": "What is installing an app outside the approved store called?",
+        "check_a": "Side loading."
+      }
+    },
+    {
+      "n": 5,
+      "title": "Jailbreaking",
+      "instructional": true,
+      "teach": "Removing or bypassing manufacturer restrictions on a mobile device to gain greater control or elevated access.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Removing or bypassing manufacturer restrictions on a mobile device to gain greater control or elevated access.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "The device's built-in restrictions are intentionally removed."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Rooted phone, Bypassed iOS restrictions"
+          }
+        ],
+        "defs": [],
+        "why": "Jailbreaking weakens platform security boundaries and can allow untrusted software or elevated access.",
+        "example": "A phone is rooted to gain unrestricted system access.",
+        "exam": "Remove platform restrictions → JAILBREAKING.",
+        "check_q": "What is bypassing mobile platform restrictions called?",
+        "check_a": "Jailbreaking."
+      }
+    },
+    {
+      "n": 6,
+      "title": "Zero-day",
+      "instructional": true,
+      "teach": "A vulnerability that is unknown to the vendor or is being exploited before an effective fix is available.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "A vulnerability that is unknown to the vendor or is being exploited before an effective fix is available.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Attackers have a usable flaw before defenders have an effective patch."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Unknown browser flaw, Unpatched newly discovered bug"
+          }
+        ],
+        "defs": [],
+        "why": "Defenders may have limited signatures, patches, or mitigations when exploitation begins.",
+        "example": "Attackers exploit a browser flaw before the vendor releases a patch.",
+        "exam": "No effective fix available yet → ZERO-DAY.",
+        "check_q": "Which term describes exploitation before an effective fix is available?",
+        "check_a": "Zero-day."
+      }
+    }
+  ],
+  "slide_count": 6,
+  "instructional_count": 5,
+  "concepts": [
+    "Cryptographic",
+    "Misconfiguration",
+    "Side Loading",
+    "Jailbreaking",
+    "Zero-day"
+  ],
+  "source_filename": "07-03.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 2.3",
+      "title": "Cryptographic, Misconfiguration, and Mobile Vulnerabilities",
+      "intro": "This lesson focuses on weaknesses caused by bad cryptography, insecure settings, mobile security restrictions being bypassed, and flaws with no available fix yet."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Cryptographic, Misconfiguration, and Mobile Vulnerabilities",
+        "prompt": "Focus on the exact failure mode and distinguish it from similar vulnerability categories.",
+        "badge": "2.3",
+        "cards": [
+          {
+            "name": "Cryptographic",
+            "definition": "A weakness caused by poor algorithm choice, weak keys, insecure implementation, or misuse of cryptography.",
+            "examples": [
+              "Weak cipher",
+              "Hardcoded key",
+              "Improper certificate validation"
+            ],
+            "memory": "WEAK CRYPTO"
+          },
+          {
+            "name": "Misconfiguration",
+            "definition": "A security weakness caused by incorrect, insecure, or unintended configuration settings.",
+            "examples": [
+              "Public storage bucket",
+              "Excessive permissions",
+              "Debug mode enabled"
+            ],
+            "memory": "WRONG SETTINGS"
+          },
+          {
+            "name": "Side Loading",
+            "definition": "Installing an application from a source outside the official or approved application store or management channel.",
+            "examples": [
+              "Manual APK install",
+              "Unapproved app package"
+            ],
+            "memory": "INSTALL OUTSIDE STORE"
+          },
+          {
+            "name": "Jailbreaking",
+            "definition": "Removing or bypassing manufacturer restrictions on a mobile device to gain greater control or elevated access.",
+            "examples": [
+              "Rooted phone",
+              "Bypassed iOS restrictions"
+            ],
+            "memory": "REMOVE DEVICE RESTRICTIONS"
+          },
+          {
+            "name": "Zero-day",
+            "definition": "A vulnerability that is unknown to the vendor or is being exploited before an effective fix is available.",
+            "examples": [
+              "Unknown browser flaw",
+              "Unpatched newly discovered bug"
+            ],
+            "memory": "NO PATCH YET"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Cryptographic, configuration, and mobile distinctions",
+        "headers": [
+          "Concept",
+          "What failed",
+          "Best exam clue"
+        ],
+        "rows": [
+          [
+            "Cryptographic",
+            "Crypto design/algorithm/key handling",
+            "Weak cipher, hardcoded key"
+          ],
+          [
+            "Misconfiguration",
+            "Settings",
+            "Secure product configured unsafely"
+          ],
+          [
+            "Side loading",
+            "App distribution channel",
+            "Installed outside approved store"
+          ],
+          [
+            "Jailbreaking",
+            "Platform restriction",
+            "Device controls removed/bypassed"
+          ],
+          [
+            "Zero-day",
+            "Unknown/unfixed flaw",
+            "No effective fix available yet"
+          ]
+        ]
+      },
+      {
+        "type": "table",
+        "title": "Common exam traps",
+        "headers": [
+          "Don't confuse...",
+          "Difference"
+        ],
+        "rows": [
+          [
+            "Cryptographic vs. misconfiguration",
+            "Weak crypto itself vs. secure technology configured incorrectly"
+          ],
+          [
+            "Side loading vs. jailbreaking",
+            "Installing outside approved store vs. removing device restrictions"
+          ],
+          [
+            "New vulnerability vs. zero-day",
+            "A flaw is not zero-day merely because it is new; the key clue is exploitation before an effective fix is available"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Cryptographic, configuration, and mobile exam shortcuts",
+        "items": [
+          [
+            "Weak cipher / bad key handling → CRYPTOGRAPHIC",
+            "The weakness is in the cryptographic choice or implementation itself.",
+            "Example: An application uses an obsolete cipher or hardcoded encryption key."
+          ],
+          [
+            "Secure product, unsafe settings → MISCONFIGURATION",
+            "The technology may be secure by design, but the configuration exposes it.",
+            "Example: A cloud bucket is accidentally configured for public access."
+          ],
+          [
+            "Install outside approved store → SIDE LOADING",
+            "The user bypasses the normal application distribution channel.",
+            "Example: An employee manually installs an APK downloaded from a website."
+          ],
+          [
+            "Remove platform restrictions → JAILBREAKING",
+            "The device's built-in manufacturer restrictions are intentionally bypassed.",
+            "Example: A phone is rooted to gain unrestricted system access."
+          ],
+          [
+            "No effective fix available yet → ZERO-DAY",
+            "The exam clue is not simply 'new'; it is that exploitation occurs before defenders have an effective vendor fix.",
+            "Example: Attackers exploit a browser flaw before a patch is released."
+          ]
+        ],
+        "example": "Memory: Crypto = weak algorithm/key handling · Misconfig = wrong settings · Side load = outside store · Jailbreak = remove restrictions · Zero-day = no fix yet."
+      }
+    ],
+    "questions": [
+      {
+        "q": "An application uses an obsolete cipher even though its permissions and other settings are correct. Which vulnerability category best fits?",
+        "choices": [
+          "Cryptographic",
+          "Misconfiguration",
+          "Side loading",
+          "Zero-day"
+        ],
+        "answer": 0,
+        "explanation": "The weakness comes from the cryptographic algorithm choice itself."
+      },
+      {
+        "q": "A cloud service is secure by design, but an administrator accidentally makes a sensitive storage bucket public. Which category best fits?",
+        "choices": [
+          "Misconfiguration",
+          "Cryptographic",
+          "Zero-day",
+          "Jailbreaking"
+        ],
+        "answer": 0,
+        "explanation": "The technology is configured insecurely; the problem is the settings."
+      },
+      {
+        "q": "An employee installs an Android app directly from an APK downloaded from a website rather than the approved store. Which vulnerability category is this?",
+        "choices": [
+          "Side loading",
+          "Jailbreaking",
+          "Cryptographic",
+          "Zero-day"
+        ],
+        "answer": 0,
+        "explanation": "The application is installed outside the approved distribution channel."
+      },
+      {
+        "q": "A user removes manufacturer restrictions to gain elevated control over a mobile device. Which vulnerability category is this?",
+        "choices": [
+          "Jailbreaking",
+          "Side loading",
+          "Misconfiguration",
+          "Zero-day"
+        ],
+        "answer": 0,
+        "explanation": "Jailbreaking bypasses built-in mobile platform restrictions."
+      },
+      {
+        "q": "Attackers are exploiting a newly discovered browser flaw before the vendor has an effective patch available. Which term best fits?",
+        "choices": [
+          "Zero-day",
+          "Misconfiguration",
+          "Legacy",
+          "End-of-life"
+        ],
+        "answer": 0,
+        "explanation": "The key clue is active exploitation before an effective fix is available."
+      },
+      {
+        "q": "A mobile app uses strong modern cryptography, but the developer hardcodes the encryption key in the application. Which category best fits?",
+        "choices": [
+          "Cryptographic vulnerability",
+          "Misconfiguration only",
+          "Side loading",
+          "Zero-day"
+        ],
+        "answer": 0,
+        "explanation": "Hardcoded key handling is a cryptographic weakness."
+      }
+    ]
+  }
+}

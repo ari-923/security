@@ -1,0 +1,584 @@
+{
+  "id": "07.02",
+  "chapter": 7,
+  "sub": 2,
+  "title": "Hardware, Virtualization, and Cloud Vulnerabilities",
+  "chapter_name": "Vulnerabilities",
+  "slides": [
+    {
+      "n": 1,
+      "title": "Hardware, Virtualization, and Cloud Vulnerabilities",
+      "instructional": false,
+      "teach": "",
+      "points": [
+        "Infrastructure vulnerabilities can exist in firmware, end-of-life hardware, virtual machines, shared resources, cloud configurations, and upstream providers.",
+        "Security+ Objective 2.3: explain various types of vulnerabilities."
+      ],
+      "defs": [],
+      "raw": ""
+    },
+    {
+      "n": 2,
+      "title": "Firmware",
+      "instructional": true,
+      "teach": "Low-level software embedded in hardware that can contain vulnerabilities or malicious code.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Low-level software embedded in hardware that can contain vulnerabilities or malicious code.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Firmware is the software that helps hardware operate."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Router firmware flaw, UEFI vulnerability"
+          }
+        ],
+        "defs": [],
+        "why": "Firmware vulnerabilities can persist below the operating system and may be difficult to detect or patch.",
+        "example": "A router firmware flaw allows remote compromise.",
+        "exam": "Low-level device software → FIRMWARE.",
+        "check_q": "Which vulnerability category involves software embedded in hardware?",
+        "check_a": "Firmware."
+      }
+    },
+    {
+      "n": 3,
+      "title": "End-of-life",
+      "instructional": true,
+      "teach": "Hardware or software that has reached the end of vendor support and may no longer receive security fixes.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Hardware or software that has reached the end of vendor support and may no longer receive security fixes.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "The vendor has stopped supporting it."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Unsupported appliance, Retired platform"
+          }
+        ],
+        "defs": [],
+        "why": "New vulnerabilities may remain permanently unpatched.",
+        "example": "An appliance remains in production after the vendor ends security updates.",
+        "exam": "No vendor fixes anymore → END-OF-LIFE.",
+        "check_q": "Which category means vendor support has ended?",
+        "check_a": "End-of-life."
+      }
+    },
+    {
+      "n": 4,
+      "title": "Legacy",
+      "instructional": true,
+      "teach": "Older technology still in use even though newer alternatives exist.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Older technology still in use even though newer alternatives exist.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "It is old, but not necessarily unsupported."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Old protocol, Aging hardware platform"
+          }
+        ],
+        "defs": [],
+        "why": "Legacy technology may have compatibility limitations, weaker security designs, or operational dependence.",
+        "example": "A business application still depends on an old protocol.",
+        "exam": "Old but still operating → LEGACY.",
+        "check_q": "Which term describes outdated technology still in use?",
+        "check_a": "Legacy."
+      }
+    },
+    {
+      "n": 5,
+      "title": "Virtual Machine (VM) Escape",
+      "instructional": true,
+      "teach": "A vulnerability that allows code in a guest VM to break isolation and interact with the host or other VMs.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "A vulnerability that allows code in a guest VM to break isolation and interact with the host or other VMs.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "The guest escapes its virtual boundary."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Guest-to-host escape"
+          }
+        ],
+        "defs": [],
+        "why": "VM escape defeats virtualization isolation and can expose other workloads or the host.",
+        "example": "Malicious code inside a guest compromises the hypervisor.",
+        "exam": "Guest reaches host → VM ESCAPE.",
+        "check_q": "Which vulnerability lets a guest VM break isolation?",
+        "check_a": "VM escape."
+      }
+    },
+    {
+      "n": 6,
+      "title": "Resource Reuse",
+      "instructional": true,
+      "teach": "Risk created when reused memory, storage, or other resources expose residual data from a previous user or process.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Risk created when reused memory, storage, or other resources expose residual data from a previous user or process.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Old data remains after the resource is reassigned."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Uncleared memory, Reallocated disk blocks"
+          }
+        ],
+        "defs": [],
+        "why": "Residual data can leak across users, processes, or tenants.",
+        "example": "A newly allocated memory region contains another tenant's data.",
+        "exam": "Old data in reused resource → RESOURCE REUSE.",
+        "check_q": "Which vulnerability involves residual data in reused resources?",
+        "check_a": "Resource reuse."
+      }
+    },
+    {
+      "n": 7,
+      "title": "Cloud-specific",
+      "instructional": true,
+      "teach": "Vulnerabilities unique or especially relevant to cloud environments, often involving identity, APIs, configuration, tenancy, or shared responsibility.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Vulnerabilities unique or especially relevant to cloud environments, often involving identity, APIs, configuration, tenancy, or shared responsibility.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "The weakness comes from cloud architecture, permissions, or configuration."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Public storage bucket, Overprivileged cloud role"
+          }
+        ],
+        "defs": [],
+        "why": "Cloud services expose unique control planes and shared-responsibility boundaries.",
+        "example": "A cloud bucket is accidentally configured for public access.",
+        "exam": "Cloud role/bucket/API issue → CLOUD-SPECIFIC.",
+        "check_q": "Which category fits a public cloud bucket caused by incorrect cloud permissions?",
+        "check_a": "Cloud-specific."
+      }
+    },
+    {
+      "n": 8,
+      "title": "Service Provider",
+      "instructional": true,
+      "teach": "A provider whose compromise or weakness can affect customers relying on its hosted or managed service.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "A provider whose compromise or weakness can affect customers relying on its hosted or managed service.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "A trusted service dependency introduces upstream risk."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Cloud service provider, Managed SaaS provider"
+          }
+        ],
+        "defs": [],
+        "why": "Customers inherit some risk from the service provider's controls and security posture.",
+        "example": "A SaaS provider compromise exposes customer data.",
+        "exam": "Trusted service provider weakness → SERVICE PROVIDER.",
+        "check_q": "Which supply-chain category describes a compromised hosted service provider?",
+        "check_a": "Service provider."
+      }
+    },
+    {
+      "n": 9,
+      "title": "Hardware Provider",
+      "instructional": true,
+      "teach": "A supplier of physical devices or components whose products can introduce security weaknesses.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "A supplier of physical devices or components whose products can introduce security weaknesses.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "The upstream risk comes from hardware or components."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Server vendor, Chip supplier"
+          }
+        ],
+        "defs": [],
+        "why": "Compromised or defective hardware can enter the environment before deployment.",
+        "example": "A malicious component is introduced during hardware manufacturing.",
+        "exam": "Upstream hardware weakness → HARDWARE PROVIDER.",
+        "check_q": "Which provider category relates to compromised hardware components?",
+        "check_a": "Hardware provider."
+      }
+    },
+    {
+      "n": 10,
+      "title": "Software Provider",
+      "instructional": true,
+      "teach": "A supplier of applications, libraries, or updates whose compromise can affect downstream customers.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "A supplier of applications, libraries, or updates whose compromise can affect downstream customers.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "The upstream risk comes from software the organization trusts."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Software vendor, Package maintainer"
+          }
+        ],
+        "defs": [],
+        "why": "A compromised software provider can distribute malicious code broadly.",
+        "example": "A trusted library maintainer's package is compromised.",
+        "exam": "Upstream software weakness → SOFTWARE PROVIDER.",
+        "check_q": "Which provider category relates to compromised applications or libraries?",
+        "check_a": "Software provider."
+      }
+    }
+  ],
+  "slide_count": 10,
+  "instructional_count": 9,
+  "concepts": [
+    "Firmware",
+    "End-of-life",
+    "Legacy",
+    "Virtual Machine (VM) Escape",
+    "Resource Reuse",
+    "Cloud-specific",
+    "Service Provider",
+    "Hardware Provider",
+    "Software Provider"
+  ],
+  "source_filename": "07-02.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 2.3",
+      "title": "Hardware, Virtualization, and Cloud Vulnerabilities",
+      "intro": "Infrastructure vulnerabilities can exist in firmware, end-of-life hardware, virtual machines, shared resources, cloud configurations, and upstream providers."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Hardware, Virtualization, and Cloud Vulnerabilities",
+        "prompt": "Focus on the exact failure mode and distinguish it from similar vulnerability categories.",
+        "badge": "2.3",
+        "cards": [
+          {
+            "name": "Firmware",
+            "definition": "Low-level software embedded in hardware that can contain vulnerabilities or malicious code.",
+            "examples": [
+              "Router firmware flaw",
+              "UEFI vulnerability"
+            ],
+            "memory": "HARDWARE'S SOFTWARE"
+          },
+          {
+            "name": "End-of-life",
+            "definition": "Hardware or software that has reached the end of vendor support and may no longer receive security fixes.",
+            "examples": [
+              "Unsupported appliance",
+              "Retired platform"
+            ],
+            "memory": "NO MORE SUPPORT"
+          },
+          {
+            "name": "Legacy",
+            "definition": "Older technology still in use even though newer alternatives exist.",
+            "examples": [
+              "Old protocol",
+              "Aging hardware platform"
+            ],
+            "memory": "OLD TECHNOLOGY"
+          },
+          {
+            "name": "Virtual Machine (VM) Escape",
+            "definition": "A vulnerability that allows code in a guest VM to break isolation and interact with the host or other VMs.",
+            "examples": [
+              "Guest-to-host escape"
+            ],
+            "memory": "ESCAPE THE VM"
+          },
+          {
+            "name": "Resource Reuse",
+            "definition": "Risk created when reused memory, storage, or other resources expose residual data from a previous user or process.",
+            "examples": [
+              "Uncleared memory",
+              "Reallocated disk blocks"
+            ],
+            "memory": "LEFTOVER DATA"
+          },
+          {
+            "name": "Cloud-specific",
+            "definition": "Vulnerabilities unique or especially relevant to cloud environments, often involving identity, APIs, configuration, tenancy, or shared responsibility.",
+            "examples": [
+              "Public storage bucket",
+              "Overprivileged cloud role"
+            ],
+            "memory": "CLOUD CONFIG / SHARED RESPONSIBILITY"
+          },
+          {
+            "name": "Service Provider",
+            "definition": "A provider whose compromise or weakness can affect customers relying on its hosted or managed service.",
+            "examples": [
+              "Cloud service provider",
+              "Managed SaaS provider"
+            ],
+            "memory": "SERVICE DEPENDENCY"
+          },
+          {
+            "name": "Hardware Provider",
+            "definition": "A supplier of physical devices or components whose products can introduce security weaknesses.",
+            "examples": [
+              "Server vendor",
+              "Chip supplier"
+            ],
+            "memory": "HARDWARE SUPPLY"
+          },
+          {
+            "name": "Software Provider",
+            "definition": "A supplier of applications, libraries, or updates whose compromise can affect downstream customers.",
+            "examples": [
+              "Software vendor",
+              "Package maintainer"
+            ],
+            "memory": "SOFTWARE SUPPLY"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Infrastructure vulnerability distinctions",
+        "headers": [
+          "Concept",
+          "What it means",
+          "Best exam clue"
+        ],
+        "rows": [
+          [
+            "Legacy",
+            "Old technology still in use",
+            "Old, outdated, but may still be supported"
+          ],
+          [
+            "End-of-life",
+            "Vendor support has ended",
+            "No more vendor fixes"
+          ],
+          [
+            "VM escape",
+            "Guest breaks isolation",
+            "Guest reaches host or another VM"
+          ],
+          [
+            "Resource reuse",
+            "Residual data remains",
+            "Old data appears in reused memory/storage"
+          ],
+          [
+            "Cloud-specific",
+            "Cloud identity/config/API weakness",
+            "Misconfiguration / shared responsibility"
+          ]
+        ]
+      },
+      {
+        "type": "table",
+        "title": "VM escape vs. resource reuse",
+        "headers": [
+          "Concept",
+          "Failure"
+        ],
+        "rows": [
+          [
+            "VM escape",
+            "Isolation boundary fails."
+          ],
+          [
+            "Resource reuse",
+            "Residual data was not cleared before reuse."
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Infrastructure vulnerability exam shortcuts",
+        "items": [
+          [
+            "Old technology still used → LEGACY",
+            "Legacy means outdated technology remains in operation; it does not automatically mean vendor support has ended.",
+            "Example: A business application still depends on an old protocol."
+          ],
+          [
+            "No vendor fixes anymore → END-OF-LIFE",
+            "End-of-life means the vendor has stopped supporting the product.",
+            "Example: An appliance remains in production after security updates stop."
+          ],
+          [
+            "Guest reaches host → VM ESCAPE",
+            "A virtual machine breaks the isolation boundary.",
+            "Example: Malicious code in a guest compromises the hypervisor or host."
+          ],
+          [
+            "Old data appears in reused resource → RESOURCE REUSE",
+            "The issue is leftover information that was not cleared before reuse.",
+            "Example: Newly allocated memory contains another tenant's data."
+          ],
+          [
+            "Cloud role/bucket/API misconfigured → CLOUD-SPECIFIC",
+            "The weakness arises from cloud configuration, identity, tenancy, APIs, or shared-responsibility mistakes.",
+            "Example: A storage bucket is accidentally public."
+          ],
+          [
+            "Upstream provider weakness → SUPPLY CHAIN",
+            "The risk originates from a service, hardware, or software provider that the organization trusts.",
+            "Example: A software provider distributes a compromised package."
+          ]
+        ],
+        "example": "Memory: Legacy = old · EOL = unsupported · VM escape = isolation failure · Resource reuse = leftover data."
+      }
+    ],
+    "questions": [
+      {
+        "q": "An appliance is still running, but its vendor stopped releasing security updates two years ago. Which vulnerability category best fits?",
+        "choices": [
+          "End-of-life",
+          "Legacy",
+          "Firmware",
+          "Cloud-specific"
+        ],
+        "answer": 0,
+        "explanation": "The key clue is that vendor support and security updates have ended."
+      },
+      {
+        "q": "An old application still uses an outdated protocol, but the vendor still provides support. Which category best fits?",
+        "choices": [
+          "Legacy",
+          "End-of-life",
+          "VM escape",
+          "Resource reuse"
+        ],
+        "answer": 0,
+        "explanation": "Legacy means old technology still in use; support may or may not have ended."
+      },
+      {
+        "q": "Malicious code inside a guest virtual machine breaks out and interacts with the host. Which vulnerability is this?",
+        "choices": [
+          "VM escape",
+          "Resource reuse",
+          "Firmware",
+          "Cloud-specific"
+        ],
+        "answer": 0,
+        "explanation": "The guest breaks virtualization isolation."
+      },
+      {
+        "q": "A newly allocated memory region contains data left by a previous tenant. Which vulnerability is this?",
+        "choices": [
+          "Resource reuse",
+          "VM escape",
+          "End-of-life",
+          "Legacy"
+        ],
+        "answer": 0,
+        "explanation": "Residual data was not cleared before the resource was reused."
+      },
+      {
+        "q": "A cloud storage bucket is made public because of an incorrect access setting. Which category best fits?",
+        "choices": [
+          "Cloud-specific vulnerability",
+          "Firmware vulnerability",
+          "VM escape",
+          "Resource reuse"
+        ],
+        "answer": 0,
+        "explanation": "The weakness comes from cloud configuration and access control."
+      },
+      {
+        "q": "A router contains a vulnerability in its embedded low-level operating code. Which category best fits?",
+        "choices": [
+          "Firmware",
+          "Legacy",
+          "Resource reuse",
+          "Cloud-specific"
+        ],
+        "answer": 0,
+        "explanation": "The flaw exists in embedded firmware."
+      },
+      {
+        "q": "A compromised software package maintainer distributes malicious code to organizations that depend on the package. Which provider category is most relevant?",
+        "choices": [
+          "Software provider",
+          "Hardware provider",
+          "Service provider",
+          "End user"
+        ],
+        "answer": 0,
+        "explanation": "The upstream risk originates from a software provider."
+      }
+    ]
+  }
+}
