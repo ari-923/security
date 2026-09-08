@@ -2,145 +2,544 @@
   "id": "12.03",
   "chapter": 12,
   "sub": 3,
-  "title": "General data considerations",
-  "chapter_name": "Data Security",
+  "title": "Methods to Secure Data",
+  "chapter_name": "Protecting Data",
   "slides": [
     {
       "n": 1,
-      "title": "General Data Considerations",
-      "points": [],
-      "raw": "General Data Considerations",
+      "title": "Methods to Secure Data",
       "instructional": false,
-      "teach": "These are design tradeoffs. Learn why each factor matters rather than memorizing the words alone.",
-      "defs": []
+      "teach": "",
+      "points": [
+        "Data protection methods are chosen based on what must be protected: confidentiality, integrity, privacy, access, or location."
+      ],
+      "defs": [],
+      "raw": ""
     },
     {
       "n": 2,
-      "title": "Data States",
-      "points": [
-        "Data at Rest",
-        "Data in Transit",
-        "Data in Use"
-      ],
-      "raw": "Data States\nData at Rest\nData in Transit\nData in Use",
+      "title": "Geographic Restrictions",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "Limits where data may be stored, processed, or accessed based on location.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Data has different security needs depending on whether it is at rest, in transit, or in use. At rest means stored, in transit means moving across networks, and in use means actively processed in memory/CPU.",
-        "why": "A control that protects one state may not protect the others.",
-        "example": "Disk encryption protects a database file at rest; TLS protects records in transit; access controls and protected execution help while data is in use.",
-        "exam": "CompTIA often asks which control fits the data state. TLS/VPN = transit; disk/database encryption = rest.",
+        "learn": "Limits where data may be stored, processed, or accessed based on location.",
         "breakdown": [
           {
-            "term": "Data at Rest",
-            "explanation": "Within Data States, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of General data considerations rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "Limits where data may be stored, processed, or accessed based on location."
           },
           {
-            "term": "Data in Transit",
-            "explanation": "Within Data States, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of General data considerations rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Data in Use",
-            "explanation": "Within Data States, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of General data considerations rather than memorizing the phrase by itself."
+            "term": "Examples",
+            "explanation": "Keep data in-country, Block access outside approved region"
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Data States and describe at least two key ideas from this section.",
-        "check_a": "Data has different security needs depending on whether it is at rest, in transit, or in use. At rest means stored, in transit means moving across networks, and in use means actively processed in memory/CPU. Key ideas include: Data at Rest; Data in Transit; Data in Use.",
-        "points": [
-          "Data at Rest",
-          "Data in Transit",
-          "Data in Use"
-        ]
+        "why": "This concept affects how data should be protected, handled, or accessed.",
+        "example": "Keep data in-country",
+        "exam": "CONTROL THE LOCATION",
+        "check_q": "What is the key exam clue for Geographic Restrictions?",
+        "check_a": "CONTROL THE LOCATION"
       }
     },
     {
       "n": 3,
-      "title": "Data Sovereignty",
-      "points": [
-        "Where data is stored",
-        "Where data is processed"
-      ],
-      "raw": "Data Sovereignty\nWhere data is stored\nWhere data is processed",
+      "title": "Encryption",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "Transforms readable data into ciphertext so unauthorized users cannot understand it without the key.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Data sovereignty means data is subject to the laws and jurisdiction of the location where it is stored or processed. Cloud replication can move data across borders without users realizing it.",
-        "why": "Legal and contractual obligations may restrict where specific data can reside.",
-        "example": "A company configures a cloud service so EU customer data remains in approved European regions.",
-        "exam": "Location/jurisdiction restrictions = data sovereignty/residency. Geolocation can help identify or enforce location.",
+        "learn": "Transforms readable data into ciphertext so unauthorized users cannot understand it without the key.",
         "breakdown": [
           {
-            "term": "Where data is stored",
-            "explanation": "Within Data Sovereignty, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of General data considerations rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "Transforms readable data into ciphertext so unauthorized users cannot understand it without the key."
           },
           {
-            "term": "Where data is processed",
-            "explanation": "Within Data Sovereignty, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of General data considerations rather than memorizing the phrase by itself."
+            "term": "Examples",
+            "explanation": "AES disk encryption, TLS"
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Data Sovereignty and describe at least two key ideas from this section.",
-        "check_a": "Data sovereignty means data is subject to the laws and jurisdiction of the location where it is stored or processed. Cloud replication can move data across borders without users realizing it. Key ideas include: Where data is stored; Where data is processed.",
-        "points": [
-          "Where data is stored",
-          "Where data is processed"
-        ]
+        "why": "This concept affects how data should be protected, handled, or accessed.",
+        "example": "AES disk encryption",
+        "exam": "MAKE IT UNREADABLE",
+        "check_q": "What is the key exam clue for Encryption?",
+        "check_a": "MAKE IT UNREADABLE"
       }
     },
     {
       "n": 4,
-      "title": "Geolocation",
-      "points": [
-        "Device Geolocation",
-        "User Geolocation"
-      ],
-      "raw": "Geolocation\nDevice Geolocation\nUser Geolocation",
+      "title": "Hashing",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "Produces a fixed-length digest used primarily to verify integrity.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Geolocation identifies or uses the physical location of a user, device, or resource. It can support access policy, fraud detection, data-residency enforcement, and incident investigation.",
-        "why": "Location is useful context but can be inaccurate or spoofed, so it should not be the only authentication factor.",
-        "example": "A login from a country where the employee has never traveled triggers an additional authentication challenge.",
-        "exam": "Impossible travel and unusual location are indicators; geographic restrictions can also enforce data or access policy.",
+        "learn": "Produces a fixed-length digest used primarily to verify integrity.",
         "breakdown": [
           {
-            "term": "Device Geolocation",
-            "explanation": "Determine or use the physical/geographic location of a device, user, or data resource."
+            "term": "Basically",
+            "explanation": "Produces a fixed-length digest used primarily to verify integrity."
           },
           {
-            "term": "User Geolocation",
-            "explanation": "Determine or use the physical/geographic location of a device, user, or data resource."
+            "term": "Examples",
+            "explanation": "File hash, Password hashing"
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Geolocation and describe at least two key ideas from this section.",
-        "check_a": "Geolocation identifies or uses the physical location of a user, device, or resource. It can support access policy, fraud detection, data-residency enforcement, and incident investigation. Key ideas include: Device Geolocation; User Geolocation.",
-        "points": [
-          "Device Geolocation",
-          "User Geolocation"
-        ]
+        "why": "This concept affects how data should be protected, handled, or accessed.",
+        "example": "File hash",
+        "exam": "VERIFY INTEGRITY",
+        "check_q": "What is the key exam clue for Hashing?",
+        "check_a": "VERIFY INTEGRITY"
       }
     },
     {
       "n": 5,
-      "title": "Methods to Secure Data",
-      "points": [],
-      "raw": "Methods to Secure Data",
-      "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": []
+      "title": "Masking",
+      "instructional": true,
+      "teach": "Replaces or hides portions of sensitive data while preserving a usable format.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Replaces or hides portions of sensitive data while preserving a usable format.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Replaces or hides portions of sensitive data while preserving a usable format."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Show only last four SSN digits, Redacted account number"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how data should be protected, handled, or accessed.",
+        "example": "Show only last four SSN digits",
+        "exam": "HIDE PART OF IT",
+        "check_q": "What is the key exam clue for Masking?",
+        "check_a": "HIDE PART OF IT"
+      }
+    },
+    {
+      "n": 6,
+      "title": "Tokenization",
+      "instructional": true,
+      "teach": "Replaces sensitive data with a non-sensitive token that maps back to the original value through a separate system.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Replaces sensitive data with a non-sensitive token that maps back to the original value through a separate system.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Replaces sensitive data with a non-sensitive token that maps back to the original value through a separate system."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Payment token, Database token"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how data should be protected, handled, or accessed.",
+        "example": "Payment token",
+        "exam": "REPLACE WITH TOKEN",
+        "check_q": "What is the key exam clue for Tokenization?",
+        "check_a": "REPLACE WITH TOKEN"
+      }
+    },
+    {
+      "n": 7,
+      "title": "Obfuscation",
+      "instructional": true,
+      "teach": "Makes data or code harder to understand without necessarily providing strong cryptographic protection.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Makes data or code harder to understand without necessarily providing strong cryptographic protection.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Makes data or code harder to understand without necessarily providing strong cryptographic protection."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Code obfuscation, Data scrambling"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how data should be protected, handled, or accessed.",
+        "example": "Code obfuscation",
+        "exam": "MAKE IT HARDER TO READ",
+        "check_q": "What is the key exam clue for Obfuscation?",
+        "check_a": "MAKE IT HARDER TO READ"
+      }
+    },
+    {
+      "n": 8,
+      "title": "Segmentation",
+      "instructional": true,
+      "teach": "Separates data or systems into controlled zones to reduce exposure and limit access.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Separates data or systems into controlled zones to reduce exposure and limit access.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Separates data or systems into controlled zones to reduce exposure and limit access."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Database network segment, Restricted data enclave"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how data should be protected, handled, or accessed.",
+        "example": "Database network segment",
+        "exam": "KEEP IT SEPARATE",
+        "check_q": "What is the key exam clue for Segmentation?",
+        "check_a": "KEEP IT SEPARATE"
+      }
+    },
+    {
+      "n": 9,
+      "title": "Permission Restrictions",
+      "instructional": true,
+      "teach": "Limits access and actions to authorized users, groups, or processes.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Limits access and actions to authorized users, groups, or processes.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Limits access and actions to authorized users, groups, or processes."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Read-only access, Need-to-know permissions"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how data should be protected, handled, or accessed.",
+        "example": "Read-only access",
+        "exam": "LIMIT WHO CAN ACCESS",
+        "check_q": "What is the key exam clue for Permission Restrictions?",
+        "check_a": "LIMIT WHO CAN ACCESS"
+      }
     }
   ],
-  "slide_count": 5,
-  "instructional_count": 3,
+  "slide_count": 9,
+  "instructional_count": 8,
   "concepts": [
-    "Data States",
-    "Data Sovereignty",
-    "Geolocation"
+    "Geographic Restrictions",
+    "Encryption",
+    "Hashing",
+    "Masking",
+    "Tokenization",
+    "Obfuscation",
+    "Segmentation",
+    "Permission Restrictions"
   ],
-  "source_filename": "12.03_General_data_considerations.pdf"
+  "source_filename": "12-03.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 3.3",
+      "title": "Methods to Secure Data",
+      "intro": "Data protection methods are chosen based on what must be protected: confidentiality, integrity, privacy, access, or location."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Methods to Secure Data",
+        "prompt": "Identify the type or state of the data first, then choose the protection method that matches the requirement.",
+        "badge": "3.3",
+        "cards": [
+          {
+            "name": "Geographic Restrictions",
+            "definition": "Limits where data may be stored, processed, or accessed based on location.",
+            "examples": [
+              "Keep data in-country",
+              "Block access outside approved region"
+            ],
+            "memory": "CONTROL THE LOCATION"
+          },
+          {
+            "name": "Encryption",
+            "definition": "Transforms readable data into ciphertext so unauthorized users cannot understand it without the key.",
+            "examples": [
+              "AES disk encryption",
+              "TLS"
+            ],
+            "memory": "MAKE IT UNREADABLE"
+          },
+          {
+            "name": "Hashing",
+            "definition": "Produces a fixed-length digest used primarily to verify integrity.",
+            "examples": [
+              "File hash",
+              "Password hashing"
+            ],
+            "memory": "VERIFY INTEGRITY"
+          },
+          {
+            "name": "Masking",
+            "definition": "Replaces or hides portions of sensitive data while preserving a usable format.",
+            "examples": [
+              "Show only last four SSN digits",
+              "Redacted account number"
+            ],
+            "memory": "HIDE PART OF IT"
+          },
+          {
+            "name": "Tokenization",
+            "definition": "Replaces sensitive data with a non-sensitive token that maps back to the original value through a separate system.",
+            "examples": [
+              "Payment token",
+              "Database token"
+            ],
+            "memory": "REPLACE WITH TOKEN"
+          },
+          {
+            "name": "Obfuscation",
+            "definition": "Makes data or code harder to understand without necessarily providing strong cryptographic protection.",
+            "examples": [
+              "Code obfuscation",
+              "Data scrambling"
+            ],
+            "memory": "MAKE IT HARDER TO READ"
+          },
+          {
+            "name": "Segmentation",
+            "definition": "Separates data or systems into controlled zones to reduce exposure and limit access.",
+            "examples": [
+              "Database network segment",
+              "Restricted data enclave"
+            ],
+            "memory": "KEEP IT SEPARATE"
+          },
+          {
+            "name": "Permission Restrictions",
+            "definition": "Limits access and actions to authorized users, groups, or processes.",
+            "examples": [
+              "Read-only access",
+              "Need-to-know permissions"
+            ],
+            "memory": "LIMIT WHO CAN ACCESS"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Methods to Secure Data comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Encryption",
+            "Confidentiality",
+            "Unreadable without key"
+          ],
+          [
+            "Hashing",
+            "Integrity",
+            "Detect changes"
+          ],
+          [
+            "Masking",
+            "Hide portions while keeping format",
+            "Partial display"
+          ],
+          [
+            "Tokenization",
+            "Replace sensitive value",
+            "Non-sensitive substitute"
+          ],
+          [
+            "Obfuscation",
+            "Make harder to understand",
+            "Not strong encryption"
+          ],
+          [
+            "Segmentation",
+            "Reduce exposure",
+            "Separate zones"
+          ],
+          [
+            "Permission restrictions",
+            "Limit access/actions",
+            "Need-to-know"
+          ],
+          [
+            "Geographic restrictions",
+            "Control where data resides/accesses",
+            "Region/country limits"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Methods to Secure Data exam shortcuts",
+        "items": [
+          [
+            "Need confidentiality → ENCRYPTION",
+            "Use encryption when unauthorized readers must not understand the data.",
+            "Example: Full-disk encryption protects a stolen laptop."
+          ],
+          [
+            "Need to verify data has not changed → HASHING",
+            "Hashing is primarily an integrity control.",
+            "Example: Compare a downloaded file hash with the published value."
+          ],
+          [
+            "Need to display only part of sensitive data → MASKING",
+            "Masking hides portions while preserving recognizable format.",
+            "Example: Display only the last four digits of a card number."
+          ],
+          [
+            "Replace sensitive value with substitute → TOKENIZATION",
+            "The real value is stored separately from the token.",
+            "Example: A payment system stores a token instead of the card number."
+          ],
+          [
+            "Make code/data harder to understand → OBFUSCATION",
+            "Obfuscation increases difficulty but is not a substitute for encryption.",
+            "Example: Application code is intentionally made difficult to read."
+          ],
+          [
+            "Need location-based compliance → GEOGRAPHIC RESTRICTIONS",
+            "Restrict storage or access to approved regions.",
+            "Example: Customer data must remain inside one country."
+          ],
+          [
+            "Need least exposure → SEGMENTATION + PERMISSIONS",
+            "Separate sensitive data and tightly control who can reach it.",
+            "Example: Payroll systems sit in a restricted segment accessible only to HR."
+          ]
+        ],
+        "example": "Focus on what the scenario is protecting: confidentiality, integrity, access, location, or legal handling requirements."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A company needs stolen laptop data to remain unreadable without a key. Which protection method is best?",
+        "choices": [
+          "Encryption",
+          "Hashing",
+          "Masking",
+          "Segmentation"
+        ],
+        "answer": 0,
+        "explanation": "Encryption protects confidentiality by making data unreadable without the key."
+      },
+      {
+        "q": "An administrator wants to verify that a downloaded file has not changed. Which method is most appropriate?",
+        "choices": [
+          "Hashing",
+          "Encryption",
+          "Tokenization",
+          "Obfuscation"
+        ],
+        "answer": 0,
+        "explanation": "Hashing is commonly used to verify integrity."
+      },
+      {
+        "q": "A customer service screen should show only the last four digits of a Social Security number. Which method best fits?",
+        "choices": [
+          "Masking",
+          "Tokenization",
+          "Hashing",
+          "Segmentation"
+        ],
+        "answer": 0,
+        "explanation": "Masking hides part of sensitive data while keeping a usable display format."
+      },
+      {
+        "q": "A payment system stores a substitute value instead of the actual card number, with the real value kept separately. Which method is this?",
+        "choices": [
+          "Tokenization",
+          "Masking",
+          "Hashing",
+          "Obfuscation"
+        ],
+        "answer": 0,
+        "explanation": "Tokenization replaces sensitive values with non-sensitive tokens."
+      },
+      {
+        "q": "A developer makes application code intentionally difficult to understand but does not apply cryptographic protection. Which method is this?",
+        "choices": [
+          "Obfuscation",
+          "Encryption",
+          "Hashing",
+          "Tokenization"
+        ],
+        "answer": 0,
+        "explanation": "Obfuscation makes code or data harder to interpret but is not equivalent to encryption."
+      },
+      {
+        "q": "A company must ensure customer data is stored only within one approved country. Which method is most direct?",
+        "choices": [
+          "Geographic restrictions",
+          "Segmentation",
+          "Permission restrictions",
+          "Hashing"
+        ],
+        "answer": 0,
+        "explanation": "Geographic restrictions constrain where data may reside or be accessed."
+      },
+      {
+        "q": "Payroll systems are placed in a separate restricted network segment accessible only to HR. Which two methods are being combined?",
+        "choices": [
+          "Segmentation and permission restrictions",
+          "Hashing and masking",
+          "Encryption and tokenization only",
+          "Obfuscation and geolocation"
+        ],
+        "answer": 0,
+        "explanation": "Segmentation separates the systems, while permission restrictions limit who can access them."
+      }
+    ]
+  }
 }
