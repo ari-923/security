@@ -1,0 +1,373 @@
+{
+  "id": "18.03",
+  "chapter": 18,
+  "sub": 3,
+  "title": "DNS and Email Security",
+  "chapter_name": "Enterprise Security Capabilities",
+  "slides": [
+    {
+      "n": 1,
+      "title": "DNS and Email Security",
+      "instructional": false,
+      "teach": "",
+      "points": [
+        "DNS and email controls reduce phishing, spoofing, malicious destinations, and unauthorized mail by modifying filtering and authentication mechanisms."
+      ],
+      "defs": [],
+      "raw": ""
+    },
+    {
+      "n": 2,
+      "title": "DNS Filtering",
+      "instructional": true,
+      "teach": "Blocks or redirects DNS requests for malicious, risky, or prohibited domains.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Blocks or redirects DNS requests for malicious, risky, or prohibited domains.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Blocks or redirects DNS requests for malicious, risky, or prohibited domains."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Block malware domain, Prevent phishing site resolution"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes how enterprise security capabilities are configured, enforced, detected, filtered, or monitored.",
+        "example": "Block malware domain",
+        "exam": "BLOCK BAD DOMAINS",
+        "check_q": "What is the key exam clue for DNS Filtering?",
+        "check_a": "BLOCK BAD DOMAINS"
+      }
+    },
+    {
+      "n": 3,
+      "title": "DMARC",
+      "instructional": true,
+      "teach": "Email authentication and policy framework that uses SPF and DKIM results and tells receiving systems how to handle failures.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Email authentication and policy framework that uses SPF and DKIM results and tells receiving systems how to handle failures.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Email authentication and policy framework that uses SPF and DKIM results and tells receiving systems how to handle failures."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Reject spoofed mail, DMARC reporting"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes how enterprise security capabilities are configured, enforced, detected, filtered, or monitored.",
+        "example": "Reject spoofed mail",
+        "exam": "POLICY + REPORTING",
+        "check_q": "What is the key exam clue for DMARC?",
+        "check_a": "POLICY + REPORTING"
+      }
+    },
+    {
+      "n": 4,
+      "title": "DKIM",
+      "instructional": true,
+      "teach": "Uses a cryptographic signature in email headers so recipients can verify message integrity and domain authorization.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Uses a cryptographic signature in email headers so recipients can verify message integrity and domain authorization.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Uses a cryptographic signature in email headers so recipients can verify message integrity and domain authorization."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Signed outbound email"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes how enterprise security capabilities are configured, enforced, detected, filtered, or monitored.",
+        "example": "Signed outbound email",
+        "exam": "SIGN THE MESSAGE",
+        "check_q": "What is the key exam clue for DKIM?",
+        "check_a": "SIGN THE MESSAGE"
+      }
+    },
+    {
+      "n": 5,
+      "title": "SPF",
+      "instructional": true,
+      "teach": "DNS-based record that specifies which mail servers are authorized to send email for a domain.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "DNS-based record that specifies which mail servers are authorized to send email for a domain.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "DNS-based record that specifies which mail servers are authorized to send email for a domain."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Approved mail server list"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes how enterprise security capabilities are configured, enforced, detected, filtered, or monitored.",
+        "example": "Approved mail server list",
+        "exam": "WHO MAY SEND?",
+        "check_q": "What is the key exam clue for SPF?",
+        "check_a": "WHO MAY SEND?"
+      }
+    },
+    {
+      "n": 6,
+      "title": "Email Gateway",
+      "instructional": true,
+      "teach": "Security system that filters inbound and outbound email for spam, malware, phishing, policy violations, and other threats.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Security system that filters inbound and outbound email for spam, malware, phishing, policy violations, and other threats.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Security system that filters inbound and outbound email for spam, malware, phishing, policy violations, and other threats."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Secure email gateway, Attachment scanning"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes how enterprise security capabilities are configured, enforced, detected, filtered, or monitored.",
+        "example": "Secure email gateway",
+        "exam": "FILTER MAIL AT THE GATE",
+        "check_q": "What is the key exam clue for Email Gateway?",
+        "check_a": "FILTER MAIL AT THE GATE"
+      }
+    }
+  ],
+  "slide_count": 6,
+  "instructional_count": 5,
+  "concepts": [
+    "DNS Filtering",
+    "DMARC",
+    "DKIM",
+    "SPF",
+    "Email Gateway"
+  ],
+  "source_filename": "18-03.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 4.5",
+      "title": "DNS and Email Security",
+      "intro": "DNS and email controls reduce phishing, spoofing, malicious destinations, and unauthorized mail by modifying filtering and authentication mechanisms."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "DNS and Email Security",
+        "prompt": "Identify what enterprise capability already exists, then determine what setting, rule, protocol, or control should be modified.",
+        "badge": "4.5",
+        "cards": [
+          {
+            "name": "DNS Filtering",
+            "definition": "Blocks or redirects DNS requests for malicious, risky, or prohibited domains.",
+            "examples": [
+              "Block malware domain",
+              "Prevent phishing site resolution"
+            ],
+            "memory": "BLOCK BAD DOMAINS"
+          },
+          {
+            "name": "DMARC",
+            "definition": "Email authentication and policy framework that uses SPF and DKIM results and tells receiving systems how to handle failures.",
+            "examples": [
+              "Reject spoofed mail",
+              "DMARC reporting"
+            ],
+            "memory": "POLICY + REPORTING"
+          },
+          {
+            "name": "DKIM",
+            "definition": "Uses a cryptographic signature in email headers so recipients can verify message integrity and domain authorization.",
+            "examples": [
+              "Signed outbound email"
+            ],
+            "memory": "SIGN THE MESSAGE"
+          },
+          {
+            "name": "SPF",
+            "definition": "DNS-based record that specifies which mail servers are authorized to send email for a domain.",
+            "examples": [
+              "Approved mail server list"
+            ],
+            "memory": "WHO MAY SEND?"
+          },
+          {
+            "name": "Email Gateway",
+            "definition": "Security system that filters inbound and outbound email for spam, malware, phishing, policy violations, and other threats.",
+            "examples": [
+              "Secure email gateway",
+              "Attachment scanning"
+            ],
+            "memory": "FILTER MAIL AT THE GATE"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "DNS and Email Security comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "DNS filtering",
+            "Block risky domains",
+            "Name-resolution control"
+          ],
+          [
+            "SPF",
+            "Authorize sending servers",
+            "Who may send?"
+          ],
+          [
+            "DKIM",
+            "Cryptographically sign mail",
+            "Integrity/domain authorization"
+          ],
+          [
+            "DMARC",
+            "Policy + reporting using SPF/DKIM",
+            "What to do when auth fails?"
+          ],
+          [
+            "Email gateway",
+            "Filter email content/attachments",
+            "Mail security checkpoint"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "DNS and Email Security exam shortcuts",
+        "items": [
+          [
+            "Domain should not resolve for users → DNS FILTERING",
+            "Block access before the connection is made.",
+            "Example: A known malware domain is denied by DNS policy."
+          ],
+          [
+            "Need list of authorized sending mail servers → SPF",
+            "SPF tells receivers which servers may send for the domain.",
+            "Example: Only Microsoft 365 servers are authorized."
+          ],
+          [
+            "Need signed message integrity/domain proof → DKIM",
+            "DKIM adds a cryptographic signature to outgoing mail.",
+            "Example: Recipient validates the DKIM signature."
+          ],
+          [
+            "Need policy for SPF/DKIM failures + reports → DMARC",
+            "DMARC tells receiving systems whether to monitor, quarantine, or reject failing mail.",
+            "Example: Spoofed messages are rejected under a DMARC policy."
+          ],
+          [
+            "Need to scan attachments and phishing messages centrally → EMAIL GATEWAY",
+            "Use a secure email gateway as the inspection point.",
+            "Example: A malicious attachment is blocked before delivery."
+          ]
+        ],
+        "example": "Focus on what needs to be changed: traffic rules, detection logic, protocol choice, filtering policy, endpoint response, or user-behavior controls."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A company wants users prevented from resolving known malware domains. Which control should be modified?",
+        "choices": [
+          "DNS filtering",
+          "SPF",
+          "DKIM",
+          "FIM"
+        ],
+        "answer": 0,
+        "explanation": "DNS filtering blocks or redirects requests for risky domains."
+      },
+      {
+        "q": "A domain owner wants to specify which mail servers are authorized to send email for the domain. Which control is used?",
+        "choices": [
+          "SPF",
+          "DKIM",
+          "DMARC",
+          "DLP"
+        ],
+        "answer": 0,
+        "explanation": "SPF publishes authorized sending servers in DNS."
+      },
+      {
+        "q": "Outgoing messages should be cryptographically signed so recipients can verify integrity and domain authorization. Which control is used?",
+        "choices": [
+          "DKIM",
+          "SPF",
+          "DMARC",
+          "NAC"
+        ],
+        "answer": 0,
+        "explanation": "DKIM adds a cryptographic signature to outgoing email."
+      },
+      {
+        "q": "A company wants receiving mail systems to reject messages that fail email-authentication checks and wants reports on failures. Which control is best?",
+        "choices": [
+          "DMARC",
+          "SPF only",
+          "DKIM only",
+          "DNS filtering"
+        ],
+        "answer": 0,
+        "explanation": "DMARC applies policy to SPF/DKIM results and supports reporting."
+      },
+      {
+        "q": "Inbound attachments should be scanned for malware and phishing before reaching users. Which enterprise capability is most appropriate?",
+        "choices": [
+          "Email gateway",
+          "FIM",
+          "NAC",
+          "User behavior analytics"
+        ],
+        "answer": 0,
+        "explanation": "A secure email gateway filters and scans email before delivery."
+      }
+    ]
+  }
+}

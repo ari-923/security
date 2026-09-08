@@ -1,0 +1,436 @@
+{
+  "id": "18.04",
+  "chapter": 18,
+  "sub": 4,
+  "title": "Enterprise Protection and Analytics",
+  "chapter_name": "Enterprise Security Capabilities",
+  "slides": [
+    {
+      "n": 1,
+      "title": "Enterprise Protection and Analytics",
+      "instructional": false,
+      "teach": "",
+      "points": [
+        "Modern enterprise defenses also rely on integrity monitoring, DLP, access control, endpoint response, and behavior analytics to detect and contain threats."
+      ],
+      "defs": [],
+      "raw": ""
+    },
+    {
+      "n": 2,
+      "title": "File Integrity Monitoring (FIM)",
+      "instructional": true,
+      "teach": "Detects unauthorized or unexpected changes to important files, configurations, or system objects.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Detects unauthorized or unexpected changes to important files, configurations, or system objects.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Detects unauthorized or unexpected changes to important files, configurations, or system objects."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Watch system files, Alert on config change"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes how enterprise security capabilities are configured, enforced, detected, filtered, or monitored.",
+        "example": "Watch system files",
+        "exam": "DID THE FILE CHANGE?",
+        "check_q": "What is the key exam clue for File Integrity Monitoring (FIM)?",
+        "check_a": "DID THE FILE CHANGE?"
+      }
+    },
+    {
+      "n": 3,
+      "title": "Data Loss Prevention (DLP)",
+      "instructional": true,
+      "teach": "Detects and prevents unauthorized movement or disclosure of sensitive data.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Detects and prevents unauthorized movement or disclosure of sensitive data.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Detects and prevents unauthorized movement or disclosure of sensitive data."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Block SSN upload, Prevent USB copy"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes how enterprise security capabilities are configured, enforced, detected, filtered, or monitored.",
+        "example": "Block SSN upload",
+        "exam": "STOP DATA LEAVING",
+        "check_q": "What is the key exam clue for Data Loss Prevention (DLP)?",
+        "check_a": "STOP DATA LEAVING"
+      }
+    },
+    {
+      "n": 4,
+      "title": "Network Access Control (NAC)",
+      "instructional": true,
+      "teach": "Enforces device or user requirements before allowing network access.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Enforces device or user requirements before allowing network access.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Enforces device or user requirements before allowing network access."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Require compliant endpoint, Quarantine unmanaged device"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes how enterprise security capabilities are configured, enforced, detected, filtered, or monitored.",
+        "example": "Require compliant endpoint",
+        "exam": "CHECK BEFORE NETWORK",
+        "check_q": "What is the key exam clue for Network Access Control (NAC)?",
+        "check_a": "CHECK BEFORE NETWORK"
+      }
+    },
+    {
+      "n": 5,
+      "title": "Endpoint Detection and Response (EDR)",
+      "instructional": true,
+      "teach": "Continuously monitors endpoint behavior and supports detection, investigation, containment, and response.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Continuously monitors endpoint behavior and supports detection, investigation, containment, and response.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Continuously monitors endpoint behavior and supports detection, investigation, containment, and response."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Isolate laptop, Investigate process tree"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes how enterprise security capabilities are configured, enforced, detected, filtered, or monitored.",
+        "example": "Isolate laptop",
+        "exam": "ENDPOINT DETECT + RESPOND",
+        "check_q": "What is the key exam clue for Endpoint Detection and Response (EDR)?",
+        "check_a": "ENDPOINT DETECT + RESPOND"
+      }
+    },
+    {
+      "n": 6,
+      "title": "Extended Detection and Response (XDR)",
+      "instructional": true,
+      "teach": "Correlates detection and response across multiple security domains such as endpoints, email, network, identity, and cloud.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Correlates detection and response across multiple security domains such as endpoints, email, network, identity, and cloud.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Correlates detection and response across multiple security domains such as endpoints, email, network, identity, and cloud."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Cross-domain incident correlation"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes how enterprise security capabilities are configured, enforced, detected, filtered, or monitored.",
+        "example": "Cross-domain incident correlation",
+        "exam": "DETECT ACROSS EVERYTHING",
+        "check_q": "What is the key exam clue for Extended Detection and Response (XDR)?",
+        "check_a": "DETECT ACROSS EVERYTHING"
+      }
+    },
+    {
+      "n": 7,
+      "title": "User Behavior Analytics",
+      "instructional": true,
+      "teach": "Analyzes user activity patterns to identify anomalies that may indicate compromise or insider threats.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Analyzes user activity patterns to identify anomalies that may indicate compromise or insider threats.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Analyzes user activity patterns to identify anomalies that may indicate compromise or insider threats."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Impossible access pattern, Unusual file downloads"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes how enterprise security capabilities are configured, enforced, detected, filtered, or monitored.",
+        "example": "Impossible access pattern",
+        "exam": "IS THIS USER ACTING NORMAL?",
+        "check_q": "What is the key exam clue for User Behavior Analytics?",
+        "check_a": "IS THIS USER ACTING NORMAL?"
+      }
+    }
+  ],
+  "slide_count": 7,
+  "instructional_count": 6,
+  "concepts": [
+    "File Integrity Monitoring (FIM)",
+    "Data Loss Prevention (DLP)",
+    "Network Access Control (NAC)",
+    "Endpoint Detection and Response (EDR)",
+    "Extended Detection and Response (XDR)",
+    "User Behavior Analytics"
+  ],
+  "source_filename": "18-04.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 4.5",
+      "title": "Enterprise Protection and Analytics",
+      "intro": "Modern enterprise defenses also rely on integrity monitoring, DLP, access control, endpoint response, and behavior analytics to detect and contain threats."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Enterprise Protection and Analytics",
+        "prompt": "Identify what enterprise capability already exists, then determine what setting, rule, protocol, or control should be modified.",
+        "badge": "4.5",
+        "cards": [
+          {
+            "name": "File Integrity Monitoring (FIM)",
+            "definition": "Detects unauthorized or unexpected changes to important files, configurations, or system objects.",
+            "examples": [
+              "Watch system files",
+              "Alert on config change"
+            ],
+            "memory": "DID THE FILE CHANGE?"
+          },
+          {
+            "name": "Data Loss Prevention (DLP)",
+            "definition": "Detects and prevents unauthorized movement or disclosure of sensitive data.",
+            "examples": [
+              "Block SSN upload",
+              "Prevent USB copy"
+            ],
+            "memory": "STOP DATA LEAVING"
+          },
+          {
+            "name": "Network Access Control (NAC)",
+            "definition": "Enforces device or user requirements before allowing network access.",
+            "examples": [
+              "Require compliant endpoint",
+              "Quarantine unmanaged device"
+            ],
+            "memory": "CHECK BEFORE NETWORK"
+          },
+          {
+            "name": "Endpoint Detection and Response (EDR)",
+            "definition": "Continuously monitors endpoint behavior and supports detection, investigation, containment, and response.",
+            "examples": [
+              "Isolate laptop",
+              "Investigate process tree"
+            ],
+            "memory": "ENDPOINT DETECT + RESPOND"
+          },
+          {
+            "name": "Extended Detection and Response (XDR)",
+            "definition": "Correlates detection and response across multiple security domains such as endpoints, email, network, identity, and cloud.",
+            "examples": [
+              "Cross-domain incident correlation"
+            ],
+            "memory": "DETECT ACROSS EVERYTHING"
+          },
+          {
+            "name": "User Behavior Analytics",
+            "definition": "Analyzes user activity patterns to identify anomalies that may indicate compromise or insider threats.",
+            "examples": [
+              "Impossible access pattern",
+              "Unusual file downloads"
+            ],
+            "memory": "IS THIS USER ACTING NORMAL?"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Enterprise Protection and Analytics comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "FIM",
+            "Detect file/config changes",
+            "Integrity monitoring"
+          ],
+          [
+            "DLP",
+            "Prevent sensitive data loss",
+            "Block exfiltration"
+          ],
+          [
+            "NAC",
+            "Control network admission",
+            "Compliant device/user required"
+          ],
+          [
+            "EDR",
+            "Endpoint detection + response",
+            "Host investigation/isolation"
+          ],
+          [
+            "XDR",
+            "Cross-domain detection + response",
+            "Correlate endpoint/email/network/cloud"
+          ],
+          [
+            "User behavior analytics",
+            "Detect anomalous user behavior",
+            "Baseline vs unusual activity"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Enterprise Protection and Analytics exam shortcuts",
+        "items": [
+          [
+            "Critical system file changes unexpectedly → FIM",
+            "File integrity monitoring detects changes to protected files or configurations.",
+            "Example: An alert fires when a system binary is modified."
+          ],
+          [
+            "Sensitive data is leaving through email or USB → DLP",
+            "DLP prevents unauthorized disclosure.",
+            "Example: A file containing SSNs is blocked from upload."
+          ],
+          [
+            "Unmanaged or noncompliant device attempts connection → NAC",
+            "Check policy before granting network access.",
+            "Example: An unpatched laptop is quarantined instead of joining the production LAN."
+          ],
+          [
+            "Endpoint shows malicious behavior → EDR",
+            "Investigate and contain activity on the endpoint.",
+            "Example: EDR isolates a laptop and shows the malicious process tree."
+          ],
+          [
+            "Attack spans endpoint + email + identity → XDR",
+            "Correlate signals across multiple security domains.",
+            "Example: Phishing email, suspicious login, and endpoint malware become one incident."
+          ],
+          [
+            "User suddenly downloads thousands of sensitive files → USER BEHAVIOR ANALYTICS",
+            "Compare behavior against the user's normal baseline.",
+            "Example: An unusual bulk-download pattern triggers investigation."
+          ]
+        ],
+        "example": "Focus on what needs to be changed: traffic rules, detection logic, protocol choice, filtering policy, endpoint response, or user-behavior controls."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A protected system binary changes unexpectedly and the security team needs an alert. Which control is most appropriate?",
+        "choices": [
+          "FIM",
+          "DLP",
+          "NAC",
+          "SPF"
+        ],
+        "answer": 0,
+        "explanation": "File integrity monitoring detects unexpected file or configuration changes."
+      },
+      {
+        "q": "A company wants to block employees from copying sensitive customer data to USB drives. Which control is best?",
+        "choices": [
+          "DLP",
+          "FIM",
+          "NAC",
+          "EDR"
+        ],
+        "answer": 0,
+        "explanation": "DLP prevents unauthorized movement or disclosure of sensitive data."
+      },
+      {
+        "q": "An unmanaged laptop should be denied production-network access until it meets security requirements. Which control is most appropriate?",
+        "choices": [
+          "NAC",
+          "DLP",
+          "FIM",
+          "DMARC"
+        ],
+        "answer": 0,
+        "explanation": "NAC evaluates user or device conditions before granting network access."
+      },
+      {
+        "q": "A workstation shows malicious behavior and needs to be isolated while analysts inspect its process tree. Which capability is best?",
+        "choices": [
+          "EDR",
+          "XDR only",
+          "FIM",
+          "SPF"
+        ],
+        "answer": 0,
+        "explanation": "EDR focuses on endpoint detection, investigation, containment, and response."
+      },
+      {
+        "q": "A phishing email, suspicious cloud login, and endpoint malware should be correlated into one incident. Which capability is designed for this?",
+        "choices": [
+          "XDR",
+          "EDR only",
+          "NAC",
+          "FIM"
+        ],
+        "answer": 0,
+        "explanation": "XDR correlates telemetry and response across multiple security domains."
+      },
+      {
+        "q": "A user who normally downloads a few files suddenly downloads thousands of sensitive records. Which control is most appropriate?",
+        "choices": [
+          "User behavior analytics",
+          "FIM",
+          "SPF",
+          "DNS filtering"
+        ],
+        "answer": 0,
+        "explanation": "User behavior analytics detects deviations from a user's normal behavior."
+      }
+    ]
+  }
+}

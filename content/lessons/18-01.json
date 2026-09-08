@@ -1,0 +1,703 @@
+{
+  "id": "18.01",
+  "chapter": 18,
+  "sub": 1,
+  "title": "Firewalls, IDS/IPS, and Web Filtering",
+  "chapter_name": "Enterprise Security Capabilities",
+  "slides": [
+    {
+      "n": 1,
+      "title": "Firewalls, IDS/IPS, and Web Filtering",
+      "instructional": false,
+      "teach": "",
+      "points": [
+        "Objective 4.5 is about modifying enterprise security controls. The exam will often describe an existing environment and ask which rule, filter, or detection capability should be changed."
+      ],
+      "defs": [],
+      "raw": ""
+    },
+    {
+      "n": 2,
+      "title": "Firewall Rules",
+      "instructional": true,
+      "teach": "Permit or deny traffic based on defined conditions such as source, destination, protocol, port, or application.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Permit or deny traffic based on defined conditions such as source, destination, protocol, port, or application.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Permit or deny traffic based on defined conditions such as source, destination, protocol, port, or application."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Allow HTTPS, Block inbound Telnet"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes how enterprise security capabilities are configured, enforced, detected, filtered, or monitored.",
+        "example": "Allow HTTPS",
+        "exam": "ALLOW OR DENY",
+        "check_q": "What is the key exam clue for Firewall Rules?",
+        "check_a": "ALLOW OR DENY"
+      }
+    },
+    {
+      "n": 3,
+      "title": "Access Lists",
+      "instructional": true,
+      "teach": "Ordered permit/deny rules used to control traffic or access.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Ordered permit/deny rules used to control traffic or access.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Ordered permit/deny rules used to control traffic or access."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Router ACL, Firewall access list"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes how enterprise security capabilities are configured, enforced, detected, filtered, or monitored.",
+        "example": "Router ACL",
+        "exam": "RULE LIST",
+        "check_q": "What is the key exam clue for Access Lists?",
+        "check_a": "RULE LIST"
+      }
+    },
+    {
+      "n": 4,
+      "title": "Ports / Protocols",
+      "instructional": true,
+      "teach": "Network services and communication methods that may be allowed, restricted, or disabled based on business need.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Network services and communication methods that may be allowed, restricted, or disabled based on business need.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Network services and communication methods that may be allowed, restricted, or disabled based on business need."
+          },
+          {
+            "term": "Examples",
+            "explanation": "TCP 443, UDP 53, SSH"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes how enterprise security capabilities are configured, enforced, detected, filtered, or monitored.",
+        "example": "TCP 443",
+        "exam": "ONLY WHAT IS NEEDED",
+        "check_q": "What is the key exam clue for Ports / Protocols?",
+        "check_a": "ONLY WHAT IS NEEDED"
+      }
+    },
+    {
+      "n": 5,
+      "title": "Screened Subnets",
+      "instructional": true,
+      "teach": "A perimeter network segment placed between trusted and untrusted networks, commonly used for public-facing systems.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "A perimeter network segment placed between trusted and untrusted networks, commonly used for public-facing systems.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "A perimeter network segment placed between trusted and untrusted networks, commonly used for public-facing systems."
+          },
+          {
+            "term": "Examples",
+            "explanation": "DMZ, Public web server subnet"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes how enterprise security capabilities are configured, enforced, detected, filtered, or monitored.",
+        "example": "DMZ",
+        "exam": "BUFFER ZONE",
+        "check_q": "What is the key exam clue for Screened Subnets?",
+        "check_a": "BUFFER ZONE"
+      }
+    },
+    {
+      "n": 6,
+      "title": "IDS/IPS Trends",
+      "instructional": true,
+      "teach": "Patterns or changes in detected activity over time that may indicate emerging threats or attacks.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Patterns or changes in detected activity over time that may indicate emerging threats or attacks.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Patterns or changes in detected activity over time that may indicate emerging threats or attacks."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Spike in scans, Repeated exploit attempts"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes how enterprise security capabilities are configured, enforced, detected, filtered, or monitored.",
+        "example": "Spike in scans",
+        "exam": "LOOK FOR PATTERNS",
+        "check_q": "What is the key exam clue for IDS/IPS Trends?",
+        "check_a": "LOOK FOR PATTERNS"
+      }
+    },
+    {
+      "n": 7,
+      "title": "IDS/IPS Signatures",
+      "instructional": true,
+      "teach": "Known patterns used to detect or block recognized malicious activity.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Known patterns used to detect or block recognized malicious activity.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Known patterns used to detect or block recognized malicious activity."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Exploit signature, Malware traffic pattern"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes how enterprise security capabilities are configured, enforced, detected, filtered, or monitored.",
+        "example": "Exploit signature",
+        "exam": "KNOWN ATTACK PATTERN",
+        "check_q": "What is the key exam clue for IDS/IPS Signatures?",
+        "check_a": "KNOWN ATTACK PATTERN"
+      }
+    },
+    {
+      "n": 8,
+      "title": "Agent-based Web Filter",
+      "instructional": true,
+      "teach": "Filtering software installed locally on endpoints to enforce web access policies.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Filtering software installed locally on endpoints to enforce web access policies.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Filtering software installed locally on endpoints to enforce web access policies."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Laptop web filter agent"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes how enterprise security capabilities are configured, enforced, detected, filtered, or monitored.",
+        "example": "Laptop web filter agent",
+        "exam": "FILTER ON DEVICE",
+        "check_q": "What is the key exam clue for Agent-based Web Filter?",
+        "check_a": "FILTER ON DEVICE"
+      }
+    },
+    {
+      "n": 9,
+      "title": "Centralized Proxy",
+      "instructional": true,
+      "teach": "A central intermediary that inspects and controls web requests for many users.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "A central intermediary that inspects and controls web requests for many users.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "A central intermediary that inspects and controls web requests for many users."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Corporate web proxy"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes how enterprise security capabilities are configured, enforced, detected, filtered, or monitored.",
+        "example": "Corporate web proxy",
+        "exam": "FILTER IN ONE PLACE",
+        "check_q": "What is the key exam clue for Centralized Proxy?",
+        "check_a": "FILTER IN ONE PLACE"
+      }
+    },
+    {
+      "n": 10,
+      "title": "URL Scanning",
+      "instructional": true,
+      "teach": "Analyzes requested URLs for malicious, suspicious, or disallowed destinations.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Analyzes requested URLs for malicious, suspicious, or disallowed destinations.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Analyzes requested URLs for malicious, suspicious, or disallowed destinations."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Malicious URL block, Phishing link detection"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes how enterprise security capabilities are configured, enforced, detected, filtered, or monitored.",
+        "example": "Malicious URL block",
+        "exam": "CHECK THE URL",
+        "check_q": "What is the key exam clue for URL Scanning?",
+        "check_a": "CHECK THE URL"
+      }
+    },
+    {
+      "n": 11,
+      "title": "Content Categorization",
+      "instructional": true,
+      "teach": "Classifies websites by category so policy can allow or block groups of sites.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Classifies websites by category so policy can allow or block groups of sites.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Classifies websites by category so policy can allow or block groups of sites."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Gambling, Social media, Malware"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes how enterprise security capabilities are configured, enforced, detected, filtered, or monitored.",
+        "example": "Gambling",
+        "exam": "WHAT CATEGORY?",
+        "check_q": "What is the key exam clue for Content Categorization?",
+        "check_a": "WHAT CATEGORY?"
+      }
+    },
+    {
+      "n": 12,
+      "title": "Block Rules",
+      "instructional": true,
+      "teach": "Explicit filtering rules that prevent access to specified sites, content, or categories.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Explicit filtering rules that prevent access to specified sites, content, or categories.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Explicit filtering rules that prevent access to specified sites, content, or categories."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Block known malware domain, Block gambling category"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes how enterprise security capabilities are configured, enforced, detected, filtered, or monitored.",
+        "example": "Block known malware domain",
+        "exam": "DENY IT",
+        "check_q": "What is the key exam clue for Block Rules?",
+        "check_a": "DENY IT"
+      }
+    },
+    {
+      "n": 13,
+      "title": "Reputation",
+      "instructional": true,
+      "teach": "Uses trust or risk scoring to determine whether a domain, URL, sender, or resource is suspicious.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Uses trust or risk scoring to determine whether a domain, URL, sender, or resource is suspicious.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Uses trust or risk scoring to determine whether a domain, URL, sender, or resource is suspicious."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Bad-domain reputation, Known malicious host"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes how enterprise security capabilities are configured, enforced, detected, filtered, or monitored.",
+        "example": "Bad-domain reputation",
+        "exam": "TRUST SCORE",
+        "check_q": "What is the key exam clue for Reputation?",
+        "check_a": "TRUST SCORE"
+      }
+    }
+  ],
+  "slide_count": 13,
+  "instructional_count": 12,
+  "concepts": [
+    "Firewall Rules",
+    "Access Lists",
+    "Ports / Protocols",
+    "Screened Subnets",
+    "IDS/IPS Trends",
+    "IDS/IPS Signatures",
+    "Agent-based Web Filter",
+    "Centralized Proxy",
+    "URL Scanning",
+    "Content Categorization",
+    "Block Rules",
+    "Reputation"
+  ],
+  "source_filename": "18-01.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 4.5",
+      "title": "Firewalls, IDS/IPS, and Web Filtering",
+      "intro": "Objective 4.5 is about modifying enterprise security controls. The exam will often describe an existing environment and ask which rule, filter, or detection capability should be changed."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Firewalls, IDS/IPS, and Web Filtering",
+        "prompt": "Identify what enterprise capability already exists, then determine what setting, rule, protocol, or control should be modified.",
+        "badge": "4.5",
+        "cards": [
+          {
+            "name": "Firewall Rules",
+            "definition": "Permit or deny traffic based on defined conditions such as source, destination, protocol, port, or application.",
+            "examples": [
+              "Allow HTTPS",
+              "Block inbound Telnet"
+            ],
+            "memory": "ALLOW OR DENY"
+          },
+          {
+            "name": "Access Lists",
+            "definition": "Ordered permit/deny rules used to control traffic or access.",
+            "examples": [
+              "Router ACL",
+              "Firewall access list"
+            ],
+            "memory": "RULE LIST"
+          },
+          {
+            "name": "Ports / Protocols",
+            "definition": "Network services and communication methods that may be allowed, restricted, or disabled based on business need.",
+            "examples": [
+              "TCP 443",
+              "UDP 53",
+              "SSH"
+            ],
+            "memory": "ONLY WHAT IS NEEDED"
+          },
+          {
+            "name": "Screened Subnets",
+            "definition": "A perimeter network segment placed between trusted and untrusted networks, commonly used for public-facing systems.",
+            "examples": [
+              "DMZ",
+              "Public web server subnet"
+            ],
+            "memory": "BUFFER ZONE"
+          },
+          {
+            "name": "IDS/IPS Trends",
+            "definition": "Patterns or changes in detected activity over time that may indicate emerging threats or attacks.",
+            "examples": [
+              "Spike in scans",
+              "Repeated exploit attempts"
+            ],
+            "memory": "LOOK FOR PATTERNS"
+          },
+          {
+            "name": "IDS/IPS Signatures",
+            "definition": "Known patterns used to detect or block recognized malicious activity.",
+            "examples": [
+              "Exploit signature",
+              "Malware traffic pattern"
+            ],
+            "memory": "KNOWN ATTACK PATTERN"
+          },
+          {
+            "name": "Agent-based Web Filter",
+            "definition": "Filtering software installed locally on endpoints to enforce web access policies.",
+            "examples": [
+              "Laptop web filter agent"
+            ],
+            "memory": "FILTER ON DEVICE"
+          },
+          {
+            "name": "Centralized Proxy",
+            "definition": "A central intermediary that inspects and controls web requests for many users.",
+            "examples": [
+              "Corporate web proxy"
+            ],
+            "memory": "FILTER IN ONE PLACE"
+          },
+          {
+            "name": "URL Scanning",
+            "definition": "Analyzes requested URLs for malicious, suspicious, or disallowed destinations.",
+            "examples": [
+              "Malicious URL block",
+              "Phishing link detection"
+            ],
+            "memory": "CHECK THE URL"
+          },
+          {
+            "name": "Content Categorization",
+            "definition": "Classifies websites by category so policy can allow or block groups of sites.",
+            "examples": [
+              "Gambling",
+              "Social media",
+              "Malware"
+            ],
+            "memory": "WHAT CATEGORY?"
+          },
+          {
+            "name": "Block Rules",
+            "definition": "Explicit filtering rules that prevent access to specified sites, content, or categories.",
+            "examples": [
+              "Block known malware domain",
+              "Block gambling category"
+            ],
+            "memory": "DENY IT"
+          },
+          {
+            "name": "Reputation",
+            "definition": "Uses trust or risk scoring to determine whether a domain, URL, sender, or resource is suspicious.",
+            "examples": [
+              "Bad-domain reputation",
+              "Known malicious host"
+            ],
+            "memory": "TRUST SCORE"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Firewalls, IDS/IPS, and Web Filtering comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Firewall rule",
+            "Allow/deny traffic",
+            "Source/destination/port/protocol"
+          ],
+          [
+            "Access list",
+            "Ordered traffic rules",
+            "Permit/deny list"
+          ],
+          [
+            "Screened subnet",
+            "Separate public-facing zone",
+            "DMZ"
+          ],
+          [
+            "IDS/IPS trend",
+            "Behavior over time",
+            "Pattern/change"
+          ],
+          [
+            "IDS/IPS signature",
+            "Known attack pattern",
+            "Recognized exploit"
+          ],
+          [
+            "Agent web filter",
+            "Endpoint-local filtering",
+            "Installed client"
+          ],
+          [
+            "Central proxy",
+            "Centralized web control",
+            "One inspection point"
+          ],
+          [
+            "URL scanning",
+            "Inspect destination URL",
+            "Malicious/phishing link"
+          ],
+          [
+            "Content categorization",
+            "Group sites by category",
+            "Social media/gambling/etc."
+          ],
+          [
+            "Reputation",
+            "Risk/trust score",
+            "Known-bad destination"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Firewalls, IDS/IPS, and Web Filtering exam shortcuts",
+        "items": [
+          [
+            "Need to allow one service and block another → FIREWALL RULE",
+            "Modify traffic policy by port, protocol, source, or destination.",
+            "Example: Permit TCP 443 and block TCP 23."
+          ],
+          [
+            "Public web server should not sit on internal LAN → SCREENED SUBNET",
+            "Place public-facing systems in a DMZ-like perimeter zone.",
+            "Example: Internet users reach the web server without direct access to internal systems."
+          ],
+          [
+            "Known exploit needs immediate detection/blocking → SIGNATURE",
+            "Update or enable the IDS/IPS signature that matches the attack.",
+            "Example: IPS blocks traffic matching a known exploit signature."
+          ],
+          [
+            "Many users need one centralized web-control point → PROXY",
+            "A centralized proxy can inspect and filter web traffic.",
+            "Example: Corporate users browse through one secure web gateway."
+          ],
+          [
+            "Known phishing link must be blocked → URL SCANNING / BLOCK RULE",
+            "Inspect the URL and deny known malicious destinations.",
+            "Example: A phishing domain is added to a block list."
+          ],
+          [
+            "Unknown site has poor trust score → REPUTATION",
+            "Use reputation data to help decide whether access should be denied.",
+            "Example: A newly registered malicious domain receives a low reputation score."
+          ]
+        ],
+        "example": "Focus on what needs to be changed: traffic rules, detection logic, protocol choice, filtering policy, endpoint response, or user-behavior controls."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A firewall should permit HTTPS traffic but block Telnet. Which capability should be modified?",
+        "choices": [
+          "Firewall rules",
+          "DLP",
+          "FIM",
+          "User behavior analytics"
+        ],
+        "answer": 0,
+        "explanation": "Firewall rules control traffic based on ports, protocols, sources, and destinations."
+      },
+      {
+        "q": "A public web server should be reachable from the internet without exposing the internal LAN directly. Where should it be placed?",
+        "choices": [
+          "Screened subnet",
+          "Internal user VLAN",
+          "Same subnet as domain controllers",
+          "Endpoint quarantine"
+        ],
+        "answer": 0,
+        "explanation": "A screened subnet or DMZ separates public-facing systems from internal networks."
+      },
+      {
+        "q": "An IPS needs to block a newly recognized exploit pattern. What should be updated or enabled?",
+        "choices": [
+          "Signature",
+          "Trend report",
+          "URL category",
+          "Group Policy"
+        ],
+        "answer": 0,
+        "explanation": "Signatures match known malicious patterns."
+      },
+      {
+        "q": "A company wants one central system to inspect employees' web requests. Which control fits best?",
+        "choices": [
+          "Centralized proxy",
+          "Agent-only filtering",
+          "FIM",
+          "NAC"
+        ],
+        "answer": 0,
+        "explanation": "A centralized proxy provides one central inspection and filtering point."
+      },
+      {
+        "q": "A phishing domain should be denied whenever users try to browse to it. Which web-filtering capability is most direct?",
+        "choices": [
+          "URL scanning/block rules",
+          "File integrity monitoring",
+          "EDR",
+          "SELinux"
+        ],
+        "answer": 0,
+        "explanation": "URL scanning and block rules can identify and deny known malicious destinations."
+      },
+      {
+        "q": "A website is newly registered and has a very poor trust score. Which control can use that information?",
+        "choices": [
+          "Reputation",
+          "Content categorization only",
+          "Port selection",
+          "Group Policy"
+        ],
+        "answer": 0,
+        "explanation": "Reputation systems score domains or URLs based on trust or risk."
+      }
+    ]
+  }
+}

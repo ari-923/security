@@ -1,0 +1,377 @@
+{
+  "id": "18.02",
+  "chapter": 18,
+  "sub": 2,
+  "title": "Operating System and Secure Protocol Configuration",
+  "chapter_name": "Enterprise Security Capabilities",
+  "slides": [
+    {
+      "n": 1,
+      "title": "Operating System and Secure Protocol Configuration",
+      "instructional": false,
+      "teach": "",
+      "points": [
+        "Operating-system security and secure protocol implementation require changing policy, system enforcement, and communication settings to reduce attack surface and enforce secure defaults."
+      ],
+      "defs": [],
+      "raw": ""
+    },
+    {
+      "n": 2,
+      "title": "Group Policy",
+      "instructional": true,
+      "teach": "Centralized Windows configuration mechanism used to enforce security settings across users and systems.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Centralized Windows configuration mechanism used to enforce security settings across users and systems.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Centralized Windows configuration mechanism used to enforce security settings across users and systems."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Password policy, Disable removable storage, Firewall settings"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes how enterprise security capabilities are configured, enforced, detected, filtered, or monitored.",
+        "example": "Password policy",
+        "exam": "CENTRAL WINDOWS POLICY",
+        "check_q": "What is the key exam clue for Group Policy?",
+        "check_a": "CENTRAL WINDOWS POLICY"
+      }
+    },
+    {
+      "n": 3,
+      "title": "SELinux",
+      "instructional": true,
+      "teach": "Linux mandatory access control framework that enforces policy-based restrictions beyond normal file permissions.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Linux mandatory access control framework that enforces policy-based restrictions beyond normal file permissions.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Linux mandatory access control framework that enforces policy-based restrictions beyond normal file permissions."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Enforcing mode, Security contexts"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes how enterprise security capabilities are configured, enforced, detected, filtered, or monitored.",
+        "example": "Enforcing mode",
+        "exam": "MANDATORY LINUX CONTROL",
+        "check_q": "What is the key exam clue for SELinux?",
+        "check_a": "MANDATORY LINUX CONTROL"
+      }
+    },
+    {
+      "n": 4,
+      "title": "Protocol Selection",
+      "instructional": true,
+      "teach": "Choosing a secure protocol that meets the communication requirement.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Choosing a secure protocol that meets the communication requirement.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Choosing a secure protocol that meets the communication requirement."
+          },
+          {
+            "term": "Examples",
+            "explanation": "HTTPS instead of HTTP, SSH instead of Telnet"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes how enterprise security capabilities are configured, enforced, detected, filtered, or monitored.",
+        "example": "HTTPS instead of HTTP",
+        "exam": "CHOOSE THE SECURE PROTOCOL",
+        "check_q": "What is the key exam clue for Protocol Selection?",
+        "check_a": "CHOOSE THE SECURE PROTOCOL"
+      }
+    },
+    {
+      "n": 5,
+      "title": "Port Selection",
+      "instructional": true,
+      "teach": "Choosing the appropriate network port for the selected service or protocol.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Choosing the appropriate network port for the selected service or protocol.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Choosing the appropriate network port for the selected service or protocol."
+          },
+          {
+            "term": "Examples",
+            "explanation": "443 for HTTPS, 22 for SSH"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes how enterprise security capabilities are configured, enforced, detected, filtered, or monitored.",
+        "example": "443 for HTTPS",
+        "exam": "MATCH PORT TO SERVICE",
+        "check_q": "What is the key exam clue for Port Selection?",
+        "check_a": "MATCH PORT TO SERVICE"
+      }
+    },
+    {
+      "n": 6,
+      "title": "Transport Method",
+      "instructional": true,
+      "teach": "Choosing how traffic is carried or protected across the network.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Choosing how traffic is carried or protected across the network.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Choosing how traffic is carried or protected across the network."
+          },
+          {
+            "term": "Examples",
+            "explanation": "TLS, IPsec, Secure tunnel"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes how enterprise security capabilities are configured, enforced, detected, filtered, or monitored.",
+        "example": "TLS",
+        "exam": "HOW TRAFFIC TRAVELS",
+        "check_q": "What is the key exam clue for Transport Method?",
+        "check_a": "HOW TRAFFIC TRAVELS"
+      }
+    }
+  ],
+  "slide_count": 6,
+  "instructional_count": 5,
+  "concepts": [
+    "Group Policy",
+    "SELinux",
+    "Protocol Selection",
+    "Port Selection",
+    "Transport Method"
+  ],
+  "source_filename": "18-02.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 4.5",
+      "title": "Operating System and Secure Protocol Configuration",
+      "intro": "Operating-system security and secure protocol implementation require changing policy, system enforcement, and communication settings to reduce attack surface and enforce secure defaults."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Operating System and Secure Protocol Configuration",
+        "prompt": "Identify what enterprise capability already exists, then determine what setting, rule, protocol, or control should be modified.",
+        "badge": "4.5",
+        "cards": [
+          {
+            "name": "Group Policy",
+            "definition": "Centralized Windows configuration mechanism used to enforce security settings across users and systems.",
+            "examples": [
+              "Password policy",
+              "Disable removable storage",
+              "Firewall settings"
+            ],
+            "memory": "CENTRAL WINDOWS POLICY"
+          },
+          {
+            "name": "SELinux",
+            "definition": "Linux mandatory access control framework that enforces policy-based restrictions beyond normal file permissions.",
+            "examples": [
+              "Enforcing mode",
+              "Security contexts"
+            ],
+            "memory": "MANDATORY LINUX CONTROL"
+          },
+          {
+            "name": "Protocol Selection",
+            "definition": "Choosing a secure protocol that meets the communication requirement.",
+            "examples": [
+              "HTTPS instead of HTTP",
+              "SSH instead of Telnet"
+            ],
+            "memory": "CHOOSE THE SECURE PROTOCOL"
+          },
+          {
+            "name": "Port Selection",
+            "definition": "Choosing the appropriate network port for the selected service or protocol.",
+            "examples": [
+              "443 for HTTPS",
+              "22 for SSH"
+            ],
+            "memory": "MATCH PORT TO SERVICE"
+          },
+          {
+            "name": "Transport Method",
+            "definition": "Choosing how traffic is carried or protected across the network.",
+            "examples": [
+              "TLS",
+              "IPsec",
+              "Secure tunnel"
+            ],
+            "memory": "HOW TRAFFIC TRAVELS"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Operating System and Secure Protocol Configuration comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Group Policy",
+            "Centralized Windows enforcement",
+            "Domain settings"
+          ],
+          [
+            "SELinux",
+            "Linux mandatory access control",
+            "Policy/context enforcement"
+          ],
+          [
+            "Protocol selection",
+            "Choose secure communication protocol",
+            "SSH vs Telnet"
+          ],
+          [
+            "Port selection",
+            "Use correct/approved service port",
+            "443 / 22"
+          ],
+          [
+            "Transport method",
+            "Choose secure path/protection",
+            "TLS/IPsec/tunnel"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Operating System and Secure Protocol Configuration exam shortcuts",
+        "items": [
+          [
+            "Need to push Windows security settings to many domain systems → GROUP POLICY",
+            "Use centralized policy rather than configuring every host manually.",
+            "Example: Enforce password and firewall settings across workstations."
+          ],
+          [
+            "Linux process should be restricted beyond standard permissions → SELINUX",
+            "Mandatory access controls can constrain process behavior.",
+            "Example: A web server process is prevented from reading unrelated files."
+          ],
+          [
+            "Insecure protocol is currently used → SELECT SECURE PROTOCOL",
+            "Replace legacy insecure protocols with secure alternatives.",
+            "Example: Replace Telnet with SSH."
+          ],
+          [
+            "Service must use approved secure port → PORT SELECTION",
+            "Ensure firewall and service configuration align with the chosen protocol.",
+            "Example: HTTPS listens on TCP 443."
+          ],
+          [
+            "Traffic needs protected transport → TRANSPORT METHOD",
+            "Choose encryption or tunneling appropriate to the connection.",
+            "Example: Use TLS for application traffic or IPsec for secure IP transport."
+          ]
+        ],
+        "example": "Focus on what needs to be changed: traffic rules, detection logic, protocol choice, filtering policy, endpoint response, or user-behavior controls."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A company wants to centrally enforce Windows password and firewall settings across domain-joined computers. Which capability should be modified?",
+        "choices": [
+          "Group Policy",
+          "SELinux",
+          "DLP",
+          "NetFlow"
+        ],
+        "answer": 0,
+        "explanation": "Group Policy centrally enforces Windows configuration across domain systems."
+      },
+      {
+        "q": "A Linux web-server process should be prevented from reading unrelated files even if normal permissions are misconfigured. Which control best fits?",
+        "choices": [
+          "SELinux",
+          "Group Policy",
+          "NAC",
+          "SPF"
+        ],
+        "answer": 0,
+        "explanation": "SELinux provides mandatory access control beyond standard discretionary permissions."
+      },
+      {
+        "q": "An administrator replaces Telnet with SSH for remote management. Which implementation choice is being changed?",
+        "choices": [
+          "Protocol selection",
+          "Port selection only",
+          "DNS filtering",
+          "User behavior analytics"
+        ],
+        "answer": 0,
+        "explanation": "The insecure protocol is being replaced with a secure protocol."
+      },
+      {
+        "q": "A secure web service should listen on its standard HTTPS port. Which setting is being modified?",
+        "choices": [
+          "Port selection",
+          "Protocol selection only",
+          "FIM",
+          "DMARC"
+        ],
+        "answer": 0,
+        "explanation": "Port selection determines the service port used by the protocol."
+      },
+      {
+        "q": "Two sites need protected IP-layer transport across an untrusted network. Which implementation consideration is most relevant?",
+        "choices": [
+          "Transport method",
+          "Content categorization",
+          "Reputation",
+          "Group Policy"
+        ],
+        "answer": 0,
+        "explanation": "Transport method covers how traffic is carried or protected, such as with IPsec."
+      }
+    ]
+  }
+}
