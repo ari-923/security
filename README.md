@@ -1,6 +1,6 @@
 # Security+ SY0-701 Course — Next.js + Vercel
 
-This repository is the organized, multi-file version of the Security+ study website. The uploaded numbering is preserved: Chapters 1–13 and 15–17 are present; Chapter 14 was not included in the uploaded set. It keeps the teal/HUD design, 73 lessons, learning sections, flashcards, scenario quizzes, browser-saved progress, and adds a secure Vercel server route for the **S+ AI Study Coach**.
+This repository is the organized, multi-file version of the Security+ SY0-701 study website. The current build contains all 28 chapters across all five Security+ exam domains, 100 lesson decks, 708 core learning sections, 10 supplemental flashcards (718 total flashcards), 62 scenario questions, browser-saved progress, and a secure Vercel server route for the **S+ AI Study Coach**.
 
 ## Project structure
 
@@ -12,7 +12,7 @@ app/
   quiz/                    Scenario quiz mode
 components/                Reusable UI + progress + AI Tutor
 content/
-  lessons/                 73 separate lesson JSON files
+  lessons/                 100 separate lesson JSON files
   chapters.json
   scenario-questions.json
 lib/                       Rate-limit helper
