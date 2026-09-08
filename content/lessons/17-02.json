@@ -2,331 +2,375 @@
   "id": "17.02",
   "chapter": 17,
   "sub": 2,
-  "title": "Activities",
-  "chapter_name": "Security Monitoring",
+  "title": "Alert Response, Quarantine, and Tuning",
+  "chapter_name": "Security Monitoring & Alerting",
   "slides": [
     {
       "n": 1,
-      "title": "Activities",
-      "points": [],
-      "raw": "Activities",
+      "title": "Alert Response, Quarantine, and Tuning",
       "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": []
+      "teach": "",
+      "points": [
+        "Alerts are only useful when they lead to effective response. Security teams must investigate, contain, remediate, validate, and tune alert logic to reduce noise."
+      ],
+      "defs": [],
+      "raw": ""
     },
     {
       "n": 2,
-      "title": "Log Aggregation",
-      "points": [
-        "Elasticsearch",
-        "Splunk",
-        "Logstash",
-        "Graylog"
-      ],
-      "raw": "Log Aggregation\nElasticsearch\nSplunk\nLogstash\nGraylog",
+      "title": "Alert Response",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "The process of investigating and acting on a security alert.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Log aggregation collects events from many systems into a central location where they can be searched, correlated, retained, and analyzed.",
-        "why": "Attack evidence is often spread across endpoints, servers, identity systems, firewalls, and cloud services; centralization connects the pieces.",
-        "example": "A SIEM receives authentication logs, firewall events, endpoint alerts, and cloud audit records and correlates them into one incident.",
-        "exam": "Central logs/correlation = aggregation/SIEM. Protect log integrity and synchronize time for reliable investigations.",
+        "learn": "The process of investigating and acting on a security alert.",
         "breakdown": [
           {
-            "term": "Elasticsearch",
-            "explanation": "Within Log Aggregation, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Activities rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "The process of investigating and acting on a security alert."
           },
           {
-            "term": "Splunk",
-            "explanation": "Within Log Aggregation, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Activities rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Logstash",
-            "explanation": "Within Log Aggregation, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Activities rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Graylog",
-            "explanation": "Within Log Aggregation, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Activities rather than memorizing the phrase by itself."
+            "term": "Examples",
+            "explanation": "Triage alert, Investigate source"
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Log Aggregation and describe at least two key ideas from this section.",
-        "check_a": "Log aggregation collects events from many systems into a central location where they can be searched, correlated, retained, and analyzed. Key ideas include: Elasticsearch; Splunk; Logstash; Graylog.",
-        "points": [
-          "Elasticsearch",
-          "Splunk",
-          "Logstash",
-          "Graylog"
-        ]
+        "why": "This concept affects security visibility, detection, response, validation, or monitoring quality.",
+        "example": "Triage alert",
+        "exam": "RESPOND TO THE SIGNAL",
+        "check_q": "What is the key exam clue for Alert Response?",
+        "check_a": "RESPOND TO THE SIGNAL"
       }
     },
     {
       "n": 3,
-      "title": "Alerting Tools",
-      "points": [
-        "Nagios",
-        "Prometheus",
-        "Microsoft",
-        "Azure Monitor"
-      ],
-      "raw": "Alerting Tools\nNagios\nPrometheus\nMicrosoft\nAzure Monitor",
+      "title": "Remediation",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "Corrects the condition or weakness that caused or enabled the alert.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Alerting tools notify defenders when monitored conditions or detection rules are triggered. Effective alerting requires tuning so important events stand out without overwhelming analysts.",
-        "why": "An alert that nobody trusts or notices does not improve security.",
-        "example": "A SIEM rule alerts only after repeated failed sign-ins from multiple countries within a short period, reducing noise from normal mistakes.",
-        "exam": "Too many benign alerts = false positives/noise; tuning must avoid creating false negatives.",
+        "learn": "Corrects the condition or weakness that caused or enabled the alert.",
         "breakdown": [
           {
-            "term": "Nagios",
-            "explanation": "This is one of the mechanisms used to implement or support Activities. On the exam, focus on what problem it solves and where it fits."
+            "term": "Basically",
+            "explanation": "Corrects the condition or weakness that caused or enabled the alert."
           },
           {
-            "term": "Prometheus",
-            "explanation": "This is one of the mechanisms used to implement or support Activities. On the exam, focus on what problem it solves and where it fits."
-          },
-          {
-            "term": "Microsoft",
-            "explanation": "This is one of the mechanisms used to implement or support Activities. On the exam, focus on what problem it solves and where it fits."
-          },
-          {
-            "term": "Azure Monitor",
-            "explanation": "This is one of the mechanisms used to implement or support Activities. On the exam, focus on what problem it solves and where it fits."
+            "term": "Examples",
+            "explanation": "Remove malware, Patch vulnerability, Reset credentials"
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Alerting Tools and describe at least two key ideas from this section.",
-        "check_a": "Alerting tools notify defenders when monitored conditions or detection rules are triggered. Effective alerting requires tuning so important events stand out without overwhelming analysts. Key ideas include: Nagios; Prometheus; Microsoft; Azure Monitor.",
-        "points": [
-          "Nagios",
-          "Prometheus",
-          "Microsoft",
-          "Azure Monitor"
-        ]
+        "why": "This concept affects security visibility, detection, response, validation, or monitoring quality.",
+        "example": "Remove malware",
+        "exam": "FIX THE PROBLEM",
+        "check_q": "What is the key exam clue for Remediation?",
+        "check_a": "FIX THE PROBLEM"
       }
     },
     {
       "n": 4,
-      "title": "Scanning",
-      "points": [
-        "Nessus",
-        "Qualys",
-        "OpenVAS"
-      ],
-      "raw": "Scanning\nNessus\nQualys\nOpenVAS",
+      "title": "Validation",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "Confirms that remediation worked and the security issue is no longer present.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Security scanning automatically examines systems, networks, applications, or configurations for known weaknesses and risky conditions.",
-        "why": "Automation provides broad repeatable visibility, but findings still require analysis and validation.",
-        "example": "A weekly vulnerability scanner checks servers for missing patches and exposed services, then compares results with previous scans.",
-        "exam": "Scanning identifies candidates; penetration testing may actively prove exploitability. Credentialed and non-credentialed scans provide different views.",
+        "learn": "Confirms that remediation worked and the security issue is no longer present.",
         "breakdown": [
           {
-            "term": "Nessus",
-            "explanation": "Within Scanning, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Activities rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "Confirms that remediation worked and the security issue is no longer present."
           },
           {
-            "term": "Qualys",
-            "explanation": "Within Scanning, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Activities rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "OpenVAS",
-            "explanation": "Within Scanning, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Activities rather than memorizing the phrase by itself."
+            "term": "Examples",
+            "explanation": "Rescan system, Retest control"
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Scanning and describe at least two key ideas from this section.",
-        "check_a": "Security scanning automatically examines systems, networks, applications, or configurations for known weaknesses and risky conditions. Key ideas include: Nessus; Qualys; OpenVAS.",
-        "points": [
-          "Nessus",
-          "Qualys",
-          "OpenVAS"
-        ]
+        "why": "This concept affects security visibility, detection, response, validation, or monitoring quality.",
+        "example": "Rescan system",
+        "exam": "PROVE THE FIX",
+        "check_q": "What is the key exam clue for Validation?",
+        "check_a": "PROVE THE FIX"
       }
     },
     {
       "n": 5,
-      "title": "Reporting Tools",
-      "points": [
-        "Tableau",
-        "Microsoft Power BI",
-        "Grafana"
-      ],
-      "raw": "Reporting Tools\nTableau\nMicrosoft Power BI\nGrafana",
+      "title": "Quarantine",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "Isolates a suspicious or compromised device, file, or workload to prevent spread or further damage.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Security reporting communicates findings, risk, remediation status, trends, and evidence to the people who need to act. Good reports are accurate, prioritized, and appropriate for the audience.",
-        "why": "Executives, engineers, auditors, and incident responders need different levels of technical detail.",
-        "example": "A vulnerability report includes affected assets, severity, business impact, recommended fix, owner, due date, and validation status.",
-        "exam": "CompTIA may ask what belongs in a report or who should receive it. Match detail and action to the audience.",
+        "learn": "Isolates a suspicious or compromised device, file, or workload to prevent spread or further damage.",
         "breakdown": [
           {
-            "term": "Tableau",
-            "explanation": "This is one of the mechanisms used to implement or support Activities. On the exam, focus on what problem it solves and where it fits."
+            "term": "Basically",
+            "explanation": "Isolates a suspicious or compromised device, file, or workload to prevent spread or further damage."
           },
           {
-            "term": "Microsoft Power BI",
-            "explanation": "This is one of the mechanisms used to implement or support Activities. On the exam, focus on what problem it solves and where it fits."
-          },
-          {
-            "term": "Grafana",
-            "explanation": "This is one of the mechanisms used to implement or support Activities. On the exam, focus on what problem it solves and where it fits."
+            "term": "Examples",
+            "explanation": "EDR isolates laptop, Email quarantines attachment"
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Reporting Tools and describe at least two key ideas from this section.",
-        "check_a": "Security reporting communicates findings, risk, remediation status, trends, and evidence to the people who need to act. Good reports are accurate, prioritized, and appropriate for the audience. Key ideas include: Tableau; Microsoft Power BI; Grafana.",
-        "points": [
-          "Tableau",
-          "Microsoft Power BI",
-          "Grafana"
-        ]
+        "why": "This concept affects security visibility, detection, response, validation, or monitoring quality.",
+        "example": "EDR isolates laptop",
+        "exam": "ISOLATE IT",
+        "check_q": "What is the key exam clue for Quarantine?",
+        "check_a": "ISOLATE IT"
       }
     },
     {
       "n": 6,
-      "title": "Archiving",
-      "points": [
-        "AWS Glacier",
-        "Veritas Enterprise Vault",
-        "Commvault"
-      ],
-      "raw": "Archiving\nAWS Glacier\nVeritas Enterprise Vault\nCommvault",
+      "title": "Alert Tuning",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "Adjusts rules, thresholds, exclusions, or logic to improve alert quality and reduce false positives or noise.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Archiving moves logs or records into longer-term retained storage according to operational, legal, or compliance requirements.",
-        "why": "Historical data can be essential for investigations that begin weeks or months after the original event.",
-        "example": "Detailed logs remain searchable for 90 days, then are moved to protected low-cost storage for one year.",
-        "exam": "Retention/archiving decisions should consider compliance, investigation needs, cost, integrity, and access control.",
+        "learn": "Adjusts rules, thresholds, exclusions, or logic to improve alert quality and reduce false positives or noise.",
         "breakdown": [
           {
-            "term": "AWS Glacier",
-            "explanation": "Within Archiving, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Activities rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "Adjusts rules, thresholds, exclusions, or logic to improve alert quality and reduce false positives or noise."
           },
           {
-            "term": "Veritas Enterprise Vault",
-            "explanation": "Within Archiving, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Activities rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Commvault",
-            "explanation": "Within Archiving, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Activities rather than memorizing the phrase by itself."
+            "term": "Examples",
+            "explanation": "Change threshold, Exclude known-safe behavior"
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Archiving and describe at least two key ideas from this section.",
-        "check_a": "Archiving moves logs or records into longer-term retained storage according to operational, legal, or compliance requirements. Key ideas include: AWS Glacier; Veritas Enterprise Vault; Commvault.",
-        "points": [
-          "AWS Glacier",
-          "Veritas Enterprise Vault",
-          "Commvault"
-        ]
+        "why": "This concept affects security visibility, detection, response, validation, or monitoring quality.",
+        "example": "Change threshold",
+        "exam": "MAKE ALERTS BETTER",
+        "check_q": "What is the key exam clue for Alert Tuning?",
+        "check_a": "MAKE ALERTS BETTER"
       }
-    },
-    {
-      "n": 7,
-      "title": "Alert Response and Remediation/Validation",
-      "points": [
-        "• Quarantine:",
-        "• Firewalls, Intrusion Prevention Systems (IPS)",
-        "• Endpoint Protection Platforms (EPP)",
-        "• Alert Tuning",
-        "• Security Information and Event Management (SIEM)",
-        "• Rule-based alerting platforms"
-      ],
-      "raw": "Alert Response and\nRemediation/Validation\n• Quarantine:\n• Firewalls, Intrusion Prevention Systems (IPS)\n• Endpoint Protection Platforms (EPP)\n• Alert Tuning\n• Security Information and Event Management (SIEM)\n• Rule-based alerting platforms",
-      "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "SIEM",
-          "Security Information and Event Management: centralizes and correlates logs/events for alerting, search, and investigation."
-        ],
-        [
-          "IPS",
-          "Intrusion Prevention System: detects malicious traffic and can actively block it."
-        ]
-      ],
-      "course": {
-        "learn": "Vulnerability response turns findings into risk reduction: patch, reconfigure, isolate, remove, replace, apply compensating controls, or formally accept risk. Validation confirms the chosen fix actually worked.",
-        "why": "A scan finding has no value if it is never remediated or if the remediation is assumed successful without verification.",
-        "example": "A team patches a vulnerable service and then rescans the host to verify the vulnerability is no longer present.",
-        "exam": "After remediation, validate—often by rescanning, testing, or auditing. Do not simply close the ticket because a patch command ran.",
-        "breakdown": [
-          {
-            "term": "Quarantine:",
-            "explanation": "Within Alert Response and Remediation/Validation, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Activities rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Firewalls, Intrusion Prevention Systems (IPS)",
-            "explanation": "Filter network traffic according to security rules, usually by source, destination, protocol, port, application, or context."
-          },
-          {
-            "term": "Endpoint Protection Platforms (EPP)",
-            "explanation": "Within Alert Response and Remediation/Validation, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Activities rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Alert Tuning",
-            "explanation": "Within Alert Response and Remediation/Validation, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Activities rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Security Information and Event Management (SIEM)",
-            "explanation": "This contributes to reducing risk in the broader Activities design and should be evaluated as part of defense in depth."
-          },
-          {
-            "term": "Rule-based alerting platforms",
-            "explanation": "Within Alert Response and Remediation/Validation, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Activities rather than memorizing the phrase by itself."
-          }
-        ],
-        "defs": [
-          {
-            "term": "SIEM",
-            "definition": "Security Information and Event Management: centralizes and correlates logs/events for alerting, search, and investigation."
-          },
-          {
-            "term": "IPS",
-            "definition": "Intrusion Prevention System: detects malicious traffic and can actively block it."
-          }
-        ],
-        "check_q": "Without looking back, explain Alert Response and Remediation/Validation and describe at least two key ideas from this section.",
-        "check_a": "Vulnerability response turns findings into risk reduction: patch, reconfigure, isolate, remove, replace, apply compensating controls, or formally accept risk. Validation confirms the chosen fix actually worked. Key ideas include: Quarantine:; Firewalls, Intrusion Prevention Systems (IPS); Endpoint Protection Platforms (EPP); Alert Tuning; Security Information and Event Management (SIEM).",
-        "points": [
-          "Quarantine:",
-          "Firewalls, Intrusion Prevention Systems (IPS)",
-          "Endpoint Protection Platforms (EPP)",
-          "Alert Tuning",
-          "Security Information and Event Management (SIEM)",
-          "Rule-based alerting platforms"
-        ]
-      }
-    },
-    {
-      "n": 8,
-      "title": "Tools",
-      "points": [],
-      "raw": "Tools",
-      "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": []
     }
   ],
-  "slide_count": 8,
-  "instructional_count": 6,
+  "slide_count": 6,
+  "instructional_count": 5,
   "concepts": [
-    "Log Aggregation",
-    "Alerting Tools",
-    "Scanning",
-    "Reporting Tools",
-    "Archiving",
-    "Alert Response and Remediation/Validation"
+    "Alert Response",
+    "Remediation",
+    "Validation",
+    "Quarantine",
+    "Alert Tuning"
   ],
-  "source_filename": "17.02_Activities.pdf"
+  "source_filename": "17-02.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 4.4",
+      "title": "Alert Response, Quarantine, and Tuning",
+      "intro": "Alerts are only useful when they lead to effective response. Security teams must investigate, contain, remediate, validate, and tune alert logic to reduce noise."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Alert Response, Quarantine, and Tuning",
+        "prompt": "Identify what is being monitored, what activity is occurring, and which tool or response best fits the scenario.",
+        "badge": "4.4",
+        "cards": [
+          {
+            "name": "Alert Response",
+            "definition": "The process of investigating and acting on a security alert.",
+            "examples": [
+              "Triage alert",
+              "Investigate source"
+            ],
+            "memory": "RESPOND TO THE SIGNAL"
+          },
+          {
+            "name": "Remediation",
+            "definition": "Corrects the condition or weakness that caused or enabled the alert.",
+            "examples": [
+              "Remove malware",
+              "Patch vulnerability",
+              "Reset credentials"
+            ],
+            "memory": "FIX THE PROBLEM"
+          },
+          {
+            "name": "Validation",
+            "definition": "Confirms that remediation worked and the security issue is no longer present.",
+            "examples": [
+              "Rescan system",
+              "Retest control"
+            ],
+            "memory": "PROVE THE FIX"
+          },
+          {
+            "name": "Quarantine",
+            "definition": "Isolates a suspicious or compromised device, file, or workload to prevent spread or further damage.",
+            "examples": [
+              "EDR isolates laptop",
+              "Email quarantines attachment"
+            ],
+            "memory": "ISOLATE IT"
+          },
+          {
+            "name": "Alert Tuning",
+            "definition": "Adjusts rules, thresholds, exclusions, or logic to improve alert quality and reduce false positives or noise.",
+            "examples": [
+              "Change threshold",
+              "Exclude known-safe behavior"
+            ],
+            "memory": "MAKE ALERTS BETTER"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Alert Response, Quarantine, and Tuning comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Alert response",
+            "Investigate and act",
+            "Triage the alert"
+          ],
+          [
+            "Remediation",
+            "Fix root condition",
+            "Remove/patch/reset"
+          ],
+          [
+            "Validation",
+            "Confirm fix worked",
+            "Retest/rescan"
+          ],
+          [
+            "Quarantine",
+            "Contain suspicious item",
+            "Isolate"
+          ],
+          [
+            "Alert tuning",
+            "Improve signal quality",
+            "Reduce noise/false positives"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Alert Response, Quarantine, and Tuning exam shortcuts",
+        "items": [
+          [
+            "Suspicious endpoint may spread malware → QUARANTINE",
+            "Isolate first when containment is the priority.",
+            "Example: EDR cuts an infected laptop off from the network."
+          ],
+          [
+            "Issue was fixed, but you need proof → VALIDATION",
+            "Confirm remediation actually removed the condition.",
+            "Example: Rescan after patching and verify the finding is gone."
+          ],
+          [
+            "Too many harmless alerts → ALERT TUNING",
+            "Adjust thresholds, exclusions, or rules.",
+            "Example: Exclude a known backup process from repeated alerts."
+          ],
+          [
+            "Alert is real and root cause must be corrected → REMEDIATION",
+            "Fix the underlying problem rather than only acknowledging the alert.",
+            "Example: Remove malware and reset compromised credentials."
+          ],
+          [
+            "Question asks what happens immediately after detection → ALERT RESPONSE",
+            "Start with triage and investigation before deeper remediation.",
+            "Example: Analyst reviews the alert source and affected host."
+          ]
+        ],
+        "example": "Focus on whether the scenario is asking for visibility, detection, containment, validation, or a specific monitoring tool."
+      }
+    ],
+    "questions": [
+      {
+        "q": "EDR detects malware on a laptop and immediately disconnects it from the network. Which action is this?",
+        "choices": [
+          "Quarantine",
+          "Alert tuning",
+          "Reporting",
+          "Archiving"
+        ],
+        "answer": 0,
+        "explanation": "Quarantine isolates a suspicious or compromised device to prevent spread."
+      },
+      {
+        "q": "A security team removes malware and resets a compromised user's password after an alert is confirmed. Which stage is this?",
+        "choices": [
+          "Remediation",
+          "Validation",
+          "Alert tuning",
+          "Archiving"
+        ],
+        "answer": 0,
+        "explanation": "Remediation fixes the underlying security problem."
+      },
+      {
+        "q": "After remediation, the analyst rescans the host to confirm the malware and vulnerability are gone. Which activity is this?",
+        "choices": [
+          "Validation",
+          "Quarantine",
+          "Alert tuning",
+          "Reporting"
+        ],
+        "answer": 0,
+        "explanation": "Validation confirms the remediation worked."
+      },
+      {
+        "q": "A SIEM rule creates hundreds of harmless alerts from a known backup process. What should the team do?",
+        "choices": [
+          "Tune the alert",
+          "Archive the logs only",
+          "Quarantine the backup server",
+          "Disable all monitoring"
+        ],
+        "answer": 0,
+        "explanation": "Alert tuning adjusts logic, thresholds, or exclusions to reduce noise and false positives."
+      },
+      {
+        "q": "An analyst receives a high-severity alert and first reviews the source, affected host, and related events. Which activity is this?",
+        "choices": [
+          "Alert response",
+          "Remediation",
+          "Validation",
+          "Archiving"
+        ],
+        "answer": 0,
+        "explanation": "Alert response starts with triage and investigation."
+      }
+    ]
+  }
 }
