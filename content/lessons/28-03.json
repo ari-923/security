@@ -1,0 +1,331 @@
+{
+  "id": "28.03",
+  "chapter": 28,
+  "sub": 3,
+  "title": "Awareness Program Development, Execution, Reporting, and Monitoring",
+  "chapter_name": "Security Awareness",
+  "slides": [
+    {
+      "n": 1,
+      "title": "Awareness Program Development, Execution, Reporting, and Monitoring",
+      "instructional": false,
+      "teach": "",
+      "points": [
+        "A security awareness program is not a one-time training event. It must be developed, executed, measured, reported, and repeated as risks and user behavior change."
+      ],
+      "defs": [],
+      "raw": ""
+    },
+    {
+      "n": 2,
+      "title": "Program Development",
+      "instructional": true,
+      "teach": "Designs the awareness program, including objectives, audiences, content, delivery methods, metrics, and schedule.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Designs the awareness program, including objectives, audiences, content, delivery methods, metrics, and schedule.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Designs the awareness program, including objectives, audiences, content, delivery methods, metrics, and schedule."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Define training goals, Choose topics, Create metrics"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how users recognize threats, follow security guidance, and participate in a measurable security awareness program.",
+        "example": "Define training goals",
+        "exam": "PLAN THE PROGRAM",
+        "check_q": "What is the key exam clue for Program Development?",
+        "check_a": "PLAN THE PROGRAM"
+      }
+    },
+    {
+      "n": 3,
+      "title": "Program Execution",
+      "instructional": true,
+      "teach": "Delivers the awareness activities and training to the intended users.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Delivers the awareness activities and training to the intended users.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Delivers the awareness activities and training to the intended users."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Launch training, Run phishing simulation, Deliver workshops"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how users recognize threats, follow security guidance, and participate in a measurable security awareness program.",
+        "example": "Launch training",
+        "exam": "RUN THE PROGRAM",
+        "check_q": "What is the key exam clue for Program Execution?",
+        "check_a": "RUN THE PROGRAM"
+      }
+    },
+    {
+      "n": 4,
+      "title": "Initial Reporting and Monitoring",
+      "instructional": true,
+      "teach": "Establishes the first measurement or baseline of participation, behavior, and awareness results.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Establishes the first measurement or baseline of participation, behavior, and awareness results.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Establishes the first measurement or baseline of participation, behavior, and awareness results."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Initial click rate, First completion report"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how users recognize threats, follow security guidance, and participate in a measurable security awareness program.",
+        "example": "Initial click rate",
+        "exam": "GET THE BASELINE",
+        "check_q": "What is the key exam clue for Initial Reporting and Monitoring?",
+        "check_a": "GET THE BASELINE"
+      }
+    },
+    {
+      "n": 5,
+      "title": "Recurring Reporting and Monitoring",
+      "instructional": true,
+      "teach": "Tracks awareness performance over time to identify trends, improvement, and areas requiring more training.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Tracks awareness performance over time to identify trends, improvement, and areas requiring more training.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Tracks awareness performance over time to identify trends, improvement, and areas requiring more training."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Monthly metrics, Quarterly phishing results"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how users recognize threats, follow security guidance, and participate in a measurable security awareness program.",
+        "example": "Monthly metrics",
+        "exam": "MEASURE AGAIN AND AGAIN",
+        "check_q": "What is the key exam clue for Recurring Reporting and Monitoring?",
+        "check_a": "MEASURE AGAIN AND AGAIN"
+      }
+    }
+  ],
+  "slide_count": 5,
+  "instructional_count": 4,
+  "concepts": [
+    "Program Development",
+    "Program Execution",
+    "Initial Reporting and Monitoring",
+    "Recurring Reporting and Monitoring"
+  ],
+  "source_filename": "28-03.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 5.6",
+      "title": "Awareness Program Development, Execution, Reporting, and Monitoring",
+      "intro": "A security awareness program is not a one-time training event. It must be developed, executed, measured, reported, and repeated as risks and user behavior change."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Awareness Program Development, Execution, Reporting, and Monitoring",
+        "prompt": "Identify whether the scenario is testing phishing awareness, anomalous user behavior, everyday user guidance, or how an awareness program is developed and measured.",
+        "badge": "5.6",
+        "cards": [
+          {
+            "name": "Program Development",
+            "definition": "Designs the awareness program, including objectives, audiences, content, delivery methods, metrics, and schedule.",
+            "examples": [
+              "Define training goals",
+              "Choose topics",
+              "Create metrics"
+            ],
+            "memory": "PLAN THE PROGRAM"
+          },
+          {
+            "name": "Program Execution",
+            "definition": "Delivers the awareness activities and training to the intended users.",
+            "examples": [
+              "Launch training",
+              "Run phishing simulation",
+              "Deliver workshops"
+            ],
+            "memory": "RUN THE PROGRAM"
+          },
+          {
+            "name": "Initial Reporting and Monitoring",
+            "definition": "Establishes the first measurement or baseline of participation, behavior, and awareness results.",
+            "examples": [
+              "Initial click rate",
+              "First completion report"
+            ],
+            "memory": "GET THE BASELINE"
+          },
+          {
+            "name": "Recurring Reporting and Monitoring",
+            "definition": "Tracks awareness performance over time to identify trends, improvement, and areas requiring more training.",
+            "examples": [
+              "Monthly metrics",
+              "Quarterly phishing results"
+            ],
+            "memory": "MEASURE AGAIN AND AGAIN"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Awareness Program Development, Execution, Reporting, and Monitoring comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Development",
+            "Design awareness program",
+            "Plan"
+          ],
+          [
+            "Execution",
+            "Deliver activities",
+            "Run"
+          ],
+          [
+            "Initial monitoring",
+            "Create baseline",
+            "First measurement"
+          ],
+          [
+            "Recurring monitoring",
+            "Track trends over time",
+            "Repeat measurement"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Awareness Program Development, Execution, Reporting, and Monitoring exam shortcuts",
+        "items": [
+          [
+            "Choosing topics, audience, goals, and metrics → DEVELOPMENT",
+            "Development happens before the program is delivered.",
+            "Example: Define phishing-training goals and target groups."
+          ],
+          [
+            "Training is being delivered to employees → EXECUTION",
+            "Execution means carrying out the plan.",
+            "Example: Launch annual awareness training."
+          ],
+          [
+            "First phishing simulation establishes click rate → INITIAL MONITORING",
+            "Initial reporting creates a baseline.",
+            "Example: First campaign shows a 22% click rate."
+          ],
+          [
+            "Compare phishing results every quarter → RECURRING MONITORING",
+            "Recurring measurements reveal trends and whether training is working.",
+            "Example: Click rate drops from 22% to 8% over several campaigns."
+          ],
+          [
+            "Awareness program should not be one-and-done → RECURRING",
+            "Security behavior and threats change, so training and measurement should continue.",
+            "Example: Repeat targeted training after new phishing trends appear."
+          ]
+        ],
+        "example": "First identify the human-security problem: phishing, suspicious behavior, user guidance, or awareness-program measurement."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A security team chooses awareness topics, target audiences, goals, metrics, and delivery methods. Which phase is this?",
+        "choices": [
+          "Development",
+          "Execution",
+          "Initial monitoring",
+          "Recurring monitoring"
+        ],
+        "answer": 0,
+        "explanation": "Program development defines what the awareness program will contain and how it will be measured."
+      },
+      {
+        "q": "Annual security training is launched to all employees. Which phase is this?",
+        "choices": [
+          "Execution",
+          "Development",
+          "Initial monitoring",
+          "Recurring monitoring"
+        ],
+        "answer": 0,
+        "explanation": "Execution means delivering the planned awareness activities."
+      },
+      {
+        "q": "The first phishing simulation records a 22% click rate to establish a baseline. Which activity is this?",
+        "choices": [
+          "Initial reporting and monitoring",
+          "Recurring reporting and monitoring",
+          "Execution only",
+          "Development"
+        ],
+        "answer": 0,
+        "explanation": "Initial monitoring establishes the first baseline measurement."
+      },
+      {
+        "q": "The organization compares phishing click rates every quarter to determine whether awareness is improving. Which activity is this?",
+        "choices": [
+          "Recurring reporting and monitoring",
+          "Initial monitoring",
+          "Development",
+          "One-time execution"
+        ],
+        "answer": 0,
+        "explanation": "Recurring monitoring tracks awareness performance and trends over time."
+      },
+      {
+        "q": "A phishing trend changes and the organization updates training content, then measures results over the next several campaigns. What principle does this demonstrate?",
+        "choices": [
+          "Awareness should be continuous and recurring",
+          "Awareness is a one-time annual task",
+          "Only initial reporting matters",
+          "Training should not change"
+        ],
+        "answer": 0,
+        "explanation": "Security awareness should adapt to evolving risks and be measured repeatedly."
+      }
+    ]
+  }
+}

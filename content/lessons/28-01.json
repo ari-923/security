@@ -1,0 +1,265 @@
+{
+  "id": "28.01",
+  "chapter": 28,
+  "sub": 1,
+  "title": "Phishing Awareness and Response",
+  "chapter_name": "Security Awareness",
+  "slides": [
+    {
+      "n": 1,
+      "title": "Phishing Awareness and Response",
+      "instructional": false,
+      "teach": "",
+      "points": [
+        "Security awareness should teach users how to recognize phishing, report suspicious messages, and respond correctly after a report is received."
+      ],
+      "defs": [],
+      "raw": ""
+    },
+    {
+      "n": 2,
+      "title": "Phishing Campaigns",
+      "instructional": true,
+      "teach": "Planned awareness exercises that send simulated phishing messages to measure and improve user behavior.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Planned awareness exercises that send simulated phishing messages to measure and improve user behavior.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Planned awareness exercises that send simulated phishing messages to measure and improve user behavior."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Simulated phishing email, Click-rate tracking, Follow-up training"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how users recognize threats, follow security guidance, and participate in a measurable security awareness program.",
+        "example": "Simulated phishing email",
+        "exam": "PRACTICE PHISHING SAFELY",
+        "check_q": "What is the key exam clue for Phishing Campaigns?",
+        "check_a": "PRACTICE PHISHING SAFELY"
+      }
+    },
+    {
+      "n": 3,
+      "title": "Recognizing a Phishing Attempt",
+      "instructional": true,
+      "teach": "Identifying suspicious indicators such as urgency, unusual requests, deceptive links, unexpected attachments, or sender inconsistencies.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Identifying suspicious indicators such as urgency, unusual requests, deceptive links, unexpected attachments, or sender inconsistencies.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Identifying suspicious indicators such as urgency, unusual requests, deceptive links, unexpected attachments, or sender inconsistencies."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Fake login page, Urgent payment request, Lookalike domain"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how users recognize threats, follow security guidance, and participate in a measurable security awareness program.",
+        "example": "Fake login page",
+        "exam": "SPOT THE RED FLAGS",
+        "check_q": "What is the key exam clue for Recognizing a Phishing Attempt?",
+        "check_a": "SPOT THE RED FLAGS"
+      }
+    },
+    {
+      "n": 4,
+      "title": "Responding to Reported Suspicious Messages",
+      "instructional": true,
+      "teach": "Following the organization's process after a user reports a suspicious message.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Following the organization's process after a user reports a suspicious message.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Following the organization's process after a user reports a suspicious message."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Analyze message, Block sender/domain, Warn other users"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how users recognize threats, follow security guidance, and participate in a measurable security awareness program.",
+        "example": "Analyze message",
+        "exam": "REPORT → INVESTIGATE → RESPOND",
+        "check_q": "What is the key exam clue for Responding to Reported Suspicious Messages?",
+        "check_a": "REPORT → INVESTIGATE → RESPOND"
+      }
+    }
+  ],
+  "slide_count": 4,
+  "instructional_count": 3,
+  "concepts": [
+    "Phishing Campaigns",
+    "Recognizing a Phishing Attempt",
+    "Responding to Reported Suspicious Messages"
+  ],
+  "source_filename": "28-01.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 5.6",
+      "title": "Phishing Awareness and Response",
+      "intro": "Security awareness should teach users how to recognize phishing, report suspicious messages, and respond correctly after a report is received."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Phishing Awareness and Response",
+        "prompt": "Identify whether the scenario is testing phishing awareness, anomalous user behavior, everyday user guidance, or how an awareness program is developed and measured.",
+        "badge": "5.6",
+        "cards": [
+          {
+            "name": "Phishing Campaigns",
+            "definition": "Planned awareness exercises that send simulated phishing messages to measure and improve user behavior.",
+            "examples": [
+              "Simulated phishing email",
+              "Click-rate tracking",
+              "Follow-up training"
+            ],
+            "memory": "PRACTICE PHISHING SAFELY"
+          },
+          {
+            "name": "Recognizing a Phishing Attempt",
+            "definition": "Identifying suspicious indicators such as urgency, unusual requests, deceptive links, unexpected attachments, or sender inconsistencies.",
+            "examples": [
+              "Fake login page",
+              "Urgent payment request",
+              "Lookalike domain"
+            ],
+            "memory": "SPOT THE RED FLAGS"
+          },
+          {
+            "name": "Responding to Reported Suspicious Messages",
+            "definition": "Following the organization's process after a user reports a suspicious message.",
+            "examples": [
+              "Analyze message",
+              "Block sender/domain",
+              "Warn other users"
+            ],
+            "memory": "REPORT → INVESTIGATE → RESPOND"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Phishing Awareness and Response comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Phishing campaigns",
+            "Train and measure users",
+            "Simulated phishing"
+          ],
+          [
+            "Recognition",
+            "Identify suspicious indicators",
+            "Red flags"
+          ],
+          [
+            "Response",
+            "Handle reported messages",
+            "Investigate/block/notify"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Phishing Awareness and Response exam shortcuts",
+        "items": [
+          [
+            "Company deliberately sends fake phishing emails → PHISHING CAMPAIGN",
+            "The goal is awareness training and measurement, not real compromise.",
+            "Example: Users who click receive targeted training."
+          ],
+          [
+            "Urgency + strange link + credential request → PHISHING ATTEMPT",
+            "Look for multiple social-engineering red flags.",
+            "Example: 'Your account expires in 10 minutes—sign in here.'"
+          ],
+          [
+            "User reports suspicious email → RESPOND TO THE REPORT",
+            "Security should analyze, contain, and communicate as needed.",
+            "Example: Block the malicious domain and warn recipients."
+          ]
+        ],
+        "example": "First identify the human-security problem: phishing, suspicious behavior, user guidance, or awareness-program measurement."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A company deliberately sends fake phishing emails to employees and measures who clicks the links. What is this?",
+        "choices": [
+          "Phishing campaign",
+          "Real phishing attack",
+          "Penetration test only",
+          "Compliance audit"
+        ],
+        "answer": 0,
+        "explanation": "A phishing campaign is a simulated awareness exercise used to train and measure users."
+      },
+      {
+        "q": "An email creates urgency, asks the user to sign in immediately, and links to a lookalike domain. What should the user recognize?",
+        "choices": [
+          "Phishing attempt",
+          "Normal business email",
+          "Software update",
+          "Internal audit"
+        ],
+        "answer": 0,
+        "explanation": "Urgency, deceptive links, and credential requests are common phishing indicators."
+      },
+      {
+        "q": "A user reports a suspicious message to the security team. What should happen next?",
+        "choices": [
+          "Analyze the message and take containment actions if needed",
+          "Ignore it if no one clicked",
+          "Delete only the user's copy",
+          "Forward it to everyone"
+        ],
+        "answer": 0,
+        "explanation": "Reported suspicious messages should be analyzed and, if malicious, blocked and communicated appropriately."
+      },
+      {
+        "q": "A simulated phishing exercise shows that one department has a high click rate. What is the best next step?",
+        "choices": [
+          "Provide targeted follow-up training",
+          "Disable all email",
+          "Stop future simulations",
+          "Ignore the result"
+        ],
+        "answer": 0,
+        "explanation": "Phishing campaigns are used to identify training needs and improve user behavior."
+      }
+    ]
+  }
+}

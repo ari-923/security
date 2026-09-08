@@ -1,0 +1,680 @@
+{
+  "id": "28.02",
+  "chapter": 28,
+  "sub": 2,
+  "title": "Anomalous Behavior Recognition and User Guidance",
+  "chapter_name": "Security Awareness",
+  "slides": [
+    {
+      "n": 1,
+      "title": "Anomalous Behavior Recognition and User Guidance",
+      "instructional": false,
+      "teach": "",
+      "points": [
+        "Awareness training should help users recognize suspicious behavior and apply secure practices in everyday work, especially around social engineering, passwords, removable media, and remote environments."
+      ],
+      "defs": [],
+      "raw": ""
+    },
+    {
+      "n": 2,
+      "title": "Risky Behavior",
+      "instructional": true,
+      "teach": "User behavior that increases the likelihood of compromise or policy violations.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "User behavior that increases the likelihood of compromise or policy violations.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "User behavior that increases the likelihood of compromise or policy violations."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Sharing passwords, Disabling security controls, Using unknown USB drives"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how users recognize threats, follow security guidance, and participate in a measurable security awareness program.",
+        "example": "Sharing passwords",
+        "exam": "HIGHER CHANCE OF TROUBLE",
+        "check_q": "What is the key exam clue for Risky Behavior?",
+        "check_a": "HIGHER CHANCE OF TROUBLE"
+      }
+    },
+    {
+      "n": 3,
+      "title": "Unexpected Behavior",
+      "instructional": true,
+      "teach": "Activity that deviates from what is normally expected for a user, system, or situation.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Activity that deviates from what is normally expected for a user, system, or situation.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Activity that deviates from what is normally expected for a user, system, or situation."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Unusual login time, Sudden mass downloads"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how users recognize threats, follow security guidance, and participate in a measurable security awareness program.",
+        "example": "Unusual login time",
+        "exam": "NOT NORMAL",
+        "check_q": "What is the key exam clue for Unexpected Behavior?",
+        "check_a": "NOT NORMAL"
+      }
+    },
+    {
+      "n": 4,
+      "title": "Unintentional Behavior",
+      "instructional": true,
+      "teach": "Accidental user actions that create security risk without malicious intent.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Accidental user actions that create security risk without malicious intent.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Accidental user actions that create security risk without malicious intent."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Sending data to wrong recipient, Accidental public sharing"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how users recognize threats, follow security guidance, and participate in a measurable security awareness program.",
+        "example": "Sending data to wrong recipient",
+        "exam": "ACCIDENT, NOT ATTACK",
+        "check_q": "What is the key exam clue for Unintentional Behavior?",
+        "check_a": "ACCIDENT, NOT ATTACK"
+      }
+    },
+    {
+      "n": 5,
+      "title": "Policy / Handbooks",
+      "instructional": true,
+      "teach": "Written guidance that explains organizational security expectations, responsibilities, and acceptable behavior.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Written guidance that explains organizational security expectations, responsibilities, and acceptable behavior.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Written guidance that explains organizational security expectations, responsibilities, and acceptable behavior."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Employee handbook, Security policy"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how users recognize threats, follow security guidance, and participate in a measurable security awareness program.",
+        "example": "Employee handbook",
+        "exam": "THE RULEBOOK",
+        "check_q": "What is the key exam clue for Policy / Handbooks?",
+        "check_a": "THE RULEBOOK"
+      }
+    },
+    {
+      "n": 6,
+      "title": "Situational Awareness",
+      "instructional": true,
+      "teach": "Recognizing security-relevant conditions in the surrounding environment and responding appropriately.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Recognizing security-relevant conditions in the surrounding environment and responding appropriately.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Recognizing security-relevant conditions in the surrounding environment and responding appropriately."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Shoulder surfing, Unattended badge, Suspicious visitor"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how users recognize threats, follow security guidance, and participate in a measurable security awareness program.",
+        "example": "Shoulder surfing",
+        "exam": "NOTICE WHAT'S AROUND YOU",
+        "check_q": "What is the key exam clue for Situational Awareness?",
+        "check_a": "NOTICE WHAT'S AROUND YOU"
+      }
+    },
+    {
+      "n": 7,
+      "title": "Insider Threat Awareness",
+      "instructional": true,
+      "teach": "Recognizing indicators that a trusted individual may intentionally or unintentionally create security risk.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Recognizing indicators that a trusted individual may intentionally or unintentionally create security risk.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Recognizing indicators that a trusted individual may intentionally or unintentionally create security risk."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Unusual data access, Policy bypass, Disgruntled employee behavior"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how users recognize threats, follow security guidance, and participate in a measurable security awareness program.",
+        "example": "Unusual data access",
+        "exam": "TRUSTED PERSON CAN STILL BE RISK",
+        "check_q": "What is the key exam clue for Insider Threat Awareness?",
+        "check_a": "TRUSTED PERSON CAN STILL BE RISK"
+      }
+    },
+    {
+      "n": 8,
+      "title": "Password Management Guidance",
+      "instructional": true,
+      "teach": "Training users to create, store, and use passwords securely.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Training users to create, store, and use passwords securely.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Training users to create, store, and use passwords securely."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Use password manager, Unique passwords, Do not share credentials"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how users recognize threats, follow security guidance, and participate in a measurable security awareness program.",
+        "example": "Use password manager",
+        "exam": "PROTECT CREDENTIALS",
+        "check_q": "What is the key exam clue for Password Management Guidance?",
+        "check_a": "PROTECT CREDENTIALS"
+      }
+    },
+    {
+      "n": 9,
+      "title": "Removable Media and Cables",
+      "instructional": true,
+      "teach": "Guidance for safely handling USB drives, external media, charging cables, and other removable devices.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Guidance for safely handling USB drives, external media, charging cables, and other removable devices.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Guidance for safely handling USB drives, external media, charging cables, and other removable devices."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Avoid unknown USB drive, Use approved media only"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how users recognize threats, follow security guidance, and participate in a measurable security awareness program.",
+        "example": "Avoid unknown USB drive",
+        "exam": "DON'T PLUG IN RANDOM STUFF",
+        "check_q": "What is the key exam clue for Removable Media and Cables?",
+        "check_a": "DON'T PLUG IN RANDOM STUFF"
+      }
+    },
+    {
+      "n": 10,
+      "title": "Social Engineering Awareness",
+      "instructional": true,
+      "teach": "Training users to recognize manipulation attempts designed to make them reveal information or take unsafe actions.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Training users to recognize manipulation attempts designed to make them reveal information or take unsafe actions.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Training users to recognize manipulation attempts designed to make them reveal information or take unsafe actions."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Pretexting, Impersonation, Phishing"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how users recognize threats, follow security guidance, and participate in a measurable security awareness program.",
+        "example": "Pretexting",
+        "exam": "ATTACKS THE PERSON",
+        "check_q": "What is the key exam clue for Social Engineering Awareness?",
+        "check_a": "ATTACKS THE PERSON"
+      }
+    },
+    {
+      "n": 11,
+      "title": "Operational Security (OPSEC)",
+      "instructional": true,
+      "teach": "Protecting sensitive operational information from unnecessary exposure.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Protecting sensitive operational information from unnecessary exposure.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Protecting sensitive operational information from unnecessary exposure."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Do not post internal details, Protect schedules and procedures"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how users recognize threats, follow security guidance, and participate in a measurable security awareness program.",
+        "example": "Do not post internal details",
+        "exam": "DON'T LEAK OPERATIONS",
+        "check_q": "What is the key exam clue for Operational Security (OPSEC)?",
+        "check_a": "DON'T LEAK OPERATIONS"
+      }
+    },
+    {
+      "n": 12,
+      "title": "Hybrid / Remote Work Environments",
+      "instructional": true,
+      "teach": "Security practices for users working outside traditional office environments.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Security practices for users working outside traditional office environments.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Security practices for users working outside traditional office environments."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Secure Wi-Fi, Privacy screen, VPN, Protect devices"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how users recognize threats, follow security guidance, and participate in a measurable security awareness program.",
+        "example": "Secure Wi-Fi",
+        "exam": "SECURITY TRAVELS WITH YOU",
+        "check_q": "What is the key exam clue for Hybrid / Remote Work Environments?",
+        "check_a": "SECURITY TRAVELS WITH YOU"
+      }
+    }
+  ],
+  "slide_count": 12,
+  "instructional_count": 11,
+  "concepts": [
+    "Risky Behavior",
+    "Unexpected Behavior",
+    "Unintentional Behavior",
+    "Policy / Handbooks",
+    "Situational Awareness",
+    "Insider Threat Awareness",
+    "Password Management Guidance",
+    "Removable Media and Cables",
+    "Social Engineering Awareness",
+    "Operational Security (OPSEC)",
+    "Hybrid / Remote Work Environments"
+  ],
+  "source_filename": "28-02.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 5.6",
+      "title": "Anomalous Behavior Recognition and User Guidance",
+      "intro": "Awareness training should help users recognize suspicious behavior and apply secure practices in everyday work, especially around social engineering, passwords, removable media, and remote environments."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Anomalous Behavior Recognition and User Guidance",
+        "prompt": "Identify whether the scenario is testing phishing awareness, anomalous user behavior, everyday user guidance, or how an awareness program is developed and measured.",
+        "badge": "5.6",
+        "cards": [
+          {
+            "name": "Risky Behavior",
+            "definition": "User behavior that increases the likelihood of compromise or policy violations.",
+            "examples": [
+              "Sharing passwords",
+              "Disabling security controls",
+              "Using unknown USB drives"
+            ],
+            "memory": "HIGHER CHANCE OF TROUBLE"
+          },
+          {
+            "name": "Unexpected Behavior",
+            "definition": "Activity that deviates from what is normally expected for a user, system, or situation.",
+            "examples": [
+              "Unusual login time",
+              "Sudden mass downloads"
+            ],
+            "memory": "NOT NORMAL"
+          },
+          {
+            "name": "Unintentional Behavior",
+            "definition": "Accidental user actions that create security risk without malicious intent.",
+            "examples": [
+              "Sending data to wrong recipient",
+              "Accidental public sharing"
+            ],
+            "memory": "ACCIDENT, NOT ATTACK"
+          },
+          {
+            "name": "Policy / Handbooks",
+            "definition": "Written guidance that explains organizational security expectations, responsibilities, and acceptable behavior.",
+            "examples": [
+              "Employee handbook",
+              "Security policy"
+            ],
+            "memory": "THE RULEBOOK"
+          },
+          {
+            "name": "Situational Awareness",
+            "definition": "Recognizing security-relevant conditions in the surrounding environment and responding appropriately.",
+            "examples": [
+              "Shoulder surfing",
+              "Unattended badge",
+              "Suspicious visitor"
+            ],
+            "memory": "NOTICE WHAT'S AROUND YOU"
+          },
+          {
+            "name": "Insider Threat Awareness",
+            "definition": "Recognizing indicators that a trusted individual may intentionally or unintentionally create security risk.",
+            "examples": [
+              "Unusual data access",
+              "Policy bypass",
+              "Disgruntled employee behavior"
+            ],
+            "memory": "TRUSTED PERSON CAN STILL BE RISK"
+          },
+          {
+            "name": "Password Management Guidance",
+            "definition": "Training users to create, store, and use passwords securely.",
+            "examples": [
+              "Use password manager",
+              "Unique passwords",
+              "Do not share credentials"
+            ],
+            "memory": "PROTECT CREDENTIALS"
+          },
+          {
+            "name": "Removable Media and Cables",
+            "definition": "Guidance for safely handling USB drives, external media, charging cables, and other removable devices.",
+            "examples": [
+              "Avoid unknown USB drive",
+              "Use approved media only"
+            ],
+            "memory": "DON'T PLUG IN RANDOM STUFF"
+          },
+          {
+            "name": "Social Engineering Awareness",
+            "definition": "Training users to recognize manipulation attempts designed to make them reveal information or take unsafe actions.",
+            "examples": [
+              "Pretexting",
+              "Impersonation",
+              "Phishing"
+            ],
+            "memory": "ATTACKS THE PERSON"
+          },
+          {
+            "name": "Operational Security (OPSEC)",
+            "definition": "Protecting sensitive operational information from unnecessary exposure.",
+            "examples": [
+              "Do not post internal details",
+              "Protect schedules and procedures"
+            ],
+            "memory": "DON'T LEAK OPERATIONS"
+          },
+          {
+            "name": "Hybrid / Remote Work Environments",
+            "definition": "Security practices for users working outside traditional office environments.",
+            "examples": [
+              "Secure Wi-Fi",
+              "Privacy screen",
+              "VPN",
+              "Protect devices"
+            ],
+            "memory": "SECURITY TRAVELS WITH YOU"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Anomalous Behavior Recognition and User Guidance comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Risky",
+            "Behavior increases exposure",
+            "Unsafe choice"
+          ],
+          [
+            "Unexpected",
+            "Deviates from normal baseline",
+            "Anomaly"
+          ],
+          [
+            "Unintentional",
+            "Accidental security impact",
+            "Human error"
+          ],
+          [
+            "Situational awareness",
+            "Notice surrounding risk",
+            "Environment"
+          ],
+          [
+            "Insider threat",
+            "Trusted-person risk",
+            "Internal user"
+          ],
+          [
+            "Password management",
+            "Protect credentials",
+            "Unique/store safely"
+          ],
+          [
+            "Removable media",
+            "Control USB/media use",
+            "Unknown device"
+          ],
+          [
+            "Social engineering",
+            "Human manipulation",
+            "Trick the user"
+          ],
+          [
+            "OPSEC",
+            "Protect operational information",
+            "Don't overshare"
+          ],
+          [
+            "Remote work",
+            "Secure offsite work",
+            "Home/travel security"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Anomalous Behavior Recognition and User Guidance exam shortcuts",
+        "items": [
+          [
+            "User knowingly bypasses security for convenience → RISKY",
+            "The behavior directly increases exposure.",
+            "Example: Employee disables endpoint protection to install software."
+          ],
+          [
+            "Activity does not fit the user's normal pattern → UNEXPECTED",
+            "Unexpected behavior is anomalous, even if the cause is not yet known.",
+            "Example: User downloads thousands of files at 3 AM."
+          ],
+          [
+            "Mistake causes exposure with no malicious intent → UNINTENTIONAL",
+            "The security impact came from human error.",
+            "Example: Employee emails a confidential file to the wrong recipient."
+          ],
+          [
+            "Unknown USB drive or cable → DO NOT TRUST IT",
+            "Removable media can introduce malware or hardware-based attacks.",
+            "Example: Turn found media over to security rather than plugging it in."
+          ],
+          [
+            "Attacker manipulates a person instead of exploiting software → SOCIAL ENGINEERING",
+            "The human is the attack surface.",
+            "Example: Caller impersonates IT and asks for an MFA code."
+          ],
+          [
+            "Working from home or travel location → REMOTE-WORK SECURITY",
+            "Users still need secure networks, device protection, and privacy.",
+            "Example: Use approved VPN and avoid exposing sensitive screens in public."
+          ]
+        ],
+        "example": "First identify the human-security problem: phishing, suspicious behavior, user guidance, or awareness-program measurement."
+      }
+    ],
+    "questions": [
+      {
+        "q": "An employee disables endpoint protection because it interferes with software installation. What type of behavior is this?",
+        "choices": [
+          "Risky",
+          "Unexpected",
+          "Unintentional only",
+          "Normal"
+        ],
+        "answer": 0,
+        "explanation": "The employee knowingly increases exposure by bypassing a security control."
+      },
+      {
+        "q": "A user who normally downloads a few files suddenly downloads thousands at 3 AM. What type of behavior is this?",
+        "choices": [
+          "Unexpected",
+          "Risky only",
+          "Unintentional only",
+          "Normal"
+        ],
+        "answer": 0,
+        "explanation": "The activity deviates from the user's normal behavior and is therefore unexpected/anomalous."
+      },
+      {
+        "q": "An employee accidentally emails a confidential file to the wrong recipient. What type of behavior is this?",
+        "choices": [
+          "Unintentional",
+          "Risky only",
+          "Malicious insider",
+          "Unexpected only"
+        ],
+        "answer": 0,
+        "explanation": "The security impact was caused by accidental human error."
+      },
+      {
+        "q": "A caller impersonates the IT department and asks an employee for an MFA code. What awareness topic applies?",
+        "choices": [
+          "Social engineering",
+          "Data retention",
+          "Physical security only",
+          "Compliance reporting"
+        ],
+        "answer": 0,
+        "explanation": "The attacker is manipulating the user rather than directly exploiting software."
+      },
+      {
+        "q": "An employee finds an unknown USB drive in the parking lot. What should awareness training recommend?",
+        "choices": [
+          "Do not plug it in; turn it over to security",
+          "Test it on a personal laptop",
+          "Plug it in with antivirus disabled",
+          "Share it with coworkers"
+        ],
+        "answer": 0,
+        "explanation": "Unknown removable media should not be trusted or connected to organizational devices."
+      },
+      {
+        "q": "An employee is working in a coffee shop with sensitive data visible on screen. Which awareness area is most relevant?",
+        "choices": [
+          "Hybrid/remote work security and situational awareness",
+          "Data retention",
+          "Penetration testing",
+          "Risk appetite"
+        ],
+        "answer": 0,
+        "explanation": "Remote-work security includes protecting devices, networks, and privacy in public environments."
+      },
+      {
+        "q": "A user posts internal deployment schedules and system details on social media. Which awareness concept is most relevant?",
+        "choices": [
+          "Operational security",
+          "Password management",
+          "Compliance reporting",
+          "Vendor monitoring"
+        ],
+        "answer": 0,
+        "explanation": "OPSEC focuses on avoiding unnecessary disclosure of sensitive operational information."
+      }
+    ]
+  }
+}
