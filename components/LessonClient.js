@@ -100,7 +100,7 @@ function SecurityControlsLesson({ lesson, previous, next, learning, done, master
     </div>
 
     <section className="sc-hero">
-      <span className="sc-kicker">Security+ Foundation</span>
+      <span className="sc-kicker">Security+ Objective 1.1</span>
       <h3>Two ways to classify security controls</h3>
       <p>{layout.intro}</p>
       <div className="sc-overview-grid">
