@@ -1,0 +1,330 @@
+{
+  "id": "22.02",
+  "chapter": 22,
+  "sub": 2,
+  "title": "Investigation Data Sources and Evidence",
+  "chapter_name": "Investigation Data Sources",
+  "slides": [
+    {
+      "n": 1,
+      "title": "Investigation Data Sources and Evidence",
+      "instructional": false,
+      "teach": "",
+      "points": [
+        "Not every investigation question is answered by logs. Scans, automated reports, dashboards, and packet captures provide different levels of detail and context."
+      ],
+      "defs": [],
+      "raw": ""
+    },
+    {
+      "n": 2,
+      "title": "Vulnerability Scans",
+      "instructional": true,
+      "teach": "Identify known vulnerabilities, missing patches, and misconfigurations that may explain how an attack succeeded.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Identify known vulnerabilities, missing patches, and misconfigurations that may explain how an attack succeeded.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Identify known vulnerabilities, missing patches, and misconfigurations that may explain how an attack succeeded."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Missing patch, Exposed service, Weak configuration"
+          }
+        ],
+        "defs": [],
+        "why": "This source helps investigators answer specific questions about systems, applications, network activity, vulnerabilities, or evidence.",
+        "example": "Missing patch",
+        "exam": "WHAT WAS VULNERABLE?",
+        "check_q": "What is the key exam clue for Vulnerability Scans?",
+        "check_a": "WHAT WAS VULNERABLE?"
+      }
+    },
+    {
+      "n": 3,
+      "title": "Automated Reports",
+      "instructional": true,
+      "teach": "Machine-generated summaries of security findings, events, trends, or compliance status.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Machine-generated summaries of security findings, events, trends, or compliance status.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Machine-generated summaries of security findings, events, trends, or compliance status."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Daily SIEM report, Scanner summary"
+          }
+        ],
+        "defs": [],
+        "why": "This source helps investigators answer specific questions about systems, applications, network activity, vulnerabilities, or evidence.",
+        "example": "Daily SIEM report",
+        "exam": "AUTOMATED SUMMARY",
+        "check_q": "What is the key exam clue for Automated Reports?",
+        "check_a": "AUTOMATED SUMMARY"
+      }
+    },
+    {
+      "n": 4,
+      "title": "Dashboards",
+      "instructional": true,
+      "teach": "Visual displays that summarize security metrics, alerts, trends, and operational status.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Visual displays that summarize security metrics, alerts, trends, and operational status.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Visual displays that summarize security metrics, alerts, trends, and operational status."
+          },
+          {
+            "term": "Examples",
+            "explanation": "SOC dashboard, Vulnerability dashboard"
+          }
+        ],
+        "defs": [],
+        "why": "This source helps investigators answer specific questions about systems, applications, network activity, vulnerabilities, or evidence.",
+        "example": "SOC dashboard",
+        "exam": "SEE THE BIG PICTURE",
+        "check_q": "What is the key exam clue for Dashboards?",
+        "check_a": "SEE THE BIG PICTURE"
+      }
+    },
+    {
+      "n": 5,
+      "title": "Packet Captures",
+      "instructional": true,
+      "teach": "Record network packets so analysts can inspect protocol details and, when available, traffic contents.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Record network packets so analysts can inspect protocol details and, when available, traffic contents.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Record network packets so analysts can inspect protocol details and, when available, traffic contents."
+          },
+          {
+            "term": "Examples",
+            "explanation": "PCAP, Wireshark capture"
+          }
+        ],
+        "defs": [],
+        "why": "This source helps investigators answer specific questions about systems, applications, network activity, vulnerabilities, or evidence.",
+        "example": "PCAP",
+        "exam": "SEE THE PACKETS",
+        "check_q": "What is the key exam clue for Packet Captures?",
+        "check_a": "SEE THE PACKETS"
+      }
+    }
+  ],
+  "slide_count": 5,
+  "instructional_count": 4,
+  "concepts": [
+    "Vulnerability Scans",
+    "Automated Reports",
+    "Dashboards",
+    "Packet Captures"
+  ],
+  "source_filename": "22-02.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 4.9",
+      "title": "Investigation Data Sources and Evidence",
+      "intro": "Not every investigation question is answered by logs. Scans, automated reports, dashboards, and packet captures provide different levels of detail and context."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Investigation Data Sources and Evidence",
+        "prompt": "Start by asking: what question am I trying to answer, and which data source gives the most direct evidence?",
+        "badge": "4.9",
+        "cards": [
+          {
+            "name": "Vulnerability Scans",
+            "definition": "Identify known vulnerabilities, missing patches, and misconfigurations that may explain how an attack succeeded.",
+            "examples": [
+              "Missing patch",
+              "Exposed service",
+              "Weak configuration"
+            ],
+            "memory": "WHAT WAS VULNERABLE?"
+          },
+          {
+            "name": "Automated Reports",
+            "definition": "Machine-generated summaries of security findings, events, trends, or compliance status.",
+            "examples": [
+              "Daily SIEM report",
+              "Scanner summary"
+            ],
+            "memory": "AUTOMATED SUMMARY"
+          },
+          {
+            "name": "Dashboards",
+            "definition": "Visual displays that summarize security metrics, alerts, trends, and operational status.",
+            "examples": [
+              "SOC dashboard",
+              "Vulnerability dashboard"
+            ],
+            "memory": "SEE THE BIG PICTURE"
+          },
+          {
+            "name": "Packet Captures",
+            "definition": "Record network packets so analysts can inspect protocol details and, when available, traffic contents.",
+            "examples": [
+              "PCAP",
+              "Wireshark capture"
+            ],
+            "memory": "SEE THE PACKETS"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Investigation Data Sources and Evidence comparison",
+        "headers": [
+          "Source",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Vulnerability scan",
+            "Find known weaknesses",
+            "How could attacker get in?"
+          ],
+          [
+            "Automated report",
+            "Summarize findings/events",
+            "Generated overview"
+          ],
+          [
+            "Dashboard",
+            "Visualize status/trends",
+            "At-a-glance view"
+          ],
+          [
+            "Packet capture",
+            "Inspect network packets",
+            "Deep network detail"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Investigation Data Sources and Evidence exam shortcuts",
+        "items": [
+          [
+            "Need to know what weakness attacker may have exploited → VULNERABILITY SCAN",
+            "Compare incident timing with known vulnerabilities and misconfigurations.",
+            "Example: A scan shows the compromised server was missing a critical patch."
+          ],
+          [
+            "Need quick recurring summary → AUTOMATED REPORT",
+            "Use generated reports for routine findings and trends.",
+            "Example: A daily SIEM report lists top alerts."
+          ],
+          [
+            "Need at-a-glance operational view → DASHBOARD",
+            "Dashboards summarize current security posture visually.",
+            "Example: SOC dashboard shows active incidents and alert counts."
+          ],
+          [
+            "Need exact network conversation details → PACKET CAPTURE",
+            "Packet captures provide the deepest network-level evidence.",
+            "Example: Inspect a PCAP to see DNS queries and HTTP request details."
+          ],
+          [
+            "Need full traffic content but only have NetFlow-style data → YOU NEED PACKET CAPTURE",
+            "Flow metadata does not contain packet payloads.",
+            "Example: Use PCAP when you must inspect the actual protocol exchange."
+          ]
+        ],
+        "example": "Choose the source that provides the most direct evidence for the investigation question."
+      }
+    ],
+    "questions": [
+      {
+        "q": "An investigator wants to determine whether a compromised server was missing a known critical patch before the incident. Which source is most useful?",
+        "choices": [
+          "Vulnerability scan",
+          "Dashboard",
+          "Automated report only",
+          "Firewall log"
+        ],
+        "answer": 0,
+        "explanation": "Vulnerability scans identify missing patches, known flaws, and misconfigurations."
+      },
+      {
+        "q": "A SOC manager wants a machine-generated daily summary of the highest-severity alerts. Which source best fits?",
+        "choices": [
+          "Automated report",
+          "Packet capture",
+          "Endpoint log",
+          "Firewall log"
+        ],
+        "answer": 0,
+        "explanation": "Automated reports provide recurring machine-generated summaries."
+      },
+      {
+        "q": "An analyst wants an at-a-glance view of active incidents and alert counts. Which source is best?",
+        "choices": [
+          "Dashboard",
+          "Packet capture",
+          "Vulnerability scan",
+          "Metadata only"
+        ],
+        "answer": 0,
+        "explanation": "Dashboards visually summarize status, metrics, and trends."
+      },
+      {
+        "q": "An investigator needs to inspect the exact DNS queries and HTTP request details exchanged over the network. Which source is best?",
+        "choices": [
+          "Packet capture",
+          "Dashboard",
+          "Automated report",
+          "Vulnerability scan"
+        ],
+        "answer": 0,
+        "explanation": "Packet captures provide detailed packet-level evidence and may include traffic contents."
+      },
+      {
+        "q": "An analyst only has NetFlow-style metadata but needs to inspect the actual protocol payload. What additional source is required?",
+        "choices": [
+          "Packet capture",
+          "Dashboard",
+          "Automated report",
+          "Vulnerability scan"
+        ],
+        "answer": 0,
+        "explanation": "Flow metadata does not contain packet payloads; a packet capture is needed for full packet inspection."
+      }
+    ]
+  }
+}
