@@ -1,0 +1,313 @@
+{
+  "id": "27.02",
+  "chapter": 27,
+  "sub": 2,
+  "title": "External Audits and Assessments",
+  "chapter_name": "Audits & Assessments",
+  "slides": [
+    {
+      "n": 1,
+      "title": "External Audits and Assessments",
+      "instructional": false,
+      "teach": "",
+      "points": [
+        "External reviews provide greater independence and may be driven by regulation, formal examinations, customer requirements, or an independent third party."
+      ],
+      "defs": [],
+      "raw": ""
+    },
+    {
+      "n": 2,
+      "title": "External Regulatory Audit",
+      "instructional": true,
+      "teach": "Review performed because of regulatory requirements or by a regulator.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Review performed because of regulatory requirements or by a regulator.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Review performed because of regulatory requirements or by a regulator."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Financial regulator audit, Healthcare compliance audit"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how audits and assessments are performed, how independent they are, or how penetration tests are scoped and executed.",
+        "example": "Financial regulator audit",
+        "exam": "REGULATOR CHECKS",
+        "check_q": "What is the key exam clue for External Regulatory Audit?",
+        "check_a": "REGULATOR CHECKS"
+      }
+    },
+    {
+      "n": 3,
+      "title": "Examination",
+      "instructional": true,
+      "teach": "Formal external review or inspection, often performed by a regulatory or oversight body.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Formal external review or inspection, often performed by a regulatory or oversight body.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Formal external review or inspection, often performed by a regulatory or oversight body."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Regulatory examination, Formal supervisory review"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how audits and assessments are performed, how independent they are, or how penetration tests are scoped and executed.",
+        "example": "Regulatory examination",
+        "exam": "FORMAL INSPECTION",
+        "check_q": "What is the key exam clue for Examination?",
+        "check_a": "FORMAL INSPECTION"
+      }
+    },
+    {
+      "n": 4,
+      "title": "External Assessment",
+      "instructional": true,
+      "teach": "Evaluation performed by an outside party to measure controls, risk, compliance, or security posture.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Evaluation performed by an outside party to measure controls, risk, compliance, or security posture.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Evaluation performed by an outside party to measure controls, risk, compliance, or security posture."
+          },
+          {
+            "term": "Examples",
+            "explanation": "External security assessment, Compliance assessment"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how audits and assessments are performed, how independent they are, or how penetration tests are scoped and executed.",
+        "example": "External security assessment",
+        "exam": "OUTSIDE EVALUATION",
+        "check_q": "What is the key exam clue for External Assessment?",
+        "check_a": "OUTSIDE EVALUATION"
+      }
+    },
+    {
+      "n": 5,
+      "title": "Independent Third-Party Audit",
+      "instructional": true,
+      "teach": "Audit conducted by an organization with no operational responsibility for the system being reviewed.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Audit conducted by an organization with no operational responsibility for the system being reviewed.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Audit conducted by an organization with no operational responsibility for the system being reviewed."
+          },
+          {
+            "term": "Examples",
+            "explanation": "SOC audit, Independent assurance review"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how audits and assessments are performed, how independent they are, or how penetration tests are scoped and executed.",
+        "example": "SOC audit",
+        "exam": "INDEPENDENT OUTSIDE AUDIT",
+        "check_q": "What is the key exam clue for Independent Third-Party Audit?",
+        "check_a": "INDEPENDENT OUTSIDE AUDIT"
+      }
+    }
+  ],
+  "slide_count": 5,
+  "instructional_count": 4,
+  "concepts": [
+    "External Regulatory Audit",
+    "Examination",
+    "External Assessment",
+    "Independent Third-Party Audit"
+  ],
+  "source_filename": "27-02.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 5.5",
+      "title": "External Audits and Assessments",
+      "intro": "External reviews provide greater independence and may be driven by regulation, formal examinations, customer requirements, or an independent third party."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "External Audits and Assessments",
+        "prompt": "Identify who is performing the review, how independent it is, and—for penetration testing—how much knowledge and interaction the tester has.",
+        "badge": "5.5",
+        "cards": [
+          {
+            "name": "External Regulatory Audit",
+            "definition": "Review performed because of regulatory requirements or by a regulator.",
+            "examples": [
+              "Financial regulator audit",
+              "Healthcare compliance audit"
+            ],
+            "memory": "REGULATOR CHECKS"
+          },
+          {
+            "name": "Examination",
+            "definition": "Formal external review or inspection, often performed by a regulatory or oversight body.",
+            "examples": [
+              "Regulatory examination",
+              "Formal supervisory review"
+            ],
+            "memory": "FORMAL INSPECTION"
+          },
+          {
+            "name": "External Assessment",
+            "definition": "Evaluation performed by an outside party to measure controls, risk, compliance, or security posture.",
+            "examples": [
+              "External security assessment",
+              "Compliance assessment"
+            ],
+            "memory": "OUTSIDE EVALUATION"
+          },
+          {
+            "name": "Independent Third-Party Audit",
+            "definition": "Audit conducted by an organization with no operational responsibility for the system being reviewed.",
+            "examples": [
+              "SOC audit",
+              "Independent assurance review"
+            ],
+            "memory": "INDEPENDENT OUTSIDE AUDIT"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "External Audits and Assessments comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Regulatory audit",
+            "Regulator-driven review",
+            "Required by authority"
+          ],
+          [
+            "Examination",
+            "Formal inspection",
+            "Supervisory review"
+          ],
+          [
+            "External assessment",
+            "Outside evaluation",
+            "Third-party review"
+          ],
+          [
+            "Independent third-party audit",
+            "Independent assurance",
+            "No operational ownership"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "External Audits and Assessments exam shortcuts",
+        "items": [
+          [
+            "Regulator performs or requires the review → REGULATORY AUDIT",
+            "The driver is a regulatory authority.",
+            "Example: A banking regulator audits cybersecurity controls."
+          ],
+          [
+            "Formal supervisory inspection → EXAMINATION",
+            "Examinations are structured external reviews by oversight bodies.",
+            "Example: Regulator conducts an examination of security practices."
+          ],
+          [
+            "Outside consultant evaluates security posture → EXTERNAL ASSESSMENT",
+            "An external party performs the evaluation.",
+            "Example: Consultancy reviews control maturity."
+          ],
+          [
+            "Need the strongest independence → INDEPENDENT THIRD-PARTY AUDIT",
+            "The auditor should have no operational responsibility for the environment.",
+            "Example: Independent firm performs an assurance audit."
+          ]
+        ],
+        "example": "For audit questions, focus on who performs the review. For penetration testing, focus on the tester's knowledge level and whether reconnaissance touches the target."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A banking regulator requires and performs a cybersecurity review. What type of audit is this?",
+        "choices": [
+          "External regulatory audit",
+          "Internal audit",
+          "Self-assessment",
+          "Integrated penetration test"
+        ],
+        "answer": 0,
+        "explanation": "A regulatory audit is driven by or performed by a regulatory authority."
+      },
+      {
+        "q": "A supervisory agency conducts a formal inspection of an organization's controls and records. Which term best fits?",
+        "choices": [
+          "Examination",
+          "Self-assessment",
+          "Attestation",
+          "Active reconnaissance"
+        ],
+        "answer": 0,
+        "explanation": "An examination is a formal external review or inspection by an oversight body."
+      },
+      {
+        "q": "An outside consulting firm evaluates an organization's security maturity but is not acting as a regulator. What is this?",
+        "choices": [
+          "External assessment",
+          "Internal audit",
+          "Regulatory audit",
+          "Self-assessment"
+        ],
+        "answer": 0,
+        "explanation": "An external assessment is performed by an outside party to evaluate security or compliance."
+      },
+      {
+        "q": "A completely independent firm with no operational responsibility performs an assurance audit. Which type is this?",
+        "choices": [
+          "Independent third-party audit",
+          "Internal audit",
+          "Self-assessment",
+          "Audit committee review"
+        ],
+        "answer": 0,
+        "explanation": "Independent third-party audits provide assurance from an outside organization with no operational role."
+      }
+    ]
+  }
+}

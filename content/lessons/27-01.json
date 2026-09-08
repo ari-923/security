@@ -1,0 +1,313 @@
+{
+  "id": "27.01",
+  "chapter": 27,
+  "sub": 1,
+  "title": "Attestation, Internal Audits, and Self-Assessments",
+  "chapter_name": "Audits & Assessments",
+  "slides": [
+    {
+      "n": 1,
+      "title": "Attestation, Internal Audits, and Self-Assessments",
+      "instructional": false,
+      "teach": "",
+      "points": [
+        "Audits and assessments can be performed internally, externally, or through formal attestation. Security+ expects you to recognize who performs the review and what level of independence or assurance it provides."
+      ],
+      "defs": [],
+      "raw": ""
+    },
+    {
+      "n": 2,
+      "title": "Attestation",
+      "instructional": true,
+      "teach": "Formal statement or certification that controls, requirements, or assertions are accurate or have been reviewed.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Formal statement or certification that controls, requirements, or assertions are accurate or have been reviewed.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Formal statement or certification that controls, requirements, or assertions are accurate or have been reviewed."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Management attestation, Auditor attestation"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how audits and assessments are performed, how independent they are, or how penetration tests are scoped and executed.",
+        "example": "Management attestation",
+        "exam": "FORMALLY CONFIRM",
+        "check_q": "What is the key exam clue for Attestation?",
+        "check_a": "FORMALLY CONFIRM"
+      }
+    },
+    {
+      "n": 3,
+      "title": "Internal Compliance Audit",
+      "instructional": true,
+      "teach": "Audit performed by personnel within the organization to evaluate compliance with policies, standards, or requirements.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Audit performed by personnel within the organization to evaluate compliance with policies, standards, or requirements.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Audit performed by personnel within the organization to evaluate compliance with policies, standards, or requirements."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Internal compliance review, Policy audit"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how audits and assessments are performed, how independent they are, or how penetration tests are scoped and executed.",
+        "example": "Internal compliance review",
+        "exam": "WE AUDIT OURSELVES",
+        "check_q": "What is the key exam clue for Internal Compliance Audit?",
+        "check_a": "WE AUDIT OURSELVES"
+      }
+    },
+    {
+      "n": 4,
+      "title": "Audit Committee",
+      "instructional": true,
+      "teach": "Governance group that oversees audit activities, findings, independence, and follow-up actions.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Governance group that oversees audit activities, findings, independence, and follow-up actions.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Governance group that oversees audit activities, findings, independence, and follow-up actions."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Board audit committee, Review audit findings"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how audits and assessments are performed, how independent they are, or how penetration tests are scoped and executed.",
+        "example": "Board audit committee",
+        "exam": "OVERSEES AUDITS",
+        "check_q": "What is the key exam clue for Audit Committee?",
+        "check_a": "OVERSEES AUDITS"
+      }
+    },
+    {
+      "n": 5,
+      "title": "Self-Assessment",
+      "instructional": true,
+      "teach": "Organization or system owner evaluates its own controls and compliance posture.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Organization or system owner evaluates its own controls and compliance posture.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Organization or system owner evaluates its own controls and compliance posture."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Control checklist, Security self-review"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how audits and assessments are performed, how independent they are, or how penetration tests are scoped and executed.",
+        "example": "Control checklist",
+        "exam": "CHECK YOURSELF",
+        "check_q": "What is the key exam clue for Self-Assessment?",
+        "check_a": "CHECK YOURSELF"
+      }
+    }
+  ],
+  "slide_count": 5,
+  "instructional_count": 4,
+  "concepts": [
+    "Attestation",
+    "Internal Compliance Audit",
+    "Audit Committee",
+    "Self-Assessment"
+  ],
+  "source_filename": "27-01.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 5.5",
+      "title": "Attestation, Internal Audits, and Self-Assessments",
+      "intro": "Audits and assessments can be performed internally, externally, or through formal attestation. Security+ expects you to recognize who performs the review and what level of independence or assurance it provides."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Attestation, Internal Audits, and Self-Assessments",
+        "prompt": "Identify who is performing the review, how independent it is, and—for penetration testing—how much knowledge and interaction the tester has.",
+        "badge": "5.5",
+        "cards": [
+          {
+            "name": "Attestation",
+            "definition": "Formal statement or certification that controls, requirements, or assertions are accurate or have been reviewed.",
+            "examples": [
+              "Management attestation",
+              "Auditor attestation"
+            ],
+            "memory": "FORMALLY CONFIRM"
+          },
+          {
+            "name": "Internal Compliance Audit",
+            "definition": "Audit performed by personnel within the organization to evaluate compliance with policies, standards, or requirements.",
+            "examples": [
+              "Internal compliance review",
+              "Policy audit"
+            ],
+            "memory": "WE AUDIT OURSELVES"
+          },
+          {
+            "name": "Audit Committee",
+            "definition": "Governance group that oversees audit activities, findings, independence, and follow-up actions.",
+            "examples": [
+              "Board audit committee",
+              "Review audit findings"
+            ],
+            "memory": "OVERSEES AUDITS"
+          },
+          {
+            "name": "Self-Assessment",
+            "definition": "Organization or system owner evaluates its own controls and compliance posture.",
+            "examples": [
+              "Control checklist",
+              "Security self-review"
+            ],
+            "memory": "CHECK YOURSELF"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Attestation, Internal Audits, and Self-Assessments comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Attestation",
+            "Formal certification",
+            "Confirm accuracy/compliance"
+          ],
+          [
+            "Internal audit",
+            "Internal independent review",
+            "Organization reviews itself"
+          ],
+          [
+            "Audit committee",
+            "Oversight of audit process",
+            "Governance + follow-up"
+          ],
+          [
+            "Self-assessment",
+            "Control owner checks own posture",
+            "Lowest independence"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Attestation, Internal Audits, and Self-Assessments exam shortcuts",
+        "items": [
+          [
+            "Formal statement that controls are operating → ATTESTATION",
+            "Attestation is a formal confirmation or certification.",
+            "Example: Management signs a compliance attestation."
+          ],
+          [
+            "Organization's own audit team performs the review → INTERNAL AUDIT",
+            "The work is performed from inside the organization.",
+            "Example: Internal audit tests compliance with security policy."
+          ],
+          [
+            "Question asks who oversees audit findings and independence → AUDIT COMMITTEE",
+            "The committee provides governance over audit activities.",
+            "Example: Board committee reviews unresolved audit findings."
+          ],
+          [
+            "Team evaluates its own controls → SELF-ASSESSMENT",
+            "The same organization or owner performs the review.",
+            "Example: System owner completes a control checklist."
+          ]
+        ],
+        "example": "For audit questions, focus on who performs the review. For penetration testing, focus on the tester's knowledge level and whether reconnaissance touches the target."
+      }
+    ],
+    "questions": [
+      {
+        "q": "Management signs a formal statement certifying that required controls are operating as described. Which concept is this?",
+        "choices": [
+          "Attestation",
+          "Self-assessment",
+          "External audit",
+          "Reconnaissance"
+        ],
+        "answer": 0,
+        "explanation": "Attestation is a formal statement or certification about controls or compliance."
+      },
+      {
+        "q": "The organization's internal audit department reviews compliance with security policies. What type of audit is this?",
+        "choices": [
+          "Internal audit",
+          "Independent third-party audit",
+          "Regulatory examination",
+          "External assessment"
+        ],
+        "answer": 0,
+        "explanation": "An internal audit is performed by personnel within the organization."
+      },
+      {
+        "q": "A board-level group reviews unresolved audit findings and auditor independence. What is this group?",
+        "choices": [
+          "Audit committee",
+          "Risk owner",
+          "Processor",
+          "Penetration testing team"
+        ],
+        "answer": 0,
+        "explanation": "An audit committee oversees audit activities, findings, independence, and follow-up."
+      },
+      {
+        "q": "A system owner completes a checklist evaluating the system's own controls. Which assessment is this?",
+        "choices": [
+          "Self-assessment",
+          "Independent audit",
+          "Regulatory audit",
+          "Attestation only"
+        ],
+        "answer": 0,
+        "explanation": "A self-assessment is performed by the organization or owner evaluating its own controls."
+      }
+    ]
+  }
+}

@@ -1,0 +1,615 @@
+{
+  "id": "27.03",
+  "chapter": 27,
+  "sub": 3,
+  "title": "Penetration Testing Approaches and Reconnaissance",
+  "chapter_name": "Audits & Assessments",
+  "slides": [
+    {
+      "n": 1,
+      "title": "Penetration Testing Approaches and Reconnaissance",
+      "instructional": false,
+      "teach": "",
+      "points": [
+        "Penetration testing actively evaluates defenses by simulating attacks. The exam tests both the style of testing and how much information the tester receives about the environment."
+      ],
+      "defs": [],
+      "raw": ""
+    },
+    {
+      "n": 2,
+      "title": "Physical Penetration Testing",
+      "instructional": true,
+      "teach": "Tests physical security controls and the ability to gain unauthorized physical access.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Tests physical security controls and the ability to gain unauthorized physical access.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Tests physical security controls and the ability to gain unauthorized physical access."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Tailgating test, Badge bypass attempt"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how audits and assessments are performed, how independent they are, or how penetration tests are scoped and executed.",
+        "example": "Tailgating test",
+        "exam": "TEST PHYSICAL ACCESS",
+        "check_q": "What is the key exam clue for Physical Penetration Testing?",
+        "check_a": "TEST PHYSICAL ACCESS"
+      }
+    },
+    {
+      "n": 3,
+      "title": "Offensive Penetration Testing",
+      "instructional": true,
+      "teach": "Focuses on attacker techniques to identify and exploit weaknesses.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Focuses on attacker techniques to identify and exploit weaknesses.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Focuses on attacker techniques to identify and exploit weaknesses."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Red-team attack, Exploit vulnerability"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how audits and assessments are performed, how independent they are, or how penetration tests are scoped and executed.",
+        "example": "Red-team attack",
+        "exam": "ATTACKER MINDSET",
+        "check_q": "What is the key exam clue for Offensive Penetration Testing?",
+        "check_a": "ATTACKER MINDSET"
+      }
+    },
+    {
+      "n": 4,
+      "title": "Defensive Penetration Testing",
+      "instructional": true,
+      "teach": "Focuses on validating defensive controls, detection, and response capabilities.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Focuses on validating defensive controls, detection, and response capabilities.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Focuses on validating defensive controls, detection, and response capabilities."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Blue-team validation, Detection tuning"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how audits and assessments are performed, how independent they are, or how penetration tests are scoped and executed.",
+        "example": "Blue-team validation",
+        "exam": "DEFENDER MINDSET",
+        "check_q": "What is the key exam clue for Defensive Penetration Testing?",
+        "check_a": "DEFENDER MINDSET"
+      }
+    },
+    {
+      "n": 5,
+      "title": "Integrated Penetration Testing",
+      "instructional": true,
+      "teach": "Combines offensive and defensive perspectives so attack and defense teams work together.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Combines offensive and defensive perspectives so attack and defense teams work together.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Combines offensive and defensive perspectives so attack and defense teams work together."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Purple team, Collaborative attack/defense"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how audits and assessments are performed, how independent they are, or how penetration tests are scoped and executed.",
+        "example": "Purple team",
+        "exam": "ATTACK + DEFEND",
+        "check_q": "What is the key exam clue for Integrated Penetration Testing?",
+        "check_a": "ATTACK + DEFEND"
+      }
+    },
+    {
+      "n": 6,
+      "title": "Known Environment",
+      "instructional": true,
+      "teach": "Tester receives extensive knowledge about the environment before testing.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Tester receives extensive knowledge about the environment before testing.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Tester receives extensive knowledge about the environment before testing."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Architecture diagrams, Credentials, Source code"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how audits and assessments are performed, how independent they are, or how penetration tests are scoped and executed.",
+        "example": "Architecture diagrams",
+        "exam": "WHITE BOX",
+        "check_q": "What is the key exam clue for Known Environment?",
+        "check_a": "WHITE BOX"
+      }
+    },
+    {
+      "n": 7,
+      "title": "Partially Known Environment",
+      "instructional": true,
+      "teach": "Tester receives limited information about the environment.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Tester receives limited information about the environment.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Tester receives limited information about the environment."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Some credentials, Partial network details"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how audits and assessments are performed, how independent they are, or how penetration tests are scoped and executed.",
+        "example": "Some credentials",
+        "exam": "GRAY BOX",
+        "check_q": "What is the key exam clue for Partially Known Environment?",
+        "check_a": "GRAY BOX"
+      }
+    },
+    {
+      "n": 8,
+      "title": "Unknown Environment",
+      "instructional": true,
+      "teach": "Tester receives little or no prior knowledge about the target environment.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Tester receives little or no prior knowledge about the target environment.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Tester receives little or no prior knowledge about the target environment."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Public information only"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how audits and assessments are performed, how independent they are, or how penetration tests are scoped and executed.",
+        "example": "Public information only",
+        "exam": "BLACK BOX",
+        "check_q": "What is the key exam clue for Unknown Environment?",
+        "check_a": "BLACK BOX"
+      }
+    },
+    {
+      "n": 9,
+      "title": "Passive Reconnaissance",
+      "instructional": true,
+      "teach": "Collects information without directly interacting with the target systems.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Collects information without directly interacting with the target systems.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Collects information without directly interacting with the target systems."
+          },
+          {
+            "term": "Examples",
+            "explanation": "OSINT, Public DNS records, Company website"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how audits and assessments are performed, how independent they are, or how penetration tests are scoped and executed.",
+        "example": "OSINT",
+        "exam": "OBSERVE WITHOUT TOUCHING",
+        "check_q": "What is the key exam clue for Passive Reconnaissance?",
+        "check_a": "OBSERVE WITHOUT TOUCHING"
+      }
+    },
+    {
+      "n": 10,
+      "title": "Active Reconnaissance",
+      "instructional": true,
+      "teach": "Directly interacts with target systems to gather information.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Directly interacts with target systems to gather information.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Directly interacts with target systems to gather information."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Port scan, Service enumeration, Banner grabbing"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how audits and assessments are performed, how independent they are, or how penetration tests are scoped and executed.",
+        "example": "Port scan",
+        "exam": "TOUCH THE TARGET",
+        "check_q": "What is the key exam clue for Active Reconnaissance?",
+        "check_a": "TOUCH THE TARGET"
+      }
+    }
+  ],
+  "slide_count": 10,
+  "instructional_count": 9,
+  "concepts": [
+    "Physical Penetration Testing",
+    "Offensive Penetration Testing",
+    "Defensive Penetration Testing",
+    "Integrated Penetration Testing",
+    "Known Environment",
+    "Partially Known Environment",
+    "Unknown Environment",
+    "Passive Reconnaissance",
+    "Active Reconnaissance"
+  ],
+  "source_filename": "27-03.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 5.5",
+      "title": "Penetration Testing Approaches and Reconnaissance",
+      "intro": "Penetration testing actively evaluates defenses by simulating attacks. The exam tests both the style of testing and how much information the tester receives about the environment."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Penetration Testing Approaches and Reconnaissance",
+        "prompt": "Identify who is performing the review, how independent it is, and—for penetration testing—how much knowledge and interaction the tester has.",
+        "badge": "5.5",
+        "cards": [
+          {
+            "name": "Physical Penetration Testing",
+            "definition": "Tests physical security controls and the ability to gain unauthorized physical access.",
+            "examples": [
+              "Tailgating test",
+              "Badge bypass attempt"
+            ],
+            "memory": "TEST PHYSICAL ACCESS"
+          },
+          {
+            "name": "Offensive Penetration Testing",
+            "definition": "Focuses on attacker techniques to identify and exploit weaknesses.",
+            "examples": [
+              "Red-team attack",
+              "Exploit vulnerability"
+            ],
+            "memory": "ATTACKER MINDSET"
+          },
+          {
+            "name": "Defensive Penetration Testing",
+            "definition": "Focuses on validating defensive controls, detection, and response capabilities.",
+            "examples": [
+              "Blue-team validation",
+              "Detection tuning"
+            ],
+            "memory": "DEFENDER MINDSET"
+          },
+          {
+            "name": "Integrated Penetration Testing",
+            "definition": "Combines offensive and defensive perspectives so attack and defense teams work together.",
+            "examples": [
+              "Purple team",
+              "Collaborative attack/defense"
+            ],
+            "memory": "ATTACK + DEFEND"
+          },
+          {
+            "name": "Known Environment",
+            "definition": "Tester receives extensive knowledge about the environment before testing.",
+            "examples": [
+              "Architecture diagrams",
+              "Credentials",
+              "Source code"
+            ],
+            "memory": "WHITE BOX"
+          },
+          {
+            "name": "Partially Known Environment",
+            "definition": "Tester receives limited information about the environment.",
+            "examples": [
+              "Some credentials",
+              "Partial network details"
+            ],
+            "memory": "GRAY BOX"
+          },
+          {
+            "name": "Unknown Environment",
+            "definition": "Tester receives little or no prior knowledge about the target environment.",
+            "examples": [
+              "Public information only"
+            ],
+            "memory": "BLACK BOX"
+          },
+          {
+            "name": "Passive Reconnaissance",
+            "definition": "Collects information without directly interacting with the target systems.",
+            "examples": [
+              "OSINT",
+              "Public DNS records",
+              "Company website"
+            ],
+            "memory": "OBSERVE WITHOUT TOUCHING"
+          },
+          {
+            "name": "Active Reconnaissance",
+            "definition": "Directly interacts with target systems to gather information.",
+            "examples": [
+              "Port scan",
+              "Service enumeration",
+              "Banner grabbing"
+            ],
+            "memory": "TOUCH THE TARGET"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Penetration Testing Approaches and Reconnaissance comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Physical",
+            "Test physical controls",
+            "Buildings/badges"
+          ],
+          [
+            "Offensive",
+            "Simulate attacker",
+            "Exploit weaknesses"
+          ],
+          [
+            "Defensive",
+            "Validate defenses",
+            "Detection/response"
+          ],
+          [
+            "Integrated",
+            "Offense + defense together",
+            "Purple team"
+          ],
+          [
+            "Known environment",
+            "Extensive prior knowledge",
+            "White box"
+          ],
+          [
+            "Partially known",
+            "Limited prior knowledge",
+            "Gray box"
+          ],
+          [
+            "Unknown environment",
+            "Little/no prior knowledge",
+            "Black box"
+          ],
+          [
+            "Passive recon",
+            "No direct target interaction",
+            "OSINT"
+          ],
+          [
+            "Active recon",
+            "Direct target interaction",
+            "Scanning/enumeration"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Penetration Testing Approaches and Reconnaissance exam shortcuts",
+        "items": [
+          [
+            "Tester has diagrams, credentials, and source code → KNOWN ENVIRONMENT",
+            "This is white-box style testing.",
+            "Example: Tester receives full architecture details."
+          ],
+          [
+            "Tester gets some internal information → PARTIALLY KNOWN",
+            "This is gray-box style testing.",
+            "Example: Tester receives one user account and partial network details."
+          ],
+          [
+            "Tester starts with only public information → UNKNOWN ENVIRONMENT",
+            "This is black-box style testing.",
+            "Example: Tester knows only the company's domain name."
+          ],
+          [
+            "Research using public sources only → PASSIVE RECON",
+            "Passive recon avoids direct interaction with target systems.",
+            "Example: Review public DNS and social media."
+          ],
+          [
+            "Port scanning or enumeration → ACTIVE RECON",
+            "Active recon directly touches the target.",
+            "Example: Scan exposed services."
+          ],
+          [
+            "Attack and defense teams collaborate during testing → INTEGRATED",
+            "Integrated testing combines offensive and defensive perspectives.",
+            "Example: Red and blue teams work together as a purple team."
+          ],
+          [
+            "Attempt to bypass badge controls → PHYSICAL PEN TEST",
+            "The target is physical access rather than only digital systems.",
+            "Example: Tester attempts tailgating into a secured area."
+          ]
+        ],
+        "example": "For audit questions, focus on who performs the review. For penetration testing, focus on the tester's knowledge level and whether reconnaissance touches the target."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A tester is given architecture diagrams, credentials, and source code before the assessment. What type of environment is this?",
+        "choices": [
+          "Known environment",
+          "Partially known environment",
+          "Unknown environment",
+          "Passive environment"
+        ],
+        "answer": 0,
+        "explanation": "A known environment gives the tester extensive prior knowledge, similar to white-box testing."
+      },
+      {
+        "q": "A tester receives one user account and partial network information but not full architecture details. What type of environment is this?",
+        "choices": [
+          "Partially known environment",
+          "Known environment",
+          "Unknown environment",
+          "Physical test"
+        ],
+        "answer": 0,
+        "explanation": "A partially known environment provides limited prior knowledge, similar to gray-box testing."
+      },
+      {
+        "q": "A tester begins with only the organization's public domain name and no internal information. What type of environment is this?",
+        "choices": [
+          "Unknown environment",
+          "Known environment",
+          "Partially known environment",
+          "Defensive test"
+        ],
+        "answer": 0,
+        "explanation": "An unknown environment provides little or no prior knowledge, similar to black-box testing."
+      },
+      {
+        "q": "A tester gathers employee names, public DNS records, and social-media information without interacting with target systems. Which reconnaissance type is this?",
+        "choices": [
+          "Passive reconnaissance",
+          "Active reconnaissance",
+          "Integrated testing",
+          "Defensive testing"
+        ],
+        "answer": 0,
+        "explanation": "Passive reconnaissance uses public or indirect sources without touching the target systems."
+      },
+      {
+        "q": "A tester performs a port scan and service enumeration against target systems. Which reconnaissance type is this?",
+        "choices": [
+          "Active reconnaissance",
+          "Passive reconnaissance",
+          "Self-assessment",
+          "Attestation"
+        ],
+        "answer": 0,
+        "explanation": "Active reconnaissance directly interacts with the target."
+      },
+      {
+        "q": "Red-team and blue-team members work together during an assessment to improve attack detection and response. Which approach is this?",
+        "choices": [
+          "Integrated penetration testing",
+          "Offensive only",
+          "Defensive only",
+          "Physical only"
+        ],
+        "answer": 0,
+        "explanation": "Integrated testing combines offensive and defensive perspectives, often called purple teaming."
+      },
+      {
+        "q": "A tester attempts to tailgate into a secure facility and bypass badge controls. Which type of penetration testing is this?",
+        "choices": [
+          "Physical",
+          "Offensive network",
+          "Defensive",
+          "Unknown-environment only"
+        ],
+        "answer": 0,
+        "explanation": "Physical penetration testing evaluates physical access controls."
+      },
+      {
+        "q": "A penetration test focuses on emulating attacker behavior to exploit technical weaknesses. Which approach is this?",
+        "choices": [
+          "Offensive",
+          "Defensive",
+          "Integrated",
+          "Attestation"
+        ],
+        "answer": 0,
+        "explanation": "Offensive penetration testing uses attacker techniques to identify and exploit weaknesses."
+      },
+      {
+        "q": "A test is primarily designed to validate that monitoring, detection, and incident response controls work correctly. Which approach is this?",
+        "choices": [
+          "Defensive",
+          "Offensive",
+          "Physical",
+          "Unknown environment"
+        ],
+        "answer": 0,
+        "explanation": "Defensive penetration testing focuses on validating defensive controls and response capabilities."
+      }
+    ]
+  }
+}
