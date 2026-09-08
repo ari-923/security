@@ -1,0 +1,603 @@
+{
+  "id": "20.01",
+  "chapter": 20,
+  "sub": 1,
+  "title": "Automation and Scripting Use Cases",
+  "chapter_name": "Automation & Orchestration",
+  "slides": [
+    {
+      "n": 1,
+      "title": "Automation and Scripting Use Cases",
+      "instructional": false,
+      "teach": "",
+      "points": [
+        "Automation replaces repetitive manual security work with repeatable actions. On Security+, focus on what process is being automated and why that improves secure operations."
+      ],
+      "defs": [],
+      "raw": ""
+    },
+    {
+      "n": 2,
+      "title": "User Provisioning",
+      "instructional": true,
+      "teach": "Automates creation, configuration, and assignment of user accounts and access.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Automates creation, configuration, and assignment of user accounts and access.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Automates creation, configuration, and assignment of user accounts and access."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Create new employee account, Assign standard permissions"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how automation and orchestration improve or complicate secure operations.",
+        "example": "Create new employee account",
+        "exam": "CREATE USERS AUTOMATICALLY",
+        "check_q": "What is the key exam clue for User Provisioning?",
+        "check_a": "CREATE USERS AUTOMATICALLY"
+      }
+    },
+    {
+      "n": 3,
+      "title": "Resource Provisioning",
+      "instructional": true,
+      "teach": "Automates deployment of infrastructure, systems, cloud resources, or services.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Automates deployment of infrastructure, systems, cloud resources, or services.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Automates deployment of infrastructure, systems, cloud resources, or services."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Create VM, Deploy cloud storage, Build network resource"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how automation and orchestration improve or complicate secure operations.",
+        "example": "Create VM",
+        "exam": "CREATE RESOURCES AUTOMATICALLY",
+        "check_q": "What is the key exam clue for Resource Provisioning?",
+        "check_a": "CREATE RESOURCES AUTOMATICALLY"
+      }
+    },
+    {
+      "n": 4,
+      "title": "Guard Rails",
+      "instructional": true,
+      "teach": "Automated restrictions that prevent insecure or noncompliant configurations from being deployed.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Automated restrictions that prevent insecure or noncompliant configurations from being deployed.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Automated restrictions that prevent insecure or noncompliant configurations from being deployed."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Block public cloud storage, Prevent insecure settings"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how automation and orchestration improve or complicate secure operations.",
+        "example": "Block public cloud storage",
+        "exam": "STOP BAD CONFIGS",
+        "check_q": "What is the key exam clue for Guard Rails?",
+        "check_a": "STOP BAD CONFIGS"
+      }
+    },
+    {
+      "n": 5,
+      "title": "Security Groups",
+      "instructional": true,
+      "teach": "Automates creation or modification of security-group membership or network access rules.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Automates creation or modification of security-group membership or network access rules.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Automates creation or modification of security-group membership or network access rules."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Add user to security group, Apply cloud security group"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how automation and orchestration improve or complicate secure operations.",
+        "example": "Add user to security group",
+        "exam": "AUTOMATE ACCESS GROUPS",
+        "check_q": "What is the key exam clue for Security Groups?",
+        "check_a": "AUTOMATE ACCESS GROUPS"
+      }
+    },
+    {
+      "n": 6,
+      "title": "Ticket Creation",
+      "instructional": true,
+      "teach": "Automatically creates service or incident tickets when security events or conditions occur.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Automatically creates service or incident tickets when security events or conditions occur.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Automatically creates service or incident tickets when security events or conditions occur."
+          },
+          {
+            "term": "Examples",
+            "explanation": "SIEM creates incident ticket, Scanner opens remediation ticket"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how automation and orchestration improve or complicate secure operations.",
+        "example": "SIEM creates incident ticket",
+        "exam": "EVENT → TICKET",
+        "check_q": "What is the key exam clue for Ticket Creation?",
+        "check_a": "EVENT → TICKET"
+      }
+    },
+    {
+      "n": 7,
+      "title": "Escalation",
+      "instructional": true,
+      "teach": "Automatically routes or raises an issue when severity, timing, or conditions require additional attention.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Automatically routes or raises an issue when severity, timing, or conditions require additional attention.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Automatically routes or raises an issue when severity, timing, or conditions require additional attention."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Critical alert to senior analyst, SLA breach escalation"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how automation and orchestration improve or complicate secure operations.",
+        "example": "Critical alert to senior analyst",
+        "exam": "SEND IT UP",
+        "check_q": "What is the key exam clue for Escalation?",
+        "check_a": "SEND IT UP"
+      }
+    },
+    {
+      "n": 8,
+      "title": "Enabling / Disabling Services and Access",
+      "instructional": true,
+      "teach": "Automatically activates or removes services, accounts, privileges, or connectivity based on policy or events.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Automatically activates or removes services, accounts, privileges, or connectivity based on policy or events.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Automatically activates or removes services, accounts, privileges, or connectivity based on policy or events."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Disable compromised account, Enable approved service"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how automation and orchestration improve or complicate secure operations.",
+        "example": "Disable compromised account",
+        "exam": "TURN ACCESS ON/OFF",
+        "check_q": "What is the key exam clue for Enabling / Disabling Services and Access?",
+        "check_a": "TURN ACCESS ON/OFF"
+      }
+    },
+    {
+      "n": 9,
+      "title": "Continuous Integration and Testing",
+      "instructional": true,
+      "teach": "Automatically builds, tests, and checks software or configuration changes as part of a development pipeline.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Automatically builds, tests, and checks software or configuration changes as part of a development pipeline.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Automatically builds, tests, and checks software or configuration changes as part of a development pipeline."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Security test in CI, Automated configuration test"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how automation and orchestration improve or complicate secure operations.",
+        "example": "Security test in CI",
+        "exam": "TEST EVERY CHANGE",
+        "check_q": "What is the key exam clue for Continuous Integration and Testing?",
+        "check_a": "TEST EVERY CHANGE"
+      }
+    },
+    {
+      "n": 10,
+      "title": "Integrations and APIs",
+      "instructional": true,
+      "teach": "Connect tools so data and actions can move automatically between systems.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Connect tools so data and actions can move automatically between systems.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Connect tools so data and actions can move automatically between systems."
+          },
+          {
+            "term": "Examples",
+            "explanation": "SIEM calls ticketing API, SOAR queries threat-intel API"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how automation and orchestration improve or complicate secure operations.",
+        "example": "SIEM calls ticketing API",
+        "exam": "TOOLS TALK TO TOOLS",
+        "check_q": "What is the key exam clue for Integrations and APIs?",
+        "check_a": "TOOLS TALK TO TOOLS"
+      }
+    }
+  ],
+  "slide_count": 10,
+  "instructional_count": 9,
+  "concepts": [
+    "User Provisioning",
+    "Resource Provisioning",
+    "Guard Rails",
+    "Security Groups",
+    "Ticket Creation",
+    "Escalation",
+    "Enabling / Disabling Services and Access",
+    "Continuous Integration and Testing",
+    "Integrations and APIs"
+  ],
+  "source_filename": "20-01.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 4.7",
+      "title": "Automation and Scripting Use Cases",
+      "intro": "Automation replaces repetitive manual security work with repeatable actions. On Security+, focus on what process is being automated and why that improves secure operations."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Automation and Scripting Use Cases",
+        "prompt": "Identify what is being automated, the benefit it provides, and the operational risk it may introduce.",
+        "badge": "4.7",
+        "cards": [
+          {
+            "name": "User Provisioning",
+            "definition": "Automates creation, configuration, and assignment of user accounts and access.",
+            "examples": [
+              "Create new employee account",
+              "Assign standard permissions"
+            ],
+            "memory": "CREATE USERS AUTOMATICALLY"
+          },
+          {
+            "name": "Resource Provisioning",
+            "definition": "Automates deployment of infrastructure, systems, cloud resources, or services.",
+            "examples": [
+              "Create VM",
+              "Deploy cloud storage",
+              "Build network resource"
+            ],
+            "memory": "CREATE RESOURCES AUTOMATICALLY"
+          },
+          {
+            "name": "Guard Rails",
+            "definition": "Automated restrictions that prevent insecure or noncompliant configurations from being deployed.",
+            "examples": [
+              "Block public cloud storage",
+              "Prevent insecure settings"
+            ],
+            "memory": "STOP BAD CONFIGS"
+          },
+          {
+            "name": "Security Groups",
+            "definition": "Automates creation or modification of security-group membership or network access rules.",
+            "examples": [
+              "Add user to security group",
+              "Apply cloud security group"
+            ],
+            "memory": "AUTOMATE ACCESS GROUPS"
+          },
+          {
+            "name": "Ticket Creation",
+            "definition": "Automatically creates service or incident tickets when security events or conditions occur.",
+            "examples": [
+              "SIEM creates incident ticket",
+              "Scanner opens remediation ticket"
+            ],
+            "memory": "EVENT → TICKET"
+          },
+          {
+            "name": "Escalation",
+            "definition": "Automatically routes or raises an issue when severity, timing, or conditions require additional attention.",
+            "examples": [
+              "Critical alert to senior analyst",
+              "SLA breach escalation"
+            ],
+            "memory": "SEND IT UP"
+          },
+          {
+            "name": "Enabling / Disabling Services and Access",
+            "definition": "Automatically activates or removes services, accounts, privileges, or connectivity based on policy or events.",
+            "examples": [
+              "Disable compromised account",
+              "Enable approved service"
+            ],
+            "memory": "TURN ACCESS ON/OFF"
+          },
+          {
+            "name": "Continuous Integration and Testing",
+            "definition": "Automatically builds, tests, and checks software or configuration changes as part of a development pipeline.",
+            "examples": [
+              "Security test in CI",
+              "Automated configuration test"
+            ],
+            "memory": "TEST EVERY CHANGE"
+          },
+          {
+            "name": "Integrations and APIs",
+            "definition": "Connect tools so data and actions can move automatically between systems.",
+            "examples": [
+              "SIEM calls ticketing API",
+              "SOAR queries threat-intel API"
+            ],
+            "memory": "TOOLS TALK TO TOOLS"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Automation and Scripting Use Cases comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "User provisioning",
+            "Create/configure accounts",
+            "Automated onboarding"
+          ],
+          [
+            "Resource provisioning",
+            "Deploy infrastructure",
+            "Automated build"
+          ],
+          [
+            "Guard rails",
+            "Prevent unsafe configuration",
+            "Block noncompliant change"
+          ],
+          [
+            "Ticket creation",
+            "Open work item automatically",
+            "Event → ticket"
+          ],
+          [
+            "Escalation",
+            "Raise priority/route issue",
+            "Needs more attention"
+          ],
+          [
+            "Enable/disable access",
+            "Change service/account state",
+            "Contain or restore"
+          ],
+          [
+            "CI/testing",
+            "Test every change",
+            "Pipeline automation"
+          ],
+          [
+            "APIs/integrations",
+            "Connect tools and actions",
+            "System-to-system automation"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Automation and Scripting Use Cases exam shortcuts",
+        "items": [
+          [
+            "New hire accounts created automatically → USER PROVISIONING",
+            "Automate identity setup and standard access.",
+            "Example: HR entry triggers email and application account creation."
+          ],
+          [
+            "Cloud environment built from approved templates → RESOURCE PROVISIONING",
+            "Automate infrastructure deployment.",
+            "Example: A script creates a VM, subnet, and security settings."
+          ],
+          [
+            "Bad configuration must be blocked before deployment → GUARD RAIL",
+            "Prevent insecure changes automatically.",
+            "Example: A policy blocks creation of a public storage bucket."
+          ],
+          [
+            "Security alert should create work for IT → TICKET CREATION",
+            "Convert detections into trackable work items.",
+            "Example: SIEM opens a remediation ticket."
+          ],
+          [
+            "Critical alert needs senior analyst immediately → ESCALATION",
+            "Automatically increase priority or route ownership.",
+            "Example: A high-severity detection is sent to Tier 2."
+          ],
+          [
+            "Compromised account should lose access automatically → DISABLE ACCESS",
+            "Automation can contain incidents quickly.",
+            "Example: IAM disables a user after confirmed compromise."
+          ],
+          [
+            "Need security checks on every code change → CI / TESTING",
+            "Embed automated security testing into the pipeline.",
+            "Example: Static analysis runs on every pull request."
+          ],
+          [
+            "Two security tools must exchange data/actions → API / INTEGRATION",
+            "Use APIs to connect systems.",
+            "Example: SOAR pulls indicators from threat intelligence and updates the firewall."
+          ]
+        ],
+        "example": "First identify whether the scenario is describing an automation use case, a benefit, or an operational drawback."
+      }
+    ],
+    "questions": [
+      {
+        "q": "HR adds a new employee and an automated workflow creates the user's email and application accounts. Which use case is this?",
+        "choices": [
+          "User provisioning",
+          "Resource provisioning",
+          "Ticket creation",
+          "Escalation"
+        ],
+        "answer": 0,
+        "explanation": "User provisioning automates creation and configuration of user accounts and access."
+      },
+      {
+        "q": "A script creates a new cloud VM, subnet, and storage resource from an approved template. Which use case is this?",
+        "choices": [
+          "Resource provisioning",
+          "User provisioning",
+          "Guard rails",
+          "Alert tuning"
+        ],
+        "answer": 0,
+        "explanation": "Resource provisioning automates deployment of infrastructure and services."
+      },
+      {
+        "q": "A cloud policy automatically blocks creation of publicly accessible storage buckets. Which automation use case is this?",
+        "choices": [
+          "Guard rails",
+          "Ticket creation",
+          "Escalation",
+          "User provisioning"
+        ],
+        "answer": 0,
+        "explanation": "Guard rails prevent insecure or noncompliant configurations from being deployed."
+      },
+      {
+        "q": "A SIEM automatically opens an incident in the ticketing system when a critical alert fires. Which use case is this?",
+        "choices": [
+          "Ticket creation",
+          "Resource provisioning",
+          "Security groups",
+          "CI testing"
+        ],
+        "answer": 0,
+        "explanation": "Ticket creation converts security events into trackable work items."
+      },
+      {
+        "q": "A high-severity alert is automatically routed from Tier 1 to a senior analyst. Which use case is this?",
+        "choices": [
+          "Escalation",
+          "Ticket creation",
+          "Guard rails",
+          "Resource provisioning"
+        ],
+        "answer": 0,
+        "explanation": "Escalation automatically raises priority or routes an issue to a higher support level."
+      },
+      {
+        "q": "A confirmed compromised account is automatically disabled. Which use case is this?",
+        "choices": [
+          "Enabling/disabling access",
+          "Ticket creation",
+          "CI testing",
+          "Security groups"
+        ],
+        "answer": 0,
+        "explanation": "Automation can enable or disable services, accounts, or access based on policy or events."
+      },
+      {
+        "q": "Static analysis and configuration checks run automatically on every code change. Which use case is this?",
+        "choices": [
+          "Continuous integration and testing",
+          "Guard rails only",
+          "Ticket creation",
+          "User provisioning"
+        ],
+        "answer": 0,
+        "explanation": "CI/testing automates validation on every software or configuration change."
+      },
+      {
+        "q": "A SOAR platform sends indicators to a firewall and retrieves threat intelligence from another system. What enables this automation?",
+        "choices": [
+          "Integrations and APIs",
+          "Password vaulting",
+          "Benchmarks",
+          "Data retention"
+        ],
+        "answer": 0,
+        "explanation": "APIs and integrations allow tools to exchange data and trigger actions."
+      }
+    ]
+  }
+}

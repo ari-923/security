@@ -1,0 +1,376 @@
+{
+  "id": "20.03",
+  "chapter": 20,
+  "sub": 3,
+  "title": "Automation Risks and Operational Considerations",
+  "chapter_name": "Automation & Orchestration",
+  "slides": [
+    {
+      "n": 1,
+      "title": "Automation Risks and Operational Considerations",
+      "instructional": false,
+      "teach": "",
+      "points": [
+        "Automation also creates risk. Poorly designed workflows can fail at scale, increase complexity, and become difficult or expensive to maintain."
+      ],
+      "defs": [],
+      "raw": ""
+    },
+    {
+      "n": 2,
+      "title": "Complexity",
+      "instructional": true,
+      "teach": "Automation can introduce additional systems, logic, integrations, and troubleshooting requirements.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Automation can introduce additional systems, logic, integrations, and troubleshooting requirements.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Automation can introduce additional systems, logic, integrations, and troubleshooting requirements."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Complex SOAR workflow, Multiple API dependencies"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how automation and orchestration improve or complicate secure operations.",
+        "example": "Complex SOAR workflow",
+        "exam": "MORE MOVING PARTS",
+        "check_q": "What is the key exam clue for Complexity?",
+        "check_a": "MORE MOVING PARTS"
+      }
+    },
+    {
+      "n": 3,
+      "title": "Cost",
+      "instructional": true,
+      "teach": "Automation platforms, development, integration, licensing, and maintenance may create significant expense.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Automation platforms, development, integration, licensing, and maintenance may create significant expense.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Automation platforms, development, integration, licensing, and maintenance may create significant expense."
+          },
+          {
+            "term": "Examples",
+            "explanation": "SOAR licensing, Automation engineering"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how automation and orchestration improve or complicate secure operations.",
+        "example": "SOAR licensing",
+        "exam": "AUTOMATION ISN'T FREE",
+        "check_q": "What is the key exam clue for Cost?",
+        "check_a": "AUTOMATION ISN'T FREE"
+      }
+    },
+    {
+      "n": 4,
+      "title": "Single Point of Failure",
+      "instructional": true,
+      "teach": "A centralized automation component can disrupt many processes if it fails.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "A centralized automation component can disrupt many processes if it fails.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "A centralized automation component can disrupt many processes if it fails."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Orchestration server outage, Central workflow engine failure"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how automation and orchestration improve or complicate secure operations.",
+        "example": "Orchestration server outage",
+        "exam": "ONE FAILURE BREAKS MANY",
+        "check_q": "What is the key exam clue for Single Point of Failure?",
+        "check_a": "ONE FAILURE BREAKS MANY"
+      }
+    },
+    {
+      "n": 5,
+      "title": "Technical Debt",
+      "instructional": true,
+      "teach": "Quick or poorly maintained automation can accumulate outdated scripts, dependencies, and fragile logic.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Quick or poorly maintained automation can accumulate outdated scripts, dependencies, and fragile logic.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Quick or poorly maintained automation can accumulate outdated scripts, dependencies, and fragile logic."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Old Python scripts, Hard-coded credentials, Unsupported API calls"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how automation and orchestration improve or complicate secure operations.",
+        "example": "Old Python scripts",
+        "exam": "OLD AUTOMATION BECOMES RISK",
+        "check_q": "What is the key exam clue for Technical Debt?",
+        "check_a": "OLD AUTOMATION BECOMES RISK"
+      }
+    },
+    {
+      "n": 6,
+      "title": "Ongoing Supportability",
+      "instructional": true,
+      "teach": "Automation must be maintained as systems, APIs, staff, and business processes change.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Automation must be maintained as systems, APIs, staff, and business processes change.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Automation must be maintained as systems, APIs, staff, and business processes change."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Update scripts after API change, Maintain workflow documentation"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how automation and orchestration improve or complicate secure operations.",
+        "example": "Update scripts after API change",
+        "exam": "WHO KEEPS IT WORKING?",
+        "check_q": "What is the key exam clue for Ongoing Supportability?",
+        "check_a": "WHO KEEPS IT WORKING?"
+      }
+    }
+  ],
+  "slide_count": 6,
+  "instructional_count": 5,
+  "concepts": [
+    "Complexity",
+    "Cost",
+    "Single Point of Failure",
+    "Technical Debt",
+    "Ongoing Supportability"
+  ],
+  "source_filename": "20-03.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 4.7",
+      "title": "Automation Risks and Operational Considerations",
+      "intro": "Automation also creates risk. Poorly designed workflows can fail at scale, increase complexity, and become difficult or expensive to maintain."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Automation Risks and Operational Considerations",
+        "prompt": "Identify what is being automated, the benefit it provides, and the operational risk it may introduce.",
+        "badge": "4.7",
+        "cards": [
+          {
+            "name": "Complexity",
+            "definition": "Automation can introduce additional systems, logic, integrations, and troubleshooting requirements.",
+            "examples": [
+              "Complex SOAR workflow",
+              "Multiple API dependencies"
+            ],
+            "memory": "MORE MOVING PARTS"
+          },
+          {
+            "name": "Cost",
+            "definition": "Automation platforms, development, integration, licensing, and maintenance may create significant expense.",
+            "examples": [
+              "SOAR licensing",
+              "Automation engineering"
+            ],
+            "memory": "AUTOMATION ISN'T FREE"
+          },
+          {
+            "name": "Single Point of Failure",
+            "definition": "A centralized automation component can disrupt many processes if it fails.",
+            "examples": [
+              "Orchestration server outage",
+              "Central workflow engine failure"
+            ],
+            "memory": "ONE FAILURE BREAKS MANY"
+          },
+          {
+            "name": "Technical Debt",
+            "definition": "Quick or poorly maintained automation can accumulate outdated scripts, dependencies, and fragile logic.",
+            "examples": [
+              "Old Python scripts",
+              "Hard-coded credentials",
+              "Unsupported API calls"
+            ],
+            "memory": "OLD AUTOMATION BECOMES RISK"
+          },
+          {
+            "name": "Ongoing Supportability",
+            "definition": "Automation must be maintained as systems, APIs, staff, and business processes change.",
+            "examples": [
+              "Update scripts after API change",
+              "Maintain workflow documentation"
+            ],
+            "memory": "WHO KEEPS IT WORKING?"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Automation Risks and Operational Considerations comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Complexity",
+            "More components and logic",
+            "Harder troubleshooting"
+          ],
+          [
+            "Cost",
+            "Licensing/development/maintenance",
+            "Budget impact"
+          ],
+          [
+            "Single point of failure",
+            "Central dependency can fail",
+            "Large blast radius"
+          ],
+          [
+            "Technical debt",
+            "Old/fragile automation accumulates",
+            "Maintenance risk"
+          ],
+          [
+            "Supportability",
+            "Must remain maintainable over time",
+            "Updates + documentation"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Automation Risks and Operational Considerations exam shortcuts",
+        "items": [
+          [
+            "One orchestration server controls everything → SINGLE POINT OF FAILURE",
+            "A central dependency can create a large operational blast radius.",
+            "Example: If the workflow engine fails, automated response stops."
+          ],
+          [
+            "Scripts were built quickly and never maintained → TECHNICAL DEBT",
+            "Old automation becomes fragile and risky.",
+            "Example: A script still uses deprecated API calls."
+          ],
+          [
+            "Workflow has too many dependencies → COMPLEXITY",
+            "More moving parts increase troubleshooting and failure modes.",
+            "Example: One response depends on five different tools and APIs."
+          ],
+          [
+            "Automation platform is expensive to license and maintain → COST",
+            "Operational benefit must justify ongoing expense.",
+            "Example: SOAR licensing and engineering exceed expected savings."
+          ],
+          [
+            "Nobody understands the workflow anymore → SUPPORTABILITY",
+            "Automation must be documented and maintainable.",
+            "Example: Staff cannot update a critical workflow after the original developer leaves."
+          ]
+        ],
+        "example": "First identify whether the scenario is describing an automation use case, a benefit, or an operational drawback."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A single orchestration server controls all automated incident-response workflows. What major risk does this create?",
+        "choices": [
+          "Single point of failure",
+          "Employee retention",
+          "Efficiency",
+          "Standard configuration"
+        ],
+        "answer": 0,
+        "explanation": "If the centralized component fails, many dependent workflows can fail with it."
+      },
+      {
+        "q": "Security scripts use deprecated APIs and hard-coded credentials because they were never updated. Which issue is this?",
+        "choices": [
+          "Technical debt",
+          "Reaction time",
+          "Workforce multiplier",
+          "Guard rails"
+        ],
+        "answer": 0,
+        "explanation": "Outdated and fragile automation accumulates as technical debt."
+      },
+      {
+        "q": "An automated response depends on five separate systems and APIs, making troubleshooting difficult. Which concern is this?",
+        "choices": [
+          "Complexity",
+          "Efficiency",
+          "Employee retention",
+          "Secure scaling"
+        ],
+        "answer": 0,
+        "explanation": "More components and dependencies increase complexity."
+      },
+      {
+        "q": "A SOAR platform requires expensive licenses and dedicated engineering staff. Which consideration is most direct?",
+        "choices": [
+          "Cost",
+          "Reaction time",
+          "Guard rails",
+          "User provisioning"
+        ],
+        "answer": 0,
+        "explanation": "Automation can create licensing, development, and maintenance expenses."
+      },
+      {
+        "q": "The employee who wrote a critical workflow leaves, and nobody understands how to maintain it. Which concern is this?",
+        "choices": [
+          "Ongoing supportability",
+          "Efficiency",
+          "Reaction time",
+          "Standard configuration"
+        ],
+        "answer": 0,
+        "explanation": "Automation must remain maintainable and documented over time."
+      }
+    ]
+  }
+}
