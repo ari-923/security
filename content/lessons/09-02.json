@@ -2,222 +2,591 @@
   "id": "09.02",
   "chapter": 9,
   "sub": 2,
-  "title": "Access control",
-  "chapter_name": "Mitigation & Hardening",
+  "title": "Decommissioning and Hardening",
+  "chapter_name": "Mitigation Techniques",
   "slides": [
     {
       "n": 1,
-      "title": "Access Control",
-      "points": [],
-      "raw": "Access Control",
+      "title": "Decommissioning and Hardening",
       "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": []
+      "teach": "",
+      "points": [
+        "Hardening removes unnecessary exposure and strengthens systems, while decommissioning securely retires systems and data."
+      ],
+      "defs": [],
+      "raw": ""
     },
     {
       "n": 2,
-      "title": "Purpose of Access Control",
-      "points": [
-        "User Accountability",
-        "Resource",
-        "Segmentation",
-        "Network Security",
-        "Enhancement",
-        "Prevention of",
-        "Privilege Escalation"
-      ],
-      "raw": "Purpose of Access Control\nUser Accountability\nResource\nSegmentation\nNetwork Security\nEnhancement\nPrevention of\nPrivilege Escalation",
+      "title": "Decommissioning",
       "instructional": true,
-      "teach": "Know the reason this control exists and the security objective it supports.",
-      "defs": [
-        [
-          "Segmentation",
-          "Dividing a network into controlled zones to limit access and lateral movement."
-        ]
+      "teach": "Securely removes a system, service, device, or application from operation and handles its data, accounts, and dependencies appropriately.",
+      "points": [
+        "Basically",
+        "Examples"
       ],
+      "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Access control restricts which subjects can access which resources and what actions they may perform. ACLs express allow/deny rules on objects, interfaces, or network traffic.",
-        "why": "Access control enforces least privilege and prevents an authenticated user from automatically reaching every resource.",
-        "example": "A router ACL allows HTTPS from the public Internet to a web server but denies administrative ports.",
-        "exam": "Authentication proves identity; access control/authorization limits actions. ACLs are rule lists that enforce those decisions.",
+        "learn": "Securely removes a system, service, device, or application from operation and handles its data, accounts, and dependencies appropriately.",
         "breakdown": [
           {
-            "term": "User Accountability",
-            "explanation": "Within Purpose of Access Control, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Access control rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "Retire it securely rather than simply turning it off."
           },
           {
-            "term": "Resource",
-            "explanation": "Within Purpose of Access Control, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Access control rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Segmentation",
-            "explanation": "Network segmentation separates systems into different trust zones so traffic must cross controlled boundaries. VLANs, subnets, ACLs, and firewalls are common mechanisms."
-          },
-          {
-            "term": "Network Security",
-            "explanation": "This contributes to reducing risk in the broader Access control design and should be evaluated as part of defense in depth."
-          },
-          {
-            "term": "Enhancement",
-            "explanation": "Within Purpose of Access Control, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Access control rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Prevention of Privilege Escalation",
-            "explanation": "Privilege escalation occurs when an attacker moves from lower privileges to higher privileges, such as from a normal user to administrator/root."
+            "term": "Examples",
+            "explanation": "Retire old server, Wipe storage, Remove DNS records"
           }
         ],
-        "defs": [
-          {
-            "term": "Segmentation",
-            "definition": "Dividing a network into controlled zones to limit access and lateral movement."
-          }
-        ],
-        "check_q": "Without looking back, explain Purpose of Access Control and describe at least two key ideas from this section.",
-        "check_a": "Access control restricts which subjects can access which resources and what actions they may perform. ACLs express allow/deny rules on objects, interfaces, or network traffic. Key ideas include: User Accountability; Resource; Segmentation; Network Security; Enhancement.",
-        "points": [
-          "User Accountability",
-          "Resource",
-          "Segmentation",
-          "Network Security",
-          "Enhancement",
-          "Prevention of Privilege Escalation"
-        ]
+        "defs": [],
+        "why": "Improperly retired systems can leave data or access exposed.",
+        "example": "An old server is wiped and removed from inventory and DNS.",
+        "exam": "System no longer needed → DECOMMISSIONING.",
+        "check_q": "What does Decommissioning mean in this lesson?",
+        "check_a": "Securely removes a system, service, device, or application from operation and handles its data, accounts, and dependencies appropriately."
       }
     },
     {
       "n": 3,
-      "title": "Access Control Lists",
-      "points": [
-        "Fine-Grained Control",
-        "Resource-Specific",
-        "Permissions",
-        "Dynamic Access",
-        "Control"
-      ],
-      "raw": "Access Control Lists\nFine-Grained Control\nResource-Specific\nPermissions\nDynamic Access\nControl",
+      "title": "Hardening",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "Reduces attack surface by disabling unnecessary functionality and applying secure configurations.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Access control restricts which subjects can access which resources and what actions they may perform. ACLs express allow/deny rules on objects, interfaces, or network traffic.",
-        "why": "Access control enforces least privilege and prevents an authenticated user from automatically reaching every resource.",
-        "example": "A router ACL allows HTTPS from the public Internet to a web server but denies administrative ports.",
-        "exam": "Authentication proves identity; access control/authorization limits actions. ACLs are rule lists that enforce those decisions.",
+        "learn": "Reduces attack surface by disabling unnecessary functionality and applying secure configurations.",
         "breakdown": [
           {
-            "term": "Fine-Grained Control",
-            "explanation": "Within Access Control Lists, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Access control rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "Remove what is unnecessary and strengthen what remains."
           },
           {
-            "term": "Resource-Specific",
-            "explanation": "Within Access Control Lists, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Access control rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Permissions",
-            "explanation": "Permissions define the actions a subject may perform on a resource, such as read, write, execute, modify, or administer. They are one mechanism used to implement authorization."
-          },
-          {
-            "term": "Dynamic Access",
-            "explanation": "This concerns who or what can reach a resource and what actions are permitted once access is granted."
-          },
-          {
-            "term": "Control",
-            "explanation": "Use hard-to-guess credentials and limit what authenticated users can reach."
+            "term": "Examples",
+            "explanation": "Disable unused services, Remove default accounts"
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Access Control Lists and describe at least two key ideas from this section.",
-        "check_a": "Access control restricts which subjects can access which resources and what actions they may perform. ACLs express allow/deny rules on objects, interfaces, or network traffic. Key ideas include: Fine-Grained Control; Resource-Specific; Permissions; Dynamic Access; Control.",
-        "points": [
-          "Fine-Grained Control",
-          "Resource-Specific",
-          "Permissions",
-          "Dynamic Access",
-          "Control"
-        ]
+        "why": "Fewer exposed services mean fewer attack opportunities.",
+        "example": "A new server is configured using a secure baseline.",
+        "exam": "Reduce attack surface → HARDENING.",
+        "check_q": "What does Hardening mean in this lesson?",
+        "check_a": "Reduces attack surface by disabling unnecessary functionality and applying secure configurations."
       }
     },
     {
       "n": 4,
-      "title": "Permissions",
-      "points": [
-        "Access Restriction",
-        "Data Integrity",
-        "Least Privilege Principle",
-        "User Accountability"
-      ],
-      "raw": "Permissions\nAccess Restriction\nData Integrity\nLeast Privilege Principle\nUser Accountability",
+      "title": "Encryption",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "Least privilege",
-          "Granting only the minimum permissions required to perform a task."
-        ],
-        [
-          "Integrity",
-          "Ensuring data stays accurate, complete, and protected from unauthorized modification."
-        ]
+      "teach": "Protects sensitive data at rest or in transit as part of system hardening.",
+      "points": [
+        "Basically",
+        "Examples"
       ],
+      "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Permissions define the actions a subject may perform on a resource, such as read, write, execute, modify, or administer. They are one mechanism used to implement authorization.",
-        "why": "Correct permissions enforce least privilege and protect both confidentiality and integrity.",
-        "example": "A finance analyst can read reports but cannot change the application binaries or security configuration.",
-        "exam": "Do not give broad administrator/full-control rights when a narrower permission set satisfies the task.",
+        "learn": "Protects sensitive data at rest or in transit as part of system hardening.",
         "breakdown": [
           {
-            "term": "Access Restriction",
-            "explanation": "This concerns who or what can reach a resource and what actions are permitted once access is granted."
+            "term": "Basically",
+            "explanation": "Make sensitive data unreadable without the correct key."
           },
           {
-            "term": "Data Integrity",
-            "explanation": "Within Permissions, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Access control rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Least Privilege Principle",
-            "explanation": "Grant only the permissions required for a legitimate task."
-          },
-          {
-            "term": "User Accountability",
-            "explanation": "Within Permissions, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Access control rather than memorizing the phrase by itself."
+            "term": "Examples",
+            "explanation": "Full-disk encryption, TLS"
           }
         ],
-        "defs": [
-          {
-            "term": "Least privilege",
-            "definition": "Granting only the minimum permissions required to perform a task."
-          },
-          {
-            "term": "Integrity",
-            "definition": "Ensuring data stays accurate, complete, and protected from unauthorized modification."
-          }
-        ],
-        "check_q": "Without looking back, explain Permissions and describe at least two key ideas from this section.",
-        "check_a": "Permissions define the actions a subject may perform on a resource, such as read, write, execute, modify, or administer. They are one mechanism used to implement authorization. Key ideas include: Access Restriction; Data Integrity; Least Privilege Principle; User Accountability.",
-        "points": [
-          "Access Restriction",
-          "Data Integrity",
-          "Least Privilege Principle",
-          "User Accountability"
-        ]
+        "defs": [],
+        "why": "It protects confidentiality even if storage or traffic is exposed.",
+        "example": "A hardened laptop uses full-disk encryption.",
+        "exam": "Protect sensitive data → ENCRYPTION.",
+        "check_q": "What does Encryption mean in this lesson?",
+        "check_a": "Protects sensitive data at rest or in transit as part of system hardening."
       }
     },
     {
       "n": 5,
-      "title": "Mitigation Methods",
-      "points": [],
-      "raw": "Mitigation Methods",
-      "instructional": false,
-      "teach": "These are defensive actions. Learn what each one reduces and when it is the best response to a scenario.",
-      "defs": []
+      "title": "Installation of Endpoint Protection",
+      "instructional": true,
+      "teach": "Deploys security tools on endpoints to detect, prevent, or respond to malicious activity.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Deploys security tools on endpoints to detect, prevent, or respond to malicious activity.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Install defensive software directly on the endpoint."
+          },
+          {
+            "term": "Examples",
+            "explanation": "EDR, Anti-malware"
+          }
+        ],
+        "defs": [],
+        "why": "Endpoints are common attack targets and need local protection.",
+        "example": "EDR is installed on all corporate laptops.",
+        "exam": "EDR/anti-malware → ENDPOINT PROTECTION.",
+        "check_q": "What does Installation of Endpoint Protection mean in this lesson?",
+        "check_a": "Deploys security tools on endpoints to detect, prevent, or respond to malicious activity."
+      }
+    },
+    {
+      "n": 6,
+      "title": "Host-based Firewall",
+      "instructional": true,
+      "teach": "Filters inbound and outbound traffic on an individual host.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Filters inbound and outbound traffic on an individual host.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "A firewall running on the endpoint itself."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Windows Defender Firewall, Linux host firewall"
+          }
+        ],
+        "defs": [],
+        "why": "It reduces unnecessary network exposure at the device level.",
+        "example": "A server only accepts required inbound ports.",
+        "exam": "Traffic filtering on one host → HOST-BASED FIREWALL.",
+        "check_q": "What does Host-based Firewall mean in this lesson?",
+        "check_a": "Filters inbound and outbound traffic on an individual host."
+      }
+    },
+    {
+      "n": 7,
+      "title": "Host-based Intrusion Prevention System (HIPS)",
+      "instructional": true,
+      "teach": "Monitors host activity and can block suspicious behavior or known attack patterns.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Monitors host activity and can block suspicious behavior or known attack patterns.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Prevention logic runs on the endpoint and stops malicious behavior."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Block exploit behavior, Prevent malicious process activity"
+          }
+        ],
+        "defs": [],
+        "why": "It can stop suspicious activity before it completes.",
+        "example": "HIPS blocks exploit-like behavior before execution.",
+        "exam": "Host behavior prevention → HIPS.",
+        "check_q": "What does Host-based Intrusion Prevention System (HIPS) mean in this lesson?",
+        "check_a": "Monitors host activity and can block suspicious behavior or known attack patterns."
+      }
+    },
+    {
+      "n": 8,
+      "title": "Disabling Ports / Protocols",
+      "instructional": true,
+      "teach": "Turns off unnecessary services, ports, or protocols to reduce exposure.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Turns off unnecessary services, ports, or protocols to reduce exposure.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "If you do not need it, turn it off."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Disable Telnet, Close unused TCP port"
+          }
+        ],
+        "defs": [],
+        "why": "Every unnecessary listening service increases attack surface.",
+        "example": "Telnet is disabled because only SSH is required.",
+        "exam": "Unused service/port → DISABLE IT.",
+        "check_q": "What does Disabling Ports / Protocols mean in this lesson?",
+        "check_a": "Turns off unnecessary services, ports, or protocols to reduce exposure."
+      }
+    },
+    {
+      "n": 9,
+      "title": "Default Password Changes",
+      "instructional": true,
+      "teach": "Replaces vendor or factory default credentials with unique secure credentials.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Replaces vendor or factory default credentials with unique secure credentials.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Never leave the factory password in place."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Change admin/admin"
+          }
+        ],
+        "defs": [],
+        "why": "Default credentials are predictable and often public.",
+        "example": "A router's default administrator password is replaced.",
+        "exam": "Factory credentials → CHANGE DEFAULT PASSWORD.",
+        "check_q": "What does Default Password Changes mean in this lesson?",
+        "check_a": "Replaces vendor or factory default credentials with unique secure credentials."
+      }
+    },
+    {
+      "n": 10,
+      "title": "Removal of Unnecessary Software",
+      "instructional": true,
+      "teach": "Uninstalls software that is not required for business or system function.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Uninstalls software that is not required for business or system function.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Less unnecessary software means less attack surface."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Remove trialware, Delete unused utilities"
+          }
+        ],
+        "defs": [],
+        "why": "Unused apps still require patching and may contain vulnerabilities.",
+        "example": "Trialware is removed from a production server.",
+        "exam": "Not needed → REMOVE IT.",
+        "check_q": "What does Removal of Unnecessary Software mean in this lesson?",
+        "check_a": "Uninstalls software that is not required for business or system function."
+      }
     }
   ],
-  "slide_count": 5,
-  "instructional_count": 3,
+  "slide_count": 10,
+  "instructional_count": 9,
   "concepts": [
-    "Purpose of Access Control",
-    "Access Control Lists",
-    "Permissions"
+    "Decommissioning",
+    "Hardening",
+    "Encryption",
+    "Installation of Endpoint Protection",
+    "Host-based Firewall",
+    "Host-based Intrusion Prevention System (HIPS)",
+    "Disabling Ports / Protocols",
+    "Default Password Changes",
+    "Removal of Unnecessary Software"
   ],
-  "source_filename": "09.02_Access_control.pdf"
+  "source_filename": "09-02.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 2.5",
+      "title": "Decommissioning and Hardening",
+      "intro": "Hardening removes unnecessary exposure and strengthens systems, while decommissioning securely retires systems and data."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Decommissioning and Hardening",
+        "prompt": "Choose the mitigation that best reduces the risk described in the scenario.",
+        "badge": "2.5",
+        "cards": [
+          {
+            "name": "Decommissioning",
+            "definition": "Securely removes a system, service, device, or application from operation and handles its data, accounts, and dependencies appropriately.",
+            "examples": [
+              "Retire old server",
+              "Wipe storage",
+              "Remove DNS records"
+            ],
+            "memory": "RETIRE SECURELY"
+          },
+          {
+            "name": "Hardening",
+            "definition": "Reduces attack surface by disabling unnecessary functionality and applying secure configurations.",
+            "examples": [
+              "Disable unused services",
+              "Remove default accounts"
+            ],
+            "memory": "REDUCE ATTACK SURFACE"
+          },
+          {
+            "name": "Encryption",
+            "definition": "Protects sensitive data at rest or in transit as part of system hardening.",
+            "examples": [
+              "Full-disk encryption",
+              "TLS"
+            ],
+            "memory": "PROTECT DATA"
+          },
+          {
+            "name": "Installation of Endpoint Protection",
+            "definition": "Deploys security tools on endpoints to detect, prevent, or respond to malicious activity.",
+            "examples": [
+              "EDR",
+              "Anti-malware"
+            ],
+            "memory": "PROTECT THE ENDPOINT"
+          },
+          {
+            "name": "Host-based Firewall",
+            "definition": "Filters inbound and outbound traffic on an individual host.",
+            "examples": [
+              "Windows Defender Firewall",
+              "Linux host firewall"
+            ],
+            "memory": "FIREWALL ON THE HOST"
+          },
+          {
+            "name": "Host-based Intrusion Prevention System (HIPS)",
+            "definition": "Monitors host activity and can block suspicious behavior or known attack patterns.",
+            "examples": [
+              "Block exploit behavior",
+              "Prevent malicious process activity"
+            ],
+            "memory": "HOST PREVENTION"
+          },
+          {
+            "name": "Disabling Ports / Protocols",
+            "definition": "Turns off unnecessary services, ports, or protocols to reduce exposure.",
+            "examples": [
+              "Disable Telnet",
+              "Close unused TCP port"
+            ],
+            "memory": "TURN OFF WHAT YOU DON'T NEED"
+          },
+          {
+            "name": "Default Password Changes",
+            "definition": "Replaces vendor or factory default credentials with unique secure credentials.",
+            "examples": [
+              "Change admin/admin"
+            ],
+            "memory": "CHANGE THE DEFAULT"
+          },
+          {
+            "name": "Removal of Unnecessary Software",
+            "definition": "Uninstalls software that is not required for business or system function.",
+            "examples": [
+              "Remove trialware",
+              "Delete unused utilities"
+            ],
+            "memory": "LESS SOFTWARE · LESS RISK"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Decommissioning and Hardening comparison",
+        "headers": [
+          "Mitigation",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Decommissioning",
+            "Retire securely",
+            "Remove system/data/access"
+          ],
+          [
+            "Hardening",
+            "Reduce attack surface",
+            "Secure baseline"
+          ],
+          [
+            "Endpoint protection",
+            "Detect/prevent endpoint threats",
+            "EDR/anti-malware"
+          ],
+          [
+            "Host firewall",
+            "Filter host traffic",
+            "Inbound/outbound rules"
+          ],
+          [
+            "HIPS",
+            "Block suspicious host behavior",
+            "Endpoint prevention"
+          ],
+          [
+            "Disable ports/protocols",
+            "Remove exposed services",
+            "Close what is unused"
+          ],
+          [
+            "Change default passwords",
+            "Remove known credentials",
+            "No factory login"
+          ],
+          [
+            "Remove software",
+            "Shrink attack surface",
+            "Uninstall unnecessary apps"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Decommissioning and Hardening exam shortcuts",
+        "items": [
+          [
+            "System no longer needed → DECOMMISSION",
+            "Retire it securely.",
+            "Example: Data is wiped and DNS entries removed."
+          ],
+          [
+            "Unused service → DISABLE PORT/PROTOCOL",
+            "Turn off services with no business value.",
+            "Example: Telnet is disabled."
+          ],
+          [
+            "Factory credentials → CHANGE DEFAULT PASSWORD",
+            "Replace predictable defaults.",
+            "Example: admin/admin is changed."
+          ],
+          [
+            "Unused software → REMOVE IT",
+            "Less software means less attack surface.",
+            "Example: Trialware is uninstalled."
+          ],
+          [
+            "Need local traffic filtering → HOST FIREWALL",
+            "Filter traffic directly on the endpoint.",
+            "Example: Only required inbound ports are allowed."
+          ],
+          [
+            "Need host behavior prevention → HIPS",
+            "Block malicious host behavior.",
+            "Example: HIPS stops exploit-like activity."
+          ]
+        ],
+        "example": "Focus on the risk first, then choose the control that directly reduces it."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A retired server is securely wiped and removed from DNS, inventory, and access systems. Which process is this?",
+        "choices": [
+          "Decommissioning",
+          "Patching",
+          "Isolation",
+          "Monitoring"
+        ],
+        "answer": 0,
+        "explanation": "Decommissioning securely removes a system and associated access/data."
+      },
+      {
+        "q": "A new server is configured to disable unnecessary services and remove default accounts before deployment. Which process is this?",
+        "choices": [
+          "Hardening",
+          "Monitoring",
+          "Segmentation",
+          "Decommissioning"
+        ],
+        "answer": 0,
+        "explanation": "Hardening reduces attack surface and strengthens configuration."
+      },
+      {
+        "q": "Corporate laptops receive EDR and anti-malware before deployment. Which hardening technique is this?",
+        "choices": [
+          "Endpoint protection",
+          "Host firewall",
+          "Encryption",
+          "Decommissioning"
+        ],
+        "answer": 0,
+        "explanation": "Endpoint protection installs defensive tools such as EDR and anti-malware."
+      },
+      {
+        "q": "A server permits only required inbound ports through its local operating-system firewall. Which control is this?",
+        "choices": [
+          "Host-based firewall",
+          "HIPS",
+          "ACL only",
+          "Application allow list"
+        ],
+        "answer": 0,
+        "explanation": "A host-based firewall filters traffic directly on the endpoint."
+      },
+      {
+        "q": "A host control detects exploit-like behavior and blocks the malicious process. Which control best fits?",
+        "choices": [
+          "HIPS",
+          "Host-based firewall",
+          "Encryption",
+          "Decommissioning"
+        ],
+        "answer": 0,
+        "explanation": "HIPS actively prevents suspicious host behavior."
+      },
+      {
+        "q": "Administrators turn off Telnet because SSH is the only required remote-management protocol. Which step is this?",
+        "choices": [
+          "Disabling ports/protocols",
+          "Patching",
+          "Monitoring",
+          "Least privilege"
+        ],
+        "answer": 0,
+        "explanation": "Unused or insecure protocols should be disabled."
+      },
+      {
+        "q": "A new appliance still uses admin/admin. Which hardening step should be performed?",
+        "choices": [
+          "Change the default password",
+          "Enable monitoring only",
+          "Decommission it",
+          "Segment only"
+        ],
+        "answer": 0,
+        "explanation": "Default credentials are predictable and should be replaced."
+      },
+      {
+        "q": "A production server contains unused trialware. Which mitigation best reduces attack surface?",
+        "choices": [
+          "Remove unnecessary software",
+          "Add monitoring only",
+          "Increase permissions",
+          "Disable encryption"
+        ],
+        "answer": 0,
+        "explanation": "Removing unnecessary software reduces potential vulnerabilities."
+      }
+    ]
+  }
 }
