@@ -138,5 +138,61 @@
     "lesson_count": 3,
     "slide_count": 24,
     "instructional_count": 21
+  },
+  {
+    "chapter": 21,
+    "name": "Incident Response & Forensics",
+    "lesson_count": 3,
+    "slide_count": 22,
+    "instructional_count": 19
+  },
+  {
+    "chapter": 22,
+    "name": "Investigation Data Sources",
+    "lesson_count": 2,
+    "slide_count": 13,
+    "instructional_count": 11
+  },
+  {
+    "chapter": 23,
+    "name": "Security Governance",
+    "lesson_count": 3,
+    "slide_count": 37,
+    "instructional_count": 34
+  },
+  {
+    "chapter": 24,
+    "name": "Risk Management",
+    "lesson_count": 3,
+    "slide_count": 37,
+    "instructional_count": 34
+  },
+  {
+    "chapter": 25,
+    "name": "Third-Party Risk Management",
+    "lesson_count": 3,
+    "slide_count": 21,
+    "instructional_count": 18
+  },
+  {
+    "chapter": 26,
+    "name": "Security Compliance & Privacy",
+    "lesson_count": 3,
+    "slide_count": 29,
+    "instructional_count": 26
+  },
+  {
+    "chapter": 27,
+    "name": "Audits & Assessments",
+    "lesson_count": 3,
+    "slide_count": 20,
+    "instructional_count": 17
+  },
+  {
+    "chapter": 28,
+    "name": "Security Awareness",
+    "lesson_count": 3,
+    "slide_count": 21,
+    "instructional_count": 18
   }
 ]
