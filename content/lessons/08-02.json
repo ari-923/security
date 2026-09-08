@@ -1,17 +1,17 @@
 {
-  "id": "08.02",
+  "id": "08.03",
   "chapter": 8,
-  "sub": 2,
-  "title": "Network and Application Attacks",
+  "sub": 3,
+  "title": "Cryptographic and Password Attacks",
   "chapter_name": "Malicious Activity Indicators",
   "slides": [
     {
       "n": 1,
-      "title": "Network and Application Attacks",
+      "title": "Cryptographic and Password Attacks",
       "instructional": false,
       "teach": "",
       "points": [
-        "Recognize network and application attacks from traffic behavior, protocol abuse, replay, interception, code execution, or privilege changes.",
+        "Distinguish cryptographic attacks from password attacks by what the attacker is weakening or varying.",
         "Security+ Objective 2.4: given a scenario, analyze indicators of malicious activity."
       ],
       "defs": [],
@@ -19,9 +19,9 @@
     },
     {
       "n": 2,
-      "title": "Distributed Denial-of-Service (DDoS)",
+      "title": "Downgrade Attack",
       "instructional": true,
-      "teach": "A denial-of-service attack launched from many systems to overwhelm a target.",
+      "teach": "Forces systems to use an older or weaker protocol, cipher, or security mode.",
       "points": [
         "Basically",
         "Examples"
@@ -29,30 +29,30 @@
       "defs": [],
       "raw": "",
       "course": {
-        "learn": "A denial-of-service attack launched from many systems to overwhelm a target.",
+        "learn": "Forces systems to use an older or weaker protocol, cipher, or security mode.",
         "breakdown": [
           {
             "term": "Basically",
-            "explanation": "Many sources flood one victim."
+            "explanation": "Make both sides fall back to weaker security."
           },
           {
             "term": "Examples",
-            "explanation": "Botnet traffic, Service outage"
+            "explanation": "TLS downgrade, Legacy cipher negotiation"
           }
         ],
         "defs": [],
-        "why": "Distributed sources make blocking harder.",
-        "example": "Thousands of compromised hosts flood one website.",
-        "exam": "Many systems flood one target → DDoS.",
-        "check_q": "Which attack overwhelms a target from many systems?",
-        "check_a": "DDoS."
+        "why": "Older modes may contain known weaknesses.",
+        "example": "A connection is forced from a modern protocol to a legacy one.",
+        "exam": "Forced weaker security → DOWNGRADE.",
+        "check_q": "Which attack forces weaker protocol negotiation?",
+        "check_a": "Downgrade attack."
       }
     },
     {
       "n": 3,
-      "title": "Amplified DDoS",
+      "title": "Collision Attack",
       "instructional": true,
-      "teach": "A DDoS technique where small attacker requests trigger much larger responses toward the victim.",
+      "teach": "Attempts to find two different inputs that produce the same hash output.",
       "points": [
         "Basically",
         "Examples"
@@ -60,30 +60,30 @@
       "defs": [],
       "raw": "",
       "course": {
-        "learn": "A DDoS technique where small attacker requests trigger much larger responses toward the victim.",
+        "learn": "Attempts to find two different inputs that produce the same hash output.",
         "breakdown": [
           {
             "term": "Basically",
-            "explanation": "Small request, much bigger response."
+            "explanation": "Two different things, same hash."
           },
           {
             "term": "Examples",
-            "explanation": "DNS amplification, NTP amplification"
+            "explanation": "Hash collision"
           }
         ],
         "defs": [],
-        "why": "It multiplies attack volume.",
-        "example": "Small DNS requests generate large responses toward the victim.",
-        "exam": "Tiny request, huge response → AMPLIFIED.",
-        "check_q": "Which DDoS technique multiplies traffic using larger responses?",
-        "check_a": "Amplified DDoS."
+        "why": "Collisions weaken assumptions that a digest uniquely represents content.",
+        "example": "Two different files produce the same hash.",
+        "exam": "Different inputs, same hash → COLLISION.",
+        "check_q": "Which attack finds two different inputs with the same hash?",
+        "check_a": "Collision attack."
       }
     },
     {
       "n": 4,
-      "title": "Reflected DDoS",
+      "title": "Birthday Attack",
       "instructional": true,
-      "teach": "A DDoS technique where attackers spoof the victim's address so third-party systems send responses to the victim.",
+      "teach": "Uses probability properties to find hash collisions faster than naive exhaustive comparison.",
       "points": [
         "Basically",
         "Examples"
@@ -91,30 +91,30 @@
       "defs": [],
       "raw": "",
       "course": {
-        "learn": "A DDoS technique where attackers spoof the victim's address so third-party systems send responses to the victim.",
+        "learn": "Uses probability properties to find hash collisions faster than naive exhaustive comparison.",
         "breakdown": [
           {
             "term": "Basically",
-            "explanation": "Other systems are tricked into replying to the victim."
+            "explanation": "Exploit birthday-paradox probability to find a collision."
           },
           {
             "term": "Examples",
-            "explanation": "DNS reflection, Spoofed source IP"
+            "explanation": "Birthday paradox against hashes"
           }
         ],
         "defs": [],
-        "why": "Reflection recruits third-party servers and obscures the attacker.",
-        "example": "DNS servers send replies to a victim that never queried them.",
-        "exam": "Third parties reply to victim → REFLECTED.",
-        "check_q": "Which DDoS technique uses spoofed victim addresses?",
-        "check_a": "Reflected DDoS."
+        "why": "Collisions become likely sooner than full keyspace intuition suggests.",
+        "example": "An attacker searches for any two inputs sharing a digest.",
+        "exam": "Probability-based collision search → BIRTHDAY.",
+        "check_q": "Which attack uses birthday-paradox probability?",
+        "check_a": "Birthday attack."
       }
     },
     {
       "n": 5,
-      "title": "DNS Attack",
+      "title": "Password Spraying",
       "instructional": true,
-      "teach": "An attack targeting DNS resolution, records, caches, or infrastructure.",
+      "teach": "Tries a small number of common passwords across many accounts.",
       "points": [
         "Basically",
         "Examples"
@@ -122,30 +122,30 @@
       "defs": [],
       "raw": "",
       "course": {
-        "learn": "An attack targeting DNS resolution, records, caches, or infrastructure.",
+        "learn": "Tries a small number of common passwords across many accounts.",
         "breakdown": [
           {
             "term": "Basically",
-            "explanation": "The attacker manipulates or disrupts name resolution."
+            "explanation": "Few passwords, lots of usernames."
           },
           {
             "term": "Examples",
-            "explanation": "DNS poisoning, DNS hijacking"
+            "explanation": "Password123 across 500 users"
           }
         ],
         "defs": [],
-        "why": "DNS attacks can redirect users or disrupt services.",
-        "example": "A legitimate domain resolves to a malicious IP.",
-        "exam": "Name resolution manipulated → DNS ATTACK.",
-        "check_q": "Which attack category targets DNS?",
-        "check_a": "DNS attack."
+        "why": "It reduces per-account lockout risk.",
+        "example": "Winter2026! is tried once against hundreds of users.",
+        "exam": "Few passwords + many accounts → SPRAYING.",
+        "check_q": "Which attack tries one common password across many accounts?",
+        "check_a": "Password spraying."
       }
     },
     {
       "n": 6,
-      "title": "Wireless Attack",
+      "title": "Brute Force",
       "instructional": true,
-      "teach": "An attack targeting Wi-Fi or other wireless communication.",
+      "teach": "Systematically tries many possible passwords or keys until one works.",
       "points": [
         "Basically",
         "Examples"
@@ -153,609 +153,220 @@
       "defs": [],
       "raw": "",
       "course": {
-        "learn": "An attack targeting Wi-Fi or other wireless communication.",
+        "learn": "Systematically tries many possible passwords or keys until one works.",
         "breakdown": [
           {
             "term": "Basically",
-            "explanation": "The attack happens over wireless."
+            "explanation": "Keep guessing until something works."
           },
           {
             "term": "Examples",
-            "explanation": "Rogue AP, Deauthentication"
+            "explanation": "Many guesses against one account, Key-space search"
           }
         ],
         "defs": [],
-        "why": "Wireless creates radio-based attack opportunities.",
-        "example": "An attacker sends deauthentication frames.",
-        "exam": "Wi-Fi/rogue AP/deauth → WIRELESS.",
-        "check_q": "Which category includes Wi-Fi deauthentication?",
-        "check_a": "Wireless attack."
-      }
-    },
-    {
-      "n": 7,
-      "title": "On-path Attack",
-      "instructional": true,
-      "teach": "An attacker positions between communicating parties to intercept or alter traffic.",
-      "points": [
-        "Basically",
-        "Examples"
-      ],
-      "defs": [],
-      "raw": "",
-      "course": {
-        "learn": "An attacker positions between communicating parties to intercept or alter traffic.",
-        "breakdown": [
-          {
-            "term": "Basically",
-            "explanation": "The attacker sits in the middle."
-          },
-          {
-            "term": "Examples",
-            "explanation": "Man-in-the-middle, Traffic interception"
-          }
-        ],
-        "defs": [],
-        "why": "The attacker can steal or modify data in transit.",
-        "example": "Login traffic is intercepted between user and server.",
-        "exam": "Between two parties → ON-PATH.",
-        "check_q": "Which attack places the attacker between communicating parties?",
-        "check_a": "On-path attack."
-      }
-    },
-    {
-      "n": 8,
-      "title": "Credential Replay",
-      "instructional": true,
-      "teach": "Previously captured credentials or authentication material are reused to gain access.",
-      "points": [
-        "Basically",
-        "Examples"
-      ],
-      "defs": [],
-      "raw": "",
-      "course": {
-        "learn": "Previously captured credentials or authentication material are reused to gain access.",
-        "breakdown": [
-          {
-            "term": "Basically",
-            "explanation": "Steal authentication material, then reuse it."
-          },
-          {
-            "term": "Examples",
-            "explanation": "Replayed token, Captured credential reuse"
-          }
-        ],
-        "defs": [],
-        "why": "Some auth artifacts can be replayed without knowing the original secret.",
-        "example": "A stolen authentication token is reused successfully.",
-        "exam": "Captured auth reused → CREDENTIAL REPLAY.",
-        "check_q": "Which attack reuses captured authentication material?",
-        "check_a": "Credential replay."
-      }
-    },
-    {
-      "n": 9,
-      "title": "Malicious Code",
-      "instructional": true,
-      "teach": "Attacker-supplied code executes in a target environment.",
-      "points": [
-        "Basically",
-        "Examples"
-      ],
-      "defs": [],
-      "raw": "",
-      "course": {
-        "learn": "Attacker-supplied code executes in a target environment.",
-        "breakdown": [
-          {
-            "term": "Basically",
-            "explanation": "The attacker's code runs on the target."
-          },
-          {
-            "term": "Examples",
-            "explanation": "Injected script, Remote code execution"
-          }
-        ],
-        "defs": [],
-        "why": "Code execution can give direct control of system behavior.",
-        "example": "Attacker-controlled code executes on a server.",
-        "exam": "Attacker code runs → MALICIOUS CODE.",
-        "check_q": "Which indicator describes attacker-supplied code executing?",
-        "check_a": "Malicious code."
-      }
-    },
-    {
-      "n": 10,
-      "title": "Injection",
-      "instructional": true,
-      "teach": "Untrusted input is interpreted as commands or code by an application.",
-      "points": [
-        "Basically",
-        "Examples"
-      ],
-      "defs": [],
-      "raw": "",
-      "course": {
-        "learn": "Untrusted input is interpreted as commands or code by an application.",
-        "breakdown": [
-          {
-            "term": "Basically",
-            "explanation": "Input becomes executable instructions."
-          },
-          {
-            "term": "Examples",
-            "explanation": "SQL injection, Command injection"
-          }
-        ],
-        "defs": [],
-        "why": "Unsafe input handling can alter commands or queries.",
-        "example": "A form field is interpreted as a backend command.",
-        "exam": "Input becomes command → INJECTION.",
-        "check_q": "Which application attack turns untrusted input into commands?",
-        "check_a": "Injection."
-      }
-    },
-    {
-      "n": 11,
-      "title": "Buffer Overflow",
-      "instructional": true,
-      "teach": "Too much data is written to memory, potentially overwriting control data.",
-      "points": [
-        "Basically",
-        "Examples"
-      ],
-      "defs": [],
-      "raw": "",
-      "course": {
-        "learn": "Too much data is written to memory, potentially overwriting control data.",
-        "breakdown": [
-          {
-            "term": "Basically",
-            "explanation": "A buffer gets more data than it can hold."
-          },
-          {
-            "term": "Examples",
-            "explanation": "Stack overflow, Crash/code execution"
-          }
-        ],
-        "defs": [],
-        "why": "Memory corruption can crash software or redirect execution.",
-        "example": "Oversized input overwrites adjacent memory.",
-        "exam": "Too much data → BUFFER OVERFLOW.",
-        "check_q": "Which attack writes beyond buffer boundaries?",
-        "check_a": "Buffer overflow."
-      }
-    },
-    {
-      "n": 12,
-      "title": "Replay",
-      "instructional": true,
-      "teach": "A valid transmission or message is captured and resent later.",
-      "points": [
-        "Basically",
-        "Examples"
-      ],
-      "defs": [],
-      "raw": "",
-      "course": {
-        "learn": "A valid transmission or message is captured and resent later.",
-        "breakdown": [
-          {
-            "term": "Basically",
-            "explanation": "Capture a valid message, then resend it."
-          },
-          {
-            "term": "Examples",
-            "explanation": "Captured auth exchange reused"
-          }
-        ],
-        "defs": [],
-        "why": "Systems without replay protection may accept reused messages.",
-        "example": "A previously valid authentication exchange is retransmitted.",
-        "exam": "Capture + resend → REPLAY.",
-        "check_q": "Which attack resends a valid captured transmission?",
-        "check_a": "Replay."
-      }
-    },
-    {
-      "n": 13,
-      "title": "Privilege Escalation",
-      "instructional": true,
-      "teach": "An attacker gains permissions beyond those originally granted.",
-      "points": [
-        "Basically",
-        "Examples"
-      ],
-      "defs": [],
-      "raw": "",
-      "course": {
-        "learn": "An attacker gains permissions beyond those originally granted.",
-        "breakdown": [
-          {
-            "term": "Basically",
-            "explanation": "The attacker gets more access than they should have."
-          },
-          {
-            "term": "Examples",
-            "explanation": "User to admin, Local privilege escalation"
-          }
-        ],
-        "defs": [],
-        "why": "Higher privileges enable broader control.",
-        "example": "A standard user exploits a flaw and becomes administrator.",
-        "exam": "User → admin → PRIVILEGE ESCALATION.",
-        "check_q": "Which attack gains higher permissions?",
-        "check_a": "Privilege escalation."
-      }
-    },
-    {
-      "n": 14,
-      "title": "Directory Traversal",
-      "instructional": true,
-      "teach": "An attacker manipulates file paths to access files outside the intended directory.",
-      "points": [
-        "Basically",
-        "Examples"
-      ],
-      "defs": [],
-      "raw": "",
-      "course": {
-        "learn": "An attacker manipulates file paths to access files outside the intended directory.",
-        "breakdown": [
-          {
-            "term": "Basically",
-            "explanation": "Escape the allowed folder using path manipulation."
-          },
-          {
-            "term": "Examples",
-            "explanation": "../, Reading system files"
-          }
-        ],
-        "defs": [],
-        "why": "Poor path validation can expose sensitive files.",
-        "example": "../../etc/passwd is requested through a web application.",
-        "exam": "../ or path escape → DIRECTORY TRAVERSAL.",
-        "check_q": "Which attack uses path manipulation such as ../?",
-        "check_a": "Directory traversal."
+        "why": "Weak or short secrets may eventually be discovered.",
+        "example": "Thousands of password candidates are attempted against one account.",
+        "exam": "Many guesses → BRUTE FORCE.",
+        "check_q": "Which attack systematically tries many candidates?",
+        "check_a": "Brute force."
       }
     }
   ],
-  "slide_count": 14,
-  "instructional_count": 13,
+  "slide_count": 6,
+  "instructional_count": 5,
   "concepts": [
-    "Distributed Denial-of-Service (DDoS)",
-    "Amplified DDoS",
-    "Reflected DDoS",
-    "DNS Attack",
-    "Wireless Attack",
-    "On-path Attack",
-    "Credential Replay",
-    "Malicious Code",
-    "Injection",
-    "Buffer Overflow",
-    "Replay",
-    "Privilege Escalation",
-    "Directory Traversal"
+    "Downgrade Attack",
+    "Collision Attack",
+    "Birthday Attack",
+    "Password Spraying",
+    "Brute Force"
   ],
-  "source_filename": "08-02.json",
+  "source_filename": "08-03.json",
   "fundamental_topic_layout": {
     "hero": {
       "kicker": "Security+ Objective 2.4",
-      "title": "Network and Application Attacks",
-      "intro": "Recognize network and application attacks from traffic behavior, protocol abuse, replay, interception, code execution, or privilege changes."
+      "title": "Cryptographic and Password Attacks",
+      "intro": "Distinguish cryptographic attacks from password attacks by what the attacker is weakening or varying."
     },
     "blocks": [
       {
         "type": "group",
         "eyebrow": "Learn",
-        "title": "Network and Application Attacks",
+        "title": "Cryptographic and Password Attacks",
         "prompt": "Use the observed behavior in the scenario to identify the attack or indicator.",
         "badge": "2.4",
         "cards": [
           {
-            "name": "Distributed Denial-of-Service (DDoS)",
-            "definition": "A denial-of-service attack launched from many systems to overwhelm a target.",
+            "name": "Downgrade Attack",
+            "definition": "Forces systems to use an older or weaker protocol, cipher, or security mode.",
             "examples": [
-              "Botnet traffic",
-              "Service outage"
+              "TLS downgrade",
+              "Legacy cipher negotiation"
             ],
-            "memory": "MANY SOURCES"
+            "memory": "FORCE WEAKER SECURITY"
           },
           {
-            "name": "Amplified DDoS",
-            "definition": "A DDoS technique where small attacker requests trigger much larger responses toward the victim.",
+            "name": "Collision Attack",
+            "definition": "Attempts to find two different inputs that produce the same hash output.",
             "examples": [
-              "DNS amplification",
-              "NTP amplification"
+              "Hash collision"
             ],
-            "memory": "SMALL REQUEST · BIG RESPONSE"
+            "memory": "SAME HASH"
           },
           {
-            "name": "Reflected DDoS",
-            "definition": "A DDoS technique where attackers spoof the victim's address so third-party systems send responses to the victim.",
+            "name": "Birthday Attack",
+            "definition": "Uses probability properties to find hash collisions faster than naive exhaustive comparison.",
             "examples": [
-              "DNS reflection",
-              "Spoofed source IP"
+              "Birthday paradox against hashes"
             ],
-            "memory": "OTHERS REPLY TO VICTIM"
+            "memory": "COLLISION VIA PROBABILITY"
           },
           {
-            "name": "DNS Attack",
-            "definition": "An attack targeting DNS resolution, records, caches, or infrastructure.",
+            "name": "Password Spraying",
+            "definition": "Tries a small number of common passwords across many accounts.",
             "examples": [
-              "DNS poisoning",
-              "DNS hijacking"
+              "Password123 across 500 users"
             ],
-            "memory": "NAME RESOLUTION"
+            "memory": "FEW PASSWORDS · MANY ACCOUNTS"
           },
           {
-            "name": "Wireless Attack",
-            "definition": "An attack targeting Wi-Fi or other wireless communication.",
+            "name": "Brute Force",
+            "definition": "Systematically tries many possible passwords or keys until one works.",
             "examples": [
-              "Rogue AP",
-              "Deauthentication"
+              "Many guesses against one account",
+              "Key-space search"
             ],
-            "memory": "WIRELESS"
-          },
-          {
-            "name": "On-path Attack",
-            "definition": "An attacker positions between communicating parties to intercept or alter traffic.",
-            "examples": [
-              "Man-in-the-middle",
-              "Traffic interception"
-            ],
-            "memory": "BETWEEN TWO PARTIES"
-          },
-          {
-            "name": "Credential Replay",
-            "definition": "Previously captured credentials or authentication material are reused to gain access.",
-            "examples": [
-              "Replayed token",
-              "Captured credential reuse"
-            ],
-            "memory": "REUSE CAPTURED AUTH"
-          },
-          {
-            "name": "Malicious Code",
-            "definition": "Attacker-supplied code executes in a target environment.",
-            "examples": [
-              "Injected script",
-              "Remote code execution"
-            ],
-            "memory": "ATTACKER CODE RUNS"
-          },
-          {
-            "name": "Injection",
-            "definition": "Untrusted input is interpreted as commands or code by an application.",
-            "examples": [
-              "SQL injection",
-              "Command injection"
-            ],
-            "memory": "INPUT BECOMES COMMAND"
-          },
-          {
-            "name": "Buffer Overflow",
-            "definition": "Too much data is written to memory, potentially overwriting control data.",
-            "examples": [
-              "Stack overflow",
-              "Crash/code execution"
-            ],
-            "memory": "TOO MUCH DATA"
-          },
-          {
-            "name": "Replay",
-            "definition": "A valid transmission or message is captured and resent later.",
-            "examples": [
-              "Captured auth exchange reused"
-            ],
-            "memory": "CAPTURE + RESEND"
-          },
-          {
-            "name": "Privilege Escalation",
-            "definition": "An attacker gains permissions beyond those originally granted.",
-            "examples": [
-              "User to admin",
-              "Local privilege escalation"
-            ],
-            "memory": "GAIN MORE PRIVILEGE"
-          },
-          {
-            "name": "Directory Traversal",
-            "definition": "An attacker manipulates file paths to access files outside the intended directory.",
-            "examples": [
-              "../",
-              "Reading system files"
-            ],
-            "memory": "ESCAPE THE FOLDER"
+            "memory": "MANY GUESSES"
           }
         ],
         "columns": "four"
       },
       {
         "type": "table",
-        "title": "Network and Application Attacks comparison",
+        "title": "Cryptographic and Password Attacks comparison",
         "headers": [
           "Attack",
-          "What to recognize",
+          "What it does",
           "Exam clue"
         ],
         "rows": [
           [
-            "DDoS",
-            "Many sources overwhelm target",
-            "Resource exhaustion"
+            "Downgrade",
+            "Force weaker protocol/security",
+            "Legacy mode negotiated"
           ],
           [
-            "Amplified",
-            "Responses larger than requests",
-            "Small request, big response"
+            "Collision",
+            "Different inputs, same hash",
+            "Hash weakness"
           ],
           [
-            "Reflected",
-            "Third parties send replies to victim",
-            "Spoofed victim address"
+            "Birthday",
+            "Probability-based collision search",
+            "Birthday paradox"
           ],
           [
-            "On-path",
-            "Attacker sits between parties",
-            "Intercept/alter traffic"
+            "Password spraying",
+            "Few passwords, many accounts",
+            "Avoid lockouts"
           ],
           [
-            "Replay",
-            "Captured message resent",
-            "Reuse valid transmission"
-          ],
-          [
-            "Privilege escalation",
-            "Gain higher rights",
-            "User → admin"
-          ],
-          [
-            "Directory traversal",
-            "Escape intended path",
-            "../"
+            "Brute force",
+            "Many guesses",
+            "Exhaustive search"
           ]
         ]
       },
       {
         "type": "tip",
         "kicker": "Exam Shortcut",
-        "title": "Read the traffic behavior",
+        "title": "Know what the attacker is varying",
         "items": [
           [
-            "Many systems flood one target → DDoS",
-            "The attack is distributed across multiple sources.",
-            "Example: Thousands of bots overwhelm a website."
+            "Forced older security → DOWNGRADE",
+            "The attacker makes both sides use weaker protections.",
+            "Example: A connection falls back to a legacy protocol."
           ],
           [
-            "Tiny requests cause huge responses → AMPLIFIED",
-            "Responses are much larger than requests.",
-            "Example: Small DNS queries generate large responses."
+            "Different inputs share one hash → COLLISION",
+            "Distinct data produces the same digest.",
+            "Example: Two files share one hash value."
           ],
           [
-            "Third parties reply to victim → REFLECTED",
-            "The victim's address is spoofed.",
-            "Example: DNS servers send responses to a victim that never queried them."
+            "Collision via probability → BIRTHDAY",
+            "The attack exploits collision probability.",
+            "Example: A collision is found sooner than naive search suggests."
           ],
           [
-            "Attacker between parties → ON-PATH",
-            "Traffic is intercepted in transit.",
-            "Example: Login traffic is captured between user and server."
+            "One common password across many users → SPRAYING",
+            "Guesses are distributed across accounts.",
+            "Example: Winter2026! is tried once against hundreds of users."
           ],
           [
-            "Captured auth reused → CREDENTIAL REPLAY",
-            "Previously captured auth material is reused.",
-            "Example: A stolen token is replayed."
-          ],
-          [
-            "../ or path escape → DIRECTORY TRAVERSAL",
-            "Paths are manipulated to leave the intended directory.",
-            "Example: ../../etc/passwd is requested."
+            "Many guesses against target → BRUTE FORCE",
+            "Candidates are tried repeatedly until one succeeds.",
+            "Example: Thousands of passwords target one account."
           ]
         ],
-        "example": "Memory: Many = DDoS · Bigger reply = amplified · Others reply = reflected · Middle = on-path · Reuse = replay."
+        "example": "Memory: Downgrade = weaker · Collision = same hash · Birthday = collision probability · Spray = few/many · Brute force = many guesses."
       }
     ],
     "questions": [
       {
-        "q": "Thousands of compromised hosts flood one website until it becomes unavailable. Which attack is this?",
+        "q": "An attacker forces two systems to negotiate an older, weaker protocol. Which attack is this?",
         "choices": [
-          "DDoS",
-          "On-path attack",
-          "Replay",
-          "Privilege escalation"
+          "Downgrade attack",
+          "Collision attack",
+          "Birthday attack",
+          "Password spraying"
         ],
         "answer": 0,
-        "explanation": "A DDoS uses many distributed sources to overwhelm one target."
+        "explanation": "A downgrade attack forces use of weaker security settings."
       },
       {
-        "q": "Small DNS queries trigger much larger responses toward a victim. Which technique is this?",
+        "q": "Two different files are crafted to produce the same hash. Which attack is this?",
         "choices": [
-          "Amplified DDoS",
-          "Replay",
-          "On-path attack",
-          "Credential replay"
+          "Collision attack",
+          "Downgrade attack",
+          "Brute force",
+          "Password spraying"
         ],
         "answer": 0,
-        "explanation": "Amplification uses protocols whose responses are much larger than requests."
+        "explanation": "A collision occurs when different inputs produce the same hash output."
       },
       {
-        "q": "Attackers spoof the victim's IP so third-party DNS servers send replies to the victim. Which technique is this?",
+        "q": "An attacker exploits birthday-paradox probability to find any two inputs with the same hash. Which attack is this?",
         "choices": [
-          "Reflected DDoS",
-          "Amplified DDoS only",
-          "Wireless attack",
+          "Birthday attack",
+          "Downgrade attack",
+          "Password spraying",
           "Replay"
         ],
         "answer": 0,
-        "explanation": "Reflection causes third parties to send responses to the spoofed victim address."
+        "explanation": "Birthday attacks use collision probability."
       },
       {
-        "q": "A legitimate domain resolves to an attacker-controlled IP because name resolution was manipulated. Which category best fits?",
+        "q": "Winter2026! is tried once against hundreds of accounts. Which attack is this?",
         "choices": [
-          "DNS attack",
-          "DDoS",
-          "On-path",
-          "Directory traversal"
+          "Password spraying",
+          "Brute force",
+          "Birthday attack",
+          "Collision attack"
         ],
         "answer": 0,
-        "explanation": "The attack targets DNS resolution."
+        "explanation": "Password spraying uses a few common passwords across many accounts."
       },
       {
-        "q": "An attacker intercepts and modifies traffic between a user and server. Which attack is this?",
+        "q": "Thousands of password guesses are attempted against one administrator account. Which attack is this?",
         "choices": [
-          "On-path attack",
-          "Replay",
-          "DDoS",
-          "Directory traversal"
+          "Brute force",
+          "Password spraying",
+          "Downgrade attack",
+          "Collision attack"
         ],
         "answer": 0,
-        "explanation": "An on-path attacker sits between communicating parties."
-      },
-      {
-        "q": "A stolen authentication token is reused successfully. Which attack best fits?",
-        "choices": [
-          "Credential replay",
-          "Directory traversal",
-          "DDoS",
-          "Buffer overflow"
-        ],
-        "answer": 0,
-        "explanation": "Previously captured authentication material is being reused."
-      },
-      {
-        "q": "A form field is interpreted as part of a backend command. Which attack is this?",
-        "choices": [
-          "Injection",
-          "Replay",
-          "Privilege escalation",
-          "Buffer overflow"
-        ],
-        "answer": 0,
-        "explanation": "Injection occurs when untrusted input becomes commands or code."
-      },
-      {
-        "q": "A standard user exploits a flaw and becomes an administrator. Which attack is this?",
-        "choices": [
-          "Privilege escalation",
-          "Replay",
-          "Directory traversal",
-          "DDoS"
-        ],
-        "answer": 0,
-        "explanation": "The attacker gains higher privileges than originally granted."
-      },
-      {
-        "q": "A request includes ../../ to access files outside the intended folder. Which attack is this?",
-        "choices": [
-          "Directory traversal",
-          "Injection",
-          "On-path",
-          "Replay"
-        ],
-        "answer": 0,
-        "explanation": "Directory traversal escapes the intended path using manipulated file paths."
+        "explanation": "Brute force repeatedly tries many candidates against a target."
       }
     ]
   }
