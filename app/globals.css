@@ -24,3 +24,47 @@ body.dark{--bg:#0a0f16;--surface:#111923;--surface2:#182231;--surface3:#202c3d;-
 .sc-tip-item>strong{display:block;margin-bottom:7px}
 .sc-tip-item>p{margin:0;line-height:1.55}
 .sc-tip-example{margin-top:8px;font-size:13px;line-height:1.45;color:var(--muted)}
+
+
+/* Security+ exam-domain grouping */
+.domain-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin: 18px 0 28px;
+}
+.domain-chip {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface);
+  color: inherit;
+  text-decoration: none;
+}
+.domain-chip span {
+  font-size: .88rem;
+  opacity: .82;
+}
+.domain-chip b {
+  font-size: .82rem;
+  color: var(--accent);
+}
+.domain-block {
+  margin: 34px 0 46px;
+}
+.domain-title {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.domain-title h2 {
+  margin: 4px 0 0;
+}
+.home-domains {
+  margin-top: 22px;
+}
