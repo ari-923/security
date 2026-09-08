@@ -117,5 +117,12 @@
     "lesson_count": 3,
     "slide_count": 26,
     "instructional_count": 23
+  },
+  {
+    "chapter": 18,
+    "name": "Enterprise Security Capabilities",
+    "lesson_count": 4,
+    "slide_count": 32,
+    "instructional_count": 28
   }
 ]
