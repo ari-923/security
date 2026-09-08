@@ -1,0 +1,313 @@
+{
+  "id": "19.04",
+  "chapter": 19,
+  "sub": 4,
+  "title": "Privileged Access Management",
+  "chapter_name": "Identity & Access Management",
+  "slides": [
+    {
+      "n": 1,
+      "title": "Privileged Access Management",
+      "instructional": false,
+      "teach": "",
+      "points": [
+        "Privileged accounts create outsized risk. PAM controls when elevated permissions exist, how privileged credentials are stored, and how long those credentials remain valid."
+      ],
+      "defs": [],
+      "raw": ""
+    },
+    {
+      "n": 2,
+      "title": "Privileged Access Management (PAM)",
+      "instructional": true,
+      "teach": "Tools and processes that control, monitor, and secure privileged accounts and elevated access.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Tools and processes that control, monitor, and secure privileged accounts and elevated access.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Tools and processes that control, monitor, and secure privileged accounts and elevated access."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Admin account management, Privileged session control"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects identity lifecycle, authentication, authorization, password security, or privileged access.",
+        "example": "Admin account management",
+        "exam": "CONTROL ADMIN POWER",
+        "check_q": "What is the key exam clue for Privileged Access Management (PAM)?",
+        "check_a": "CONTROL ADMIN POWER"
+      }
+    },
+    {
+      "n": 3,
+      "title": "Just-in-time Permissions",
+      "instructional": true,
+      "teach": "Grants elevated permissions only when needed and removes them after a limited period.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Grants elevated permissions only when needed and removes them after a limited period.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Grants elevated permissions only when needed and removes them after a limited period."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Temporary admin role, Time-limited elevation"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects identity lifecycle, authentication, authorization, password security, or privileged access.",
+        "example": "Temporary admin role",
+        "exam": "ACCESS ONLY WHEN NEEDED",
+        "check_q": "What is the key exam clue for Just-in-time Permissions?",
+        "check_a": "ACCESS ONLY WHEN NEEDED"
+      }
+    },
+    {
+      "n": 4,
+      "title": "Password Vaulting",
+      "instructional": true,
+      "teach": "Stores privileged credentials securely and controls their retrieval, rotation, and use.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Stores privileged credentials securely and controls their retrieval, rotation, and use.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Stores privileged credentials securely and controls their retrieval, rotation, and use."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Admin password vault, Automatic credential rotation"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects identity lifecycle, authentication, authorization, password security, or privileged access.",
+        "example": "Admin password vault",
+        "exam": "LOCK UP ADMIN PASSWORDS",
+        "check_q": "What is the key exam clue for Password Vaulting?",
+        "check_a": "LOCK UP ADMIN PASSWORDS"
+      }
+    },
+    {
+      "n": 5,
+      "title": "Ephemeral Credentials",
+      "instructional": true,
+      "teach": "Short-lived credentials created for temporary use and automatically expired or destroyed.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Short-lived credentials created for temporary use and automatically expired or destroyed.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Short-lived credentials created for temporary use and automatically expired or destroyed."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Temporary cloud credential, Short-lived API token"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects identity lifecycle, authentication, authorization, password security, or privileged access.",
+        "example": "Temporary cloud credential",
+        "exam": "CREDENTIALS THAT DISAPPEAR",
+        "check_q": "What is the key exam clue for Ephemeral Credentials?",
+        "check_a": "CREDENTIALS THAT DISAPPEAR"
+      }
+    }
+  ],
+  "slide_count": 5,
+  "instructional_count": 4,
+  "concepts": [
+    "Privileged Access Management (PAM)",
+    "Just-in-time Permissions",
+    "Password Vaulting",
+    "Ephemeral Credentials"
+  ],
+  "source_filename": "19-04.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 4.6",
+      "title": "Privileged Access Management",
+      "intro": "Privileged accounts create outsized risk. PAM controls when elevated permissions exist, how privileged credentials are stored, and how long those credentials remain valid."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Privileged Access Management",
+        "prompt": "Identify whether the scenario is about identity lifecycle, authorization, authentication, passwords, or privileged access.",
+        "badge": "4.6",
+        "cards": [
+          {
+            "name": "Privileged Access Management (PAM)",
+            "definition": "Tools and processes that control, monitor, and secure privileged accounts and elevated access.",
+            "examples": [
+              "Admin account management",
+              "Privileged session control"
+            ],
+            "memory": "CONTROL ADMIN POWER"
+          },
+          {
+            "name": "Just-in-time Permissions",
+            "definition": "Grants elevated permissions only when needed and removes them after a limited period.",
+            "examples": [
+              "Temporary admin role",
+              "Time-limited elevation"
+            ],
+            "memory": "ACCESS ONLY WHEN NEEDED"
+          },
+          {
+            "name": "Password Vaulting",
+            "definition": "Stores privileged credentials securely and controls their retrieval, rotation, and use.",
+            "examples": [
+              "Admin password vault",
+              "Automatic credential rotation"
+            ],
+            "memory": "LOCK UP ADMIN PASSWORDS"
+          },
+          {
+            "name": "Ephemeral Credentials",
+            "definition": "Short-lived credentials created for temporary use and automatically expired or destroyed.",
+            "examples": [
+              "Temporary cloud credential",
+              "Short-lived API token"
+            ],
+            "memory": "CREDENTIALS THAT DISAPPEAR"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Privileged Access Management comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "PAM",
+            "Manage privileged access",
+            "Admin accounts"
+          ],
+          [
+            "Just-in-time",
+            "Temporary elevation",
+            "Only when needed"
+          ],
+          [
+            "Password vaulting",
+            "Secure privileged passwords",
+            "Store/rotate/retrieve"
+          ],
+          [
+            "Ephemeral credentials",
+            "Short-lived credentials",
+            "Expire automatically"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Privileged Access Management exam shortcuts",
+        "items": [
+          [
+            "Admin rights needed for one task only → JUST-IN-TIME",
+            "Grant elevation only for the required window.",
+            "Example: Engineer receives admin access for 30 minutes."
+          ],
+          [
+            "Shared admin password should not be known by everyone → PASSWORD VAULT",
+            "Store and broker the credential securely.",
+            "Example: PAM checks out and rotates the admin password."
+          ],
+          [
+            "Temporary cloud workload needs credentials → EPHEMERAL CREDENTIALS",
+            "Use short-lived credentials rather than long-term secrets.",
+            "Example: A workload receives a token valid for one hour."
+          ],
+          [
+            "Question asks how to control powerful admin accounts overall → PAM",
+            "PAM is the broader privileged-access control framework.",
+            "Example: Admin sessions are approved, recorded, and time-limited."
+          ]
+        ],
+        "example": "First determine whether the scenario is asking who the user is, what they can do, how they authenticate, or how privileged access should be controlled."
+      }
+    ],
+    "questions": [
+      {
+        "q": "An engineer receives administrator privileges for only 30 minutes to complete a maintenance task. Which PAM capability is this?",
+        "choices": [
+          "Just-in-time permissions",
+          "Password vaulting",
+          "Attestation",
+          "Federation"
+        ],
+        "answer": 0,
+        "explanation": "Just-in-time permissions provide temporary elevation only when needed."
+      },
+      {
+        "q": "A shared administrator password should be hidden from users, checked out securely, and rotated automatically. Which capability is best?",
+        "choices": [
+          "Password vaulting",
+          "JIT permissions",
+          "SSO",
+          "ABAC"
+        ],
+        "answer": 0,
+        "explanation": "Password vaulting securely stores, brokers, and rotates privileged credentials."
+      },
+      {
+        "q": "A cloud workload receives a credential that automatically expires after one hour. Which concept is this?",
+        "choices": [
+          "Ephemeral credentials",
+          "Password reuse",
+          "Attestation",
+          "Federation"
+        ],
+        "answer": 0,
+        "explanation": "Ephemeral credentials are short-lived and automatically expire."
+      },
+      {
+        "q": "A company wants a platform that approves, records, monitors, and controls administrator sessions. Which broad solution is this?",
+        "choices": [
+          "PAM",
+          "SSO",
+          "LDAP",
+          "Passwordless"
+        ],
+        "answer": 0,
+        "explanation": "Privileged Access Management controls and monitors privileged accounts and elevated access."
+      }
+    ]
+  }
+}

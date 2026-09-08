@@ -1,0 +1,684 @@
+{
+  "id": "19.01",
+  "chapter": 19,
+  "sub": 1,
+  "title": "Identity Lifecycle, Federation, and SSO",
+  "chapter_name": "Identity & Access Management",
+  "slides": [
+    {
+      "n": 1,
+      "title": "Identity Lifecycle, Federation, and SSO",
+      "instructional": false,
+      "teach": "",
+      "points": [
+        "Identity and access management starts with establishing trustworthy identities, provisioning the right accounts, and enabling secure access across systems without creating unnecessary credentials."
+      ],
+      "defs": [],
+      "raw": ""
+    },
+    {
+      "n": 2,
+      "title": "Provisioning User Accounts",
+      "instructional": true,
+      "teach": "Creates and configures user accounts with the correct identity attributes and access.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Creates and configures user accounts with the correct identity attributes and access.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Creates and configures user accounts with the correct identity attributes and access."
+          },
+          {
+            "term": "Examples",
+            "explanation": "New employee account, Contractor account"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects identity lifecycle, authentication, authorization, password security, or privileged access.",
+        "example": "New employee account",
+        "exam": "CREATE ACCESS",
+        "check_q": "What is the key exam clue for Provisioning User Accounts?",
+        "check_a": "CREATE ACCESS"
+      }
+    },
+    {
+      "n": 3,
+      "title": "De-provisioning User Accounts",
+      "instructional": true,
+      "teach": "Disables or removes accounts and access when they are no longer required.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Disables or removes accounts and access when they are no longer required.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Disables or removes accounts and access when they are no longer required."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Employee termination, Expired contractor"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects identity lifecycle, authentication, authorization, password security, or privileged access.",
+        "example": "Employee termination",
+        "exam": "REMOVE ACCESS",
+        "check_q": "What is the key exam clue for De-provisioning User Accounts?",
+        "check_a": "REMOVE ACCESS"
+      }
+    },
+    {
+      "n": 4,
+      "title": "Permission Assignments",
+      "instructional": true,
+      "teach": "Grants specific rights to users, groups, or roles based on business need.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Grants specific rights to users, groups, or roles based on business need.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Grants specific rights to users, groups, or roles based on business need."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Read-only access, Admin rights"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects identity lifecycle, authentication, authorization, password security, or privileged access.",
+        "example": "Read-only access",
+        "exam": "WHAT CAN THEY DO?",
+        "check_q": "What is the key exam clue for Permission Assignments?",
+        "check_a": "WHAT CAN THEY DO?"
+      }
+    },
+    {
+      "n": 5,
+      "title": "Identity Proofing",
+      "instructional": true,
+      "teach": "Verifies that a person is who they claim to be before issuing credentials or access.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Verifies that a person is who they claim to be before issuing credentials or access.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Verifies that a person is who they claim to be before issuing credentials or access."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Government ID check, In-person verification"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects identity lifecycle, authentication, authorization, password security, or privileged access.",
+        "example": "Government ID check",
+        "exam": "PROVE THE PERSON",
+        "check_q": "What is the key exam clue for Identity Proofing?",
+        "check_a": "PROVE THE PERSON"
+      }
+    },
+    {
+      "n": 6,
+      "title": "Federation",
+      "instructional": true,
+      "teach": "Establishes trust between separate identity domains so identities from one domain can be accepted by another.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Establishes trust between separate identity domains so identities from one domain can be accepted by another.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Establishes trust between separate identity domains so identities from one domain can be accepted by another."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Partner login, Cloud federation"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects identity lifecycle, authentication, authorization, password security, or privileged access.",
+        "example": "Partner login",
+        "exam": "TRUST BETWEEN DOMAINS",
+        "check_q": "What is the key exam clue for Federation?",
+        "check_a": "TRUST BETWEEN DOMAINS"
+      }
+    },
+    {
+      "n": 7,
+      "title": "Single Sign-on (SSO)",
+      "instructional": true,
+      "teach": "Allows a user to authenticate once and access multiple authorized applications or services.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Allows a user to authenticate once and access multiple authorized applications or services.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Allows a user to authenticate once and access multiple authorized applications or services."
+          },
+          {
+            "term": "Examples",
+            "explanation": "One login for SaaS apps, Enterprise portal"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects identity lifecycle, authentication, authorization, password security, or privileged access.",
+        "example": "One login for SaaS apps",
+        "exam": "ONE LOGIN · MANY APPS",
+        "check_q": "What is the key exam clue for Single Sign-on (SSO)?",
+        "check_a": "ONE LOGIN · MANY APPS"
+      }
+    },
+    {
+      "n": 8,
+      "title": "LDAP",
+      "instructional": true,
+      "teach": "Lightweight Directory Access Protocol; used to query and manage directory services.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Lightweight Directory Access Protocol; used to query and manage directory services.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Lightweight Directory Access Protocol; used to query and manage directory services."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Active Directory query, Directory authentication"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects identity lifecycle, authentication, authorization, password security, or privileged access.",
+        "example": "Active Directory query",
+        "exam": "DIRECTORY ACCESS",
+        "check_q": "What is the key exam clue for LDAP?",
+        "check_a": "DIRECTORY ACCESS"
+      }
+    },
+    {
+      "n": 9,
+      "title": "OAuth",
+      "instructional": true,
+      "teach": "Open Authorization; an authorization framework that lets one service access resources on a user's behalf without sharing the user's password.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Open Authorization; an authorization framework that lets one service access resources on a user's behalf without sharing the user's password.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Open Authorization; an authorization framework that lets one service access resources on a user's behalf without sharing the user's password."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Sign in with provider, API access token"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects identity lifecycle, authentication, authorization, password security, or privileged access.",
+        "example": "Sign in with provider",
+        "exam": "DELEGATED AUTHORIZATION",
+        "check_q": "What is the key exam clue for OAuth?",
+        "check_a": "DELEGATED AUTHORIZATION"
+      }
+    },
+    {
+      "n": 10,
+      "title": "SAML",
+      "instructional": true,
+      "teach": "Security Assertions Markup Language; XML-based standard commonly used for browser-based federation and SSO.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Security Assertions Markup Language; XML-based standard commonly used for browser-based federation and SSO.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Security Assertions Markup Language; XML-based standard commonly used for browser-based federation and SSO."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Enterprise SSO, Identity provider assertion"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects identity lifecycle, authentication, authorization, password security, or privileged access.",
+        "example": "Enterprise SSO",
+        "exam": "SSO ASSERTION",
+        "check_q": "What is the key exam clue for SAML?",
+        "check_a": "SSO ASSERTION"
+      }
+    },
+    {
+      "n": 11,
+      "title": "Interoperability",
+      "instructional": true,
+      "teach": "Ability of different IAM systems, platforms, and identity technologies to work together.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Ability of different IAM systems, platforms, and identity technologies to work together.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Ability of different IAM systems, platforms, and identity technologies to work together."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Cloud + on-prem IAM, Cross-platform identity"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects identity lifecycle, authentication, authorization, password security, or privileged access.",
+        "example": "Cloud + on-prem IAM",
+        "exam": "SYSTEMS WORK TOGETHER",
+        "check_q": "What is the key exam clue for Interoperability?",
+        "check_a": "SYSTEMS WORK TOGETHER"
+      }
+    },
+    {
+      "n": 12,
+      "title": "Attestation",
+      "instructional": true,
+      "teach": "Formal review or confirmation that access rights and identity assignments remain appropriate.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Formal review or confirmation that access rights and identity assignments remain appropriate.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Formal review or confirmation that access rights and identity assignments remain appropriate."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Quarterly access review, Manager certifies permissions"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects identity lifecycle, authentication, authorization, password security, or privileged access.",
+        "example": "Quarterly access review",
+        "exam": "REVIEW AND CONFIRM",
+        "check_q": "What is the key exam clue for Attestation?",
+        "check_a": "REVIEW AND CONFIRM"
+      }
+    }
+  ],
+  "slide_count": 12,
+  "instructional_count": 11,
+  "concepts": [
+    "Provisioning User Accounts",
+    "De-provisioning User Accounts",
+    "Permission Assignments",
+    "Identity Proofing",
+    "Federation",
+    "Single Sign-on (SSO)",
+    "LDAP",
+    "OAuth",
+    "SAML",
+    "Interoperability",
+    "Attestation"
+  ],
+  "source_filename": "19-01.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 4.6",
+      "title": "Identity Lifecycle, Federation, and SSO",
+      "intro": "Identity and access management starts with establishing trustworthy identities, provisioning the right accounts, and enabling secure access across systems without creating unnecessary credentials."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Identity Lifecycle, Federation, and SSO",
+        "prompt": "Identify whether the scenario is about identity lifecycle, authorization, authentication, passwords, or privileged access.",
+        "badge": "4.6",
+        "cards": [
+          {
+            "name": "Provisioning User Accounts",
+            "definition": "Creates and configures user accounts with the correct identity attributes and access.",
+            "examples": [
+              "New employee account",
+              "Contractor account"
+            ],
+            "memory": "CREATE ACCESS"
+          },
+          {
+            "name": "De-provisioning User Accounts",
+            "definition": "Disables or removes accounts and access when they are no longer required.",
+            "examples": [
+              "Employee termination",
+              "Expired contractor"
+            ],
+            "memory": "REMOVE ACCESS"
+          },
+          {
+            "name": "Permission Assignments",
+            "definition": "Grants specific rights to users, groups, or roles based on business need.",
+            "examples": [
+              "Read-only access",
+              "Admin rights"
+            ],
+            "memory": "WHAT CAN THEY DO?"
+          },
+          {
+            "name": "Identity Proofing",
+            "definition": "Verifies that a person is who they claim to be before issuing credentials or access.",
+            "examples": [
+              "Government ID check",
+              "In-person verification"
+            ],
+            "memory": "PROVE THE PERSON"
+          },
+          {
+            "name": "Federation",
+            "definition": "Establishes trust between separate identity domains so identities from one domain can be accepted by another.",
+            "examples": [
+              "Partner login",
+              "Cloud federation"
+            ],
+            "memory": "TRUST BETWEEN DOMAINS"
+          },
+          {
+            "name": "Single Sign-on (SSO)",
+            "definition": "Allows a user to authenticate once and access multiple authorized applications or services.",
+            "examples": [
+              "One login for SaaS apps",
+              "Enterprise portal"
+            ],
+            "memory": "ONE LOGIN · MANY APPS"
+          },
+          {
+            "name": "LDAP",
+            "definition": "Lightweight Directory Access Protocol; used to query and manage directory services.",
+            "examples": [
+              "Active Directory query",
+              "Directory authentication"
+            ],
+            "memory": "DIRECTORY ACCESS"
+          },
+          {
+            "name": "OAuth",
+            "definition": "Open Authorization; an authorization framework that lets one service access resources on a user's behalf without sharing the user's password.",
+            "examples": [
+              "Sign in with provider",
+              "API access token"
+            ],
+            "memory": "DELEGATED AUTHORIZATION"
+          },
+          {
+            "name": "SAML",
+            "definition": "Security Assertions Markup Language; XML-based standard commonly used for browser-based federation and SSO.",
+            "examples": [
+              "Enterprise SSO",
+              "Identity provider assertion"
+            ],
+            "memory": "SSO ASSERTION"
+          },
+          {
+            "name": "Interoperability",
+            "definition": "Ability of different IAM systems, platforms, and identity technologies to work together.",
+            "examples": [
+              "Cloud + on-prem IAM",
+              "Cross-platform identity"
+            ],
+            "memory": "SYSTEMS WORK TOGETHER"
+          },
+          {
+            "name": "Attestation",
+            "definition": "Formal review or confirmation that access rights and identity assignments remain appropriate.",
+            "examples": [
+              "Quarterly access review",
+              "Manager certifies permissions"
+            ],
+            "memory": "REVIEW AND CONFIRM"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Identity Lifecycle, Federation, and SSO comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Provisioning",
+            "Create access",
+            "Joiner"
+          ],
+          [
+            "De-provisioning",
+            "Remove access",
+            "Leaver"
+          ],
+          [
+            "Identity proofing",
+            "Verify real identity",
+            "Before issuing credentials"
+          ],
+          [
+            "Federation",
+            "Trust between identity domains",
+            "Cross-organization access"
+          ],
+          [
+            "SSO",
+            "One authentication, many apps",
+            "Fewer logins"
+          ],
+          [
+            "LDAP",
+            "Directory access",
+            "Query/manage directory"
+          ],
+          [
+            "OAuth",
+            "Delegated authorization",
+            "Access without sharing password"
+          ],
+          [
+            "SAML",
+            "Federated SSO assertion",
+            "Browser SSO"
+          ],
+          [
+            "Attestation",
+            "Review access appropriateness",
+            "Periodic certification"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Identity Lifecycle, Federation, and SSO exam shortcuts",
+        "items": [
+          [
+            "New employee starts → PROVISION",
+            "Create the account and assign only required access.",
+            "Example: HR triggers creation of email and application accounts."
+          ],
+          [
+            "Employee leaves → DE-PROVISION",
+            "Disable accounts and revoke access promptly.",
+            "Example: A terminated user's VPN and SaaS access are removed."
+          ],
+          [
+            "Need to verify real-world identity → IDENTITY PROOFING",
+            "Confirm the person before issuing credentials.",
+            "Example: Verify government ID before account activation."
+          ],
+          [
+            "One login for many enterprise apps → SSO",
+            "Authenticate once, then reuse that session for authorized services.",
+            "Example: One corporate login opens several SaaS apps."
+          ],
+          [
+            "Partner organization uses its own identity provider → FEDERATION",
+            "Establish trust between separate identity domains.",
+            "Example: A supplier signs in with its own corporate identity."
+          ],
+          [
+            "App needs delegated access without user's password → OAUTH",
+            "Use authorization tokens rather than sharing credentials.",
+            "Example: A calendar app receives permission to read events."
+          ],
+          [
+            "Browser-based enterprise federation → SAML",
+            "SAML commonly carries identity assertions between IdP and service provider.",
+            "Example: Corporate IdP sends a SAML assertion to a SaaS app."
+          ]
+        ],
+        "example": "First determine whether the scenario is asking who the user is, what they can do, how they authenticate, or how privileged access should be controlled."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A new employee needs an email account and access to approved business applications. Which IAM activity is this?",
+        "choices": [
+          "Provisioning",
+          "De-provisioning",
+          "Attestation",
+          "Federation"
+        ],
+        "answer": 0,
+        "explanation": "Provisioning creates accounts and assigns required access."
+      },
+      {
+        "q": "An employee leaves the company and all accounts and remote access must be disabled. Which activity is this?",
+        "choices": [
+          "De-provisioning",
+          "Provisioning",
+          "SSO",
+          "Attestation"
+        ],
+        "answer": 0,
+        "explanation": "De-provisioning removes accounts and access that are no longer needed."
+      },
+      {
+        "q": "Before creating an account, HR verifies a person's government-issued identification. Which concept is this?",
+        "choices": [
+          "Identity proofing",
+          "Federation",
+          "Authorization",
+          "Attestation"
+        ],
+        "answer": 0,
+        "explanation": "Identity proofing confirms that the person is who they claim to be."
+      },
+      {
+        "q": "A user authenticates once and then accesses several authorized SaaS applications without signing in again. Which concept is this?",
+        "choices": [
+          "SSO",
+          "LDAP",
+          "OAuth only",
+          "Attestation"
+        ],
+        "answer": 0,
+        "explanation": "SSO allows one authentication event to provide access to multiple authorized applications."
+      },
+      {
+        "q": "A supplier logs in to your application using the supplier's own identity provider. Which concept is most relevant?",
+        "choices": [
+          "Federation",
+          "Provisioning",
+          "LDAP only",
+          "Password vaulting"
+        ],
+        "answer": 0,
+        "explanation": "Federation establishes trust between separate identity domains."
+      },
+      {
+        "q": "An application receives permission to access a user's calendar without receiving the user's password. Which protocol/framework is most relevant?",
+        "choices": [
+          "OAuth",
+          "LDAP",
+          "SAML",
+          "MAC"
+        ],
+        "answer": 0,
+        "explanation": "OAuth supports delegated authorization using tokens rather than sharing the user's password."
+      },
+      {
+        "q": "A browser-based enterprise SSO solution passes identity assertions from an identity provider to a cloud application. Which standard is most likely used?",
+        "choices": [
+          "SAML",
+          "LDAP",
+          "OAuth only",
+          "RADIUS"
+        ],
+        "answer": 0,
+        "explanation": "SAML is commonly used for browser-based federation and SSO assertions."
+      },
+      {
+        "q": "Managers review employee permissions every quarter and certify that access is still appropriate. Which activity is this?",
+        "choices": [
+          "Attestation",
+          "Provisioning",
+          "Federation",
+          "Passwordless"
+        ],
+        "answer": 0,
+        "explanation": "Attestation is a formal review or certification that access remains appropriate."
+      }
+    ]
+  }
+}

@@ -1,0 +1,822 @@
+{
+  "id": "19.03",
+  "chapter": 19,
+  "sub": 3,
+  "title": "Multifactor Authentication and Password Concepts",
+  "chapter_name": "Identity & Access Management",
+  "slides": [
+    {
+      "n": 1,
+      "title": "Multifactor Authentication and Password Concepts",
+      "instructional": false,
+      "teach": "",
+      "points": [
+        "Authentication proves identity. Strong IAM combines independent authentication factors with sound password practices and modern passwordless options."
+      ],
+      "defs": [],
+      "raw": ""
+    },
+    {
+      "n": 2,
+      "title": "Multifactor Authentication (MFA)",
+      "instructional": true,
+      "teach": "Requires two or more different authentication factors.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Requires two or more different authentication factors.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Requires two or more different authentication factors."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Password + security key, PIN + fingerprint"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects identity lifecycle, authentication, authorization, password security, or privileged access.",
+        "example": "Password + security key",
+        "exam": "DIFFERENT FACTOR TYPES",
+        "check_q": "What is the key exam clue for Multifactor Authentication (MFA)?",
+        "check_a": "DIFFERENT FACTOR TYPES"
+      }
+    },
+    {
+      "n": 3,
+      "title": "Biometrics",
+      "instructional": true,
+      "teach": "Authentication using physical or behavioral characteristics.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Authentication using physical or behavioral characteristics.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Authentication using physical or behavioral characteristics."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Fingerprint, Face recognition"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects identity lifecycle, authentication, authorization, password security, or privileged access.",
+        "example": "Fingerprint",
+        "exam": "SOMETHING YOU ARE",
+        "check_q": "What is the key exam clue for Biometrics?",
+        "check_a": "SOMETHING YOU ARE"
+      }
+    },
+    {
+      "n": 4,
+      "title": "Hard Token",
+      "instructional": true,
+      "teach": "Physical authentication device that generates or stores credentials.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Physical authentication device that generates or stores credentials.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Physical authentication device that generates or stores credentials."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Hardware OTP token, Smart token"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects identity lifecycle, authentication, authorization, password security, or privileged access.",
+        "example": "Hardware OTP token",
+        "exam": "PHYSICAL TOKEN",
+        "check_q": "What is the key exam clue for Hard Token?",
+        "check_a": "PHYSICAL TOKEN"
+      }
+    },
+    {
+      "n": 5,
+      "title": "Soft Token",
+      "instructional": true,
+      "teach": "Software-based token or authenticator on a device.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Software-based token or authenticator on a device.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Software-based token or authenticator on a device."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Authenticator app, Software OTP"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects identity lifecycle, authentication, authorization, password security, or privileged access.",
+        "example": "Authenticator app",
+        "exam": "TOKEN IN SOFTWARE",
+        "check_q": "What is the key exam clue for Soft Token?",
+        "check_a": "TOKEN IN SOFTWARE"
+      }
+    },
+    {
+      "n": 6,
+      "title": "Security Key",
+      "instructional": true,
+      "teach": "Physical cryptographic authenticator used for strong phishing-resistant authentication.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Physical cryptographic authenticator used for strong phishing-resistant authentication.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Physical cryptographic authenticator used for strong phishing-resistant authentication."
+          },
+          {
+            "term": "Examples",
+            "explanation": "FIDO2 key, USB/NFC key"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects identity lifecycle, authentication, authorization, password security, or privileged access.",
+        "example": "FIDO2 key",
+        "exam": "PHISHING-RESISTANT KEY",
+        "check_q": "What is the key exam clue for Security Key?",
+        "check_a": "PHISHING-RESISTANT KEY"
+      }
+    },
+    {
+      "n": 7,
+      "title": "Something You Know",
+      "instructional": true,
+      "teach": "Knowledge factor.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Knowledge factor.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Knowledge factor."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Password, PIN"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects identity lifecycle, authentication, authorization, password security, or privileged access.",
+        "example": "Password",
+        "exam": "KNOW",
+        "check_q": "What is the key exam clue for Something You Know?",
+        "check_a": "KNOW"
+      }
+    },
+    {
+      "n": 8,
+      "title": "Something You Have",
+      "instructional": true,
+      "teach": "Possession factor.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Possession factor.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Possession factor."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Phone, Security key, Token"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects identity lifecycle, authentication, authorization, password security, or privileged access.",
+        "example": "Phone",
+        "exam": "HAVE",
+        "check_q": "What is the key exam clue for Something You Have?",
+        "check_a": "HAVE"
+      }
+    },
+    {
+      "n": 9,
+      "title": "Something You Are",
+      "instructional": true,
+      "teach": "Inherence factor.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Inherence factor.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Inherence factor."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Fingerprint, Face"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects identity lifecycle, authentication, authorization, password security, or privileged access.",
+        "example": "Fingerprint",
+        "exam": "ARE",
+        "check_q": "What is the key exam clue for Something You Are?",
+        "check_a": "ARE"
+      }
+    },
+    {
+      "n": 10,
+      "title": "Somewhere You Are",
+      "instructional": true,
+      "teach": "Location factor based on geographic or network location.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Location factor based on geographic or network location.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Location factor based on geographic or network location."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Office network, Country/location"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects identity lifecycle, authentication, authorization, password security, or privileged access.",
+        "example": "Office network",
+        "exam": "WHERE",
+        "check_q": "What is the key exam clue for Somewhere You Are?",
+        "check_a": "WHERE"
+      }
+    },
+    {
+      "n": 11,
+      "title": "Password Length",
+      "instructional": true,
+      "teach": "Number of characters in a password; longer passwords generally increase resistance to guessing.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Number of characters in a password; longer passwords generally increase resistance to guessing.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Number of characters in a password; longer passwords generally increase resistance to guessing."
+          },
+          {
+            "term": "Examples",
+            "explanation": "16-character passphrase"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects identity lifecycle, authentication, authorization, password security, or privileged access.",
+        "example": "16-character passphrase",
+        "exam": "LONGER IS STRONGER",
+        "check_q": "What is the key exam clue for Password Length?",
+        "check_a": "LONGER IS STRONGER"
+      }
+    },
+    {
+      "n": 12,
+      "title": "Password Complexity",
+      "instructional": true,
+      "teach": "Use of varied character types or composition rules.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Use of varied character types or composition rules.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Use of varied character types or composition rules."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Upper/lowercase, Symbols"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects identity lifecycle, authentication, authorization, password security, or privileged access.",
+        "example": "Upper/lowercase",
+        "exam": "CHARACTER VARIETY",
+        "check_q": "What is the key exam clue for Password Complexity?",
+        "check_a": "CHARACTER VARIETY"
+      }
+    },
+    {
+      "n": 13,
+      "title": "Password Reuse",
+      "instructional": true,
+      "teach": "Using the same password across multiple accounts; a major security risk.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Using the same password across multiple accounts; a major security risk.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Using the same password across multiple accounts; a major security risk."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Same password for email and banking"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects identity lifecycle, authentication, authorization, password security, or privileged access.",
+        "example": "Same password for email and banking",
+        "exam": "DON'T REUSE",
+        "check_q": "What is the key exam clue for Password Reuse?",
+        "check_a": "DON'T REUSE"
+      }
+    },
+    {
+      "n": 14,
+      "title": "Password Expiration / Age",
+      "instructional": true,
+      "teach": "Controls how long a password remains valid before change is required.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Controls how long a password remains valid before change is required.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Controls how long a password remains valid before change is required."
+          },
+          {
+            "term": "Examples",
+            "explanation": "90-day maximum age, Minimum password age"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects identity lifecycle, authentication, authorization, password security, or privileged access.",
+        "example": "90-day maximum age",
+        "exam": "HOW OLD IS THE PASSWORD?",
+        "check_q": "What is the key exam clue for Password Expiration / Age?",
+        "check_a": "HOW OLD IS THE PASSWORD?"
+      }
+    },
+    {
+      "n": 15,
+      "title": "Password Manager",
+      "instructional": true,
+      "teach": "Securely stores and generates unique passwords for users.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Securely stores and generates unique passwords for users.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Securely stores and generates unique passwords for users."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Vault, Generated random passwords"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects identity lifecycle, authentication, authorization, password security, or privileged access.",
+        "example": "Vault",
+        "exam": "ONE VAULT · MANY UNIQUE PASSWORDS",
+        "check_q": "What is the key exam clue for Password Manager?",
+        "check_a": "ONE VAULT · MANY UNIQUE PASSWORDS"
+      }
+    },
+    {
+      "n": 16,
+      "title": "Passwordless",
+      "instructional": true,
+      "teach": "Authentication that does not require a traditional memorized password.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Authentication that does not require a traditional memorized password.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Authentication that does not require a traditional memorized password."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Passkey, Security key, Biometric-backed credential"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects identity lifecycle, authentication, authorization, password security, or privileged access.",
+        "example": "Passkey",
+        "exam": "NO TRADITIONAL PASSWORD",
+        "check_q": "What is the key exam clue for Passwordless?",
+        "check_a": "NO TRADITIONAL PASSWORD"
+      }
+    }
+  ],
+  "slide_count": 16,
+  "instructional_count": 15,
+  "concepts": [
+    "Multifactor Authentication (MFA)",
+    "Biometrics",
+    "Hard Token",
+    "Soft Token",
+    "Security Key",
+    "Something You Know",
+    "Something You Have",
+    "Something You Are",
+    "Somewhere You Are",
+    "Password Length",
+    "Password Complexity",
+    "Password Reuse",
+    "Password Expiration / Age",
+    "Password Manager",
+    "Passwordless"
+  ],
+  "source_filename": "19-03.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 4.6",
+      "title": "Multifactor Authentication and Password Concepts",
+      "intro": "Authentication proves identity. Strong IAM combines independent authentication factors with sound password practices and modern passwordless options."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Multifactor Authentication and Password Concepts",
+        "prompt": "Identify whether the scenario is about identity lifecycle, authorization, authentication, passwords, or privileged access.",
+        "badge": "4.6",
+        "cards": [
+          {
+            "name": "Multifactor Authentication (MFA)",
+            "definition": "Requires two or more different authentication factors.",
+            "examples": [
+              "Password + security key",
+              "PIN + fingerprint"
+            ],
+            "memory": "DIFFERENT FACTOR TYPES"
+          },
+          {
+            "name": "Biometrics",
+            "definition": "Authentication using physical or behavioral characteristics.",
+            "examples": [
+              "Fingerprint",
+              "Face recognition"
+            ],
+            "memory": "SOMETHING YOU ARE"
+          },
+          {
+            "name": "Hard Token",
+            "definition": "Physical authentication device that generates or stores credentials.",
+            "examples": [
+              "Hardware OTP token",
+              "Smart token"
+            ],
+            "memory": "PHYSICAL TOKEN"
+          },
+          {
+            "name": "Soft Token",
+            "definition": "Software-based token or authenticator on a device.",
+            "examples": [
+              "Authenticator app",
+              "Software OTP"
+            ],
+            "memory": "TOKEN IN SOFTWARE"
+          },
+          {
+            "name": "Security Key",
+            "definition": "Physical cryptographic authenticator used for strong phishing-resistant authentication.",
+            "examples": [
+              "FIDO2 key",
+              "USB/NFC key"
+            ],
+            "memory": "PHISHING-RESISTANT KEY"
+          },
+          {
+            "name": "Something You Know",
+            "definition": "Knowledge factor.",
+            "examples": [
+              "Password",
+              "PIN"
+            ],
+            "memory": "KNOW"
+          },
+          {
+            "name": "Something You Have",
+            "definition": "Possession factor.",
+            "examples": [
+              "Phone",
+              "Security key",
+              "Token"
+            ],
+            "memory": "HAVE"
+          },
+          {
+            "name": "Something You Are",
+            "definition": "Inherence factor.",
+            "examples": [
+              "Fingerprint",
+              "Face"
+            ],
+            "memory": "ARE"
+          },
+          {
+            "name": "Somewhere You Are",
+            "definition": "Location factor based on geographic or network location.",
+            "examples": [
+              "Office network",
+              "Country/location"
+            ],
+            "memory": "WHERE"
+          },
+          {
+            "name": "Password Length",
+            "definition": "Number of characters in a password; longer passwords generally increase resistance to guessing.",
+            "examples": [
+              "16-character passphrase"
+            ],
+            "memory": "LONGER IS STRONGER"
+          },
+          {
+            "name": "Password Complexity",
+            "definition": "Use of varied character types or composition rules.",
+            "examples": [
+              "Upper/lowercase",
+              "Symbols"
+            ],
+            "memory": "CHARACTER VARIETY"
+          },
+          {
+            "name": "Password Reuse",
+            "definition": "Using the same password across multiple accounts; a major security risk.",
+            "examples": [
+              "Same password for email and banking"
+            ],
+            "memory": "DON'T REUSE"
+          },
+          {
+            "name": "Password Expiration / Age",
+            "definition": "Controls how long a password remains valid before change is required.",
+            "examples": [
+              "90-day maximum age",
+              "Minimum password age"
+            ],
+            "memory": "HOW OLD IS THE PASSWORD?"
+          },
+          {
+            "name": "Password Manager",
+            "definition": "Securely stores and generates unique passwords for users.",
+            "examples": [
+              "Vault",
+              "Generated random passwords"
+            ],
+            "memory": "ONE VAULT · MANY UNIQUE PASSWORDS"
+          },
+          {
+            "name": "Passwordless",
+            "definition": "Authentication that does not require a traditional memorized password.",
+            "examples": [
+              "Passkey",
+              "Security key",
+              "Biometric-backed credential"
+            ],
+            "memory": "NO TRADITIONAL PASSWORD"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Multifactor Authentication and Password Concepts comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "MFA",
+            "Two+ different factor types",
+            "Not two passwords"
+          ],
+          [
+            "Know",
+            "Knowledge factor",
+            "Password/PIN"
+          ],
+          [
+            "Have",
+            "Possession factor",
+            "Phone/token/key"
+          ],
+          [
+            "Are",
+            "Biometric factor",
+            "Fingerprint/face"
+          ],
+          [
+            "Where",
+            "Location factor",
+            "Geographic/network location"
+          ],
+          [
+            "Password manager",
+            "Unique password storage",
+            "Vault"
+          ],
+          [
+            "Passwordless",
+            "No memorized password",
+            "Passkey/security key"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Multifactor Authentication and Password Concepts exam shortcuts",
+        "items": [
+          [
+            "Password + PIN → NOT MFA",
+            "Both are 'something you know.'",
+            "Example: Two knowledge factors still count as one factor category."
+          ],
+          [
+            "Password + fingerprint → MFA",
+            "Knowledge + inherence are different factor types.",
+            "Example: User enters password and scans fingerprint."
+          ],
+          [
+            "Phone authenticator + security key → both are HAVE",
+            "Two possession methods are not two distinct factor categories.",
+            "Example: Both prove possession."
+          ],
+          [
+            "Need strongest phishing resistance → SECURITY KEY / PASSWORDLESS",
+            "FIDO2-style keys and passkeys resist credential phishing better than passwords.",
+            "Example: User signs in with a hardware security key."
+          ],
+          [
+            "Passwords keep getting reused → PASSWORD MANAGER",
+            "Generate and store unique passwords per site.",
+            "Example: The vault creates a different random password for every service."
+          ],
+          [
+            "Question focuses on location → SOMEWHERE YOU ARE",
+            "Location can be used as a contextual authentication factor.",
+            "Example: Access is allowed only from an approved country."
+          ]
+        ],
+        "example": "First determine whether the scenario is asking who the user is, what they can do, how they authenticate, or how privileged access should be controlled."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A user authenticates with a password and a fingerprint. Does this qualify as MFA?",
+        "choices": [
+          "Yes, because the factors are know + are",
+          "No, both are knowledge factors",
+          "No, biometrics cannot be used for MFA",
+          "Only if SSO is enabled"
+        ],
+        "answer": 0,
+        "explanation": "A password is something you know and a fingerprint is something you are, so they are different factor types."
+      },
+      {
+        "q": "A user provides a password and a PIN. Does this count as true MFA?",
+        "choices": [
+          "No, both are something you know",
+          "Yes, because there are two credentials",
+          "Yes, because a PIN is possession",
+          "No, because passwords cannot be used in MFA"
+        ],
+        "answer": 0,
+        "explanation": "Password and PIN are both knowledge factors."
+      },
+      {
+        "q": "A physical USB/NFC authenticator is used for strong phishing-resistant login. Which implementation is this?",
+        "choices": [
+          "Security key",
+          "Soft token",
+          "Password manager",
+          "LDAP"
+        ],
+        "answer": 0,
+        "explanation": "Security keys are physical cryptographic authenticators and can provide phishing-resistant authentication."
+      },
+      {
+        "q": "An authenticator app on a smartphone generates one-time codes. Which implementation is this?",
+        "choices": [
+          "Soft token",
+          "Hard token",
+          "Biometric",
+          "Passwordless only"
+        ],
+        "answer": 0,
+        "explanation": "A software authenticator is a soft token."
+      },
+      {
+        "q": "A company wants users to stop reusing the same password across websites. Which tool is most directly helpful?",
+        "choices": [
+          "Password manager",
+          "SAML",
+          "RADIUS",
+          "Attestation"
+        ],
+        "answer": 0,
+        "explanation": "Password managers generate and store unique passwords for each service."
+      },
+      {
+        "q": "A user signs in with a passkey and no memorized password. Which concept is this?",
+        "choices": [
+          "Passwordless",
+          "Password expiration",
+          "SSO only",
+          "OAuth"
+        ],
+        "answer": 0,
+        "explanation": "Passwordless authentication does not require a traditional memorized password."
+      },
+      {
+        "q": "Access is allowed only when the user is physically located in an approved country. Which factor is being used?",
+        "choices": [
+          "Somewhere you are",
+          "Something you know",
+          "Something you have",
+          "Something you are"
+        ],
+        "answer": 0,
+        "explanation": "Location is the 'somewhere you are' factor."
+      }
+    ]
+  }
+}

@@ -1,0 +1,482 @@
+{
+  "id": "19.02",
+  "chapter": 19,
+  "sub": 2,
+  "title": "Access Control Models and Least Privilege",
+  "chapter_name": "Identity & Access Management",
+  "slides": [
+    {
+      "n": 1,
+      "title": "Access Control Models and Least Privilege",
+      "instructional": false,
+      "teach": "",
+      "points": [
+        "Authorization determines what an authenticated identity may do. Security+ expects you to distinguish access-control models and apply least privilege and contextual restrictions."
+      ],
+      "defs": [],
+      "raw": ""
+    },
+    {
+      "n": 2,
+      "title": "Mandatory Access Control (MAC)",
+      "instructional": true,
+      "teach": "Access is centrally enforced using security labels or classifications; users cannot freely change permissions.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Access is centrally enforced using security labels or classifications; users cannot freely change permissions.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Access is centrally enforced using security labels or classifications; users cannot freely change permissions."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Classified systems, Security labels"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects identity lifecycle, authentication, authorization, password security, or privileged access.",
+        "example": "Classified systems",
+        "exam": "LABELS CONTROL ACCESS",
+        "check_q": "What is the key exam clue for Mandatory Access Control (MAC)?",
+        "check_a": "LABELS CONTROL ACCESS"
+      }
+    },
+    {
+      "n": 3,
+      "title": "Discretionary Access Control (DAC)",
+      "instructional": true,
+      "teach": "Resource owners can decide who is granted access to their objects.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Resource owners can decide who is granted access to their objects.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Resource owners can decide who is granted access to their objects."
+          },
+          {
+            "term": "Examples",
+            "explanation": "File owner grants access"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects identity lifecycle, authentication, authorization, password security, or privileged access.",
+        "example": "File owner grants access",
+        "exam": "OWNER DECIDES",
+        "check_q": "What is the key exam clue for Discretionary Access Control (DAC)?",
+        "check_a": "OWNER DECIDES"
+      }
+    },
+    {
+      "n": 4,
+      "title": "Role-based Access Control (RBAC)",
+      "instructional": true,
+      "teach": "Permissions are assigned to roles, and users receive access based on their job role.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Permissions are assigned to roles, and users receive access based on their job role.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Permissions are assigned to roles, and users receive access based on their job role."
+          },
+          {
+            "term": "Examples",
+            "explanation": "HR role, Database admin role"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects identity lifecycle, authentication, authorization, password security, or privileged access.",
+        "example": "HR role",
+        "exam": "JOB ROLE",
+        "check_q": "What is the key exam clue for Role-based Access Control (RBAC)?",
+        "check_a": "JOB ROLE"
+      }
+    },
+    {
+      "n": 5,
+      "title": "Rule-based Access Control",
+      "instructional": true,
+      "teach": "Access is determined by predefined rules or conditions.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Access is determined by predefined rules or conditions.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Access is determined by predefined rules or conditions."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Block after hours, Rule-driven access"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects identity lifecycle, authentication, authorization, password security, or privileged access.",
+        "example": "Block after hours",
+        "exam": "RULES DECIDE",
+        "check_q": "What is the key exam clue for Rule-based Access Control?",
+        "check_a": "RULES DECIDE"
+      }
+    },
+    {
+      "n": 6,
+      "title": "Attribute-based Access Control (ABAC)",
+      "instructional": true,
+      "teach": "Access decisions use attributes such as user, device, resource, location, or context.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Access decisions use attributes such as user, device, resource, location, or context.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Access decisions use attributes such as user, device, resource, location, or context."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Department + device health, Location-based access"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects identity lifecycle, authentication, authorization, password security, or privileged access.",
+        "example": "Department + device health",
+        "exam": "ATTRIBUTES DECIDE",
+        "check_q": "What is the key exam clue for Attribute-based Access Control (ABAC)?",
+        "check_a": "ATTRIBUTES DECIDE"
+      }
+    },
+    {
+      "n": 7,
+      "title": "Time-of-day Restrictions",
+      "instructional": true,
+      "teach": "Limits access to specified hours or schedules.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Limits access to specified hours or schedules.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Limits access to specified hours or schedules."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Only 8 AM–6 PM, After-hours denial"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects identity lifecycle, authentication, authorization, password security, or privileged access.",
+        "example": "Only 8 AM–6 PM",
+        "exam": "WHEN CAN THEY ACCESS?",
+        "check_q": "What is the key exam clue for Time-of-day Restrictions?",
+        "check_a": "WHEN CAN THEY ACCESS?"
+      }
+    },
+    {
+      "n": 8,
+      "title": "Least Privilege",
+      "instructional": true,
+      "teach": "Grants only the minimum permissions required to perform a task.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Grants only the minimum permissions required to perform a task.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Grants only the minimum permissions required to perform a task."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Standard user instead of admin, Restricted service account"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects identity lifecycle, authentication, authorization, password security, or privileged access.",
+        "example": "Standard user instead of admin",
+        "exam": "MINIMUM ACCESS",
+        "check_q": "What is the key exam clue for Least Privilege?",
+        "check_a": "MINIMUM ACCESS"
+      }
+    }
+  ],
+  "slide_count": 8,
+  "instructional_count": 7,
+  "concepts": [
+    "Mandatory Access Control (MAC)",
+    "Discretionary Access Control (DAC)",
+    "Role-based Access Control (RBAC)",
+    "Rule-based Access Control",
+    "Attribute-based Access Control (ABAC)",
+    "Time-of-day Restrictions",
+    "Least Privilege"
+  ],
+  "source_filename": "19-02.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 4.6",
+      "title": "Access Control Models and Least Privilege",
+      "intro": "Authorization determines what an authenticated identity may do. Security+ expects you to distinguish access-control models and apply least privilege and contextual restrictions."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Access Control Models and Least Privilege",
+        "prompt": "Identify whether the scenario is about identity lifecycle, authorization, authentication, passwords, or privileged access.",
+        "badge": "4.6",
+        "cards": [
+          {
+            "name": "Mandatory Access Control (MAC)",
+            "definition": "Access is centrally enforced using security labels or classifications; users cannot freely change permissions.",
+            "examples": [
+              "Classified systems",
+              "Security labels"
+            ],
+            "memory": "LABELS CONTROL ACCESS"
+          },
+          {
+            "name": "Discretionary Access Control (DAC)",
+            "definition": "Resource owners can decide who is granted access to their objects.",
+            "examples": [
+              "File owner grants access"
+            ],
+            "memory": "OWNER DECIDES"
+          },
+          {
+            "name": "Role-based Access Control (RBAC)",
+            "definition": "Permissions are assigned to roles, and users receive access based on their job role.",
+            "examples": [
+              "HR role",
+              "Database admin role"
+            ],
+            "memory": "JOB ROLE"
+          },
+          {
+            "name": "Rule-based Access Control",
+            "definition": "Access is determined by predefined rules or conditions.",
+            "examples": [
+              "Block after hours",
+              "Rule-driven access"
+            ],
+            "memory": "RULES DECIDE"
+          },
+          {
+            "name": "Attribute-based Access Control (ABAC)",
+            "definition": "Access decisions use attributes such as user, device, resource, location, or context.",
+            "examples": [
+              "Department + device health",
+              "Location-based access"
+            ],
+            "memory": "ATTRIBUTES DECIDE"
+          },
+          {
+            "name": "Time-of-day Restrictions",
+            "definition": "Limits access to specified hours or schedules.",
+            "examples": [
+              "Only 8 AM–6 PM",
+              "After-hours denial"
+            ],
+            "memory": "WHEN CAN THEY ACCESS?"
+          },
+          {
+            "name": "Least Privilege",
+            "definition": "Grants only the minimum permissions required to perform a task.",
+            "examples": [
+              "Standard user instead of admin",
+              "Restricted service account"
+            ],
+            "memory": "MINIMUM ACCESS"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Access Control Models and Least Privilege comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "MAC",
+            "Labels/classification",
+            "Central authority"
+          ],
+          [
+            "DAC",
+            "Owner chooses access",
+            "Resource owner"
+          ],
+          [
+            "RBAC",
+            "Job role",
+            "Role membership"
+          ],
+          [
+            "Rule-based",
+            "Predefined conditions",
+            "Rules decide"
+          ],
+          [
+            "ABAC",
+            "User/device/resource/context attributes",
+            "Attributes decide"
+          ],
+          [
+            "Time-of-day",
+            "Schedule restriction",
+            "Allowed hours"
+          ],
+          [
+            "Least privilege",
+            "Minimum required permissions",
+            "Reduce excess access"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Access Control Models and Least Privilege exam shortcuts",
+        "items": [
+          [
+            "Access follows classification labels → MAC",
+            "Central policy and labels determine access.",
+            "Example: Secret-labeled data requires matching clearance."
+          ],
+          [
+            "File owner grants access → DAC",
+            "The owner has discretion over permissions.",
+            "Example: A user shares a folder with a coworker."
+          ],
+          [
+            "Permissions follow job function → RBAC",
+            "Assign access to roles instead of individuals.",
+            "Example: All HR analysts receive the HR role."
+          ],
+          [
+            "Decision depends on location/device/department → ABAC",
+            "Attributes are evaluated at access time.",
+            "Example: Finance access requires finance role + managed device + approved location."
+          ],
+          [
+            "Access only during business hours → TIME-OF-DAY RESTRICTION",
+            "The schedule itself is part of authorization.",
+            "Example: Contractor account works only from 8 AM to 6 PM."
+          ],
+          [
+            "User has more rights than necessary → LEAST PRIVILEGE",
+            "Remove unnecessary permissions.",
+            "Example: Help desk user loses domain-admin access."
+          ]
+        ],
+        "example": "First determine whether the scenario is asking who the user is, what they can do, how they authenticate, or how privileged access should be controlled."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A classified system grants access based on security labels and clearance levels controlled by central policy. Which model is this?",
+        "choices": [
+          "MAC",
+          "DAC",
+          "RBAC",
+          "ABAC"
+        ],
+        "answer": 0,
+        "explanation": "Mandatory Access Control uses centrally enforced labels and classifications."
+      },
+      {
+        "q": "A file owner chooses which coworkers can access a document. Which model is this?",
+        "choices": [
+          "DAC",
+          "MAC",
+          "RBAC",
+          "Rule-based"
+        ],
+        "answer": 0,
+        "explanation": "Discretionary Access Control allows the owner to decide who gets access."
+      },
+      {
+        "q": "All HR analysts automatically receive the same permissions because they belong to the HR Analyst role. Which model is this?",
+        "choices": [
+          "RBAC",
+          "ABAC",
+          "MAC",
+          "DAC"
+        ],
+        "answer": 0,
+        "explanation": "RBAC assigns permissions based on job roles."
+      },
+      {
+        "q": "Access is allowed only when the user's department is Finance, the device is managed, and the request originates from an approved location. Which model is this?",
+        "choices": [
+          "ABAC",
+          "RBAC",
+          "DAC",
+          "MAC"
+        ],
+        "answer": 0,
+        "explanation": "ABAC evaluates multiple attributes such as user, device, and location."
+      },
+      {
+        "q": "A contractor account works only between 8 AM and 6 PM. Which control is this?",
+        "choices": [
+          "Time-of-day restriction",
+          "Least privilege only",
+          "Federation",
+          "Attestation"
+        ],
+        "answer": 0,
+        "explanation": "Time-of-day restrictions constrain access based on schedule."
+      },
+      {
+        "q": "A help desk employee has domain administrator rights even though the job does not require them. Which principle should be applied?",
+        "choices": [
+          "Least privilege",
+          "SSO",
+          "Federation",
+          "Passwordless"
+        ],
+        "answer": 0,
+        "explanation": "Least privilege removes permissions that are not required for the job."
+      }
+    ]
+  }
+}
