@@ -4,195 +4,279 @@
     "name": "Security Controls",
     "lesson_count": 1,
     "slide_count": 9,
-    "instructional_count": 7
+    "instructional_count": 7,
+    "domain": 1,
+    "domain_name": "General Security Concepts",
+    "domain_weight": 12
   },
   {
     "chapter": 2,
     "name": "Fundamental Security Concepts",
     "lesson_count": 7,
     "slide_count": 46,
-    "instructional_count": 39
+    "instructional_count": 39,
+    "domain": 1,
+    "domain_name": "General Security Concepts",
+    "domain_weight": 12
   },
   {
     "chapter": 3,
     "name": "Change Management & Security Operations",
     "lesson_count": 3,
     "slide_count": 22,
-    "instructional_count": 19
+    "instructional_count": 19,
+    "domain": 1,
+    "domain_name": "General Security Concepts",
+    "domain_weight": 12
   },
   {
     "chapter": 4,
     "name": "Cryptography & PKI",
     "lesson_count": 10,
     "slide_count": 46,
-    "instructional_count": 36
+    "instructional_count": 36,
+    "domain": 1,
+    "domain_name": "General Security Concepts",
+    "domain_weight": 12
   },
   {
     "chapter": 5,
     "name": "Threat Actors",
     "lesson_count": 3,
     "slide_count": 22,
-    "instructional_count": 19
+    "instructional_count": 19,
+    "domain": 2,
+    "domain_name": "Threats, Vulnerabilities, and Mitigations",
+    "domain_weight": 22
   },
   {
     "chapter": 6,
     "name": "Threat Vectors & Attack Surfaces",
     "lesson_count": 4,
     "slide_count": 33,
-    "instructional_count": 29
+    "instructional_count": 29,
+    "domain": 2,
+    "domain_name": "Threats, Vulnerabilities, and Mitigations",
+    "domain_weight": 22
   },
   {
     "chapter": 7,
     "name": "Vulnerabilities",
     "lesson_count": 3,
     "slide_count": 26,
-    "instructional_count": 23
+    "instructional_count": 23,
+    "domain": 2,
+    "domain_name": "Threats, Vulnerabilities, and Mitigations",
+    "domain_weight": 22
   },
   {
     "chapter": 8,
     "name": "Malicious Activity Indicators",
     "lesson_count": 4,
     "slide_count": 43,
-    "instructional_count": 39
+    "instructional_count": 39,
+    "domain": 2,
+    "domain_name": "Threats, Vulnerabilities, and Mitigations",
+    "domain_weight": 22
   },
   {
     "chapter": 9,
     "name": "Mitigation Techniques",
     "lesson_count": 2,
     "slide_count": 22,
-    "instructional_count": 20
+    "instructional_count": 20,
+    "domain": 2,
+    "domain_name": "Threats, Vulnerabilities, and Mitigations",
+    "domain_weight": 22
   },
   {
     "chapter": 10,
     "name": "Security Architecture Models",
     "lesson_count": 4,
     "slide_count": 37,
-    "instructional_count": 33
+    "instructional_count": 33,
+    "domain": 3,
+    "domain_name": "Security Architecture",
+    "domain_weight": 18
   },
   {
     "chapter": 11,
     "name": "Secure Enterprise Infrastructure",
     "lesson_count": 4,
     "slide_count": 33,
-    "instructional_count": 29
+    "instructional_count": 29,
+    "domain": 3,
+    "domain_name": "Security Architecture",
+    "domain_weight": 18
   },
   {
     "chapter": 12,
     "name": "Protecting Data",
     "lesson_count": 3,
     "slide_count": 28,
-    "instructional_count": 25
+    "instructional_count": 25,
+    "domain": 3,
+    "domain_name": "Security Architecture",
+    "domain_weight": 18
   },
   {
     "chapter": 13,
     "name": "Resilience & Recovery",
     "lesson_count": 4,
     "slide_count": 31,
-    "instructional_count": 27
+    "instructional_count": 27,
+    "domain": 3,
+    "domain_name": "Security Architecture",
+    "domain_weight": 18
   },
   {
     "chapter": 14,
     "name": "Securing Computing Resources",
     "lesson_count": 4,
     "slide_count": 36,
-    "instructional_count": 32
+    "instructional_count": 32,
+    "domain": 4,
+    "domain_name": "Security Operations",
+    "domain_weight": 28
   },
   {
     "chapter": 15,
     "name": "Asset Management",
     "lesson_count": 3,
     "slide_count": 15,
-    "instructional_count": 12
+    "instructional_count": 12,
+    "domain": 4,
+    "domain_name": "Security Operations",
+    "domain_weight": 28
   },
   {
     "chapter": 16,
     "name": "Vulnerability Management",
     "lesson_count": 4,
     "slide_count": 37,
-    "instructional_count": 33
+    "instructional_count": 33,
+    "domain": 4,
+    "domain_name": "Security Operations",
+    "domain_weight": 28
   },
   {
     "chapter": 17,
     "name": "Security Monitoring & Alerting",
     "lesson_count": 3,
     "slide_count": 26,
-    "instructional_count": 23
+    "instructional_count": 23,
+    "domain": 4,
+    "domain_name": "Security Operations",
+    "domain_weight": 28
   },
   {
     "chapter": 18,
     "name": "Enterprise Security Capabilities",
     "lesson_count": 4,
     "slide_count": 32,
-    "instructional_count": 28
+    "instructional_count": 28,
+    "domain": 4,
+    "domain_name": "Security Operations",
+    "domain_weight": 28
   },
   {
     "chapter": 19,
     "name": "Identity & Access Management",
     "lesson_count": 4,
     "slide_count": 41,
-    "instructional_count": 37
+    "instructional_count": 37,
+    "domain": 4,
+    "domain_name": "Security Operations",
+    "domain_weight": 28
   },
   {
     "chapter": 20,
     "name": "Automation & Orchestration",
     "lesson_count": 3,
     "slide_count": 24,
-    "instructional_count": 21
+    "instructional_count": 21,
+    "domain": 4,
+    "domain_name": "Security Operations",
+    "domain_weight": 28
   },
   {
     "chapter": 21,
     "name": "Incident Response & Forensics",
     "lesson_count": 3,
     "slide_count": 22,
-    "instructional_count": 19
+    "instructional_count": 19,
+    "domain": 4,
+    "domain_name": "Security Operations",
+    "domain_weight": 28
   },
   {
     "chapter": 22,
     "name": "Investigation Data Sources",
     "lesson_count": 2,
     "slide_count": 13,
-    "instructional_count": 11
+    "instructional_count": 11,
+    "domain": 4,
+    "domain_name": "Security Operations",
+    "domain_weight": 28
   },
   {
     "chapter": 23,
     "name": "Security Governance",
     "lesson_count": 3,
     "slide_count": 37,
-    "instructional_count": 34
+    "instructional_count": 34,
+    "domain": 5,
+    "domain_name": "Security Program Management and Oversight",
+    "domain_weight": 20
   },
   {
     "chapter": 24,
     "name": "Risk Management",
     "lesson_count": 3,
     "slide_count": 37,
-    "instructional_count": 34
+    "instructional_count": 34,
+    "domain": 5,
+    "domain_name": "Security Program Management and Oversight",
+    "domain_weight": 20
   },
   {
     "chapter": 25,
     "name": "Third-Party Risk Management",
     "lesson_count": 3,
     "slide_count": 21,
-    "instructional_count": 18
+    "instructional_count": 18,
+    "domain": 5,
+    "domain_name": "Security Program Management and Oversight",
+    "domain_weight": 20
   },
   {
     "chapter": 26,
     "name": "Security Compliance & Privacy",
     "lesson_count": 3,
     "slide_count": 29,
-    "instructional_count": 26
+    "instructional_count": 26,
+    "domain": 5,
+    "domain_name": "Security Program Management and Oversight",
+    "domain_weight": 20
   },
   {
     "chapter": 27,
     "name": "Audits & Assessments",
     "lesson_count": 3,
     "slide_count": 20,
-    "instructional_count": 17
+    "instructional_count": 17,
+    "domain": 5,
+    "domain_name": "Security Program Management and Oversight",
+    "domain_weight": 20
   },
   {
     "chapter": 28,
     "name": "Security Awareness",
     "lesson_count": 3,
     "slide_count": 21,
-    "instructional_count": 18
+    "instructional_count": 18,
+    "domain": 5,
+    "domain_name": "Security Program Management and Oversight",
+    "domain_weight": 20
   }
 ]
