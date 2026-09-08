@@ -2,182 +2,734 @@
   "id": "10.04",
   "chapter": 10,
   "sub": 4,
-  "title": "Infrastructure as code (IaC)",
-  "chapter_name": "Security Architecture & Cloud",
+  "title": "High Availability and Architecture Considerations",
+  "chapter_name": "Security Architecture Models",
   "slides": [
     {
       "n": 1,
-      "title": "Infrastructure as Code (IaC)",
-      "points": [],
-      "raw": "Infrastructure as Code (IaC)",
+      "title": "High Availability and Architecture Considerations",
       "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "IaC",
-          "Infrastructure as Code: defining and provisioning infrastructure through version-controlled code/templates."
-        ]
-      ]
+      "teach": "",
+      "points": [
+        "CompTIA expects you to compare architecture models by tradeoffs, not just definitions. Availability, resilience, cost, recovery, patching, power, and compute can change the best design."
+      ],
+      "defs": [],
+      "raw": ""
     },
     {
       "n": 2,
-      "title": "Key Concepts",
-      "points": [
-        "Declarative Configuration",
-        "Version Control",
-        "Automated Provisioning",
-        "Idempotence",
-        "Infrastructure as Versioned Code"
-      ],
-      "raw": "Key Concepts\nDeclarative Configuration\nVersion Control\nAutomated Provisioning\nIdempotence\nInfrastructure as Versioned Code",
+      "title": "High Availability",
       "instructional": true,
-      "teach": "These points define the technology. Be able to explain each one in your own words and recognize it in a scenario.",
+      "teach": "Designs systems to minimize downtime through redundancy, failover, and elimination of single points of failure.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "This section focuses on **Key Concepts** within **Infrastructure as code (IaC)**. Infrastructure as Code (IaC) defines infrastructure and configuration in machine-readable templates or code so environments can be deployed consistently and automatically.",
-        "why": "Automation improves repeatability, but an insecure template can reproduce the same mistake everywhere.",
-        "example": "A Terraform template creates networks, security groups, and servers through version-controlled code reviewed before deployment.",
-        "exam": "Benefits: consistency, automation, versioning. Risks: secrets in code, insecure templates, overly broad permissions, and rapid propagation of mistakes.",
+        "learn": "Designs systems to minimize downtime through redundancy, failover, and elimination of single points of failure.",
         "breakdown": [
           {
-            "term": "Declarative Configuration",
-            "explanation": "Within Key Concepts, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Infrastructure as code (IaC) rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "Designs systems to minimize downtime through redundancy, failover, and elimination of single points of failure."
           },
           {
-            "term": "Version Control",
-            "explanation": "Tracks revisions so teams know what changed, who changed it, and can recover earlier versions."
-          },
-          {
-            "term": "Automated Provisioning",
-            "explanation": "Within Key Concepts, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Infrastructure as code (IaC) rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Idempotence",
-            "explanation": "Within Key Concepts, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Infrastructure as code (IaC) rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Infrastructure as Versioned Code",
-            "explanation": "Infrastructure monitoring observes networks, cloud configuration, appliances, links, and supporting resources. NSM analyzes network behavior, while CSPM evaluates cloud security posture and misconfiguration."
+            "term": "Examples",
+            "explanation": "Load-balanced servers, Failover cluster"
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Key Concepts and describe at least two key ideas from this section.",
-        "check_a": "This section focuses on **Key Concepts** within **Infrastructure as code (IaC)**. Infrastructure as Code (IaC) defines infrastructure and configuration in machine-readable templates or code so environments can be deployed consistently and automatically. Key ideas include: Declarative Configuration; Version Control; Automated Provisioning; Idempotence; Infrastructure as Versioned Code.",
-        "points": [
-          "Declarative Configuration",
-          "Version Control",
-          "Automated Provisioning",
-          "Idempotence",
-          "Infrastructure as Versioned Code"
-        ]
+        "why": "This concept changes the security tradeoffs of the architecture.",
+        "example": "Load-balanced servers",
+        "exam": "KEEP IT RUNNING",
+        "check_q": "What is the key exam clue for High Availability?",
+        "check_a": "KEEP IT RUNNING"
       }
     },
     {
       "n": 3,
-      "title": "Key Concepts",
-      "points": [
-        "Modularity and",
-        "Reusability",
-        "Multi-Cloud and Hybrid",
-        "Deployments",
-        "Collaboration and",
-        "Knowledge Sharing",
-        "Continuous Integration",
-        "and Continuous",
-        "Deployment (CI/CD)",
-        "Configuration Drift",
-        "Detection"
-      ],
-      "raw": "Key Concepts\nModularity and\nReusability\nMulti-Cloud and Hybrid\nDeployments\nCollaboration and\nKnowledge Sharing\nContinuous Integration\nand Continuous\nDeployment (CI/CD)\nConfiguration Drift\nDetection",
+      "title": "Availability",
       "instructional": true,
-      "teach": "These points define the technology. Be able to explain each one in your own words and recognize it in a scenario.",
-      "defs": [
-        [
-          "CI/CD",
-          "Continuous Integration / Continuous Delivery or Deployment: automated practices for building, testing, and releasing software frequently."
-        ],
-        [
-          "Cloud",
-          "Computing resources delivered on demand from a provider rather than entirely owned and operated locally."
-        ]
+      "teach": "How consistently systems and services can be accessed when needed.",
+      "points": [
+        "Basically",
+        "Examples"
       ],
+      "defs": [],
+      "raw": "",
       "course": {
-        "learn": "This section focuses on **Key Concepts** within **Infrastructure as code (IaC)**. Infrastructure as Code (IaC) defines infrastructure and configuration in machine-readable templates or code so environments can be deployed consistently and automatically.",
-        "why": "Automation improves repeatability, but an insecure template can reproduce the same mistake everywhere.",
-        "example": "A Terraform template creates networks, security groups, and servers through version-controlled code reviewed before deployment.",
-        "exam": "Benefits: consistency, automation, versioning. Risks: secrets in code, insecure templates, overly broad permissions, and rapid propagation of mistakes.",
+        "learn": "How consistently systems and services can be accessed when needed.",
         "breakdown": [
           {
-            "term": "Modularity and Reusability",
-            "explanation": "Within Key Concepts, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Infrastructure as code (IaC) rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "How consistently systems and services can be accessed when needed."
           },
           {
-            "term": "Multi-Cloud and Hybrid",
-            "explanation": "A multi-cloud strategy uses services from more than one cloud provider. It can reduce dependency on one provider and support specialized capabilities, but it increases operational and security complexity."
-          },
-          {
-            "term": "Deployments",
-            "explanation": "Within Key Concepts, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Infrastructure as code (IaC) rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Collaboration and Knowledge Sharing",
-            "explanation": "Within Key Concepts, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Infrastructure as code (IaC) rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Continuous Integration and Continuous",
-            "explanation": "Within Key Concepts, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Infrastructure as code (IaC) rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Deployment (CI/CD)",
-            "explanation": "Within Key Concepts, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Infrastructure as code (IaC) rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Configuration Drift",
-            "explanation": "Within Key Concepts, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Infrastructure as code (IaC) rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Detection",
-            "explanation": "Monitor traffic or activity for signs of attack and generate alerts; they do not normally block by themselves."
+            "term": "Examples",
+            "explanation": "Uptime, Redundant services"
           }
         ],
-        "defs": [
-          {
-            "term": "CI/CD",
-            "definition": "Continuous Integration / Continuous Delivery or Deployment: automated practices for building, testing, and releasing software frequently."
-          },
-          {
-            "term": "Cloud",
-            "definition": "Computing resources delivered on demand from a provider rather than entirely owned and operated locally."
-          }
-        ],
-        "check_q": "Without looking back, explain Key Concepts and describe at least two key ideas from this section.",
-        "check_a": "This section focuses on **Key Concepts** within **Infrastructure as code (IaC)**. Infrastructure as Code (IaC) defines infrastructure and configuration in machine-readable templates or code so environments can be deployed consistently and automatically. Key ideas include: Modularity and Reusability; Multi-Cloud and Hybrid; Deployments; Collaboration and Knowledge Sharing; Continuous Integration and Continuous.",
-        "points": [
-          "Modularity and Reusability",
-          "Multi-Cloud and Hybrid",
-          "Deployments",
-          "Collaboration and Knowledge Sharing",
-          "Continuous Integration and Continuous",
-          "Deployment (CI/CD)",
-          "Configuration Drift",
-          "Detection"
-        ]
+        "defs": [],
+        "why": "This concept changes the security tradeoffs of the architecture.",
+        "example": "Uptime",
+        "exam": "CAN USERS ACCESS IT?",
+        "check_q": "What is the key exam clue for Availability?",
+        "check_a": "CAN USERS ACCESS IT?"
       }
     },
     {
       "n": 4,
-      "title": "Serverless",
-      "points": [],
-      "raw": "Serverless",
-      "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": []
+      "title": "Resilience",
+      "instructional": true,
+      "teach": "The ability to withstand disruption and continue or restore operations.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "The ability to withstand disruption and continue or restore operations.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "The ability to withstand disruption and continue or restore operations."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Redundant links, Fault-tolerant design"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes the security tradeoffs of the architecture.",
+        "example": "Redundant links",
+        "exam": "SURVIVE DISRUPTION",
+        "check_q": "What is the key exam clue for Resilience?",
+        "check_a": "SURVIVE DISRUPTION"
+      }
+    },
+    {
+      "n": 5,
+      "title": "Cost",
+      "instructional": true,
+      "teach": "Financial impact of acquiring, operating, scaling, and securing an architecture.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Financial impact of acquiring, operating, scaling, and securing an architecture.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Financial impact of acquiring, operating, scaling, and securing an architecture."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Cloud usage fees, Hardware purchases"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes the security tradeoffs of the architecture.",
+        "example": "Cloud usage fees",
+        "exam": "HOW MUCH?",
+        "check_q": "What is the key exam clue for Cost?",
+        "check_a": "HOW MUCH?"
+      }
+    },
+    {
+      "n": 6,
+      "title": "Responsiveness",
+      "instructional": true,
+      "teach": "How quickly a system can react to events or requests.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "How quickly a system can react to events or requests.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "How quickly a system can react to events or requests."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Low-latency control, RTOS response"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes the security tradeoffs of the architecture.",
+        "example": "Low-latency control",
+        "exam": "HOW FAST?",
+        "check_q": "What is the key exam clue for Responsiveness?",
+        "check_a": "HOW FAST?"
+      }
+    },
+    {
+      "n": 7,
+      "title": "Scalability",
+      "instructional": true,
+      "teach": "Ability to increase or decrease capacity as demand changes.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Ability to increase or decrease capacity as demand changes.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Ability to increase or decrease capacity as demand changes."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Auto-scaling, Add compute nodes"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes the security tradeoffs of the architecture.",
+        "example": "Auto-scaling",
+        "exam": "GROW WITH DEMAND",
+        "check_q": "What is the key exam clue for Scalability?",
+        "check_a": "GROW WITH DEMAND"
+      }
+    },
+    {
+      "n": 8,
+      "title": "Ease of Deployment",
+      "instructional": true,
+      "teach": "How quickly and consistently systems can be provisioned and released.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "How quickly and consistently systems can be provisioned and released.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "How quickly and consistently systems can be provisioned and released."
+          },
+          {
+            "term": "Examples",
+            "explanation": "IaC, Containers, Serverless"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes the security tradeoffs of the architecture.",
+        "example": "IaC",
+        "exam": "HOW EASY TO ROLL OUT?",
+        "check_q": "What is the key exam clue for Ease of Deployment?",
+        "check_a": "HOW EASY TO ROLL OUT?"
+      }
+    },
+    {
+      "n": 9,
+      "title": "Risk Transference",
+      "instructional": true,
+      "teach": "Shifts some risk responsibility to another party, often through contracts, insurance, or service providers.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Shifts some risk responsibility to another party, often through contracts, insurance, or service providers.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Shifts some risk responsibility to another party, often through contracts, insurance, or service providers."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Cyber insurance, Cloud contract"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes the security tradeoffs of the architecture.",
+        "example": "Cyber insurance",
+        "exam": "SHIFT SOME RISK",
+        "check_q": "What is the key exam clue for Risk Transference?",
+        "check_a": "SHIFT SOME RISK"
+      }
+    },
+    {
+      "n": 10,
+      "title": "Ease of Recovery",
+      "instructional": true,
+      "teach": "How readily services and data can be restored after failure or compromise.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "How readily services and data can be restored after failure or compromise.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "How readily services and data can be restored after failure or compromise."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Snapshots, Automated rebuild"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes the security tradeoffs of the architecture.",
+        "example": "Snapshots",
+        "exam": "HOW FAST TO RESTORE?",
+        "check_q": "What is the key exam clue for Ease of Recovery?",
+        "check_a": "HOW FAST TO RESTORE?"
+      }
+    },
+    {
+      "n": 11,
+      "title": "Patch Availability",
+      "instructional": true,
+      "teach": "Whether security fixes are available for the platform.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Whether security fixes are available for the platform.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Whether security fixes are available for the platform."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Supported OS, Vendor-maintained service"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes the security tradeoffs of the architecture.",
+        "example": "Supported OS",
+        "exam": "PATCH EXISTS",
+        "check_q": "What is the key exam clue for Patch Availability?",
+        "check_a": "PATCH EXISTS"
+      }
+    },
+    {
+      "n": 12,
+      "title": "Inability to Patch",
+      "instructional": true,
+      "teach": "A condition where updates cannot be applied because of operational, vendor, compatibility, or technical constraints.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "A condition where updates cannot be applied because of operational, vendor, compatibility, or technical constraints.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "A condition where updates cannot be applied because of operational, vendor, compatibility, or technical constraints."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Legacy controller, Medical device"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes the security tradeoffs of the architecture.",
+        "example": "Legacy controller",
+        "exam": "CAN'T PATCH",
+        "check_q": "What is the key exam clue for Inability to Patch?",
+        "check_a": "CAN'T PATCH"
+      }
+    },
+    {
+      "n": 13,
+      "title": "Power",
+      "instructional": true,
+      "teach": "Electrical requirements and availability needed to operate the architecture.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Electrical requirements and availability needed to operate the architecture.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Electrical requirements and availability needed to operate the architecture."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Data-center power, Battery constraints"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes the security tradeoffs of the architecture.",
+        "example": "Data-center power",
+        "exam": "ENERGY NEEDS",
+        "check_q": "What is the key exam clue for Power?",
+        "check_a": "ENERGY NEEDS"
+      }
+    },
+    {
+      "n": 14,
+      "title": "Compute",
+      "instructional": true,
+      "teach": "CPU, memory, storage, or acceleration resources required by a system.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "CPU, memory, storage, or acceleration resources required by a system.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "CPU, memory, storage, or acceleration resources required by a system."
+          },
+          {
+            "term": "Examples",
+            "explanation": "GPU workload, Resource-constrained IoT"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes the security tradeoffs of the architecture.",
+        "example": "GPU workload",
+        "exam": "PROCESSING NEEDS",
+        "check_q": "What is the key exam clue for Compute?",
+        "check_a": "PROCESSING NEEDS"
+      }
     }
   ],
-  "slide_count": 4,
-  "instructional_count": 2,
+  "slide_count": 14,
+  "instructional_count": 13,
   "concepts": [
-    "Key Concepts"
+    "High Availability",
+    "Availability",
+    "Resilience",
+    "Cost",
+    "Responsiveness",
+    "Scalability",
+    "Ease of Deployment",
+    "Risk Transference",
+    "Ease of Recovery",
+    "Patch Availability",
+    "Inability to Patch",
+    "Power",
+    "Compute"
   ],
-  "source_filename": "10.04_Infrastructure_as_code_IaC.pdf"
+  "source_filename": "10-04.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 3.1",
+      "title": "High Availability and Architecture Considerations",
+      "intro": "CompTIA expects you to compare architecture models by tradeoffs, not just definitions. Availability, resilience, cost, recovery, patching, power, and compute can change the best design."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "High Availability and Architecture Considerations",
+        "prompt": "Compare the security tradeoffs and identify which architecture clue matters in the scenario.",
+        "badge": "3.1",
+        "cards": [
+          {
+            "name": "High Availability",
+            "definition": "Designs systems to minimize downtime through redundancy, failover, and elimination of single points of failure.",
+            "examples": [
+              "Load-balanced servers",
+              "Failover cluster"
+            ],
+            "memory": "KEEP IT RUNNING"
+          },
+          {
+            "name": "Availability",
+            "definition": "How consistently systems and services can be accessed when needed.",
+            "examples": [
+              "Uptime",
+              "Redundant services"
+            ],
+            "memory": "CAN USERS ACCESS IT?"
+          },
+          {
+            "name": "Resilience",
+            "definition": "The ability to withstand disruption and continue or restore operations.",
+            "examples": [
+              "Redundant links",
+              "Fault-tolerant design"
+            ],
+            "memory": "SURVIVE DISRUPTION"
+          },
+          {
+            "name": "Cost",
+            "definition": "Financial impact of acquiring, operating, scaling, and securing an architecture.",
+            "examples": [
+              "Cloud usage fees",
+              "Hardware purchases"
+            ],
+            "memory": "HOW MUCH?"
+          },
+          {
+            "name": "Responsiveness",
+            "definition": "How quickly a system can react to events or requests.",
+            "examples": [
+              "Low-latency control",
+              "RTOS response"
+            ],
+            "memory": "HOW FAST?"
+          },
+          {
+            "name": "Scalability",
+            "definition": "Ability to increase or decrease capacity as demand changes.",
+            "examples": [
+              "Auto-scaling",
+              "Add compute nodes"
+            ],
+            "memory": "GROW WITH DEMAND"
+          },
+          {
+            "name": "Ease of Deployment",
+            "definition": "How quickly and consistently systems can be provisioned and released.",
+            "examples": [
+              "IaC",
+              "Containers",
+              "Serverless"
+            ],
+            "memory": "HOW EASY TO ROLL OUT?"
+          },
+          {
+            "name": "Risk Transference",
+            "definition": "Shifts some risk responsibility to another party, often through contracts, insurance, or service providers.",
+            "examples": [
+              "Cyber insurance",
+              "Cloud contract"
+            ],
+            "memory": "SHIFT SOME RISK"
+          },
+          {
+            "name": "Ease of Recovery",
+            "definition": "How readily services and data can be restored after failure or compromise.",
+            "examples": [
+              "Snapshots",
+              "Automated rebuild"
+            ],
+            "memory": "HOW FAST TO RESTORE?"
+          },
+          {
+            "name": "Patch Availability",
+            "definition": "Whether security fixes are available for the platform.",
+            "examples": [
+              "Supported OS",
+              "Vendor-maintained service"
+            ],
+            "memory": "PATCH EXISTS"
+          },
+          {
+            "name": "Inability to Patch",
+            "definition": "A condition where updates cannot be applied because of operational, vendor, compatibility, or technical constraints.",
+            "examples": [
+              "Legacy controller",
+              "Medical device"
+            ],
+            "memory": "CAN'T PATCH"
+          },
+          {
+            "name": "Power",
+            "definition": "Electrical requirements and availability needed to operate the architecture.",
+            "examples": [
+              "Data-center power",
+              "Battery constraints"
+            ],
+            "memory": "ENERGY NEEDS"
+          },
+          {
+            "name": "Compute",
+            "definition": "CPU, memory, storage, or acceleration resources required by a system.",
+            "examples": [
+              "GPU workload",
+              "Resource-constrained IoT"
+            ],
+            "memory": "PROCESSING NEEDS"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "High Availability and Architecture Considerations comparison",
+        "headers": [
+          "Concept",
+          "What to compare",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Availability",
+            "Can users access it?",
+            "Uptime"
+          ],
+          [
+            "Resilience",
+            "Can it withstand or recover?",
+            "Survive disruption"
+          ],
+          [
+            "Scalability",
+            "Can capacity grow?",
+            "Demand changes"
+          ],
+          [
+            "Responsiveness",
+            "How fast does it react?",
+            "Latency/time-sensitive"
+          ],
+          [
+            "Ease of recovery",
+            "How quickly can it be restored?",
+            "Snapshots/rebuild"
+          ],
+          [
+            "Patch availability",
+            "Can fixes be applied?",
+            "Supported platform"
+          ],
+          [
+            "Inability to patch",
+            "Updates cannot be applied",
+            "Legacy/operational constraint"
+          ],
+          [
+            "Power / compute",
+            "Resource requirements",
+            "Energy and processing limits"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "High Availability and Architecture Considerations exam shortcuts",
+        "items": [
+          [
+            "Need minimal downtime → HIGH AVAILABILITY",
+            "Use redundancy and failover.",
+            "Example: Two app servers sit behind a load balancer."
+          ],
+          [
+            "Need to survive failure → RESILIENCE",
+            "Design for continued operation or effective recovery.",
+            "Example: Backup links keep service online."
+          ],
+          [
+            "Demand changes rapidly → SCALABILITY",
+            "Choose an architecture that can add or remove capacity.",
+            "Example: Cloud instances scale during peak traffic."
+          ],
+          [
+            "Strict timing → RESPONSIVENESS",
+            "Latency and deterministic response matter.",
+            "Example: An RTOS safety system reacts in milliseconds."
+          ],
+          [
+            "No practical patch path → INABILITY TO PATCH",
+            "Use compensating controls when updates cannot be applied.",
+            "Example: A legacy industrial controller cannot accept the patch."
+          ],
+          [
+            "Limited battery or CPU → POWER + COMPUTE",
+            "Resource constraints affect feasible controls.",
+            "Example: A small IoT sensor cannot run heavyweight software."
+          ]
+        ],
+        "example": "Choose the architecture based on the security tradeoff emphasized in the scenario."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A service uses redundant servers and automatic failover to minimize downtime. Which consideration is most directly addressed?",
+        "choices": [
+          "High availability",
+          "Cost",
+          "Risk transference",
+          "Patch availability"
+        ],
+        "answer": 0,
+        "explanation": "High availability minimizes downtime through redundancy and failover."
+      },
+      {
+        "q": "A company needs an architecture that can rapidly add capacity during peak traffic. Which consideration matters most?",
+        "choices": [
+          "Scalability",
+          "Power",
+          "Air gap",
+          "Risk transference"
+        ],
+        "answer": 0,
+        "explanation": "Scalability is the ability to grow or shrink capacity as demand changes."
+      },
+      {
+        "q": "A controller must respond within a strict time limit. Which consideration is most important?",
+        "choices": [
+          "Responsiveness",
+          "Cost",
+          "Ease of recovery",
+          "Patch availability"
+        ],
+        "answer": 0,
+        "explanation": "Responsiveness focuses on latency and time-sensitive reaction."
+      },
+      {
+        "q": "A legacy industrial system has a known vulnerability, but applying the patch would break production. Which consideration best fits?",
+        "choices": [
+          "Inability to patch",
+          "Patch availability",
+          "Scalability",
+          "Risk transference"
+        ],
+        "answer": 0,
+        "explanation": "The system cannot safely accept the patch."
+      },
+      {
+        "q": "A battery-powered IoT device cannot run a heavyweight security agent. Which considerations are most directly involved?",
+        "choices": [
+          "Power and compute",
+          "Risk transference and cost",
+          "Availability and resilience only",
+          "Ease of deployment only"
+        ],
+        "answer": 0,
+        "explanation": "Battery and processor limits are power and compute constraints."
+      },
+      {
+        "q": "A company purchases cyber insurance to offset some financial consequences of a security incident. Which consideration is this?",
+        "choices": [
+          "Risk transference",
+          "Scalability",
+          "Availability",
+          "Responsiveness"
+        ],
+        "answer": 0,
+        "explanation": "Insurance transfers some financial risk to another party."
+      }
+    ]
+  }
 }
