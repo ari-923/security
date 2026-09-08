@@ -2,201 +2,524 @@
   "id": "17.01",
   "chapter": 17,
   "sub": 1,
-  "title": "Monitoring computing resources",
-  "chapter_name": "Security Monitoring",
+  "title": "Monitoring Resources and Core Activities",
+  "chapter_name": "Security Monitoring & Alerting",
   "slides": [
     {
       "n": 1,
-      "title": "Monitoring Computing Resources",
-      "points": [],
-      "raw": "Monitoring Computing Resources",
+      "title": "Monitoring Resources and Core Activities",
       "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": []
+      "teach": "",
+      "points": [
+        "Security monitoring starts with understanding what is being observed and what the security team does with that telemetry."
+      ],
+      "defs": [],
+      "raw": ""
     },
     {
       "n": 2,
-      "title": "Systems",
-      "points": [
-        "Endpoint Protection Platforms (EPP)",
-        "Security Information and Event Management (SIEM)"
-      ],
-      "raw": "Systems\nEndpoint Protection Platforms (EPP)\nSecurity Information and Event Management (SIEM)",
+      "title": "Monitoring Systems",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "SIEM",
-          "Security Information and Event Management: centralizes and correlates logs/events for alerting, search, and investigation."
-        ]
+      "teach": "Observing operating systems, endpoints, servers, and hosts for events, performance issues, and suspicious activity.",
+      "points": [
+        "Basically",
+        "Examples"
       ],
+      "defs": [],
+      "raw": "",
       "course": {
-        "learn": "This section focuses on **Systems** within **Monitoring computing resources**. System monitoring focuses on endpoints and hosts. Endpoint Protection Platforms (EPP) detect or prevent malicious endpoint activity, while SIEM platforms collect and correlate events from many systems.",
-        "why": "Host-level visibility shows processes, files, authentication, and local behavior that network monitoring may not see.",
-        "example": "An EPP quarantines a malicious executable and forwards the event to the SIEM for correlation with identity and firewall logs.",
-        "exam": "EPP = endpoint protection. SIEM = centralized event/log correlation.",
+        "learn": "Observing operating systems, endpoints, servers, and hosts for events, performance issues, and suspicious activity.",
         "breakdown": [
           {
-            "term": "Endpoint Protection Platforms (EPP)",
-            "explanation": "Within Systems, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Monitoring computing resources rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "Observing operating systems, endpoints, servers, and hosts for events, performance issues, and suspicious activity."
           },
           {
-            "term": "Security Information and Event Management (SIEM)",
-            "explanation": "This contributes to reducing risk in the broader Monitoring computing resources design and should be evaluated as part of defense in depth."
+            "term": "Examples",
+            "explanation": "Endpoint logs, Server events"
           }
         ],
-        "defs": [
-          {
-            "term": "SIEM",
-            "definition": "Security Information and Event Management: centralizes and correlates logs/events for alerting, search, and investigation."
-          }
-        ],
-        "check_q": "Without looking back, explain Systems and describe at least two key ideas from this section.",
-        "check_a": "This section focuses on **Systems** within **Monitoring computing resources**. System monitoring focuses on endpoints and hosts. Endpoint Protection Platforms (EPP) detect or prevent malicious endpoint activity, while SIEM platforms collect and correlate events from many systems. Key ideas include: Endpoint Protection Platforms (EPP); Security Information and Event Management (SIEM).",
-        "points": [
-          "Endpoint Protection Platforms (EPP)",
-          "Security Information and Event Management (SIEM)"
-        ]
+        "defs": [],
+        "why": "This concept affects security visibility, detection, response, validation, or monitoring quality.",
+        "example": "Endpoint logs",
+        "exam": "WATCH THE SYSTEM",
+        "check_q": "What is the key exam clue for Monitoring Systems?",
+        "check_a": "WATCH THE SYSTEM"
       }
     },
     {
       "n": 3,
-      "title": "Application",
-      "points": [
-        "Application Performance",
-        "Monitoring (APM)",
-        "Web Application Firewalls",
-        "(WAF)"
-      ],
-      "raw": "Application\nApplication Performance\nMonitoring (APM)\nWeb Application Firewalls\n(WAF)",
+      "title": "Monitoring Applications",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "WAF",
-          "Web Application Firewall: filters HTTP/HTTPS traffic to protect web applications."
-        ]
+      "teach": "Observing application behavior, logs, errors, authentication, and security events.",
+      "points": [
+        "Basically",
+        "Examples"
       ],
+      "defs": [],
+      "raw": "",
       "course": {
-        "learn": "This section focuses on **Application** within **Monitoring computing resources**. Application monitoring measures application behavior, performance, errors, and security events. APM focuses on health/performance, while a WAF inspects and protects web requests.",
-        "why": "Application-layer problems may not be visible from host or network metrics alone.",
-        "example": "APM shows a sudden increase in database latency while the WAF reports blocked injection attempts against the same application.",
-        "exam": "APM = performance/health; WAF = web application security filtering.",
+        "learn": "Observing application behavior, logs, errors, authentication, and security events.",
         "breakdown": [
           {
-            "term": "Application Performance",
-            "explanation": "Application monitoring measures application behavior, performance, errors, and security events. APM focuses on health/performance, while a WAF inspects and protects web requests."
+            "term": "Basically",
+            "explanation": "Observing application behavior, logs, errors, authentication, and security events."
           },
           {
-            "term": "Monitoring (APM)",
-            "explanation": "Security monitoring continuously observes systems, networks, applications, and logs for suspicious activity, failures, policy violations, and indicators of compromise."
-          },
-          {
-            "term": "Web Application Firewalls",
-            "explanation": "Filter network traffic according to security rules, usually by source, destination, protocol, port, application, or context."
-          },
-          {
-            "term": "(WAF)",
-            "explanation": "A Web Application Firewall (WAF) inspects HTTP/HTTPS traffic with awareness of web requests and application-layer attacks."
+            "term": "Examples",
+            "explanation": "Web app logs, Application errors"
           }
         ],
-        "defs": [
-          {
-            "term": "WAF",
-            "definition": "Web Application Firewall: filters HTTP/HTTPS traffic to protect web applications."
-          }
-        ],
-        "check_q": "Without looking back, explain Application and describe at least two key ideas from this section.",
-        "check_a": "This section focuses on **Application** within **Monitoring computing resources**. Application monitoring measures application behavior, performance, errors, and security events. APM focuses on health/performance, while a WAF inspects and protects web requests. Key ideas include: Application Performance; Monitoring (APM); Web Application Firewalls; (WAF).",
-        "points": [
-          "Application Performance",
-          "Monitoring (APM)",
-          "Web Application Firewalls",
-          "(WAF)"
-        ]
+        "defs": [],
+        "why": "This concept affects security visibility, detection, response, validation, or monitoring quality.",
+        "example": "Web app logs",
+        "exam": "WATCH THE APP",
+        "check_q": "What is the key exam clue for Monitoring Applications?",
+        "check_a": "WATCH THE APP"
       }
     },
     {
       "n": 4,
-      "title": "Infrastructure",
-      "points": [
-        "Network Security Monitoring",
-        "(NSM)",
-        "Cloud Security Posture",
-        "Management (CSPM)"
-      ],
-      "raw": "Infrastructure\nNetwork Security Monitoring\n(NSM)\nCloud Security Posture\nManagement (CSPM)",
+      "title": "Monitoring Infrastructure",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "Cloud",
-          "Computing resources delivered on demand from a provider rather than entirely owned and operated locally."
-        ],
-        [
-          "CSPM",
-          "Cloud Security Posture Management: tools/processes that identify risky cloud configuration and compliance issues."
-        ]
+      "teach": "Observing network devices, cloud resources, services, and supporting infrastructure.",
+      "points": [
+        "Basically",
+        "Examples"
       ],
+      "defs": [],
+      "raw": "",
       "course": {
-        "learn": "This section focuses on **Infrastructure** within **Monitoring computing resources**. Infrastructure monitoring observes networks, cloud configuration, appliances, links, and supporting resources. NSM analyzes network behavior, while CSPM evaluates cloud security posture and misconfiguration.",
-        "why": "Infrastructure telemetry helps detect both attacks and unsafe configuration drift.",
-        "example": "CSPM flags a public storage bucket while NSM detects unusual outbound traffic from a server subnet.",
-        "exam": "NSM = network activity. CSPM = cloud configuration/posture.",
+        "learn": "Observing network devices, cloud resources, services, and supporting infrastructure.",
         "breakdown": [
           {
-            "term": "Network Security Monitoring",
-            "explanation": "Security monitoring continuously observes systems, networks, applications, and logs for suspicious activity, failures, policy violations, and indicators of compromise."
+            "term": "Basically",
+            "explanation": "Observing network devices, cloud resources, services, and supporting infrastructure."
           },
           {
-            "term": "(NSM)",
-            "explanation": "Within Infrastructure, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Monitoring computing resources rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Cloud Security Posture",
-            "explanation": "This contributes to reducing risk in the broader Monitoring computing resources design and should be evaluated as part of defense in depth."
-          },
-          {
-            "term": "Management (CSPM)",
-            "explanation": "Within Infrastructure, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Monitoring computing resources rather than memorizing the phrase by itself."
+            "term": "Examples",
+            "explanation": "Firewall events, Cloud logs, Router status"
           }
         ],
-        "defs": [
-          {
-            "term": "Cloud",
-            "definition": "Computing resources delivered on demand from a provider rather than entirely owned and operated locally."
-          },
-          {
-            "term": "CSPM",
-            "definition": "Cloud Security Posture Management: tools/processes that identify risky cloud configuration and compliance issues."
-          }
-        ],
-        "check_q": "Without looking back, explain Infrastructure and describe at least two key ideas from this section.",
-        "check_a": "This section focuses on **Infrastructure** within **Monitoring computing resources**. Infrastructure monitoring observes networks, cloud configuration, appliances, links, and supporting resources. NSM analyzes network behavior, while CSPM evaluates cloud security posture and misconfiguration. Key ideas include: Network Security Monitoring; (NSM); Cloud Security Posture; Management (CSPM).",
-        "points": [
-          "Network Security Monitoring",
-          "(NSM)",
-          "Cloud Security Posture",
-          "Management (CSPM)"
-        ]
+        "defs": [],
+        "why": "This concept affects security visibility, detection, response, validation, or monitoring quality.",
+        "example": "Firewall events",
+        "exam": "WATCH THE ENVIRONMENT",
+        "check_q": "What is the key exam clue for Monitoring Infrastructure?",
+        "check_a": "WATCH THE ENVIRONMENT"
       }
     },
     {
       "n": 5,
-      "title": "Activities",
-      "points": [],
-      "raw": "Activities",
-      "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": []
+      "title": "Log Aggregation",
+      "instructional": true,
+      "teach": "Collects logs from many systems into a central location for searching, correlation, and analysis.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Collects logs from many systems into a central location for searching, correlation, and analysis.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Collects logs from many systems into a central location for searching, correlation, and analysis."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Central log server, SIEM ingestion"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects security visibility, detection, response, validation, or monitoring quality.",
+        "example": "Central log server",
+        "exam": "BRING LOGS TOGETHER",
+        "check_q": "What is the key exam clue for Log Aggregation?",
+        "check_a": "BRING LOGS TOGETHER"
+      }
+    },
+    {
+      "n": 6,
+      "title": "Alerting",
+      "instructional": true,
+      "teach": "Generates notifications when defined suspicious, risky, or abnormal conditions are detected.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Generates notifications when defined suspicious, risky, or abnormal conditions are detected.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Generates notifications when defined suspicious, risky, or abnormal conditions are detected."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Failed-login alert, Malware alert"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects security visibility, detection, response, validation, or monitoring quality.",
+        "example": "Failed-login alert",
+        "exam": "TELL ME SOMETHING HAPPENED",
+        "check_q": "What is the key exam clue for Alerting?",
+        "check_a": "TELL ME SOMETHING HAPPENED"
+      }
+    },
+    {
+      "n": 7,
+      "title": "Scanning",
+      "instructional": true,
+      "teach": "Examines systems or networks to identify vulnerabilities, exposures, or security conditions.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Examines systems or networks to identify vulnerabilities, exposures, or security conditions.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Examines systems or networks to identify vulnerabilities, exposures, or security conditions."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Vulnerability scan, Network scan"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects security visibility, detection, response, validation, or monitoring quality.",
+        "example": "Vulnerability scan",
+        "exam": "LOOK FOR WEAKNESSES",
+        "check_q": "What is the key exam clue for Scanning?",
+        "check_a": "LOOK FOR WEAKNESSES"
+      }
+    },
+    {
+      "n": 8,
+      "title": "Reporting",
+      "instructional": true,
+      "teach": "Communicates monitoring findings, trends, incidents, and security status to stakeholders.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Communicates monitoring findings, trends, incidents, and security status to stakeholders.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Communicates monitoring findings, trends, incidents, and security status to stakeholders."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Executive dashboard, Security report"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects security visibility, detection, response, validation, or monitoring quality.",
+        "example": "Executive dashboard",
+        "exam": "COMMUNICATE RESULTS",
+        "check_q": "What is the key exam clue for Reporting?",
+        "check_a": "COMMUNICATE RESULTS"
+      }
+    },
+    {
+      "n": 9,
+      "title": "Archiving",
+      "instructional": true,
+      "teach": "Stores logs or security records for long-term retention, compliance, or historical investigation.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Stores logs or security records for long-term retention, compliance, or historical investigation.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Stores logs or security records for long-term retention, compliance, or historical investigation."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Archived audit logs, Long-term storage"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects security visibility, detection, response, validation, or monitoring quality.",
+        "example": "Archived audit logs",
+        "exam": "KEEP IT FOR LATER",
+        "check_q": "What is the key exam clue for Archiving?",
+        "check_a": "KEEP IT FOR LATER"
+      }
     }
   ],
-  "slide_count": 5,
-  "instructional_count": 3,
+  "slide_count": 9,
+  "instructional_count": 8,
   "concepts": [
-    "Systems",
-    "Application",
-    "Infrastructure"
+    "Monitoring Systems",
+    "Monitoring Applications",
+    "Monitoring Infrastructure",
+    "Log Aggregation",
+    "Alerting",
+    "Scanning",
+    "Reporting",
+    "Archiving"
   ],
-  "source_filename": "17.01_Monitoring_computing_resources.pdf"
+  "source_filename": "17-01.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 4.4",
+      "title": "Monitoring Resources and Core Activities",
+      "intro": "Security monitoring starts with understanding what is being observed and what the security team does with that telemetry."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Monitoring Resources and Core Activities",
+        "prompt": "Identify what is being monitored, what activity is occurring, and which tool or response best fits the scenario.",
+        "badge": "4.4",
+        "cards": [
+          {
+            "name": "Monitoring Systems",
+            "definition": "Observing operating systems, endpoints, servers, and hosts for events, performance issues, and suspicious activity.",
+            "examples": [
+              "Endpoint logs",
+              "Server events"
+            ],
+            "memory": "WATCH THE SYSTEM"
+          },
+          {
+            "name": "Monitoring Applications",
+            "definition": "Observing application behavior, logs, errors, authentication, and security events.",
+            "examples": [
+              "Web app logs",
+              "Application errors"
+            ],
+            "memory": "WATCH THE APP"
+          },
+          {
+            "name": "Monitoring Infrastructure",
+            "definition": "Observing network devices, cloud resources, services, and supporting infrastructure.",
+            "examples": [
+              "Firewall events",
+              "Cloud logs",
+              "Router status"
+            ],
+            "memory": "WATCH THE ENVIRONMENT"
+          },
+          {
+            "name": "Log Aggregation",
+            "definition": "Collects logs from many systems into a central location for searching, correlation, and analysis.",
+            "examples": [
+              "Central log server",
+              "SIEM ingestion"
+            ],
+            "memory": "BRING LOGS TOGETHER"
+          },
+          {
+            "name": "Alerting",
+            "definition": "Generates notifications when defined suspicious, risky, or abnormal conditions are detected.",
+            "examples": [
+              "Failed-login alert",
+              "Malware alert"
+            ],
+            "memory": "TELL ME SOMETHING HAPPENED"
+          },
+          {
+            "name": "Scanning",
+            "definition": "Examines systems or networks to identify vulnerabilities, exposures, or security conditions.",
+            "examples": [
+              "Vulnerability scan",
+              "Network scan"
+            ],
+            "memory": "LOOK FOR WEAKNESSES"
+          },
+          {
+            "name": "Reporting",
+            "definition": "Communicates monitoring findings, trends, incidents, and security status to stakeholders.",
+            "examples": [
+              "Executive dashboard",
+              "Security report"
+            ],
+            "memory": "COMMUNICATE RESULTS"
+          },
+          {
+            "name": "Archiving",
+            "definition": "Stores logs or security records for long-term retention, compliance, or historical investigation.",
+            "examples": [
+              "Archived audit logs",
+              "Long-term storage"
+            ],
+            "memory": "KEEP IT FOR LATER"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Monitoring Resources and Core Activities comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Systems",
+            "Hosts/endpoints/servers",
+            "OS and endpoint events"
+          ],
+          [
+            "Applications",
+            "Application behavior",
+            "App/authentication logs"
+          ],
+          [
+            "Infrastructure",
+            "Network/cloud/supporting systems",
+            "Device/service telemetry"
+          ],
+          [
+            "Log aggregation",
+            "Centralize logs",
+            "Search + correlate"
+          ],
+          [
+            "Alerting",
+            "Notify on conditions",
+            "Something requires attention"
+          ],
+          [
+            "Scanning",
+            "Check for weaknesses",
+            "Vulnerability/exposure discovery"
+          ],
+          [
+            "Reporting",
+            "Communicate findings",
+            "Dashboards/reports"
+          ],
+          [
+            "Archiving",
+            "Long-term retention",
+            "Historical/compliance records"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Monitoring Resources and Core Activities exam shortcuts",
+        "items": [
+          [
+            "Logs from many systems need one searchable location → LOG AGGREGATION",
+            "Centralize telemetry so analysts can correlate events.",
+            "Example: Firewall, server, and authentication logs feed one SIEM."
+          ],
+          [
+            "Security team needs immediate notification → ALERTING",
+            "Alerts call attention to conditions that meet rules or thresholds.",
+            "Example: Ten failed logins generate an alert."
+          ],
+          [
+            "Need to identify known weaknesses → SCANNING",
+            "Use scanning to look for vulnerabilities or exposures.",
+            "Example: A vulnerability scanner checks servers for missing patches."
+          ],
+          [
+            "Need historical evidence months later → ARCHIVING",
+            "Archive security records for retention and later investigation.",
+            "Example: Authentication logs are kept for one year."
+          ],
+          [
+            "Leadership needs security status → REPORTING",
+            "Translate monitoring results into usable summaries.",
+            "Example: A monthly dashboard shows incident and vulnerability trends."
+          ]
+        ],
+        "example": "Focus on whether the scenario is asking for visibility, detection, containment, validation, or a specific monitoring tool."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A company sends firewall, server, and authentication logs to one central platform for correlation. Which activity is this?",
+        "choices": [
+          "Log aggregation",
+          "Archiving",
+          "Scanning",
+          "Reporting"
+        ],
+        "answer": 0,
+        "explanation": "Log aggregation centralizes logs from multiple sources for analysis and correlation."
+      },
+      {
+        "q": "A rule generates a notification after ten failed logins from one account. Which activity is this?",
+        "choices": [
+          "Alerting",
+          "Scanning",
+          "Archiving",
+          "Reporting"
+        ],
+        "answer": 0,
+        "explanation": "Alerting notifies analysts when a defined condition occurs."
+      },
+      {
+        "q": "A security team checks servers for missing patches and known vulnerabilities. Which activity is this?",
+        "choices": [
+          "Scanning",
+          "Reporting",
+          "Archiving",
+          "Log aggregation"
+        ],
+        "answer": 0,
+        "explanation": "Scanning checks systems for vulnerabilities or exposures."
+      },
+      {
+        "q": "A company keeps authentication logs for one year for compliance and later investigations. Which activity is this?",
+        "choices": [
+          "Archiving",
+          "Alerting",
+          "Scanning",
+          "Quarantine"
+        ],
+        "answer": 0,
+        "explanation": "Archiving stores records for long-term retention."
+      },
+      {
+        "q": "Leadership receives a monthly dashboard showing incident and vulnerability trends. Which activity is this?",
+        "choices": [
+          "Reporting",
+          "Scanning",
+          "Archiving",
+          "Log aggregation"
+        ],
+        "answer": 0,
+        "explanation": "Reporting communicates security status and trends to stakeholders."
+      },
+      {
+        "q": "An analyst reviews operating-system events and endpoint telemetry for suspicious behavior. What is being monitored?",
+        "choices": [
+          "Systems",
+          "Applications",
+          "Infrastructure only",
+          "Benchmarks"
+        ],
+        "answer": 0,
+        "explanation": "System monitoring focuses on hosts, endpoints, servers, and operating-system events."
+      }
+    ]
+  }
 }
