@@ -77,8 +77,31 @@ import lesson_19_04 from "./lessons/19-04.json";
 import lesson_20_01 from "./lessons/20-01.json";
 import lesson_20_02 from "./lessons/20-02.json";
 import lesson_20_03 from "./lessons/20-03.json";
+import lesson_21_01 from "./lessons/21-01.json";
+import lesson_21_02 from "./lessons/21-02.json";
+import lesson_21_03 from "./lessons/21-03.json";
+import lesson_22_01 from "./lessons/22-01.json";
+import lesson_22_02 from "./lessons/22-02.json";
+import lesson_23_01 from "./lessons/23-01.json";
+import lesson_23_02 from "./lessons/23-02.json";
+import lesson_23_03 from "./lessons/23-03.json";
+import lesson_24_01 from "./lessons/24-01.json";
+import lesson_24_02 from "./lessons/24-02.json";
+import lesson_24_03 from "./lessons/24-03.json";
+import lesson_25_01 from "./lessons/25-01.json";
+import lesson_25_02 from "./lessons/25-02.json";
+import lesson_25_03 from "./lessons/25-03.json";
+import lesson_26_01 from "./lessons/26-01.json";
+import lesson_26_02 from "./lessons/26-02.json";
+import lesson_26_03 from "./lessons/26-03.json";
+import lesson_27_01 from "./lessons/27-01.json";
+import lesson_27_02 from "./lessons/27-02.json";
+import lesson_27_03 from "./lessons/27-03.json";
+import lesson_28_01 from "./lessons/28-01.json";
+import lesson_28_02 from "./lessons/28-02.json";
+import lesson_28_03 from "./lessons/28-03.json";
 
-export const lessons = [lesson_01_02, lesson_02_01, lesson_02_02, lesson_02_03, lesson_02_04, lesson_02_05, lesson_02_06, lesson_02_07, lesson_03_01, lesson_03_02, lesson_03_03, lesson_04_01, lesson_04_02, lesson_04_03, lesson_04_04, lesson_04_05, lesson_04_06, lesson_04_07, lesson_04_08, lesson_04_09, lesson_04_10, lesson_05_01, lesson_05_02, lesson_05_03, lesson_06_01, lesson_06_02, lesson_06_03, lesson_06_04, lesson_07_01, lesson_07_02, lesson_07_03, lesson_08_01, lesson_08_02, lesson_08_03, lesson_08_04, lesson_09_01, lesson_09_02, lesson_10_01, lesson_10_02, lesson_10_03, lesson_10_04, lesson_11_01, lesson_11_02, lesson_11_03, lesson_11_04, lesson_12_01, lesson_12_02, lesson_12_03, lesson_13_01, lesson_13_02, lesson_13_03, lesson_13_04, lesson_14_01, lesson_14_02, lesson_14_03, lesson_14_04, lesson_15_01, lesson_15_02, lesson_15_03, lesson_16_01, lesson_16_02, lesson_16_03, lesson_16_04, lesson_17_01, lesson_17_02, lesson_17_03, lesson_18_01, lesson_18_02, lesson_18_03, lesson_18_04, lesson_19_01, lesson_19_02, lesson_19_03, lesson_19_04, lesson_20_01, lesson_20_02, lesson_20_03];
+export const lessons = [lesson_01_02, lesson_02_01, lesson_02_02, lesson_02_03, lesson_02_04, lesson_02_05, lesson_02_06, lesson_02_07, lesson_03_01, lesson_03_02, lesson_03_03, lesson_04_01, lesson_04_02, lesson_04_03, lesson_04_04, lesson_04_05, lesson_04_06, lesson_04_07, lesson_04_08, lesson_04_09, lesson_04_10, lesson_05_01, lesson_05_02, lesson_05_03, lesson_06_01, lesson_06_02, lesson_06_03, lesson_06_04, lesson_07_01, lesson_07_02, lesson_07_03, lesson_08_01, lesson_08_02, lesson_08_03, lesson_08_04, lesson_09_01, lesson_09_02, lesson_10_01, lesson_10_02, lesson_10_03, lesson_10_04, lesson_11_01, lesson_11_02, lesson_11_03, lesson_11_04, lesson_12_01, lesson_12_02, lesson_12_03, lesson_13_01, lesson_13_02, lesson_13_03, lesson_13_04, lesson_14_01, lesson_14_02, lesson_14_03, lesson_14_04, lesson_15_01, lesson_15_02, lesson_15_03, lesson_16_01, lesson_16_02, lesson_16_03, lesson_16_04, lesson_17_01, lesson_17_02, lesson_17_03, lesson_18_01, lesson_18_02, lesson_18_03, lesson_18_04, lesson_19_01, lesson_19_02, lesson_19_03, lesson_19_04, lesson_20_01, lesson_20_02, lesson_20_03, lesson_21_01, lesson_21_02, lesson_21_03, lesson_22_01, lesson_22_02, lesson_23_01, lesson_23_02, lesson_23_03, lesson_24_01, lesson_24_02, lesson_24_03, lesson_25_01, lesson_25_02, lesson_25_03, lesson_26_01, lesson_26_02, lesson_26_03, lesson_27_01, lesson_27_02, lesson_27_03, lesson_28_01, lesson_28_02, lesson_28_03];
 export { chapters, scenarioQuestions };
 
 export function getLesson(id) {
