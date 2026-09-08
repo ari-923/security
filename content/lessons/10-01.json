@@ -2,432 +2,543 @@
   "id": "10.01",
   "chapter": 10,
   "sub": 1,
-  "title": "Shared Responsibility Matrix",
-  "chapter_name": "Security Architecture & Cloud",
+  "title": "Cloud and Infrastructure Models",
+  "chapter_name": "Security Architecture Models",
   "slides": [
     {
       "n": 1,
-      "title": "Shared Responsibility Matrix",
-      "points": [],
-      "raw": "Shared Responsibility Matrix",
+      "title": "Cloud and Infrastructure Models",
       "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": []
+      "teach": "",
+      "points": [
+        "Architecture choices change who manages security, where systems run, how quickly they scale, and which third parties enter the trust boundary."
+      ],
+      "defs": [],
+      "raw": ""
     },
     {
       "n": 2,
-      "title": "Shared Responsibility Matrix",
-      "points": [
-        "Service Model",
-        "Cloud Provider Responsibility",
-        "- Physical infrastructure",
-        "- Virtualization layer",
-        "Infrastructure as - Basic OS provisioning, patching,",
-        "a Service (IaaS) and management",
-        "- Security of the underlying",
-        "infrastructure",
-        "Customer Responsibility",
-        "- Guest operating system and",
-        "applications",
-        "- Data privacy and security within",
-        "applications",
-        "- Configuration of security groups",
-        "and firewalls",
-        "- Patching and vulnerability",
-        "management within VMs",
-        "- User and access management",
-        "- Application security"
-      ],
-      "raw": "Shared Responsibility Matrix\nService Model\nCloud Provider Responsibility\n- Physical infrastructure\n- Virtualization layer\nInfrastructure as - Basic OS provisioning, patching,\na Service (IaaS) and management\n- Security of the underlying\ninfrastructure\nCustomer Responsibility\n- Guest operating system and\napplications\n- Data privacy and security within\napplications\n- Configuration of security groups\nand firewalls\n- Patching and vulnerability\nmanagement within VMs\n- User and access management\n- Application security",
+      "title": "Cloud",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "Virtualization",
-          "Using a hypervisor to run multiple virtual machines, usually with separate guest operating systems, on shared hardware."
-        ],
-        [
-          "Cloud",
-          "Computing resources delivered on demand from a provider rather than entirely owned and operated locally."
-        ],
-        [
-          "IaaS",
-          "Infrastructure as a Service: cloud model where the provider supplies infrastructure while the customer manages more of the OS, apps, and data."
-        ]
+      "teach": "Computing resources delivered through a provider rather than hosted entirely on local infrastructure.",
+      "points": [
+        "Basically",
+        "Examples"
       ],
+      "defs": [],
+      "raw": "",
       "course": {
-        "learn": "The cloud shared-responsibility model divides security duties between the cloud provider and the customer. The exact split changes across IaaS, PaaS, and SaaS.",
-        "why": "Moving to the cloud transfers some infrastructure duties but never transfers all security responsibility.",
-        "example": "In IaaS, the provider secures physical infrastructure while the customer still manages guest OS configuration, identities, applications, and data.",
-        "exam": "Never choose “the cloud provider handles everything.” Customer responsibilities commonly include data, IAM, configuration, and use of services.",
+        "learn": "Computing resources delivered through a provider rather than hosted entirely on local infrastructure.",
         "breakdown": [
           {
-            "term": "Service Model",
-            "explanation": "Within Shared Responsibility Matrix, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Shared Responsibility Matrix rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "Computing resources delivered through a provider rather than hosted entirely on local infrastructure."
           },
           {
-            "term": "Cloud Provider Responsibility",
-            "explanation": "Within Shared Responsibility Matrix, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Shared Responsibility Matrix rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Physical infrastructure",
-            "explanation": "Infrastructure monitoring observes networks, cloud configuration, appliances, links, and supporting resources. NSM analyzes network behavior, while CSPM evaluates cloud security posture and misconfiguration."
-          },
-          {
-            "term": "Virtualization layer",
-            "explanation": "Within Shared Responsibility Matrix, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Shared Responsibility Matrix rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Infrastructure as - Basic OS provisioning, patching,",
-            "explanation": "Infrastructure monitoring observes networks, cloud configuration, appliances, links, and supporting resources. NSM analyzes network behavior, while CSPM evaluates cloud security posture and misconfiguration."
-          },
-          {
-            "term": "a Service (IaaS) and management",
-            "explanation": "Within Shared Responsibility Matrix, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Shared Responsibility Matrix rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Security of the underlying infrastructure",
-            "explanation": "Infrastructure monitoring observes networks, cloud configuration, appliances, links, and supporting resources. NSM analyzes network behavior, while CSPM evaluates cloud security posture and misconfiguration."
-          },
-          {
-            "term": "Customer Responsibility",
-            "explanation": "Within Shared Responsibility Matrix, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Shared Responsibility Matrix rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Guest operating system and applications",
-            "explanation": "Application monitoring measures application behavior, performance, errors, and security events. APM focuses on health/performance, while a WAF inspects and protects web requests."
-          },
-          {
-            "term": "Data privacy and security within applications",
-            "explanation": "Application monitoring measures application behavior, performance, errors, and security events. APM focuses on health/performance, while a WAF inspects and protects web requests."
-          },
-          {
-            "term": "Configuration of security groups and firewalls",
-            "explanation": "Filter network traffic according to security rules, usually by source, destination, protocol, port, application, or context."
-          },
-          {
-            "term": "Patching and vulnerability management within VMs",
-            "explanation": "Patching applies vendor fixes that correct vulnerabilities, bugs, or insecure behavior. Effective patch management includes inventory, testing, prioritization, deployment, and verification."
-          },
-          {
-            "term": "User and access management",
-            "explanation": "This concerns who or what can reach a resource and what actions are permitted once access is granted."
-          },
-          {
-            "term": "Application security",
-            "explanation": "Application-security testing looks for weaknesses in source code, dependencies, configuration, and running applications. SAST analyzes code without executing it; DAST tests a running application from the outside."
+            "term": "Examples",
+            "explanation": "IaaS, PaaS, or SaaS, Provider-hosted workloads"
           }
         ],
-        "defs": [
-          {
-            "term": "Virtualization",
-            "definition": "Using a hypervisor to run multiple virtual machines, usually with separate guest operating systems, on shared hardware."
-          },
-          {
-            "term": "Cloud",
-            "definition": "Computing resources delivered on demand from a provider rather than entirely owned and operated locally."
-          },
-          {
-            "term": "IaaS",
-            "definition": "Infrastructure as a Service: cloud model where the provider supplies infrastructure while the customer manages more of the OS, apps, and data."
-          }
-        ],
-        "check_q": "Without looking back, explain Shared Responsibility Matrix and describe at least two key ideas from this section.",
-        "check_a": "The cloud shared-responsibility model divides security duties between the cloud provider and the customer. The exact split changes across IaaS, PaaS, and SaaS. Key ideas include: Service Model; Cloud Provider Responsibility; Physical infrastructure; Virtualization layer; Infrastructure as - Basic OS provisioning, patching,.",
-        "points": [
-          "Service Model",
-          "Cloud Provider Responsibility",
-          "Physical infrastructure",
-          "Virtualization layer",
-          "Infrastructure as - Basic OS provisioning, patching,",
-          "a Service (IaaS) and management",
-          "Security of the underlying infrastructure",
-          "Customer Responsibility",
-          "Guest operating system and applications",
-          "Data privacy and security within applications",
-          "Configuration of security groups and firewalls",
-          "Patching and vulnerability management within VMs",
-          "User and access management",
-          "Application security"
-        ]
+        "defs": [],
+        "why": "This concept changes the security tradeoffs of the architecture.",
+        "example": "IaaS, PaaS, or SaaS",
+        "exam": "PROVIDER-HOSTED",
+        "check_q": "What is the key exam clue for Cloud?",
+        "check_a": "PROVIDER-HOSTED"
       }
     },
     {
       "n": 3,
-      "title": "Shared Responsibility Matrix",
-      "points": [
-        "Service Model",
-        "Platform as a Service",
-        "(PaaS)",
-        "Cloud Provider Responsibility",
-        "Customer Responsibility",
-        "- Application code and data",
-        "- Application security",
-        "- Underlying infrastructure and",
-        "- Configuration of application",
-        "virtualization",
-        "settings and environments",
-        "- Runtime environment",
-        "- User and access management",
-        "- Operating system for the platform",
-        "within the platform",
-        "- Basic security of the platform",
-        "- Logging and monitoring of",
-        "applications"
-      ],
-      "raw": "Shared Responsibility Matrix\nService Model\nPlatform as a Service\n(PaaS)\nCloud Provider Responsibility\nCustomer Responsibility\n- Application code and data\n- Application security\n- Underlying infrastructure and\n- Configuration of application\nvirtualization\nsettings and environments\n- Runtime environment\n- User and access management\n- Operating system for the platform\nwithin the platform\n- Basic security of the platform\n- Logging and monitoring of\napplications",
+      "title": "Responsibility Matrix",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "Virtualization",
-          "Using a hypervisor to run multiple virtual machines, usually with separate guest operating systems, on shared hardware."
-        ],
-        [
-          "Cloud",
-          "Computing resources delivered on demand from a provider rather than entirely owned and operated locally."
-        ],
-        [
-          "PaaS",
-          "Platform as a Service: cloud model where the provider manages infrastructure and platform/runtime while the customer focuses more on apps and data."
-        ]
+      "teach": "Defines which security responsibilities belong to the cloud provider and which remain with the customer.",
+      "points": [
+        "Basically",
+        "Examples"
       ],
+      "defs": [],
+      "raw": "",
       "course": {
-        "learn": "The cloud shared-responsibility model divides security duties between the cloud provider and the customer. The exact split changes across IaaS, PaaS, and SaaS.",
-        "why": "Moving to the cloud transfers some infrastructure duties but never transfers all security responsibility.",
-        "example": "In IaaS, the provider secures physical infrastructure while the customer still manages guest OS configuration, identities, applications, and data.",
-        "exam": "Never choose “the cloud provider handles everything.” Customer responsibilities commonly include data, IAM, configuration, and use of services.",
+        "learn": "Defines which security responsibilities belong to the cloud provider and which remain with the customer.",
         "breakdown": [
           {
-            "term": "Service Model",
-            "explanation": "Within Shared Responsibility Matrix, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Shared Responsibility Matrix rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "Defines which security responsibilities belong to the cloud provider and which remain with the customer."
           },
           {
-            "term": "Platform as a Service",
-            "explanation": "Within Shared Responsibility Matrix, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Shared Responsibility Matrix rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "(PaaS)",
-            "explanation": "Within Shared Responsibility Matrix, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Shared Responsibility Matrix rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Cloud Provider Responsibility",
-            "explanation": "Within Shared Responsibility Matrix, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Shared Responsibility Matrix rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Customer Responsibility",
-            "explanation": "Within Shared Responsibility Matrix, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Shared Responsibility Matrix rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Application code and data",
-            "explanation": "Application monitoring measures application behavior, performance, errors, and security events. APM focuses on health/performance, while a WAF inspects and protects web requests."
-          },
-          {
-            "term": "Application security",
-            "explanation": "Application-security testing looks for weaknesses in source code, dependencies, configuration, and running applications. SAST analyzes code without executing it; DAST tests a running application from the outside."
-          },
-          {
-            "term": "Underlying infrastructure and Configuration of application",
-            "explanation": "Infrastructure monitoring observes networks, cloud configuration, appliances, links, and supporting resources. NSM analyzes network behavior, while CSPM evaluates cloud security posture and misconfiguration."
-          },
-          {
-            "term": "virtualization settings and environments",
-            "explanation": "Within Shared Responsibility Matrix, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Shared Responsibility Matrix rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Runtime environment",
-            "explanation": "Within Shared Responsibility Matrix, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Shared Responsibility Matrix rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "User and access management",
-            "explanation": "This concerns who or what can reach a resource and what actions are permitted once access is granted."
-          },
-          {
-            "term": "Operating system for the platform within the platform",
-            "explanation": "Within Shared Responsibility Matrix, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Shared Responsibility Matrix rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Basic security of the platform",
-            "explanation": "This contributes to reducing risk in the broader Shared Responsibility Matrix design and should be evaluated as part of defense in depth."
-          },
-          {
-            "term": "Logging and monitoring of applications",
-            "explanation": "Application monitoring measures application behavior, performance, errors, and security events. APM focuses on health/performance, while a WAF inspects and protects web requests."
+            "term": "Examples",
+            "explanation": "Provider secures physical infrastructure, Customer secures identities and data"
           }
         ],
-        "defs": [
-          {
-            "term": "Virtualization",
-            "definition": "Using a hypervisor to run multiple virtual machines, usually with separate guest operating systems, on shared hardware."
-          },
-          {
-            "term": "Cloud",
-            "definition": "Computing resources delivered on demand from a provider rather than entirely owned and operated locally."
-          },
-          {
-            "term": "PaaS",
-            "definition": "Platform as a Service: cloud model where the provider manages infrastructure and platform/runtime while the customer focuses more on apps and data."
-          }
-        ],
-        "check_q": "Without looking back, explain Shared Responsibility Matrix and describe at least two key ideas from this section.",
-        "check_a": "The cloud shared-responsibility model divides security duties between the cloud provider and the customer. The exact split changes across IaaS, PaaS, and SaaS. Key ideas include: Service Model; Platform as a Service; (PaaS); Cloud Provider Responsibility; Customer Responsibility.",
-        "points": [
-          "Service Model",
-          "Platform as a Service",
-          "(PaaS)",
-          "Cloud Provider Responsibility",
-          "Customer Responsibility",
-          "Application code and data",
-          "Application security",
-          "Underlying infrastructure and Configuration of application",
-          "virtualization settings and environments",
-          "Runtime environment",
-          "User and access management",
-          "Operating system for the platform within the platform",
-          "Basic security of the platform",
-          "Logging and monitoring of applications"
-        ]
+        "defs": [],
+        "why": "This concept changes the security tradeoffs of the architecture.",
+        "example": "Provider secures physical infrastructure",
+        "exam": "WHO SECURES WHAT?",
+        "check_q": "What is the key exam clue for Responsibility Matrix?",
+        "check_a": "WHO SECURES WHAT?"
       }
     },
     {
       "n": 4,
-      "title": "Shared Responsibility Matrix",
-      "points": [
-        "Service Model",
-        "Cloud Provider Responsibility",
-        "Customer Responsibility",
-        "- User data and access",
-        "- Application and underlying",
-        "management within the",
-        "infrastructure",
-        "application",
-        "Software as a Service - Data storage and security",
-        "- Configuration of application",
-        "(SaaS)",
-        "- Security of the application itself settings within allowed limits",
-        "- Updates and maintenance of the - Compliance with application",
-        "application",
-        "terms of service",
-        "- Integration with other systems"
-      ],
-      "raw": "Shared Responsibility Matrix\nService Model\nCloud Provider Responsibility\nCustomer Responsibility\n- User data and access\n- Application and underlying\nmanagement within the\ninfrastructure\napplication\nSoftware as a Service - Data storage and security\n- Configuration of application\n(SaaS)\n- Security of the application itself settings within allowed limits\n- Updates and maintenance of the - Compliance with application\napplication\nterms of service\n- Integration with other systems",
+      "title": "Hybrid Considerations",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "Cloud",
-          "Computing resources delivered on demand from a provider rather than entirely owned and operated locally."
-        ],
-        [
-          "SaaS",
-          "Software as a Service: provider delivers the application; customer responsibilities focus more on users, data, and configuration."
-        ]
+      "teach": "Security considerations created when an organization uses both on-premises and cloud resources.",
+      "points": [
+        "Basically",
+        "Examples"
       ],
+      "defs": [],
+      "raw": "",
       "course": {
-        "learn": "The cloud shared-responsibility model divides security duties between the cloud provider and the customer. The exact split changes across IaaS, PaaS, and SaaS.",
-        "why": "Moving to the cloud transfers some infrastructure duties but never transfers all security responsibility.",
-        "example": "In IaaS, the provider secures physical infrastructure while the customer still manages guest OS configuration, identities, applications, and data.",
-        "exam": "Never choose “the cloud provider handles everything.” Customer responsibilities commonly include data, IAM, configuration, and use of services.",
+        "learn": "Security considerations created when an organization uses both on-premises and cloud resources.",
         "breakdown": [
           {
-            "term": "Service Model",
-            "explanation": "Within Shared Responsibility Matrix, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Shared Responsibility Matrix rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "Security considerations created when an organization uses both on-premises and cloud resources."
           },
           {
-            "term": "Cloud Provider Responsibility",
-            "explanation": "Within Shared Responsibility Matrix, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Shared Responsibility Matrix rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Customer Responsibility",
-            "explanation": "Within Shared Responsibility Matrix, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Shared Responsibility Matrix rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "User data and access",
-            "explanation": "This concerns who or what can reach a resource and what actions are permitted once access is granted."
-          },
-          {
-            "term": "Application and underlying management within the",
-            "explanation": "Application monitoring measures application behavior, performance, errors, and security events. APM focuses on health/performance, while a WAF inspects and protects web requests."
-          },
-          {
-            "term": "infrastructure application",
-            "explanation": "Infrastructure monitoring observes networks, cloud configuration, appliances, links, and supporting resources. NSM analyzes network behavior, while CSPM evaluates cloud security posture and misconfiguration."
-          },
-          {
-            "term": "Software as a Service - Data storage and security",
-            "explanation": "This contributes to reducing risk in the broader Shared Responsibility Matrix design and should be evaluated as part of defense in depth."
-          },
-          {
-            "term": "Configuration of application",
-            "explanation": "Application monitoring measures application behavior, performance, errors, and security events. APM focuses on health/performance, while a WAF inspects and protects web requests."
-          },
-          {
-            "term": "(SaaS)",
-            "explanation": "Within Shared Responsibility Matrix, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Shared Responsibility Matrix rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Security of the application itself settings within allowed limits",
-            "explanation": "Application monitoring measures application behavior, performance, errors, and security events. APM focuses on health/performance, while a WAF inspects and protects web requests."
-          },
-          {
-            "term": "Updates and maintenance of the - Compliance with application",
-            "explanation": "Application monitoring measures application behavior, performance, errors, and security events. APM focuses on health/performance, while a WAF inspects and protects web requests."
-          },
-          {
-            "term": "application terms of service",
-            "explanation": "Application monitoring measures application behavior, performance, errors, and security events. APM focuses on health/performance, while a WAF inspects and protects web requests."
-          },
-          {
-            "term": "Integration with other systems",
-            "explanation": "System monitoring focuses on endpoints and hosts. Endpoint Protection Platforms (EPP) detect or prevent malicious endpoint activity, while SIEM platforms collect and correlate events from many systems."
+            "term": "Examples",
+            "explanation": "Identity synchronization, Consistent logging across environments"
           }
         ],
-        "defs": [
-          {
-            "term": "Cloud",
-            "definition": "Computing resources delivered on demand from a provider rather than entirely owned and operated locally."
-          },
-          {
-            "term": "SaaS",
-            "definition": "Software as a Service: provider delivers the application; customer responsibilities focus more on users, data, and configuration."
-          }
-        ],
-        "check_q": "Without looking back, explain Shared Responsibility Matrix and describe at least two key ideas from this section.",
-        "check_a": "The cloud shared-responsibility model divides security duties between the cloud provider and the customer. The exact split changes across IaaS, PaaS, and SaaS. Key ideas include: Service Model; Cloud Provider Responsibility; Customer Responsibility; User data and access; Application and underlying management within the.",
-        "points": [
-          "Service Model",
-          "Cloud Provider Responsibility",
-          "Customer Responsibility",
-          "User data and access",
-          "Application and underlying management within the",
-          "infrastructure application",
-          "Software as a Service - Data storage and security",
-          "Configuration of application",
-          "(SaaS)",
-          "Security of the application itself settings within allowed limits",
-          "Updates and maintenance of the - Compliance with application",
-          "application terms of service",
-          "Integration with other systems"
-        ]
+        "defs": [],
+        "why": "This concept changes the security tradeoffs of the architecture.",
+        "example": "Identity synchronization",
+        "exam": "TWO ENVIRONMENTS",
+        "check_q": "What is the key exam clue for Hybrid Considerations?",
+        "check_a": "TWO ENVIRONMENTS"
       }
     },
     {
       "n": 5,
-      "title": "Hybrid Cloud Considerations",
-      "points": [],
-      "raw": "Hybrid Cloud Considerations",
-      "instructional": false,
-      "teach": "These are design tradeoffs. Learn why each factor matters rather than memorizing the words alone.",
-      "defs": [
-        [
-          "Cloud",
-          "Computing resources delivered on demand from a provider rather than entirely owned and operated locally."
-        ]
-      ]
+      "title": "Third-party Vendors",
+      "instructional": true,
+      "teach": "External organizations whose products or services become part of the enterprise architecture and risk profile.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "External organizations whose products or services become part of the enterprise architecture and risk profile.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "External organizations whose products or services become part of the enterprise architecture and risk profile."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Cloud provider, SaaS vendor"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes the security tradeoffs of the architecture.",
+        "example": "Cloud provider",
+        "exam": "OUTSIDE DEPENDENCY",
+        "check_q": "What is the key exam clue for Third-party Vendors?",
+        "check_a": "OUTSIDE DEPENDENCY"
+      }
+    },
+    {
+      "n": 6,
+      "title": "Infrastructure as Code (IaC)",
+      "instructional": true,
+      "teach": "Uses machine-readable configuration files to provision and manage infrastructure consistently.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Uses machine-readable configuration files to provision and manage infrastructure consistently.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Uses machine-readable configuration files to provision and manage infrastructure consistently."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Terraform, CloudFormation"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes the security tradeoffs of the architecture.",
+        "example": "Terraform",
+        "exam": "INFRASTRUCTURE IN CODE",
+        "check_q": "What is the key exam clue for Infrastructure as Code (IaC)?",
+        "check_a": "INFRASTRUCTURE IN CODE"
+      }
+    },
+    {
+      "n": 7,
+      "title": "Serverless",
+      "instructional": true,
+      "teach": "A cloud model where the provider manages the underlying servers and the customer focuses primarily on code and configuration.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "A cloud model where the provider manages the underlying servers and the customer focuses primarily on code and configuration.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "A cloud model where the provider manages the underlying servers and the customer focuses primarily on code and configuration."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Functions as a Service, Event-driven functions"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes the security tradeoffs of the architecture.",
+        "example": "Functions as a Service",
+        "exam": "NO SERVER MANAGEMENT",
+        "check_q": "What is the key exam clue for Serverless?",
+        "check_a": "NO SERVER MANAGEMENT"
+      }
+    },
+    {
+      "n": 8,
+      "title": "Microservices",
+      "instructional": true,
+      "teach": "An application design that breaks functionality into smaller independent services.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "An application design that breaks functionality into smaller independent services.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "An application design that breaks functionality into smaller independent services."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Authentication service, Payment service"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes the security tradeoffs of the architecture.",
+        "example": "Authentication service",
+        "exam": "SMALL INDEPENDENT SERVICES",
+        "check_q": "What is the key exam clue for Microservices?",
+        "check_a": "SMALL INDEPENDENT SERVICES"
+      }
+    },
+    {
+      "n": 9,
+      "title": "On-premises",
+      "instructional": true,
+      "teach": "Infrastructure owned or operated directly within the organization's environment.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Infrastructure owned or operated directly within the organization's environment.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Infrastructure owned or operated directly within the organization's environment."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Local data center, Company-owned servers"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes the security tradeoffs of the architecture.",
+        "example": "Local data center",
+        "exam": "YOU MANAGE IT",
+        "check_q": "What is the key exam clue for On-premises?",
+        "check_a": "YOU MANAGE IT"
+      }
+    },
+    {
+      "n": 10,
+      "title": "Centralized vs. Decentralized",
+      "instructional": true,
+      "teach": "Centralized architectures concentrate management or control; decentralized architectures distribute control or services.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Centralized architectures concentrate management or control; decentralized architectures distribute control or services.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Centralized architectures concentrate management or control; decentralized architectures distribute control or services."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Central identity service, Distributed edge nodes"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes the security tradeoffs of the architecture.",
+        "example": "Central identity service",
+        "exam": "ONE CENTER VS. MANY",
+        "check_q": "What is the key exam clue for Centralized vs. Decentralized?",
+        "check_a": "ONE CENTER VS. MANY"
+      }
     }
   ],
-  "slide_count": 5,
-  "instructional_count": 3,
-  "concepts": [],
-  "source_filename": "10.01_Shared_Responsibility_Matrix.pdf"
+  "slide_count": 10,
+  "instructional_count": 9,
+  "concepts": [
+    "Cloud",
+    "Responsibility Matrix",
+    "Hybrid Considerations",
+    "Third-party Vendors",
+    "Infrastructure as Code (IaC)",
+    "Serverless",
+    "Microservices",
+    "On-premises",
+    "Centralized vs. Decentralized"
+  ],
+  "source_filename": "10-01.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 3.1",
+      "title": "Cloud and Infrastructure Models",
+      "intro": "Architecture choices change who manages security, where systems run, how quickly they scale, and which third parties enter the trust boundary."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Cloud and Infrastructure Models",
+        "prompt": "Compare the security tradeoffs and identify which architecture clue matters in the scenario.",
+        "badge": "3.1",
+        "cards": [
+          {
+            "name": "Cloud",
+            "definition": "Computing resources delivered through a provider rather than hosted entirely on local infrastructure.",
+            "examples": [
+              "IaaS, PaaS, or SaaS",
+              "Provider-hosted workloads"
+            ],
+            "memory": "PROVIDER-HOSTED"
+          },
+          {
+            "name": "Responsibility Matrix",
+            "definition": "Defines which security responsibilities belong to the cloud provider and which remain with the customer.",
+            "examples": [
+              "Provider secures physical infrastructure",
+              "Customer secures identities and data"
+            ],
+            "memory": "WHO SECURES WHAT?"
+          },
+          {
+            "name": "Hybrid Considerations",
+            "definition": "Security considerations created when an organization uses both on-premises and cloud resources.",
+            "examples": [
+              "Identity synchronization",
+              "Consistent logging across environments"
+            ],
+            "memory": "TWO ENVIRONMENTS"
+          },
+          {
+            "name": "Third-party Vendors",
+            "definition": "External organizations whose products or services become part of the enterprise architecture and risk profile.",
+            "examples": [
+              "Cloud provider",
+              "SaaS vendor"
+            ],
+            "memory": "OUTSIDE DEPENDENCY"
+          },
+          {
+            "name": "Infrastructure as Code (IaC)",
+            "definition": "Uses machine-readable configuration files to provision and manage infrastructure consistently.",
+            "examples": [
+              "Terraform",
+              "CloudFormation"
+            ],
+            "memory": "INFRASTRUCTURE IN CODE"
+          },
+          {
+            "name": "Serverless",
+            "definition": "A cloud model where the provider manages the underlying servers and the customer focuses primarily on code and configuration.",
+            "examples": [
+              "Functions as a Service",
+              "Event-driven functions"
+            ],
+            "memory": "NO SERVER MANAGEMENT"
+          },
+          {
+            "name": "Microservices",
+            "definition": "An application design that breaks functionality into smaller independent services.",
+            "examples": [
+              "Authentication service",
+              "Payment service"
+            ],
+            "memory": "SMALL INDEPENDENT SERVICES"
+          },
+          {
+            "name": "On-premises",
+            "definition": "Infrastructure owned or operated directly within the organization's environment.",
+            "examples": [
+              "Local data center",
+              "Company-owned servers"
+            ],
+            "memory": "YOU MANAGE IT"
+          },
+          {
+            "name": "Centralized vs. Decentralized",
+            "definition": "Centralized architectures concentrate management or control; decentralized architectures distribute control or services.",
+            "examples": [
+              "Central identity service",
+              "Distributed edge nodes"
+            ],
+            "memory": "ONE CENTER VS. MANY"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Cloud and Infrastructure Models comparison",
+        "headers": [
+          "Concept",
+          "What to compare",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Cloud",
+            "Provider-hosted infrastructure",
+            "Shared responsibility"
+          ],
+          [
+            "On-premises",
+            "Organization-hosted infrastructure",
+            "More direct control and responsibility"
+          ],
+          [
+            "Serverless",
+            "Provider manages servers",
+            "Less infrastructure control"
+          ],
+          [
+            "Microservices",
+            "Small independent services",
+            "More service-to-service security"
+          ],
+          [
+            "IaC",
+            "Infrastructure defined as code",
+            "Consistency plus template risk"
+          ],
+          [
+            "Hybrid",
+            "Cloud plus on-premises",
+            "Integration and policy consistency"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Cloud and Infrastructure Models exam shortcuts",
+        "items": [
+          [
+            "Provider vs. customer duties → RESPONSIBILITY MATRIX",
+            "Use it to determine who secures each layer.",
+            "Example: Provider secures physical servers; customer secures identities."
+          ],
+          [
+            "Cloud + local data center → HYBRID",
+            "Secure both environments and the connection between them.",
+            "Example: Shared identity spans SaaS and local systems."
+          ],
+          [
+            "Templates create infrastructure → IaC",
+            "Infrastructure is deployed through code.",
+            "Example: Terraform builds networks and VMs."
+          ],
+          [
+            "Functions without server management → SERVERLESS",
+            "The provider manages the underlying servers.",
+            "Example: Code runs only when triggered."
+          ],
+          [
+            "Small services communicating over APIs → MICROSERVICES",
+            "Security must cover service-to-service trust.",
+            "Example: Auth and payment run separately."
+          ]
+        ],
+        "example": "Choose the architecture based on the security tradeoff emphasized in the scenario."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A company uses cloud applications and an internal data center and must keep identity and logging consistent across both. Which concept is most relevant?",
+        "choices": [
+          "Hybrid considerations",
+          "Serverless",
+          "Microservices",
+          "Air-gapped"
+        ],
+        "answer": 0,
+        "explanation": "Hybrid environments combine cloud and on-premises resources."
+      },
+      {
+        "q": "A security team needs to know whether the cloud provider or customer must secure a specific layer. What should they consult?",
+        "choices": [
+          "Responsibility matrix",
+          "ACL",
+          "RTOS",
+          "Air gap"
+        ],
+        "answer": 0,
+        "explanation": "The responsibility matrix clarifies provider versus customer duties."
+      },
+      {
+        "q": "A team deploys networks and virtual machines from version-controlled Terraform files. Which model is this?",
+        "choices": [
+          "Infrastructure as code",
+          "Serverless",
+          "On-premises",
+          "Microservices"
+        ],
+        "answer": 0,
+        "explanation": "IaC defines infrastructure using code/configuration."
+      },
+      {
+        "q": "Developers deploy functions while the provider manages the servers. Which architecture is this?",
+        "choices": [
+          "Serverless",
+          "On-premises",
+          "Virtualization",
+          "ICS"
+        ],
+        "answer": 0,
+        "explanation": "Serverless removes direct server management from the customer."
+      },
+      {
+        "q": "An application is split into separate authentication, payment, and inventory services. Which model is this?",
+        "choices": [
+          "Microservices",
+          "Centralized",
+          "Air-gapped",
+          "RTOS"
+        ],
+        "answer": 0,
+        "explanation": "Microservices divide applications into smaller independent services."
+      }
+    ]
+  }
 }
