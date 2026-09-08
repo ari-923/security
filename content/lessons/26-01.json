@@ -1,0 +1,638 @@
+{
+  "id": "26.01",
+  "chapter": 26,
+  "sub": 1,
+  "title": "Compliance Reporting and Monitoring",
+  "chapter_name": "Security Compliance & Privacy",
+  "slides": [
+    {
+      "n": 1,
+      "title": "Compliance Reporting and Monitoring",
+      "instructional": false,
+      "teach": "",
+      "points": [
+        "Effective compliance requires proving that requirements are being met, monitoring controls over time, and documenting who reviewed or acknowledged compliance obligations."
+      ],
+      "defs": [],
+      "raw": ""
+    },
+    {
+      "n": 2,
+      "title": "Internal Compliance Reporting",
+      "instructional": true,
+      "teach": "Reports compliance status, findings, exceptions, and remediation to internal stakeholders.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Reports compliance status, findings, exceptions, and remediation to internal stakeholders.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Reports compliance status, findings, exceptions, and remediation to internal stakeholders."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Management report, Internal audit summary, Compliance dashboard"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how compliance is reported, monitored, enforced, or tied to privacy obligations.",
+        "example": "Management report",
+        "exam": "REPORT INSIDE",
+        "check_q": "What is the key exam clue for Internal Compliance Reporting?",
+        "check_a": "REPORT INSIDE"
+      }
+    },
+    {
+      "n": 3,
+      "title": "External Compliance Reporting",
+      "instructional": true,
+      "teach": "Provides required compliance information to regulators, auditors, customers, partners, or other outside parties.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Provides required compliance information to regulators, auditors, customers, partners, or other outside parties.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Provides required compliance information to regulators, auditors, customers, partners, or other outside parties."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Regulatory filing, Customer compliance report"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how compliance is reported, monitored, enforced, or tied to privacy obligations.",
+        "example": "Regulatory filing",
+        "exam": "REPORT OUTSIDE",
+        "check_q": "What is the key exam clue for External Compliance Reporting?",
+        "check_a": "REPORT OUTSIDE"
+      }
+    },
+    {
+      "n": 4,
+      "title": "Compliance Monitoring",
+      "instructional": true,
+      "teach": "Ongoing observation and review of controls, activities, and requirements to confirm continued compliance.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Ongoing observation and review of controls, activities, and requirements to confirm continued compliance.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Ongoing observation and review of controls, activities, and requirements to confirm continued compliance."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Continuous control monitoring, Periodic compliance review"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how compliance is reported, monitored, enforced, or tied to privacy obligations.",
+        "example": "Continuous control monitoring",
+        "exam": "KEEP CHECKING",
+        "check_q": "What is the key exam clue for Compliance Monitoring?",
+        "check_a": "KEEP CHECKING"
+      }
+    },
+    {
+      "n": 5,
+      "title": "Due Diligence",
+      "instructional": true,
+      "teach": "Investigates and evaluates risk before making a decision or entering a relationship.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Investigates and evaluates risk before making a decision or entering a relationship.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Investigates and evaluates risk before making a decision or entering a relationship."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Vendor review, Risk assessment before purchase"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how compliance is reported, monitored, enforced, or tied to privacy obligations.",
+        "example": "Vendor review",
+        "exam": "INVESTIGATE FIRST",
+        "check_q": "What is the key exam clue for Due Diligence?",
+        "check_a": "INVESTIGATE FIRST"
+      }
+    },
+    {
+      "n": 6,
+      "title": "Due Care",
+      "instructional": true,
+      "teach": "Taking reasonable protective action after risks are known.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Taking reasonable protective action after risks are known.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Taking reasonable protective action after risks are known."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Apply required safeguards, Patch known vulnerabilities"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how compliance is reported, monitored, enforced, or tied to privacy obligations.",
+        "example": "Apply required safeguards",
+        "exam": "ACT RESPONSIBLY",
+        "check_q": "What is the key exam clue for Due Care?",
+        "check_a": "ACT RESPONSIBLY"
+      }
+    },
+    {
+      "n": 7,
+      "title": "Attestation",
+      "instructional": true,
+      "teach": "Formal declaration or certification that a requirement, control, or statement is accurate or has been reviewed.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Formal declaration or certification that a requirement, control, or statement is accurate or has been reviewed.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Formal declaration or certification that a requirement, control, or statement is accurate or has been reviewed."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Executive attestation, Auditor attestation"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how compliance is reported, monitored, enforced, or tied to privacy obligations.",
+        "example": "Executive attestation",
+        "exam": "FORMALLY CONFIRM",
+        "check_q": "What is the key exam clue for Attestation?",
+        "check_a": "FORMALLY CONFIRM"
+      }
+    },
+    {
+      "n": 8,
+      "title": "Acknowledgement",
+      "instructional": true,
+      "teach": "Confirmation that a person has received, understood, or agreed to a policy, requirement, or responsibility.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Confirmation that a person has received, understood, or agreed to a policy, requirement, or responsibility.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Confirmation that a person has received, understood, or agreed to a policy, requirement, or responsibility."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Employee policy acknowledgement, Training acknowledgement"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how compliance is reported, monitored, enforced, or tied to privacy obligations.",
+        "example": "Employee policy acknowledgement",
+        "exam": "I RECEIVED + UNDERSTAND",
+        "check_q": "What is the key exam clue for Acknowledgement?",
+        "check_a": "I RECEIVED + UNDERSTAND"
+      }
+    },
+    {
+      "n": 9,
+      "title": "Internal Attestation",
+      "instructional": true,
+      "teach": "Formal compliance confirmation made by someone within the organization.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Formal compliance confirmation made by someone within the organization.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Formal compliance confirmation made by someone within the organization."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Management certifies control status"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how compliance is reported, monitored, enforced, or tied to privacy obligations.",
+        "example": "Management certifies control status",
+        "exam": "CONFIRMED INTERNALLY",
+        "check_q": "What is the key exam clue for Internal Attestation?",
+        "check_a": "CONFIRMED INTERNALLY"
+      }
+    },
+    {
+      "n": 10,
+      "title": "External Attestation",
+      "instructional": true,
+      "teach": "Independent confirmation performed by an outside party.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Independent confirmation performed by an outside party.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Independent confirmation performed by an outside party."
+          },
+          {
+            "term": "Examples",
+            "explanation": "External auditor opinion, Third-party certification"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how compliance is reported, monitored, enforced, or tied to privacy obligations.",
+        "example": "External auditor opinion",
+        "exam": "CONFIRMED OUTSIDE",
+        "check_q": "What is the key exam clue for External Attestation?",
+        "check_a": "CONFIRMED OUTSIDE"
+      }
+    },
+    {
+      "n": 11,
+      "title": "Automation",
+      "instructional": true,
+      "teach": "Use of tools to continuously collect evidence, test controls, generate alerts, or report compliance status.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Use of tools to continuously collect evidence, test controls, generate alerts, or report compliance status.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Use of tools to continuously collect evidence, test controls, generate alerts, or report compliance status."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Automated evidence collection, Continuous compliance checks"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how compliance is reported, monitored, enforced, or tied to privacy obligations.",
+        "example": "Automated evidence collection",
+        "exam": "AUTOMATE THE PROOF",
+        "check_q": "What is the key exam clue for Automation?",
+        "check_a": "AUTOMATE THE PROOF"
+      }
+    }
+  ],
+  "slide_count": 11,
+  "instructional_count": 10,
+  "concepts": [
+    "Internal Compliance Reporting",
+    "External Compliance Reporting",
+    "Compliance Monitoring",
+    "Due Diligence",
+    "Due Care",
+    "Attestation",
+    "Acknowledgement",
+    "Internal Attestation",
+    "External Attestation",
+    "Automation"
+  ],
+  "source_filename": "26-01.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 5.4",
+      "title": "Compliance Reporting and Monitoring",
+      "intro": "Effective compliance requires proving that requirements are being met, monitoring controls over time, and documenting who reviewed or acknowledged compliance obligations."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Compliance Reporting and Monitoring",
+        "prompt": "Identify whether the scenario is asking about reporting, monitoring, consequences of non-compliance, or privacy/data obligations.",
+        "badge": "5.4",
+        "cards": [
+          {
+            "name": "Internal Compliance Reporting",
+            "definition": "Reports compliance status, findings, exceptions, and remediation to internal stakeholders.",
+            "examples": [
+              "Management report",
+              "Internal audit summary",
+              "Compliance dashboard"
+            ],
+            "memory": "REPORT INSIDE"
+          },
+          {
+            "name": "External Compliance Reporting",
+            "definition": "Provides required compliance information to regulators, auditors, customers, partners, or other outside parties.",
+            "examples": [
+              "Regulatory filing",
+              "Customer compliance report"
+            ],
+            "memory": "REPORT OUTSIDE"
+          },
+          {
+            "name": "Compliance Monitoring",
+            "definition": "Ongoing observation and review of controls, activities, and requirements to confirm continued compliance.",
+            "examples": [
+              "Continuous control monitoring",
+              "Periodic compliance review"
+            ],
+            "memory": "KEEP CHECKING"
+          },
+          {
+            "name": "Due Diligence",
+            "definition": "Investigates and evaluates risk before making a decision or entering a relationship.",
+            "examples": [
+              "Vendor review",
+              "Risk assessment before purchase"
+            ],
+            "memory": "INVESTIGATE FIRST"
+          },
+          {
+            "name": "Due Care",
+            "definition": "Taking reasonable protective action after risks are known.",
+            "examples": [
+              "Apply required safeguards",
+              "Patch known vulnerabilities"
+            ],
+            "memory": "ACT RESPONSIBLY"
+          },
+          {
+            "name": "Attestation",
+            "definition": "Formal declaration or certification that a requirement, control, or statement is accurate or has been reviewed.",
+            "examples": [
+              "Executive attestation",
+              "Auditor attestation"
+            ],
+            "memory": "FORMALLY CONFIRM"
+          },
+          {
+            "name": "Acknowledgement",
+            "definition": "Confirmation that a person has received, understood, or agreed to a policy, requirement, or responsibility.",
+            "examples": [
+              "Employee policy acknowledgement",
+              "Training acknowledgement"
+            ],
+            "memory": "I RECEIVED + UNDERSTAND"
+          },
+          {
+            "name": "Internal Attestation",
+            "definition": "Formal compliance confirmation made by someone within the organization.",
+            "examples": [
+              "Management certifies control status"
+            ],
+            "memory": "CONFIRMED INTERNALLY"
+          },
+          {
+            "name": "External Attestation",
+            "definition": "Independent confirmation performed by an outside party.",
+            "examples": [
+              "External auditor opinion",
+              "Third-party certification"
+            ],
+            "memory": "CONFIRMED OUTSIDE"
+          },
+          {
+            "name": "Automation",
+            "definition": "Use of tools to continuously collect evidence, test controls, generate alerts, or report compliance status.",
+            "examples": [
+              "Automated evidence collection",
+              "Continuous compliance checks"
+            ],
+            "memory": "AUTOMATE THE PROOF"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Compliance Reporting and Monitoring comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Internal reporting",
+            "Communicate compliance inside organization",
+            "Management/internal audit"
+          ],
+          [
+            "External reporting",
+            "Communicate to outside parties",
+            "Regulator/customer/auditor"
+          ],
+          [
+            "Monitoring",
+            "Check compliance over time",
+            "Ongoing review"
+          ],
+          [
+            "Due diligence",
+            "Investigate/understand risk",
+            "Before decision"
+          ],
+          [
+            "Due care",
+            "Take reasonable protective action",
+            "Act responsibly"
+          ],
+          [
+            "Attestation",
+            "Formal certification",
+            "Confirm accuracy/compliance"
+          ],
+          [
+            "Acknowledgement",
+            "Confirm receipt/understanding",
+            "Policy/training acceptance"
+          ],
+          [
+            "Automation",
+            "Automate evidence and checks",
+            "Continuous compliance"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Compliance Reporting and Monitoring exam shortcuts",
+        "items": [
+          [
+            "Report stays inside the company → INTERNAL REPORTING",
+            "Internal reports support management, audit, and remediation decisions.",
+            "Example: Compliance dashboard is sent to executives."
+          ],
+          [
+            "Report must go to regulator or customer → EXTERNAL REPORTING",
+            "External reporting satisfies outside obligations.",
+            "Example: Required compliance evidence is sent to a regulator."
+          ],
+          [
+            "Question asks 'Did we investigate the risk?' → DUE DILIGENCE",
+            "Due diligence is about investigation and understanding before acting.",
+            "Example: Review a vendor's security posture before contracting."
+          ],
+          [
+            "Question asks 'Did we take reasonable protective action?' → DUE CARE",
+            "Due care is about acting appropriately after risks are known.",
+            "Example: Apply controls after discovering a known vulnerability."
+          ],
+          [
+            "Formal certification statement → ATTESTATION",
+            "Attestation is stronger than simple acknowledgement.",
+            "Example: Executive formally certifies that controls are operating."
+          ],
+          [
+            "Employee confirms they read the policy → ACKNOWLEDGEMENT",
+            "Acknowledgement means receipt or understanding.",
+            "Example: User clicks 'I acknowledge' after reading the AUP."
+          ],
+          [
+            "Continuous evidence collection → AUTOMATION",
+            "Automation can reduce manual compliance work and provide ongoing evidence.",
+            "Example: Tool continuously checks encryption settings."
+          ]
+        ],
+        "example": "Focus on whether the scenario is about proving compliance, maintaining compliance, consequences of failure, or privacy/data-handling responsibilities."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A compliance dashboard is sent only to company executives and internal audit. Which reporting type is this?",
+        "choices": [
+          "Internal reporting",
+          "External reporting",
+          "Attestation",
+          "Acknowledgement"
+        ],
+        "answer": 0,
+        "explanation": "Internal compliance reporting communicates status to stakeholders inside the organization."
+      },
+      {
+        "q": "A company submits required compliance evidence to a regulator. Which reporting type is this?",
+        "choices": [
+          "External reporting",
+          "Internal reporting",
+          "Due care",
+          "Automation"
+        ],
+        "answer": 0,
+        "explanation": "External compliance reporting communicates required information to outside parties such as regulators."
+      },
+      {
+        "q": "A security team reviews a vendor's security posture before signing a contract. Which concept is this?",
+        "choices": [
+          "Due diligence",
+          "Due care",
+          "Attestation",
+          "Acknowledgement"
+        ],
+        "answer": 0,
+        "explanation": "Due diligence is the investigation and evaluation performed before a decision."
+      },
+      {
+        "q": "An organization discovers a known vulnerability and applies a reasonable protective control. Which concept is this?",
+        "choices": [
+          "Due care",
+          "Due diligence",
+          "Acknowledgement",
+          "External reporting"
+        ],
+        "answer": 0,
+        "explanation": "Due care means taking reasonable protective action after risks are known."
+      },
+      {
+        "q": "An executive formally certifies that required controls are operating as stated. Which concept is this?",
+        "choices": [
+          "Attestation",
+          "Acknowledgement",
+          "Monitoring",
+          "Due diligence"
+        ],
+        "answer": 0,
+        "explanation": "Attestation is a formal certification or declaration."
+      },
+      {
+        "q": "Employees click a button confirming they have read and understood the acceptable-use policy. Which concept is this?",
+        "choices": [
+          "Acknowledgement",
+          "Attestation",
+          "External reporting",
+          "Due care"
+        ],
+        "answer": 0,
+        "explanation": "Acknowledgement confirms receipt or understanding of a policy or requirement."
+      },
+      {
+        "q": "An external auditor independently confirms that certain compliance controls are functioning. Which type of attestation is this?",
+        "choices": [
+          "External attestation",
+          "Internal attestation",
+          "Acknowledgement",
+          "Monitoring"
+        ],
+        "answer": 0,
+        "explanation": "External attestation is performed by an outside party."
+      },
+      {
+        "q": "A tool continuously collects evidence that encryption settings remain compliant. Which concept is this?",
+        "choices": [
+          "Automation",
+          "Due diligence",
+          "Acknowledgement",
+          "External reporting"
+        ],
+        "answer": 0,
+        "explanation": "Automation can continuously test controls and collect compliance evidence."
+      }
+    ]
+  }
+}

@@ -1,0 +1,664 @@
+{
+  "id": "26.03",
+  "chapter": 26,
+  "sub": 3,
+  "title": "Privacy, Data Roles, and Retention",
+  "chapter_name": "Security Compliance & Privacy",
+  "slides": [
+    {
+      "n": 1,
+      "title": "Privacy, Data Roles, and Retention",
+      "instructional": false,
+      "teach": "",
+      "points": [
+        "Compliance also includes privacy obligations: understanding legal jurisdiction, knowing who the data belongs to and who controls or processes it, and handling data inventory, retention, and deletion correctly."
+      ],
+      "defs": [],
+      "raw": ""
+    },
+    {
+      "n": 2,
+      "title": "Privacy Legal Implications",
+      "instructional": true,
+      "teach": "Legal obligations that govern how personal or sensitive information is collected, used, stored, shared, and deleted.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Legal obligations that govern how personal or sensitive information is collected, used, stored, shared, and deleted.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Legal obligations that govern how personal or sensitive information is collected, used, stored, shared, and deleted."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Privacy law, Consent requirement, Data protection obligation"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how compliance is reported, monitored, enforced, or tied to privacy obligations.",
+        "example": "Privacy law",
+        "exam": "PRIVACY HAS LEGAL RULES",
+        "check_q": "What is the key exam clue for Privacy Legal Implications?",
+        "check_a": "PRIVACY HAS LEGAL RULES"
+      }
+    },
+    {
+      "n": 3,
+      "title": "Local / Regional Privacy",
+      "instructional": true,
+      "teach": "Privacy requirements that apply at a city, state, province, region, or other subnational level.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Privacy requirements that apply at a city, state, province, region, or other subnational level.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Privacy requirements that apply at a city, state, province, region, or other subnational level."
+          },
+          {
+            "term": "Examples",
+            "explanation": "State privacy law, Regional privacy rule"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how compliance is reported, monitored, enforced, or tied to privacy obligations.",
+        "example": "State privacy law",
+        "exam": "LOCAL JURISDICTION",
+        "check_q": "What is the key exam clue for Local / Regional Privacy?",
+        "check_a": "LOCAL JURISDICTION"
+      }
+    },
+    {
+      "n": 4,
+      "title": "National Privacy",
+      "instructional": true,
+      "teach": "Privacy requirements that apply at the country or federal level.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Privacy requirements that apply at the country or federal level.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Privacy requirements that apply at the country or federal level."
+          },
+          {
+            "term": "Examples",
+            "explanation": "National privacy law, Federal privacy requirement"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how compliance is reported, monitored, enforced, or tied to privacy obligations.",
+        "example": "National privacy law",
+        "exam": "COUNTRY-LEVEL",
+        "check_q": "What is the key exam clue for National Privacy?",
+        "check_a": "COUNTRY-LEVEL"
+      }
+    },
+    {
+      "n": 5,
+      "title": "Global Privacy",
+      "instructional": true,
+      "teach": "Privacy obligations that affect organizations operating across multiple countries or jurisdictions.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Privacy obligations that affect organizations operating across multiple countries or jurisdictions.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Privacy obligations that affect organizations operating across multiple countries or jurisdictions."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Multinational data handling, Cross-border privacy requirements"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how compliance is reported, monitored, enforced, or tied to privacy obligations.",
+        "example": "Multinational data handling",
+        "exam": "MULTI-COUNTRY",
+        "check_q": "What is the key exam clue for Global Privacy?",
+        "check_a": "MULTI-COUNTRY"
+      }
+    },
+    {
+      "n": 6,
+      "title": "Data Subject",
+      "instructional": true,
+      "teach": "Individual whose personal data is being collected, stored, or processed.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Individual whose personal data is being collected, stored, or processed.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Individual whose personal data is being collected, stored, or processed."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Customer, Employee, Patient"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how compliance is reported, monitored, enforced, or tied to privacy obligations.",
+        "example": "Customer",
+        "exam": "THE PERSON THE DATA IS ABOUT",
+        "check_q": "What is the key exam clue for Data Subject?",
+        "check_a": "THE PERSON THE DATA IS ABOUT"
+      }
+    },
+    {
+      "n": 7,
+      "title": "Controller",
+      "instructional": true,
+      "teach": "Entity that determines why and how personal data is processed.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Entity that determines why and how personal data is processed.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Entity that determines why and how personal data is processed."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Company decides purpose and method"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how compliance is reported, monitored, enforced, or tied to privacy obligations.",
+        "example": "Company decides purpose and method",
+        "exam": "DECIDES WHY + HOW",
+        "check_q": "What is the key exam clue for Controller?",
+        "check_a": "DECIDES WHY + HOW"
+      }
+    },
+    {
+      "n": 8,
+      "title": "Processor",
+      "instructional": true,
+      "teach": "Entity that processes personal data on behalf of the controller.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Entity that processes personal data on behalf of the controller.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Entity that processes personal data on behalf of the controller."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Cloud provider, Payroll processor"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how compliance is reported, monitored, enforced, or tied to privacy obligations.",
+        "example": "Cloud provider",
+        "exam": "PROCESSES FOR CONTROLLER",
+        "check_q": "What is the key exam clue for Processor?",
+        "check_a": "PROCESSES FOR CONTROLLER"
+      }
+    },
+    {
+      "n": 9,
+      "title": "Ownership",
+      "instructional": true,
+      "teach": "Defines accountability and responsibility for data assets, including decisions about classification, access, and protection.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Defines accountability and responsibility for data assets, including decisions about classification, access, and protection.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Defines accountability and responsibility for data assets, including decisions about classification, access, and protection."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Data owner, Business owner"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how compliance is reported, monitored, enforced, or tied to privacy obligations.",
+        "example": "Data owner",
+        "exam": "WHO IS ACCOUNTABLE?",
+        "check_q": "What is the key exam clue for Ownership?",
+        "check_a": "WHO IS ACCOUNTABLE?"
+      }
+    },
+    {
+      "n": 10,
+      "title": "Data Inventory",
+      "instructional": true,
+      "teach": "Documented record of what data the organization has, where it is stored, how it is used, and who is responsible for it.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Documented record of what data the organization has, where it is stored, how it is used, and who is responsible for it.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Documented record of what data the organization has, where it is stored, how it is used, and who is responsible for it."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Data catalog, Personal-data inventory"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how compliance is reported, monitored, enforced, or tied to privacy obligations.",
+        "example": "Data catalog",
+        "exam": "WHAT DATA DO WE HAVE?",
+        "check_q": "What is the key exam clue for Data Inventory?",
+        "check_a": "WHAT DATA DO WE HAVE?"
+      }
+    },
+    {
+      "n": 11,
+      "title": "Data Retention",
+      "instructional": true,
+      "teach": "Defines how long data must or may be kept before deletion or archival.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Defines how long data must or may be kept before deletion or archival.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Defines how long data must or may be kept before deletion or archival."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Keep records 7 years, Delete logs after retention period"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how compliance is reported, monitored, enforced, or tied to privacy obligations.",
+        "example": "Keep records 7 years",
+        "exam": "HOW LONG DO WE KEEP IT?",
+        "check_q": "What is the key exam clue for Data Retention?",
+        "check_a": "HOW LONG DO WE KEEP IT?"
+      }
+    },
+    {
+      "n": 12,
+      "title": "Right to Be Forgotten",
+      "instructional": true,
+      "teach": "Privacy right allowing an individual, when legally applicable, to request deletion of personal data.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Privacy right allowing an individual, when legally applicable, to request deletion of personal data.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Privacy right allowing an individual, when legally applicable, to request deletion of personal data."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Delete customer profile, Erase personal data request"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how compliance is reported, monitored, enforced, or tied to privacy obligations.",
+        "example": "Delete customer profile",
+        "exam": "DELETE MY DATA",
+        "check_q": "What is the key exam clue for Right to Be Forgotten?",
+        "check_a": "DELETE MY DATA"
+      }
+    }
+  ],
+  "slide_count": 12,
+  "instructional_count": 11,
+  "concepts": [
+    "Privacy Legal Implications",
+    "Local / Regional Privacy",
+    "National Privacy",
+    "Global Privacy",
+    "Data Subject",
+    "Controller",
+    "Processor",
+    "Ownership",
+    "Data Inventory",
+    "Data Retention",
+    "Right to Be Forgotten"
+  ],
+  "source_filename": "26-03.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 5.4",
+      "title": "Privacy, Data Roles, and Retention",
+      "intro": "Compliance also includes privacy obligations: understanding legal jurisdiction, knowing who the data belongs to and who controls or processes it, and handling data inventory, retention, and deletion correctly."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Privacy, Data Roles, and Retention",
+        "prompt": "Identify whether the scenario is asking about reporting, monitoring, consequences of non-compliance, or privacy/data obligations.",
+        "badge": "5.4",
+        "cards": [
+          {
+            "name": "Privacy Legal Implications",
+            "definition": "Legal obligations that govern how personal or sensitive information is collected, used, stored, shared, and deleted.",
+            "examples": [
+              "Privacy law",
+              "Consent requirement",
+              "Data protection obligation"
+            ],
+            "memory": "PRIVACY HAS LEGAL RULES"
+          },
+          {
+            "name": "Local / Regional Privacy",
+            "definition": "Privacy requirements that apply at a city, state, province, region, or other subnational level.",
+            "examples": [
+              "State privacy law",
+              "Regional privacy rule"
+            ],
+            "memory": "LOCAL JURISDICTION"
+          },
+          {
+            "name": "National Privacy",
+            "definition": "Privacy requirements that apply at the country or federal level.",
+            "examples": [
+              "National privacy law",
+              "Federal privacy requirement"
+            ],
+            "memory": "COUNTRY-LEVEL"
+          },
+          {
+            "name": "Global Privacy",
+            "definition": "Privacy obligations that affect organizations operating across multiple countries or jurisdictions.",
+            "examples": [
+              "Multinational data handling",
+              "Cross-border privacy requirements"
+            ],
+            "memory": "MULTI-COUNTRY"
+          },
+          {
+            "name": "Data Subject",
+            "definition": "Individual whose personal data is being collected, stored, or processed.",
+            "examples": [
+              "Customer",
+              "Employee",
+              "Patient"
+            ],
+            "memory": "THE PERSON THE DATA IS ABOUT"
+          },
+          {
+            "name": "Controller",
+            "definition": "Entity that determines why and how personal data is processed.",
+            "examples": [
+              "Company decides purpose and method"
+            ],
+            "memory": "DECIDES WHY + HOW"
+          },
+          {
+            "name": "Processor",
+            "definition": "Entity that processes personal data on behalf of the controller.",
+            "examples": [
+              "Cloud provider",
+              "Payroll processor"
+            ],
+            "memory": "PROCESSES FOR CONTROLLER"
+          },
+          {
+            "name": "Ownership",
+            "definition": "Defines accountability and responsibility for data assets, including decisions about classification, access, and protection.",
+            "examples": [
+              "Data owner",
+              "Business owner"
+            ],
+            "memory": "WHO IS ACCOUNTABLE?"
+          },
+          {
+            "name": "Data Inventory",
+            "definition": "Documented record of what data the organization has, where it is stored, how it is used, and who is responsible for it.",
+            "examples": [
+              "Data catalog",
+              "Personal-data inventory"
+            ],
+            "memory": "WHAT DATA DO WE HAVE?"
+          },
+          {
+            "name": "Data Retention",
+            "definition": "Defines how long data must or may be kept before deletion or archival.",
+            "examples": [
+              "Keep records 7 years",
+              "Delete logs after retention period"
+            ],
+            "memory": "HOW LONG DO WE KEEP IT?"
+          },
+          {
+            "name": "Right to Be Forgotten",
+            "definition": "Privacy right allowing an individual, when legally applicable, to request deletion of personal data.",
+            "examples": [
+              "Delete customer profile",
+              "Erase personal data request"
+            ],
+            "memory": "DELETE MY DATA"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Privacy, Data Roles, and Retention comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Data subject",
+            "Person the data is about",
+            "Individual"
+          ],
+          [
+            "Controller",
+            "Decides why/how processing occurs",
+            "Purpose + means"
+          ],
+          [
+            "Processor",
+            "Processes for controller",
+            "Acts on behalf"
+          ],
+          [
+            "Ownership",
+            "Accountability for data",
+            "Who is responsible?"
+          ],
+          [
+            "Data inventory",
+            "Record of organizational data",
+            "What/where/owner"
+          ],
+          [
+            "Retention",
+            "How long data is kept",
+            "Keep/delete schedule"
+          ],
+          [
+            "Right to be forgotten",
+            "Request deletion where applicable",
+            "Erase personal data"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Privacy, Data Roles, and Retention exam shortcuts",
+        "items": [
+          [
+            "Question asks who the personal data describes → DATA SUBJECT",
+            "The data subject is the individual the information is about.",
+            "Example: The customer whose profile is stored."
+          ],
+          [
+            "Who decides why and how data is processed? → CONTROLLER",
+            "The controller determines purpose and means.",
+            "Example: Retailer decides why it collects customer addresses."
+          ],
+          [
+            "Who handles data for the controller? → PROCESSOR",
+            "Processors act on the controller's behalf.",
+            "Example: Cloud provider stores customer records."
+          ],
+          [
+            "Need to know what data exists and where → DATA INVENTORY",
+            "Inventory documents data assets and locations.",
+            "Example: Catalog lists databases containing personal information."
+          ],
+          [
+            "Question asks how long records are kept → RETENTION",
+            "Retention rules define the storage period.",
+            "Example: Financial records kept for seven years."
+          ],
+          [
+            "Individual asks for lawful deletion of their personal data → RIGHT TO BE FORGOTTEN",
+            "Where applicable, the organization must support deletion requests.",
+            "Example: Customer asks the company to erase their account data."
+          ],
+          [
+            "Privacy requirement depends on jurisdiction → LOCAL / NATIONAL / GLOBAL",
+            "Determine which legal scope applies.",
+            "Example: A multinational company may have obligations in several countries."
+          ]
+        ],
+        "example": "Focus on whether the scenario is about proving compliance, maintaining compliance, consequences of failure, or privacy/data-handling responsibilities."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A customer's personal information is stored in a company's database. What is the customer called in privacy terminology?",
+        "choices": [
+          "Data subject",
+          "Controller",
+          "Processor",
+          "Custodian"
+        ],
+        "answer": 0,
+        "explanation": "The data subject is the individual the personal data is about."
+      },
+      {
+        "q": "A retailer decides why customer addresses are collected and how they will be used. Which role is the retailer acting as?",
+        "choices": [
+          "Controller",
+          "Processor",
+          "Data subject",
+          "Custodian"
+        ],
+        "answer": 0,
+        "explanation": "The controller determines the purposes and means of processing personal data."
+      },
+      {
+        "q": "A payroll company processes employee data on behalf of another organization. Which role is the payroll company acting as?",
+        "choices": [
+          "Processor",
+          "Controller",
+          "Data subject",
+          "Owner"
+        ],
+        "answer": 0,
+        "explanation": "A processor handles personal data on behalf of the controller."
+      },
+      {
+        "q": "A company needs to know what personal data it holds, where it is stored, and which team owns it. What should it maintain?",
+        "choices": [
+          "Data inventory",
+          "Attestation",
+          "SLA",
+          "Risk threshold"
+        ],
+        "answer": 0,
+        "explanation": "A data inventory documents what data exists, where it is stored, and who is responsible for it."
+      },
+      {
+        "q": "A regulation requires financial records to be retained for seven years. Which concept is this?",
+        "choices": [
+          "Data retention",
+          "Data inventory",
+          "Ownership",
+          "Attestation"
+        ],
+        "answer": 0,
+        "explanation": "Data retention defines how long records must or may be kept."
+      },
+      {
+        "q": "A customer submits a legally valid request for deletion of their personal information. Which privacy concept applies?",
+        "choices": [
+          "Right to be forgotten",
+          "Data retention only",
+          "Attestation",
+          "Due care"
+        ],
+        "answer": 0,
+        "explanation": "The right to be forgotten may allow an individual to request deletion of personal data when legally applicable."
+      },
+      {
+        "q": "A company operates in several countries and must account for privacy obligations in each jurisdiction. Which scope best describes this?",
+        "choices": [
+          "Global privacy",
+          "National privacy only",
+          "Local privacy only",
+          "Internal reporting"
+        ],
+        "answer": 0,
+        "explanation": "Global privacy considerations apply when operating across multiple jurisdictions."
+      }
+    ]
+  }
+}

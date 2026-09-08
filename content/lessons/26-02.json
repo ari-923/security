@@ -1,0 +1,376 @@
+{
+  "id": "26.02",
+  "chapter": 26,
+  "sub": 2,
+  "title": "Consequences of Non-Compliance",
+  "chapter_name": "Security Compliance & Privacy",
+  "slides": [
+    {
+      "n": 1,
+      "title": "Consequences of Non-Compliance",
+      "instructional": false,
+      "teach": "",
+      "points": [
+        "Non-compliance can create legal, financial, operational, contractual, and reputational consequences. Security+ expects you to recognize the type of impact described in a scenario."
+      ],
+      "defs": [],
+      "raw": ""
+    },
+    {
+      "n": 2,
+      "title": "Fines",
+      "instructional": true,
+      "teach": "Monetary penalties imposed for violating laws, regulations, or contractual requirements.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Monetary penalties imposed for violating laws, regulations, or contractual requirements.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Monetary penalties imposed for violating laws, regulations, or contractual requirements."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Regulatory fine, Penalty fee"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how compliance is reported, monitored, enforced, or tied to privacy obligations.",
+        "example": "Regulatory fine",
+        "exam": "PAY MONEY",
+        "check_q": "What is the key exam clue for Fines?",
+        "check_a": "PAY MONEY"
+      }
+    },
+    {
+      "n": 3,
+      "title": "Sanctions",
+      "instructional": true,
+      "teach": "Formal penalties or restrictions imposed by an authority.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Formal penalties or restrictions imposed by an authority.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Formal penalties or restrictions imposed by an authority."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Operating restriction, Government sanction"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how compliance is reported, monitored, enforced, or tied to privacy obligations.",
+        "example": "Operating restriction",
+        "exam": "OFFICIAL PENALTY",
+        "check_q": "What is the key exam clue for Sanctions?",
+        "check_a": "OFFICIAL PENALTY"
+      }
+    },
+    {
+      "n": 4,
+      "title": "Reputational Damage",
+      "instructional": true,
+      "teach": "Loss of trust, credibility, or public confidence caused by non-compliance or security failures.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Loss of trust, credibility, or public confidence caused by non-compliance or security failures.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Loss of trust, credibility, or public confidence caused by non-compliance or security failures."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Customer distrust, Negative publicity"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how compliance is reported, monitored, enforced, or tied to privacy obligations.",
+        "example": "Customer distrust",
+        "exam": "TRUST DAMAGE",
+        "check_q": "What is the key exam clue for Reputational Damage?",
+        "check_a": "TRUST DAMAGE"
+      }
+    },
+    {
+      "n": 5,
+      "title": "Loss of License",
+      "instructional": true,
+      "teach": "Revocation or suspension of permission required to operate, practice, or provide certain services.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Revocation or suspension of permission required to operate, practice, or provide certain services.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Revocation or suspension of permission required to operate, practice, or provide certain services."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Professional license revoked, Operating permit suspended"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how compliance is reported, monitored, enforced, or tied to privacy obligations.",
+        "example": "Professional license revoked",
+        "exam": "CAN'T OPERATE",
+        "check_q": "What is the key exam clue for Loss of License?",
+        "check_a": "CAN'T OPERATE"
+      }
+    },
+    {
+      "n": 6,
+      "title": "Contractual Impacts",
+      "instructional": true,
+      "teach": "Consequences resulting from violating contractual compliance obligations.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Consequences resulting from violating contractual compliance obligations.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Consequences resulting from violating contractual compliance obligations."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Contract termination, Financial damages, Loss of partnership"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how compliance is reported, monitored, enforced, or tied to privacy obligations.",
+        "example": "Contract termination",
+        "exam": "BREAK CONTRACT → CONSEQUENCE",
+        "check_q": "What is the key exam clue for Contractual Impacts?",
+        "check_a": "BREAK CONTRACT → CONSEQUENCE"
+      }
+    }
+  ],
+  "slide_count": 6,
+  "instructional_count": 5,
+  "concepts": [
+    "Fines",
+    "Sanctions",
+    "Reputational Damage",
+    "Loss of License",
+    "Contractual Impacts"
+  ],
+  "source_filename": "26-02.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 5.4",
+      "title": "Consequences of Non-Compliance",
+      "intro": "Non-compliance can create legal, financial, operational, contractual, and reputational consequences. Security+ expects you to recognize the type of impact described in a scenario."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Consequences of Non-Compliance",
+        "prompt": "Identify whether the scenario is asking about reporting, monitoring, consequences of non-compliance, or privacy/data obligations.",
+        "badge": "5.4",
+        "cards": [
+          {
+            "name": "Fines",
+            "definition": "Monetary penalties imposed for violating laws, regulations, or contractual requirements.",
+            "examples": [
+              "Regulatory fine",
+              "Penalty fee"
+            ],
+            "memory": "PAY MONEY"
+          },
+          {
+            "name": "Sanctions",
+            "definition": "Formal penalties or restrictions imposed by an authority.",
+            "examples": [
+              "Operating restriction",
+              "Government sanction"
+            ],
+            "memory": "OFFICIAL PENALTY"
+          },
+          {
+            "name": "Reputational Damage",
+            "definition": "Loss of trust, credibility, or public confidence caused by non-compliance or security failures.",
+            "examples": [
+              "Customer distrust",
+              "Negative publicity"
+            ],
+            "memory": "TRUST DAMAGE"
+          },
+          {
+            "name": "Loss of License",
+            "definition": "Revocation or suspension of permission required to operate, practice, or provide certain services.",
+            "examples": [
+              "Professional license revoked",
+              "Operating permit suspended"
+            ],
+            "memory": "CAN'T OPERATE"
+          },
+          {
+            "name": "Contractual Impacts",
+            "definition": "Consequences resulting from violating contractual compliance obligations.",
+            "examples": [
+              "Contract termination",
+              "Financial damages",
+              "Loss of partnership"
+            ],
+            "memory": "BREAK CONTRACT → CONSEQUENCE"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Consequences of Non-Compliance comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Fines",
+            "Financial penalty",
+            "Pay money"
+          ],
+          [
+            "Sanctions",
+            "Official restriction/penalty",
+            "Authority takes action"
+          ],
+          [
+            "Reputational damage",
+            "Loss of trust",
+            "Public/customer confidence"
+          ],
+          [
+            "Loss of license",
+            "Permission revoked",
+            "Cannot legally operate/provide service"
+          ],
+          [
+            "Contractual impacts",
+            "Contract consequences",
+            "Termination/damages"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Consequences of Non-Compliance exam shortcuts",
+        "items": [
+          [
+            "Regulator imposes monetary penalty → FINE",
+            "Fines are direct financial penalties.",
+            "Example: Organization pays $500,000 for a compliance violation."
+          ],
+          [
+            "Authority restricts operations → SANCTION",
+            "Sanctions are broader official penalties or restrictions.",
+            "Example: Regulator limits what the company may offer."
+          ],
+          [
+            "Customers stop trusting the organization → REPUTATIONAL DAMAGE",
+            "This is a trust and credibility impact.",
+            "Example: Customers leave after a public compliance scandal."
+          ],
+          [
+            "Organization can no longer legally provide a service → LOSS OF LICENSE",
+            "Required authorization has been revoked or suspended.",
+            "Example: Professional license is removed."
+          ],
+          [
+            "Vendor agreement is terminated because compliance terms were violated → CONTRACTUAL IMPACT",
+            "The consequence comes from contract terms.",
+            "Example: Customer cancels the agreement and seeks damages."
+          ]
+        ],
+        "example": "Focus on whether the scenario is about proving compliance, maintaining compliance, consequences of failure, or privacy/data-handling responsibilities."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A regulator imposes a $500,000 monetary penalty for a compliance violation. Which consequence is this?",
+        "choices": [
+          "Fine",
+          "Sanction",
+          "Loss of license",
+          "Reputational damage"
+        ],
+        "answer": 0,
+        "explanation": "A fine is a direct monetary penalty."
+      },
+      {
+        "q": "A government authority restricts a company's ability to offer a certain service. Which consequence is this?",
+        "choices": [
+          "Sanction",
+          "Fine",
+          "Contractual impact",
+          "Acknowledgement"
+        ],
+        "answer": 0,
+        "explanation": "A sanction is an official restriction or penalty imposed by an authority."
+      },
+      {
+        "q": "Customers stop trusting a company after a public compliance failure. Which consequence is this?",
+        "choices": [
+          "Reputational damage",
+          "Fine",
+          "Loss of license",
+          "Sanction"
+        ],
+        "answer": 0,
+        "explanation": "Reputational damage affects trust, credibility, and public confidence."
+      },
+      {
+        "q": "A professional organization can no longer legally provide a regulated service because its authorization was revoked. Which consequence is this?",
+        "choices": [
+          "Loss of license",
+          "Fine",
+          "Sanction only",
+          "Contractual impact"
+        ],
+        "answer": 0,
+        "explanation": "Loss of license means required permission to operate or provide a service has been revoked."
+      },
+      {
+        "q": "A customer terminates a vendor contract because the vendor violated contractual compliance terms. Which consequence is this?",
+        "choices": [
+          "Contractual impact",
+          "Fine",
+          "Loss of license",
+          "Reputational damage only"
+        ],
+        "answer": 0,
+        "explanation": "Contractual impacts arise from violating obligations in an agreement."
+      }
+    ]
+  }
+}
