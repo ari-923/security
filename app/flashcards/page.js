@@ -28,5 +28,5 @@ export default function FlashcardsPage() {
     }))
   );
 
-  return <FlashcardsClient cards={[...cards, ...extraCards]} />;
+  return <FlashcardsClient cards={[...cards, ...extraCards]} coreCount={cards.length} supplementalCount={extraCards.length} />;
 }
