@@ -1,0 +1,280 @@
+{
+  "id": "25.03",
+  "chapter": 25,
+  "sub": 3,
+  "title": "Vendor Monitoring, Questionnaires, and Rules of Engagement",
+  "chapter_name": "Third-Party Risk Management",
+  "slides": [
+    {
+      "n": 1,
+      "title": "Vendor Monitoring, Questionnaires, and Rules of Engagement",
+      "instructional": false,
+      "teach": "",
+      "points": [
+        "Third-party risk does not end after contract signing. Vendors must be monitored throughout the relationship, reassessed when conditions change, and given clear boundaries for testing and interaction."
+      ],
+      "defs": [],
+      "raw": ""
+    },
+    {
+      "n": 2,
+      "title": "Vendor Monitoring",
+      "instructional": true,
+      "teach": "Ongoing review of vendor performance, security posture, compliance, incidents, and changes in risk.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Ongoing review of vendor performance, security posture, compliance, incidents, and changes in risk.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Ongoing review of vendor performance, security posture, compliance, incidents, and changes in risk."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Review SLA metrics, Track breaches, Monitor risk rating"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how third-party risk is assessed, contracted, monitored, or controlled throughout the vendor lifecycle.",
+        "example": "Review SLA metrics",
+        "exam": "KEEP WATCHING THE VENDOR",
+        "check_q": "What is the key exam clue for Vendor Monitoring?",
+        "check_a": "KEEP WATCHING THE VENDOR"
+      }
+    },
+    {
+      "n": 3,
+      "title": "Questionnaires",
+      "instructional": true,
+      "teach": "Structured sets of questions used to gather information about a vendor's controls, practices, compliance, and risk posture.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Structured sets of questions used to gather information about a vendor's controls, practices, compliance, and risk posture.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Structured sets of questions used to gather information about a vendor's controls, practices, compliance, and risk posture."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Security questionnaire, SIG-style assessment"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how third-party risk is assessed, contracted, monitored, or controlled throughout the vendor lifecycle.",
+        "example": "Security questionnaire",
+        "exam": "ASK ABOUT THEIR CONTROLS",
+        "check_q": "What is the key exam clue for Questionnaires?",
+        "check_a": "ASK ABOUT THEIR CONTROLS"
+      }
+    },
+    {
+      "n": 4,
+      "title": "Rules of Engagement",
+      "instructional": true,
+      "teach": "Defines authorized scope, timing, methods, boundaries, communication, and prohibited actions for security testing or assessment.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Defines authorized scope, timing, methods, boundaries, communication, and prohibited actions for security testing or assessment.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Defines authorized scope, timing, methods, boundaries, communication, and prohibited actions for security testing or assessment."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Pentest scope, Approved testing window, Do-not-test systems"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how third-party risk is assessed, contracted, monitored, or controlled throughout the vendor lifecycle.",
+        "example": "Pentest scope",
+        "exam": "TESTING BOUNDARIES",
+        "check_q": "What is the key exam clue for Rules of Engagement?",
+        "check_a": "TESTING BOUNDARIES"
+      }
+    }
+  ],
+  "slide_count": 4,
+  "instructional_count": 3,
+  "concepts": [
+    "Vendor Monitoring",
+    "Questionnaires",
+    "Rules of Engagement"
+  ],
+  "source_filename": "25-03.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 5.3",
+      "title": "Vendor Monitoring, Questionnaires, and Rules of Engagement",
+      "intro": "Third-party risk does not end after contract signing. Vendors must be monitored throughout the relationship, reassessed when conditions change, and given clear boundaries for testing and interaction."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Vendor Monitoring, Questionnaires, and Rules of Engagement",
+        "prompt": "Identify whether the scenario is about evaluating a vendor, selecting the right agreement, or monitoring and controlling the relationship after onboarding.",
+        "badge": "5.3",
+        "cards": [
+          {
+            "name": "Vendor Monitoring",
+            "definition": "Ongoing review of vendor performance, security posture, compliance, incidents, and changes in risk.",
+            "examples": [
+              "Review SLA metrics",
+              "Track breaches",
+              "Monitor risk rating"
+            ],
+            "memory": "KEEP WATCHING THE VENDOR"
+          },
+          {
+            "name": "Questionnaires",
+            "definition": "Structured sets of questions used to gather information about a vendor's controls, practices, compliance, and risk posture.",
+            "examples": [
+              "Security questionnaire",
+              "SIG-style assessment"
+            ],
+            "memory": "ASK ABOUT THEIR CONTROLS"
+          },
+          {
+            "name": "Rules of Engagement",
+            "definition": "Defines authorized scope, timing, methods, boundaries, communication, and prohibited actions for security testing or assessment.",
+            "examples": [
+              "Pentest scope",
+              "Approved testing window",
+              "Do-not-test systems"
+            ],
+            "memory": "TESTING BOUNDARIES"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Vendor Monitoring, Questionnaires, and Rules of Engagement comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Vendor monitoring",
+            "Ongoing oversight",
+            "Risk after onboarding"
+          ],
+          [
+            "Questionnaires",
+            "Collect vendor-control information",
+            "Ask structured questions"
+          ],
+          [
+            "Rules of engagement",
+            "Define testing boundaries",
+            "Scope/time/methods"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Vendor Monitoring, Questionnaires, and Rules of Engagement exam shortcuts",
+        "items": [
+          [
+            "Vendor was already approved but risk may have changed → VENDOR MONITORING",
+            "Third-party risk management continues throughout the relationship.",
+            "Example: Review new breaches, control changes, and SLA performance."
+          ],
+          [
+            "Need standardized information about vendor controls → QUESTIONNAIRE",
+            "Use structured questions to collect comparable evidence.",
+            "Example: Vendor completes a security assessment questionnaire."
+          ],
+          [
+            "Pentest must define what testers may and may not do → RULES OF ENGAGEMENT",
+            "Set scope and boundaries before testing begins.",
+            "Example: Testing is allowed only against listed IPs during a specific window."
+          ],
+          [
+            "Vendor misses contractual uptime target → MONITOR SLA + VENDOR PERFORMANCE",
+            "Monitoring checks whether the vendor is meeting agreed obligations.",
+            "Example: Repeated SLA violations trigger escalation."
+          ]
+        ],
+        "example": "First identify the vendor-lifecycle stage: assessment/selection, agreement/contracting, or ongoing monitoring."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A vendor was approved last year, but the company now reviews new breaches, security ratings, and SLA performance each quarter. Which activity is this?",
+        "choices": [
+          "Vendor monitoring",
+          "Due diligence only",
+          "Conflict-of-interest review",
+          "SOW creation"
+        ],
+        "answer": 0,
+        "explanation": "Vendor monitoring is ongoing oversight after the relationship begins."
+      },
+      {
+        "q": "A vendor completes a standardized list of questions about encryption, access control, incident response, and compliance. What is this?",
+        "choices": [
+          "Questionnaire",
+          "SLA",
+          "Rules of engagement",
+          "MSA"
+        ],
+        "answer": 0,
+        "explanation": "Questionnaires collect structured information about vendor controls and practices."
+      },
+      {
+        "q": "Before a penetration test begins, the organization defines approved IP addresses, testing hours, contacts, and prohibited techniques. What document is this?",
+        "choices": [
+          "Rules of engagement",
+          "NDA",
+          "SLA",
+          "BPA"
+        ],
+        "answer": 0,
+        "explanation": "Rules of engagement define scope, methods, timing, boundaries, and communication for testing."
+      },
+      {
+        "q": "A vendor repeatedly fails to meet the uptime percentage specified in its contract. What should the customer focus on?",
+        "choices": [
+          "Vendor monitoring and SLA performance",
+          "Supply chain analysis only",
+          "Questionnaire only",
+          "NDA enforcement"
+        ],
+        "answer": 0,
+        "explanation": "Ongoing vendor monitoring includes checking whether SLA obligations are being met."
+      },
+      {
+        "q": "A penetration testing team is technically capable of testing a production payment system, but the approved assessment explicitly excludes it. Which requirement prevents testing it?",
+        "choices": [
+          "Rules of engagement",
+          "Right-to-audit clause",
+          "MOU",
+          "Internal audit evidence"
+        ],
+        "answer": 0,
+        "explanation": "Rules of engagement define the authorized boundaries of testing."
+      }
+    ]
+  }
+}

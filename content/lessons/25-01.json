@@ -1,0 +1,542 @@
+{
+  "id": "25.01",
+  "chapter": 25,
+  "sub": 1,
+  "title": "Vendor Assessment and Selection",
+  "chapter_name": "Third-Party Risk Management",
+  "slides": [
+    {
+      "n": 1,
+      "title": "Vendor Assessment and Selection",
+      "instructional": false,
+      "teach": "",
+      "points": [
+        "Third-party risk management begins before a vendor is approved. Organizations assess security posture, perform due diligence, review audit evidence, and consider supply-chain exposure before establishing a relationship."
+      ],
+      "defs": [],
+      "raw": ""
+    },
+    {
+      "n": 2,
+      "title": "Vendor Assessment",
+      "instructional": true,
+      "teach": "Evaluates a third party's security posture, controls, risks, and ability to meet organizational requirements.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Evaluates a third party's security posture, controls, risks, and ability to meet organizational requirements.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Evaluates a third party's security posture, controls, risks, and ability to meet organizational requirements."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Security review, Control assessment, Risk rating"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how third-party risk is assessed, contracted, monitored, or controlled throughout the vendor lifecycle.",
+        "example": "Security review",
+        "exam": "HOW RISKY IS THE VENDOR?",
+        "check_q": "What is the key exam clue for Vendor Assessment?",
+        "check_a": "HOW RISKY IS THE VENDOR?"
+      }
+    },
+    {
+      "n": 3,
+      "title": "Penetration Testing",
+      "instructional": true,
+      "teach": "Authorized security testing that attempts to exploit weaknesses in the vendor's environment or product.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Authorized security testing that attempts to exploit weaknesses in the vendor's environment or product.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Authorized security testing that attempts to exploit weaknesses in the vendor's environment or product."
+          },
+          {
+            "term": "Examples",
+            "explanation": "External pentest, Application pentest"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how third-party risk is assessed, contracted, monitored, or controlled throughout the vendor lifecycle.",
+        "example": "External pentest",
+        "exam": "TEST THE DEFENSES",
+        "check_q": "What is the key exam clue for Penetration Testing?",
+        "check_a": "TEST THE DEFENSES"
+      }
+    },
+    {
+      "n": 4,
+      "title": "Right-to-Audit Clause",
+      "instructional": true,
+      "teach": "Contract language giving the customer the right to audit or assess a vendor's controls and compliance.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Contract language giving the customer the right to audit or assess a vendor's controls and compliance.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Contract language giving the customer the right to audit or assess a vendor's controls and compliance."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Customer security audit, Compliance review rights"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how third-party risk is assessed, contracted, monitored, or controlled throughout the vendor lifecycle.",
+        "example": "Customer security audit",
+        "exam": "WE CAN CHECK YOU",
+        "check_q": "What is the key exam clue for Right-to-Audit Clause?",
+        "check_a": "WE CAN CHECK YOU"
+      }
+    },
+    {
+      "n": 5,
+      "title": "Evidence of Internal Audits",
+      "instructional": true,
+      "teach": "Documentation showing that the vendor performs its own internal reviews of controls and processes.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Documentation showing that the vendor performs its own internal reviews of controls and processes.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Documentation showing that the vendor performs its own internal reviews of controls and processes."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Internal audit report, Control review evidence"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how third-party risk is assessed, contracted, monitored, or controlled throughout the vendor lifecycle.",
+        "example": "Internal audit report",
+        "exam": "THEY CHECK THEMSELVES",
+        "check_q": "What is the key exam clue for Evidence of Internal Audits?",
+        "check_a": "THEY CHECK THEMSELVES"
+      }
+    },
+    {
+      "n": 6,
+      "title": "Independent Assessments",
+      "instructional": true,
+      "teach": "Security or compliance assessments performed by an external third party.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Security or compliance assessments performed by an external third party.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Security or compliance assessments performed by an external third party."
+          },
+          {
+            "term": "Examples",
+            "explanation": "SOC 2 report, Independent certification"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how third-party risk is assessed, contracted, monitored, or controlled throughout the vendor lifecycle.",
+        "example": "SOC 2 report",
+        "exam": "OUTSIDE REVIEW",
+        "check_q": "What is the key exam clue for Independent Assessments?",
+        "check_a": "OUTSIDE REVIEW"
+      }
+    },
+    {
+      "n": 7,
+      "title": "Supply Chain Analysis",
+      "instructional": true,
+      "teach": "Evaluates risks introduced by vendors, suppliers, software components, service providers, and their dependencies.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Evaluates risks introduced by vendors, suppliers, software components, service providers, and their dependencies.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Evaluates risks introduced by vendors, suppliers, software components, service providers, and their dependencies."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Fourth-party risk, Software dependency risk"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how third-party risk is assessed, contracted, monitored, or controlled throughout the vendor lifecycle.",
+        "example": "Fourth-party risk",
+        "exam": "WHO ELSE DO THEY DEPEND ON?",
+        "check_q": "What is the key exam clue for Supply Chain Analysis?",
+        "check_a": "WHO ELSE DO THEY DEPEND ON?"
+      }
+    },
+    {
+      "n": 8,
+      "title": "Due Diligence",
+      "instructional": true,
+      "teach": "Investigates a prospective vendor's security, financial, legal, operational, and compliance posture before selection.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Investigates a prospective vendor's security, financial, legal, operational, and compliance posture before selection.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Investigates a prospective vendor's security, financial, legal, operational, and compliance posture before selection."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Background review, Security questionnaire, Financial review"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how third-party risk is assessed, contracted, monitored, or controlled throughout the vendor lifecycle.",
+        "example": "Background review",
+        "exam": "CHECK BEFORE YOU CHOOSE",
+        "check_q": "What is the key exam clue for Due Diligence?",
+        "check_a": "CHECK BEFORE YOU CHOOSE"
+      }
+    },
+    {
+      "n": 9,
+      "title": "Conflict of Interest",
+      "instructional": true,
+      "teach": "Situation where personal, financial, or organizational interests could improperly influence vendor selection or oversight.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Situation where personal, financial, or organizational interests could improperly influence vendor selection or oversight.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Situation where personal, financial, or organizational interests could improperly influence vendor selection or oversight."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Employee owns vendor stock, Family relationship with bidder"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how third-party risk is assessed, contracted, monitored, or controlled throughout the vendor lifecycle.",
+        "example": "Employee owns vendor stock",
+        "exam": "BIASED DECISION RISK",
+        "check_q": "What is the key exam clue for Conflict of Interest?",
+        "check_a": "BIASED DECISION RISK"
+      }
+    }
+  ],
+  "slide_count": 9,
+  "instructional_count": 8,
+  "concepts": [
+    "Vendor Assessment",
+    "Penetration Testing",
+    "Right-to-Audit Clause",
+    "Evidence of Internal Audits",
+    "Independent Assessments",
+    "Supply Chain Analysis",
+    "Due Diligence",
+    "Conflict of Interest"
+  ],
+  "source_filename": "25-01.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 5.3",
+      "title": "Vendor Assessment and Selection",
+      "intro": "Third-party risk management begins before a vendor is approved. Organizations assess security posture, perform due diligence, review audit evidence, and consider supply-chain exposure before establishing a relationship."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Vendor Assessment and Selection",
+        "prompt": "Identify whether the scenario is about evaluating a vendor, selecting the right agreement, or monitoring and controlling the relationship after onboarding.",
+        "badge": "5.3",
+        "cards": [
+          {
+            "name": "Vendor Assessment",
+            "definition": "Evaluates a third party's security posture, controls, risks, and ability to meet organizational requirements.",
+            "examples": [
+              "Security review",
+              "Control assessment",
+              "Risk rating"
+            ],
+            "memory": "HOW RISKY IS THE VENDOR?"
+          },
+          {
+            "name": "Penetration Testing",
+            "definition": "Authorized security testing that attempts to exploit weaknesses in the vendor's environment or product.",
+            "examples": [
+              "External pentest",
+              "Application pentest"
+            ],
+            "memory": "TEST THE DEFENSES"
+          },
+          {
+            "name": "Right-to-Audit Clause",
+            "definition": "Contract language giving the customer the right to audit or assess a vendor's controls and compliance.",
+            "examples": [
+              "Customer security audit",
+              "Compliance review rights"
+            ],
+            "memory": "WE CAN CHECK YOU"
+          },
+          {
+            "name": "Evidence of Internal Audits",
+            "definition": "Documentation showing that the vendor performs its own internal reviews of controls and processes.",
+            "examples": [
+              "Internal audit report",
+              "Control review evidence"
+            ],
+            "memory": "THEY CHECK THEMSELVES"
+          },
+          {
+            "name": "Independent Assessments",
+            "definition": "Security or compliance assessments performed by an external third party.",
+            "examples": [
+              "SOC 2 report",
+              "Independent certification"
+            ],
+            "memory": "OUTSIDE REVIEW"
+          },
+          {
+            "name": "Supply Chain Analysis",
+            "definition": "Evaluates risks introduced by vendors, suppliers, software components, service providers, and their dependencies.",
+            "examples": [
+              "Fourth-party risk",
+              "Software dependency risk"
+            ],
+            "memory": "WHO ELSE DO THEY DEPEND ON?"
+          },
+          {
+            "name": "Due Diligence",
+            "definition": "Investigates a prospective vendor's security, financial, legal, operational, and compliance posture before selection.",
+            "examples": [
+              "Background review",
+              "Security questionnaire",
+              "Financial review"
+            ],
+            "memory": "CHECK BEFORE YOU CHOOSE"
+          },
+          {
+            "name": "Conflict of Interest",
+            "definition": "Situation where personal, financial, or organizational interests could improperly influence vendor selection or oversight.",
+            "examples": [
+              "Employee owns vendor stock",
+              "Family relationship with bidder"
+            ],
+            "memory": "BIASED DECISION RISK"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Vendor Assessment and Selection comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Vendor assessment",
+            "Evaluate third-party security",
+            "How risky is the vendor?"
+          ],
+          [
+            "Penetration testing",
+            "Actively test defenses",
+            "Can weaknesses be exploited?"
+          ],
+          [
+            "Right-to-audit",
+            "Contractual audit rights",
+            "Customer may verify controls"
+          ],
+          [
+            "Internal audit evidence",
+            "Vendor's own review evidence",
+            "They assess themselves"
+          ],
+          [
+            "Independent assessment",
+            "External validation",
+            "Third-party review"
+          ],
+          [
+            "Supply chain analysis",
+            "Evaluate dependencies",
+            "Fourth-party risk"
+          ],
+          [
+            "Due diligence",
+            "Pre-selection investigation",
+            "Check before contracting"
+          ],
+          [
+            "Conflict of interest",
+            "Identify biased decision risk",
+            "Selection integrity"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Vendor Assessment and Selection exam shortcuts",
+        "items": [
+          [
+            "Need to evaluate a vendor before approval → DUE DILIGENCE",
+            "Investigate the vendor before entering the relationship.",
+            "Example: Review financial health, security posture, and compliance history."
+          ],
+          [
+            "Customer wants contractual ability to inspect controls → RIGHT-TO-AUDIT",
+            "Put audit rights directly into the agreement.",
+            "Example: Contract allows annual customer security audits."
+          ],
+          [
+            "Vendor gives its own audit report → INTERNAL AUDIT EVIDENCE",
+            "The evidence comes from the vendor's internal review function.",
+            "Example: Vendor provides internal control-audit results."
+          ],
+          [
+            "Need stronger independent assurance → INDEPENDENT ASSESSMENT",
+            "Use an outside assessor rather than relying only on vendor claims.",
+            "Example: Review a SOC 2 report."
+          ],
+          [
+            "Vendor depends on another supplier → SUPPLY CHAIN ANALYSIS",
+            "Third-party risk can extend to fourth parties and dependencies.",
+            "Example: Your SaaS provider relies on another cloud provider."
+          ],
+          [
+            "Person selecting vendor has personal financial interest → CONFLICT OF INTEREST",
+            "The decision may not be impartial.",
+            "Example: Procurement manager owns stock in one bidder."
+          ]
+        ],
+        "example": "First identify the vendor-lifecycle stage: assessment/selection, agreement/contracting, or ongoing monitoring."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A company reviews a prospective vendor's security posture, financial stability, compliance history, and references before signing a contract. Which process is this?",
+        "choices": [
+          "Due diligence",
+          "Vendor monitoring",
+          "Rules of engagement",
+          "SLA review"
+        ],
+        "answer": 0,
+        "explanation": "Due diligence evaluates a prospective vendor before selection."
+      },
+      {
+        "q": "A contract gives the customer permission to inspect the vendor's security controls each year. Which clause is this?",
+        "choices": [
+          "Right-to-audit clause",
+          "NDA",
+          "SLA",
+          "MOU"
+        ],
+        "answer": 0,
+        "explanation": "A right-to-audit clause allows the customer to audit or assess vendor controls."
+      },
+      {
+        "q": "A vendor provides a SOC 2 report completed by an external auditor. What type of evidence is this?",
+        "choices": [
+          "Independent assessment",
+          "Internal audit evidence",
+          "Rules of engagement",
+          "BPA"
+        ],
+        "answer": 0,
+        "explanation": "A SOC 2 report from an outside assessor is an independent assessment."
+      },
+      {
+        "q": "A vendor provides documentation from its own internal audit department. What type of evidence is this?",
+        "choices": [
+          "Evidence of internal audits",
+          "Independent assessment",
+          "Penetration test only",
+          "Questionnaire"
+        ],
+        "answer": 0,
+        "explanation": "The evidence was produced by the vendor's internal audit function."
+      },
+      {
+        "q": "A SaaS provider relies on another cloud provider that also handles customer data. Which process should evaluate this additional dependency?",
+        "choices": [
+          "Supply chain analysis",
+          "Conflict-of-interest review",
+          "SLA monitoring",
+          "NDA review"
+        ],
+        "answer": 0,
+        "explanation": "Supply chain analysis evaluates vendor dependencies and fourth-party risk."
+      },
+      {
+        "q": "A procurement manager owns a financial interest in one of the companies bidding for a contract. What issue is this?",
+        "choices": [
+          "Conflict of interest",
+          "Supply chain risk",
+          "Right-to-audit",
+          "Independent assessment"
+        ],
+        "answer": 0,
+        "explanation": "A conflict of interest may improperly influence vendor selection."
+      },
+      {
+        "q": "An authorized security team actively attempts to exploit weaknesses in a vendor-hosted application. Which assessment method is this?",
+        "choices": [
+          "Penetration testing",
+          "Questionnaire",
+          "Vendor monitoring",
+          "SLA review"
+        ],
+        "answer": 0,
+        "explanation": "Penetration testing actively attempts exploitation to evaluate security."
+      }
+    ]
+  }
+}

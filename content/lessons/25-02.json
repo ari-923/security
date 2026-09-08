@@ -1,0 +1,495 @@
+{
+  "id": "25.02",
+  "chapter": 25,
+  "sub": 2,
+  "title": "Third-Party Agreements",
+  "chapter_name": "Third-Party Risk Management",
+  "slides": [
+    {
+      "n": 1,
+      "title": "Third-Party Agreements",
+      "instructional": false,
+      "teach": "",
+      "points": [
+        "Agreements define responsibilities, expectations, confidentiality, service levels, and scope. Security+ frequently tests which agreement best matches the scenario."
+      ],
+      "defs": [],
+      "raw": ""
+    },
+    {
+      "n": 2,
+      "title": "Service-Level Agreement (SLA)",
+      "instructional": true,
+      "teach": "Defines measurable service-performance expectations such as uptime, response time, availability, or support targets.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Defines measurable service-performance expectations such as uptime, response time, availability, or support targets.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Defines measurable service-performance expectations such as uptime, response time, availability, or support targets."
+          },
+          {
+            "term": "Examples",
+            "explanation": "99.9% uptime, 4-hour response time"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how third-party risk is assessed, contracted, monitored, or controlled throughout the vendor lifecycle.",
+        "example": "99.9% uptime",
+        "exam": "MEASURABLE SERVICE TARGETS",
+        "check_q": "What is the key exam clue for Service-Level Agreement (SLA)?",
+        "check_a": "MEASURABLE SERVICE TARGETS"
+      }
+    },
+    {
+      "n": 3,
+      "title": "Memorandum of Agreement (MOA)",
+      "instructional": true,
+      "teach": "Formal document describing agreed responsibilities, commitments, and terms between parties.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Formal document describing agreed responsibilities, commitments, and terms between parties.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Formal document describing agreed responsibilities, commitments, and terms between parties."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Shared responsibilities, Formal cooperation terms"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how third-party risk is assessed, contracted, monitored, or controlled throughout the vendor lifecycle.",
+        "example": "Shared responsibilities",
+        "exam": "FORMAL AGREEMENT",
+        "check_q": "What is the key exam clue for Memorandum of Agreement (MOA)?",
+        "check_a": "FORMAL AGREEMENT"
+      }
+    },
+    {
+      "n": 4,
+      "title": "Memorandum of Understanding (MOU)",
+      "instructional": true,
+      "teach": "Documents mutual understanding and intentions between parties, often less formal than a contract.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Documents mutual understanding and intentions between parties, often less formal than a contract.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Documents mutual understanding and intentions between parties, often less formal than a contract."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Cooperation understanding, Shared intent"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how third-party risk is assessed, contracted, monitored, or controlled throughout the vendor lifecycle.",
+        "example": "Cooperation understanding",
+        "exam": "WE UNDERSTAND EACH OTHER",
+        "check_q": "What is the key exam clue for Memorandum of Understanding (MOU)?",
+        "check_a": "WE UNDERSTAND EACH OTHER"
+      }
+    },
+    {
+      "n": 5,
+      "title": "Master Service Agreement (MSA)",
+      "instructional": true,
+      "teach": "Umbrella agreement establishing general legal and business terms that govern future work between parties.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Umbrella agreement establishing general legal and business terms that govern future work between parties.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Umbrella agreement establishing general legal and business terms that govern future work between parties."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Payment terms, Liability terms, General relationship"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how third-party risk is assessed, contracted, monitored, or controlled throughout the vendor lifecycle.",
+        "example": "Payment terms",
+        "exam": "MASTER TERMS",
+        "check_q": "What is the key exam clue for Master Service Agreement (MSA)?",
+        "check_a": "MASTER TERMS"
+      }
+    },
+    {
+      "n": 6,
+      "title": "Work Order / Statement of Work (WO/SOW)",
+      "instructional": true,
+      "teach": "Defines the specific scope, tasks, deliverables, timelines, and responsibilities for a particular project or engagement.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Defines the specific scope, tasks, deliverables, timelines, and responsibilities for a particular project or engagement.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Defines the specific scope, tasks, deliverables, timelines, and responsibilities for a particular project or engagement."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Project deliverables, Implementation timeline"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how third-party risk is assessed, contracted, monitored, or controlled throughout the vendor lifecycle.",
+        "example": "Project deliverables",
+        "exam": "WHAT EXACTLY WILL BE DONE?",
+        "check_q": "What is the key exam clue for Work Order / Statement of Work (WO/SOW)?",
+        "check_a": "WHAT EXACTLY WILL BE DONE?"
+      }
+    },
+    {
+      "n": 7,
+      "title": "Non-disclosure Agreement (NDA)",
+      "instructional": true,
+      "teach": "Requires parties to protect confidential information and restrict unauthorized disclosure.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Requires parties to protect confidential information and restrict unauthorized disclosure.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Requires parties to protect confidential information and restrict unauthorized disclosure."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Protect trade secrets, Confidential project data"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how third-party risk is assessed, contracted, monitored, or controlled throughout the vendor lifecycle.",
+        "example": "Protect trade secrets",
+        "exam": "DON'T SHARE IT",
+        "check_q": "What is the key exam clue for Non-disclosure Agreement (NDA)?",
+        "check_a": "DON'T SHARE IT"
+      }
+    },
+    {
+      "n": 8,
+      "title": "Business Partners Agreement (BPA)",
+      "instructional": true,
+      "teach": "Defines how business partners will work together, including responsibilities, expectations, and shared processes.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Defines how business partners will work together, including responsibilities, expectations, and shared processes.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Defines how business partners will work together, including responsibilities, expectations, and shared processes."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Partner responsibilities, Operational coordination"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how third-party risk is assessed, contracted, monitored, or controlled throughout the vendor lifecycle.",
+        "example": "Partner responsibilities",
+        "exam": "HOW PARTNERS WORK TOGETHER",
+        "check_q": "What is the key exam clue for Business Partners Agreement (BPA)?",
+        "check_a": "HOW PARTNERS WORK TOGETHER"
+      }
+    }
+  ],
+  "slide_count": 8,
+  "instructional_count": 7,
+  "concepts": [
+    "Service-Level Agreement (SLA)",
+    "Memorandum of Agreement (MOA)",
+    "Memorandum of Understanding (MOU)",
+    "Master Service Agreement (MSA)",
+    "Work Order / Statement of Work (WO/SOW)",
+    "Non-disclosure Agreement (NDA)",
+    "Business Partners Agreement (BPA)"
+  ],
+  "source_filename": "25-02.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 5.3",
+      "title": "Third-Party Agreements",
+      "intro": "Agreements define responsibilities, expectations, confidentiality, service levels, and scope. Security+ frequently tests which agreement best matches the scenario."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Third-Party Agreements",
+        "prompt": "Identify whether the scenario is about evaluating a vendor, selecting the right agreement, or monitoring and controlling the relationship after onboarding.",
+        "badge": "5.3",
+        "cards": [
+          {
+            "name": "Service-Level Agreement (SLA)",
+            "definition": "Defines measurable service-performance expectations such as uptime, response time, availability, or support targets.",
+            "examples": [
+              "99.9% uptime",
+              "4-hour response time"
+            ],
+            "memory": "MEASURABLE SERVICE TARGETS"
+          },
+          {
+            "name": "Memorandum of Agreement (MOA)",
+            "definition": "Formal document describing agreed responsibilities, commitments, and terms between parties.",
+            "examples": [
+              "Shared responsibilities",
+              "Formal cooperation terms"
+            ],
+            "memory": "FORMAL AGREEMENT"
+          },
+          {
+            "name": "Memorandum of Understanding (MOU)",
+            "definition": "Documents mutual understanding and intentions between parties, often less formal than a contract.",
+            "examples": [
+              "Cooperation understanding",
+              "Shared intent"
+            ],
+            "memory": "WE UNDERSTAND EACH OTHER"
+          },
+          {
+            "name": "Master Service Agreement (MSA)",
+            "definition": "Umbrella agreement establishing general legal and business terms that govern future work between parties.",
+            "examples": [
+              "Payment terms",
+              "Liability terms",
+              "General relationship"
+            ],
+            "memory": "MASTER TERMS"
+          },
+          {
+            "name": "Work Order / Statement of Work (WO/SOW)",
+            "definition": "Defines the specific scope, tasks, deliverables, timelines, and responsibilities for a particular project or engagement.",
+            "examples": [
+              "Project deliverables",
+              "Implementation timeline"
+            ],
+            "memory": "WHAT EXACTLY WILL BE DONE?"
+          },
+          {
+            "name": "Non-disclosure Agreement (NDA)",
+            "definition": "Requires parties to protect confidential information and restrict unauthorized disclosure.",
+            "examples": [
+              "Protect trade secrets",
+              "Confidential project data"
+            ],
+            "memory": "DON'T SHARE IT"
+          },
+          {
+            "name": "Business Partners Agreement (BPA)",
+            "definition": "Defines how business partners will work together, including responsibilities, expectations, and shared processes.",
+            "examples": [
+              "Partner responsibilities",
+              "Operational coordination"
+            ],
+            "memory": "HOW PARTNERS WORK TOGETHER"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Third-Party Agreements comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "SLA",
+            "Measurable service performance",
+            "Uptime/response targets"
+          ],
+          [
+            "MOA",
+            "Formal mutual agreement",
+            "Responsibilities/commitments"
+          ],
+          [
+            "MOU",
+            "Documented mutual understanding",
+            "Intent/cooperation"
+          ],
+          [
+            "MSA",
+            "Umbrella contract terms",
+            "General ongoing relationship"
+          ],
+          [
+            "WO/SOW",
+            "Specific project scope",
+            "Tasks/deliverables/timeline"
+          ],
+          [
+            "NDA",
+            "Protect confidentiality",
+            "Do not disclose"
+          ],
+          [
+            "BPA",
+            "Business-partner relationship",
+            "Shared responsibilities/process"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Third-Party Agreements exam shortcuts",
+        "items": [
+          [
+            "Question gives uptime or response-time target → SLA",
+            "SLAs define measurable service expectations.",
+            "Example: Vendor must maintain 99.9% uptime."
+          ],
+          [
+            "Need overall contract terms for repeated future projects → MSA",
+            "The MSA governs the broader business relationship.",
+            "Example: Liability and payment terms apply to all future work."
+          ],
+          [
+            "Need exact deliverables and project scope → SOW / WORK ORDER",
+            "Use a project-specific document.",
+            "Example: Deploy 100 endpoints by December 1."
+          ],
+          [
+            "Need confidentiality requirement → NDA",
+            "An NDA protects sensitive information from disclosure.",
+            "Example: Vendor may not disclose unreleased product designs."
+          ],
+          [
+            "Parties want documented shared intent → MOU",
+            "An MOU records mutual understanding.",
+            "Example: Two organizations agree to cooperate on security exercises."
+          ],
+          [
+            "Need formal responsibilities between organizations → MOA",
+            "An MOA is generally more formal about mutual commitments.",
+            "Example: Agencies document who provides which incident-response resources."
+          ]
+        ],
+        "example": "First identify the vendor-lifecycle stage: assessment/selection, agreement/contracting, or ongoing monitoring."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A vendor contract requires 99.9% uptime and a four-hour response time for critical incidents. Which agreement defines these targets?",
+        "choices": [
+          "SLA",
+          "MSA",
+          "NDA",
+          "MOU"
+        ],
+        "answer": 0,
+        "explanation": "An SLA defines measurable service levels such as uptime and response time."
+      },
+      {
+        "q": "Two organizations want one umbrella agreement covering liability, payment, and general legal terms for multiple future projects. Which agreement is best?",
+        "choices": [
+          "MSA",
+          "SOW",
+          "SLA",
+          "NDA"
+        ],
+        "answer": 0,
+        "explanation": "An MSA establishes general terms governing an ongoing business relationship."
+      },
+      {
+        "q": "A project document specifies that a vendor will deploy 100 endpoints by December 1 and lists exact deliverables. Which agreement is this?",
+        "choices": [
+          "SOW/Work Order",
+          "MSA",
+          "MOU",
+          "NDA"
+        ],
+        "answer": 0,
+        "explanation": "A SOW or work order defines project-specific scope, deliverables, and timeline."
+      },
+      {
+        "q": "A vendor will receive unreleased product designs and must be prohibited from disclosing them. Which agreement is most appropriate?",
+        "choices": [
+          "NDA",
+          "SLA",
+          "MOU",
+          "BPA"
+        ],
+        "answer": 0,
+        "explanation": "An NDA protects confidential information from unauthorized disclosure."
+      },
+      {
+        "q": "Two organizations document a shared intent to cooperate on cybersecurity exercises without creating detailed project deliverables. Which document best fits?",
+        "choices": [
+          "MOU",
+          "SOW",
+          "SLA",
+          "NDA"
+        ],
+        "answer": 0,
+        "explanation": "An MOU documents mutual understanding and shared intent."
+      },
+      {
+        "q": "Two agencies want a more formal document defining each party's responsibilities and commitments. Which agreement best fits?",
+        "choices": [
+          "MOA",
+          "MOU",
+          "SLA",
+          "NDA"
+        ],
+        "answer": 0,
+        "explanation": "An MOA formally documents agreed responsibilities and commitments."
+      },
+      {
+        "q": "Two business partners need an agreement describing how they will coordinate shared operational responsibilities. Which agreement best fits?",
+        "choices": [
+          "BPA",
+          "NDA",
+          "SLA",
+          "SOW"
+        ],
+        "answer": 0,
+        "explanation": "A Business Partners Agreement defines how business partners will work together."
+      }
+    ]
+  }
+}
