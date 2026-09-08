@@ -131,5 +131,12 @@
     "lesson_count": 4,
     "slide_count": 41,
     "instructional_count": 37
+  },
+  {
+    "chapter": 20,
+    "name": "Automation & Orchestration",
+    "lesson_count": 3,
+    "slide_count": 24,
+    "instructional_count": 21
   }
 ]
