@@ -1,0 +1,569 @@
+{
+  "id": "14.02",
+  "chapter": 14,
+  "sub": 2,
+  "title": "Wireless and Mobile Security",
+  "chapter_name": "Securing Computing Resources",
+  "slides": [
+    {
+      "n": 1,
+      "title": "Wireless and Mobile Security",
+      "instructional": false,
+      "teach": "",
+      "points": [
+        "Wireless and mobile security questions usually ask about secure deployment, device ownership models, connection methods, and centralized device management."
+      ],
+      "defs": [],
+      "raw": ""
+    },
+    {
+      "n": 2,
+      "title": "Site Survey",
+      "instructional": true,
+      "teach": "Evaluates the physical environment before wireless deployment to identify coverage, interference, and access-point placement needs.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Evaluates the physical environment before wireless deployment to identify coverage, interference, and access-point placement needs.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Evaluates the physical environment before wireless deployment to identify coverage, interference, and access-point placement needs."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Measure signal, Identify interference"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how computing resources are securely configured, accessed, monitored, or protected.",
+        "example": "Measure signal",
+        "exam": "PLAN BEFORE INSTALL",
+        "check_q": "What is the key exam clue for Site Survey?",
+        "check_a": "PLAN BEFORE INSTALL"
+      }
+    },
+    {
+      "n": 3,
+      "title": "Heat Map",
+      "instructional": true,
+      "teach": "Visual representation of wireless signal strength and coverage across an area.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Visual representation of wireless signal strength and coverage across an area.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Visual representation of wireless signal strength and coverage across an area."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Coverage map, Dead-zone identification"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how computing resources are securely configured, accessed, monitored, or protected.",
+        "example": "Coverage map",
+        "exam": "SEE THE SIGNAL",
+        "check_q": "What is the key exam clue for Heat Map?",
+        "check_a": "SEE THE SIGNAL"
+      }
+    },
+    {
+      "n": 4,
+      "title": "Mobile Device Management (MDM)",
+      "instructional": true,
+      "teach": "Centralized management of mobile devices for configuration, security policy, inventory, and remote actions.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Centralized management of mobile devices for configuration, security policy, inventory, and remote actions.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Centralized management of mobile devices for configuration, security policy, inventory, and remote actions."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Remote wipe, Enforce screen lock, Push Wi-Fi config"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how computing resources are securely configured, accessed, monitored, or protected.",
+        "example": "Remote wipe",
+        "exam": "CONTROL MOBILE DEVICES",
+        "check_q": "What is the key exam clue for Mobile Device Management (MDM)?",
+        "check_a": "CONTROL MOBILE DEVICES"
+      }
+    },
+    {
+      "n": 5,
+      "title": "BYOD",
+      "instructional": true,
+      "teach": "Bring Your Own Device: employees use personally owned devices for work.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Bring Your Own Device: employees use personally owned devices for work.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Bring Your Own Device: employees use personally owned devices for work."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Personal phone for email"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how computing resources are securely configured, accessed, monitored, or protected.",
+        "example": "Personal phone for email",
+        "exam": "USER OWNS IT",
+        "check_q": "What is the key exam clue for BYOD?",
+        "check_a": "USER OWNS IT"
+      }
+    },
+    {
+      "n": 6,
+      "title": "COPE",
+      "instructional": true,
+      "teach": "Corporate-Owned, Personally Enabled: organization owns the device but allows limited personal use.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Corporate-Owned, Personally Enabled: organization owns the device but allows limited personal use.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Corporate-Owned, Personally Enabled: organization owns the device but allows limited personal use."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Company phone with personal apps"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how computing resources are securely configured, accessed, monitored, or protected.",
+        "example": "Company phone with personal apps",
+        "exam": "COMPANY OWNS · PERSONAL USE",
+        "check_q": "What is the key exam clue for COPE?",
+        "check_a": "COMPANY OWNS · PERSONAL USE"
+      }
+    },
+    {
+      "n": 7,
+      "title": "CYOD",
+      "instructional": true,
+      "teach": "Choose Your Own Device: users choose from an approved list, typically with organizational management.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Choose Your Own Device: users choose from an approved list, typically with organizational management.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Choose Your Own Device: users choose from an approved list, typically with organizational management."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Approved laptop or phone catalog"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how computing resources are securely configured, accessed, monitored, or protected.",
+        "example": "Approved laptop or phone catalog",
+        "exam": "CHOOSE FROM APPROVED LIST",
+        "check_q": "What is the key exam clue for CYOD?",
+        "check_a": "CHOOSE FROM APPROVED LIST"
+      }
+    },
+    {
+      "n": 8,
+      "title": "Cellular",
+      "instructional": true,
+      "teach": "Mobile network connectivity provided through a carrier.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Mobile network connectivity provided through a carrier.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Mobile network connectivity provided through a carrier."
+          },
+          {
+            "term": "Examples",
+            "explanation": "5G, LTE"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how computing resources are securely configured, accessed, monitored, or protected.",
+        "example": "5G",
+        "exam": "CARRIER NETWORK",
+        "check_q": "What is the key exam clue for Cellular?",
+        "check_a": "CARRIER NETWORK"
+      }
+    },
+    {
+      "n": 9,
+      "title": "Wi-Fi",
+      "instructional": true,
+      "teach": "Wireless LAN connectivity using IEEE 802.11 technologies.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Wireless LAN connectivity using IEEE 802.11 technologies.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Wireless LAN connectivity using IEEE 802.11 technologies."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Enterprise WLAN, Home Wi-Fi"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how computing resources are securely configured, accessed, monitored, or protected.",
+        "example": "Enterprise WLAN",
+        "exam": "LOCAL WIRELESS",
+        "check_q": "What is the key exam clue for Wi-Fi?",
+        "check_a": "LOCAL WIRELESS"
+      }
+    },
+    {
+      "n": 10,
+      "title": "Bluetooth",
+      "instructional": true,
+      "teach": "Short-range wireless technology used for peripherals and device-to-device communication.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Short-range wireless technology used for peripherals and device-to-device communication.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Short-range wireless technology used for peripherals and device-to-device communication."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Headset, Keyboard, Tethering"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how computing resources are securely configured, accessed, monitored, or protected.",
+        "example": "Headset",
+        "exam": "SHORT RANGE",
+        "check_q": "What is the key exam clue for Bluetooth?",
+        "check_a": "SHORT RANGE"
+      }
+    }
+  ],
+  "slide_count": 10,
+  "instructional_count": 9,
+  "concepts": [
+    "Site Survey",
+    "Heat Map",
+    "Mobile Device Management (MDM)",
+    "BYOD",
+    "COPE",
+    "CYOD",
+    "Cellular",
+    "Wi-Fi",
+    "Bluetooth"
+  ],
+  "source_filename": "14-02.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 4.1",
+      "title": "Wireless and Mobile Security",
+      "intro": "Wireless and mobile security questions usually ask about secure deployment, device ownership models, connection methods, and centralized device management."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Wireless and Mobile Security",
+        "prompt": "Identify the computing resource or scenario requirement first, then choose the security technique that directly addresses it.",
+        "badge": "4.1",
+        "cards": [
+          {
+            "name": "Site Survey",
+            "definition": "Evaluates the physical environment before wireless deployment to identify coverage, interference, and access-point placement needs.",
+            "examples": [
+              "Measure signal",
+              "Identify interference"
+            ],
+            "memory": "PLAN BEFORE INSTALL"
+          },
+          {
+            "name": "Heat Map",
+            "definition": "Visual representation of wireless signal strength and coverage across an area.",
+            "examples": [
+              "Coverage map",
+              "Dead-zone identification"
+            ],
+            "memory": "SEE THE SIGNAL"
+          },
+          {
+            "name": "Mobile Device Management (MDM)",
+            "definition": "Centralized management of mobile devices for configuration, security policy, inventory, and remote actions.",
+            "examples": [
+              "Remote wipe",
+              "Enforce screen lock",
+              "Push Wi-Fi config"
+            ],
+            "memory": "CONTROL MOBILE DEVICES"
+          },
+          {
+            "name": "BYOD",
+            "definition": "Bring Your Own Device: employees use personally owned devices for work.",
+            "examples": [
+              "Personal phone for email"
+            ],
+            "memory": "USER OWNS IT"
+          },
+          {
+            "name": "COPE",
+            "definition": "Corporate-Owned, Personally Enabled: organization owns the device but allows limited personal use.",
+            "examples": [
+              "Company phone with personal apps"
+            ],
+            "memory": "COMPANY OWNS · PERSONAL USE"
+          },
+          {
+            "name": "CYOD",
+            "definition": "Choose Your Own Device: users choose from an approved list, typically with organizational management.",
+            "examples": [
+              "Approved laptop or phone catalog"
+            ],
+            "memory": "CHOOSE FROM APPROVED LIST"
+          },
+          {
+            "name": "Cellular",
+            "definition": "Mobile network connectivity provided through a carrier.",
+            "examples": [
+              "5G",
+              "LTE"
+            ],
+            "memory": "CARRIER NETWORK"
+          },
+          {
+            "name": "Wi-Fi",
+            "definition": "Wireless LAN connectivity using IEEE 802.11 technologies.",
+            "examples": [
+              "Enterprise WLAN",
+              "Home Wi-Fi"
+            ],
+            "memory": "LOCAL WIRELESS"
+          },
+          {
+            "name": "Bluetooth",
+            "definition": "Short-range wireless technology used for peripherals and device-to-device communication.",
+            "examples": [
+              "Headset",
+              "Keyboard",
+              "Tethering"
+            ],
+            "memory": "SHORT RANGE"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Wireless and Mobile Security comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "BYOD",
+            "User owns device",
+            "Highest privacy/management complexity"
+          ],
+          [
+            "COPE",
+            "Company owns, personal use allowed",
+            "More organizational control"
+          ],
+          [
+            "CYOD",
+            "User selects approved model",
+            "Balance of choice + control"
+          ],
+          [
+            "Site survey",
+            "Plan deployment",
+            "Coverage/interference"
+          ],
+          [
+            "Heat map",
+            "Visualize coverage",
+            "Signal strength/dead zones"
+          ],
+          [
+            "Cellular",
+            "Carrier network",
+            "Wide-area mobile"
+          ],
+          [
+            "Wi-Fi",
+            "Local WLAN",
+            "802.11"
+          ],
+          [
+            "Bluetooth",
+            "Short-range link",
+            "Peripheral/device connection"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Wireless and Mobile Security exam shortcuts",
+        "items": [
+          [
+            "Employee owns the phone → BYOD",
+            "The device belongs to the user, creating privacy and management challenges.",
+            "Example: A personal phone accesses company email."
+          ],
+          [
+            "Company owns device but permits personal use → COPE",
+            "The organization retains stronger control while allowing limited personal use.",
+            "Example: A company-issued phone permits personal apps."
+          ],
+          [
+            "User chooses from approved models → CYOD",
+            "Choice is limited to a corporate-approved list.",
+            "Example: Employees select one of three supported phones."
+          ],
+          [
+            "Need to plan AP placement → SITE SURVEY",
+            "Evaluate coverage and interference before installation.",
+            "Example: Measure signal throughout an office before mounting access points."
+          ],
+          [
+            "Need visual coverage/dead-zone view → HEAT MAP",
+            "A heat map shows signal strength across the physical area.",
+            "Example: Weak coverage appears in a conference-room corner."
+          ],
+          [
+            "Need centralized mobile policy/remote wipe → MDM",
+            "MDM enforces controls across managed mobile devices.",
+            "Example: A lost phone is remotely wiped."
+          ]
+        ],
+        "example": "Focus on what the resource needs: baseline consistency, hardening, secure access, isolation, authentication, or monitoring."
+      }
+    ],
+    "questions": [
+      {
+        "q": "Before installing access points, engineers measure interference and coverage across the building. Which technique is this?",
+        "choices": [
+          "Site survey",
+          "Heat map only",
+          "MDM",
+          "RADIUS"
+        ],
+        "answer": 0,
+        "explanation": "A site survey evaluates the environment before wireless installation."
+      },
+      {
+        "q": "A color-coded diagram shows strong and weak Wi-Fi signal areas throughout an office. What is this?",
+        "choices": [
+          "Heat map",
+          "Site survey only",
+          "RADIUS map",
+          "VLAN map"
+        ],
+        "answer": 0,
+        "explanation": "A heat map visualizes wireless coverage and signal strength."
+      },
+      {
+        "q": "A lost company phone must be remotely wiped and have screen-lock policy enforced centrally. Which solution is best?",
+        "choices": [
+          "MDM",
+          "RADIUS",
+          "WPA3 only",
+          "SAST"
+        ],
+        "answer": 0,
+        "explanation": "MDM centrally manages mobile-device policy and remote actions."
+      },
+      {
+        "q": "An employee uses a personally owned phone to access company email. Which deployment model is this?",
+        "choices": [
+          "BYOD",
+          "COPE",
+          "CYOD",
+          "Corporate-only"
+        ],
+        "answer": 0,
+        "explanation": "BYOD means the user owns the device."
+      },
+      {
+        "q": "The company owns the phone but permits limited personal apps. Which deployment model is this?",
+        "choices": [
+          "COPE",
+          "BYOD",
+          "CYOD",
+          "Guest"
+        ],
+        "answer": 0,
+        "explanation": "COPE means corporate-owned, personally enabled."
+      },
+      {
+        "q": "Employees may choose one of three company-approved phones. Which model is this?",
+        "choices": [
+          "CYOD",
+          "BYOD",
+          "COPE",
+          "MDM"
+        ],
+        "answer": 0,
+        "explanation": "CYOD lets users choose from an approved device list."
+      }
+    ]
+  }
+}

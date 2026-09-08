@@ -1,0 +1,438 @@
+{
+  "id": "14.04",
+  "chapter": 14,
+  "sub": 4,
+  "title": "Application Security, Sandboxing, and Monitoring",
+  "chapter_name": "Securing Computing Resources",
+  "slides": [
+    {
+      "n": 1,
+      "title": "Application Security, Sandboxing, and Monitoring",
+      "instructional": false,
+      "teach": "",
+      "points": [
+        "Application security controls reduce vulnerabilities before deployment and limit the impact of untrusted code during execution."
+      ],
+      "defs": [],
+      "raw": ""
+    },
+    {
+      "n": 2,
+      "title": "Input Validation",
+      "instructional": true,
+      "teach": "Checks and sanitizes user or external input before processing.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Checks and sanitizes user or external input before processing.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Checks and sanitizes user or external input before processing."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Reject unexpected characters, Allow expected formats"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how computing resources are securely configured, accessed, monitored, or protected.",
+        "example": "Reject unexpected characters",
+        "exam": "TRUST NO INPUT",
+        "check_q": "What is the key exam clue for Input Validation?",
+        "check_a": "TRUST NO INPUT"
+      }
+    },
+    {
+      "n": 3,
+      "title": "Secure Cookies",
+      "instructional": true,
+      "teach": "Cookies configured with security attributes to reduce theft or misuse.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Cookies configured with security attributes to reduce theft or misuse.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Cookies configured with security attributes to reduce theft or misuse."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Secure flag, HttpOnly, SameSite"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how computing resources are securely configured, accessed, monitored, or protected.",
+        "example": "Secure flag",
+        "exam": "PROTECT SESSION COOKIES",
+        "check_q": "What is the key exam clue for Secure Cookies?",
+        "check_a": "PROTECT SESSION COOKIES"
+      }
+    },
+    {
+      "n": 4,
+      "title": "Static Code Analysis",
+      "instructional": true,
+      "teach": "Examines source code without executing the program to identify vulnerabilities or coding issues.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Examines source code without executing the program to identify vulnerabilities or coding issues.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Examines source code without executing the program to identify vulnerabilities or coding issues."
+          },
+          {
+            "term": "Examples",
+            "explanation": "SAST, Code scanner"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how computing resources are securely configured, accessed, monitored, or protected.",
+        "example": "SAST",
+        "exam": "SCAN WITHOUT RUNNING",
+        "check_q": "What is the key exam clue for Static Code Analysis?",
+        "check_a": "SCAN WITHOUT RUNNING"
+      }
+    },
+    {
+      "n": 5,
+      "title": "Code Signing",
+      "instructional": true,
+      "teach": "Uses digital signatures to verify software publisher identity and code integrity.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Uses digital signatures to verify software publisher identity and code integrity.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Uses digital signatures to verify software publisher identity and code integrity."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Signed application, Signed update"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how computing resources are securely configured, accessed, monitored, or protected.",
+        "example": "Signed application",
+        "exam": "TRUST + INTEGRITY",
+        "check_q": "What is the key exam clue for Code Signing?",
+        "check_a": "TRUST + INTEGRITY"
+      }
+    },
+    {
+      "n": 6,
+      "title": "Sandboxing",
+      "instructional": true,
+      "teach": "Runs code in a restricted isolated environment to limit access to the host or other resources.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Runs code in a restricted isolated environment to limit access to the host or other resources.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Runs code in a restricted isolated environment to limit access to the host or other resources."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Browser sandbox, Malware analysis sandbox"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how computing resources are securely configured, accessed, monitored, or protected.",
+        "example": "Browser sandbox",
+        "exam": "RUN IT IN A BOX",
+        "check_q": "What is the key exam clue for Sandboxing?",
+        "check_a": "RUN IT IN A BOX"
+      }
+    },
+    {
+      "n": 7,
+      "title": "Monitoring",
+      "instructional": true,
+      "teach": "Observes applications, systems, and security telemetry for suspicious behavior, failures, or policy violations.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Observes applications, systems, and security telemetry for suspicious behavior, failures, or policy violations.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Observes applications, systems, and security telemetry for suspicious behavior, failures, or policy violations."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Application logs, EDR/SIEM alerts"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how computing resources are securely configured, accessed, monitored, or protected.",
+        "example": "Application logs",
+        "exam": "WATCH WHAT HAPPENS",
+        "check_q": "What is the key exam clue for Monitoring?",
+        "check_a": "WATCH WHAT HAPPENS"
+      }
+    }
+  ],
+  "slide_count": 7,
+  "instructional_count": 6,
+  "concepts": [
+    "Input Validation",
+    "Secure Cookies",
+    "Static Code Analysis",
+    "Code Signing",
+    "Sandboxing",
+    "Monitoring"
+  ],
+  "source_filename": "14-04.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 4.1",
+      "title": "Application Security, Sandboxing, and Monitoring",
+      "intro": "Application security controls reduce vulnerabilities before deployment and limit the impact of untrusted code during execution."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Application Security, Sandboxing, and Monitoring",
+        "prompt": "Identify the computing resource or scenario requirement first, then choose the security technique that directly addresses it.",
+        "badge": "4.1",
+        "cards": [
+          {
+            "name": "Input Validation",
+            "definition": "Checks and sanitizes user or external input before processing.",
+            "examples": [
+              "Reject unexpected characters",
+              "Allow expected formats"
+            ],
+            "memory": "TRUST NO INPUT"
+          },
+          {
+            "name": "Secure Cookies",
+            "definition": "Cookies configured with security attributes to reduce theft or misuse.",
+            "examples": [
+              "Secure flag",
+              "HttpOnly",
+              "SameSite"
+            ],
+            "memory": "PROTECT SESSION COOKIES"
+          },
+          {
+            "name": "Static Code Analysis",
+            "definition": "Examines source code without executing the program to identify vulnerabilities or coding issues.",
+            "examples": [
+              "SAST",
+              "Code scanner"
+            ],
+            "memory": "SCAN WITHOUT RUNNING"
+          },
+          {
+            "name": "Code Signing",
+            "definition": "Uses digital signatures to verify software publisher identity and code integrity.",
+            "examples": [
+              "Signed application",
+              "Signed update"
+            ],
+            "memory": "TRUST + INTEGRITY"
+          },
+          {
+            "name": "Sandboxing",
+            "definition": "Runs code in a restricted isolated environment to limit access to the host or other resources.",
+            "examples": [
+              "Browser sandbox",
+              "Malware analysis sandbox"
+            ],
+            "memory": "RUN IT IN A BOX"
+          },
+          {
+            "name": "Monitoring",
+            "definition": "Observes applications, systems, and security telemetry for suspicious behavior, failures, or policy violations.",
+            "examples": [
+              "Application logs",
+              "EDR/SIEM alerts"
+            ],
+            "memory": "WATCH WHAT HAPPENS"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Application Security, Sandboxing, and Monitoring comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Input validation",
+            "Reject unsafe input",
+            "Prevent injection"
+          ],
+          [
+            "Secure cookies",
+            "Protect session data",
+            "Secure/HttpOnly/SameSite"
+          ],
+          [
+            "Static code analysis",
+            "Find code flaws before execution",
+            "SAST"
+          ],
+          [
+            "Code signing",
+            "Verify publisher + integrity",
+            "Signed software"
+          ],
+          [
+            "Sandboxing",
+            "Contain untrusted code",
+            "Restricted execution"
+          ],
+          [
+            "Monitoring",
+            "Detect suspicious behavior",
+            "Logs/alerts"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Application Security, Sandboxing, and Monitoring exam shortcuts",
+        "items": [
+          [
+            "Untrusted form input → INPUT VALIDATION",
+            "Validate and sanitize before processing.",
+            "Example: Reject unexpected characters in a numeric field."
+          ],
+          [
+            "Protect session cookie from script access → HTTPONLY",
+            "Secure cookie attributes reduce session theft risk.",
+            "Example: HttpOnly prevents JavaScript from reading the cookie."
+          ],
+          [
+            "Find vulnerabilities without running application → STATIC CODE ANALYSIS",
+            "SAST inspects source or compiled code without execution.",
+            "Example: A scanner finds unsafe functions during CI."
+          ],
+          [
+            "Need proof software is authentic and unchanged → CODE SIGNING",
+            "Digital signatures verify publisher and integrity.",
+            "Example: An operating system verifies a signed update."
+          ],
+          [
+            "Need to execute suspicious code safely → SANDBOX",
+            "Restrict its access to the host environment.",
+            "Example: An unknown attachment opens inside a sandbox."
+          ],
+          [
+            "Need ongoing visibility after deployment → MONITORING",
+            "Collect logs and alerts to detect abnormal behavior.",
+            "Example: SIEM alerts on repeated application failures."
+          ]
+        ],
+        "example": "Focus on what the resource needs: baseline consistency, hardening, secure access, isolation, authentication, or monitoring."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A web application rejects unexpected characters and enforces strict formats before processing user input. Which control is this?",
+        "choices": [
+          "Input validation",
+          "Code signing",
+          "Sandboxing",
+          "Monitoring"
+        ],
+        "answer": 0,
+        "explanation": "Input validation checks and sanitizes external input before processing."
+      },
+      {
+        "q": "A session cookie should not be readable by client-side JavaScript. Which setting is most relevant?",
+        "choices": [
+          "HttpOnly",
+          "Secure only",
+          "SameSite only",
+          "WPA3"
+        ],
+        "answer": 0,
+        "explanation": "HttpOnly prevents client-side JavaScript from reading the cookie."
+      },
+      {
+        "q": "A development team wants to detect vulnerabilities by scanning source code without executing the application. Which technique is this?",
+        "choices": [
+          "Static code analysis",
+          "Dynamic analysis",
+          "Sandboxing",
+          "Monitoring"
+        ],
+        "answer": 0,
+        "explanation": "Static code analysis examines code without running the application."
+      },
+      {
+        "q": "An operating system verifies that a software update came from the expected publisher and was not modified. Which control is this?",
+        "choices": [
+          "Code signing",
+          "Hashing only",
+          "Input validation",
+          "Sandboxing"
+        ],
+        "answer": 0,
+        "explanation": "Code signing verifies publisher identity and code integrity."
+      },
+      {
+        "q": "An unknown attachment should be executed in a restricted environment so it cannot freely access the host. Which technique is best?",
+        "choices": [
+          "Sandboxing",
+          "Monitoring",
+          "Code signing",
+          "Input validation"
+        ],
+        "answer": 0,
+        "explanation": "Sandboxing isolates untrusted code from the host environment."
+      },
+      {
+        "q": "A SIEM alerts when an application begins generating abnormal authentication failures. Which control is being used?",
+        "choices": [
+          "Monitoring",
+          "Static code analysis",
+          "Secure cookies",
+          "Code signing"
+        ],
+        "answer": 0,
+        "explanation": "Monitoring observes telemetry and generates alerts on suspicious behavior."
+      }
+    ]
+  }
+}

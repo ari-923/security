@@ -1,0 +1,313 @@
+{
+  "id": "14.03",
+  "chapter": 14,
+  "sub": 3,
+  "title": "Wireless Security Settings",
+  "chapter_name": "Securing Computing Resources",
+  "slides": [
+    {
+      "n": 1,
+      "title": "Wireless Security Settings",
+      "instructional": false,
+      "teach": "",
+      "points": [
+        "Secure wireless access depends on strong encryption, centralized authentication, and appropriate authentication protocols."
+      ],
+      "defs": [],
+      "raw": ""
+    },
+    {
+      "n": 2,
+      "title": "WPA3",
+      "instructional": true,
+      "teach": "Modern Wi-Fi security standard providing stronger protections than earlier WPA versions.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Modern Wi-Fi security standard providing stronger protections than earlier WPA versions.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Modern Wi-Fi security standard providing stronger protections than earlier WPA versions."
+          },
+          {
+            "term": "Examples",
+            "explanation": "WPA3-Personal, WPA3-Enterprise"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how computing resources are securely configured, accessed, monitored, or protected.",
+        "example": "WPA3-Personal",
+        "exam": "MODERN WI-FI SECURITY",
+        "check_q": "What is the key exam clue for WPA3?",
+        "check_a": "MODERN WI-FI SECURITY"
+      }
+    },
+    {
+      "n": 3,
+      "title": "AAA / RADIUS",
+      "instructional": true,
+      "teach": "Centralized authentication, authorization, and accounting service commonly used for enterprise network access.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Centralized authentication, authorization, and accounting service commonly used for enterprise network access.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Centralized authentication, authorization, and accounting service commonly used for enterprise network access."
+          },
+          {
+            "term": "Examples",
+            "explanation": "802.1X with RADIUS, Central authentication server"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how computing resources are securely configured, accessed, monitored, or protected.",
+        "example": "802.1X with RADIUS",
+        "exam": "CENTRAL ACCESS CONTROL",
+        "check_q": "What is the key exam clue for AAA / RADIUS?",
+        "check_a": "CENTRAL ACCESS CONTROL"
+      }
+    },
+    {
+      "n": 4,
+      "title": "Cryptographic Protocols",
+      "instructional": true,
+      "teach": "Protocols that protect wireless or network communications using encryption and integrity mechanisms.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Protocols that protect wireless or network communications using encryption and integrity mechanisms.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Protocols that protect wireless or network communications using encryption and integrity mechanisms."
+          },
+          {
+            "term": "Examples",
+            "explanation": "TLS, Modern wireless encryption"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how computing resources are securely configured, accessed, monitored, or protected.",
+        "example": "TLS",
+        "exam": "PROTECT THE COMMUNICATION",
+        "check_q": "What is the key exam clue for Cryptographic Protocols?",
+        "check_a": "PROTECT THE COMMUNICATION"
+      }
+    },
+    {
+      "n": 5,
+      "title": "Authentication Protocols",
+      "instructional": true,
+      "teach": "Protocols used to verify the identity of users or devices before access is granted.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Protocols used to verify the identity of users or devices before access is granted.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Protocols used to verify the identity of users or devices before access is granted."
+          },
+          {
+            "term": "Examples",
+            "explanation": "EAP-TLS, PEAP"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how computing resources are securely configured, accessed, monitored, or protected.",
+        "example": "EAP-TLS",
+        "exam": "PROVE IDENTITY",
+        "check_q": "What is the key exam clue for Authentication Protocols?",
+        "check_a": "PROVE IDENTITY"
+      }
+    }
+  ],
+  "slide_count": 5,
+  "instructional_count": 4,
+  "concepts": [
+    "WPA3",
+    "AAA / RADIUS",
+    "Cryptographic Protocols",
+    "Authentication Protocols"
+  ],
+  "source_filename": "14-03.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 4.1",
+      "title": "Wireless Security Settings",
+      "intro": "Secure wireless access depends on strong encryption, centralized authentication, and appropriate authentication protocols."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Wireless Security Settings",
+        "prompt": "Identify the computing resource or scenario requirement first, then choose the security technique that directly addresses it.",
+        "badge": "4.1",
+        "cards": [
+          {
+            "name": "WPA3",
+            "definition": "Modern Wi-Fi security standard providing stronger protections than earlier WPA versions.",
+            "examples": [
+              "WPA3-Personal",
+              "WPA3-Enterprise"
+            ],
+            "memory": "MODERN WI-FI SECURITY"
+          },
+          {
+            "name": "AAA / RADIUS",
+            "definition": "Centralized authentication, authorization, and accounting service commonly used for enterprise network access.",
+            "examples": [
+              "802.1X with RADIUS",
+              "Central authentication server"
+            ],
+            "memory": "CENTRAL ACCESS CONTROL"
+          },
+          {
+            "name": "Cryptographic Protocols",
+            "definition": "Protocols that protect wireless or network communications using encryption and integrity mechanisms.",
+            "examples": [
+              "TLS",
+              "Modern wireless encryption"
+            ],
+            "memory": "PROTECT THE COMMUNICATION"
+          },
+          {
+            "name": "Authentication Protocols",
+            "definition": "Protocols used to verify the identity of users or devices before access is granted.",
+            "examples": [
+              "EAP-TLS",
+              "PEAP"
+            ],
+            "memory": "PROVE IDENTITY"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Wireless Security Settings comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "WPA3",
+            "Secure Wi-Fi encryption/authentication",
+            "Modern WLAN protection"
+          ],
+          [
+            "RADIUS",
+            "Central AAA",
+            "Enterprise authentication"
+          ],
+          [
+            "Cryptographic protocols",
+            "Protect confidentiality/integrity",
+            "Secure communications"
+          ],
+          [
+            "Authentication protocols",
+            "Verify identity",
+            "Prove user/device"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Wireless Security Settings exam shortcuts",
+        "items": [
+          [
+            "Modern secure Wi-Fi → WPA3",
+            "Use WPA3 when supported for stronger wireless protection.",
+            "Example: New enterprise access points use WPA3-Enterprise."
+          ],
+          [
+            "Central enterprise authentication → RADIUS",
+            "RADIUS commonly provides AAA for network access.",
+            "Example: Wi-Fi users authenticate through a central RADIUS server."
+          ],
+          [
+            "Question asks how traffic is protected → CRYPTOGRAPHIC PROTOCOL",
+            "Focus on encryption and integrity.",
+            "Example: TLS protects data in transit."
+          ],
+          [
+            "Question asks how user/device identity is verified → AUTHENTICATION PROTOCOL",
+            "Focus on proving identity.",
+            "Example: EAP-TLS uses certificates for authentication."
+          ]
+        ],
+        "example": "Focus on what the resource needs: baseline consistency, hardening, secure access, isolation, authentication, or monitoring."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A company is deploying a new wireless network and wants the strongest modern Wi-Fi security standard supported by its devices. Which should it choose?",
+        "choices": [
+          "WPA3",
+          "WEP",
+          "WPA",
+          "Open Wi-Fi"
+        ],
+        "answer": 0,
+        "explanation": "WPA3 is the modern Wi-Fi security standard."
+      },
+      {
+        "q": "Enterprise Wi-Fi authentication should be handled centrally with authentication, authorization, and accounting. Which service is most appropriate?",
+        "choices": [
+          "RADIUS",
+          "WPA3 only",
+          "TLS only",
+          "SAST"
+        ],
+        "answer": 0,
+        "explanation": "RADIUS provides centralized AAA and is commonly used with 802.1X."
+      },
+      {
+        "q": "A question asks which protocol protects the confidentiality and integrity of network traffic. Which category is being tested?",
+        "choices": [
+          "Cryptographic protocol",
+          "Authentication protocol",
+          "Deployment model",
+          "Baseline"
+        ],
+        "answer": 0,
+        "explanation": "Cryptographic protocols protect communications through encryption and integrity."
+      },
+      {
+        "q": "A question asks how a wireless user or device proves identity before access. Which category is being tested?",
+        "choices": [
+          "Authentication protocol",
+          "Cryptographic protocol only",
+          "Heat map",
+          "Sandbox"
+        ],
+        "answer": 0,
+        "explanation": "Authentication protocols verify identity."
+      }
+    ]
+  }
+}

@@ -1,0 +1,737 @@
+{
+  "id": "14.01",
+  "chapter": 14,
+  "sub": 1,
+  "title": "Secure Baselines and Hardening Targets",
+  "chapter_name": "Securing Computing Resources",
+  "slides": [
+    {
+      "n": 1,
+      "title": "Secure Baselines and Hardening Targets",
+      "instructional": false,
+      "teach": "",
+      "points": [
+        "Objective 4.1 begins with standardizing secure configurations and then applying the right hardening techniques to each computing resource."
+      ],
+      "defs": [],
+      "raw": ""
+    },
+    {
+      "n": 2,
+      "title": "Secure Baseline — Establish",
+      "instructional": true,
+      "teach": "Defines the approved secure configuration for a system or device.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Defines the approved secure configuration for a system or device.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Defines the approved secure configuration for a system or device."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Password settings, Required services, Logging configuration"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how computing resources are securely configured, accessed, monitored, or protected.",
+        "example": "Password settings",
+        "exam": "DEFINE THE STANDARD",
+        "check_q": "What is the key exam clue for Secure Baseline — Establish?",
+        "check_a": "DEFINE THE STANDARD"
+      }
+    },
+    {
+      "n": 3,
+      "title": "Secure Baseline — Deploy",
+      "instructional": true,
+      "teach": "Applies the approved baseline consistently across systems.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Applies the approved baseline consistently across systems.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Applies the approved baseline consistently across systems."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Group Policy, Configuration management"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how computing resources are securely configured, accessed, monitored, or protected.",
+        "example": "Group Policy",
+        "exam": "PUSH THE STANDARD",
+        "check_q": "What is the key exam clue for Secure Baseline — Deploy?",
+        "check_a": "PUSH THE STANDARD"
+      }
+    },
+    {
+      "n": 4,
+      "title": "Secure Baseline — Maintain",
+      "instructional": true,
+      "teach": "Keeps systems aligned with the approved baseline over time.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Keeps systems aligned with the approved baseline over time.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Keeps systems aligned with the approved baseline over time."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Drift detection, Periodic review, Automated enforcement"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how computing resources are securely configured, accessed, monitored, or protected.",
+        "example": "Drift detection",
+        "exam": "KEEP IT SECURE",
+        "check_q": "What is the key exam clue for Secure Baseline — Maintain?",
+        "check_a": "KEEP IT SECURE"
+      }
+    },
+    {
+      "n": 5,
+      "title": "Mobile Devices",
+      "instructional": true,
+      "teach": "Portable endpoints that require controls for encryption, screen lock, remote wipe, app management, and network access.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Portable endpoints that require controls for encryption, screen lock, remote wipe, app management, and network access.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Portable endpoints that require controls for encryption, screen lock, remote wipe, app management, and network access."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Phone, Tablet"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how computing resources are securely configured, accessed, monitored, or protected.",
+        "example": "Phone",
+        "exam": "SECURE THE PORTABLE DEVICE",
+        "check_q": "What is the key exam clue for Mobile Devices?",
+        "check_a": "SECURE THE PORTABLE DEVICE"
+      }
+    },
+    {
+      "n": 6,
+      "title": "Workstations",
+      "instructional": true,
+      "teach": "User endpoints that require patching, endpoint protection, least privilege, and secure configuration.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "User endpoints that require patching, endpoint protection, least privilege, and secure configuration.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "User endpoints that require patching, endpoint protection, least privilege, and secure configuration."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Desktop PC, Laptop"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how computing resources are securely configured, accessed, monitored, or protected.",
+        "example": "Desktop PC",
+        "exam": "USER ENDPOINT",
+        "check_q": "What is the key exam clue for Workstations?",
+        "check_a": "USER ENDPOINT"
+      }
+    },
+    {
+      "n": 7,
+      "title": "Switches",
+      "instructional": true,
+      "teach": "Network devices that should be hardened with secure management, port security, unused-port shutdown, and strong authentication.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Network devices that should be hardened with secure management, port security, unused-port shutdown, and strong authentication.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Network devices that should be hardened with secure management, port security, unused-port shutdown, and strong authentication."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Managed switch, Access switch"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how computing resources are securely configured, accessed, monitored, or protected.",
+        "example": "Managed switch",
+        "exam": "SECURE THE PORTS",
+        "check_q": "What is the key exam clue for Switches?",
+        "check_a": "SECURE THE PORTS"
+      }
+    },
+    {
+      "n": 8,
+      "title": "Routers",
+      "instructional": true,
+      "teach": "Network devices that require hardened management interfaces, routing security, ACLs, and disabled unnecessary services.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Network devices that require hardened management interfaces, routing security, ACLs, and disabled unnecessary services.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Network devices that require hardened management interfaces, routing security, ACLs, and disabled unnecessary services."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Edge router, Branch router"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how computing resources are securely configured, accessed, monitored, or protected.",
+        "example": "Edge router",
+        "exam": "SECURE THE ROUTE",
+        "check_q": "What is the key exam clue for Routers?",
+        "check_a": "SECURE THE ROUTE"
+      }
+    },
+    {
+      "n": 9,
+      "title": "Cloud Infrastructure",
+      "instructional": true,
+      "teach": "Cloud resources that require secure IAM, network controls, logging, configuration baselines, and least privilege.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Cloud resources that require secure IAM, network controls, logging, configuration baselines, and least privilege.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Cloud resources that require secure IAM, network controls, logging, configuration baselines, and least privilege."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Cloud VM, Storage service"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how computing resources are securely configured, accessed, monitored, or protected.",
+        "example": "Cloud VM",
+        "exam": "SECURE THE CLOUD CONFIG",
+        "check_q": "What is the key exam clue for Cloud Infrastructure?",
+        "check_a": "SECURE THE CLOUD CONFIG"
+      }
+    },
+    {
+      "n": 10,
+      "title": "Servers",
+      "instructional": true,
+      "teach": "Systems that should minimize services, apply patches, use strong access controls, and monitor privileged activity.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Systems that should minimize services, apply patches, use strong access controls, and monitor privileged activity.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Systems that should minimize services, apply patches, use strong access controls, and monitor privileged activity."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Web server, Database server"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how computing resources are securely configured, accessed, monitored, or protected.",
+        "example": "Web server",
+        "exam": "REDUCE SERVER ATTACK SURFACE",
+        "check_q": "What is the key exam clue for Servers?",
+        "check_a": "REDUCE SERVER ATTACK SURFACE"
+      }
+    },
+    {
+      "n": 11,
+      "title": "ICS / SCADA",
+      "instructional": true,
+      "teach": "Industrial systems where availability, safety, segmentation, and cautious patching are critical.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Industrial systems where availability, safety, segmentation, and cautious patching are critical.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Industrial systems where availability, safety, segmentation, and cautious patching are critical."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Factory controller, SCADA server"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how computing resources are securely configured, accessed, monitored, or protected.",
+        "example": "Factory controller",
+        "exam": "SAFETY + AVAILABILITY",
+        "check_q": "What is the key exam clue for ICS / SCADA?",
+        "check_a": "SAFETY + AVAILABILITY"
+      }
+    },
+    {
+      "n": 12,
+      "title": "Embedded Systems",
+      "instructional": true,
+      "teach": "Special-purpose systems often constrained by hardware, firmware, and limited update options.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Special-purpose systems often constrained by hardware, firmware, and limited update options.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Special-purpose systems often constrained by hardware, firmware, and limited update options."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Medical device, Appliance controller"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how computing resources are securely configured, accessed, monitored, or protected.",
+        "example": "Medical device",
+        "exam": "LIMITED + SPECIAL PURPOSE",
+        "check_q": "What is the key exam clue for Embedded Systems?",
+        "check_a": "LIMITED + SPECIAL PURPOSE"
+      }
+    },
+    {
+      "n": 13,
+      "title": "RTOS",
+      "instructional": true,
+      "teach": "Real-time operating systems that prioritize predictable timing and often require careful change control.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Real-time operating systems that prioritize predictable timing and often require careful change control.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Real-time operating systems that prioritize predictable timing and often require careful change control."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Industrial controller, Automotive controller"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how computing resources are securely configured, accessed, monitored, or protected.",
+        "example": "Industrial controller",
+        "exam": "TIMING MATTERS",
+        "check_q": "What is the key exam clue for RTOS?",
+        "check_a": "TIMING MATTERS"
+      }
+    },
+    {
+      "n": 14,
+      "title": "IoT Devices",
+      "instructional": true,
+      "teach": "Connected devices that often have limited security controls, default credentials, and inconsistent patch support.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Connected devices that often have limited security controls, default credentials, and inconsistent patch support.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Connected devices that often have limited security controls, default credentials, and inconsistent patch support."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Camera, Sensor, Smart lock"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how computing resources are securely configured, accessed, monitored, or protected.",
+        "example": "Camera",
+        "exam": "SMALL DEVICE · BIG RISK",
+        "check_q": "What is the key exam clue for IoT Devices?",
+        "check_a": "SMALL DEVICE · BIG RISK"
+      }
+    }
+  ],
+  "slide_count": 14,
+  "instructional_count": 13,
+  "concepts": [
+    "Secure Baseline — Establish",
+    "Secure Baseline — Deploy",
+    "Secure Baseline — Maintain",
+    "Mobile Devices",
+    "Workstations",
+    "Switches",
+    "Routers",
+    "Cloud Infrastructure",
+    "Servers",
+    "ICS / SCADA",
+    "Embedded Systems",
+    "RTOS",
+    "IoT Devices"
+  ],
+  "source_filename": "14-01.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 4.1",
+      "title": "Secure Baselines and Hardening Targets",
+      "intro": "Objective 4.1 begins with standardizing secure configurations and then applying the right hardening techniques to each computing resource."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Secure Baselines and Hardening Targets",
+        "prompt": "Identify the computing resource or scenario requirement first, then choose the security technique that directly addresses it.",
+        "badge": "4.1",
+        "cards": [
+          {
+            "name": "Secure Baseline — Establish",
+            "definition": "Defines the approved secure configuration for a system or device.",
+            "examples": [
+              "Password settings",
+              "Required services",
+              "Logging configuration"
+            ],
+            "memory": "DEFINE THE STANDARD"
+          },
+          {
+            "name": "Secure Baseline — Deploy",
+            "definition": "Applies the approved baseline consistently across systems.",
+            "examples": [
+              "Group Policy",
+              "Configuration management"
+            ],
+            "memory": "PUSH THE STANDARD"
+          },
+          {
+            "name": "Secure Baseline — Maintain",
+            "definition": "Keeps systems aligned with the approved baseline over time.",
+            "examples": [
+              "Drift detection",
+              "Periodic review",
+              "Automated enforcement"
+            ],
+            "memory": "KEEP IT SECURE"
+          },
+          {
+            "name": "Mobile Devices",
+            "definition": "Portable endpoints that require controls for encryption, screen lock, remote wipe, app management, and network access.",
+            "examples": [
+              "Phone",
+              "Tablet"
+            ],
+            "memory": "SECURE THE PORTABLE DEVICE"
+          },
+          {
+            "name": "Workstations",
+            "definition": "User endpoints that require patching, endpoint protection, least privilege, and secure configuration.",
+            "examples": [
+              "Desktop PC",
+              "Laptop"
+            ],
+            "memory": "USER ENDPOINT"
+          },
+          {
+            "name": "Switches",
+            "definition": "Network devices that should be hardened with secure management, port security, unused-port shutdown, and strong authentication.",
+            "examples": [
+              "Managed switch",
+              "Access switch"
+            ],
+            "memory": "SECURE THE PORTS"
+          },
+          {
+            "name": "Routers",
+            "definition": "Network devices that require hardened management interfaces, routing security, ACLs, and disabled unnecessary services.",
+            "examples": [
+              "Edge router",
+              "Branch router"
+            ],
+            "memory": "SECURE THE ROUTE"
+          },
+          {
+            "name": "Cloud Infrastructure",
+            "definition": "Cloud resources that require secure IAM, network controls, logging, configuration baselines, and least privilege.",
+            "examples": [
+              "Cloud VM",
+              "Storage service"
+            ],
+            "memory": "SECURE THE CLOUD CONFIG"
+          },
+          {
+            "name": "Servers",
+            "definition": "Systems that should minimize services, apply patches, use strong access controls, and monitor privileged activity.",
+            "examples": [
+              "Web server",
+              "Database server"
+            ],
+            "memory": "REDUCE SERVER ATTACK SURFACE"
+          },
+          {
+            "name": "ICS / SCADA",
+            "definition": "Industrial systems where availability, safety, segmentation, and cautious patching are critical.",
+            "examples": [
+              "Factory controller",
+              "SCADA server"
+            ],
+            "memory": "SAFETY + AVAILABILITY"
+          },
+          {
+            "name": "Embedded Systems",
+            "definition": "Special-purpose systems often constrained by hardware, firmware, and limited update options.",
+            "examples": [
+              "Medical device",
+              "Appliance controller"
+            ],
+            "memory": "LIMITED + SPECIAL PURPOSE"
+          },
+          {
+            "name": "RTOS",
+            "definition": "Real-time operating systems that prioritize predictable timing and often require careful change control.",
+            "examples": [
+              "Industrial controller",
+              "Automotive controller"
+            ],
+            "memory": "TIMING MATTERS"
+          },
+          {
+            "name": "IoT Devices",
+            "definition": "Connected devices that often have limited security controls, default credentials, and inconsistent patch support.",
+            "examples": [
+              "Camera",
+              "Sensor",
+              "Smart lock"
+            ],
+            "memory": "SMALL DEVICE · BIG RISK"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Secure Baselines and Hardening Targets comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Establish baseline",
+            "Define approved settings",
+            "Create secure standard"
+          ],
+          [
+            "Deploy baseline",
+            "Apply settings consistently",
+            "Push configuration"
+          ],
+          [
+            "Maintain baseline",
+            "Prevent configuration drift",
+            "Monitor/enforce"
+          ],
+          [
+            "Workstation",
+            "User endpoint",
+            "Patch + EDR + least privilege"
+          ],
+          [
+            "Switch",
+            "Network access layer",
+            "Port security / management hardening"
+          ],
+          [
+            "Router",
+            "Traffic routing edge",
+            "ACLs / secure management"
+          ],
+          [
+            "ICS/SCADA",
+            "Physical-process systems",
+            "Safety + availability"
+          ],
+          [
+            "IoT",
+            "Connected constrained device",
+            "Default creds / limited patching"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Secure Baselines and Hardening Targets exam shortcuts",
+        "items": [
+          [
+            "Need one approved configuration → ESTABLISH BASELINE",
+            "Define the secure standard before deployment.",
+            "Example: Document required password, logging, and service settings."
+          ],
+          [
+            "Need same settings on hundreds of systems → DEPLOY BASELINE",
+            "Use centralized configuration tools to apply the standard.",
+            "Example: Group Policy pushes workstation settings."
+          ],
+          [
+            "Settings keep drifting → MAINTAIN BASELINE",
+            "Continuously detect and correct deviations.",
+            "Example: Configuration management restores a disabled security control."
+          ],
+          [
+            "Unused switch ports create risk → HARDEN THE SWITCH",
+            "Disable unused ports and apply port security.",
+            "Example: Unused wall jacks map to disabled switch ports."
+          ],
+          [
+            "ICS cannot tolerate unplanned downtime → SAFETY + AVAILABILITY FIRST",
+            "Changes may need extra testing and maintenance windows.",
+            "Example: A controller patch is validated before production deployment."
+          ],
+          [
+            "IoT device still has factory credentials → CHANGE DEFAULTS",
+            "Constrained devices often ship insecurely.",
+            "Example: Replace vendor default passwords before network connection."
+          ]
+        ],
+        "example": "Focus on what the resource needs: baseline consistency, hardening, secure access, isolation, authentication, or monitoring."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A company first defines approved password, logging, and service settings for all Windows workstations. Which baseline step is this?",
+        "choices": [
+          "Establish",
+          "Deploy",
+          "Maintain",
+          "Monitor"
+        ],
+        "answer": 0,
+        "explanation": "Establishing a baseline means defining the secure standard."
+      },
+      {
+        "q": "The approved workstation baseline is pushed to hundreds of computers through Group Policy. Which step is this?",
+        "choices": [
+          "Deploy",
+          "Establish",
+          "Maintain",
+          "Sandbox"
+        ],
+        "answer": 0,
+        "explanation": "Deployment applies the baseline consistently across systems."
+      },
+      {
+        "q": "A configuration-management tool detects that a required security setting was disabled and automatically restores it. Which step is this?",
+        "choices": [
+          "Maintain",
+          "Deploy",
+          "Establish",
+          "Monitor only"
+        ],
+        "answer": 0,
+        "explanation": "Maintaining a baseline means detecting and correcting configuration drift."
+      },
+      {
+        "q": "Unused access-switch ports are shut down and port security is enabled. Which hardening target is being addressed?",
+        "choices": [
+          "Switches",
+          "Routers",
+          "Servers",
+          "RTOS"
+        ],
+        "answer": 0,
+        "explanation": "Port security and unused-port shutdown are switch hardening techniques."
+      },
+      {
+        "q": "A factory control system cannot tolerate unplanned downtime, so patches are tested carefully before deployment. Which target is this?",
+        "choices": [
+          "ICS/SCADA",
+          "Workstation",
+          "Cloud infrastructure",
+          "Mobile device"
+        ],
+        "answer": 0,
+        "explanation": "ICS/SCADA hardening prioritizes safety and availability."
+      },
+      {
+        "q": "A new network camera is placed into service with the vendor's default password still enabled. Which target is most directly at risk?",
+        "choices": [
+          "IoT device",
+          "Server",
+          "Router",
+          "Workstation"
+        ],
+        "answer": 0,
+        "explanation": "IoT devices commonly have default-credential and patching risks."
+      }
+    ]
+  }
+}
