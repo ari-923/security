@@ -2,153 +2,421 @@
   "id": "10.03",
   "chapter": 10,
   "sub": 3,
-  "title": "Third-party vendors",
-  "chapter_name": "Security Architecture & Cloud",
+  "title": "Virtualization, Containers, and Specialized Systems",
+  "chapter_name": "Security Architecture Models",
   "slides": [
     {
       "n": 1,
-      "title": "Third-Party Vendors",
-      "points": [],
-      "raw": "Third-Party Vendors",
+      "title": "Virtualization, Containers, and Specialized Systems",
       "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": []
+      "teach": "",
+      "points": [
+        "Virtualized, containerized, embedded, IoT, and industrial systems have different isolation models, resource constraints, patching capabilities, and operational requirements."
+      ],
+      "defs": [],
+      "raw": ""
     },
     {
       "n": 2,
-      "title": "Third-Party",
-      "points": [
-        "Specialized Services",
-        "Enhanced Security Solutions",
-        "Data Management and Analytics",
-        "Backup and Disaster Recovery",
-        "Identity and Access Management (IAM)"
-      ],
-      "raw": "Third-Party\nSpecialized Services\nEnhanced Security Solutions\nData Management and Analytics\nBackup and Disaster Recovery\nIdentity and Access Management (IAM)",
+      "title": "Containerization",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "IAM",
-          "Identity and Access Management: processes and technologies for identities, authentication, authorization, and access lifecycle."
-        ]
+      "teach": "Packages applications and dependencies into isolated containers that share the host operating-system kernel.",
+      "points": [
+        "Basically",
+        "Examples"
       ],
+      "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Third-party risk comes from vendors, service providers, contractors, and dependencies that connect to systems or handle data. Their weaknesses can become your weaknesses.",
-        "why": "Organizations remain responsible for managing risk even when another company performs the work.",
-        "example": "A payroll vendor stores employee data, so the company reviews contractual controls, security assessments, access, and breach-notification requirements.",
-        "exam": "Vendor due diligence, contracts, right-to-audit, supply-chain risk, least privilege, and continuous monitoring are common themes.",
+        "learn": "Packages applications and dependencies into isolated containers that share the host operating-system kernel.",
         "breakdown": [
           {
-            "term": "Specialized Services",
-            "explanation": "Within Third-Party, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Third-party vendors rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "Packages applications and dependencies into isolated containers that share the host operating-system kernel."
           },
           {
-            "term": "Enhanced Security Solutions",
-            "explanation": "This contributes to reducing risk in the broader Third-party vendors design and should be evaluated as part of defense in depth."
-          },
-          {
-            "term": "Data Management and Analytics",
-            "explanation": "Within Third-Party, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Third-party vendors rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Backup and Disaster Recovery",
-            "explanation": "Restore technology and data after a major disruption."
-          },
-          {
-            "term": "Identity and Access Management (IAM)",
-            "explanation": "This concerns who or what can reach a resource and what actions are permitted once access is granted."
+            "term": "Examples",
+            "explanation": "Docker container, Kubernetes workload"
           }
         ],
-        "defs": [
-          {
-            "term": "IAM",
-            "definition": "Identity and Access Management: processes and technologies for identities, authentication, authorization, and access lifecycle."
-          }
-        ],
-        "check_q": "Without looking back, explain Third-Party and describe at least two key ideas from this section.",
-        "check_a": "Third-party risk comes from vendors, service providers, contractors, and dependencies that connect to systems or handle data. Their weaknesses can become your weaknesses. Key ideas include: Specialized Services; Enhanced Security Solutions; Data Management and Analytics; Backup and Disaster Recovery; Identity and Access Management (IAM).",
-        "points": [
-          "Specialized Services",
-          "Enhanced Security Solutions",
-          "Data Management and Analytics",
-          "Backup and Disaster Recovery",
-          "Identity and Access Management (IAM)"
-        ]
+        "defs": [],
+        "why": "This concept changes the security tradeoffs of the architecture.",
+        "example": "Docker container",
+        "exam": "SHARES HOST KERNEL",
+        "check_q": "What is the key exam clue for Containerization?",
+        "check_a": "SHARES HOST KERNEL"
       }
     },
     {
       "n": 3,
-      "title": "Third-Party",
-      "points": [
-        "Monitoring and Performance Optimization",
-        "Collaboration and Productivity Tools",
-        "Compliance and Governance Solutions",
-        "Cost Management and Optimization",
-        "Custom Development and Integration Services"
-      ],
-      "raw": "Third-Party\nMonitoring and Performance Optimization\nCollaboration and Productivity Tools\nCompliance and Governance Solutions\nCost Management and Optimization\nCustom Development and Integration Services",
+      "title": "Virtualization",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "Runs multiple virtual machines with separate guest operating systems on shared hardware through a hypervisor.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Third-party risk comes from vendors, service providers, contractors, and dependencies that connect to systems or handle data. Their weaknesses can become your weaknesses.",
-        "why": "Organizations remain responsible for managing risk even when another company performs the work.",
-        "example": "A payroll vendor stores employee data, so the company reviews contractual controls, security assessments, access, and breach-notification requirements.",
-        "exam": "Vendor due diligence, contracts, right-to-audit, supply-chain risk, least privilege, and continuous monitoring are common themes.",
+        "learn": "Runs multiple virtual machines with separate guest operating systems on shared hardware through a hypervisor.",
         "breakdown": [
           {
-            "term": "Monitoring and Performance Optimization",
-            "explanation": "Security monitoring continuously observes systems, networks, applications, and logs for suspicious activity, failures, policy violations, and indicators of compromise."
+            "term": "Basically",
+            "explanation": "Runs multiple virtual machines with separate guest operating systems on shared hardware through a hypervisor."
           },
           {
-            "term": "Collaboration and Productivity Tools",
-            "explanation": "Security monitoring and automation tools include SIEM for event correlation, SCAP for standardized security-content automation, DLP for controlling sensitive data movement, and SNMP for device monitoring and traps."
-          },
-          {
-            "term": "Compliance and Governance Solutions",
-            "explanation": "This relates to meeting and demonstrating required legal, regulatory, contractual, or policy obligations."
-          },
-          {
-            "term": "Cost Management and Optimization",
-            "explanation": "Within Third-Party, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Third-party vendors rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Custom Development and Integration Services",
-            "explanation": "Within Third-Party, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Third-party vendors rather than memorizing the phrase by itself."
+            "term": "Examples",
+            "explanation": "VMware VM, Hyper-V"
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Third-Party and describe at least two key ideas from this section.",
-        "check_a": "Third-party risk comes from vendors, service providers, contractors, and dependencies that connect to systems or handle data. Their weaknesses can become your weaknesses. Key ideas include: Monitoring and Performance Optimization; Collaboration and Productivity Tools; Compliance and Governance Solutions; Cost Management and Optimization; Custom Development and Integration Services.",
-        "points": [
-          "Monitoring and Performance Optimization",
-          "Collaboration and Productivity Tools",
-          "Compliance and Governance Solutions",
-          "Cost Management and Optimization",
-          "Custom Development and Integration Services"
-        ]
+        "why": "This concept changes the security tradeoffs of the architecture.",
+        "example": "VMware VM",
+        "exam": "SEPARATE GUEST OS",
+        "check_q": "What is the key exam clue for Virtualization?",
+        "check_a": "SEPARATE GUEST OS"
       }
     },
     {
       "n": 4,
-      "title": "Infrastructure as Code (IaC)",
-      "points": [],
-      "raw": "Infrastructure as Code (IaC)",
-      "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "IaC",
-          "Infrastructure as Code: defining and provisioning infrastructure through version-controlled code/templates."
-        ]
-      ]
+      "title": "Internet of Things (IoT)",
+      "instructional": true,
+      "teach": "Network-connected devices that often have limited resources, specialized functions, and varying update support.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Network-connected devices that often have limited resources, specialized functions, and varying update support.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Network-connected devices that often have limited resources, specialized functions, and varying update support."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Smart camera, Sensor, Smart lock"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes the security tradeoffs of the architecture.",
+        "example": "Smart camera",
+        "exam": "CONNECTED DEVICE",
+        "check_q": "What is the key exam clue for Internet of Things (IoT)?",
+        "check_a": "CONNECTED DEVICE"
+      }
+    },
+    {
+      "n": 5,
+      "title": "ICS / SCADA",
+      "instructional": true,
+      "teach": "Industrial control and supervisory systems used to monitor or control physical processes.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Industrial control and supervisory systems used to monitor or control physical processes.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Industrial control and supervisory systems used to monitor or control physical processes."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Manufacturing control, Power grid monitoring"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes the security tradeoffs of the architecture.",
+        "example": "Manufacturing control",
+        "exam": "CONTROL PHYSICAL PROCESS",
+        "check_q": "What is the key exam clue for ICS / SCADA?",
+        "check_a": "CONTROL PHYSICAL PROCESS"
+      }
+    },
+    {
+      "n": 6,
+      "title": "Real-time Operating System (RTOS)",
+      "instructional": true,
+      "teach": "An operating system designed for predictable, time-sensitive responses.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "An operating system designed for predictable, time-sensitive responses.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "An operating system designed for predictable, time-sensitive responses."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Industrial controller, Automotive controller"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes the security tradeoffs of the architecture.",
+        "example": "Industrial controller",
+        "exam": "TIMING IS CRITICAL",
+        "check_q": "What is the key exam clue for Real-time Operating System (RTOS)?",
+        "check_a": "TIMING IS CRITICAL"
+      }
+    },
+    {
+      "n": 7,
+      "title": "Embedded Systems",
+      "instructional": true,
+      "teach": "Special-purpose computing systems built into larger devices or equipment.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Special-purpose computing systems built into larger devices or equipment.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Special-purpose computing systems built into larger devices or equipment."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Medical device controller, Appliance firmware"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes the security tradeoffs of the architecture.",
+        "example": "Medical device controller",
+        "exam": "BUILT INTO A DEVICE",
+        "check_q": "What is the key exam clue for Embedded Systems?",
+        "check_a": "BUILT INTO A DEVICE"
+      }
     }
   ],
-  "slide_count": 4,
-  "instructional_count": 2,
+  "slide_count": 7,
+  "instructional_count": 6,
   "concepts": [
-    "Third-Party"
+    "Containerization",
+    "Virtualization",
+    "Internet of Things (IoT)",
+    "ICS / SCADA",
+    "Real-time Operating System (RTOS)",
+    "Embedded Systems"
   ],
-  "source_filename": "10.03_Third-party_vendors.pdf"
+  "source_filename": "10-03.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 3.1",
+      "title": "Virtualization, Containers, and Specialized Systems",
+      "intro": "Virtualized, containerized, embedded, IoT, and industrial systems have different isolation models, resource constraints, patching capabilities, and operational requirements."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Virtualization, Containers, and Specialized Systems",
+        "prompt": "Compare the security tradeoffs and identify which architecture clue matters in the scenario.",
+        "badge": "3.1",
+        "cards": [
+          {
+            "name": "Containerization",
+            "definition": "Packages applications and dependencies into isolated containers that share the host operating-system kernel.",
+            "examples": [
+              "Docker container",
+              "Kubernetes workload"
+            ],
+            "memory": "SHARES HOST KERNEL"
+          },
+          {
+            "name": "Virtualization",
+            "definition": "Runs multiple virtual machines with separate guest operating systems on shared hardware through a hypervisor.",
+            "examples": [
+              "VMware VM",
+              "Hyper-V"
+            ],
+            "memory": "SEPARATE GUEST OS"
+          },
+          {
+            "name": "Internet of Things (IoT)",
+            "definition": "Network-connected devices that often have limited resources, specialized functions, and varying update support.",
+            "examples": [
+              "Smart camera",
+              "Sensor",
+              "Smart lock"
+            ],
+            "memory": "CONNECTED DEVICE"
+          },
+          {
+            "name": "ICS / SCADA",
+            "definition": "Industrial control and supervisory systems used to monitor or control physical processes.",
+            "examples": [
+              "Manufacturing control",
+              "Power grid monitoring"
+            ],
+            "memory": "CONTROL PHYSICAL PROCESS"
+          },
+          {
+            "name": "Real-time Operating System (RTOS)",
+            "definition": "An operating system designed for predictable, time-sensitive responses.",
+            "examples": [
+              "Industrial controller",
+              "Automotive controller"
+            ],
+            "memory": "TIMING IS CRITICAL"
+          },
+          {
+            "name": "Embedded Systems",
+            "definition": "Special-purpose computing systems built into larger devices or equipment.",
+            "examples": [
+              "Medical device controller",
+              "Appliance firmware"
+            ],
+            "memory": "BUILT INTO A DEVICE"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Virtualization, Containers, and Specialized Systems comparison",
+        "headers": [
+          "Concept",
+          "What to compare",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Containerization",
+            "Shared host kernel",
+            "Lightweight and fast"
+          ],
+          [
+            "Virtualization",
+            "Separate guest OS",
+            "Stronger OS isolation, more overhead"
+          ],
+          [
+            "IoT",
+            "Connected specialized device",
+            "Limited resources and patching"
+          ],
+          [
+            "ICS/SCADA",
+            "Controls physical process",
+            "Availability and safety critical"
+          ],
+          [
+            "RTOS",
+            "Predictable timing",
+            "Responsiveness critical"
+          ],
+          [
+            "Embedded",
+            "Built into equipment",
+            "Long lifecycle and patch constraints"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Virtualization, Containers, and Specialized Systems exam shortcuts",
+        "items": [
+          [
+            "Shared kernel → CONTAINER",
+            "Containers normally share the host OS kernel.",
+            "Example: Several Docker containers run on one Linux host."
+          ],
+          [
+            "Separate guest OS → VIRTUALIZATION",
+            "Each VM has its own operating system.",
+            "Example: Windows and Linux VMs share one host."
+          ],
+          [
+            "Connected sensor/camera → IoT",
+            "Expect resource and patching constraints.",
+            "Example: Smart cameras connect to the enterprise network."
+          ],
+          [
+            "Controls machinery → ICS/SCADA",
+            "Security must consider safety and availability.",
+            "Example: SCADA controls water-treatment equipment."
+          ],
+          [
+            "Strict timing → RTOS",
+            "Predictable response is essential.",
+            "Example: A controller must react within milliseconds."
+          ]
+        ],
+        "example": "Choose the architecture based on the security tradeoff emphasized in the scenario."
+      }
+    ],
+    "questions": [
+      {
+        "q": "Multiple application workloads run in isolated environments but share the same host OS kernel. Which model is this?",
+        "choices": [
+          "Containerization",
+          "Virtualization",
+          "RTOS",
+          "Air gap"
+        ],
+        "answer": 0,
+        "explanation": "Containers share the host kernel."
+      },
+      {
+        "q": "Windows and Linux workloads run as separate guest operating systems on one hypervisor. Which model is this?",
+        "choices": [
+          "Virtualization",
+          "Containerization",
+          "Serverless",
+          "IoT"
+        ],
+        "answer": 0,
+        "explanation": "Virtual machines each use separate guest operating systems."
+      },
+      {
+        "q": "A network-connected smart camera has limited compute power and inconsistent patch support. Which category best fits?",
+        "choices": [
+          "IoT",
+          "RTOS only",
+          "Microservices",
+          "SDN"
+        ],
+        "answer": 0,
+        "explanation": "IoT devices are specialized network-connected devices."
+      },
+      {
+        "q": "A system directly controls industrial machinery and operational safety is the top concern. Which architecture is most relevant?",
+        "choices": [
+          "ICS/SCADA",
+          "Microservices",
+          "Serverless",
+          "IaC"
+        ],
+        "answer": 0,
+        "explanation": "ICS/SCADA systems monitor and control physical industrial processes."
+      },
+      {
+        "q": "A controller must respond within a guaranteed number of milliseconds. Which model is most appropriate?",
+        "choices": [
+          "RTOS",
+          "General-purpose cloud OS",
+          "Serverless",
+          "Microservices"
+        ],
+        "answer": 0,
+        "explanation": "RTOS prioritizes deterministic, time-sensitive response."
+      }
+    ]
+  }
 }
