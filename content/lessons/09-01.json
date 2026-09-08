@@ -2,169 +2,679 @@
   "id": "09.01",
   "chapter": 9,
   "sub": 1,
-  "title": "Segmentation",
-  "chapter_name": "Mitigation & Hardening",
+  "title": "Core Mitigation Techniques",
+  "chapter_name": "Mitigation Techniques",
   "slides": [
     {
       "n": 1,
-      "title": "Segmentation",
-      "points": [],
-      "raw": "Segmentation",
+      "title": "Core Mitigation Techniques",
       "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "Segmentation",
-          "Dividing a network into controlled zones to limit access and lateral movement."
-        ]
-      ]
+      "teach": "",
+      "points": [
+        "Mitigation techniques reduce attack surface, contain compromise, enforce secure access, and keep systems resilient."
+      ],
+      "defs": [],
+      "raw": ""
     },
     {
       "n": 2,
       "title": "Segmentation",
-      "points": [
-        "Containment of Threats",
-        "Reduced Attack Surface",
-        "Granular Access Control",
-        "Compliance Requirements",
-        "Enhanced Incident Response"
-      ],
-      "raw": "Segmentation\nContainment of Threats\nReduced Attack Surface\nGranular Access Control\nCompliance Requirements\nEnhanced Incident Response",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "Segmentation",
-          "Dividing a network into controlled zones to limit access and lateral movement."
-        ]
+      "teach": "Divides networks, systems, or environments into separate zones to limit communication and reduce lateral movement.",
+      "points": [
+        "Basically",
+        "Examples"
       ],
+      "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Network segmentation separates systems into different trust zones so traffic must cross controlled boundaries. VLANs, subnets, ACLs, and firewalls are common mechanisms.",
-        "why": "Segmentation limits lateral movement and reduces the blast radius of a compromised host.",
-        "example": "Guest Wi-Fi is placed in a separate VLAN with firewall rules that block access to internal servers.",
-        "exam": "If the goal is containment or preventing one network from freely reaching another, segmentation is a strong answer.",
+        "learn": "Divides networks, systems, or environments into separate zones to limit communication and reduce lateral movement.",
         "breakdown": [
           {
-            "term": "Containment of Threats",
-            "explanation": "Within Segmentation, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Segmentation rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "Break the environment into controlled sections so one compromise does not spread everywhere."
           },
           {
-            "term": "Reduced Attack Surface",
-            "explanation": "Secure architecture depends on where devices are placed, which trust zones they belong to, how they connect, what attack surface they expose, and what happens when a component fails."
-          },
-          {
-            "term": "Granular Access Control",
-            "explanation": "Access control restricts which subjects can access which resources and what actions they may perform. ACLs express allow/deny rules on objects, interfaces, or network traffic."
-          },
-          {
-            "term": "Compliance Requirements",
-            "explanation": "This relates to meeting and demonstrating required legal, regulatory, contractual, or policy obligations."
-          },
-          {
-            "term": "Enhanced Incident Response",
-            "explanation": "Within Segmentation, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Segmentation rather than memorizing the phrase by itself."
+            "term": "Examples",
+            "explanation": "VLAN segmentation, DMZ, Microsegmentation"
           }
         ],
-        "defs": [
-          {
-            "term": "Segmentation",
-            "definition": "Dividing a network into controlled zones to limit access and lateral movement."
-          }
-        ],
-        "check_q": "Without looking back, explain Segmentation and describe at least two key ideas from this section.",
-        "check_a": "Network segmentation separates systems into different trust zones so traffic must cross controlled boundaries. VLANs, subnets, ACLs, and firewalls are common mechanisms. Key ideas include: Containment of Threats; Reduced Attack Surface; Granular Access Control; Compliance Requirements; Enhanced Incident Response.",
-        "points": [
-          "Containment of Threats",
-          "Reduced Attack Surface",
-          "Granular Access Control",
-          "Compliance Requirements",
-          "Enhanced Incident Response"
-        ]
+        "defs": [],
+        "why": "It limits blast radius and makes lateral movement harder.",
+        "example": "Guest Wi-Fi is isolated from finance systems.",
+        "exam": "Stop lateral movement → SEGMENTATION.",
+        "check_q": "What does Segmentation mean in this lesson?",
+        "check_a": "Divides networks, systems, or environments into separate zones to limit communication and reduce lateral movement."
       }
     },
     {
       "n": 3,
-      "title": "Segmentation",
-      "points": [
-        "Improved Performance and Bandwidth Management:",
-        "Protection of Critical Assets",
-        "Isolation of IoT Devices",
-        "Prevention of Lateral Movement",
-        "Adaptability to Evolving Threats"
-      ],
-      "raw": "Segmentation\nImproved Performance and Bandwidth Management:\nProtection of Critical Assets\nIsolation of IoT Devices\nPrevention of Lateral Movement\nAdaptability to Evolving Threats",
+      "title": "Access Control",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "Segmentation",
-          "Dividing a network into controlled zones to limit access and lateral movement."
-        ],
-        [
-          "IoT",
-          "Internet of Things: network-connected devices such as sensors, appliances, cameras, and embedded devices."
-        ]
+      "teach": "Restricts who or what can access resources.",
+      "points": [
+        "Basically",
+        "Examples"
       ],
+      "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Network segmentation separates systems into different trust zones so traffic must cross controlled boundaries. VLANs, subnets, ACLs, and firewalls are common mechanisms.",
-        "why": "Segmentation limits lateral movement and reduces the blast radius of a compromised host.",
-        "example": "Guest Wi-Fi is placed in a separate VLAN with firewall rules that block access to internal servers.",
-        "exam": "If the goal is containment or preventing one network from freely reaching another, segmentation is a strong answer.",
+        "learn": "Restricts who or what can access resources.",
         "breakdown": [
           {
-            "term": "Improved Performance and Bandwidth Management:",
-            "explanation": "Within Segmentation, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Segmentation rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "Decide who gets access and under what conditions."
           },
           {
-            "term": "Protection of Critical Assets",
-            "explanation": "Within Segmentation, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Segmentation rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Isolation of IoT Devices",
-            "explanation": "Isolation separates a risky or sensitive system from other resources so compromise cannot easily spread. Physical isolation and air gaps provide stronger separation than ordinary logical controls."
-          },
-          {
-            "term": "Prevention of Lateral Movement",
-            "explanation": "Within Segmentation, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Segmentation rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Adaptability to Evolving Threats",
-            "explanation": "Within Segmentation, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Segmentation rather than memorizing the phrase by itself."
+            "term": "Examples",
+            "explanation": "Role-based access, Network access rules"
           }
         ],
-        "defs": [
-          {
-            "term": "Segmentation",
-            "definition": "Dividing a network into controlled zones to limit access and lateral movement."
-          },
-          {
-            "term": "IoT",
-            "definition": "Internet of Things: network-connected devices such as sensors, appliances, cameras, and embedded devices."
-          }
-        ],
-        "check_q": "Without looking back, explain Segmentation and describe at least two key ideas from this section.",
-        "check_a": "Network segmentation separates systems into different trust zones so traffic must cross controlled boundaries. VLANs, subnets, ACLs, and firewalls are common mechanisms. Key ideas include: Improved Performance and Bandwidth Management:; Protection of Critical Assets; Isolation of IoT Devices; Prevention of Lateral Movement; Adaptability to Evolving Threats.",
-        "points": [
-          "Improved Performance and Bandwidth Management:",
-          "Protection of Critical Assets",
-          "Isolation of IoT Devices",
-          "Prevention of Lateral Movement",
-          "Adaptability to Evolving Threats"
-        ]
+        "defs": [],
+        "why": "It reduces unauthorized use of systems and data.",
+        "example": "Only HR staff can open payroll records.",
+        "exam": "Who can access? → ACCESS CONTROL.",
+        "check_q": "What does Access Control mean in this lesson?",
+        "check_a": "Restricts who or what can access resources."
       }
     },
     {
       "n": 4,
-      "title": "Access Control",
-      "points": [],
-      "raw": "Access Control",
-      "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": []
+      "title": "Access Control List (ACL)",
+      "instructional": true,
+      "teach": "A rule set that permits or denies traffic or access based on defined criteria.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "A rule set that permits or denies traffic or access based on defined criteria.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "A list of explicit allow/deny rules."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Router ACL, File ACL"
+          }
+        ],
+        "defs": [],
+        "why": "It enforces specific access decisions.",
+        "example": "A router ACL blocks traffic from an untrusted subnet.",
+        "exam": "Permit/deny rule list → ACL.",
+        "check_q": "What does Access Control List (ACL) mean in this lesson?",
+        "check_a": "A rule set that permits or denies traffic or access based on defined criteria."
+      }
+    },
+    {
+      "n": 5,
+      "title": "Permissions",
+      "instructional": true,
+      "teach": "Specific rights assigned to users, groups, or processes for resources.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Specific rights assigned to users, groups, or processes for resources.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "They define what an authorized subject can actually do."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Read, Write, Execute"
+          }
+        ],
+        "defs": [],
+        "why": "They limit actions even after access is granted.",
+        "example": "A user can read a file but cannot modify it.",
+        "exam": "Read/write/execute rights → PERMISSIONS.",
+        "check_q": "What does Permissions mean in this lesson?",
+        "check_a": "Specific rights assigned to users, groups, or processes for resources."
+      }
+    },
+    {
+      "n": 6,
+      "title": "Application Allow List",
+      "instructional": true,
+      "teach": "Permits only approved applications to execute.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Permits only approved applications to execute.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Only software on the approved list can run."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Only signed business apps allowed"
+          }
+        ],
+        "defs": [],
+        "why": "It blocks unknown or unauthorized executables.",
+        "example": "An unknown executable is blocked.",
+        "exam": "Only approved apps run → APPLICATION ALLOW LIST.",
+        "check_q": "What does Application Allow List mean in this lesson?",
+        "check_a": "Permits only approved applications to execute."
+      }
+    },
+    {
+      "n": 7,
+      "title": "Isolation",
+      "instructional": true,
+      "teach": "Separates a system, device, process, or workload from others to contain risk.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Separates a system, device, process, or workload from others to contain risk.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Keep the suspicious or risky thing separate."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Quarantine endpoint, Sandbox process"
+          }
+        ],
+        "defs": [],
+        "why": "It limits communication and prevents spread.",
+        "example": "EDR quarantines an infected laptop.",
+        "exam": "Contain suspicious endpoint → ISOLATION.",
+        "check_q": "What does Isolation mean in this lesson?",
+        "check_a": "Separates a system, device, process, or workload from others to contain risk."
+      }
+    },
+    {
+      "n": 8,
+      "title": "Patching",
+      "instructional": true,
+      "teach": "Applies vendor fixes to correct vulnerabilities and software defects.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Applies vendor fixes to correct vulnerabilities and software defects.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Install the update that fixes the known flaw."
+          },
+          {
+            "term": "Examples",
+            "explanation": "OS update, Application security patch"
+          }
+        ],
+        "defs": [],
+        "why": "It removes known exploitable weaknesses.",
+        "example": "A critical browser CVE is fixed with a vendor patch.",
+        "exam": "Known vulnerability + vendor fix → PATCHING.",
+        "check_q": "What does Patching mean in this lesson?",
+        "check_a": "Applies vendor fixes to correct vulnerabilities and software defects."
+      }
+    },
+    {
+      "n": 9,
+      "title": "Encryption",
+      "instructional": true,
+      "teach": "Protects confidentiality by converting readable data into ciphertext.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Protects confidentiality by converting readable data into ciphertext.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Make data unreadable without the proper key."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Disk encryption, TLS"
+          }
+        ],
+        "defs": [],
+        "why": "It reduces exposure if data is stolen or intercepted.",
+        "example": "A stolen laptop's data remains unreadable.",
+        "exam": "Protect confidentiality → ENCRYPTION.",
+        "check_q": "What does Encryption mean in this lesson?",
+        "check_a": "Protects confidentiality by converting readable data into ciphertext."
+      }
+    },
+    {
+      "n": 10,
+      "title": "Monitoring",
+      "instructional": true,
+      "teach": "Observes systems, logs, traffic, and behavior for suspicious or abnormal activity.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Observes systems, logs, traffic, and behavior for suspicious or abnormal activity.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Watch the environment for signs of trouble."
+          },
+          {
+            "term": "Examples",
+            "explanation": "SIEM alerts, Network monitoring"
+          }
+        ],
+        "defs": [],
+        "why": "It improves detection and response speed.",
+        "example": "A SIEM alerts on unusual admin logins.",
+        "exam": "Need visibility/detection → MONITORING.",
+        "check_q": "What does Monitoring mean in this lesson?",
+        "check_a": "Observes systems, logs, traffic, and behavior for suspicious or abnormal activity."
+      }
+    },
+    {
+      "n": 11,
+      "title": "Least Privilege",
+      "instructional": true,
+      "teach": "Grants only the minimum permissions necessary to perform a task.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Grants only the minimum permissions necessary to perform a task.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Give users and services no more access than they need."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Standard user instead of admin, Restricted service account"
+          }
+        ],
+        "defs": [],
+        "why": "It reduces damage if an account is misused or compromised.",
+        "example": "A help-desk user loses unnecessary domain-admin rights.",
+        "exam": "Too much access → LEAST PRIVILEGE.",
+        "check_q": "What does Least Privilege mean in this lesson?",
+        "check_a": "Grants only the minimum permissions necessary to perform a task."
+      }
+    },
+    {
+      "n": 12,
+      "title": "Configuration Enforcement",
+      "instructional": true,
+      "teach": "Ensures systems remain aligned with approved secure settings and baselines.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Ensures systems remain aligned with approved secure settings and baselines.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Keep devices from drifting away from secure configuration."
+          },
+          {
+            "term": "Examples",
+            "explanation": "MDM policy, Configuration baseline"
+          }
+        ],
+        "defs": [],
+        "why": "It prevents insecure configuration drift.",
+        "example": "MDM re-enables a required security control after a user disables it.",
+        "exam": "System drifts from baseline → CONFIGURATION ENFORCEMENT.",
+        "check_q": "What does Configuration Enforcement mean in this lesson?",
+        "check_a": "Ensures systems remain aligned with approved secure settings and baselines."
+      }
     }
   ],
-  "slide_count": 4,
-  "instructional_count": 2,
-  "concepts": [],
-  "source_filename": "09.01_Segmentation.pdf"
+  "slide_count": 12,
+  "instructional_count": 11,
+  "concepts": [
+    "Segmentation",
+    "Access Control",
+    "Access Control List (ACL)",
+    "Permissions",
+    "Application Allow List",
+    "Isolation",
+    "Patching",
+    "Encryption",
+    "Monitoring",
+    "Least Privilege",
+    "Configuration Enforcement"
+  ],
+  "source_filename": "09-01.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 2.5",
+      "title": "Core Mitigation Techniques",
+      "intro": "Mitigation techniques reduce attack surface, contain compromise, enforce secure access, and keep systems resilient."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Core Mitigation Techniques",
+        "prompt": "Choose the mitigation that best reduces the risk described in the scenario.",
+        "badge": "2.5",
+        "cards": [
+          {
+            "name": "Segmentation",
+            "definition": "Divides networks, systems, or environments into separate zones to limit communication and reduce lateral movement.",
+            "examples": [
+              "VLAN segmentation",
+              "DMZ",
+              "Microsegmentation"
+            ],
+            "memory": "LIMIT THE BLAST RADIUS"
+          },
+          {
+            "name": "Access Control",
+            "definition": "Restricts who or what can access resources.",
+            "examples": [
+              "Role-based access",
+              "Network access rules"
+            ],
+            "memory": "WHO CAN ACCESS?"
+          },
+          {
+            "name": "Access Control List (ACL)",
+            "definition": "A rule set that permits or denies traffic or access based on defined criteria.",
+            "examples": [
+              "Router ACL",
+              "File ACL"
+            ],
+            "memory": "ALLOW / DENY RULES"
+          },
+          {
+            "name": "Permissions",
+            "definition": "Specific rights assigned to users, groups, or processes for resources.",
+            "examples": [
+              "Read",
+              "Write",
+              "Execute"
+            ],
+            "memory": "WHAT CAN THEY DO?"
+          },
+          {
+            "name": "Application Allow List",
+            "definition": "Permits only approved applications to execute.",
+            "examples": [
+              "Only signed business apps allowed"
+            ],
+            "memory": "ONLY APPROVED APPS"
+          },
+          {
+            "name": "Isolation",
+            "definition": "Separates a system, device, process, or workload from others to contain risk.",
+            "examples": [
+              "Quarantine endpoint",
+              "Sandbox process"
+            ],
+            "memory": "KEEP IT SEPARATE"
+          },
+          {
+            "name": "Patching",
+            "definition": "Applies vendor fixes to correct vulnerabilities and software defects.",
+            "examples": [
+              "OS update",
+              "Application security patch"
+            ],
+            "memory": "FIX KNOWN FLAWS"
+          },
+          {
+            "name": "Encryption",
+            "definition": "Protects confidentiality by converting readable data into ciphertext.",
+            "examples": [
+              "Disk encryption",
+              "TLS"
+            ],
+            "memory": "PROTECT DATA"
+          },
+          {
+            "name": "Monitoring",
+            "definition": "Observes systems, logs, traffic, and behavior for suspicious or abnormal activity.",
+            "examples": [
+              "SIEM alerts",
+              "Network monitoring"
+            ],
+            "memory": "WATCH FOR TROUBLE"
+          },
+          {
+            "name": "Least Privilege",
+            "definition": "Grants only the minimum permissions necessary to perform a task.",
+            "examples": [
+              "Standard user instead of admin",
+              "Restricted service account"
+            ],
+            "memory": "MINIMUM ACCESS"
+          },
+          {
+            "name": "Configuration Enforcement",
+            "definition": "Ensures systems remain aligned with approved secure settings and baselines.",
+            "examples": [
+              "MDM policy",
+              "Configuration baseline"
+            ],
+            "memory": "KEEP SETTINGS SECURE"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Core Mitigation Techniques comparison",
+        "headers": [
+          "Mitigation",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Segmentation",
+            "Limit movement between zones",
+            "Contain compromise"
+          ],
+          [
+            "ACL",
+            "Permit/deny based on rules",
+            "Control traffic/access"
+          ],
+          [
+            "Permissions",
+            "Rights on a resource",
+            "Read/write/execute"
+          ],
+          [
+            "Allow list",
+            "Only approved applications",
+            "Block unauthorized software"
+          ],
+          [
+            "Isolation",
+            "Separate suspicious system",
+            "Contain threat"
+          ],
+          [
+            "Patching",
+            "Fix known vulnerabilities",
+            "Vendor fix available"
+          ],
+          [
+            "Monitoring",
+            "Detect suspicious behavior",
+            "Visibility/alerts"
+          ],
+          [
+            "Least privilege",
+            "Minimum required access",
+            "Reduce abuse impact"
+          ],
+          [
+            "Configuration enforcement",
+            "Maintain secure baseline",
+            "Prevent configuration drift"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Core Mitigation Techniques exam shortcuts",
+        "items": [
+          [
+            "Stop lateral movement → SEGMENTATION",
+            "Separate systems into controlled zones.",
+            "Example: Finance is isolated from guest Wi-Fi."
+          ],
+          [
+            "Only approved apps run → APPLICATION ALLOW LIST",
+            "Execution is limited to approved software.",
+            "Example: Unknown executables are blocked."
+          ],
+          [
+            "Suspicious endpoint → ISOLATION",
+            "Separate the device from normal communications.",
+            "Example: EDR quarantines an infected laptop."
+          ],
+          [
+            "Known flaw + vendor fix → PATCHING",
+            "Apply the update that removes the flaw.",
+            "Example: A critical CVE is patched."
+          ],
+          [
+            "Too much access → LEAST PRIVILEGE",
+            "Reduce rights to only what is needed.",
+            "Example: Unneeded admin rights are removed."
+          ],
+          [
+            "Baseline drift → CONFIGURATION ENFORCEMENT",
+            "Restore approved settings.",
+            "Example: MDM re-enables required controls."
+          ]
+        ],
+        "example": "Focus on the risk first, then choose the control that directly reduces it."
+      }
+    ],
+    "questions": [
+      {
+        "q": "Guest Wi-Fi is separated from finance systems so a compromised guest device cannot reach internal servers. Which mitigation is best?",
+        "choices": [
+          "Segmentation",
+          "Monitoring",
+          "Encryption",
+          "Patching"
+        ],
+        "answer": 0,
+        "explanation": "Segmentation limits communication between zones and reduces lateral movement."
+      },
+      {
+        "q": "A router explicitly permits HTTPS from one subnet and denies other inbound traffic. Which control is this?",
+        "choices": [
+          "ACL",
+          "Permissions",
+          "Encryption",
+          "Patching"
+        ],
+        "answer": 0,
+        "explanation": "An ACL uses explicit permit/deny rules."
+      },
+      {
+        "q": "A user can read a file but cannot modify or delete it. Which control is most direct?",
+        "choices": [
+          "Permissions",
+          "Segmentation",
+          "Monitoring",
+          "Isolation"
+        ],
+        "answer": 0,
+        "explanation": "Permissions define allowed actions such as read and write."
+      },
+      {
+        "q": "Only approved signed applications may execute on endpoints. Which mitigation is this?",
+        "choices": [
+          "Application allow list",
+          "Least privilege",
+          "Segmentation",
+          "Encryption"
+        ],
+        "answer": 0,
+        "explanation": "Application allowlisting permits only approved software to run."
+      },
+      {
+        "q": "EDR quarantines an infected laptop from the corporate network. Which mitigation is this?",
+        "choices": [
+          "Isolation",
+          "Patching",
+          "Monitoring",
+          "ACL"
+        ],
+        "answer": 0,
+        "explanation": "Isolation contains the compromised endpoint."
+      },
+      {
+        "q": "A vendor releases a fix for a critical vulnerability and administrators deploy it. Which mitigation is this?",
+        "choices": [
+          "Patching",
+          "Encryption",
+          "Monitoring",
+          "Segmentation"
+        ],
+        "answer": 0,
+        "explanation": "Patching applies vendor fixes to known vulnerabilities."
+      },
+      {
+        "q": "A help-desk technician has unnecessary administrator rights removed. Which principle is being applied?",
+        "choices": [
+          "Least privilege",
+          "Isolation",
+          "Patching",
+          "Encryption"
+        ],
+        "answer": 0,
+        "explanation": "Least privilege grants only the access required."
+      },
+      {
+        "q": "MDM automatically restores required security settings after users change them. Which mitigation is this?",
+        "choices": [
+          "Configuration enforcement",
+          "Monitoring",
+          "Segmentation",
+          "Allowlisting"
+        ],
+        "answer": 0,
+        "explanation": "Configuration enforcement maintains approved secure baselines."
+      }
+    ]
+  }
 }
