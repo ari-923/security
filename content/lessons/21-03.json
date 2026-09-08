@@ -1,0 +1,608 @@
+{
+  "id": "21.03",
+  "chapter": 21,
+  "sub": 3,
+  "title": "Root Cause Analysis, Threat Hunting, and Forensics",
+  "chapter_name": "Incident Response & Forensics",
+  "slides": [
+    {
+      "n": 1,
+      "title": "Root Cause Analysis, Threat Hunting, and Forensics",
+      "instructional": false,
+      "teach": "",
+      "points": [
+        "After or during an incident, responders may need to determine why it happened, proactively search for hidden threats, and collect defensible digital evidence."
+      ],
+      "defs": [],
+      "raw": ""
+    },
+    {
+      "n": 2,
+      "title": "Root Cause Analysis",
+      "instructional": true,
+      "teach": "Determines the underlying reason an incident occurred so the organization can prevent recurrence.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Determines the underlying reason an incident occurred so the organization can prevent recurrence.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Determines the underlying reason an incident occurred so the organization can prevent recurrence."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Unpatched server caused compromise, Misconfiguration exposed data"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects incident response, preparedness, investigation, evidence handling, or post-incident improvement.",
+        "example": "Unpatched server caused compromise",
+        "exam": "WHY DID IT HAPPEN?",
+        "check_q": "What is the key exam clue for Root Cause Analysis?",
+        "check_a": "WHY DID IT HAPPEN?"
+      }
+    },
+    {
+      "n": 3,
+      "title": "Threat Hunting",
+      "instructional": true,
+      "teach": "Proactively searches for hidden threats or compromise that automated controls may not have detected.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Proactively searches for hidden threats or compromise that automated controls may not have detected.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Proactively searches for hidden threats or compromise that automated controls may not have detected."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Hunt for lateral movement, Search for persistence"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects incident response, preparedness, investigation, evidence handling, or post-incident improvement.",
+        "example": "Hunt for lateral movement",
+        "exam": "LOOK FOR WHAT ALERTS MISSED",
+        "check_q": "What is the key exam clue for Threat Hunting?",
+        "check_a": "LOOK FOR WHAT ALERTS MISSED"
+      }
+    },
+    {
+      "n": 4,
+      "title": "Digital Forensics",
+      "instructional": true,
+      "teach": "Collects, preserves, analyzes, and presents digital evidence related to an incident.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Collects, preserves, analyzes, and presents digital evidence related to an incident.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Collects, preserves, analyzes, and presents digital evidence related to an incident."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Disk image, Memory analysis, Timeline reconstruction"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects incident response, preparedness, investigation, evidence handling, or post-incident improvement.",
+        "example": "Disk image",
+        "exam": "EVIDENCE + ANALYSIS",
+        "check_q": "What is the key exam clue for Digital Forensics?",
+        "check_a": "EVIDENCE + ANALYSIS"
+      }
+    },
+    {
+      "n": 5,
+      "title": "Legal Hold",
+      "instructional": true,
+      "teach": "Preserves potentially relevant data because of litigation, investigation, or legal requirements.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Preserves potentially relevant data because of litigation, investigation, or legal requirements.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Preserves potentially relevant data because of litigation, investigation, or legal requirements."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Preserve mailbox, Hold logs"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects incident response, preparedness, investigation, evidence handling, or post-incident improvement.",
+        "example": "Preserve mailbox",
+        "exam": "DO NOT DELETE",
+        "check_q": "What is the key exam clue for Legal Hold?",
+        "check_a": "DO NOT DELETE"
+      }
+    },
+    {
+      "n": 6,
+      "title": "Chain of Custody",
+      "instructional": true,
+      "teach": "Documents who collected, handled, transferred, stored, and accessed evidence.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Documents who collected, handled, transferred, stored, and accessed evidence.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Documents who collected, handled, transferred, stored, and accessed evidence."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Evidence log, Signed transfer record"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects incident response, preparedness, investigation, evidence handling, or post-incident improvement.",
+        "example": "Evidence log",
+        "exam": "WHO TOUCHED THE EVIDENCE?",
+        "check_q": "What is the key exam clue for Chain of Custody?",
+        "check_a": "WHO TOUCHED THE EVIDENCE?"
+      }
+    },
+    {
+      "n": 7,
+      "title": "Acquisition",
+      "instructional": true,
+      "teach": "Creates a forensic copy or collects data for analysis while preserving evidence integrity.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Creates a forensic copy or collects data for analysis while preserving evidence integrity.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Creates a forensic copy or collects data for analysis while preserving evidence integrity."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Forensic disk image, Memory capture"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects incident response, preparedness, investigation, evidence handling, or post-incident improvement.",
+        "example": "Forensic disk image",
+        "exam": "COLLECT THE EVIDENCE",
+        "check_q": "What is the key exam clue for Acquisition?",
+        "check_a": "COLLECT THE EVIDENCE"
+      }
+    },
+    {
+      "n": 8,
+      "title": "Reporting",
+      "instructional": true,
+      "teach": "Documents forensic findings, methods, evidence, conclusions, and incident details.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Documents forensic findings, methods, evidence, conclusions, and incident details.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Documents forensic findings, methods, evidence, conclusions, and incident details."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Forensic report, Incident evidence summary"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects incident response, preparedness, investigation, evidence handling, or post-incident improvement.",
+        "example": "Forensic report",
+        "exam": "DOCUMENT FINDINGS",
+        "check_q": "What is the key exam clue for Reporting?",
+        "check_a": "DOCUMENT FINDINGS"
+      }
+    },
+    {
+      "n": 9,
+      "title": "Preservation",
+      "instructional": true,
+      "teach": "Protects evidence from alteration, loss, contamination, or unauthorized access.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Protects evidence from alteration, loss, contamination, or unauthorized access.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Protects evidence from alteration, loss, contamination, or unauthorized access."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Write blocker, Secure evidence storage"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects incident response, preparedness, investigation, evidence handling, or post-incident improvement.",
+        "example": "Write blocker",
+        "exam": "KEEP IT UNCHANGED",
+        "check_q": "What is the key exam clue for Preservation?",
+        "check_a": "KEEP IT UNCHANGED"
+      }
+    },
+    {
+      "n": 10,
+      "title": "E-discovery",
+      "instructional": true,
+      "teach": "Identifies, collects, processes, and produces electronically stored information for legal proceedings.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Identifies, collects, processes, and produces electronically stored information for legal proceedings.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Identifies, collects, processes, and produces electronically stored information for legal proceedings."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Email discovery, Document production"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects incident response, preparedness, investigation, evidence handling, or post-incident improvement.",
+        "example": "Email discovery",
+        "exam": "ELECTRONIC LEGAL DISCOVERY",
+        "check_q": "What is the key exam clue for E-discovery?",
+        "check_a": "ELECTRONIC LEGAL DISCOVERY"
+      }
+    }
+  ],
+  "slide_count": 10,
+  "instructional_count": 9,
+  "concepts": [
+    "Root Cause Analysis",
+    "Threat Hunting",
+    "Digital Forensics",
+    "Legal Hold",
+    "Chain of Custody",
+    "Acquisition",
+    "Reporting",
+    "Preservation",
+    "E-discovery"
+  ],
+  "source_filename": "21-03.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 4.8",
+      "title": "Root Cause Analysis, Threat Hunting, and Forensics",
+      "intro": "After or during an incident, responders may need to determine why it happened, proactively search for hidden threats, and collect defensible digital evidence."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Root Cause Analysis, Threat Hunting, and Forensics",
+        "prompt": "Identify where the scenario is in the incident-response lifecycle and whether it is asking about preparation, response, investigation, or evidence handling.",
+        "badge": "4.8",
+        "cards": [
+          {
+            "name": "Root Cause Analysis",
+            "definition": "Determines the underlying reason an incident occurred so the organization can prevent recurrence.",
+            "examples": [
+              "Unpatched server caused compromise",
+              "Misconfiguration exposed data"
+            ],
+            "memory": "WHY DID IT HAPPEN?"
+          },
+          {
+            "name": "Threat Hunting",
+            "definition": "Proactively searches for hidden threats or compromise that automated controls may not have detected.",
+            "examples": [
+              "Hunt for lateral movement",
+              "Search for persistence"
+            ],
+            "memory": "LOOK FOR WHAT ALERTS MISSED"
+          },
+          {
+            "name": "Digital Forensics",
+            "definition": "Collects, preserves, analyzes, and presents digital evidence related to an incident.",
+            "examples": [
+              "Disk image",
+              "Memory analysis",
+              "Timeline reconstruction"
+            ],
+            "memory": "EVIDENCE + ANALYSIS"
+          },
+          {
+            "name": "Legal Hold",
+            "definition": "Preserves potentially relevant data because of litigation, investigation, or legal requirements.",
+            "examples": [
+              "Preserve mailbox",
+              "Hold logs"
+            ],
+            "memory": "DO NOT DELETE"
+          },
+          {
+            "name": "Chain of Custody",
+            "definition": "Documents who collected, handled, transferred, stored, and accessed evidence.",
+            "examples": [
+              "Evidence log",
+              "Signed transfer record"
+            ],
+            "memory": "WHO TOUCHED THE EVIDENCE?"
+          },
+          {
+            "name": "Acquisition",
+            "definition": "Creates a forensic copy or collects data for analysis while preserving evidence integrity.",
+            "examples": [
+              "Forensic disk image",
+              "Memory capture"
+            ],
+            "memory": "COLLECT THE EVIDENCE"
+          },
+          {
+            "name": "Reporting",
+            "definition": "Documents forensic findings, methods, evidence, conclusions, and incident details.",
+            "examples": [
+              "Forensic report",
+              "Incident evidence summary"
+            ],
+            "memory": "DOCUMENT FINDINGS"
+          },
+          {
+            "name": "Preservation",
+            "definition": "Protects evidence from alteration, loss, contamination, or unauthorized access.",
+            "examples": [
+              "Write blocker",
+              "Secure evidence storage"
+            ],
+            "memory": "KEEP IT UNCHANGED"
+          },
+          {
+            "name": "E-discovery",
+            "definition": "Identifies, collects, processes, and produces electronically stored information for legal proceedings.",
+            "examples": [
+              "Email discovery",
+              "Document production"
+            ],
+            "memory": "ELECTRONIC LEGAL DISCOVERY"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Root Cause Analysis, Threat Hunting, and Forensics comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Root cause analysis",
+            "Find underlying cause",
+            "Why did it happen?"
+          ],
+          [
+            "Threat hunting",
+            "Proactively find hidden threats",
+            "No alert required"
+          ],
+          [
+            "Digital forensics",
+            "Analyze digital evidence",
+            "Evidence investigation"
+          ],
+          [
+            "Legal hold",
+            "Prevent deletion",
+            "Litigation/investigation"
+          ],
+          [
+            "Chain of custody",
+            "Track evidence handling",
+            "Who touched it?"
+          ],
+          [
+            "Acquisition",
+            "Collect forensic evidence",
+            "Image/capture"
+          ],
+          [
+            "Preservation",
+            "Keep evidence unchanged",
+            "Integrity"
+          ],
+          [
+            "Reporting",
+            "Document findings",
+            "Communicate evidence/results"
+          ],
+          [
+            "E-discovery",
+            "Produce electronic records for legal process",
+            "Legal data collection"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Root Cause Analysis, Threat Hunting, and Forensics exam shortcuts",
+        "items": [
+          [
+            "Question asks why incident happened → ROOT CAUSE ANALYSIS",
+            "Identify the underlying failure, not just the symptom.",
+            "Example: Compromise traced to an unpatched internet-facing server."
+          ],
+          [
+            "No alert, but analysts proactively search for compromise → THREAT HUNTING",
+            "Hunting looks for threats that may have bypassed automated detection.",
+            "Example: Analysts search for unusual lateral movement."
+          ],
+          [
+            "Need evidence suitable for investigation → DIGITAL FORENSICS",
+            "Use forensic collection, preservation, and analysis procedures.",
+            "Example: Create a forensic disk image."
+          ],
+          [
+            "Litigation requires data not be deleted → LEGAL HOLD",
+            "Suspend normal deletion or retention actions.",
+            "Example: Preserve relevant mailboxes and logs."
+          ],
+          [
+            "Need proof of who handled evidence → CHAIN OF CUSTODY",
+            "Document every transfer and custodian.",
+            "Example: Evidence log records each person who handled the drive."
+          ],
+          [
+            "Need to copy disk for forensic analysis → ACQUISITION",
+            "Collect data in a defensible manner while preserving integrity.",
+            "Example: Create a bit-for-bit image."
+          ],
+          [
+            "Need to keep evidence unchanged → PRESERVATION",
+            "Protect evidence from alteration or contamination.",
+            "Example: Store original media securely and analyze a copy."
+          ],
+          [
+            "Legal team needs electronic records produced → E-DISCOVERY",
+            "Collect and process electronically stored information for legal proceedings.",
+            "Example: Produce relevant email and file records."
+          ]
+        ],
+        "example": "Follow the incident-response order carefully, then distinguish response actions from forensic evidence-handling requirements."
+      }
+    ],
+    "questions": [
+      {
+        "q": "After an incident, the team determines that an unpatched internet-facing server was the underlying reason for compromise. Which activity is this?",
+        "choices": [
+          "Root cause analysis",
+          "Threat hunting",
+          "Acquisition",
+          "Preservation"
+        ],
+        "answer": 0,
+        "explanation": "Root cause analysis identifies the underlying reason an incident occurred."
+      },
+      {
+        "q": "Analysts proactively search for lateral movement even though no alert has fired. Which activity is this?",
+        "choices": [
+          "Threat hunting",
+          "Detection",
+          "Legal hold",
+          "Reporting"
+        ],
+        "answer": 0,
+        "explanation": "Threat hunting proactively searches for hidden compromise that automated controls may have missed."
+      },
+      {
+        "q": "A forensic examiner creates a bit-for-bit image of a suspect drive. Which forensic activity is this?",
+        "choices": [
+          "Acquisition",
+          "Reporting",
+          "Legal hold",
+          "Lessons learned"
+        ],
+        "answer": 0,
+        "explanation": "Acquisition collects forensic evidence, such as a bit-for-bit disk image."
+      },
+      {
+        "q": "A company must stop normal deletion of relevant emails because of pending litigation. Which requirement is this?",
+        "choices": [
+          "Legal hold",
+          "Chain of custody",
+          "Preservation only",
+          "Recovery"
+        ],
+        "answer": 0,
+        "explanation": "A legal hold requires potentially relevant information to be preserved."
+      },
+      {
+        "q": "Investigators document every person who handled a seized drive and each transfer between custodians. Which concept is this?",
+        "choices": [
+          "Chain of custody",
+          "Acquisition",
+          "E-discovery",
+          "Threat hunting"
+        ],
+        "answer": 0,
+        "explanation": "Chain of custody records who handled or transferred evidence."
+      },
+      {
+        "q": "Original evidence is stored securely and a write blocker is used so it cannot be altered. Which activity is this?",
+        "choices": [
+          "Preservation",
+          "Acquisition",
+          "Reporting",
+          "Analysis"
+        ],
+        "answer": 0,
+        "explanation": "Preservation protects evidence from alteration, contamination, or loss."
+      },
+      {
+        "q": "The legal team requests relevant emails and files for production in a lawsuit. Which process is this?",
+        "choices": [
+          "E-discovery",
+          "Threat hunting",
+          "Eradication",
+          "Attestation"
+        ],
+        "answer": 0,
+        "explanation": "E-discovery identifies, collects, processes, and produces electronic information for legal proceedings."
+      },
+      {
+        "q": "A forensic analyst documents methods, evidence, conclusions, and incident findings for stakeholders. Which activity is this?",
+        "choices": [
+          "Reporting",
+          "Preservation",
+          "Acquisition",
+          "Containment"
+        ],
+        "answer": 0,
+        "explanation": "Reporting documents and communicates forensic findings and evidence."
+      }
+    ]
+  }
+}

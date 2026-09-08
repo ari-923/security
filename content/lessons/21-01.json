@@ -1,0 +1,501 @@
+{
+  "id": "21.01",
+  "chapter": 21,
+  "sub": 1,
+  "title": "Incident Response Process",
+  "chapter_name": "Incident Response & Forensics",
+  "slides": [
+    {
+      "n": 1,
+      "title": "Incident Response Process",
+      "instructional": false,
+      "teach": "",
+      "points": [
+        "Incident response follows a structured lifecycle. Security+ expects you to know what happens at each stage and what the immediate objective is."
+      ],
+      "defs": [],
+      "raw": ""
+    },
+    {
+      "n": 2,
+      "title": "Preparation",
+      "instructional": true,
+      "teach": "Establishes plans, tools, contacts, procedures, and resources before an incident occurs.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Establishes plans, tools, contacts, procedures, and resources before an incident occurs.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Establishes plans, tools, contacts, procedures, and resources before an incident occurs."
+          },
+          {
+            "term": "Examples",
+            "explanation": "IR plan, Communication list, Forensic tools"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects incident response, preparedness, investigation, evidence handling, or post-incident improvement.",
+        "example": "IR plan",
+        "exam": "GET READY",
+        "check_q": "What is the key exam clue for Preparation?",
+        "check_a": "GET READY"
+      }
+    },
+    {
+      "n": 3,
+      "title": "Detection",
+      "instructional": true,
+      "teach": "Identifies signs that a security incident may be occurring.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Identifies signs that a security incident may be occurring.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Identifies signs that a security incident may be occurring."
+          },
+          {
+            "term": "Examples",
+            "explanation": "SIEM alert, EDR detection"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects incident response, preparedness, investigation, evidence handling, or post-incident improvement.",
+        "example": "SIEM alert",
+        "exam": "NOTICE IT",
+        "check_q": "What is the key exam clue for Detection?",
+        "check_a": "NOTICE IT"
+      }
+    },
+    {
+      "n": 4,
+      "title": "Analysis",
+      "instructional": true,
+      "teach": "Determines what happened, scope, severity, affected assets, and likely impact.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Determines what happened, scope, severity, affected assets, and likely impact.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Determines what happened, scope, severity, affected assets, and likely impact."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Review logs, Identify affected hosts"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects incident response, preparedness, investigation, evidence handling, or post-incident improvement.",
+        "example": "Review logs",
+        "exam": "UNDERSTAND IT",
+        "check_q": "What is the key exam clue for Analysis?",
+        "check_a": "UNDERSTAND IT"
+      }
+    },
+    {
+      "n": 5,
+      "title": "Containment",
+      "instructional": true,
+      "teach": "Limits spread or damage while preserving the ability to investigate.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Limits spread or damage while preserving the ability to investigate.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Limits spread or damage while preserving the ability to investigate."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Isolate host, Block malicious IP"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects incident response, preparedness, investigation, evidence handling, or post-incident improvement.",
+        "example": "Isolate host",
+        "exam": "STOP THE SPREAD",
+        "check_q": "What is the key exam clue for Containment?",
+        "check_a": "STOP THE SPREAD"
+      }
+    },
+    {
+      "n": 6,
+      "title": "Eradication",
+      "instructional": true,
+      "teach": "Removes the root cause, malware, unauthorized access, or vulnerability from the environment.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Removes the root cause, malware, unauthorized access, or vulnerability from the environment.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Removes the root cause, malware, unauthorized access, or vulnerability from the environment."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Remove malware, Delete persistence, Patch flaw"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects incident response, preparedness, investigation, evidence handling, or post-incident improvement.",
+        "example": "Remove malware",
+        "exam": "REMOVE THE CAUSE",
+        "check_q": "What is the key exam clue for Eradication?",
+        "check_a": "REMOVE THE CAUSE"
+      }
+    },
+    {
+      "n": 7,
+      "title": "Recovery",
+      "instructional": true,
+      "teach": "Restores systems and services to normal operation and monitors for recurrence.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Restores systems and services to normal operation and monitors for recurrence.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Restores systems and services to normal operation and monitors for recurrence."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Restore service, Reconnect clean host"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects incident response, preparedness, investigation, evidence handling, or post-incident improvement.",
+        "example": "Restore service",
+        "exam": "RETURN TO NORMAL",
+        "check_q": "What is the key exam clue for Recovery?",
+        "check_a": "RETURN TO NORMAL"
+      }
+    },
+    {
+      "n": 8,
+      "title": "Lessons Learned",
+      "instructional": true,
+      "teach": "Reviews the incident afterward to improve controls, procedures, and future response.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Reviews the incident afterward to improve controls, procedures, and future response.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Reviews the incident afterward to improve controls, procedures, and future response."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Post-incident review, Update playbook"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects incident response, preparedness, investigation, evidence handling, or post-incident improvement.",
+        "example": "Post-incident review",
+        "exam": "LEARN AND IMPROVE",
+        "check_q": "What is the key exam clue for Lessons Learned?",
+        "check_a": "LEARN AND IMPROVE"
+      }
+    }
+  ],
+  "slide_count": 8,
+  "instructional_count": 7,
+  "concepts": [
+    "Preparation",
+    "Detection",
+    "Analysis",
+    "Containment",
+    "Eradication",
+    "Recovery",
+    "Lessons Learned"
+  ],
+  "source_filename": "21-01.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 4.8",
+      "title": "Incident Response Process",
+      "intro": "Incident response follows a structured lifecycle. Security+ expects you to know what happens at each stage and what the immediate objective is."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Incident Response Process",
+        "prompt": "Identify where the scenario is in the incident-response lifecycle and whether it is asking about preparation, response, investigation, or evidence handling.",
+        "badge": "4.8",
+        "cards": [
+          {
+            "name": "Preparation",
+            "definition": "Establishes plans, tools, contacts, procedures, and resources before an incident occurs.",
+            "examples": [
+              "IR plan",
+              "Communication list",
+              "Forensic tools"
+            ],
+            "memory": "GET READY"
+          },
+          {
+            "name": "Detection",
+            "definition": "Identifies signs that a security incident may be occurring.",
+            "examples": [
+              "SIEM alert",
+              "EDR detection"
+            ],
+            "memory": "NOTICE IT"
+          },
+          {
+            "name": "Analysis",
+            "definition": "Determines what happened, scope, severity, affected assets, and likely impact.",
+            "examples": [
+              "Review logs",
+              "Identify affected hosts"
+            ],
+            "memory": "UNDERSTAND IT"
+          },
+          {
+            "name": "Containment",
+            "definition": "Limits spread or damage while preserving the ability to investigate.",
+            "examples": [
+              "Isolate host",
+              "Block malicious IP"
+            ],
+            "memory": "STOP THE SPREAD"
+          },
+          {
+            "name": "Eradication",
+            "definition": "Removes the root cause, malware, unauthorized access, or vulnerability from the environment.",
+            "examples": [
+              "Remove malware",
+              "Delete persistence",
+              "Patch flaw"
+            ],
+            "memory": "REMOVE THE CAUSE"
+          },
+          {
+            "name": "Recovery",
+            "definition": "Restores systems and services to normal operation and monitors for recurrence.",
+            "examples": [
+              "Restore service",
+              "Reconnect clean host"
+            ],
+            "memory": "RETURN TO NORMAL"
+          },
+          {
+            "name": "Lessons Learned",
+            "definition": "Reviews the incident afterward to improve controls, procedures, and future response.",
+            "examples": [
+              "Post-incident review",
+              "Update playbook"
+            ],
+            "memory": "LEARN AND IMPROVE"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Incident Response Process comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Preparation",
+            "Get ready before incident",
+            "Plans/tools/contacts"
+          ],
+          [
+            "Detection",
+            "Identify possible incident",
+            "Alert/event"
+          ],
+          [
+            "Analysis",
+            "Understand scope and impact",
+            "What happened?"
+          ],
+          [
+            "Containment",
+            "Limit spread/damage",
+            "Isolate/block"
+          ],
+          [
+            "Eradication",
+            "Remove root cause",
+            "Delete malware/patch"
+          ],
+          [
+            "Recovery",
+            "Restore normal operations",
+            "Return systems"
+          ],
+          [
+            "Lessons learned",
+            "Improve future response",
+            "Post-incident review"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Incident Response Process exam shortcuts",
+        "items": [
+          [
+            "Before anything happens → PREPARATION",
+            "Build the plan, tools, contacts, and procedures in advance.",
+            "Example: Maintain an incident-response playbook and call tree."
+          ],
+          [
+            "Alert first appears → DETECTION",
+            "Recognize that suspicious activity may be an incident.",
+            "Example: SIEM flags impossible travel."
+          ],
+          [
+            "Need scope, cause, and affected systems → ANALYSIS",
+            "Investigate before deciding the full response.",
+            "Example: Determine which hosts and accounts were affected."
+          ],
+          [
+            "Threat is spreading now → CONTAINMENT",
+            "Stop expansion while preserving evidence.",
+            "Example: Isolate an infected endpoint."
+          ],
+          [
+            "Malware/persistence must be removed → ERADICATION",
+            "Remove the underlying cause.",
+            "Example: Delete persistence and patch the exploited vulnerability."
+          ],
+          [
+            "Clean systems need to return to service → RECOVERY",
+            "Restore operations and monitor carefully.",
+            "Example: Reconnect a rebuilt server after validation."
+          ],
+          [
+            "Incident is over → LESSONS LEARNED",
+            "Review what worked and what should change.",
+            "Example: Update the response playbook after a postmortem."
+          ]
+        ],
+        "example": "Follow the incident-response order carefully, then distinguish response actions from forensic evidence-handling requirements."
+      }
+    ],
+    "questions": [
+      {
+        "q": "An organization creates an incident-response plan, contact list, and forensic toolkit before any incident occurs. Which phase is this?",
+        "choices": [
+          "Preparation",
+          "Detection",
+          "Containment",
+          "Recovery"
+        ],
+        "answer": 0,
+        "explanation": "Preparation occurs before an incident and establishes plans, tools, contacts, and procedures."
+      },
+      {
+        "q": "A SIEM generates an alert for suspicious authentication activity. Which phase is this?",
+        "choices": [
+          "Detection",
+          "Analysis",
+          "Eradication",
+          "Lessons learned"
+        ],
+        "answer": 0,
+        "explanation": "Detection identifies signs that an incident may be occurring."
+      },
+      {
+        "q": "Analysts review logs to determine which systems and accounts were affected. Which phase is this?",
+        "choices": [
+          "Analysis",
+          "Containment",
+          "Recovery",
+          "Preparation"
+        ],
+        "answer": 0,
+        "explanation": "Analysis determines scope, severity, affected assets, and impact."
+      },
+      {
+        "q": "An infected endpoint is disconnected from the network to stop malware from spreading. Which phase is this?",
+        "choices": [
+          "Containment",
+          "Eradication",
+          "Recovery",
+          "Detection"
+        ],
+        "answer": 0,
+        "explanation": "Containment limits spread and damage."
+      },
+      {
+        "q": "Responders remove malware persistence and patch the exploited vulnerability. Which phase is this?",
+        "choices": [
+          "Eradication",
+          "Containment",
+          "Detection",
+          "Lessons learned"
+        ],
+        "answer": 0,
+        "explanation": "Eradication removes the root cause and malicious artifacts."
+      },
+      {
+        "q": "A rebuilt server is returned to production and monitored for signs of recurrence. Which phase is this?",
+        "choices": [
+          "Recovery",
+          "Analysis",
+          "Preparation",
+          "Detection"
+        ],
+        "answer": 0,
+        "explanation": "Recovery restores normal operations and monitors for recurrence."
+      },
+      {
+        "q": "After the incident is closed, the team updates its playbook based on what went wrong. Which phase is this?",
+        "choices": [
+          "Lessons learned",
+          "Preparation",
+          "Containment",
+          "Acquisition"
+        ],
+        "answer": 0,
+        "explanation": "Lessons learned reviews the incident and improves future response."
+      }
+    ]
+  }
+}

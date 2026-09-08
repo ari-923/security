@@ -1,0 +1,251 @@
+{
+  "id": "21.02",
+  "chapter": 21,
+  "sub": 2,
+  "title": "Training, Testing, and Preparedness",
+  "chapter_name": "Incident Response & Forensics",
+  "slides": [
+    {
+      "n": 1,
+      "title": "Training, Testing, and Preparedness",
+      "instructional": false,
+      "teach": "",
+      "points": [
+        "Teams should practice incident response before a real crisis. Training and exercises reveal gaps in communication, responsibilities, and procedures."
+      ],
+      "defs": [],
+      "raw": ""
+    },
+    {
+      "n": 2,
+      "title": "Training",
+      "instructional": true,
+      "teach": "Teaches personnel their incident-response roles, tools, and responsibilities.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Teaches personnel their incident-response roles, tools, and responsibilities.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Teaches personnel their incident-response roles, tools, and responsibilities."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Analyst training, Executive communication training"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects incident response, preparedness, investigation, evidence handling, or post-incident improvement.",
+        "example": "Analyst training",
+        "exam": "TEACH THE TEAM",
+        "check_q": "What is the key exam clue for Training?",
+        "check_a": "TEACH THE TEAM"
+      }
+    },
+    {
+      "n": 3,
+      "title": "Tabletop Exercise",
+      "instructional": true,
+      "teach": "Discussion-based exercise where participants walk through a hypothetical incident and explain their actions.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Discussion-based exercise where participants walk through a hypothetical incident and explain their actions.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Discussion-based exercise where participants walk through a hypothetical incident and explain their actions."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Ransomware discussion, IR walkthrough"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects incident response, preparedness, investigation, evidence handling, or post-incident improvement.",
+        "example": "Ransomware discussion",
+        "exam": "TALK IT THROUGH",
+        "check_q": "What is the key exam clue for Tabletop Exercise?",
+        "check_a": "TALK IT THROUGH"
+      }
+    },
+    {
+      "n": 4,
+      "title": "Simulation",
+      "instructional": true,
+      "teach": "More realistic exercise that imitates incident conditions so teams practice actual response behavior.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "More realistic exercise that imitates incident conditions so teams practice actual response behavior.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "More realistic exercise that imitates incident conditions so teams practice actual response behavior."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Simulated breach, Mock outage"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects incident response, preparedness, investigation, evidence handling, or post-incident improvement.",
+        "example": "Simulated breach",
+        "exam": "PRACTICE THE EVENT",
+        "check_q": "What is the key exam clue for Simulation?",
+        "check_a": "PRACTICE THE EVENT"
+      }
+    }
+  ],
+  "slide_count": 4,
+  "instructional_count": 3,
+  "concepts": [
+    "Training",
+    "Tabletop Exercise",
+    "Simulation"
+  ],
+  "source_filename": "21-02.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 4.8",
+      "title": "Training, Testing, and Preparedness",
+      "intro": "Teams should practice incident response before a real crisis. Training and exercises reveal gaps in communication, responsibilities, and procedures."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Training, Testing, and Preparedness",
+        "prompt": "Identify where the scenario is in the incident-response lifecycle and whether it is asking about preparation, response, investigation, or evidence handling.",
+        "badge": "4.8",
+        "cards": [
+          {
+            "name": "Training",
+            "definition": "Teaches personnel their incident-response roles, tools, and responsibilities.",
+            "examples": [
+              "Analyst training",
+              "Executive communication training"
+            ],
+            "memory": "TEACH THE TEAM"
+          },
+          {
+            "name": "Tabletop Exercise",
+            "definition": "Discussion-based exercise where participants walk through a hypothetical incident and explain their actions.",
+            "examples": [
+              "Ransomware discussion",
+              "IR walkthrough"
+            ],
+            "memory": "TALK IT THROUGH"
+          },
+          {
+            "name": "Simulation",
+            "definition": "More realistic exercise that imitates incident conditions so teams practice actual response behavior.",
+            "examples": [
+              "Simulated breach",
+              "Mock outage"
+            ],
+            "memory": "PRACTICE THE EVENT"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Training, Testing, and Preparedness comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Training",
+            "Teach knowledge/skills",
+            "Prepare personnel"
+          ],
+          [
+            "Tabletop",
+            "Discussion-based exercise",
+            "Walk through decisions"
+          ],
+          [
+            "Simulation",
+            "Realistic practice",
+            "Act through scenario"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Training, Testing, and Preparedness exam shortcuts",
+        "items": [
+          [
+            "Need to teach responders their roles → TRAINING",
+            "Training builds knowledge before testing performance.",
+            "Example: Analysts learn escalation and evidence-handling procedures."
+          ],
+          [
+            "Want low-risk discussion exercise → TABLETOP",
+            "Participants talk through what they would do.",
+            "Example: Leadership discusses a ransomware response."
+          ],
+          [
+            "Want realistic practice under simulated conditions → SIMULATION",
+            "Teams perform response actions in a controlled scenario.",
+            "Example: Staff respond to a simulated intrusion."
+          ]
+        ],
+        "example": "Follow the incident-response order carefully, then distinguish response actions from forensic evidence-handling requirements."
+      }
+    ],
+    "questions": [
+      {
+        "q": "Analysts receive instruction on evidence handling, escalation, and communication procedures. Which activity is this?",
+        "choices": [
+          "Training",
+          "Tabletop exercise",
+          "Simulation",
+          "Recovery"
+        ],
+        "answer": 0,
+        "explanation": "Training teaches personnel the knowledge and skills needed for incident response."
+      },
+      {
+        "q": "Leadership sits in a conference room and discusses how they would respond to a ransomware attack. Which exercise is this?",
+        "choices": [
+          "Tabletop exercise",
+          "Simulation",
+          "Failover",
+          "Acquisition"
+        ],
+        "answer": 0,
+        "explanation": "A tabletop is a discussion-based walkthrough of a hypothetical scenario."
+      },
+      {
+        "q": "Staff respond to a controlled mock intrusion using their actual response tools and procedures. Which activity is this?",
+        "choices": [
+          "Simulation",
+          "Tabletop exercise",
+          "Training only",
+          "Reporting"
+        ],
+        "answer": 0,
+        "explanation": "A simulation imitates incident conditions so the team can practice response behavior."
+      }
+    ]
+  }
+}
