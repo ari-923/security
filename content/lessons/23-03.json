@@ -1,0 +1,373 @@
+{
+  "id": "23.03",
+  "chapter": 23,
+  "sub": 3,
+  "title": "Roles, Responsibilities, Monitoring, and Revision",
+  "chapter_name": "Security Governance",
+  "slides": [
+    {
+      "n": 1,
+      "title": "Roles, Responsibilities, Monitoring, and Revision",
+      "instructional": false,
+      "teach": "",
+      "points": [
+        "Effective governance requires clearly assigned accountability for systems and data, plus regular monitoring and revision so governance stays effective as risks and requirements change."
+      ],
+      "defs": [],
+      "raw": ""
+    },
+    {
+      "n": 2,
+      "title": "Owner",
+      "instructional": true,
+      "teach": "Person or business function accountable for a system or data asset and responsible for major decisions about its use and protection.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Person or business function accountable for a system or data asset and responsible for major decisions about its use and protection.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Person or business function accountable for a system or data asset and responsible for major decisions about its use and protection."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Data owner approves access, System owner accepts risk"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how security governance is defined, enforced, reviewed, and assigned across an organization.",
+        "example": "Data owner approves access",
+        "exam": "ACCOUNTABLE",
+        "check_q": "What is the key exam clue for Owner?",
+        "check_a": "ACCOUNTABLE"
+      }
+    },
+    {
+      "n": 3,
+      "title": "Controller",
+      "instructional": true,
+      "teach": "Entity that determines the purposes and means of processing data.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Entity that determines the purposes and means of processing data.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Entity that determines the purposes and means of processing data."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Organization decides why/how personal data is processed"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how security governance is defined, enforced, reviewed, and assigned across an organization.",
+        "example": "Organization decides why/how personal data is processed",
+        "exam": "DECIDES WHY + HOW",
+        "check_q": "What is the key exam clue for Controller?",
+        "check_a": "DECIDES WHY + HOW"
+      }
+    },
+    {
+      "n": 4,
+      "title": "Processor",
+      "instructional": true,
+      "teach": "Entity that processes data on behalf of a controller.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Entity that processes data on behalf of a controller.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Entity that processes data on behalf of a controller."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Cloud provider processes customer data"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how security governance is defined, enforced, reviewed, and assigned across an organization.",
+        "example": "Cloud provider processes customer data",
+        "exam": "PROCESSES FOR CONTROLLER",
+        "check_q": "What is the key exam clue for Processor?",
+        "check_a": "PROCESSES FOR CONTROLLER"
+      }
+    },
+    {
+      "n": 5,
+      "title": "Custodian / Steward",
+      "instructional": true,
+      "teach": "Person or team responsible for day-to-day handling, maintenance, protection, and quality of data or systems.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Person or team responsible for day-to-day handling, maintenance, protection, and quality of data or systems.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Person or team responsible for day-to-day handling, maintenance, protection, and quality of data or systems."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Database administrator, Data steward"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how security governance is defined, enforced, reviewed, and assigned across an organization.",
+        "example": "Database administrator",
+        "exam": "CARES FOR IT DAILY",
+        "check_q": "What is the key exam clue for Custodian / Steward?",
+        "check_a": "CARES FOR IT DAILY"
+      }
+    },
+    {
+      "n": 6,
+      "title": "Monitoring and Revision",
+      "instructional": true,
+      "teach": "Ongoing review of policies, standards, procedures, roles, and governance effectiveness, followed by updates when needed.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Ongoing review of policies, standards, procedures, roles, and governance effectiveness, followed by updates when needed.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Ongoing review of policies, standards, procedures, roles, and governance effectiveness, followed by updates when needed."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Annual policy review, Update after regulatory change"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how security governance is defined, enforced, reviewed, and assigned across an organization.",
+        "example": "Annual policy review",
+        "exam": "REVIEW + UPDATE",
+        "check_q": "What is the key exam clue for Monitoring and Revision?",
+        "check_a": "REVIEW + UPDATE"
+      }
+    }
+  ],
+  "slide_count": 6,
+  "instructional_count": 5,
+  "concepts": [
+    "Owner",
+    "Controller",
+    "Processor",
+    "Custodian / Steward",
+    "Monitoring and Revision"
+  ],
+  "source_filename": "23-03.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 5.1",
+      "title": "Roles, Responsibilities, Monitoring, and Revision",
+      "intro": "Effective governance requires clearly assigned accountability for systems and data, plus regular monitoring and revision so governance stays effective as risks and requirements change."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Roles, Responsibilities, Monitoring, and Revision",
+        "prompt": "Identify whether the scenario is asking about governance documents, external requirements, governance structure, or accountability for systems and data.",
+        "badge": "5.1",
+        "cards": [
+          {
+            "name": "Owner",
+            "definition": "Person or business function accountable for a system or data asset and responsible for major decisions about its use and protection.",
+            "examples": [
+              "Data owner approves access",
+              "System owner accepts risk"
+            ],
+            "memory": "ACCOUNTABLE"
+          },
+          {
+            "name": "Controller",
+            "definition": "Entity that determines the purposes and means of processing data.",
+            "examples": [
+              "Organization decides why/how personal data is processed"
+            ],
+            "memory": "DECIDES WHY + HOW"
+          },
+          {
+            "name": "Processor",
+            "definition": "Entity that processes data on behalf of a controller.",
+            "examples": [
+              "Cloud provider processes customer data"
+            ],
+            "memory": "PROCESSES FOR CONTROLLER"
+          },
+          {
+            "name": "Custodian / Steward",
+            "definition": "Person or team responsible for day-to-day handling, maintenance, protection, and quality of data or systems.",
+            "examples": [
+              "Database administrator",
+              "Data steward"
+            ],
+            "memory": "CARES FOR IT DAILY"
+          },
+          {
+            "name": "Monitoring and Revision",
+            "definition": "Ongoing review of policies, standards, procedures, roles, and governance effectiveness, followed by updates when needed.",
+            "examples": [
+              "Annual policy review",
+              "Update after regulatory change"
+            ],
+            "memory": "REVIEW + UPDATE"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Roles, Responsibilities, Monitoring, and Revision comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Owner",
+            "Accountable for asset/data",
+            "Approves/risk decisions"
+          ],
+          [
+            "Controller",
+            "Determines why/how data is processed",
+            "Purpose + means"
+          ],
+          [
+            "Processor",
+            "Processes for controller",
+            "Acts on behalf"
+          ],
+          [
+            "Custodian/steward",
+            "Day-to-day handling/protection",
+            "Operational care"
+          ],
+          [
+            "Monitoring/revision",
+            "Keep governance current",
+            "Review and update"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Roles, Responsibilities, Monitoring, and Revision exam shortcuts",
+        "items": [
+          [
+            "Who is ultimately accountable? → OWNER",
+            "Owners make or approve major decisions about the asset or data.",
+            "Example: The data owner approves who may access customer records."
+          ],
+          [
+            "Who decides why and how personal data is processed? → CONTROLLER",
+            "The controller determines purpose and means.",
+            "Example: A company decides why it collects customer data."
+          ],
+          [
+            "Who processes data for another organization? → PROCESSOR",
+            "Processors act on behalf of controllers.",
+            "Example: A cloud service processes customer records for the company."
+          ],
+          [
+            "Who handles and protects data day to day? → CUSTODIAN / STEWARD",
+            "Custodians and stewards manage operational care.",
+            "Example: A DBA maintains database permissions and backups."
+          ],
+          [
+            "Policy is outdated after a new law → MONITORING + REVISION",
+            "Governance documents must be reviewed and updated.",
+            "Example: Privacy policy is revised after a regulatory change."
+          ]
+        ],
+        "example": "First decide whether the scenario is about policy direction, a technical requirement, a step-by-step process, external obligations, or ownership/accountability."
+      }
+    ],
+    "questions": [
+      {
+        "q": "Who is ultimately accountable for a data asset and approves major access or risk decisions?",
+        "choices": [
+          "Owner",
+          "Processor",
+          "Custodian",
+          "Committee"
+        ],
+        "answer": 0,
+        "explanation": "The owner is accountable for the asset or data and major decisions."
+      },
+      {
+        "q": "An organization decides why customer data is collected and how it will be used. Which role is this?",
+        "choices": [
+          "Controller",
+          "Processor",
+          "Custodian",
+          "Owner only"
+        ],
+        "answer": 0,
+        "explanation": "The controller determines the purposes and means of processing personal data."
+      },
+      {
+        "q": "A cloud provider processes customer data on behalf of another company. Which role is the provider acting as?",
+        "choices": [
+          "Processor",
+          "Controller",
+          "Owner",
+          "Custodian only"
+        ],
+        "answer": 0,
+        "explanation": "A processor handles data on behalf of the controller."
+      },
+      {
+        "q": "A database administrator performs day-to-day maintenance, backup, and protection of a data set. Which role best fits?",
+        "choices": [
+          "Custodian/steward",
+          "Owner",
+          "Controller",
+          "Board"
+        ],
+        "answer": 0,
+        "explanation": "Custodians and stewards handle day-to-day operational care of data or systems."
+      },
+      {
+        "q": "A privacy policy is updated after a new law takes effect. Which governance activity is this?",
+        "choices": [
+          "Monitoring and revision",
+          "Provisioning",
+          "Attestation only",
+          "Incident response"
+        ],
+        "answer": 0,
+        "explanation": "Governance documents should be reviewed and revised as requirements change."
+      }
+    ]
+  }
+}

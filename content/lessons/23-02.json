@@ -1,0 +1,666 @@
+{
+  "id": "23.02",
+  "chapter": 23,
+  "sub": 2,
+  "title": "External Considerations and Governance Structures",
+  "chapter_name": "Security Governance",
+  "slides": [
+    {
+      "n": 1,
+      "title": "External Considerations and Governance Structures",
+      "instructional": false,
+      "teach": "",
+      "points": [
+        "Governance is shaped by external requirements and by how authority is organized inside the organization."
+      ],
+      "defs": [],
+      "raw": ""
+    },
+    {
+      "n": 2,
+      "title": "Regulatory Considerations",
+      "instructional": true,
+      "teach": "Requirements imposed by regulatory bodies or sector-specific rules.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Requirements imposed by regulatory bodies or sector-specific rules.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Requirements imposed by regulatory bodies or sector-specific rules."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Financial regulation, Healthcare regulation"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how security governance is defined, enforced, reviewed, and assigned across an organization.",
+        "example": "Financial regulation",
+        "exam": "REGULATOR REQUIREMENT",
+        "check_q": "What is the key exam clue for Regulatory Considerations?",
+        "check_a": "REGULATOR REQUIREMENT"
+      }
+    },
+    {
+      "n": 3,
+      "title": "Legal Considerations",
+      "instructional": true,
+      "teach": "Requirements created by laws, contracts, litigation obligations, or legal duties.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Requirements created by laws, contracts, litigation obligations, or legal duties.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Requirements created by laws, contracts, litigation obligations, or legal duties."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Privacy law, Contractual obligation"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how security governance is defined, enforced, reviewed, and assigned across an organization.",
+        "example": "Privacy law",
+        "exam": "LAW / LEGAL DUTY",
+        "check_q": "What is the key exam clue for Legal Considerations?",
+        "check_a": "LAW / LEGAL DUTY"
+      }
+    },
+    {
+      "n": 4,
+      "title": "Industry Considerations",
+      "instructional": true,
+      "teach": "Security expectations or practices arising from industry norms, frameworks, or sector expectations.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Security expectations or practices arising from industry norms, frameworks, or sector expectations.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Security expectations or practices arising from industry norms, frameworks, or sector expectations."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Industry framework, Sector-specific standard"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how security governance is defined, enforced, reviewed, and assigned across an organization.",
+        "example": "Industry framework",
+        "exam": "INDUSTRY EXPECTATION",
+        "check_q": "What is the key exam clue for Industry Considerations?",
+        "check_a": "INDUSTRY EXPECTATION"
+      }
+    },
+    {
+      "n": 5,
+      "title": "Local / Regional",
+      "instructional": true,
+      "teach": "Requirements that apply within a city, state, province, region, or subnational jurisdiction.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Requirements that apply within a city, state, province, region, or subnational jurisdiction.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Requirements that apply within a city, state, province, region, or subnational jurisdiction."
+          },
+          {
+            "term": "Examples",
+            "explanation": "State privacy law, Regional requirement"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how security governance is defined, enforced, reviewed, and assigned across an organization.",
+        "example": "State privacy law",
+        "exam": "LOCAL AREA RULE",
+        "check_q": "What is the key exam clue for Local / Regional?",
+        "check_a": "LOCAL AREA RULE"
+      }
+    },
+    {
+      "n": 6,
+      "title": "National",
+      "instructional": true,
+      "teach": "Requirements that apply at the country level.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Requirements that apply at the country level.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Requirements that apply at the country level."
+          },
+          {
+            "term": "Examples",
+            "explanation": "National cybersecurity law, Federal regulation"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how security governance is defined, enforced, reviewed, and assigned across an organization.",
+        "example": "National cybersecurity law",
+        "exam": "COUNTRY-LEVEL RULE",
+        "check_q": "What is the key exam clue for National?",
+        "check_a": "COUNTRY-LEVEL RULE"
+      }
+    },
+    {
+      "n": 7,
+      "title": "Global",
+      "instructional": true,
+      "teach": "Requirements or considerations that span multiple countries or international operations.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Requirements or considerations that span multiple countries or international operations.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Requirements or considerations that span multiple countries or international operations."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Multinational privacy obligations, Global security policy"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how security governance is defined, enforced, reviewed, and assigned across an organization.",
+        "example": "Multinational privacy obligations",
+        "exam": "MULTI-COUNTRY",
+        "check_q": "What is the key exam clue for Global?",
+        "check_a": "MULTI-COUNTRY"
+      }
+    },
+    {
+      "n": 8,
+      "title": "Boards",
+      "instructional": true,
+      "teach": "Senior governance bodies that provide oversight, direction, and accountability.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Senior governance bodies that provide oversight, direction, and accountability.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Senior governance bodies that provide oversight, direction, and accountability."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Board risk committee, Board cybersecurity oversight"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how security governance is defined, enforced, reviewed, and assigned across an organization.",
+        "example": "Board risk committee",
+        "exam": "TOP-LEVEL OVERSIGHT",
+        "check_q": "What is the key exam clue for Boards?",
+        "check_a": "TOP-LEVEL OVERSIGHT"
+      }
+    },
+    {
+      "n": 9,
+      "title": "Committees",
+      "instructional": true,
+      "teach": "Groups formed to coordinate, review, or make decisions about a specific governance area.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Groups formed to coordinate, review, or make decisions about a specific governance area.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Groups formed to coordinate, review, or make decisions about a specific governance area."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Security steering committee, Risk committee"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how security governance is defined, enforced, reviewed, and assigned across an organization.",
+        "example": "Security steering committee",
+        "exam": "GROUP OVERSIGHT",
+        "check_q": "What is the key exam clue for Committees?",
+        "check_a": "GROUP OVERSIGHT"
+      }
+    },
+    {
+      "n": 10,
+      "title": "Government Entities",
+      "instructional": true,
+      "teach": "Public-sector bodies that may impose requirements, issue guidance, regulate activity, or enforce law.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Public-sector bodies that may impose requirements, issue guidance, regulate activity, or enforce law.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Public-sector bodies that may impose requirements, issue guidance, regulate activity, or enforce law."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Regulator, Government cybersecurity agency"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how security governance is defined, enforced, reviewed, and assigned across an organization.",
+        "example": "Regulator",
+        "exam": "PUBLIC AUTHORITY",
+        "check_q": "What is the key exam clue for Government Entities?",
+        "check_a": "PUBLIC AUTHORITY"
+      }
+    },
+    {
+      "n": 11,
+      "title": "Centralized Governance",
+      "instructional": true,
+      "teach": "Decision-making and control are concentrated in a central authority or team.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Decision-making and control are concentrated in a central authority or team.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Decision-making and control are concentrated in a central authority or team."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Enterprise security office sets policy"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how security governance is defined, enforced, reviewed, and assigned across an organization.",
+        "example": "Enterprise security office sets policy",
+        "exam": "ONE CENTRAL AUTHORITY",
+        "check_q": "What is the key exam clue for Centralized Governance?",
+        "check_a": "ONE CENTRAL AUTHORITY"
+      }
+    },
+    {
+      "n": 12,
+      "title": "Decentralized Governance",
+      "instructional": true,
+      "teach": "Decision-making authority is distributed among business units, regions, or teams.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Decision-making authority is distributed among business units, regions, or teams.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Decision-making authority is distributed among business units, regions, or teams."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Regional teams manage local controls"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how security governance is defined, enforced, reviewed, and assigned across an organization.",
+        "example": "Regional teams manage local controls",
+        "exam": "DISTRIBUTED AUTHORITY",
+        "check_q": "What is the key exam clue for Decentralized Governance?",
+        "check_a": "DISTRIBUTED AUTHORITY"
+      }
+    }
+  ],
+  "slide_count": 12,
+  "instructional_count": 11,
+  "concepts": [
+    "Regulatory Considerations",
+    "Legal Considerations",
+    "Industry Considerations",
+    "Local / Regional",
+    "National",
+    "Global",
+    "Boards",
+    "Committees",
+    "Government Entities",
+    "Centralized Governance",
+    "Decentralized Governance"
+  ],
+  "source_filename": "23-02.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 5.1",
+      "title": "External Considerations and Governance Structures",
+      "intro": "Governance is shaped by external requirements and by how authority is organized inside the organization."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "External Considerations and Governance Structures",
+        "prompt": "Identify whether the scenario is asking about governance documents, external requirements, governance structure, or accountability for systems and data.",
+        "badge": "5.1",
+        "cards": [
+          {
+            "name": "Regulatory Considerations",
+            "definition": "Requirements imposed by regulatory bodies or sector-specific rules.",
+            "examples": [
+              "Financial regulation",
+              "Healthcare regulation"
+            ],
+            "memory": "REGULATOR REQUIREMENT"
+          },
+          {
+            "name": "Legal Considerations",
+            "definition": "Requirements created by laws, contracts, litigation obligations, or legal duties.",
+            "examples": [
+              "Privacy law",
+              "Contractual obligation"
+            ],
+            "memory": "LAW / LEGAL DUTY"
+          },
+          {
+            "name": "Industry Considerations",
+            "definition": "Security expectations or practices arising from industry norms, frameworks, or sector expectations.",
+            "examples": [
+              "Industry framework",
+              "Sector-specific standard"
+            ],
+            "memory": "INDUSTRY EXPECTATION"
+          },
+          {
+            "name": "Local / Regional",
+            "definition": "Requirements that apply within a city, state, province, region, or subnational jurisdiction.",
+            "examples": [
+              "State privacy law",
+              "Regional requirement"
+            ],
+            "memory": "LOCAL AREA RULE"
+          },
+          {
+            "name": "National",
+            "definition": "Requirements that apply at the country level.",
+            "examples": [
+              "National cybersecurity law",
+              "Federal regulation"
+            ],
+            "memory": "COUNTRY-LEVEL RULE"
+          },
+          {
+            "name": "Global",
+            "definition": "Requirements or considerations that span multiple countries or international operations.",
+            "examples": [
+              "Multinational privacy obligations",
+              "Global security policy"
+            ],
+            "memory": "MULTI-COUNTRY"
+          },
+          {
+            "name": "Boards",
+            "definition": "Senior governance bodies that provide oversight, direction, and accountability.",
+            "examples": [
+              "Board risk committee",
+              "Board cybersecurity oversight"
+            ],
+            "memory": "TOP-LEVEL OVERSIGHT"
+          },
+          {
+            "name": "Committees",
+            "definition": "Groups formed to coordinate, review, or make decisions about a specific governance area.",
+            "examples": [
+              "Security steering committee",
+              "Risk committee"
+            ],
+            "memory": "GROUP OVERSIGHT"
+          },
+          {
+            "name": "Government Entities",
+            "definition": "Public-sector bodies that may impose requirements, issue guidance, regulate activity, or enforce law.",
+            "examples": [
+              "Regulator",
+              "Government cybersecurity agency"
+            ],
+            "memory": "PUBLIC AUTHORITY"
+          },
+          {
+            "name": "Centralized Governance",
+            "definition": "Decision-making and control are concentrated in a central authority or team.",
+            "examples": [
+              "Enterprise security office sets policy"
+            ],
+            "memory": "ONE CENTRAL AUTHORITY"
+          },
+          {
+            "name": "Decentralized Governance",
+            "definition": "Decision-making authority is distributed among business units, regions, or teams.",
+            "examples": [
+              "Regional teams manage local controls"
+            ],
+            "memory": "DISTRIBUTED AUTHORITY"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "External Considerations and Governance Structures comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Regulatory",
+            "Regulator-driven",
+            "Industry/sector rule"
+          ],
+          [
+            "Legal",
+            "Law/contract/legal duty",
+            "Mandatory legal obligation"
+          ],
+          [
+            "Industry",
+            "Sector expectation/framework",
+            "Industry norm"
+          ],
+          [
+            "Local/regional",
+            "Subnational jurisdiction",
+            "State/province/region"
+          ],
+          [
+            "National",
+            "Country-level requirement",
+            "Federal/national"
+          ],
+          [
+            "Global",
+            "Multiple jurisdictions",
+            "International operations"
+          ],
+          [
+            "Board",
+            "Strategic oversight",
+            "Senior governance"
+          ],
+          [
+            "Committee",
+            "Coordinated governance group",
+            "Cross-functional decisions"
+          ],
+          [
+            "Centralized",
+            "One authority",
+            "Consistency"
+          ],
+          [
+            "Decentralized",
+            "Distributed authority",
+            "Local autonomy"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "External Considerations and Governance Structures exam shortcuts",
+        "items": [
+          [
+            "Requirement comes from a regulator → REGULATORY",
+            "The source is a regulatory authority or sector rule.",
+            "Example: A financial regulator requires specific controls."
+          ],
+          [
+            "Requirement comes from law → LEGAL",
+            "Legal obligations can come from statutes, contracts, or litigation.",
+            "Example: Privacy law requires specific handling of personal data."
+          ],
+          [
+            "Head office sets one security policy for all units → CENTRALIZED",
+            "Authority is concentrated in one central function.",
+            "Example: Corporate security approves all standards."
+          ],
+          [
+            "Regional units make their own security decisions → DECENTRALIZED",
+            "Authority is distributed closer to local operations.",
+            "Example: Each region adapts controls to local requirements."
+          ],
+          [
+            "Board reviews cybersecurity risk → BOARD GOVERNANCE",
+            "Boards provide strategic oversight and accountability.",
+            "Example: Board risk committee reviews major cyber risks."
+          ]
+        ],
+        "example": "First decide whether the scenario is about policy direction, a technical requirement, a step-by-step process, external obligations, or ownership/accountability."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A financial institution changes controls because its sector regulator issued a new requirement. Which external consideration is this?",
+        "choices": [
+          "Regulatory",
+          "Legal only",
+          "Industry only",
+          "Global"
+        ],
+        "answer": 0,
+        "explanation": "Regulatory considerations come from regulatory authorities or sector rules."
+      },
+      {
+        "q": "A company must change its privacy practices because a new law takes effect. Which consideration is most direct?",
+        "choices": [
+          "Legal",
+          "Industry",
+          "Committee",
+          "Centralized"
+        ],
+        "answer": 0,
+        "explanation": "Legal considerations arise from laws, contracts, or other legal obligations."
+      },
+      {
+        "q": "A security framework is adopted because it is widely expected in the company's industry, even though it is not required by law. Which consideration is this?",
+        "choices": [
+          "Industry",
+          "Regulatory",
+          "Legal",
+          "Government entity"
+        ],
+        "answer": 0,
+        "explanation": "Industry considerations arise from sector norms and expectations."
+      },
+      {
+        "q": "Corporate security sets one policy that all business units must follow. Which governance model is this?",
+        "choices": [
+          "Centralized",
+          "Decentralized",
+          "Committee-based only",
+          "Global"
+        ],
+        "answer": 0,
+        "explanation": "Centralized governance concentrates authority in a central team."
+      },
+      {
+        "q": "Each regional business unit is allowed to make its own security-control decisions. Which governance model is this?",
+        "choices": [
+          "Decentralized",
+          "Centralized",
+          "Board",
+          "Regulatory"
+        ],
+        "answer": 0,
+        "explanation": "Decentralized governance distributes decision authority."
+      },
+      {
+        "q": "A board risk committee reviews major cybersecurity risks and holds executives accountable. What governance structure is this?",
+        "choices": [
+          "Board",
+          "Processor",
+          "Custodian",
+          "Procedure"
+        ],
+        "answer": 0,
+        "explanation": "Boards provide strategic oversight and accountability."
+      },
+      {
+        "q": "A cross-functional security steering group reviews policy changes and risk issues. What type of governance structure is this?",
+        "choices": [
+          "Committee",
+          "Board only",
+          "Processor",
+          "Standard"
+        ],
+        "answer": 0,
+        "explanation": "Committees coordinate and make decisions for a specific governance area."
+      }
+    ]
+  }
+}

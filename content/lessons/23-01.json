@@ -1,0 +1,942 @@
+{
+  "id": "23.01",
+  "chapter": 23,
+  "sub": 1,
+  "title": "Guidelines, Policies, Standards, and Procedures",
+  "chapter_name": "Security Governance",
+  "slides": [
+    {
+      "n": 1,
+      "title": "Guidelines, Policies, Standards, and Procedures",
+      "instructional": false,
+      "teach": "",
+      "points": [
+        "Security governance defines how an organization directs and controls security. The exam often tests the difference between high-level guidance, mandatory rules, technical requirements, and step-by-step instructions."
+      ],
+      "defs": [],
+      "raw": ""
+    },
+    {
+      "n": 2,
+      "title": "Guidelines",
+      "instructional": true,
+      "teach": "Recommended practices that provide flexible guidance rather than mandatory requirements.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Recommended practices that provide flexible guidance rather than mandatory requirements.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Recommended practices that provide flexible guidance rather than mandatory requirements."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Secure coding guidance, Recommended remote-work practices"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how security governance is defined, enforced, reviewed, and assigned across an organization.",
+        "example": "Secure coding guidance",
+        "exam": "RECOMMENDED",
+        "check_q": "What is the key exam clue for Guidelines?",
+        "check_a": "RECOMMENDED"
+      }
+    },
+    {
+      "n": 3,
+      "title": "Policy",
+      "instructional": true,
+      "teach": "High-level mandatory statement that defines management intent and organizational requirements.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "High-level mandatory statement that defines management intent and organizational requirements.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "High-level mandatory statement that defines management intent and organizational requirements."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Acceptable use policy, Information security policy"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how security governance is defined, enforced, reviewed, and assigned across an organization.",
+        "example": "Acceptable use policy",
+        "exam": "MUST FOLLOW",
+        "check_q": "What is the key exam clue for Policy?",
+        "check_a": "MUST FOLLOW"
+      }
+    },
+    {
+      "n": 4,
+      "title": "Acceptable Use Policy (AUP)",
+      "instructional": true,
+      "teach": "Defines permitted and prohibited use of organizational systems, networks, and resources.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Defines permitted and prohibited use of organizational systems, networks, and resources.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Defines permitted and prohibited use of organizational systems, networks, and resources."
+          },
+          {
+            "term": "Examples",
+            "explanation": "No unauthorized software, No personal misuse"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how security governance is defined, enforced, reviewed, and assigned across an organization.",
+        "example": "No unauthorized software",
+        "exam": "HOW USERS MAY USE SYSTEMS",
+        "check_q": "What is the key exam clue for Acceptable Use Policy (AUP)?",
+        "check_a": "HOW USERS MAY USE SYSTEMS"
+      }
+    },
+    {
+      "n": 5,
+      "title": "Information Security Policy",
+      "instructional": true,
+      "teach": "Defines the organization's overall expectations and requirements for protecting information and systems.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Defines the organization's overall expectations and requirements for protecting information and systems.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Defines the organization's overall expectations and requirements for protecting information and systems."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Security responsibilities, Access requirements"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how security governance is defined, enforced, reviewed, and assigned across an organization.",
+        "example": "Security responsibilities",
+        "exam": "OVERALL SECURITY RULES",
+        "check_q": "What is the key exam clue for Information Security Policy?",
+        "check_a": "OVERALL SECURITY RULES"
+      }
+    },
+    {
+      "n": 6,
+      "title": "Business Continuity Policy",
+      "instructional": true,
+      "teach": "Defines requirements for maintaining critical business operations during disruption.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Defines requirements for maintaining critical business operations during disruption.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Defines requirements for maintaining critical business operations during disruption."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Alternate operations, Critical service continuity"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how security governance is defined, enforced, reviewed, and assigned across an organization.",
+        "example": "Alternate operations",
+        "exam": "KEEP BUSINESS RUNNING",
+        "check_q": "What is the key exam clue for Business Continuity Policy?",
+        "check_a": "KEEP BUSINESS RUNNING"
+      }
+    },
+    {
+      "n": 7,
+      "title": "Disaster Recovery Policy",
+      "instructional": true,
+      "teach": "Defines requirements for restoring IT systems, infrastructure, and data after a disruptive event.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Defines requirements for restoring IT systems, infrastructure, and data after a disruptive event.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Defines requirements for restoring IT systems, infrastructure, and data after a disruptive event."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Restore servers, Recover data"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how security governance is defined, enforced, reviewed, and assigned across an organization.",
+        "example": "Restore servers",
+        "exam": "RESTORE TECHNOLOGY",
+        "check_q": "What is the key exam clue for Disaster Recovery Policy?",
+        "check_a": "RESTORE TECHNOLOGY"
+      }
+    },
+    {
+      "n": 8,
+      "title": "Incident Response Policy",
+      "instructional": true,
+      "teach": "Defines how the organization prepares for, reports, handles, and responds to security incidents.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Defines how the organization prepares for, reports, handles, and responds to security incidents.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Defines how the organization prepares for, reports, handles, and responds to security incidents."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Incident reporting, Response responsibilities"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how security governance is defined, enforced, reviewed, and assigned across an organization.",
+        "example": "Incident reporting",
+        "exam": "HANDLE INCIDENTS",
+        "check_q": "What is the key exam clue for Incident Response Policy?",
+        "check_a": "HANDLE INCIDENTS"
+      }
+    },
+    {
+      "n": 9,
+      "title": "SDLC Policy",
+      "instructional": true,
+      "teach": "Defines security expectations throughout the software development lifecycle.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Defines security expectations throughout the software development lifecycle.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Defines security expectations throughout the software development lifecycle."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Security testing, Code review requirements"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how security governance is defined, enforced, reviewed, and assigned across an organization.",
+        "example": "Security testing",
+        "exam": "SECURE SOFTWARE LIFECYCLE",
+        "check_q": "What is the key exam clue for SDLC Policy?",
+        "check_a": "SECURE SOFTWARE LIFECYCLE"
+      }
+    },
+    {
+      "n": 10,
+      "title": "Change Management Policy",
+      "instructional": true,
+      "teach": "Defines rules and expectations for approving, documenting, testing, and implementing changes.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Defines rules and expectations for approving, documenting, testing, and implementing changes.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Defines rules and expectations for approving, documenting, testing, and implementing changes."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Change approval, Rollback requirement"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how security governance is defined, enforced, reviewed, and assigned across an organization.",
+        "example": "Change approval",
+        "exam": "CONTROL CHANGES",
+        "check_q": "What is the key exam clue for Change Management Policy?",
+        "check_a": "CONTROL CHANGES"
+      }
+    },
+    {
+      "n": 11,
+      "title": "Standards",
+      "instructional": true,
+      "teach": "Mandatory detailed requirements that support policies and define specific technical or operational expectations.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Mandatory detailed requirements that support policies and define specific technical or operational expectations.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Mandatory detailed requirements that support policies and define specific technical or operational expectations."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Password standard, Encryption standard"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how security governance is defined, enforced, reviewed, and assigned across an organization.",
+        "example": "Password standard",
+        "exam": "SPECIFIC REQUIREMENT",
+        "check_q": "What is the key exam clue for Standards?",
+        "check_a": "SPECIFIC REQUIREMENT"
+      }
+    },
+    {
+      "n": 12,
+      "title": "Password Standard",
+      "instructional": true,
+      "teach": "Defines mandatory password or authentication requirements.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Defines mandatory password or authentication requirements.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Defines mandatory password or authentication requirements."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Minimum length, Password manager requirement"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how security governance is defined, enforced, reviewed, and assigned across an organization.",
+        "example": "Minimum length",
+        "exam": "PASSWORD REQUIREMENTS",
+        "check_q": "What is the key exam clue for Password Standard?",
+        "check_a": "PASSWORD REQUIREMENTS"
+      }
+    },
+    {
+      "n": 13,
+      "title": "Access Control Standard",
+      "instructional": true,
+      "teach": "Defines mandatory requirements for granting, reviewing, and restricting access.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Defines mandatory requirements for granting, reviewing, and restricting access.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Defines mandatory requirements for granting, reviewing, and restricting access."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Least privilege, MFA requirement"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how security governance is defined, enforced, reviewed, and assigned across an organization.",
+        "example": "Least privilege",
+        "exam": "ACCESS REQUIREMENTS",
+        "check_q": "What is the key exam clue for Access Control Standard?",
+        "check_a": "ACCESS REQUIREMENTS"
+      }
+    },
+    {
+      "n": 14,
+      "title": "Physical Security Standard",
+      "instructional": true,
+      "teach": "Defines mandatory physical protection requirements.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Defines mandatory physical protection requirements.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Defines mandatory physical protection requirements."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Badge access, Locked server rooms"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how security governance is defined, enforced, reviewed, and assigned across an organization.",
+        "example": "Badge access",
+        "exam": "PHYSICAL REQUIREMENTS",
+        "check_q": "What is the key exam clue for Physical Security Standard?",
+        "check_a": "PHYSICAL REQUIREMENTS"
+      }
+    },
+    {
+      "n": 15,
+      "title": "Encryption Standard",
+      "instructional": true,
+      "teach": "Defines approved encryption methods, algorithms, key lengths, and use cases.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Defines approved encryption methods, algorithms, key lengths, and use cases.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Defines approved encryption methods, algorithms, key lengths, and use cases."
+          },
+          {
+            "term": "Examples",
+            "explanation": "AES requirement, TLS version"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how security governance is defined, enforced, reviewed, and assigned across an organization.",
+        "example": "AES requirement",
+        "exam": "CRYPTO REQUIREMENTS",
+        "check_q": "What is the key exam clue for Encryption Standard?",
+        "check_a": "CRYPTO REQUIREMENTS"
+      }
+    },
+    {
+      "n": 16,
+      "title": "Procedure",
+      "instructional": true,
+      "teach": "Step-by-step instructions for carrying out a task or implementing policy.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Step-by-step instructions for carrying out a task or implementing policy.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Step-by-step instructions for carrying out a task or implementing policy."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Offboarding checklist, Incident escalation steps"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how security governance is defined, enforced, reviewed, and assigned across an organization.",
+        "example": "Offboarding checklist",
+        "exam": "HOW TO DO IT",
+        "check_q": "What is the key exam clue for Procedure?",
+        "check_a": "HOW TO DO IT"
+      }
+    },
+    {
+      "n": 17,
+      "title": "Change Management Procedure",
+      "instructional": true,
+      "teach": "Detailed steps for requesting, approving, testing, implementing, and documenting a change.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Detailed steps for requesting, approving, testing, implementing, and documenting a change.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Detailed steps for requesting, approving, testing, implementing, and documenting a change."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Submit RFC, Test change, Approve rollback"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how security governance is defined, enforced, reviewed, and assigned across an organization.",
+        "example": "Submit RFC",
+        "exam": "CHANGE STEPS",
+        "check_q": "What is the key exam clue for Change Management Procedure?",
+        "check_a": "CHANGE STEPS"
+      }
+    },
+    {
+      "n": 18,
+      "title": "Onboarding / Offboarding Procedure",
+      "instructional": true,
+      "teach": "Steps for creating or removing accounts, access, equipment, and responsibilities as personnel join or leave.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Steps for creating or removing accounts, access, equipment, and responsibilities as personnel join or leave.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Steps for creating or removing accounts, access, equipment, and responsibilities as personnel join or leave."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Create accounts, Revoke access"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how security governance is defined, enforced, reviewed, and assigned across an organization.",
+        "example": "Create accounts",
+        "exam": "JOINER / LEAVER STEPS",
+        "check_q": "What is the key exam clue for Onboarding / Offboarding Procedure?",
+        "check_a": "JOINER / LEAVER STEPS"
+      }
+    },
+    {
+      "n": 19,
+      "title": "Playbook",
+      "instructional": true,
+      "teach": "Predefined set of actions for a specific operational or security scenario.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Predefined set of actions for a specific operational or security scenario.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Predefined set of actions for a specific operational or security scenario."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Ransomware playbook, Phishing response playbook"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how security governance is defined, enforced, reviewed, and assigned across an organization.",
+        "example": "Ransomware playbook",
+        "exam": "SCENARIO ACTION PLAN",
+        "check_q": "What is the key exam clue for Playbook?",
+        "check_a": "SCENARIO ACTION PLAN"
+      }
+    }
+  ],
+  "slide_count": 19,
+  "instructional_count": 18,
+  "concepts": [
+    "Guidelines",
+    "Policy",
+    "Acceptable Use Policy (AUP)",
+    "Information Security Policy",
+    "Business Continuity Policy",
+    "Disaster Recovery Policy",
+    "Incident Response Policy",
+    "SDLC Policy",
+    "Change Management Policy",
+    "Standards",
+    "Password Standard",
+    "Access Control Standard",
+    "Physical Security Standard",
+    "Encryption Standard",
+    "Procedure",
+    "Change Management Procedure",
+    "Onboarding / Offboarding Procedure",
+    "Playbook"
+  ],
+  "source_filename": "23-01.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 5.1",
+      "title": "Guidelines, Policies, Standards, and Procedures",
+      "intro": "Security governance defines how an organization directs and controls security. The exam often tests the difference between high-level guidance, mandatory rules, technical requirements, and step-by-step instructions."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Guidelines, Policies, Standards, and Procedures",
+        "prompt": "Identify whether the scenario is asking about governance documents, external requirements, governance structure, or accountability for systems and data.",
+        "badge": "5.1",
+        "cards": [
+          {
+            "name": "Guidelines",
+            "definition": "Recommended practices that provide flexible guidance rather than mandatory requirements.",
+            "examples": [
+              "Secure coding guidance",
+              "Recommended remote-work practices"
+            ],
+            "memory": "RECOMMENDED"
+          },
+          {
+            "name": "Policy",
+            "definition": "High-level mandatory statement that defines management intent and organizational requirements.",
+            "examples": [
+              "Acceptable use policy",
+              "Information security policy"
+            ],
+            "memory": "MUST FOLLOW"
+          },
+          {
+            "name": "Acceptable Use Policy (AUP)",
+            "definition": "Defines permitted and prohibited use of organizational systems, networks, and resources.",
+            "examples": [
+              "No unauthorized software",
+              "No personal misuse"
+            ],
+            "memory": "HOW USERS MAY USE SYSTEMS"
+          },
+          {
+            "name": "Information Security Policy",
+            "definition": "Defines the organization's overall expectations and requirements for protecting information and systems.",
+            "examples": [
+              "Security responsibilities",
+              "Access requirements"
+            ],
+            "memory": "OVERALL SECURITY RULES"
+          },
+          {
+            "name": "Business Continuity Policy",
+            "definition": "Defines requirements for maintaining critical business operations during disruption.",
+            "examples": [
+              "Alternate operations",
+              "Critical service continuity"
+            ],
+            "memory": "KEEP BUSINESS RUNNING"
+          },
+          {
+            "name": "Disaster Recovery Policy",
+            "definition": "Defines requirements for restoring IT systems, infrastructure, and data after a disruptive event.",
+            "examples": [
+              "Restore servers",
+              "Recover data"
+            ],
+            "memory": "RESTORE TECHNOLOGY"
+          },
+          {
+            "name": "Incident Response Policy",
+            "definition": "Defines how the organization prepares for, reports, handles, and responds to security incidents.",
+            "examples": [
+              "Incident reporting",
+              "Response responsibilities"
+            ],
+            "memory": "HANDLE INCIDENTS"
+          },
+          {
+            "name": "SDLC Policy",
+            "definition": "Defines security expectations throughout the software development lifecycle.",
+            "examples": [
+              "Security testing",
+              "Code review requirements"
+            ],
+            "memory": "SECURE SOFTWARE LIFECYCLE"
+          },
+          {
+            "name": "Change Management Policy",
+            "definition": "Defines rules and expectations for approving, documenting, testing, and implementing changes.",
+            "examples": [
+              "Change approval",
+              "Rollback requirement"
+            ],
+            "memory": "CONTROL CHANGES"
+          },
+          {
+            "name": "Standards",
+            "definition": "Mandatory detailed requirements that support policies and define specific technical or operational expectations.",
+            "examples": [
+              "Password standard",
+              "Encryption standard"
+            ],
+            "memory": "SPECIFIC REQUIREMENT"
+          },
+          {
+            "name": "Password Standard",
+            "definition": "Defines mandatory password or authentication requirements.",
+            "examples": [
+              "Minimum length",
+              "Password manager requirement"
+            ],
+            "memory": "PASSWORD REQUIREMENTS"
+          },
+          {
+            "name": "Access Control Standard",
+            "definition": "Defines mandatory requirements for granting, reviewing, and restricting access.",
+            "examples": [
+              "Least privilege",
+              "MFA requirement"
+            ],
+            "memory": "ACCESS REQUIREMENTS"
+          },
+          {
+            "name": "Physical Security Standard",
+            "definition": "Defines mandatory physical protection requirements.",
+            "examples": [
+              "Badge access",
+              "Locked server rooms"
+            ],
+            "memory": "PHYSICAL REQUIREMENTS"
+          },
+          {
+            "name": "Encryption Standard",
+            "definition": "Defines approved encryption methods, algorithms, key lengths, and use cases.",
+            "examples": [
+              "AES requirement",
+              "TLS version"
+            ],
+            "memory": "CRYPTO REQUIREMENTS"
+          },
+          {
+            "name": "Procedure",
+            "definition": "Step-by-step instructions for carrying out a task or implementing policy.",
+            "examples": [
+              "Offboarding checklist",
+              "Incident escalation steps"
+            ],
+            "memory": "HOW TO DO IT"
+          },
+          {
+            "name": "Change Management Procedure",
+            "definition": "Detailed steps for requesting, approving, testing, implementing, and documenting a change.",
+            "examples": [
+              "Submit RFC",
+              "Test change",
+              "Approve rollback"
+            ],
+            "memory": "CHANGE STEPS"
+          },
+          {
+            "name": "Onboarding / Offboarding Procedure",
+            "definition": "Steps for creating or removing accounts, access, equipment, and responsibilities as personnel join or leave.",
+            "examples": [
+              "Create accounts",
+              "Revoke access"
+            ],
+            "memory": "JOINER / LEAVER STEPS"
+          },
+          {
+            "name": "Playbook",
+            "definition": "Predefined set of actions for a specific operational or security scenario.",
+            "examples": [
+              "Ransomware playbook",
+              "Phishing response playbook"
+            ],
+            "memory": "SCENARIO ACTION PLAN"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Guidelines, Policies, Standards, and Procedures comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Guideline",
+            "Recommended practice",
+            "Should / flexible"
+          ],
+          [
+            "Policy",
+            "High-level mandatory direction",
+            "What must be done"
+          ],
+          [
+            "Standard",
+            "Specific mandatory requirement",
+            "Exact rule/technical requirement"
+          ],
+          [
+            "Procedure",
+            "Step-by-step instructions",
+            "How to do it"
+          ],
+          [
+            "Playbook",
+            "Scenario-specific response steps",
+            "What to do in this situation"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Guidelines, Policies, Standards, and Procedures exam shortcuts",
+        "items": [
+          [
+            "High-level management requirement → POLICY",
+            "Policies state mandatory organizational expectations.",
+            "Example: All sensitive data must be protected."
+          ],
+          [
+            "Specific technical requirement → STANDARD",
+            "Standards define precise mandatory rules.",
+            "Example: AES-256 is required for stored restricted data."
+          ],
+          [
+            "Step-by-step instructions → PROCEDURE",
+            "Procedures explain exactly how to perform a task.",
+            "Example: Follow these seven steps to offboard an employee."
+          ],
+          [
+            "Recommended but flexible → GUIDELINE",
+            "Guidelines advise rather than mandate.",
+            "Example: Developers should follow secure coding recommendations."
+          ],
+          [
+            "Scenario-specific response actions → PLAYBOOK",
+            "A playbook is optimized for a specific event or condition.",
+            "Example: Ransomware playbook: isolate, notify, preserve, recover."
+          ]
+        ],
+        "example": "First decide whether the scenario is about policy direction, a technical requirement, a step-by-step process, external obligations, or ownership/accountability."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A document states that all sensitive data must be protected but does not specify exact algorithms or key lengths. What type of governance document is this?",
+        "choices": [
+          "Policy",
+          "Standard",
+          "Procedure",
+          "Guideline"
+        ],
+        "answer": 0,
+        "explanation": "A policy provides high-level mandatory direction."
+      },
+      {
+        "q": "A document requires AES-256 for restricted data at rest. What type of governance document is this?",
+        "choices": [
+          "Standard",
+          "Policy",
+          "Procedure",
+          "Guideline"
+        ],
+        "answer": 0,
+        "explanation": "A standard defines a specific mandatory technical requirement."
+      },
+      {
+        "q": "A document gives seven exact steps for offboarding an employee. What type of document is this?",
+        "choices": [
+          "Procedure",
+          "Policy",
+          "Guideline",
+          "Standard"
+        ],
+        "answer": 0,
+        "explanation": "A procedure explains how to perform a task step by step."
+      },
+      {
+        "q": "A secure coding document recommends preferred practices but allows teams flexibility. What type of governance document is this?",
+        "choices": [
+          "Guideline",
+          "Policy",
+          "Standard",
+          "Procedure"
+        ],
+        "answer": 0,
+        "explanation": "Guidelines provide recommended, flexible practices."
+      },
+      {
+        "q": "A predefined ransomware response contains scenario-specific actions for isolation, notification, and recovery. What is this?",
+        "choices": [
+          "Playbook",
+          "Standard",
+          "AUP",
+          "Guideline"
+        ],
+        "answer": 0,
+        "explanation": "A playbook defines actions for a specific operational or security scenario."
+      },
+      {
+        "q": "A company document defines what employees may and may not do with corporate systems and internet access. Which policy is this?",
+        "choices": [
+          "Acceptable Use Policy",
+          "Business Continuity Policy",
+          "Disaster Recovery Policy",
+          "SDLC Policy"
+        ],
+        "answer": 0,
+        "explanation": "An AUP defines permitted and prohibited use of organizational resources."
+      },
+      {
+        "q": "A policy requires critical business functions to continue during a major disruption. Which policy is most relevant?",
+        "choices": [
+          "Business Continuity Policy",
+          "Disaster Recovery Policy",
+          "AUP",
+          "Encryption Standard"
+        ],
+        "answer": 0,
+        "explanation": "Business continuity focuses on keeping essential business operations running."
+      },
+      {
+        "q": "A policy defines requirements for restoring servers, applications, and data after a major outage. Which policy is this?",
+        "choices": [
+          "Disaster Recovery Policy",
+          "Business Continuity Policy",
+          "Incident Response Policy",
+          "AUP"
+        ],
+        "answer": 0,
+        "explanation": "Disaster recovery focuses on restoring IT systems and data."
+      }
+    ]
+  }
+}
