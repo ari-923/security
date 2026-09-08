@@ -2,163 +2,355 @@
   "id": "10.02",
   "chapter": 10,
   "sub": 2,
-  "title": "Hybrid considerations",
-  "chapter_name": "Security Architecture & Cloud",
+  "title": "Network Architecture, Isolation, and SDN",
+  "chapter_name": "Security Architecture Models",
   "slides": [
     {
       "n": 1,
-      "title": "Hybrid Cloud Considerations",
-      "points": [],
-      "raw": "Hybrid Cloud Considerations",
+      "title": "Network Architecture, Isolation, and SDN",
       "instructional": false,
-      "teach": "These are design tradeoffs. Learn why each factor matters rather than memorizing the words alone.",
-      "defs": [
-        [
-          "Cloud",
-          "Computing resources delivered on demand from a provider rather than entirely owned and operated locally."
-        ]
-      ]
+      "teach": "",
+      "points": [
+        "Network architecture controls how systems communicate. Isolation and segmentation reduce exposure, while SDN centralizes programmable network control."
+      ],
+      "defs": [],
+      "raw": ""
     },
     {
       "n": 2,
-      "title": "Hybrid Cloud Considerations",
-      "points": [
-        "Integration of Environments",
-        "Data Security and Compliance",
-        "Interoperability and Compatibility",
-        "Scalability and Flexibility",
-        "Cost Management"
-      ],
-      "raw": "Hybrid Cloud Considerations\nIntegration of Environments\nData Security and Compliance\nInteroperability and Compatibility\nScalability and Flexibility\nCost Management",
+      "title": "Network Infrastructure",
       "instructional": true,
-      "teach": "These are design tradeoffs. Learn why each factor matters rather than memorizing the words alone.",
-      "defs": [
-        [
-          "Cloud",
-          "Computing resources delivered on demand from a provider rather than entirely owned and operated locally."
-        ]
+      "teach": "Routers, switches, firewalls, links, and related components that connect systems and carry traffic.",
+      "points": [
+        "Basically",
+        "Examples"
       ],
+      "defs": [],
+      "raw": "",
       "course": {
-        "learn": "A hybrid environment combines on-premises resources with cloud services. Security must cover identity, networking, logging, data movement, and policy consistently across both sides.",
-        "why": "Different control planes and trust boundaries can create gaps if teams manage each environment separately.",
-        "example": "An organization keeps a database on-premises while application servers run in the cloud and connect through a private link.",
-        "exam": "Hybrid clues: on-prem + cloud together. Pay attention to connectivity, consistent IAM, data location, and monitoring.",
+        "learn": "Routers, switches, firewalls, links, and related components that connect systems and carry traffic.",
         "breakdown": [
           {
-            "term": "Integration of Environments",
-            "explanation": "This is a factor that must be evaluated when using Hybrid considerations; ignoring it can create operational, security, cost, or compatibility risk."
+            "term": "Basically",
+            "explanation": "Routers, switches, firewalls, links, and related components that connect systems and carry traffic."
           },
           {
-            "term": "Data Security and Compliance",
-            "explanation": "This is a factor that must be evaluated when using Hybrid considerations; ignoring it can create operational, security, cost, or compatibility risk."
-          },
-          {
-            "term": "Interoperability and Compatibility",
-            "explanation": "This is a factor that must be evaluated when using Hybrid considerations; ignoring it can create operational, security, cost, or compatibility risk."
-          },
-          {
-            "term": "Scalability and Flexibility",
-            "explanation": "This is a factor that must be evaluated when using Hybrid considerations; ignoring it can create operational, security, cost, or compatibility risk."
-          },
-          {
-            "term": "Cost Management",
-            "explanation": "This is a factor that must be evaluated when using Hybrid considerations; ignoring it can create operational, security, cost, or compatibility risk."
+            "term": "Examples",
+            "explanation": "Routers, Switches, Firewalls"
           }
         ],
-        "defs": [
-          {
-            "term": "Cloud",
-            "definition": "Computing resources delivered on demand from a provider rather than entirely owned and operated locally."
-          }
-        ],
-        "check_q": "Without looking back, explain Hybrid Cloud Considerations and describe at least two key ideas from this section.",
-        "check_a": "A hybrid environment combines on-premises resources with cloud services. Security must cover identity, networking, logging, data movement, and policy consistently across both sides. Key ideas include: Integration of Environments; Data Security and Compliance; Interoperability and Compatibility; Scalability and Flexibility; Cost Management.",
-        "points": [
-          "Integration of Environments",
-          "Data Security and Compliance",
-          "Interoperability and Compatibility",
-          "Scalability and Flexibility",
-          "Cost Management"
-        ]
+        "defs": [],
+        "why": "This concept changes the security tradeoffs of the architecture.",
+        "example": "Routers",
+        "exam": "HOW SYSTEMS CONNECT",
+        "check_q": "What is the key exam clue for Network Infrastructure?",
+        "check_a": "HOW SYSTEMS CONNECT"
       }
     },
     {
       "n": 3,
-      "title": "Hybrid Cloud Considerations",
-      "points": [
-        "Network Connectivity",
-        "Data Transfer and Latency",
-        "Resource Orchestration and Management",
-        "Disaster Recovery and Redundancy",
-        "Vendor Selection and Collaboration"
-      ],
-      "raw": "Hybrid Cloud Considerations\nNetwork Connectivity\nData Transfer and Latency\nResource Orchestration and Management\nDisaster Recovery and Redundancy\nVendor Selection and Collaboration",
+      "title": "Physical Isolation",
       "instructional": true,
-      "teach": "These are design tradeoffs. Learn why each factor matters rather than memorizing the words alone.",
-      "defs": [
-        [
-          "Cloud",
-          "Computing resources delivered on demand from a provider rather than entirely owned and operated locally."
-        ]
+      "teach": "Uses physical separation to prevent normal network communication between environments.",
+      "points": [
+        "Basically",
+        "Examples"
       ],
+      "defs": [],
+      "raw": "",
       "course": {
-        "learn": "A hybrid environment combines on-premises resources with cloud services. Security must cover identity, networking, logging, data movement, and policy consistently across both sides.",
-        "why": "Different control planes and trust boundaries can create gaps if teams manage each environment separately.",
-        "example": "An organization keeps a database on-premises while application servers run in the cloud and connect through a private link.",
-        "exam": "Hybrid clues: on-prem + cloud together. Pay attention to connectivity, consistent IAM, data location, and monitoring.",
+        "learn": "Uses physical separation to prevent normal network communication between environments.",
         "breakdown": [
           {
-            "term": "Network Connectivity",
-            "explanation": "Secure architecture depends on where devices are placed, which trust zones they belong to, how they connect, what attack surface they expose, and what happens when a component fails."
+            "term": "Basically",
+            "explanation": "Uses physical separation to prevent normal network communication between environments."
           },
           {
-            "term": "Data Transfer and Latency",
-            "explanation": "This is a factor that must be evaluated when using Hybrid considerations; ignoring it can create operational, security, cost, or compatibility risk."
-          },
-          {
-            "term": "Resource Orchestration and Management",
-            "explanation": "This is a factor that must be evaluated when using Hybrid considerations; ignoring it can create operational, security, cost, or compatibility risk."
-          },
-          {
-            "term": "Disaster Recovery and Redundancy",
-            "explanation": "Restore technology and data after a major disruption."
-          },
-          {
-            "term": "Vendor Selection and Collaboration",
-            "explanation": "This is a factor that must be evaluated when using Hybrid considerations; ignoring it can create operational, security, cost, or compatibility risk."
+            "term": "Examples",
+            "explanation": "Separate switches, Dedicated cabling"
           }
         ],
-        "defs": [
-          {
-            "term": "Cloud",
-            "definition": "Computing resources delivered on demand from a provider rather than entirely owned and operated locally."
-          }
-        ],
-        "check_q": "Without looking back, explain Hybrid Cloud Considerations and describe at least two key ideas from this section.",
-        "check_a": "A hybrid environment combines on-premises resources with cloud services. Security must cover identity, networking, logging, data movement, and policy consistently across both sides. Key ideas include: Network Connectivity; Data Transfer and Latency; Resource Orchestration and Management; Disaster Recovery and Redundancy; Vendor Selection and Collaboration.",
-        "points": [
-          "Network Connectivity",
-          "Data Transfer and Latency",
-          "Resource Orchestration and Management",
-          "Disaster Recovery and Redundancy",
-          "Vendor Selection and Collaboration"
-        ]
+        "defs": [],
+        "why": "This concept changes the security tradeoffs of the architecture.",
+        "example": "Separate switches",
+        "exam": "PHYSICALLY SEPARATE",
+        "check_q": "What is the key exam clue for Physical Isolation?",
+        "check_a": "PHYSICALLY SEPARATE"
       }
     },
     {
       "n": 4,
-      "title": "Third-Party Vendors",
-      "points": [],
-      "raw": "Third-Party Vendors",
-      "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": []
+      "title": "Air-gapped",
+      "instructional": true,
+      "teach": "A physically isolated environment with no direct network connection to less trusted networks.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "A physically isolated environment with no direct network connection to less trusted networks.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "A physically isolated environment with no direct network connection to less trusted networks."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Offline sensitive system, Separated control network"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes the security tradeoffs of the architecture.",
+        "example": "Offline sensitive system",
+        "exam": "NO DIRECT CONNECTION",
+        "check_q": "What is the key exam clue for Air-gapped?",
+        "check_a": "NO DIRECT CONNECTION"
+      }
+    },
+    {
+      "n": 5,
+      "title": "Logical Segmentation",
+      "instructional": true,
+      "teach": "Separates traffic through logical controls rather than physical separation.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Separates traffic through logical controls rather than physical separation.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Separates traffic through logical controls rather than physical separation."
+          },
+          {
+            "term": "Examples",
+            "explanation": "VLANs, Firewall zones, VRFs"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes the security tradeoffs of the architecture.",
+        "example": "VLANs",
+        "exam": "SEPARATE BY CONFIGURATION",
+        "check_q": "What is the key exam clue for Logical Segmentation?",
+        "check_a": "SEPARATE BY CONFIGURATION"
+      }
+    },
+    {
+      "n": 6,
+      "title": "Software-defined Networking (SDN)",
+      "instructional": true,
+      "teach": "Separates network control logic from forwarding devices and enables centralized programmable management.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Separates network control logic from forwarding devices and enables centralized programmable management.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Separates network control logic from forwarding devices and enables centralized programmable management."
+          },
+          {
+            "term": "Examples",
+            "explanation": "SDN controller, Programmable network policies"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes the security tradeoffs of the architecture.",
+        "example": "SDN controller",
+        "exam": "PROGRAMMABLE NETWORK",
+        "check_q": "What is the key exam clue for Software-defined Networking (SDN)?",
+        "check_a": "PROGRAMMABLE NETWORK"
+      }
     }
   ],
-  "slide_count": 4,
-  "instructional_count": 2,
+  "slide_count": 6,
+  "instructional_count": 5,
   "concepts": [
-    "Hybrid Cloud Considerations"
+    "Network Infrastructure",
+    "Physical Isolation",
+    "Air-gapped",
+    "Logical Segmentation",
+    "Software-defined Networking (SDN)"
   ],
-  "source_filename": "10.02_Hybrid_considerations.pdf"
+  "source_filename": "10-02.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 3.1",
+      "title": "Network Architecture, Isolation, and SDN",
+      "intro": "Network architecture controls how systems communicate. Isolation and segmentation reduce exposure, while SDN centralizes programmable network control."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Network Architecture, Isolation, and SDN",
+        "prompt": "Compare the security tradeoffs and identify which architecture clue matters in the scenario.",
+        "badge": "3.1",
+        "cards": [
+          {
+            "name": "Network Infrastructure",
+            "definition": "Routers, switches, firewalls, links, and related components that connect systems and carry traffic.",
+            "examples": [
+              "Routers",
+              "Switches",
+              "Firewalls"
+            ],
+            "memory": "HOW SYSTEMS CONNECT"
+          },
+          {
+            "name": "Physical Isolation",
+            "definition": "Uses physical separation to prevent normal network communication between environments.",
+            "examples": [
+              "Separate switches",
+              "Dedicated cabling"
+            ],
+            "memory": "PHYSICALLY SEPARATE"
+          },
+          {
+            "name": "Air-gapped",
+            "definition": "A physically isolated environment with no direct network connection to less trusted networks.",
+            "examples": [
+              "Offline sensitive system",
+              "Separated control network"
+            ],
+            "memory": "NO DIRECT CONNECTION"
+          },
+          {
+            "name": "Logical Segmentation",
+            "definition": "Separates traffic through logical controls rather than physical separation.",
+            "examples": [
+              "VLANs",
+              "Firewall zones",
+              "VRFs"
+            ],
+            "memory": "SEPARATE BY CONFIGURATION"
+          },
+          {
+            "name": "Software-defined Networking (SDN)",
+            "definition": "Separates network control logic from forwarding devices and enables centralized programmable management.",
+            "examples": [
+              "SDN controller",
+              "Programmable network policies"
+            ],
+            "memory": "PROGRAMMABLE NETWORK"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Network Architecture, Isolation, and SDN comparison",
+        "headers": [
+          "Concept",
+          "What to compare",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Air gap",
+            "Physical isolation",
+            "No direct network connection"
+          ],
+          [
+            "Logical segmentation",
+            "Configuration-based separation",
+            "VLAN/firewall zone"
+          ],
+          [
+            "Physical isolation",
+            "Separate hardware",
+            "Strong separation"
+          ],
+          [
+            "SDN",
+            "Centralized programmable control",
+            "Policy-driven networking"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Network Architecture, Isolation, and SDN exam shortcuts",
+        "items": [
+          [
+            "No direct network connection → AIR-GAPPED",
+            "The environment is physically disconnected.",
+            "Example: A sensitive system has no normal LAN connection."
+          ],
+          [
+            "VLAN or firewall zone → LOGICAL SEGMENTATION",
+            "Separation is created by configuration.",
+            "Example: Finance and engineering use different VLANs."
+          ],
+          [
+            "Separate network hardware → PHYSICAL ISOLATION",
+            "The boundary is physical.",
+            "Example: A control network uses dedicated switches."
+          ],
+          [
+            "Central controller programs the network → SDN",
+            "Network policy is software-driven.",
+            "Example: An SDN controller pushes segmentation rules."
+          ]
+        ],
+        "example": "Choose the architecture based on the security tradeoff emphasized in the scenario."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A sensitive environment uses completely separate switches and cabling from the corporate LAN. Which concept best fits?",
+        "choices": [
+          "Physical isolation",
+          "Logical segmentation",
+          "SDN",
+          "Microservices"
+        ],
+        "answer": 0,
+        "explanation": "Physical isolation relies on distinct physical infrastructure."
+      },
+      {
+        "q": "A classified system has no direct network connection to any less trusted network. Which design is this?",
+        "choices": [
+          "Air-gapped",
+          "Logically segmented",
+          "Serverless",
+          "Virtualized"
+        ],
+        "answer": 0,
+        "explanation": "An air-gapped system has no direct network connection."
+      },
+      {
+        "q": "Finance and engineering share switches but use different VLANs with firewall rules between them. Which concept is this?",
+        "choices": [
+          "Logical segmentation",
+          "Physical isolation",
+          "Air gap",
+          "RTOS"
+        ],
+        "answer": 0,
+        "explanation": "Logical segmentation creates separation through configuration."
+      },
+      {
+        "q": "A central controller programs routing and segmentation policies across many network devices. Which model is this?",
+        "choices": [
+          "SDN",
+          "On-premises",
+          "ICS",
+          "Air gap"
+        ],
+        "answer": 0,
+        "explanation": "SDN uses centralized programmable network control."
+      }
+    ]
+  }
 }
