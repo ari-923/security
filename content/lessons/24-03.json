@@ -1,0 +1,753 @@
+{
+  "id": "24.03",
+  "chapter": 24,
+  "sub": 3,
+  "title": "Risk Treatment, Reporting, and Business Impact Analysis",
+  "chapter_name": "Risk Management",
+  "slides": [
+    {
+      "n": 1,
+      "title": "Risk Treatment, Reporting, and Business Impact Analysis",
+      "instructional": false,
+      "teach": "",
+      "points": [
+        "After risk is understood, the organization selects a treatment strategy, reports risk to stakeholders, and uses business impact analysis to define recovery requirements."
+      ],
+      "defs": [],
+      "raw": ""
+    },
+    {
+      "n": 2,
+      "title": "Transfer",
+      "instructional": true,
+      "teach": "Shifts some financial or operational consequences of risk to another party.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Shifts some financial or operational consequences of risk to another party.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Shifts some financial or operational consequences of risk to another party."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Cyber insurance, Contractual transfer"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how risk is identified, analyzed, tracked, treated, reported, or tied to recovery requirements.",
+        "example": "Cyber insurance",
+        "exam": "SHIFT THE RISK",
+        "check_q": "What is the key exam clue for Transfer?",
+        "check_a": "SHIFT THE RISK"
+      }
+    },
+    {
+      "n": 3,
+      "title": "Accept",
+      "instructional": true,
+      "teach": "Acknowledges a risk and chooses to live with it within approved limits.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Acknowledges a risk and chooses to live with it within approved limits.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Acknowledges a risk and chooses to live with it within approved limits."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Documented acceptance, Residual risk accepted"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how risk is identified, analyzed, tracked, treated, reported, or tied to recovery requirements.",
+        "example": "Documented acceptance",
+        "exam": "LIVE WITH IT",
+        "check_q": "What is the key exam clue for Accept?",
+        "check_a": "LIVE WITH IT"
+      }
+    },
+    {
+      "n": 4,
+      "title": "Exemption",
+      "instructional": true,
+      "teach": "Formal allowance that excludes a system or situation from a requirement.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Formal allowance that excludes a system or situation from a requirement.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Formal allowance that excludes a system or situation from a requirement."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Legacy system exemption"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how risk is identified, analyzed, tracked, treated, reported, or tied to recovery requirements.",
+        "example": "Legacy system exemption",
+        "exam": "FORMALLY EXCLUDED",
+        "check_q": "What is the key exam clue for Exemption?",
+        "check_a": "FORMALLY EXCLUDED"
+      }
+    },
+    {
+      "n": 5,
+      "title": "Exception",
+      "instructional": true,
+      "teach": "Approved temporary or specific deviation from a requirement.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Approved temporary or specific deviation from a requirement.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Approved temporary or specific deviation from a requirement."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Temporary patch exception"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how risk is identified, analyzed, tracked, treated, reported, or tied to recovery requirements.",
+        "example": "Temporary patch exception",
+        "exam": "APPROVED DEVIATION",
+        "check_q": "What is the key exam clue for Exception?",
+        "check_a": "APPROVED DEVIATION"
+      }
+    },
+    {
+      "n": 6,
+      "title": "Avoid",
+      "instructional": true,
+      "teach": "Eliminates the activity or condition creating the risk.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Eliminates the activity or condition creating the risk.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Eliminates the activity or condition creating the risk."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Stop offering risky service, Retire vulnerable platform"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how risk is identified, analyzed, tracked, treated, reported, or tied to recovery requirements.",
+        "example": "Stop offering risky service",
+        "exam": "DON'T DO IT",
+        "check_q": "What is the key exam clue for Avoid?",
+        "check_a": "DON'T DO IT"
+      }
+    },
+    {
+      "n": 7,
+      "title": "Mitigate",
+      "instructional": true,
+      "teach": "Reduces likelihood or impact through controls.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Reduces likelihood or impact through controls.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Reduces likelihood or impact through controls."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Add MFA, Segment network, Patch systems"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how risk is identified, analyzed, tracked, treated, reported, or tied to recovery requirements.",
+        "example": "Add MFA",
+        "exam": "REDUCE THE RISK",
+        "check_q": "What is the key exam clue for Mitigate?",
+        "check_a": "REDUCE THE RISK"
+      }
+    },
+    {
+      "n": 8,
+      "title": "Risk Reporting",
+      "instructional": true,
+      "teach": "Communicates risk status, trends, ownership, treatment, and exposure to stakeholders.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Communicates risk status, trends, ownership, treatment, and exposure to stakeholders.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Communicates risk status, trends, ownership, treatment, and exposure to stakeholders."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Executive risk report, Dashboard"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how risk is identified, analyzed, tracked, treated, reported, or tied to recovery requirements.",
+        "example": "Executive risk report",
+        "exam": "COMMUNICATE RISK",
+        "check_q": "What is the key exam clue for Risk Reporting?",
+        "check_a": "COMMUNICATE RISK"
+      }
+    },
+    {
+      "n": 9,
+      "title": "Business Impact Analysis (BIA)",
+      "instructional": true,
+      "teach": "Determines critical business functions and the operational or financial impact of disruption.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Determines critical business functions and the operational or financial impact of disruption.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Determines critical business functions and the operational or financial impact of disruption."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Critical process review, Downtime impact"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how risk is identified, analyzed, tracked, treated, reported, or tied to recovery requirements.",
+        "example": "Critical process review",
+        "exam": "WHAT MUST RECOVER FIRST?",
+        "check_q": "What is the key exam clue for Business Impact Analysis (BIA)?",
+        "check_a": "WHAT MUST RECOVER FIRST?"
+      }
+    },
+    {
+      "n": 10,
+      "title": "Recovery Time Objective (RTO)",
+      "instructional": true,
+      "teach": "Maximum targeted time to restore a service or process after disruption.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Maximum targeted time to restore a service or process after disruption.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Maximum targeted time to restore a service or process after disruption."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Restore within 4 hours"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how risk is identified, analyzed, tracked, treated, reported, or tied to recovery requirements.",
+        "example": "Restore within 4 hours",
+        "exam": "HOW FAST TO RECOVER?",
+        "check_q": "What is the key exam clue for Recovery Time Objective (RTO)?",
+        "check_a": "HOW FAST TO RECOVER?"
+      }
+    },
+    {
+      "n": 11,
+      "title": "Recovery Point Objective (RPO)",
+      "instructional": true,
+      "teach": "Maximum acceptable amount of data loss measured in time.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Maximum acceptable amount of data loss measured in time.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Maximum acceptable amount of data loss measured in time."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Lose no more than 15 minutes of data"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how risk is identified, analyzed, tracked, treated, reported, or tied to recovery requirements.",
+        "example": "Lose no more than 15 minutes of data",
+        "exam": "HOW MUCH DATA CAN WE LOSE?",
+        "check_q": "What is the key exam clue for Recovery Point Objective (RPO)?",
+        "check_a": "HOW MUCH DATA CAN WE LOSE?"
+      }
+    },
+    {
+      "n": 12,
+      "title": "Mean Time to Repair (MTTR)",
+      "instructional": true,
+      "teach": "Average time required to repair and restore a failed component or service.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Average time required to repair and restore a failed component or service.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Average time required to repair and restore a failed component or service."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Average repair = 2 hours"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how risk is identified, analyzed, tracked, treated, reported, or tied to recovery requirements.",
+        "example": "Average repair = 2 hours",
+        "exam": "HOW LONG TO FIX?",
+        "check_q": "What is the key exam clue for Mean Time to Repair (MTTR)?",
+        "check_a": "HOW LONG TO FIX?"
+      }
+    },
+    {
+      "n": 13,
+      "title": "Mean Time Between Failures (MTBF)",
+      "instructional": true,
+      "teach": "Average operating time between failures; a reliability measure.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Average operating time between failures; a reliability measure.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Average operating time between failures; a reliability measure."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Server averages 5,000 hours between failures"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how risk is identified, analyzed, tracked, treated, reported, or tied to recovery requirements.",
+        "example": "Server averages 5,000 hours between failures",
+        "exam": "HOW LONG BETWEEN FAILURES?",
+        "check_q": "What is the key exam clue for Mean Time Between Failures (MTBF)?",
+        "check_a": "HOW LONG BETWEEN FAILURES?"
+      }
+    }
+  ],
+  "slide_count": 13,
+  "instructional_count": 12,
+  "concepts": [
+    "Transfer",
+    "Accept",
+    "Exemption",
+    "Exception",
+    "Avoid",
+    "Mitigate",
+    "Risk Reporting",
+    "Business Impact Analysis (BIA)",
+    "Recovery Time Objective (RTO)",
+    "Recovery Point Objective (RPO)",
+    "Mean Time to Repair (MTTR)",
+    "Mean Time Between Failures (MTBF)"
+  ],
+  "source_filename": "24-03.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 5.2",
+      "title": "Risk Treatment, Reporting, and Business Impact Analysis",
+      "intro": "After risk is understood, the organization selects a treatment strategy, reports risk to stakeholders, and uses business impact analysis to define recovery requirements."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Risk Treatment, Reporting, and Business Impact Analysis",
+        "prompt": "Identify whether the scenario is asking you to calculate risk, document it, decide how much risk is acceptable, treat it, or define recovery requirements.",
+        "badge": "5.2",
+        "cards": [
+          {
+            "name": "Transfer",
+            "definition": "Shifts some financial or operational consequences of risk to another party.",
+            "examples": [
+              "Cyber insurance",
+              "Contractual transfer"
+            ],
+            "memory": "SHIFT THE RISK"
+          },
+          {
+            "name": "Accept",
+            "definition": "Acknowledges a risk and chooses to live with it within approved limits.",
+            "examples": [
+              "Documented acceptance",
+              "Residual risk accepted"
+            ],
+            "memory": "LIVE WITH IT"
+          },
+          {
+            "name": "Exemption",
+            "definition": "Formal allowance that excludes a system or situation from a requirement.",
+            "examples": [
+              "Legacy system exemption"
+            ],
+            "memory": "FORMALLY EXCLUDED"
+          },
+          {
+            "name": "Exception",
+            "definition": "Approved temporary or specific deviation from a requirement.",
+            "examples": [
+              "Temporary patch exception"
+            ],
+            "memory": "APPROVED DEVIATION"
+          },
+          {
+            "name": "Avoid",
+            "definition": "Eliminates the activity or condition creating the risk.",
+            "examples": [
+              "Stop offering risky service",
+              "Retire vulnerable platform"
+            ],
+            "memory": "DON'T DO IT"
+          },
+          {
+            "name": "Mitigate",
+            "definition": "Reduces likelihood or impact through controls.",
+            "examples": [
+              "Add MFA",
+              "Segment network",
+              "Patch systems"
+            ],
+            "memory": "REDUCE THE RISK"
+          },
+          {
+            "name": "Risk Reporting",
+            "definition": "Communicates risk status, trends, ownership, treatment, and exposure to stakeholders.",
+            "examples": [
+              "Executive risk report",
+              "Dashboard"
+            ],
+            "memory": "COMMUNICATE RISK"
+          },
+          {
+            "name": "Business Impact Analysis (BIA)",
+            "definition": "Determines critical business functions and the operational or financial impact of disruption.",
+            "examples": [
+              "Critical process review",
+              "Downtime impact"
+            ],
+            "memory": "WHAT MUST RECOVER FIRST?"
+          },
+          {
+            "name": "Recovery Time Objective (RTO)",
+            "definition": "Maximum targeted time to restore a service or process after disruption.",
+            "examples": [
+              "Restore within 4 hours"
+            ],
+            "memory": "HOW FAST TO RECOVER?"
+          },
+          {
+            "name": "Recovery Point Objective (RPO)",
+            "definition": "Maximum acceptable amount of data loss measured in time.",
+            "examples": [
+              "Lose no more than 15 minutes of data"
+            ],
+            "memory": "HOW MUCH DATA CAN WE LOSE?"
+          },
+          {
+            "name": "Mean Time to Repair (MTTR)",
+            "definition": "Average time required to repair and restore a failed component or service.",
+            "examples": [
+              "Average repair = 2 hours"
+            ],
+            "memory": "HOW LONG TO FIX?"
+          },
+          {
+            "name": "Mean Time Between Failures (MTBF)",
+            "definition": "Average operating time between failures; a reliability measure.",
+            "examples": [
+              "Server averages 5,000 hours between failures"
+            ],
+            "memory": "HOW LONG BETWEEN FAILURES?"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Risk Treatment, Reporting, and Business Impact Analysis comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Transfer",
+            "Shift consequences",
+            "Insurance/contract"
+          ],
+          [
+            "Accept",
+            "Live with risk",
+            "Approved acceptance"
+          ],
+          [
+            "Avoid",
+            "Eliminate risky activity",
+            "Stop doing it"
+          ],
+          [
+            "Mitigate",
+            "Reduce likelihood/impact",
+            "Add controls"
+          ],
+          [
+            "RTO",
+            "Target restoration time",
+            "How fast recover?"
+          ],
+          [
+            "RPO",
+            "Maximum data loss",
+            "How much data lose?"
+          ],
+          [
+            "MTTR",
+            "Average repair time",
+            "How long to fix?"
+          ],
+          [
+            "MTBF",
+            "Average time between failures",
+            "Reliability"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Risk Treatment, Reporting, and Business Impact Analysis exam shortcuts",
+        "items": [
+          [
+            "Buy insurance → TRANSFER",
+            "Transfer shifts some consequences to another party.",
+            "Example: Cyber insurance covers defined incident costs."
+          ],
+          [
+            "Risk is within approved limits and no new control is added → ACCEPT",
+            "Acceptance means knowingly living with the risk.",
+            "Example: Management documents residual risk."
+          ],
+          [
+            "Stop the risky activity entirely → AVOID",
+            "Avoidance removes the source of the risk.",
+            "Example: Retire an unsupported internet-facing system."
+          ],
+          [
+            "Add a control to lower probability or damage → MITIGATE",
+            "Mitigation reduces likelihood or impact.",
+            "Example: Add MFA to reduce account-compromise risk."
+          ],
+          [
+            "How quickly must service return? → RTO",
+            "RTO is time to restoration.",
+            "Example: Payroll system must return within four hours."
+          ],
+          [
+            "How much recent data may be lost? → RPO",
+            "RPO is acceptable data-loss window.",
+            "Example: 15-minute RPO requires frequent replication or backups."
+          ],
+          [
+            "Average time to fix failure → MTTR",
+            "MTTR measures repair or restoration time.",
+            "Example: Average outage repair takes two hours."
+          ],
+          [
+            "Average time between failures → MTBF",
+            "MTBF measures reliability.",
+            "Example: Device averages 5,000 operating hours between failures."
+          ]
+        ],
+        "example": "Watch for formula clues, recovery-time wording, and the difference between broad risk appetite and specific risk tolerance."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A company buys cyber insurance to cover certain incident costs. Which risk strategy is this?",
+        "choices": [
+          "Transfer",
+          "Accept",
+          "Avoid",
+          "Mitigate"
+        ],
+        "answer": 0,
+        "explanation": "Risk transfer shifts some consequences to another party, such as an insurer."
+      },
+      {
+        "q": "Management documents a low residual risk and chooses not to implement additional controls. Which strategy is this?",
+        "choices": [
+          "Accept",
+          "Transfer",
+          "Avoid",
+          "Mitigate"
+        ],
+        "answer": 0,
+        "explanation": "Acceptance means knowingly living with the risk within approved limits."
+      },
+      {
+        "q": "A company retires an unsupported internet-facing application because the risk is too high. Which strategy is this?",
+        "choices": [
+          "Avoid",
+          "Mitigate",
+          "Transfer",
+          "Accept"
+        ],
+        "answer": 0,
+        "explanation": "Avoidance eliminates the risky activity or condition."
+      },
+      {
+        "q": "A company adds MFA to reduce account-compromise risk. Which strategy is this?",
+        "choices": [
+          "Mitigate",
+          "Transfer",
+          "Accept",
+          "Avoid"
+        ],
+        "answer": 0,
+        "explanation": "Mitigation reduces likelihood or impact by adding controls."
+      },
+      {
+        "q": "A legacy system receives formal approval to be excluded from a specific security requirement. What is this?",
+        "choices": [
+          "Exemption",
+          "Exception",
+          "Acceptance",
+          "Transfer"
+        ],
+        "answer": 0,
+        "explanation": "An exemption formally excludes a system or situation from a requirement."
+      },
+      {
+        "q": "A temporary deviation from a patching requirement is approved until the next maintenance window. What is this?",
+        "choices": [
+          "Exception",
+          "Exemption",
+          "Avoidance",
+          "Transfer"
+        ],
+        "answer": 0,
+        "explanation": "An exception is an approved temporary or specific deviation."
+      },
+      {
+        "q": "A payroll system must be restored within four hours after an outage. What does four hours represent?",
+        "choices": [
+          "RTO",
+          "RPO",
+          "MTTR",
+          "MTBF"
+        ],
+        "answer": 0,
+        "explanation": "RTO is the targeted maximum time to restore a service or process."
+      },
+      {
+        "q": "A database may lose no more than 15 minutes of data after a disruption. What does 15 minutes represent?",
+        "choices": [
+          "RPO",
+          "RTO",
+          "MTTR",
+          "MTBF"
+        ],
+        "answer": 0,
+        "explanation": "RPO is the maximum acceptable data-loss window measured in time."
+      },
+      {
+        "q": "A device takes an average of two hours to repair after failure. Which metric is this?",
+        "choices": [
+          "MTTR",
+          "MTBF",
+          "RTO",
+          "ARO"
+        ],
+        "answer": 0,
+        "explanation": "MTTR measures average repair or restoration time."
+      },
+      {
+        "q": "A server averages 5,000 operating hours between failures. Which metric is this?",
+        "choices": [
+          "MTBF",
+          "MTTR",
+          "RPO",
+          "ALE"
+        ],
+        "answer": 0,
+        "explanation": "MTBF measures average operating time between failures."
+      },
+      {
+        "q": "An organization analyzes which business processes are most critical and the impact of downtime. Which activity is this?",
+        "choices": [
+          "Business impact analysis",
+          "Risk register",
+          "Risk acceptance",
+          "Vulnerability scanning"
+        ],
+        "answer": 0,
+        "explanation": "A BIA identifies critical business functions and the impact of disruption."
+      }
+    ]
+  }
+}

@@ -1,0 +1,586 @@
+{
+  "id": "24.02",
+  "chapter": 24,
+  "sub": 2,
+  "title": "Risk Register, Tolerance, and Appetite",
+  "chapter_name": "Risk Management",
+  "slides": [
+    {
+      "n": 1,
+      "title": "Risk Register, Tolerance, and Appetite",
+      "instructional": false,
+      "teach": "",
+      "points": [
+        "Organizations document risks, assign ownership, define warning indicators and thresholds, and decide how much risk they are willing to pursue or tolerate."
+      ],
+      "defs": [],
+      "raw": ""
+    },
+    {
+      "n": 2,
+      "title": "Risk Register",
+      "instructional": true,
+      "teach": "Central record of identified risks, owners, status, treatment, likelihood, impact, and related information.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Central record of identified risks, owners, status, treatment, likelihood, impact, and related information.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Central record of identified risks, owners, status, treatment, likelihood, impact, and related information."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Enterprise risk register, Project risk register"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how risk is identified, analyzed, tracked, treated, reported, or tied to recovery requirements.",
+        "example": "Enterprise risk register",
+        "exam": "MASTER RISK LIST",
+        "check_q": "What is the key exam clue for Risk Register?",
+        "check_a": "MASTER RISK LIST"
+      }
+    },
+    {
+      "n": 3,
+      "title": "Key Risk Indicator (KRI)",
+      "instructional": true,
+      "teach": "Metric that signals increasing risk exposure or a change in risk conditions.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Metric that signals increasing risk exposure or a change in risk conditions.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Metric that signals increasing risk exposure or a change in risk conditions."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Failed backups, Phishing rate, Patch backlog"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how risk is identified, analyzed, tracked, treated, reported, or tied to recovery requirements.",
+        "example": "Failed backups",
+        "exam": "EARLY WARNING",
+        "check_q": "What is the key exam clue for Key Risk Indicator (KRI)?",
+        "check_a": "EARLY WARNING"
+      }
+    },
+    {
+      "n": 4,
+      "title": "Risk Owner",
+      "instructional": true,
+      "teach": "Person or role accountable for monitoring and managing a specific risk.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Person or role accountable for monitoring and managing a specific risk.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Person or role accountable for monitoring and managing a specific risk."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Business owner, System owner"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how risk is identified, analyzed, tracked, treated, reported, or tied to recovery requirements.",
+        "example": "Business owner",
+        "exam": "WHO OWNS THE RISK?",
+        "check_q": "What is the key exam clue for Risk Owner?",
+        "check_a": "WHO OWNS THE RISK?"
+      }
+    },
+    {
+      "n": 5,
+      "title": "Risk Threshold",
+      "instructional": true,
+      "teach": "Defined point at which risk requires action, escalation, or additional treatment.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Defined point at which risk requires action, escalation, or additional treatment.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Defined point at which risk requires action, escalation, or additional treatment."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Downtime exceeds 2 hours, Patch backlog over limit"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how risk is identified, analyzed, tracked, treated, reported, or tied to recovery requirements.",
+        "example": "Downtime exceeds 2 hours",
+        "exam": "TRIGGER POINT",
+        "check_q": "What is the key exam clue for Risk Threshold?",
+        "check_a": "TRIGGER POINT"
+      }
+    },
+    {
+      "n": 6,
+      "title": "Risk Tolerance",
+      "instructional": true,
+      "teach": "Acceptable variation or amount of risk around specific objectives.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Acceptable variation or amount of risk around specific objectives.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Acceptable variation or amount of risk around specific objectives."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Maximum acceptable outage, Allowed residual risk"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how risk is identified, analyzed, tracked, treated, reported, or tied to recovery requirements.",
+        "example": "Maximum acceptable outage",
+        "exam": "HOW MUCH CAN WE TOLERATE?",
+        "check_q": "What is the key exam clue for Risk Tolerance?",
+        "check_a": "HOW MUCH CAN WE TOLERATE?"
+      }
+    },
+    {
+      "n": 7,
+      "title": "Risk Appetite",
+      "instructional": true,
+      "teach": "Overall amount and type of risk an organization is willing to pursue or accept to achieve objectives.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Overall amount and type of risk an organization is willing to pursue or accept to achieve objectives.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Overall amount and type of risk an organization is willing to pursue or accept to achieve objectives."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Growth-focused strategy, Very cautious strategy"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how risk is identified, analyzed, tracked, treated, reported, or tied to recovery requirements.",
+        "example": "Growth-focused strategy",
+        "exam": "HOW MUCH RISK DO WE WANT?",
+        "check_q": "What is the key exam clue for Risk Appetite?",
+        "check_a": "HOW MUCH RISK DO WE WANT?"
+      }
+    },
+    {
+      "n": 8,
+      "title": "Expansionary Appetite",
+      "instructional": true,
+      "teach": "Organization is more willing to accept risk to pursue growth or opportunity.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Organization is more willing to accept risk to pursue growth or opportunity.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Organization is more willing to accept risk to pursue growth or opportunity."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Rapid expansion, Aggressive innovation"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how risk is identified, analyzed, tracked, treated, reported, or tied to recovery requirements.",
+        "example": "Rapid expansion",
+        "exam": "MORE RISK FOR GROWTH",
+        "check_q": "What is the key exam clue for Expansionary Appetite?",
+        "check_a": "MORE RISK FOR GROWTH"
+      }
+    },
+    {
+      "n": 9,
+      "title": "Conservative Appetite",
+      "instructional": true,
+      "teach": "Organization prefers lower risk and stronger safeguards, even if growth is slower.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Organization prefers lower risk and stronger safeguards, even if growth is slower.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Organization prefers lower risk and stronger safeguards, even if growth is slower."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Banking controls, Safety-critical operations"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how risk is identified, analyzed, tracked, treated, reported, or tied to recovery requirements.",
+        "example": "Banking controls",
+        "exam": "LESS RISK",
+        "check_q": "What is the key exam clue for Conservative Appetite?",
+        "check_a": "LESS RISK"
+      }
+    },
+    {
+      "n": 10,
+      "title": "Neutral Appetite",
+      "instructional": true,
+      "teach": "Balanced approach between risk-taking and caution.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Balanced approach between risk-taking and caution.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Balanced approach between risk-taking and caution."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Moderate growth with controls"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how risk is identified, analyzed, tracked, treated, reported, or tied to recovery requirements.",
+        "example": "Moderate growth with controls",
+        "exam": "BALANCED RISK",
+        "check_q": "What is the key exam clue for Neutral Appetite?",
+        "check_a": "BALANCED RISK"
+      }
+    }
+  ],
+  "slide_count": 10,
+  "instructional_count": 9,
+  "concepts": [
+    "Risk Register",
+    "Key Risk Indicator (KRI)",
+    "Risk Owner",
+    "Risk Threshold",
+    "Risk Tolerance",
+    "Risk Appetite",
+    "Expansionary Appetite",
+    "Conservative Appetite",
+    "Neutral Appetite"
+  ],
+  "source_filename": "24-02.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 5.2",
+      "title": "Risk Register, Tolerance, and Appetite",
+      "intro": "Organizations document risks, assign ownership, define warning indicators and thresholds, and decide how much risk they are willing to pursue or tolerate."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Risk Register, Tolerance, and Appetite",
+        "prompt": "Identify whether the scenario is asking you to calculate risk, document it, decide how much risk is acceptable, treat it, or define recovery requirements.",
+        "badge": "5.2",
+        "cards": [
+          {
+            "name": "Risk Register",
+            "definition": "Central record of identified risks, owners, status, treatment, likelihood, impact, and related information.",
+            "examples": [
+              "Enterprise risk register",
+              "Project risk register"
+            ],
+            "memory": "MASTER RISK LIST"
+          },
+          {
+            "name": "Key Risk Indicator (KRI)",
+            "definition": "Metric that signals increasing risk exposure or a change in risk conditions.",
+            "examples": [
+              "Failed backups",
+              "Phishing rate",
+              "Patch backlog"
+            ],
+            "memory": "EARLY WARNING"
+          },
+          {
+            "name": "Risk Owner",
+            "definition": "Person or role accountable for monitoring and managing a specific risk.",
+            "examples": [
+              "Business owner",
+              "System owner"
+            ],
+            "memory": "WHO OWNS THE RISK?"
+          },
+          {
+            "name": "Risk Threshold",
+            "definition": "Defined point at which risk requires action, escalation, or additional treatment.",
+            "examples": [
+              "Downtime exceeds 2 hours",
+              "Patch backlog over limit"
+            ],
+            "memory": "TRIGGER POINT"
+          },
+          {
+            "name": "Risk Tolerance",
+            "definition": "Acceptable variation or amount of risk around specific objectives.",
+            "examples": [
+              "Maximum acceptable outage",
+              "Allowed residual risk"
+            ],
+            "memory": "HOW MUCH CAN WE TOLERATE?"
+          },
+          {
+            "name": "Risk Appetite",
+            "definition": "Overall amount and type of risk an organization is willing to pursue or accept to achieve objectives.",
+            "examples": [
+              "Growth-focused strategy",
+              "Very cautious strategy"
+            ],
+            "memory": "HOW MUCH RISK DO WE WANT?"
+          },
+          {
+            "name": "Expansionary Appetite",
+            "definition": "Organization is more willing to accept risk to pursue growth or opportunity.",
+            "examples": [
+              "Rapid expansion",
+              "Aggressive innovation"
+            ],
+            "memory": "MORE RISK FOR GROWTH"
+          },
+          {
+            "name": "Conservative Appetite",
+            "definition": "Organization prefers lower risk and stronger safeguards, even if growth is slower.",
+            "examples": [
+              "Banking controls",
+              "Safety-critical operations"
+            ],
+            "memory": "LESS RISK"
+          },
+          {
+            "name": "Neutral Appetite",
+            "definition": "Balanced approach between risk-taking and caution.",
+            "examples": [
+              "Moderate growth with controls"
+            ],
+            "memory": "BALANCED RISK"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Risk Register, Tolerance, and Appetite comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Risk register",
+            "Central risk record",
+            "Track risks"
+          ],
+          [
+            "KRI",
+            "Early warning metric",
+            "Risk is increasing"
+          ],
+          [
+            "Risk owner",
+            "Accountable person",
+            "Who manages it?"
+          ],
+          [
+            "Risk threshold",
+            "Trigger point",
+            "When to act"
+          ],
+          [
+            "Risk tolerance",
+            "Acceptable variation",
+            "How much can we tolerate?"
+          ],
+          [
+            "Risk appetite",
+            "Overall willingness",
+            "How much risk do we want?"
+          ],
+          [
+            "Expansionary",
+            "Higher appetite",
+            "Growth/opportunity"
+          ],
+          [
+            "Conservative",
+            "Lower appetite",
+            "Caution/control"
+          ],
+          [
+            "Neutral",
+            "Balanced appetite",
+            "Middle ground"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Risk Register, Tolerance, and Appetite exam shortcuts",
+        "items": [
+          [
+            "Need one place to track all risks → RISK REGISTER",
+            "The register is the authoritative risk list.",
+            "Example: It records owner, likelihood, impact, and treatment."
+          ],
+          [
+            "Metric warns that risk is increasing → KRI",
+            "KRIs provide early warning.",
+            "Example: Rapidly rising failed backups signal recovery risk."
+          ],
+          [
+            "Question asks who is accountable → RISK OWNER",
+            "Every important risk should have an owner.",
+            "Example: The application owner manages application-availability risk."
+          ],
+          [
+            "Metric crosses a point that requires action → RISK THRESHOLD",
+            "Thresholds trigger escalation or treatment.",
+            "Example: More than 2 hours of downtime triggers executive escalation."
+          ],
+          [
+            "Overall willingness to take risk → RISK APPETITE",
+            "Appetite is broad and strategic.",
+            "Example: A startup may have expansionary appetite."
+          ],
+          [
+            "Specific acceptable amount around an objective → RISK TOLERANCE",
+            "Tolerance is narrower and operational.",
+            "Example: Maximum acceptable service outage is 30 minutes."
+          ]
+        ],
+        "example": "Watch for formula clues, recovery-time wording, and the difference between broad risk appetite and specific risk tolerance."
+      }
+    ],
+    "questions": [
+      {
+        "q": "An organization keeps one central record containing each risk, its owner, likelihood, impact, status, and treatment. What is this?",
+        "choices": [
+          "Risk register",
+          "Risk appetite",
+          "KRI",
+          "Risk threshold"
+        ],
+        "answer": 0,
+        "explanation": "A risk register is the central record used to track identified risks."
+      },
+      {
+        "q": "The percentage of failed backups rises sharply and is used as an early warning that recovery risk is increasing. What is this metric?",
+        "choices": [
+          "KRI",
+          "RTO",
+          "SLE",
+          "MTBF"
+        ],
+        "answer": 0,
+        "explanation": "A Key Risk Indicator signals changing or increasing risk exposure."
+      },
+      {
+        "q": "A specific manager is accountable for monitoring and managing the risk of a critical application outage. What role is this?",
+        "choices": [
+          "Risk owner",
+          "Processor",
+          "Custodian",
+          "Controller"
+        ],
+        "answer": 0,
+        "explanation": "A risk owner is accountable for managing a specific risk."
+      },
+      {
+        "q": "A policy requires executive escalation when service downtime exceeds two hours. What is the two-hour value?",
+        "choices": [
+          "Risk threshold",
+          "Risk appetite",
+          "RPO",
+          "MTBF"
+        ],
+        "answer": 0,
+        "explanation": "A risk threshold is a trigger point that requires action or escalation."
+      },
+      {
+        "q": "A startup is willing to accept relatively high risk to pursue rapid growth. Which risk appetite best fits?",
+        "choices": [
+          "Expansionary",
+          "Conservative",
+          "Neutral",
+          "Avoidant"
+        ],
+        "answer": 0,
+        "explanation": "Expansionary appetite reflects greater willingness to accept risk for growth or opportunity."
+      },
+      {
+        "q": "A safety-critical organization strongly prefers low risk even if that slows growth. Which appetite best fits?",
+        "choices": [
+          "Conservative",
+          "Expansionary",
+          "Neutral",
+          "Ad hoc"
+        ],
+        "answer": 0,
+        "explanation": "A conservative appetite favors lower risk and stronger safeguards."
+      },
+      {
+        "q": "An organization broadly defines itself as willing to take moderate risk, but specifies that a critical service may be unavailable for no more than 30 minutes. The 30-minute limit is an example of what?",
+        "choices": [
+          "Risk tolerance",
+          "Risk appetite",
+          "KRI",
+          "Risk register"
+        ],
+        "answer": 0,
+        "explanation": "Risk tolerance is the specific acceptable variation around an objective; appetite is the broader strategic willingness to take risk."
+      }
+    ]
+  }
+}

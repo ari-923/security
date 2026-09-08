@@ -1,0 +1,755 @@
+{
+  "id": "24.01",
+  "chapter": 24,
+  "sub": 1,
+  "title": "Risk Identification, Assessment, and Analysis",
+  "chapter_name": "Risk Management",
+  "slides": [
+    {
+      "n": 1,
+      "title": "Risk Identification, Assessment, and Analysis",
+      "instructional": false,
+      "teach": "",
+      "points": [
+        "Risk management begins by identifying what could go wrong, assessing it, and analyzing likelihood and impact using qualitative or quantitative methods."
+      ],
+      "defs": [],
+      "raw": ""
+    },
+    {
+      "n": 2,
+      "title": "Risk Identification",
+      "instructional": true,
+      "teach": "Finds threats, vulnerabilities, assets, and conditions that could create risk.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Finds threats, vulnerabilities, assets, and conditions that could create risk.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Finds threats, vulnerabilities, assets, and conditions that could create risk."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Threat workshop, Asset review, Vulnerability findings"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how risk is identified, analyzed, tracked, treated, reported, or tied to recovery requirements.",
+        "example": "Threat workshop",
+        "exam": "WHAT COULD GO WRONG?",
+        "check_q": "What is the key exam clue for Risk Identification?",
+        "check_a": "WHAT COULD GO WRONG?"
+      }
+    },
+    {
+      "n": 3,
+      "title": "Ad Hoc Assessment",
+      "instructional": true,
+      "teach": "Risk assessment performed as needed in response to a specific event or concern.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Risk assessment performed as needed in response to a specific event or concern.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Risk assessment performed as needed in response to a specific event or concern."
+          },
+          {
+            "term": "Examples",
+            "explanation": "New threat, Major system change"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how risk is identified, analyzed, tracked, treated, reported, or tied to recovery requirements.",
+        "example": "New threat",
+        "exam": "AS NEEDED",
+        "check_q": "What is the key exam clue for Ad Hoc Assessment?",
+        "check_a": "AS NEEDED"
+      }
+    },
+    {
+      "n": 4,
+      "title": "Recurring Assessment",
+      "instructional": true,
+      "teach": "Risk assessment performed on a regular schedule.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Risk assessment performed on a regular schedule.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Risk assessment performed on a regular schedule."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Quarterly review, Annual assessment"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how risk is identified, analyzed, tracked, treated, reported, or tied to recovery requirements.",
+        "example": "Quarterly review",
+        "exam": "REPEATS ON SCHEDULE",
+        "check_q": "What is the key exam clue for Recurring Assessment?",
+        "check_a": "REPEATS ON SCHEDULE"
+      }
+    },
+    {
+      "n": 5,
+      "title": "One-time Assessment",
+      "instructional": true,
+      "teach": "Risk assessment performed once for a specific purpose or event.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Risk assessment performed once for a specific purpose or event.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Risk assessment performed once for a specific purpose or event."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Pre-acquisition review, One-time project"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how risk is identified, analyzed, tracked, treated, reported, or tied to recovery requirements.",
+        "example": "Pre-acquisition review",
+        "exam": "ONCE",
+        "check_q": "What is the key exam clue for One-time Assessment?",
+        "check_a": "ONCE"
+      }
+    },
+    {
+      "n": 6,
+      "title": "Continuous Assessment",
+      "instructional": true,
+      "teach": "Ongoing evaluation of risk as conditions and telemetry change.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Ongoing evaluation of risk as conditions and telemetry change.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Ongoing evaluation of risk as conditions and telemetry change."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Continuous monitoring, Dynamic cloud risk"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how risk is identified, analyzed, tracked, treated, reported, or tied to recovery requirements.",
+        "example": "Continuous monitoring",
+        "exam": "ALWAYS CHECKING",
+        "check_q": "What is the key exam clue for Continuous Assessment?",
+        "check_a": "ALWAYS CHECKING"
+      }
+    },
+    {
+      "n": 7,
+      "title": "Qualitative Analysis",
+      "instructional": true,
+      "teach": "Rates risk using descriptive categories rather than exact monetary values.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Rates risk using descriptive categories rather than exact monetary values.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Rates risk using descriptive categories rather than exact monetary values."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Low/Medium/High, Risk matrix"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how risk is identified, analyzed, tracked, treated, reported, or tied to recovery requirements.",
+        "example": "Low/Medium/High",
+        "exam": "WORDS / RANKINGS",
+        "check_q": "What is the key exam clue for Qualitative Analysis?",
+        "check_a": "WORDS / RANKINGS"
+      }
+    },
+    {
+      "n": 8,
+      "title": "Quantitative Analysis",
+      "instructional": true,
+      "teach": "Uses numerical or monetary values to measure risk.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Uses numerical or monetary values to measure risk.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Uses numerical or monetary values to measure risk."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Dollar loss, Annualized loss"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how risk is identified, analyzed, tracked, treated, reported, or tied to recovery requirements.",
+        "example": "Dollar loss",
+        "exam": "NUMBERS / MONEY",
+        "check_q": "What is the key exam clue for Quantitative Analysis?",
+        "check_a": "NUMBERS / MONEY"
+      }
+    },
+    {
+      "n": 9,
+      "title": "Single Loss Expectancy (SLE)",
+      "instructional": true,
+      "teach": "Expected monetary loss from one occurrence of a risk event.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Expected monetary loss from one occurrence of a risk event.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Expected monetary loss from one occurrence of a risk event."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Asset value × exposure factor"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how risk is identified, analyzed, tracked, treated, reported, or tied to recovery requirements.",
+        "example": "Asset value × exposure factor",
+        "exam": "LOSS ONCE",
+        "check_q": "What is the key exam clue for Single Loss Expectancy (SLE)?",
+        "check_a": "LOSS ONCE"
+      }
+    },
+    {
+      "n": 10,
+      "title": "Annualized Rate of Occurrence (ARO)",
+      "instructional": true,
+      "teach": "Estimated frequency a risk event occurs per year.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Estimated frequency a risk event occurs per year.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Estimated frequency a risk event occurs per year."
+          },
+          {
+            "term": "Examples",
+            "explanation": "0.5 = once every 2 years, 2 = twice per year"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how risk is identified, analyzed, tracked, treated, reported, or tied to recovery requirements.",
+        "example": "0.5 = once every 2 years",
+        "exam": "HOW OFTEN PER YEAR?",
+        "check_q": "What is the key exam clue for Annualized Rate of Occurrence (ARO)?",
+        "check_a": "HOW OFTEN PER YEAR?"
+      }
+    },
+    {
+      "n": 11,
+      "title": "Annualized Loss Expectancy (ALE)",
+      "instructional": true,
+      "teach": "Expected yearly monetary loss from a risk.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Expected yearly monetary loss from a risk.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Expected yearly monetary loss from a risk."
+          },
+          {
+            "term": "Examples",
+            "explanation": "SLE × ARO"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how risk is identified, analyzed, tracked, treated, reported, or tied to recovery requirements.",
+        "example": "SLE × ARO",
+        "exam": "YEARLY LOSS",
+        "check_q": "What is the key exam clue for Annualized Loss Expectancy (ALE)?",
+        "check_a": "YEARLY LOSS"
+      }
+    },
+    {
+      "n": 12,
+      "title": "Probability / Likelihood",
+      "instructional": true,
+      "teach": "Chance that a threat event will occur.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Chance that a threat event will occur.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Chance that a threat event will occur."
+          },
+          {
+            "term": "Examples",
+            "explanation": "20% chance, Likely"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how risk is identified, analyzed, tracked, treated, reported, or tied to recovery requirements.",
+        "example": "20% chance",
+        "exam": "HOW LIKELY?",
+        "check_q": "What is the key exam clue for Probability / Likelihood?",
+        "check_a": "HOW LIKELY?"
+      }
+    },
+    {
+      "n": 13,
+      "title": "Exposure Factor",
+      "instructional": true,
+      "teach": "Percentage of asset value expected to be lost in a single event.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Percentage of asset value expected to be lost in a single event.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Percentage of asset value expected to be lost in a single event."
+          },
+          {
+            "term": "Examples",
+            "explanation": "40% damage"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how risk is identified, analyzed, tracked, treated, reported, or tied to recovery requirements.",
+        "example": "40% damage",
+        "exam": "PERCENT LOST",
+        "check_q": "What is the key exam clue for Exposure Factor?",
+        "check_a": "PERCENT LOST"
+      }
+    },
+    {
+      "n": 14,
+      "title": "Impact",
+      "instructional": true,
+      "teach": "Magnitude of harm if the risk event occurs.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Magnitude of harm if the risk event occurs.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Magnitude of harm if the risk event occurs."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Financial loss, Safety impact, Downtime"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how risk is identified, analyzed, tracked, treated, reported, or tied to recovery requirements.",
+        "example": "Financial loss",
+        "exam": "HOW BAD?",
+        "check_q": "What is the key exam clue for Impact?",
+        "check_a": "HOW BAD?"
+      }
+    }
+  ],
+  "slide_count": 14,
+  "instructional_count": 13,
+  "concepts": [
+    "Risk Identification",
+    "Ad Hoc Assessment",
+    "Recurring Assessment",
+    "One-time Assessment",
+    "Continuous Assessment",
+    "Qualitative Analysis",
+    "Quantitative Analysis",
+    "Single Loss Expectancy (SLE)",
+    "Annualized Rate of Occurrence (ARO)",
+    "Annualized Loss Expectancy (ALE)",
+    "Probability / Likelihood",
+    "Exposure Factor",
+    "Impact"
+  ],
+  "source_filename": "24-01.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 5.2",
+      "title": "Risk Identification, Assessment, and Analysis",
+      "intro": "Risk management begins by identifying what could go wrong, assessing it, and analyzing likelihood and impact using qualitative or quantitative methods."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Risk Identification, Assessment, and Analysis",
+        "prompt": "Identify whether the scenario is asking you to calculate risk, document it, decide how much risk is acceptable, treat it, or define recovery requirements.",
+        "badge": "5.2",
+        "cards": [
+          {
+            "name": "Risk Identification",
+            "definition": "Finds threats, vulnerabilities, assets, and conditions that could create risk.",
+            "examples": [
+              "Threat workshop",
+              "Asset review",
+              "Vulnerability findings"
+            ],
+            "memory": "WHAT COULD GO WRONG?"
+          },
+          {
+            "name": "Ad Hoc Assessment",
+            "definition": "Risk assessment performed as needed in response to a specific event or concern.",
+            "examples": [
+              "New threat",
+              "Major system change"
+            ],
+            "memory": "AS NEEDED"
+          },
+          {
+            "name": "Recurring Assessment",
+            "definition": "Risk assessment performed on a regular schedule.",
+            "examples": [
+              "Quarterly review",
+              "Annual assessment"
+            ],
+            "memory": "REPEATS ON SCHEDULE"
+          },
+          {
+            "name": "One-time Assessment",
+            "definition": "Risk assessment performed once for a specific purpose or event.",
+            "examples": [
+              "Pre-acquisition review",
+              "One-time project"
+            ],
+            "memory": "ONCE"
+          },
+          {
+            "name": "Continuous Assessment",
+            "definition": "Ongoing evaluation of risk as conditions and telemetry change.",
+            "examples": [
+              "Continuous monitoring",
+              "Dynamic cloud risk"
+            ],
+            "memory": "ALWAYS CHECKING"
+          },
+          {
+            "name": "Qualitative Analysis",
+            "definition": "Rates risk using descriptive categories rather than exact monetary values.",
+            "examples": [
+              "Low/Medium/High",
+              "Risk matrix"
+            ],
+            "memory": "WORDS / RANKINGS"
+          },
+          {
+            "name": "Quantitative Analysis",
+            "definition": "Uses numerical or monetary values to measure risk.",
+            "examples": [
+              "Dollar loss",
+              "Annualized loss"
+            ],
+            "memory": "NUMBERS / MONEY"
+          },
+          {
+            "name": "Single Loss Expectancy (SLE)",
+            "definition": "Expected monetary loss from one occurrence of a risk event.",
+            "examples": [
+              "Asset value × exposure factor"
+            ],
+            "memory": "LOSS ONCE"
+          },
+          {
+            "name": "Annualized Rate of Occurrence (ARO)",
+            "definition": "Estimated frequency a risk event occurs per year.",
+            "examples": [
+              "0.5 = once every 2 years",
+              "2 = twice per year"
+            ],
+            "memory": "HOW OFTEN PER YEAR?"
+          },
+          {
+            "name": "Annualized Loss Expectancy (ALE)",
+            "definition": "Expected yearly monetary loss from a risk.",
+            "examples": [
+              "SLE × ARO"
+            ],
+            "memory": "YEARLY LOSS"
+          },
+          {
+            "name": "Probability / Likelihood",
+            "definition": "Chance that a threat event will occur.",
+            "examples": [
+              "20% chance",
+              "Likely"
+            ],
+            "memory": "HOW LIKELY?"
+          },
+          {
+            "name": "Exposure Factor",
+            "definition": "Percentage of asset value expected to be lost in a single event.",
+            "examples": [
+              "40% damage"
+            ],
+            "memory": "PERCENT LOST"
+          },
+          {
+            "name": "Impact",
+            "definition": "Magnitude of harm if the risk event occurs.",
+            "examples": [
+              "Financial loss",
+              "Safety impact",
+              "Downtime"
+            ],
+            "memory": "HOW BAD?"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Risk Identification, Assessment, and Analysis comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Qualitative",
+            "Low/medium/high",
+            "Relative ranking"
+          ],
+          [
+            "Quantitative",
+            "Numbers/money",
+            "Financial analysis"
+          ],
+          [
+            "SLE",
+            "Loss from one event",
+            "AV × EF"
+          ],
+          [
+            "ARO",
+            "Events per year",
+            "Frequency"
+          ],
+          [
+            "ALE",
+            "Expected yearly loss",
+            "SLE × ARO"
+          ],
+          [
+            "Likelihood",
+            "Chance event occurs",
+            "Probability"
+          ],
+          [
+            "Exposure factor",
+            "Percent of asset lost",
+            "Single-event damage"
+          ],
+          [
+            "Impact",
+            "Magnitude of harm",
+            "Consequence"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Risk Identification, Assessment, and Analysis exam shortcuts",
+        "items": [
+          [
+            "Risk described as Low / Medium / High → QUALITATIVE",
+            "Qualitative analysis uses categories and rankings.",
+            "Example: Phishing risk is rated High."
+          ],
+          [
+            "Question gives dollar values → QUANTITATIVE",
+            "Use numerical analysis when costs and frequencies are provided.",
+            "Example: Calculate expected annual loss."
+          ],
+          [
+            "Loss from one incident → SLE",
+            "SLE = Asset Value × Exposure Factor.",
+            "Example: $100,000 asset × 40% = $40,000 SLE."
+          ],
+          [
+            "How often per year → ARO",
+            "ARO expresses annual frequency.",
+            "Example: Once every four years = 0.25 ARO."
+          ],
+          [
+            "Expected loss per year → ALE",
+            "ALE = SLE × ARO.",
+            "Example: $40,000 × 0.25 = $10,000 ALE."
+          ],
+          [
+            "Question asks chance vs consequence → LIKELIHOOD vs IMPACT",
+            "Likelihood is probability; impact is severity.",
+            "Example: Rare but catastrophic = low likelihood, high impact."
+          ]
+        ],
+        "example": "Watch for formula clues, recovery-time wording, and the difference between broad risk appetite and specific risk tolerance."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A risk is rated Low, Medium, or High using a risk matrix. Which type of analysis is this?",
+        "choices": [
+          "Qualitative",
+          "Quantitative",
+          "Continuous",
+          "One-time"
+        ],
+        "answer": 0,
+        "explanation": "Qualitative analysis uses descriptive categories or rankings."
+      },
+      {
+        "q": "A risk assessment calculates expected annual losses in dollars. Which type of analysis is this?",
+        "choices": [
+          "Quantitative",
+          "Qualitative",
+          "Ad hoc",
+          "Recurring"
+        ],
+        "answer": 0,
+        "explanation": "Quantitative analysis uses numerical or monetary values."
+      },
+      {
+        "q": "An asset is worth $200,000 and the exposure factor is 25%. What is the SLE?",
+        "choices": [
+          "$50,000",
+          "$200,000",
+          "$25,000",
+          "$800,000"
+        ],
+        "answer": 0,
+        "explanation": "SLE = Asset Value × Exposure Factor = $200,000 × 0.25 = $50,000."
+      },
+      {
+        "q": "A loss event is expected once every four years. What is the ARO?",
+        "choices": [
+          "0.25",
+          "4",
+          "2",
+          "0.5"
+        ],
+        "answer": 0,
+        "explanation": "ARO expresses annual frequency. Once every four years equals 0.25 per year."
+      },
+      {
+        "q": "A risk has an SLE of $40,000 and an ARO of 0.5. What is the ALE?",
+        "choices": [
+          "$20,000",
+          "$40,000",
+          "$80,000",
+          "$8,000"
+        ],
+        "answer": 0,
+        "explanation": "ALE = SLE × ARO = $40,000 × 0.5 = $20,000."
+      },
+      {
+        "q": "A security team performs a risk assessment after a newly disclosed critical vulnerability affects its environment. Which assessment type is this?",
+        "choices": [
+          "Ad hoc",
+          "Recurring",
+          "One-time only",
+          "Continuous"
+        ],
+        "answer": 0,
+        "explanation": "Ad hoc assessments are performed as needed in response to a specific event or concern."
+      },
+      {
+        "q": "A company performs the same formal risk review every quarter. Which assessment type is this?",
+        "choices": [
+          "Recurring",
+          "Ad hoc",
+          "Continuous",
+          "One-time"
+        ],
+        "answer": 0,
+        "explanation": "Recurring assessments happen on a regular schedule."
+      },
+      {
+        "q": "A cloud security platform continuously reevaluates risk as configurations change. Which assessment type is this?",
+        "choices": [
+          "Continuous",
+          "Recurring",
+          "One-time",
+          "Ad hoc"
+        ],
+        "answer": 0,
+        "explanation": "Continuous assessment reevaluates risk on an ongoing basis."
+      }
+    ]
+  }
+}
