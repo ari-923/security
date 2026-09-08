@@ -1,0 +1,375 @@
+{
+  "id": "11.03",
+  "chapter": 11,
+  "sub": 3,
+  "title": "Firewall Types",
+  "chapter_name": "Secure Enterprise Infrastructure",
+  "slides": [
+    {
+      "n": 1,
+      "title": "Firewall Types",
+      "instructional": false,
+      "teach": "",
+      "points": [
+        "Firewall questions usually hinge on what layer or application the firewall understands and whether multiple security features are combined in one platform."
+      ],
+      "defs": [],
+      "raw": ""
+    },
+    {
+      "n": 2,
+      "title": "Web Application Firewall (WAF)",
+      "instructional": true,
+      "teach": "Filters and protects HTTP/HTTPS application traffic against web attacks.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Filters and protects HTTP/HTTPS application traffic against web attacks.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Filters and protects HTTP/HTTPS application traffic against web attacks."
+          },
+          {
+            "term": "Examples",
+            "explanation": "SQL injection filtering, XSS protection"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes how enterprise infrastructure is protected or accessed.",
+        "example": "SQL injection filtering",
+        "exam": "PROTECT WEB APPS",
+        "check_q": "What is the key exam clue for Web Application Firewall (WAF)?",
+        "check_a": "PROTECT WEB APPS"
+      }
+    },
+    {
+      "n": 3,
+      "title": "Unified Threat Management (UTM)",
+      "instructional": true,
+      "teach": "Combines multiple security functions into one appliance or platform.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Combines multiple security functions into one appliance or platform.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Combines multiple security functions into one appliance or platform."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Firewall + AV + IDS/IPS, Web filtering"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes how enterprise infrastructure is protected or accessed.",
+        "example": "Firewall + AV + IDS/IPS",
+        "exam": "MANY TOOLS IN ONE",
+        "check_q": "What is the key exam clue for Unified Threat Management (UTM)?",
+        "check_a": "MANY TOOLS IN ONE"
+      }
+    },
+    {
+      "n": 4,
+      "title": "Next-generation Firewall (NGFW)",
+      "instructional": true,
+      "teach": "A firewall with advanced inspection, application awareness, identity/context, and often integrated threat prevention.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "A firewall with advanced inspection, application awareness, identity/context, and often integrated threat prevention.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "A firewall with advanced inspection, application awareness, identity/context, and often integrated threat prevention."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Application control, Deep packet inspection"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes how enterprise infrastructure is protected or accessed.",
+        "example": "Application control",
+        "exam": "APP-AWARE FIREWALL",
+        "check_q": "What is the key exam clue for Next-generation Firewall (NGFW)?",
+        "check_a": "APP-AWARE FIREWALL"
+      }
+    },
+    {
+      "n": 5,
+      "title": "Layer 4 Firewall",
+      "instructional": true,
+      "teach": "Filters primarily using transport/network information such as IP addresses, ports, and protocols.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Filters primarily using transport/network information such as IP addresses, ports, and protocols.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Filters primarily using transport/network information such as IP addresses, ports, and protocols."
+          },
+          {
+            "term": "Examples",
+            "explanation": "TCP port filtering, IP rules"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes how enterprise infrastructure is protected or accessed.",
+        "example": "TCP port filtering",
+        "exam": "IP + PORT",
+        "check_q": "What is the key exam clue for Layer 4 Firewall?",
+        "check_a": "IP + PORT"
+      }
+    },
+    {
+      "n": 6,
+      "title": "Layer 7 Firewall",
+      "instructional": true,
+      "teach": "Inspects application-layer traffic and can make decisions based on application content or behavior.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Inspects application-layer traffic and can make decisions based on application content or behavior.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Inspects application-layer traffic and can make decisions based on application content or behavior."
+          },
+          {
+            "term": "Examples",
+            "explanation": "HTTP method filtering, Application-aware rules"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes how enterprise infrastructure is protected or accessed.",
+        "example": "HTTP method filtering",
+        "exam": "UNDERSTANDS THE APP",
+        "check_q": "What is the key exam clue for Layer 7 Firewall?",
+        "check_a": "UNDERSTANDS THE APP"
+      }
+    }
+  ],
+  "slide_count": 6,
+  "instructional_count": 5,
+  "concepts": [
+    "Web Application Firewall (WAF)",
+    "Unified Threat Management (UTM)",
+    "Next-generation Firewall (NGFW)",
+    "Layer 4 Firewall",
+    "Layer 7 Firewall"
+  ],
+  "source_filename": "11-03.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 3.2",
+      "title": "Firewall Types",
+      "intro": "Firewall questions usually hinge on what layer or application the firewall understands and whether multiple security features are combined in one platform."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Firewall Types",
+        "prompt": "Identify the scenario requirement first, then choose the infrastructure control that directly addresses it.",
+        "badge": "3.2",
+        "cards": [
+          {
+            "name": "Web Application Firewall (WAF)",
+            "definition": "Filters and protects HTTP/HTTPS application traffic against web attacks.",
+            "examples": [
+              "SQL injection filtering",
+              "XSS protection"
+            ],
+            "memory": "PROTECT WEB APPS"
+          },
+          {
+            "name": "Unified Threat Management (UTM)",
+            "definition": "Combines multiple security functions into one appliance or platform.",
+            "examples": [
+              "Firewall + AV + IDS/IPS",
+              "Web filtering"
+            ],
+            "memory": "MANY TOOLS IN ONE"
+          },
+          {
+            "name": "Next-generation Firewall (NGFW)",
+            "definition": "A firewall with advanced inspection, application awareness, identity/context, and often integrated threat prevention.",
+            "examples": [
+              "Application control",
+              "Deep packet inspection"
+            ],
+            "memory": "APP-AWARE FIREWALL"
+          },
+          {
+            "name": "Layer 4 Firewall",
+            "definition": "Filters primarily using transport/network information such as IP addresses, ports, and protocols.",
+            "examples": [
+              "TCP port filtering",
+              "IP rules"
+            ],
+            "memory": "IP + PORT"
+          },
+          {
+            "name": "Layer 7 Firewall",
+            "definition": "Inspects application-layer traffic and can make decisions based on application content or behavior.",
+            "examples": [
+              "HTTP method filtering",
+              "Application-aware rules"
+            ],
+            "memory": "UNDERSTANDS THE APP"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Firewall Types comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "WAF",
+            "Protect web apps",
+            "HTTP/HTTPS attacks"
+          ],
+          [
+            "UTM",
+            "Multiple security tools combined",
+            "All-in-one appliance"
+          ],
+          [
+            "NGFW",
+            "Application-aware advanced firewall",
+            "Deep inspection/app identity"
+          ],
+          [
+            "Layer 4",
+            "IP/port/protocol",
+            "Transport-level filtering"
+          ],
+          [
+            "Layer 7",
+            "Application content",
+            "Application-aware filtering"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Firewall Types exam shortcuts",
+        "items": [
+          [
+            "Protect web app from SQLi/XSS → WAF",
+            "A WAF focuses on HTTP/HTTPS attacks.",
+            "Example: Malicious SQL input is blocked before reaching the application."
+          ],
+          [
+            "Firewall + AV + IDS/IPS in one → UTM",
+            "UTM consolidates multiple security functions.",
+            "Example: A branch uses one security appliance."
+          ],
+          [
+            "Need app awareness/deep inspection → NGFW",
+            "NGFWs understand more than ports and IPs.",
+            "Example: Block an application regardless of port."
+          ],
+          [
+            "Rule based on ports/protocols → LAYER 4",
+            "Use transport-level information.",
+            "Example: Allow TCP 443, deny TCP 23."
+          ],
+          [
+            "Rule based on HTTP/app content → LAYER 7",
+            "Use application-layer context.",
+            "Example: Block a specific HTTP method."
+          ]
+        ],
+        "example": "Focus on the exact requirement in the scenario before choosing the control."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A company wants to block SQL injection and XSS attempts before they reach its web application. Which firewall is best?",
+        "choices": [
+          "WAF",
+          "Layer 4 firewall",
+          "UTM only",
+          "VPN"
+        ],
+        "answer": 0,
+        "explanation": "A WAF specifically protects HTTP/HTTPS application traffic."
+      },
+      {
+        "q": "A branch office wants one appliance that provides firewalling, antivirus, IDS/IPS, and web filtering. Which type best fits?",
+        "choices": [
+          "UTM",
+          "WAF",
+          "Layer 4 firewall",
+          "Proxy only"
+        ],
+        "answer": 0,
+        "explanation": "UTM combines multiple security functions in one platform."
+      },
+      {
+        "q": "A firewall must identify applications regardless of the TCP port they use and perform deep inspection. Which type is best?",
+        "choices": [
+          "NGFW",
+          "Layer 4 firewall",
+          "WAF only",
+          "Load balancer"
+        ],
+        "answer": 0,
+        "explanation": "NGFWs provide application awareness and advanced inspection."
+      },
+      {
+        "q": "A rule allows TCP 443 and blocks TCP 23 based only on ports and protocols. Which firewall layer is being used?",
+        "choices": [
+          "Layer 4",
+          "Layer 7",
+          "WAF",
+          "SASE"
+        ],
+        "answer": 0,
+        "explanation": "Layer 4 filtering uses IP, port, and protocol information."
+      },
+      {
+        "q": "A firewall blocks a specific HTTP method based on application content. Which layer is most relevant?",
+        "choices": [
+          "Layer 7",
+          "Layer 4",
+          "802.1X",
+          "IPsec"
+        ],
+        "answer": 0,
+        "explanation": "Layer 7 firewalls understand application-layer content."
+      }
+    ]
+  }
+}

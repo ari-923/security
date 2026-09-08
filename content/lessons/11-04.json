@@ -1,0 +1,519 @@
+{
+  "id": "11.04",
+  "chapter": 11,
+  "sub": 4,
+  "title": "Secure Communication, Remote Access, and Control Selection",
+  "chapter_name": "Secure Enterprise Infrastructure",
+  "slides": [
+    {
+      "n": 1,
+      "title": "Secure Communication, Remote Access, and Control Selection",
+      "instructional": false,
+      "teach": "",
+      "points": [
+        "Secure access controls protect traffic and remote connectivity. Choose the technology that best fits encrypted tunneling, branch connectivity, cloud-delivered security, or the stated business requirement."
+      ],
+      "defs": [],
+      "raw": ""
+    },
+    {
+      "n": 2,
+      "title": "Virtual Private Network (VPN)",
+      "instructional": true,
+      "teach": "Creates an encrypted logical connection across an untrusted network.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Creates an encrypted logical connection across an untrusted network.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Creates an encrypted logical connection across an untrusted network."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Remote-access VPN, Site-to-site VPN"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes how enterprise infrastructure is protected or accessed.",
+        "example": "Remote-access VPN",
+        "exam": "ENCRYPTED PRIVATE CONNECTION",
+        "check_q": "What is the key exam clue for Virtual Private Network (VPN)?",
+        "check_a": "ENCRYPTED PRIVATE CONNECTION"
+      }
+    },
+    {
+      "n": 3,
+      "title": "Remote Access",
+      "instructional": true,
+      "teach": "Allows authorized users to connect to enterprise resources from outside the local environment.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Allows authorized users to connect to enterprise resources from outside the local environment.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Allows authorized users to connect to enterprise resources from outside the local environment."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Remote workforce, Administrator connection"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes how enterprise infrastructure is protected or accessed.",
+        "example": "Remote workforce",
+        "exam": "CONNECT FROM ELSEWHERE",
+        "check_q": "What is the key exam clue for Remote Access?",
+        "check_a": "CONNECT FROM ELSEWHERE"
+      }
+    },
+    {
+      "n": 4,
+      "title": "Tunneling",
+      "instructional": true,
+      "teach": "Encapsulates one protocol or traffic flow inside another to create a protected or logical path.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Encapsulates one protocol or traffic flow inside another to create a protected or logical path.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Encapsulates one protocol or traffic flow inside another to create a protected or logical path."
+          },
+          {
+            "term": "Examples",
+            "explanation": "VPN tunnel, GRE over IPsec"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes how enterprise infrastructure is protected or accessed.",
+        "example": "VPN tunnel",
+        "exam": "TRAFFIC INSIDE TRAFFIC",
+        "check_q": "What is the key exam clue for Tunneling?",
+        "check_a": "TRAFFIC INSIDE TRAFFIC"
+      }
+    },
+    {
+      "n": 5,
+      "title": "Transport Layer Security (TLS)",
+      "instructional": true,
+      "teach": "Provides encryption and authentication for application communications in transit.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Provides encryption and authentication for application communications in transit.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Provides encryption and authentication for application communications in transit."
+          },
+          {
+            "term": "Examples",
+            "explanation": "HTTPS, Secure API connection"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes how enterprise infrastructure is protected or accessed.",
+        "example": "HTTPS",
+        "exam": "SECURE APPLICATION TRAFFIC",
+        "check_q": "What is the key exam clue for Transport Layer Security (TLS)?",
+        "check_a": "SECURE APPLICATION TRAFFIC"
+      }
+    },
+    {
+      "n": 6,
+      "title": "Internet Protocol Security (IPsec)",
+      "instructional": true,
+      "teach": "A suite of protocols for securing IP traffic through authentication and encryption.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "A suite of protocols for securing IP traffic through authentication and encryption.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "A suite of protocols for securing IP traffic through authentication and encryption."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Site-to-site VPN, Tunnel mode"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes how enterprise infrastructure is protected or accessed.",
+        "example": "Site-to-site VPN",
+        "exam": "SECURE IP TRAFFIC",
+        "check_q": "What is the key exam clue for Internet Protocol Security (IPsec)?",
+        "check_a": "SECURE IP TRAFFIC"
+      }
+    },
+    {
+      "n": 7,
+      "title": "Software-defined Wide Area Network (SD-WAN)",
+      "instructional": true,
+      "teach": "Uses software-defined control to manage and optimize wide-area connectivity across sites.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Uses software-defined control to manage and optimize wide-area connectivity across sites.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Uses software-defined control to manage and optimize wide-area connectivity across sites."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Branch connectivity, Multiple WAN links"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes how enterprise infrastructure is protected or accessed.",
+        "example": "Branch connectivity",
+        "exam": "SMART WAN",
+        "check_q": "What is the key exam clue for Software-defined Wide Area Network (SD-WAN)?",
+        "check_a": "SMART WAN"
+      }
+    },
+    {
+      "n": 8,
+      "title": "Secure Access Service Edge (SASE)",
+      "instructional": true,
+      "teach": "Combines wide-area networking and cloud-delivered security services into a unified architecture.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Combines wide-area networking and cloud-delivered security services into a unified architecture.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Combines wide-area networking and cloud-delivered security services into a unified architecture."
+          },
+          {
+            "term": "Examples",
+            "explanation": "SD-WAN + security services, Cloud-delivered secure access"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes how enterprise infrastructure is protected or accessed.",
+        "example": "SD-WAN + security services",
+        "exam": "NETWORK + SECURITY IN CLOUD",
+        "check_q": "What is the key exam clue for Secure Access Service Edge (SASE)?",
+        "check_a": "NETWORK + SECURITY IN CLOUD"
+      }
+    },
+    {
+      "n": 9,
+      "title": "Selection of Effective Controls",
+      "instructional": true,
+      "teach": "Choosing the control that best addresses the specific risk, architecture, business need, and operational constraint.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Choosing the control that best addresses the specific risk, architecture, business need, and operational constraint.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Choosing the control that best addresses the specific risk, architecture, business need, and operational constraint."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Use WAF for web attacks, Use VPN for encrypted remote access"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes how enterprise infrastructure is protected or accessed.",
+        "example": "Use WAF for web attacks",
+        "exam": "MATCH CONTROL TO RISK",
+        "check_q": "What is the key exam clue for Selection of Effective Controls?",
+        "check_a": "MATCH CONTROL TO RISK"
+      }
+    }
+  ],
+  "slide_count": 9,
+  "instructional_count": 8,
+  "concepts": [
+    "Virtual Private Network (VPN)",
+    "Remote Access",
+    "Tunneling",
+    "Transport Layer Security (TLS)",
+    "Internet Protocol Security (IPsec)",
+    "Software-defined Wide Area Network (SD-WAN)",
+    "Secure Access Service Edge (SASE)",
+    "Selection of Effective Controls"
+  ],
+  "source_filename": "11-04.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 3.2",
+      "title": "Secure Communication, Remote Access, and Control Selection",
+      "intro": "Secure access controls protect traffic and remote connectivity. Choose the technology that best fits encrypted tunneling, branch connectivity, cloud-delivered security, or the stated business requirement."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Secure Communication, Remote Access, and Control Selection",
+        "prompt": "Identify the scenario requirement first, then choose the infrastructure control that directly addresses it.",
+        "badge": "3.2",
+        "cards": [
+          {
+            "name": "Virtual Private Network (VPN)",
+            "definition": "Creates an encrypted logical connection across an untrusted network.",
+            "examples": [
+              "Remote-access VPN",
+              "Site-to-site VPN"
+            ],
+            "memory": "ENCRYPTED PRIVATE CONNECTION"
+          },
+          {
+            "name": "Remote Access",
+            "definition": "Allows authorized users to connect to enterprise resources from outside the local environment.",
+            "examples": [
+              "Remote workforce",
+              "Administrator connection"
+            ],
+            "memory": "CONNECT FROM ELSEWHERE"
+          },
+          {
+            "name": "Tunneling",
+            "definition": "Encapsulates one protocol or traffic flow inside another to create a protected or logical path.",
+            "examples": [
+              "VPN tunnel",
+              "GRE over IPsec"
+            ],
+            "memory": "TRAFFIC INSIDE TRAFFIC"
+          },
+          {
+            "name": "Transport Layer Security (TLS)",
+            "definition": "Provides encryption and authentication for application communications in transit.",
+            "examples": [
+              "HTTPS",
+              "Secure API connection"
+            ],
+            "memory": "SECURE APPLICATION TRAFFIC"
+          },
+          {
+            "name": "Internet Protocol Security (IPsec)",
+            "definition": "A suite of protocols for securing IP traffic through authentication and encryption.",
+            "examples": [
+              "Site-to-site VPN",
+              "Tunnel mode"
+            ],
+            "memory": "SECURE IP TRAFFIC"
+          },
+          {
+            "name": "Software-defined Wide Area Network (SD-WAN)",
+            "definition": "Uses software-defined control to manage and optimize wide-area connectivity across sites.",
+            "examples": [
+              "Branch connectivity",
+              "Multiple WAN links"
+            ],
+            "memory": "SMART WAN"
+          },
+          {
+            "name": "Secure Access Service Edge (SASE)",
+            "definition": "Combines wide-area networking and cloud-delivered security services into a unified architecture.",
+            "examples": [
+              "SD-WAN + security services",
+              "Cloud-delivered secure access"
+            ],
+            "memory": "NETWORK + SECURITY IN CLOUD"
+          },
+          {
+            "name": "Selection of Effective Controls",
+            "definition": "Choosing the control that best addresses the specific risk, architecture, business need, and operational constraint.",
+            "examples": [
+              "Use WAF for web attacks",
+              "Use VPN for encrypted remote access"
+            ],
+            "memory": "MATCH CONTROL TO RISK"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Secure Communication, Remote Access, and Control Selection comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "VPN",
+            "Encrypted logical connection",
+            "Remote/site-to-site access"
+          ],
+          [
+            "TLS",
+            "Secure application traffic",
+            "HTTPS/API"
+          ],
+          [
+            "IPsec",
+            "Secure IP traffic",
+            "VPN/tunnel mode"
+          ],
+          [
+            "SD-WAN",
+            "Software-defined WAN connectivity",
+            "Branches/multiple links"
+          ],
+          [
+            "SASE",
+            "Cloud networking + security",
+            "Distributed users/sites"
+          ],
+          [
+            "Control selection",
+            "Choose best-fit control",
+            "Match risk and requirement"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Secure Communication, Remote Access, and Control Selection exam shortcuts",
+        "items": [
+          [
+            "Remote user needs encrypted access → VPN",
+            "Create a protected logical connection over the internet.",
+            "Example: An employee securely connects from home."
+          ],
+          [
+            "HTTPS/application session → TLS",
+            "TLS secures application-layer communications.",
+            "Example: A browser connects to an internal portal over HTTPS."
+          ],
+          [
+            "Secure IP traffic between networks → IPsec",
+            "IPsec is common for site-to-site VPNs.",
+            "Example: Two offices connect through an IPsec tunnel."
+          ],
+          [
+            "Multiple branch links need centralized control → SD-WAN",
+            "SD-WAN manages WAN paths with software-defined policy.",
+            "Example: A branch uses broadband and MPLS under centralized control."
+          ],
+          [
+            "Cloud networking + security → SASE",
+            "SASE combines WAN connectivity with cloud-delivered security.",
+            "Example: Remote users receive secure access and filtering through one service."
+          ],
+          [
+            "Question asks BEST control → MATCH CONTROL TO RISK",
+            "Choose the control that directly addresses the requirement.",
+            "Example: WAF for web attacks, VPN for encrypted remote access."
+          ]
+        ],
+        "example": "Focus on the exact requirement in the scenario before choosing the control."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A remote employee needs an encrypted connection to internal enterprise resources over the internet. Which technology is most appropriate?",
+        "choices": [
+          "VPN",
+          "WAF",
+          "802.1X",
+          "Load balancer"
+        ],
+        "answer": 0,
+        "explanation": "A VPN creates an encrypted logical connection over an untrusted network."
+      },
+      {
+        "q": "A browser must securely access an internal portal over HTTPS. Which protocol provides the protection?",
+        "choices": [
+          "TLS",
+          "IPsec",
+          "EAP",
+          "SD-WAN"
+        ],
+        "answer": 0,
+        "explanation": "TLS secures application communications such as HTTPS."
+      },
+      {
+        "q": "Two offices need an encrypted site-to-site connection at the IP layer. Which technology is most appropriate?",
+        "choices": [
+          "IPsec",
+          "TLS only",
+          "WAF",
+          "802.1X"
+        ],
+        "answer": 0,
+        "explanation": "IPsec secures IP traffic and is commonly used for site-to-site VPNs."
+      },
+      {
+        "q": "A company wants centralized policy-based control over multiple WAN links connecting branch offices. Which technology best fits?",
+        "choices": [
+          "SD-WAN",
+          "SASE",
+          "WAF",
+          "EAP"
+        ],
+        "answer": 0,
+        "explanation": "SD-WAN provides software-defined management of WAN connectivity."
+      },
+      {
+        "q": "A distributed workforce needs cloud-delivered networking and security services in one architecture. Which model best fits?",
+        "choices": [
+          "SASE",
+          "SD-WAN only",
+          "WAF",
+          "Jump server"
+        ],
+        "answer": 0,
+        "explanation": "SASE combines networking and cloud-delivered security services."
+      },
+      {
+        "q": "A scenario asks for the BEST control to protect a web application from SQL injection. Which choice is most appropriate?",
+        "choices": [
+          "WAF",
+          "VPN",
+          "Load balancer",
+          "802.1X"
+        ],
+        "answer": 0,
+        "explanation": "Effective control selection means matching the control directly to the risk."
+      }
+    ]
+  }
+}
