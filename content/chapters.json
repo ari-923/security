@@ -124,5 +124,12 @@
     "lesson_count": 4,
     "slide_count": 32,
     "instructional_count": 28
+  },
+  {
+    "chapter": 19,
+    "name": "Identity & Access Management",
+    "lesson_count": 4,
+    "slide_count": 41,
+    "instructional_count": 37
   }
 ]
