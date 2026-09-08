@@ -2,71 +2,311 @@
   "id": "16.04",
   "chapter": 16,
   "sub": 4,
-  "title": "Validation of remediation",
+  "title": "Validation of Remediation and Reporting",
   "chapter_name": "Vulnerability Management",
   "slides": [
     {
       "n": 1,
-      "title": "Validation of Remediation",
-      "points": [],
-      "raw": "Validation of Remediation",
+      "title": "Validation of Remediation and Reporting",
       "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": []
+      "teach": "",
+      "points": [
+        "Remediation is not complete until the fix is validated and the results are documented. Security teams must confirm that risk was actually reduced and communicate the outcome."
+      ],
+      "defs": [],
+      "raw": ""
     },
     {
       "n": 2,
-      "title": "Validation of Remediation",
-      "points": [
-        "Rescanning",
-        "Audit",
-        "Verification"
-      ],
-      "raw": "Validation of Remediation\nRescanning\nAudit\nVerification",
+      "title": "Rescanning",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "Runs the vulnerability assessment again after remediation to confirm the finding is gone.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Vulnerability response turns findings into risk reduction: patch, reconfigure, isolate, remove, replace, apply compensating controls, or formally accept risk. Validation confirms the chosen fix actually worked.",
-        "why": "A scan finding has no value if it is never remediated or if the remediation is assumed successful without verification.",
-        "example": "A team patches a vulnerable service and then rescans the host to verify the vulnerability is no longer present.",
-        "exam": "After remediation, validate—often by rescanning, testing, or auditing. Do not simply close the ticket because a patch command ran.",
+        "learn": "Runs the vulnerability assessment again after remediation to confirm the finding is gone.",
         "breakdown": [
           {
-            "term": "Rescanning",
-            "explanation": "Security scanning automatically examines systems, networks, applications, or configurations for known weaknesses and risky conditions."
+            "term": "Basically",
+            "explanation": "Runs the vulnerability assessment again after remediation to confirm the finding is gone."
           },
           {
-            "term": "Audit",
-            "explanation": "Evaluate risk and verify whether controls meet organizational, legal, or regulatory requirements."
-          },
-          {
-            "term": "Verification",
-            "explanation": "Within Validation of Remediation, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Validation of remediation rather than memorizing the phrase by itself."
+            "term": "Examples",
+            "explanation": "Post-patch vulnerability scan"
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Validation of Remediation and describe at least two key ideas from this section.",
-        "check_a": "Vulnerability response turns findings into risk reduction: patch, reconfigure, isolate, remove, replace, apply compensating controls, or formally accept risk. Validation confirms the chosen fix actually worked. Key ideas include: Rescanning; Audit; Verification.",
-        "points": [
-          "Rescanning",
-          "Audit",
-          "Verification"
-        ]
+        "why": "This concept affects how vulnerabilities are identified, analyzed, prioritized, remediated, validated, or reported.",
+        "example": "Post-patch vulnerability scan",
+        "exam": "SCAN AGAIN",
+        "check_q": "What is the key exam clue for Rescanning?",
+        "check_a": "SCAN AGAIN"
       }
     },
     {
       "n": 3,
+      "title": "Audit",
+      "instructional": true,
+      "teach": "Reviews remediation, evidence, controls, and process compliance.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Reviews remediation, evidence, controls, and process compliance.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Reviews remediation, evidence, controls, and process compliance."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Patch audit, Control audit"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how vulnerabilities are identified, analyzed, prioritized, remediated, validated, or reported.",
+        "example": "Patch audit",
+        "exam": "REVIEW THE EVIDENCE",
+        "check_q": "What is the key exam clue for Audit?",
+        "check_a": "REVIEW THE EVIDENCE"
+      }
+    },
+    {
+      "n": 4,
+      "title": "Verification",
+      "instructional": true,
+      "teach": "Directly confirms that remediation worked as intended.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Directly confirms that remediation worked as intended.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Directly confirms that remediation worked as intended."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Manual retest, Configuration check"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how vulnerabilities are identified, analyzed, prioritized, remediated, validated, or reported.",
+        "example": "Manual retest",
+        "exam": "PROVE IT WORKED",
+        "check_q": "What is the key exam clue for Verification?",
+        "check_a": "PROVE IT WORKED"
+      }
+    },
+    {
+      "n": 5,
       "title": "Reporting",
-      "points": [],
-      "raw": "Reporting",
-      "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": []
+      "instructional": true,
+      "teach": "Documents vulnerability findings, priorities, remediation status, residual risk, and validation results for stakeholders.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Documents vulnerability findings, priorities, remediation status, residual risk, and validation results for stakeholders.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Documents vulnerability findings, priorities, remediation status, residual risk, and validation results for stakeholders."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Executive report, Technical remediation report"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how vulnerabilities are identified, analyzed, prioritized, remediated, validated, or reported.",
+        "example": "Executive report",
+        "exam": "COMMUNICATE THE RESULTS",
+        "check_q": "What is the key exam clue for Reporting?",
+        "check_a": "COMMUNICATE THE RESULTS"
+      }
     }
   ],
-  "slide_count": 3,
-  "instructional_count": 1,
-  "concepts": [],
-  "source_filename": "16.04_Validation_of_remediation.pdf"
+  "slide_count": 5,
+  "instructional_count": 4,
+  "concepts": [
+    "Rescanning",
+    "Audit",
+    "Verification",
+    "Reporting"
+  ],
+  "source_filename": "16-04.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 4.3",
+      "title": "Validation of Remediation and Reporting",
+      "intro": "Remediation is not complete until the fix is validated and the results are documented. Security teams must confirm that risk was actually reduced and communicate the outcome."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Validation of Remediation and Reporting",
+        "prompt": "Follow the vulnerability lifecycle: identify → analyze → prioritize → remediate → validate → report.",
+        "badge": "4.3",
+        "cards": [
+          {
+            "name": "Rescanning",
+            "definition": "Runs the vulnerability assessment again after remediation to confirm the finding is gone.",
+            "examples": [
+              "Post-patch vulnerability scan"
+            ],
+            "memory": "SCAN AGAIN"
+          },
+          {
+            "name": "Audit",
+            "definition": "Reviews remediation, evidence, controls, and process compliance.",
+            "examples": [
+              "Patch audit",
+              "Control audit"
+            ],
+            "memory": "REVIEW THE EVIDENCE"
+          },
+          {
+            "name": "Verification",
+            "definition": "Directly confirms that remediation worked as intended.",
+            "examples": [
+              "Manual retest",
+              "Configuration check"
+            ],
+            "memory": "PROVE IT WORKED"
+          },
+          {
+            "name": "Reporting",
+            "definition": "Documents vulnerability findings, priorities, remediation status, residual risk, and validation results for stakeholders.",
+            "examples": [
+              "Executive report",
+              "Technical remediation report"
+            ],
+            "memory": "COMMUNICATE THE RESULTS"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Validation of Remediation and Reporting comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Rescanning",
+            "Repeat automated assessment",
+            "Did scanner finding disappear?"
+          ],
+          [
+            "Audit",
+            "Review evidence/process",
+            "Was remediation performed correctly?"
+          ],
+          [
+            "Verification",
+            "Direct confirmation",
+            "Did the fix actually work?"
+          ],
+          [
+            "Reporting",
+            "Communicate status/results",
+            "Who needs to know?"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Validation of Remediation and Reporting exam shortcuts",
+        "items": [
+          [
+            "Patch installed, need automated confirmation → RESCAN",
+            "Run the scanner again to ensure the finding is resolved.",
+            "Example: A post-patch scan no longer detects the CVE."
+          ],
+          [
+            "Need manual proof the control works → VERIFICATION",
+            "Directly test the corrected state.",
+            "Example: Confirm the vulnerable service no longer accepts the exploit path."
+          ],
+          [
+            "Need evidence process was followed → AUDIT",
+            "Review records, approvals, and control evidence.",
+            "Example: An auditor checks patch records and exception approvals."
+          ],
+          [
+            "Need to communicate status and residual risk → REPORTING",
+            "Summarize what was found, what changed, and what remains.",
+            "Example: Leadership receives a remediation dashboard."
+          ]
+        ],
+        "example": "Focus on which stage of the vulnerability-management lifecycle the scenario is describing."
+      }
+    ],
+    "questions": [
+      {
+        "q": "After patching a server, the security team runs the vulnerability scanner again to confirm the finding is gone. Which activity is this?",
+        "choices": [
+          "Rescanning",
+          "Audit",
+          "Verification only",
+          "Reporting"
+        ],
+        "answer": 0,
+        "explanation": "Rescanning repeats the automated assessment after remediation."
+      },
+      {
+        "q": "A security engineer manually tests the previously vulnerable function to confirm the fix actually works. Which activity is this?",
+        "choices": [
+          "Verification",
+          "Rescanning",
+          "Reporting",
+          "Insurance"
+        ],
+        "answer": 0,
+        "explanation": "Verification directly confirms the remediation works as intended."
+      },
+      {
+        "q": "An auditor reviews patch records, exception approvals, and remediation evidence. Which activity is this?",
+        "choices": [
+          "Audit",
+          "Rescanning",
+          "Penetration testing",
+          "OSINT"
+        ],
+        "answer": 0,
+        "explanation": "An audit reviews evidence and process compliance."
+      },
+      {
+        "q": "Leadership receives a dashboard showing open vulnerabilities, remediation progress, and residual risk. Which activity is this?",
+        "choices": [
+          "Reporting",
+          "Verification",
+          "Rescanning",
+          "Static analysis"
+        ],
+        "answer": 0,
+        "explanation": "Reporting communicates vulnerability status and outcomes to stakeholders."
+      }
+    ]
+  }
 }
