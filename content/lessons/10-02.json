@@ -1,26 +1,26 @@
 {
-  "id": "10.02",
+  "id": "10.03",
   "chapter": 10,
-  "sub": 2,
-  "title": "Network Architecture, Isolation, and SDN",
+  "sub": 3,
+  "title": "Virtualization, Containers, and Specialized Systems",
   "chapter_name": "Security Architecture Models",
   "slides": [
     {
       "n": 1,
-      "title": "Network Architecture, Isolation, and SDN",
+      "title": "Virtualization, Containers, and Specialized Systems",
       "instructional": false,
       "teach": "",
       "points": [
-        "Network architecture controls how systems communicate. Isolation and segmentation reduce exposure, while SDN centralizes programmable network control."
+        "Virtualized, containerized, embedded, IoT, and industrial systems have different isolation models, resource constraints, patching capabilities, and operational requirements."
       ],
       "defs": [],
       "raw": ""
     },
     {
       "n": 2,
-      "title": "Network Infrastructure",
+      "title": "Containerization",
       "instructional": true,
-      "teach": "Routers, switches, firewalls, links, and related components that connect systems and carry traffic.",
+      "teach": "Packages applications and dependencies into isolated containers that share the host operating-system kernel.",
       "points": [
         "Basically",
         "Examples"
@@ -28,30 +28,30 @@
       "defs": [],
       "raw": "",
       "course": {
-        "learn": "Routers, switches, firewalls, links, and related components that connect systems and carry traffic.",
+        "learn": "Packages applications and dependencies into isolated containers that share the host operating-system kernel.",
         "breakdown": [
           {
             "term": "Basically",
-            "explanation": "Routers, switches, firewalls, links, and related components that connect systems and carry traffic."
+            "explanation": "Packages applications and dependencies into isolated containers that share the host operating-system kernel."
           },
           {
             "term": "Examples",
-            "explanation": "Routers, Switches, Firewalls"
+            "explanation": "Docker container, Kubernetes workload"
           }
         ],
         "defs": [],
         "why": "This concept changes the security tradeoffs of the architecture.",
-        "example": "Routers",
-        "exam": "HOW SYSTEMS CONNECT",
-        "check_q": "What is the key exam clue for Network Infrastructure?",
-        "check_a": "HOW SYSTEMS CONNECT"
+        "example": "Docker container",
+        "exam": "SHARES HOST KERNEL",
+        "check_q": "What is the key exam clue for Containerization?",
+        "check_a": "SHARES HOST KERNEL"
       }
     },
     {
       "n": 3,
-      "title": "Physical Isolation",
+      "title": "Virtualization",
       "instructional": true,
-      "teach": "Uses physical separation to prevent normal network communication between environments.",
+      "teach": "Runs multiple virtual machines with separate guest operating systems on shared hardware through a hypervisor.",
       "points": [
         "Basically",
         "Examples"
@@ -59,30 +59,30 @@
       "defs": [],
       "raw": "",
       "course": {
-        "learn": "Uses physical separation to prevent normal network communication between environments.",
+        "learn": "Runs multiple virtual machines with separate guest operating systems on shared hardware through a hypervisor.",
         "breakdown": [
           {
             "term": "Basically",
-            "explanation": "Uses physical separation to prevent normal network communication between environments."
+            "explanation": "Runs multiple virtual machines with separate guest operating systems on shared hardware through a hypervisor."
           },
           {
             "term": "Examples",
-            "explanation": "Separate switches, Dedicated cabling"
+            "explanation": "VMware VM, Hyper-V"
           }
         ],
         "defs": [],
         "why": "This concept changes the security tradeoffs of the architecture.",
-        "example": "Separate switches",
-        "exam": "PHYSICALLY SEPARATE",
-        "check_q": "What is the key exam clue for Physical Isolation?",
-        "check_a": "PHYSICALLY SEPARATE"
+        "example": "VMware VM",
+        "exam": "SEPARATE GUEST OS",
+        "check_q": "What is the key exam clue for Virtualization?",
+        "check_a": "SEPARATE GUEST OS"
       }
     },
     {
       "n": 4,
-      "title": "Air-gapped",
+      "title": "Internet of Things (IoT)",
       "instructional": true,
-      "teach": "A physically isolated environment with no direct network connection to less trusted networks.",
+      "teach": "Network-connected devices that often have limited resources, specialized functions, and varying update support.",
       "points": [
         "Basically",
         "Examples"
@@ -90,30 +90,30 @@
       "defs": [],
       "raw": "",
       "course": {
-        "learn": "A physically isolated environment with no direct network connection to less trusted networks.",
+        "learn": "Network-connected devices that often have limited resources, specialized functions, and varying update support.",
         "breakdown": [
           {
             "term": "Basically",
-            "explanation": "A physically isolated environment with no direct network connection to less trusted networks."
+            "explanation": "Network-connected devices that often have limited resources, specialized functions, and varying update support."
           },
           {
             "term": "Examples",
-            "explanation": "Offline sensitive system, Separated control network"
+            "explanation": "Smart camera, Sensor, Smart lock"
           }
         ],
         "defs": [],
         "why": "This concept changes the security tradeoffs of the architecture.",
-        "example": "Offline sensitive system",
-        "exam": "NO DIRECT CONNECTION",
-        "check_q": "What is the key exam clue for Air-gapped?",
-        "check_a": "NO DIRECT CONNECTION"
+        "example": "Smart camera",
+        "exam": "CONNECTED DEVICE",
+        "check_q": "What is the key exam clue for Internet of Things (IoT)?",
+        "check_a": "CONNECTED DEVICE"
       }
     },
     {
       "n": 5,
-      "title": "Logical Segmentation",
+      "title": "ICS / SCADA",
       "instructional": true,
-      "teach": "Separates traffic through logical controls rather than physical separation.",
+      "teach": "Industrial control and supervisory systems used to monitor or control physical processes.",
       "points": [
         "Basically",
         "Examples"
@@ -121,30 +121,30 @@
       "defs": [],
       "raw": "",
       "course": {
-        "learn": "Separates traffic through logical controls rather than physical separation.",
+        "learn": "Industrial control and supervisory systems used to monitor or control physical processes.",
         "breakdown": [
           {
             "term": "Basically",
-            "explanation": "Separates traffic through logical controls rather than physical separation."
+            "explanation": "Industrial control and supervisory systems used to monitor or control physical processes."
           },
           {
             "term": "Examples",
-            "explanation": "VLANs, Firewall zones, VRFs"
+            "explanation": "Manufacturing control, Power grid monitoring"
           }
         ],
         "defs": [],
         "why": "This concept changes the security tradeoffs of the architecture.",
-        "example": "VLANs",
-        "exam": "SEPARATE BY CONFIGURATION",
-        "check_q": "What is the key exam clue for Logical Segmentation?",
-        "check_a": "SEPARATE BY CONFIGURATION"
+        "example": "Manufacturing control",
+        "exam": "CONTROL PHYSICAL PROCESS",
+        "check_q": "What is the key exam clue for ICS / SCADA?",
+        "check_a": "CONTROL PHYSICAL PROCESS"
       }
     },
     {
       "n": 6,
-      "title": "Software-defined Networking (SDN)",
+      "title": "Real-time Operating System (RTOS)",
       "instructional": true,
-      "teach": "Separates network control logic from forwarding devices and enables centralized programmable management.",
+      "teach": "An operating system designed for predictable, time-sensitive responses.",
       "points": [
         "Basically",
         "Examples"
@@ -152,103 +152,143 @@
       "defs": [],
       "raw": "",
       "course": {
-        "learn": "Separates network control logic from forwarding devices and enables centralized programmable management.",
+        "learn": "An operating system designed for predictable, time-sensitive responses.",
         "breakdown": [
           {
             "term": "Basically",
-            "explanation": "Separates network control logic from forwarding devices and enables centralized programmable management."
+            "explanation": "An operating system designed for predictable, time-sensitive responses."
           },
           {
             "term": "Examples",
-            "explanation": "SDN controller, Programmable network policies"
+            "explanation": "Industrial controller, Automotive controller"
           }
         ],
         "defs": [],
         "why": "This concept changes the security tradeoffs of the architecture.",
-        "example": "SDN controller",
-        "exam": "PROGRAMMABLE NETWORK",
-        "check_q": "What is the key exam clue for Software-defined Networking (SDN)?",
-        "check_a": "PROGRAMMABLE NETWORK"
+        "example": "Industrial controller",
+        "exam": "TIMING IS CRITICAL",
+        "check_q": "What is the key exam clue for Real-time Operating System (RTOS)?",
+        "check_a": "TIMING IS CRITICAL"
+      }
+    },
+    {
+      "n": 7,
+      "title": "Embedded Systems",
+      "instructional": true,
+      "teach": "Special-purpose computing systems built into larger devices or equipment.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Special-purpose computing systems built into larger devices or equipment.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Special-purpose computing systems built into larger devices or equipment."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Medical device controller, Appliance firmware"
+          }
+        ],
+        "defs": [],
+        "why": "This concept changes the security tradeoffs of the architecture.",
+        "example": "Medical device controller",
+        "exam": "BUILT INTO A DEVICE",
+        "check_q": "What is the key exam clue for Embedded Systems?",
+        "check_a": "BUILT INTO A DEVICE"
       }
     }
   ],
-  "slide_count": 6,
-  "instructional_count": 5,
+  "slide_count": 7,
+  "instructional_count": 6,
   "concepts": [
-    "Network Infrastructure",
-    "Physical Isolation",
-    "Air-gapped",
-    "Logical Segmentation",
-    "Software-defined Networking (SDN)"
+    "Containerization",
+    "Virtualization",
+    "Internet of Things (IoT)",
+    "ICS / SCADA",
+    "Real-time Operating System (RTOS)",
+    "Embedded Systems"
   ],
-  "source_filename": "10-02.json",
+  "source_filename": "10-03.json",
   "fundamental_topic_layout": {
     "hero": {
       "kicker": "Security+ Objective 3.1",
-      "title": "Network Architecture, Isolation, and SDN",
-      "intro": "Network architecture controls how systems communicate. Isolation and segmentation reduce exposure, while SDN centralizes programmable network control."
+      "title": "Virtualization, Containers, and Specialized Systems",
+      "intro": "Virtualized, containerized, embedded, IoT, and industrial systems have different isolation models, resource constraints, patching capabilities, and operational requirements."
     },
     "blocks": [
       {
         "type": "group",
         "eyebrow": "Learn",
-        "title": "Network Architecture, Isolation, and SDN",
+        "title": "Virtualization, Containers, and Specialized Systems",
         "prompt": "Compare the security tradeoffs and identify which architecture clue matters in the scenario.",
         "badge": "3.1",
         "cards": [
           {
-            "name": "Network Infrastructure",
-            "definition": "Routers, switches, firewalls, links, and related components that connect systems and carry traffic.",
+            "name": "Containerization",
+            "definition": "Packages applications and dependencies into isolated containers that share the host operating-system kernel.",
             "examples": [
-              "Routers",
-              "Switches",
-              "Firewalls"
+              "Docker container",
+              "Kubernetes workload"
             ],
-            "memory": "HOW SYSTEMS CONNECT"
+            "memory": "SHARES HOST KERNEL"
           },
           {
-            "name": "Physical Isolation",
-            "definition": "Uses physical separation to prevent normal network communication between environments.",
+            "name": "Virtualization",
+            "definition": "Runs multiple virtual machines with separate guest operating systems on shared hardware through a hypervisor.",
             "examples": [
-              "Separate switches",
-              "Dedicated cabling"
+              "VMware VM",
+              "Hyper-V"
             ],
-            "memory": "PHYSICALLY SEPARATE"
+            "memory": "SEPARATE GUEST OS"
           },
           {
-            "name": "Air-gapped",
-            "definition": "A physically isolated environment with no direct network connection to less trusted networks.",
+            "name": "Internet of Things (IoT)",
+            "definition": "Network-connected devices that often have limited resources, specialized functions, and varying update support.",
             "examples": [
-              "Offline sensitive system",
-              "Separated control network"
+              "Smart camera",
+              "Sensor",
+              "Smart lock"
             ],
-            "memory": "NO DIRECT CONNECTION"
+            "memory": "CONNECTED DEVICE"
           },
           {
-            "name": "Logical Segmentation",
-            "definition": "Separates traffic through logical controls rather than physical separation.",
+            "name": "ICS / SCADA",
+            "definition": "Industrial control and supervisory systems used to monitor or control physical processes.",
             "examples": [
-              "VLANs",
-              "Firewall zones",
-              "VRFs"
+              "Manufacturing control",
+              "Power grid monitoring"
             ],
-            "memory": "SEPARATE BY CONFIGURATION"
+            "memory": "CONTROL PHYSICAL PROCESS"
           },
           {
-            "name": "Software-defined Networking (SDN)",
-            "definition": "Separates network control logic from forwarding devices and enables centralized programmable management.",
+            "name": "Real-time Operating System (RTOS)",
+            "definition": "An operating system designed for predictable, time-sensitive responses.",
             "examples": [
-              "SDN controller",
-              "Programmable network policies"
+              "Industrial controller",
+              "Automotive controller"
             ],
-            "memory": "PROGRAMMABLE NETWORK"
+            "memory": "TIMING IS CRITICAL"
+          },
+          {
+            "name": "Embedded Systems",
+            "definition": "Special-purpose computing systems built into larger devices or equipment.",
+            "examples": [
+              "Medical device controller",
+              "Appliance firmware"
+            ],
+            "memory": "BUILT INTO A DEVICE"
           }
         ],
         "columns": "four"
       },
       {
         "type": "table",
-        "title": "Network Architecture, Isolation, and SDN comparison",
+        "title": "Virtualization, Containers, and Specialized Systems comparison",
         "headers": [
           "Concept",
           "What to compare",
@@ -256,51 +296,66 @@
         ],
         "rows": [
           [
-            "Air gap",
-            "Physical isolation",
-            "No direct network connection"
+            "Containerization",
+            "Shared host kernel",
+            "Lightweight and fast"
           ],
           [
-            "Logical segmentation",
-            "Configuration-based separation",
-            "VLAN/firewall zone"
+            "Virtualization",
+            "Separate guest OS",
+            "Stronger OS isolation, more overhead"
           ],
           [
-            "Physical isolation",
-            "Separate hardware",
-            "Strong separation"
+            "IoT",
+            "Connected specialized device",
+            "Limited resources and patching"
           ],
           [
-            "SDN",
-            "Centralized programmable control",
-            "Policy-driven networking"
+            "ICS/SCADA",
+            "Controls physical process",
+            "Availability and safety critical"
+          ],
+          [
+            "RTOS",
+            "Predictable timing",
+            "Responsiveness critical"
+          ],
+          [
+            "Embedded",
+            "Built into equipment",
+            "Long lifecycle and patch constraints"
           ]
         ]
       },
       {
         "type": "tip",
         "kicker": "Exam Shortcut",
-        "title": "Network Architecture, Isolation, and SDN exam shortcuts",
+        "title": "Virtualization, Containers, and Specialized Systems exam shortcuts",
         "items": [
           [
-            "No direct network connection → AIR-GAPPED",
-            "The environment is physically disconnected.",
-            "Example: A sensitive system has no normal LAN connection."
+            "Shared kernel → CONTAINER",
+            "Containers normally share the host OS kernel.",
+            "Example: Several Docker containers run on one Linux host."
           ],
           [
-            "VLAN or firewall zone → LOGICAL SEGMENTATION",
-            "Separation is created by configuration.",
-            "Example: Finance and engineering use different VLANs."
+            "Separate guest OS → VIRTUALIZATION",
+            "Each VM has its own operating system.",
+            "Example: Windows and Linux VMs share one host."
           ],
           [
-            "Separate network hardware → PHYSICAL ISOLATION",
-            "The boundary is physical.",
-            "Example: A control network uses dedicated switches."
+            "Connected sensor/camera → IoT",
+            "Expect resource and patching constraints.",
+            "Example: Smart cameras connect to the enterprise network."
           ],
           [
-            "Central controller programs the network → SDN",
-            "Network policy is software-driven.",
-            "Example: An SDN controller pushes segmentation rules."
+            "Controls machinery → ICS/SCADA",
+            "Security must consider safety and availability.",
+            "Example: SCADA controls water-treatment equipment."
+          ],
+          [
+            "Strict timing → RTOS",
+            "Predictable response is essential.",
+            "Example: A controller must react within milliseconds."
           ]
         ],
         "example": "Choose the architecture based on the security tradeoff emphasized in the scenario."
@@ -308,48 +363,59 @@
     ],
     "questions": [
       {
-        "q": "A sensitive environment uses completely separate switches and cabling from the corporate LAN. Which concept best fits?",
+        "q": "Multiple application workloads run in isolated environments but share the same host OS kernel. Which model is this?",
         "choices": [
-          "Physical isolation",
-          "Logical segmentation",
-          "SDN",
-          "Microservices"
-        ],
-        "answer": 0,
-        "explanation": "Physical isolation relies on distinct physical infrastructure."
-      },
-      {
-        "q": "A classified system has no direct network connection to any less trusted network. Which design is this?",
-        "choices": [
-          "Air-gapped",
-          "Logically segmented",
-          "Serverless",
-          "Virtualized"
-        ],
-        "answer": 0,
-        "explanation": "An air-gapped system has no direct network connection."
-      },
-      {
-        "q": "Finance and engineering share switches but use different VLANs with firewall rules between them. Which concept is this?",
-        "choices": [
-          "Logical segmentation",
-          "Physical isolation",
-          "Air gap",
-          "RTOS"
-        ],
-        "answer": 0,
-        "explanation": "Logical segmentation creates separation through configuration."
-      },
-      {
-        "q": "A central controller programs routing and segmentation policies across many network devices. Which model is this?",
-        "choices": [
-          "SDN",
-          "On-premises",
-          "ICS",
+          "Containerization",
+          "Virtualization",
+          "RTOS",
           "Air gap"
         ],
         "answer": 0,
-        "explanation": "SDN uses centralized programmable network control."
+        "explanation": "Containers share the host kernel."
+      },
+      {
+        "q": "Windows and Linux workloads run as separate guest operating systems on one hypervisor. Which model is this?",
+        "choices": [
+          "Virtualization",
+          "Containerization",
+          "Serverless",
+          "IoT"
+        ],
+        "answer": 0,
+        "explanation": "Virtual machines each use separate guest operating systems."
+      },
+      {
+        "q": "A network-connected smart camera has limited compute power and inconsistent patch support. Which category best fits?",
+        "choices": [
+          "IoT",
+          "RTOS only",
+          "Microservices",
+          "SDN"
+        ],
+        "answer": 0,
+        "explanation": "IoT devices are specialized network-connected devices."
+      },
+      {
+        "q": "A system directly controls industrial machinery and operational safety is the top concern. Which architecture is most relevant?",
+        "choices": [
+          "ICS/SCADA",
+          "Microservices",
+          "Serverless",
+          "IaC"
+        ],
+        "answer": 0,
+        "explanation": "ICS/SCADA systems monitor and control physical industrial processes."
+      },
+      {
+        "q": "A controller must respond within a guaranteed number of milliseconds. Which model is most appropriate?",
+        "choices": [
+          "RTOS",
+          "General-purpose cloud OS",
+          "Serverless",
+          "Microservices"
+        ],
+        "answer": 0,
+        "explanation": "RTOS prioritizes deterministic, time-sensitive response."
       }
     ]
   }
