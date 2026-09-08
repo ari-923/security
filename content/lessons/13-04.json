@@ -2,213 +2,617 @@
   "id": "13.04",
   "chapter": 13,
   "sub": 4,
-  "title": "Capacity planning",
+  "title": "Backups, Replication, and Power Resilience",
   "chapter_name": "Resilience & Recovery",
   "slides": [
     {
       "n": 1,
-      "title": "Capacity Planning",
-      "points": [],
-      "raw": "Capacity Planning",
+      "title": "Backups, Replication, and Power Resilience",
       "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": []
+      "teach": "",
+      "points": [
+        "Backups and power controls support recovery by preserving data and keeping systems available long enough to survive or recover from outages."
+      ],
+      "defs": [],
+      "raw": ""
     },
     {
       "n": 2,
-      "title": "People",
-      "points": [
-        "Training and",
-        "Awareness",
-        "Programs",
-        "Role-Based",
-        "Access Control",
-        "(RBAC)",
-        "Incident",
-        "Response",
-        "Training"
-      ],
-      "raw": "People\nTraining and\nAwareness\nPrograms\nRole-Based\nAccess Control\n(RBAC)\nIncident\nResponse\nTraining",
+      "title": "Onsite Backup",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "Backup stored at the same location as the primary environment.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "This section focuses on **People** within **Capacity planning**. Capacity planning ensures people, technology, and infrastructure can handle expected workload, security tooling, growth, and failure conditions. Security controls themselves consume compute, storage, bandwidth, and staff time.",
-        "why": "Insufficient capacity can become an availability problem or force teams to disable security controls under load.",
-        "example": "A SIEM deployment estimates log volume and retention storage before onboarding thousands of new endpoints.",
-        "exam": "Consider staffing, training, automation, compute, storage, network capacity, redundancy, and growth—not just server CPU.",
+        "learn": "Backup stored at the same location as the primary environment.",
         "breakdown": [
           {
-            "term": "Training and Awareness",
-            "explanation": "Within People, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Capacity planning rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "Backup stored at the same location as the primary environment."
           },
           {
-            "term": "Programs",
-            "explanation": "Within People, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Capacity planning rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Role-Based",
-            "explanation": "Within People, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Capacity planning rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Access Control",
-            "explanation": "Use hard-to-guess credentials and limit what authenticated users can reach."
-          },
-          {
-            "term": "(RBAC)",
-            "explanation": "Within People, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Capacity planning rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Incident",
-            "explanation": "Define how an organization prepares for, detects, contains, eradicates, and recovers from security incidents."
-          },
-          {
-            "term": "Response",
-            "explanation": "Define how an organization prepares for, detects, contains, eradicates, and recovers from security incidents."
-          },
-          {
-            "term": "Training",
-            "explanation": "Teach users how to recognize threats and follow secure behavior so human mistakes are less likely."
+            "term": "Examples",
+            "explanation": "Local backup appliance, Local storage"
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain People and describe at least two key ideas from this section.",
-        "check_a": "This section focuses on **People** within **Capacity planning**. Capacity planning ensures people, technology, and infrastructure can handle expected workload, security tooling, growth, and failure conditions. Security controls themselves consume compute, storage, bandwidth, and staff time. Key ideas include: Training and Awareness; Programs; Role-Based; Access Control; (RBAC).",
-        "points": [
-          "Training and Awareness",
-          "Programs",
-          "Role-Based",
-          "Access Control",
-          "(RBAC)",
-          "Incident",
-          "Response",
-          "Training"
-        ]
+        "why": "This concept affects resilience, recovery speed, availability, or continuity of operations.",
+        "example": "Local backup appliance",
+        "exam": "FAST BUT SAME SITE",
+        "check_q": "What is the key exam clue for Onsite Backup?",
+        "check_a": "FAST BUT SAME SITE"
       }
     },
     {
       "n": 3,
-      "title": "Technology",
-      "points": [
-        "Regular Vulnerability",
-        "Assessments",
-        "Patch Management",
-        "Security Automation"
-      ],
-      "raw": "Technology\nRegular Vulnerability\nAssessments\nPatch Management\nSecurity Automation",
+      "title": "Offsite Backup",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "Backup stored at a separate geographic location or provider.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "This section focuses on **Technology** within **Capacity planning**. Capacity planning ensures people, technology, and infrastructure can handle expected workload, security tooling, growth, and failure conditions. Security controls themselves consume compute, storage, bandwidth, and staff time.",
-        "why": "Insufficient capacity can become an availability problem or force teams to disable security controls under load.",
-        "example": "A SIEM deployment estimates log volume and retention storage before onboarding thousands of new endpoints.",
-        "exam": "Consider staffing, training, automation, compute, storage, network capacity, redundancy, and growth—not just server CPU.",
+        "learn": "Backup stored at a separate geographic location or provider.",
         "breakdown": [
           {
-            "term": "Regular Vulnerability",
-            "explanation": "Within Technology, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Capacity planning rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "Backup stored at a separate geographic location or provider."
           },
           {
-            "term": "Assessments",
-            "explanation": "Evaluate risk and verify whether controls meet organizational, legal, or regulatory requirements."
-          },
-          {
-            "term": "Patch Management",
-            "explanation": "Within Technology, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Capacity planning rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Security Automation",
-            "explanation": "This contributes to reducing risk in the broader Capacity planning design and should be evaluated as part of defense in depth."
+            "term": "Examples",
+            "explanation": "Remote data center, Cloud backup"
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Technology and describe at least two key ideas from this section.",
-        "check_a": "This section focuses on **Technology** within **Capacity planning**. Capacity planning ensures people, technology, and infrastructure can handle expected workload, security tooling, growth, and failure conditions. Security controls themselves consume compute, storage, bandwidth, and staff time. Key ideas include: Regular Vulnerability; Assessments; Patch Management; Security Automation.",
-        "points": [
-          "Regular Vulnerability",
-          "Assessments",
-          "Patch Management",
-          "Security Automation"
-        ]
+        "why": "This concept affects resilience, recovery speed, availability, or continuity of operations.",
+        "example": "Remote data center",
+        "exam": "SURVIVES SITE LOSS",
+        "check_q": "What is the key exam clue for Offsite Backup?",
+        "check_a": "SURVIVES SITE LOSS"
       }
     },
     {
       "n": 4,
-      "title": "Infrastructure",
-      "points": [
-        "Redundancy and",
-        "Failover",
-        "Encryption",
-        "Scalability"
-      ],
-      "raw": "Infrastructure\nRedundancy and\nFailover\nEncryption\nScalability",
+      "title": "Backup Frequency",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "Encryption",
-          "Transforms readable plaintext into ciphertext using an algorithm and key so unauthorized parties cannot understand it."
-        ],
-        [
-          "Failover",
-          "Switching service from a failed primary system to a secondary system."
-        ]
+      "teach": "How often backups are created, affecting potential data loss.",
+      "points": [
+        "Basically",
+        "Examples"
       ],
+      "defs": [],
+      "raw": "",
       "course": {
-        "learn": "This section focuses on **Infrastructure** within **Capacity planning**. Infrastructure monitoring observes networks, cloud configuration, appliances, links, and supporting resources. NSM analyzes network behavior, while CSPM evaluates cloud security posture and misconfiguration.",
-        "why": "Infrastructure telemetry helps detect both attacks and unsafe configuration drift.",
-        "example": "CSPM flags a public storage bucket while NSM detects unusual outbound traffic from a server subnet.",
-        "exam": "NSM = network activity. CSPM = cloud configuration/posture.",
+        "learn": "How often backups are created, affecting potential data loss.",
         "breakdown": [
           {
-            "term": "Redundancy and Failover",
-            "explanation": "Use duplicate components or paths so one failure does not stop the service."
+            "term": "Basically",
+            "explanation": "How often backups are created, affecting potential data loss."
           },
           {
-            "term": "Encryption",
-            "explanation": "Protect readable data by converting it to ciphertext that requires an authorized key to recover."
-          },
-          {
-            "term": "Scalability",
-            "explanation": "Within Infrastructure, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Capacity planning rather than memorizing the phrase by itself."
+            "term": "Examples",
+            "explanation": "Hourly, Daily, Weekly"
           }
         ],
-        "defs": [
-          {
-            "term": "Encryption",
-            "definition": "Transforms readable plaintext into ciphertext using an algorithm and key so unauthorized parties cannot understand it."
-          },
-          {
-            "term": "Failover",
-            "definition": "Switching service from a failed primary system to a secondary system."
-          }
-        ],
-        "check_q": "Without looking back, explain Infrastructure and describe at least two key ideas from this section.",
-        "check_a": "This section focuses on **Infrastructure** within **Capacity planning**. Infrastructure monitoring observes networks, cloud configuration, appliances, links, and supporting resources. NSM analyzes network behavior, while CSPM evaluates cloud security posture and misconfiguration. Key ideas include: Redundancy and Failover; Encryption; Scalability.",
-        "points": [
-          "Redundancy and Failover",
-          "Encryption",
-          "Scalability"
-        ]
+        "defs": [],
+        "why": "This concept affects resilience, recovery speed, availability, or continuity of operations.",
+        "example": "Hourly",
+        "exam": "HOW MUCH DATA CAN YOU LOSE?",
+        "check_q": "What is the key exam clue for Backup Frequency?",
+        "check_a": "HOW MUCH DATA CAN YOU LOSE?"
       }
     },
     {
       "n": 5,
-      "title": "Testing",
-      "points": [],
-      "raw": "Testing",
-      "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": []
+      "title": "Backup Encryption",
+      "instructional": true,
+      "teach": "Protects backup confidentiality if the media or storage is exposed.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Protects backup confidentiality if the media or storage is exposed.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Protects backup confidentiality if the media or storage is exposed."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Encrypted backup vault, Encrypted tape"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects resilience, recovery speed, availability, or continuity of operations.",
+        "example": "Encrypted backup vault",
+        "exam": "PROTECT THE COPY",
+        "check_q": "What is the key exam clue for Backup Encryption?",
+        "check_a": "PROTECT THE COPY"
+      }
+    },
+    {
+      "n": 6,
+      "title": "Snapshots",
+      "instructional": true,
+      "teach": "Point-in-time representations of data or system state used for quick rollback or recovery.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Point-in-time representations of data or system state used for quick rollback or recovery.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Point-in-time representations of data or system state used for quick rollback or recovery."
+          },
+          {
+            "term": "Examples",
+            "explanation": "VM snapshot, Storage snapshot"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects resilience, recovery speed, availability, or continuity of operations.",
+        "example": "VM snapshot",
+        "exam": "POINT IN TIME",
+        "check_q": "What is the key exam clue for Snapshots?",
+        "check_a": "POINT IN TIME"
+      }
+    },
+    {
+      "n": 7,
+      "title": "Recovery",
+      "instructional": true,
+      "teach": "The process of restoring data, systems, and operations after an incident or failure.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "The process of restoring data, systems, and operations after an incident or failure.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "The process of restoring data, systems, and operations after an incident or failure."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Restore from backup, Rebuild service"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects resilience, recovery speed, availability, or continuity of operations.",
+        "example": "Restore from backup",
+        "exam": "GET IT BACK",
+        "check_q": "What is the key exam clue for Recovery?",
+        "check_a": "GET IT BACK"
+      }
+    },
+    {
+      "n": 8,
+      "title": "Replication",
+      "instructional": true,
+      "teach": "Copies data or systems to another location or system, often continuously or near-real-time.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Copies data or systems to another location or system, often continuously or near-real-time.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Copies data or systems to another location or system, often continuously or near-real-time."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Database replica, Storage replication"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects resilience, recovery speed, availability, or continuity of operations.",
+        "example": "Database replica",
+        "exam": "KEEP A COPY UPDATED",
+        "check_q": "What is the key exam clue for Replication?",
+        "check_a": "KEEP A COPY UPDATED"
+      }
+    },
+    {
+      "n": 9,
+      "title": "Journaling",
+      "instructional": true,
+      "teach": "Records changes or transactions so data can be replayed or restored to a more precise point.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Records changes or transactions so data can be replayed or restored to a more precise point.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Records changes or transactions so data can be replayed or restored to a more precise point."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Transaction journal, Database log"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects resilience, recovery speed, availability, or continuity of operations.",
+        "example": "Transaction journal",
+        "exam": "RECORD EVERY CHANGE",
+        "check_q": "What is the key exam clue for Journaling?",
+        "check_a": "RECORD EVERY CHANGE"
+      }
+    },
+    {
+      "n": 10,
+      "title": "Generators",
+      "instructional": true,
+      "teach": "Provide longer-term backup electrical power during outages.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Provide longer-term backup electrical power during outages.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Provide longer-term backup electrical power during outages."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Diesel generator, Natural gas generator"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects resilience, recovery speed, availability, or continuity of operations.",
+        "example": "Diesel generator",
+        "exam": "LONGER POWER",
+        "check_q": "What is the key exam clue for Generators?",
+        "check_a": "LONGER POWER"
+      }
+    },
+    {
+      "n": 11,
+      "title": "Uninterruptible Power Supply (UPS)",
+      "instructional": true,
+      "teach": "Provides immediate short-term battery power and power conditioning during an outage.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Provides immediate short-term battery power and power conditioning during an outage.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Provides immediate short-term battery power and power conditioning during an outage."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Battery backup, Graceful shutdown"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects resilience, recovery speed, availability, or continuity of operations.",
+        "example": "Battery backup",
+        "exam": "INSTANT SHORT POWER",
+        "check_q": "What is the key exam clue for Uninterruptible Power Supply (UPS)?",
+        "check_a": "INSTANT SHORT POWER"
+      }
     }
   ],
-  "slide_count": 5,
-  "instructional_count": 3,
+  "slide_count": 11,
+  "instructional_count": 10,
   "concepts": [
-    "People",
-    "Technology",
-    "Infrastructure"
+    "Onsite Backup",
+    "Offsite Backup",
+    "Backup Frequency",
+    "Backup Encryption",
+    "Snapshots",
+    "Recovery",
+    "Replication",
+    "Journaling",
+    "Generators",
+    "Uninterruptible Power Supply (UPS)"
   ],
-  "source_filename": "13.04_Capacity_planning.pdf"
+  "source_filename": "13-04.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 3.4",
+      "title": "Backups, Replication, and Power Resilience",
+      "intro": "Backups and power controls support recovery by preserving data and keeping systems available long enough to survive or recover from outages."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Backups, Replication, and Power Resilience",
+        "prompt": "Identify the resilience or recovery requirement first, then choose the design, test, backup, or power control that best fits.",
+        "badge": "3.4",
+        "cards": [
+          {
+            "name": "Onsite Backup",
+            "definition": "Backup stored at the same location as the primary environment.",
+            "examples": [
+              "Local backup appliance",
+              "Local storage"
+            ],
+            "memory": "FAST BUT SAME SITE"
+          },
+          {
+            "name": "Offsite Backup",
+            "definition": "Backup stored at a separate geographic location or provider.",
+            "examples": [
+              "Remote data center",
+              "Cloud backup"
+            ],
+            "memory": "SURVIVES SITE LOSS"
+          },
+          {
+            "name": "Backup Frequency",
+            "definition": "How often backups are created, affecting potential data loss.",
+            "examples": [
+              "Hourly",
+              "Daily",
+              "Weekly"
+            ],
+            "memory": "HOW MUCH DATA CAN YOU LOSE?"
+          },
+          {
+            "name": "Backup Encryption",
+            "definition": "Protects backup confidentiality if the media or storage is exposed.",
+            "examples": [
+              "Encrypted backup vault",
+              "Encrypted tape"
+            ],
+            "memory": "PROTECT THE COPY"
+          },
+          {
+            "name": "Snapshots",
+            "definition": "Point-in-time representations of data or system state used for quick rollback or recovery.",
+            "examples": [
+              "VM snapshot",
+              "Storage snapshot"
+            ],
+            "memory": "POINT IN TIME"
+          },
+          {
+            "name": "Recovery",
+            "definition": "The process of restoring data, systems, and operations after an incident or failure.",
+            "examples": [
+              "Restore from backup",
+              "Rebuild service"
+            ],
+            "memory": "GET IT BACK"
+          },
+          {
+            "name": "Replication",
+            "definition": "Copies data or systems to another location or system, often continuously or near-real-time.",
+            "examples": [
+              "Database replica",
+              "Storage replication"
+            ],
+            "memory": "KEEP A COPY UPDATED"
+          },
+          {
+            "name": "Journaling",
+            "definition": "Records changes or transactions so data can be replayed or restored to a more precise point.",
+            "examples": [
+              "Transaction journal",
+              "Database log"
+            ],
+            "memory": "RECORD EVERY CHANGE"
+          },
+          {
+            "name": "Generators",
+            "definition": "Provide longer-term backup electrical power during outages.",
+            "examples": [
+              "Diesel generator",
+              "Natural gas generator"
+            ],
+            "memory": "LONGER POWER"
+          },
+          {
+            "name": "Uninterruptible Power Supply (UPS)",
+            "definition": "Provides immediate short-term battery power and power conditioning during an outage.",
+            "examples": [
+              "Battery backup",
+              "Graceful shutdown"
+            ],
+            "memory": "INSTANT SHORT POWER"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Backups, Replication, and Power Resilience comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Onsite backup",
+            "Fast local recovery",
+            "Same-site disaster risk"
+          ],
+          [
+            "Offsite backup",
+            "Survives site loss",
+            "Separate geographic copy"
+          ],
+          [
+            "Snapshots",
+            "Point-in-time rollback",
+            "Fast recovery, not always full backup"
+          ],
+          [
+            "Replication",
+            "Continuously updated copy",
+            "Low data-loss window"
+          ],
+          [
+            "Journaling",
+            "Record changes/transactions",
+            "Granular recovery"
+          ],
+          [
+            "UPS",
+            "Immediate short-term power",
+            "Bridge to shutdown/generator"
+          ],
+          [
+            "Generator",
+            "Longer-duration power",
+            "Sustain outage"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Backups, Replication, and Power Resilience exam shortcuts",
+        "items": [
+          [
+            "Need protection from building loss → OFFSITE BACKUP",
+            "A same-site copy may be lost in the same disaster.",
+            "Example: Cloud backup survives a data-center fire."
+          ],
+          [
+            "Need fast point-in-time rollback → SNAPSHOT",
+            "Snapshots preserve a recent system state.",
+            "Example: Roll a VM back after a failed update."
+          ],
+          [
+            "Need near-current duplicate data → REPLICATION",
+            "Replication continuously copies changes.",
+            "Example: A secondary database stays synchronized."
+          ],
+          [
+            "Need exact transaction history → JOURNALING",
+            "Journals record changes so recovery can replay them.",
+            "Example: Database logs restore activity after the last backup."
+          ],
+          [
+            "Power fails for a few minutes → UPS",
+            "UPS provides immediate short-term power.",
+            "Example: Systems stay online long enough for a generator to start."
+          ],
+          [
+            "Long outage → GENERATOR",
+            "A generator provides sustained backup power.",
+            "Example: A data center continues during an extended utility outage."
+          ]
+        ],
+        "example": "Focus on recovery speed, continuity, redundancy, data loss tolerance, and site or power requirements."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A company wants a backup copy that will survive destruction of the primary building. Which location is best?",
+        "choices": [
+          "Offsite backup",
+          "Onsite backup only",
+          "Local snapshot only",
+          "Same-rack replication"
+        ],
+        "answer": 0,
+        "explanation": "Offsite backups are geographically separate from the primary site."
+      },
+      {
+        "q": "A company creates backups every hour instead of once per day to reduce potential data loss. Which backup consideration changed?",
+        "choices": [
+          "Frequency",
+          "Encryption",
+          "Geolocation",
+          "Journaling only"
+        ],
+        "answer": 0,
+        "explanation": "Backup frequency determines how often recovery points are created."
+      },
+      {
+        "q": "A VM must be quickly returned to the exact state it had before a failed update. Which option best fits?",
+        "choices": [
+          "Snapshot",
+          "Offsite backup only",
+          "Generator",
+          "Clustering"
+        ],
+        "answer": 0,
+        "explanation": "A snapshot captures a point-in-time system state for fast rollback."
+      },
+      {
+        "q": "A secondary database is kept nearly synchronized with the primary database. Which technique is this?",
+        "choices": [
+          "Replication",
+          "Journaling",
+          "Snapshotting",
+          "Tabletop testing"
+        ],
+        "answer": 0,
+        "explanation": "Replication keeps a copy updated on another system or site."
+      },
+      {
+        "q": "A database records each transaction so changes can be replayed after restoring a backup. Which technique is this?",
+        "choices": [
+          "Journaling",
+          "Replication",
+          "Clustering",
+          "Load balancing"
+        ],
+        "answer": 0,
+        "explanation": "Journaling records transactions or changes for granular recovery."
+      },
+      {
+        "q": "Utility power fails and systems need immediate battery power until a generator starts. Which device should provide that bridge?",
+        "choices": [
+          "UPS",
+          "Generator only",
+          "Load balancer",
+          "Hot site"
+        ],
+        "answer": 0,
+        "explanation": "A UPS provides immediate short-term power."
+      },
+      {
+        "q": "A data center must continue operating during an extended utility outage. Which power source is most appropriate?",
+        "choices": [
+          "Generator",
+          "UPS only",
+          "Snapshot",
+          "Replication"
+        ],
+        "answer": 0,
+        "explanation": "Generators provide longer-duration backup power."
+      }
+    ]
+  }
 }
