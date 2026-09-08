@@ -113,9 +113,9 @@
   },
   {
     "chapter": 17,
-    "name": "Security Monitoring",
+    "name": "Security Monitoring & Alerting",
     "lesson_count": 3,
-    "slide_count": 17,
-    "instructional_count": 11
+    "slide_count": 26,
+    "instructional_count": 23
   }
 ]
