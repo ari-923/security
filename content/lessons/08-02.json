@@ -2,224 +2,761 @@
   "id": "08.02",
   "chapter": 8,
   "sub": 2,
-  "title": "Physical attacks",
-  "chapter_name": "Attack Indicators",
+  "title": "Network and Application Attacks",
+  "chapter_name": "Malicious Activity Indicators",
   "slides": [
     {
       "n": 1,
-      "title": "Physical Attack Indicators",
-      "points": [],
-      "raw": "Physical Attack Indicators",
+      "title": "Network and Application Attacks",
       "instructional": false,
-      "teach": "Treat these as observable clues. On the exam, be ready to infer the most likely attack from the pattern of indicators.",
-      "defs": []
+      "teach": "",
+      "points": [
+        "Recognize network and application attacks from traffic behavior, protocol abuse, replay, interception, code execution, or privilege changes.",
+        "Security+ Objective 2.4: given a scenario, analyze indicators of malicious activity."
+      ],
+      "defs": [],
+      "raw": ""
     },
     {
       "n": 2,
-      "title": "Brute-force Attack",
-      "points": [
-        "• Repeated physical attempts to manipulate",
-        "locks, keypads, or access card readers.",
-        "• Evidence of scratches, tool marks, or wear",
-        "on the physical components",
-        "• Unusual patterns of failed access attempts",
-        "• Discovery of tools or implements near",
-        "access points",
-        "• Anomalies in security camera footage"
-      ],
-      "raw": "Brute-force Attack\n• Repeated physical attempts to manipulate\nlocks, keypads, or access card readers.\n• Evidence of scratches, tool marks, or wear\non the physical components\n• Unusual patterns of failed access attempts\n• Discovery of tools or implements near\naccess points\n• Anomalies in security camera footage",
+      "title": "Distributed Denial-of-Service (DDoS)",
       "instructional": true,
-      "teach": "Learn the attacker behavior, the evidence it leaves behind, and the control that best detects or mitigates it.",
+      "teach": "A denial-of-service attack launched from many systems to overwhelm a target.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "A brute-force attack systematically tries many possible credentials, keys, or values until one works. It trades time and computing power for certainty.",
-        "why": "Weak or short secrets make exhaustive guessing practical.",
-        "example": "An attacker tries every four-digit PIN from 0000 through 9999.",
-        "exam": "Brute force = exhaustive guessing. Password spraying uses a small number of common passwords across many accounts; dictionary attacks use likely words/passwords.",
+        "learn": "A denial-of-service attack launched from many systems to overwhelm a target.",
         "breakdown": [
           {
-            "term": "Repeated physical attempts to manipulate",
-            "explanation": "Within Brute-force Attack, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Physical attacks rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "Many sources flood one victim."
           },
           {
-            "term": "locks, keypads, or access card readers.",
-            "explanation": "This concerns who or what can reach a resource and what actions are permitted once access is granted."
-          },
-          {
-            "term": "Evidence of scratches, tool marks, or wear",
-            "explanation": "Within Brute-force Attack, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Physical attacks rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "on the physical components",
-            "explanation": "Within Brute-force Attack, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Physical attacks rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Unusual patterns of failed access attempts",
-            "explanation": "This concerns who or what can reach a resource and what actions are permitted once access is granted."
-          },
-          {
-            "term": "Discovery of tools or implements near access points",
-            "explanation": "Security monitoring and automation tools include SIEM for event correlation, SCAP for standardized security-content automation, DLP for controlling sensitive data movement, and SNMP for device monitoring and traps."
-          },
-          {
-            "term": "Anomalies in security camera footage",
-            "explanation": "This contributes to reducing risk in the broader Physical attacks design and should be evaluated as part of defense in depth."
+            "term": "Examples",
+            "explanation": "Botnet traffic, Service outage"
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Brute-force Attack and describe at least two key ideas from this section.",
-        "check_a": "A brute-force attack systematically tries many possible credentials, keys, or values until one works. It trades time and computing power for certainty. Key ideas include: Repeated physical attempts to manipulate; locks, keypads, or access card readers.; Evidence of scratches, tool marks, or wear; on the physical components; Unusual patterns of failed access attempts.",
-        "points": [
-          "Repeated physical attempts to manipulate",
-          "locks, keypads, or access card readers.",
-          "Evidence of scratches, tool marks, or wear",
-          "on the physical components",
-          "Unusual patterns of failed access attempts",
-          "Discovery of tools or implements near access points",
-          "Anomalies in security camera footage"
-        ]
+        "why": "Distributed sources make blocking harder.",
+        "example": "Thousands of compromised hosts flood one website.",
+        "exam": "Many systems flood one target → DDoS.",
+        "check_q": "Which attack overwhelms a target from many systems?",
+        "check_a": "DDoS."
       }
     },
     {
       "n": 3,
-      "title": "Radio Frequency Identification (RFID) Cloning",
-      "points": [
-        "• Unexplained instances of unauthorized access",
-        "• Detection of multiple instances of the same",
-        "RFID signal being used simultaneously",
-        "• Anomalies in access logs",
-        "• Physical presence of unauthorized RFID",
-        "copying devices",
-        "• Inconsistencies between physical cardholder",
-        "presence and access logs"
-      ],
-      "raw": "Radio Frequency Identification (RFID)\nCloning\n• Unexplained instances of unauthorized access\n• Detection of multiple instances of the same\nRFID signal being used simultaneously\n• Anomalies in access logs\n• Physical presence of unauthorized RFID\ncopying devices\n• Inconsistencies between physical cardholder\npresence and access logs",
+      "title": "Amplified DDoS",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "A DDoS technique where small attacker requests trigger much larger responses toward the victim.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Backups create recoverable copies of data or systems so organizations can restore after deletion, corruption, ransomware, or disaster. Good backup strategy considers location, frequency, retention, immutability, encryption, and restore testing.",
-        "why": "A backup is valuable only if it survives the incident and can actually be restored within business requirements.",
-        "example": "An organization keeps frequent local backups for speed plus protected offsite/immutable copies so ransomware cannot destroy every recovery point.",
-        "exam": "Know onsite vs offsite, snapshots vs true backups, restore testing, and the fact that replication does not replace historical backup copies.",
+        "learn": "A DDoS technique where small attacker requests trigger much larger responses toward the victim.",
         "breakdown": [
           {
-            "term": "Unexplained instances of unauthorized access",
-            "explanation": "This concerns who or what can reach a resource and what actions are permitted once access is granted."
+            "term": "Basically",
+            "explanation": "Small request, much bigger response."
           },
           {
-            "term": "Detection of multiple instances of the same",
-            "explanation": "Within Radio Frequency Identification (RFID) Cloning, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Physical attacks rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "RFID signal being used simultaneously",
-            "explanation": "Within Radio Frequency Identification (RFID) Cloning, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Physical attacks rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Anomalies in access logs",
-            "explanation": "This concerns who or what can reach a resource and what actions are permitted once access is granted."
-          },
-          {
-            "term": "Physical presence of unauthorized RFID",
-            "explanation": "Within Radio Frequency Identification (RFID) Cloning, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Physical attacks rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "copying devices",
-            "explanation": "Within Radio Frequency Identification (RFID) Cloning, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Physical attacks rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Inconsistencies between physical cardholder",
-            "explanation": "Within Radio Frequency Identification (RFID) Cloning, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Physical attacks rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "presence and access logs",
-            "explanation": "This concerns who or what can reach a resource and what actions are permitted once access is granted."
+            "term": "Examples",
+            "explanation": "DNS amplification, NTP amplification"
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Radio Frequency Identification (RFID) Cloning and describe at least two key ideas from this section.",
-        "check_a": "Backups create recoverable copies of data or systems so organizations can restore after deletion, corruption, ransomware, or disaster. Good backup strategy considers location, frequency, retention, immutability, encryption, and restore testing. Key ideas include: Unexplained instances of unauthorized access; Detection of multiple instances of the same; RFID signal being used simultaneously; Anomalies in access logs; Physical presence of unauthorized RFID.",
-        "points": [
-          "Unexplained instances of unauthorized access",
-          "Detection of multiple instances of the same",
-          "RFID signal being used simultaneously",
-          "Anomalies in access logs",
-          "Physical presence of unauthorized RFID",
-          "copying devices",
-          "Inconsistencies between physical cardholder",
-          "presence and access logs"
-        ]
+        "why": "It multiplies attack volume.",
+        "example": "Small DNS requests generate large responses toward the victim.",
+        "exam": "Tiny request, huge response → AMPLIFIED.",
+        "check_q": "Which DDoS technique multiplies traffic using larger responses?",
+        "check_a": "Amplified DDoS."
       }
     },
     {
       "n": 4,
-      "title": "Environmental",
-      "points": [
-        "Physical damage to security hardware",
-        "Evidence of tampering with environmental control systems",
-        "Changes in environmental conditions",
-        "Unexpected triggering of alarms related",
-        "Presence of unauthorized individuals or suspicious activities"
-      ],
-      "raw": "Environmental\nPhysical damage to security hardware\nEvidence of tampering with environmental control systems\nChanges in environmental conditions\nUnexpected triggering of alarms related\nPresence of unauthorized individuals or suspicious activities",
+      "title": "Reflected DDoS",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "A DDoS technique where attackers spoof the victim's address so third-party systems send responses to the victim.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Environmental attacks or incidents affect the physical conditions supporting technology—power, temperature, water, fire, ventilation, and facility controls. Tampering with environmental systems can become a security incident.",
-        "why": "Hardware can fail or become unavailable even when software and network controls are functioning correctly.",
-        "example": "An attacker disables cooling in a server room, causing temperature alarms and equipment shutdowns.",
-        "exam": "Look for changes in temperature/power, damaged environmental controls, alarms, or physical tampering.",
+        "learn": "A DDoS technique where attackers spoof the victim's address so third-party systems send responses to the victim.",
         "breakdown": [
           {
-            "term": "Physical damage to security hardware",
-            "explanation": "Hardware security risk includes vulnerable firmware, malicious peripherals, insecure interfaces, unsupported devices, and physical tampering."
+            "term": "Basically",
+            "explanation": "Other systems are tricked into replying to the victim."
           },
           {
-            "term": "Evidence of tampering with environmental control systems",
-            "explanation": "Environmental attacks or incidents affect the physical conditions supporting technology—power, temperature, water, fire, ventilation, and facility controls. Tampering with environmental systems can become a security incident."
-          },
-          {
-            "term": "Changes in environmental conditions",
-            "explanation": "Environmental attacks or incidents affect the physical conditions supporting technology—power, temperature, water, fire, ventilation, and facility controls. Tampering with environmental systems can become a security incident."
-          },
-          {
-            "term": "Unexpected triggering of alarms related",
-            "explanation": "Within Environmental, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Physical attacks rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Presence of unauthorized individuals or suspicious activities",
-            "explanation": "Within Environmental, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Physical attacks rather than memorizing the phrase by itself."
+            "term": "Examples",
+            "explanation": "DNS reflection, Spoofed source IP"
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Environmental and describe at least two key ideas from this section.",
-        "check_a": "Environmental attacks or incidents affect the physical conditions supporting technology—power, temperature, water, fire, ventilation, and facility controls. Tampering with environmental systems can become a security incident. Key ideas include: Physical damage to security hardware; Evidence of tampering with environmental control systems; Changes in environmental conditions; Unexpected triggering of alarms related; Presence of unauthorized individuals or suspicious activities.",
-        "points": [
-          "Physical damage to security hardware",
-          "Evidence of tampering with environmental control systems",
-          "Changes in environmental conditions",
-          "Unexpected triggering of alarms related",
-          "Presence of unauthorized individuals or suspicious activities"
-        ]
+        "why": "Reflection recruits third-party servers and obscures the attacker.",
+        "example": "DNS servers send replies to a victim that never queried them.",
+        "exam": "Third parties reply to victim → REFLECTED.",
+        "check_q": "Which DDoS technique uses spoofed victim addresses?",
+        "check_a": "Reflected DDoS."
       }
     },
     {
       "n": 5,
-      "title": "Network Attack Indicators",
-      "points": [],
-      "raw": "Network Attack Indicators",
-      "instructional": false,
-      "teach": "Treat these as observable clues. On the exam, be ready to infer the most likely attack from the pattern of indicators.",
-      "defs": []
+      "title": "DNS Attack",
+      "instructional": true,
+      "teach": "An attack targeting DNS resolution, records, caches, or infrastructure.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "An attack targeting DNS resolution, records, caches, or infrastructure.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "The attacker manipulates or disrupts name resolution."
+          },
+          {
+            "term": "Examples",
+            "explanation": "DNS poisoning, DNS hijacking"
+          }
+        ],
+        "defs": [],
+        "why": "DNS attacks can redirect users or disrupt services.",
+        "example": "A legitimate domain resolves to a malicious IP.",
+        "exam": "Name resolution manipulated → DNS ATTACK.",
+        "check_q": "Which attack category targets DNS?",
+        "check_a": "DNS attack."
+      }
+    },
+    {
+      "n": 6,
+      "title": "Wireless Attack",
+      "instructional": true,
+      "teach": "An attack targeting Wi-Fi or other wireless communication.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "An attack targeting Wi-Fi or other wireless communication.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "The attack happens over wireless."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Rogue AP, Deauthentication"
+          }
+        ],
+        "defs": [],
+        "why": "Wireless creates radio-based attack opportunities.",
+        "example": "An attacker sends deauthentication frames.",
+        "exam": "Wi-Fi/rogue AP/deauth → WIRELESS.",
+        "check_q": "Which category includes Wi-Fi deauthentication?",
+        "check_a": "Wireless attack."
+      }
+    },
+    {
+      "n": 7,
+      "title": "On-path Attack",
+      "instructional": true,
+      "teach": "An attacker positions between communicating parties to intercept or alter traffic.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "An attacker positions between communicating parties to intercept or alter traffic.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "The attacker sits in the middle."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Man-in-the-middle, Traffic interception"
+          }
+        ],
+        "defs": [],
+        "why": "The attacker can steal or modify data in transit.",
+        "example": "Login traffic is intercepted between user and server.",
+        "exam": "Between two parties → ON-PATH.",
+        "check_q": "Which attack places the attacker between communicating parties?",
+        "check_a": "On-path attack."
+      }
+    },
+    {
+      "n": 8,
+      "title": "Credential Replay",
+      "instructional": true,
+      "teach": "Previously captured credentials or authentication material are reused to gain access.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Previously captured credentials or authentication material are reused to gain access.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Steal authentication material, then reuse it."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Replayed token, Captured credential reuse"
+          }
+        ],
+        "defs": [],
+        "why": "Some auth artifacts can be replayed without knowing the original secret.",
+        "example": "A stolen authentication token is reused successfully.",
+        "exam": "Captured auth reused → CREDENTIAL REPLAY.",
+        "check_q": "Which attack reuses captured authentication material?",
+        "check_a": "Credential replay."
+      }
+    },
+    {
+      "n": 9,
+      "title": "Malicious Code",
+      "instructional": true,
+      "teach": "Attacker-supplied code executes in a target environment.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Attacker-supplied code executes in a target environment.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "The attacker's code runs on the target."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Injected script, Remote code execution"
+          }
+        ],
+        "defs": [],
+        "why": "Code execution can give direct control of system behavior.",
+        "example": "Attacker-controlled code executes on a server.",
+        "exam": "Attacker code runs → MALICIOUS CODE.",
+        "check_q": "Which indicator describes attacker-supplied code executing?",
+        "check_a": "Malicious code."
+      }
+    },
+    {
+      "n": 10,
+      "title": "Injection",
+      "instructional": true,
+      "teach": "Untrusted input is interpreted as commands or code by an application.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Untrusted input is interpreted as commands or code by an application.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Input becomes executable instructions."
+          },
+          {
+            "term": "Examples",
+            "explanation": "SQL injection, Command injection"
+          }
+        ],
+        "defs": [],
+        "why": "Unsafe input handling can alter commands or queries.",
+        "example": "A form field is interpreted as a backend command.",
+        "exam": "Input becomes command → INJECTION.",
+        "check_q": "Which application attack turns untrusted input into commands?",
+        "check_a": "Injection."
+      }
+    },
+    {
+      "n": 11,
+      "title": "Buffer Overflow",
+      "instructional": true,
+      "teach": "Too much data is written to memory, potentially overwriting control data.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Too much data is written to memory, potentially overwriting control data.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "A buffer gets more data than it can hold."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Stack overflow, Crash/code execution"
+          }
+        ],
+        "defs": [],
+        "why": "Memory corruption can crash software or redirect execution.",
+        "example": "Oversized input overwrites adjacent memory.",
+        "exam": "Too much data → BUFFER OVERFLOW.",
+        "check_q": "Which attack writes beyond buffer boundaries?",
+        "check_a": "Buffer overflow."
+      }
+    },
+    {
+      "n": 12,
+      "title": "Replay",
+      "instructional": true,
+      "teach": "A valid transmission or message is captured and resent later.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "A valid transmission or message is captured and resent later.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Capture a valid message, then resend it."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Captured auth exchange reused"
+          }
+        ],
+        "defs": [],
+        "why": "Systems without replay protection may accept reused messages.",
+        "example": "A previously valid authentication exchange is retransmitted.",
+        "exam": "Capture + resend → REPLAY.",
+        "check_q": "Which attack resends a valid captured transmission?",
+        "check_a": "Replay."
+      }
+    },
+    {
+      "n": 13,
+      "title": "Privilege Escalation",
+      "instructional": true,
+      "teach": "An attacker gains permissions beyond those originally granted.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "An attacker gains permissions beyond those originally granted.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "The attacker gets more access than they should have."
+          },
+          {
+            "term": "Examples",
+            "explanation": "User to admin, Local privilege escalation"
+          }
+        ],
+        "defs": [],
+        "why": "Higher privileges enable broader control.",
+        "example": "A standard user exploits a flaw and becomes administrator.",
+        "exam": "User → admin → PRIVILEGE ESCALATION.",
+        "check_q": "Which attack gains higher permissions?",
+        "check_a": "Privilege escalation."
+      }
+    },
+    {
+      "n": 14,
+      "title": "Directory Traversal",
+      "instructional": true,
+      "teach": "An attacker manipulates file paths to access files outside the intended directory.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "An attacker manipulates file paths to access files outside the intended directory.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Escape the allowed folder using path manipulation."
+          },
+          {
+            "term": "Examples",
+            "explanation": "../, Reading system files"
+          }
+        ],
+        "defs": [],
+        "why": "Poor path validation can expose sensitive files.",
+        "example": "../../etc/passwd is requested through a web application.",
+        "exam": "../ or path escape → DIRECTORY TRAVERSAL.",
+        "check_q": "Which attack uses path manipulation such as ../?",
+        "check_a": "Directory traversal."
+      }
     }
   ],
-  "slide_count": 5,
-  "instructional_count": 3,
+  "slide_count": 14,
+  "instructional_count": 13,
   "concepts": [
-    "Brute-force Attack",
-    "Radio Frequency Identification (RFID) Cloning",
-    "Environmental"
+    "Distributed Denial-of-Service (DDoS)",
+    "Amplified DDoS",
+    "Reflected DDoS",
+    "DNS Attack",
+    "Wireless Attack",
+    "On-path Attack",
+    "Credential Replay",
+    "Malicious Code",
+    "Injection",
+    "Buffer Overflow",
+    "Replay",
+    "Privilege Escalation",
+    "Directory Traversal"
   ],
-  "source_filename": "08.02_Physical_attacks.pdf"
+  "source_filename": "08-02.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 2.4",
+      "title": "Network and Application Attacks",
+      "intro": "Recognize network and application attacks from traffic behavior, protocol abuse, replay, interception, code execution, or privilege changes."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Network and Application Attacks",
+        "prompt": "Use the observed behavior in the scenario to identify the attack or indicator.",
+        "badge": "2.4",
+        "cards": [
+          {
+            "name": "Distributed Denial-of-Service (DDoS)",
+            "definition": "A denial-of-service attack launched from many systems to overwhelm a target.",
+            "examples": [
+              "Botnet traffic",
+              "Service outage"
+            ],
+            "memory": "MANY SOURCES"
+          },
+          {
+            "name": "Amplified DDoS",
+            "definition": "A DDoS technique where small attacker requests trigger much larger responses toward the victim.",
+            "examples": [
+              "DNS amplification",
+              "NTP amplification"
+            ],
+            "memory": "SMALL REQUEST · BIG RESPONSE"
+          },
+          {
+            "name": "Reflected DDoS",
+            "definition": "A DDoS technique where attackers spoof the victim's address so third-party systems send responses to the victim.",
+            "examples": [
+              "DNS reflection",
+              "Spoofed source IP"
+            ],
+            "memory": "OTHERS REPLY TO VICTIM"
+          },
+          {
+            "name": "DNS Attack",
+            "definition": "An attack targeting DNS resolution, records, caches, or infrastructure.",
+            "examples": [
+              "DNS poisoning",
+              "DNS hijacking"
+            ],
+            "memory": "NAME RESOLUTION"
+          },
+          {
+            "name": "Wireless Attack",
+            "definition": "An attack targeting Wi-Fi or other wireless communication.",
+            "examples": [
+              "Rogue AP",
+              "Deauthentication"
+            ],
+            "memory": "WIRELESS"
+          },
+          {
+            "name": "On-path Attack",
+            "definition": "An attacker positions between communicating parties to intercept or alter traffic.",
+            "examples": [
+              "Man-in-the-middle",
+              "Traffic interception"
+            ],
+            "memory": "BETWEEN TWO PARTIES"
+          },
+          {
+            "name": "Credential Replay",
+            "definition": "Previously captured credentials or authentication material are reused to gain access.",
+            "examples": [
+              "Replayed token",
+              "Captured credential reuse"
+            ],
+            "memory": "REUSE CAPTURED AUTH"
+          },
+          {
+            "name": "Malicious Code",
+            "definition": "Attacker-supplied code executes in a target environment.",
+            "examples": [
+              "Injected script",
+              "Remote code execution"
+            ],
+            "memory": "ATTACKER CODE RUNS"
+          },
+          {
+            "name": "Injection",
+            "definition": "Untrusted input is interpreted as commands or code by an application.",
+            "examples": [
+              "SQL injection",
+              "Command injection"
+            ],
+            "memory": "INPUT BECOMES COMMAND"
+          },
+          {
+            "name": "Buffer Overflow",
+            "definition": "Too much data is written to memory, potentially overwriting control data.",
+            "examples": [
+              "Stack overflow",
+              "Crash/code execution"
+            ],
+            "memory": "TOO MUCH DATA"
+          },
+          {
+            "name": "Replay",
+            "definition": "A valid transmission or message is captured and resent later.",
+            "examples": [
+              "Captured auth exchange reused"
+            ],
+            "memory": "CAPTURE + RESEND"
+          },
+          {
+            "name": "Privilege Escalation",
+            "definition": "An attacker gains permissions beyond those originally granted.",
+            "examples": [
+              "User to admin",
+              "Local privilege escalation"
+            ],
+            "memory": "GAIN MORE PRIVILEGE"
+          },
+          {
+            "name": "Directory Traversal",
+            "definition": "An attacker manipulates file paths to access files outside the intended directory.",
+            "examples": [
+              "../",
+              "Reading system files"
+            ],
+            "memory": "ESCAPE THE FOLDER"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Network and Application Attacks comparison",
+        "headers": [
+          "Attack",
+          "What to recognize",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "DDoS",
+            "Many sources overwhelm target",
+            "Resource exhaustion"
+          ],
+          [
+            "Amplified",
+            "Responses larger than requests",
+            "Small request, big response"
+          ],
+          [
+            "Reflected",
+            "Third parties send replies to victim",
+            "Spoofed victim address"
+          ],
+          [
+            "On-path",
+            "Attacker sits between parties",
+            "Intercept/alter traffic"
+          ],
+          [
+            "Replay",
+            "Captured message resent",
+            "Reuse valid transmission"
+          ],
+          [
+            "Privilege escalation",
+            "Gain higher rights",
+            "User → admin"
+          ],
+          [
+            "Directory traversal",
+            "Escape intended path",
+            "../"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Read the traffic behavior",
+        "items": [
+          [
+            "Many systems flood one target → DDoS",
+            "The attack is distributed across multiple sources.",
+            "Example: Thousands of bots overwhelm a website."
+          ],
+          [
+            "Tiny requests cause huge responses → AMPLIFIED",
+            "Responses are much larger than requests.",
+            "Example: Small DNS queries generate large responses."
+          ],
+          [
+            "Third parties reply to victim → REFLECTED",
+            "The victim's address is spoofed.",
+            "Example: DNS servers send responses to a victim that never queried them."
+          ],
+          [
+            "Attacker between parties → ON-PATH",
+            "Traffic is intercepted in transit.",
+            "Example: Login traffic is captured between user and server."
+          ],
+          [
+            "Captured auth reused → CREDENTIAL REPLAY",
+            "Previously captured auth material is reused.",
+            "Example: A stolen token is replayed."
+          ],
+          [
+            "../ or path escape → DIRECTORY TRAVERSAL",
+            "Paths are manipulated to leave the intended directory.",
+            "Example: ../../etc/passwd is requested."
+          ]
+        ],
+        "example": "Memory: Many = DDoS · Bigger reply = amplified · Others reply = reflected · Middle = on-path · Reuse = replay."
+      }
+    ],
+    "questions": [
+      {
+        "q": "Thousands of compromised hosts flood one website until it becomes unavailable. Which attack is this?",
+        "choices": [
+          "DDoS",
+          "On-path attack",
+          "Replay",
+          "Privilege escalation"
+        ],
+        "answer": 0,
+        "explanation": "A DDoS uses many distributed sources to overwhelm one target."
+      },
+      {
+        "q": "Small DNS queries trigger much larger responses toward a victim. Which technique is this?",
+        "choices": [
+          "Amplified DDoS",
+          "Replay",
+          "On-path attack",
+          "Credential replay"
+        ],
+        "answer": 0,
+        "explanation": "Amplification uses protocols whose responses are much larger than requests."
+      },
+      {
+        "q": "Attackers spoof the victim's IP so third-party DNS servers send replies to the victim. Which technique is this?",
+        "choices": [
+          "Reflected DDoS",
+          "Amplified DDoS only",
+          "Wireless attack",
+          "Replay"
+        ],
+        "answer": 0,
+        "explanation": "Reflection causes third parties to send responses to the spoofed victim address."
+      },
+      {
+        "q": "A legitimate domain resolves to an attacker-controlled IP because name resolution was manipulated. Which category best fits?",
+        "choices": [
+          "DNS attack",
+          "DDoS",
+          "On-path",
+          "Directory traversal"
+        ],
+        "answer": 0,
+        "explanation": "The attack targets DNS resolution."
+      },
+      {
+        "q": "An attacker intercepts and modifies traffic between a user and server. Which attack is this?",
+        "choices": [
+          "On-path attack",
+          "Replay",
+          "DDoS",
+          "Directory traversal"
+        ],
+        "answer": 0,
+        "explanation": "An on-path attacker sits between communicating parties."
+      },
+      {
+        "q": "A stolen authentication token is reused successfully. Which attack best fits?",
+        "choices": [
+          "Credential replay",
+          "Directory traversal",
+          "DDoS",
+          "Buffer overflow"
+        ],
+        "answer": 0,
+        "explanation": "Previously captured authentication material is being reused."
+      },
+      {
+        "q": "A form field is interpreted as part of a backend command. Which attack is this?",
+        "choices": [
+          "Injection",
+          "Replay",
+          "Privilege escalation",
+          "Buffer overflow"
+        ],
+        "answer": 0,
+        "explanation": "Injection occurs when untrusted input becomes commands or code."
+      },
+      {
+        "q": "A standard user exploits a flaw and becomes an administrator. Which attack is this?",
+        "choices": [
+          "Privilege escalation",
+          "Replay",
+          "Directory traversal",
+          "DDoS"
+        ],
+        "answer": 0,
+        "explanation": "The attacker gains higher privileges than originally granted."
+      },
+      {
+        "q": "A request includes ../../ to access files outside the intended folder. Which attack is this?",
+        "choices": [
+          "Directory traversal",
+          "Injection",
+          "On-path",
+          "Replay"
+        ],
+        "answer": 0,
+        "explanation": "Directory traversal escapes the intended path using manipulated file paths."
+      }
+    ]
+  }
 }
