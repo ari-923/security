@@ -2,132 +2,312 @@
   "id": "13.03",
   "chapter": 13,
   "sub": 3,
-  "title": "Platform diversity",
+  "title": "Testing and Recovery Exercises",
   "chapter_name": "Resilience & Recovery",
   "slides": [
     {
       "n": 1,
-      "title": "Platform Diversity",
-      "points": [],
-      "raw": "Platform Diversity",
+      "title": "Testing and Recovery Exercises",
       "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": []
+      "teach": "",
+      "points": [
+        "Recovery plans are only useful if they are tested. Different exercise types provide different levels of realism, risk, and operational disruption."
+      ],
+      "defs": [],
+      "raw": ""
     },
     {
       "n": 2,
-      "title": "Multi-cloud Systems",
-      "points": [
-        "• Reduced single points of failure",
-        "• Enhanced security",
-        "• Flexibility and scalability"
-      ],
-      "raw": "Multi-cloud Systems\n• Reduced single points of failure\n• Enhanced security\n• Flexibility and scalability",
+      "title": "Tabletop Exercise",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "Cloud",
-          "Computing resources delivered on demand from a provider rather than entirely owned and operated locally."
-        ]
+      "teach": "A discussion-based walkthrough where participants talk through a scenario and their responsibilities.",
+      "points": [
+        "Basically",
+        "Examples"
       ],
+      "defs": [],
+      "raw": "",
       "course": {
-        "learn": "A multi-cloud strategy uses services from more than one cloud provider. It can reduce dependency on one provider and support specialized capabilities, but it increases operational and security complexity.",
-        "why": "Different IAM, logging, networking, and security tooling can make consistent controls harder.",
-        "example": "A company runs customer-facing applications in one cloud and analytics workloads in another while centralizing identity and logging.",
-        "exam": "Multi-cloud is not automatically redundant unless workloads/data can actually fail over across providers.",
+        "learn": "A discussion-based walkthrough where participants talk through a scenario and their responsibilities.",
         "breakdown": [
           {
-            "term": "Reduced single points of failure",
-            "explanation": "Within Multi-cloud Systems, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Platform diversity rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "A discussion-based walkthrough where participants talk through a scenario and their responsibilities."
           },
           {
-            "term": "Enhanced security",
-            "explanation": "This contributes to reducing risk in the broader Platform diversity design and should be evaluated as part of defense in depth."
-          },
-          {
-            "term": "Flexibility and scalability",
-            "explanation": "Within Multi-cloud Systems, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Platform diversity rather than memorizing the phrase by itself."
+            "term": "Examples",
+            "explanation": "Incident-response discussion, Disaster recovery walkthrough"
           }
         ],
-        "defs": [
-          {
-            "term": "Cloud",
-            "definition": "Computing resources delivered on demand from a provider rather than entirely owned and operated locally."
-          }
-        ],
-        "check_q": "Without looking back, explain Multi-cloud Systems and describe at least two key ideas from this section.",
-        "check_a": "A multi-cloud strategy uses services from more than one cloud provider. It can reduce dependency on one provider and support specialized capabilities, but it increases operational and security complexity. Key ideas include: Reduced single points of failure; Enhanced security; Flexibility and scalability.",
-        "points": [
-          "Reduced single points of failure",
-          "Enhanced security",
-          "Flexibility and scalability"
-        ]
+        "defs": [],
+        "why": "This concept affects resilience, recovery speed, availability, or continuity of operations.",
+        "example": "Incident-response discussion",
+        "exam": "TALK IT THROUGH",
+        "check_q": "What is the key exam clue for Tabletop Exercise?",
+        "check_a": "TALK IT THROUGH"
       }
     },
     {
       "n": 3,
-      "title": "Continuity of Operations",
-      "points": [
-        "Mitigation of",
-        "Downtime",
-        "Regulatory",
-        "Compliance",
-        "Maintaining Trust"
-      ],
-      "raw": "Continuity of Operations\nMitigation of\nDowntime\nRegulatory\nCompliance\nMaintaining Trust",
+      "title": "Failover Test",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "Tests switching operations from a primary system or site to a backup.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Continuity of Operations (COOP) planning defines how essential functions continue during disruption, including people, alternate facilities, communications, technology, and procedures.",
-        "why": "Business continuity is broader than restoring one server; it keeps the organization's critical mission functioning.",
-        "example": "If headquarters is unavailable, designated staff move to an alternate site and use documented procedures to continue priority services.",
-        "exam": "COOP/business continuity focuses on essential operations; disaster recovery is more technology-recovery focused.",
+        "learn": "Tests switching operations from a primary system or site to a backup.",
         "breakdown": [
           {
-            "term": "Mitigation of Downtime",
-            "explanation": "Within Continuity of Operations, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Platform diversity rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "Tests switching operations from a primary system or site to a backup."
           },
           {
-            "term": "Regulatory",
-            "explanation": "Within Continuity of Operations, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Platform diversity rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Compliance",
-            "explanation": "Evaluate risk and verify whether controls meet organizational, legal, or regulatory requirements."
-          },
-          {
-            "term": "Maintaining Trust",
-            "explanation": "Within Continuity of Operations, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Platform diversity rather than memorizing the phrase by itself."
+            "term": "Examples",
+            "explanation": "Primary to DR site, Cluster failover"
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Continuity of Operations and describe at least two key ideas from this section.",
-        "check_a": "Continuity of Operations (COOP) planning defines how essential functions continue during disruption, including people, alternate facilities, communications, technology, and procedures. Key ideas include: Mitigation of Downtime; Regulatory; Compliance; Maintaining Trust.",
-        "points": [
-          "Mitigation of Downtime",
-          "Regulatory",
-          "Compliance",
-          "Maintaining Trust"
-        ]
+        "why": "This concept affects resilience, recovery speed, availability, or continuity of operations.",
+        "example": "Primary to DR site",
+        "exam": "SWITCH TO BACKUP",
+        "check_q": "What is the key exam clue for Failover Test?",
+        "check_a": "SWITCH TO BACKUP"
       }
     },
     {
       "n": 4,
-      "title": "Capacity Planning",
-      "points": [],
-      "raw": "Capacity Planning",
-      "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": []
+      "title": "Simulation",
+      "instructional": true,
+      "teach": "A realistic practice exercise that imitates an incident without necessarily causing a real outage.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "A realistic practice exercise that imitates an incident without necessarily causing a real outage.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "A realistic practice exercise that imitates an incident without necessarily causing a real outage."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Ransomware drill, Disaster scenario"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects resilience, recovery speed, availability, or continuity of operations.",
+        "example": "Ransomware drill",
+        "exam": "PRACTICE THE EVENT",
+        "check_q": "What is the key exam clue for Simulation?",
+        "check_a": "PRACTICE THE EVENT"
+      }
+    },
+    {
+      "n": 5,
+      "title": "Parallel Processing",
+      "instructional": true,
+      "teach": "Runs primary and alternate systems at the same time to verify the backup can process the workload.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Runs primary and alternate systems at the same time to verify the backup can process the workload.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Runs primary and alternate systems at the same time to verify the backup can process the workload."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Old and new systems together, Primary + recovery environment"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects resilience, recovery speed, availability, or continuity of operations.",
+        "example": "Old and new systems together",
+        "exam": "RUN BOTH",
+        "check_q": "What is the key exam clue for Parallel Processing?",
+        "check_a": "RUN BOTH"
+      }
     }
   ],
-  "slide_count": 4,
-  "instructional_count": 2,
+  "slide_count": 5,
+  "instructional_count": 4,
   "concepts": [
-    "Multi-cloud Systems",
-    "Continuity of Operations"
+    "Tabletop Exercise",
+    "Failover Test",
+    "Simulation",
+    "Parallel Processing"
   ],
-  "source_filename": "13.03_Platform_diversity.pdf"
+  "source_filename": "13-03.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 3.4",
+      "title": "Testing and Recovery Exercises",
+      "intro": "Recovery plans are only useful if they are tested. Different exercise types provide different levels of realism, risk, and operational disruption."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Testing and Recovery Exercises",
+        "prompt": "Identify the resilience or recovery requirement first, then choose the design, test, backup, or power control that best fits.",
+        "badge": "3.4",
+        "cards": [
+          {
+            "name": "Tabletop Exercise",
+            "definition": "A discussion-based walkthrough where participants talk through a scenario and their responsibilities.",
+            "examples": [
+              "Incident-response discussion",
+              "Disaster recovery walkthrough"
+            ],
+            "memory": "TALK IT THROUGH"
+          },
+          {
+            "name": "Failover Test",
+            "definition": "Tests switching operations from a primary system or site to a backup.",
+            "examples": [
+              "Primary to DR site",
+              "Cluster failover"
+            ],
+            "memory": "SWITCH TO BACKUP"
+          },
+          {
+            "name": "Simulation",
+            "definition": "A realistic practice exercise that imitates an incident without necessarily causing a real outage.",
+            "examples": [
+              "Ransomware drill",
+              "Disaster scenario"
+            ],
+            "memory": "PRACTICE THE EVENT"
+          },
+          {
+            "name": "Parallel Processing",
+            "definition": "Runs primary and alternate systems at the same time to verify the backup can process the workload.",
+            "examples": [
+              "Old and new systems together",
+              "Primary + recovery environment"
+            ],
+            "memory": "RUN BOTH"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Testing and Recovery Exercises comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Tabletop",
+            "Discussion only",
+            "Lowest operational risk"
+          ],
+          [
+            "Failover",
+            "Actually switch to backup",
+            "Tests real switchover"
+          ],
+          [
+            "Simulation",
+            "Realistic scenario practice",
+            "Exercises response without full outage"
+          ],
+          [
+            "Parallel processing",
+            "Primary and backup run together",
+            "Verify alternate system output"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Testing and Recovery Exercises exam shortcuts",
+        "items": [
+          [
+            "Discuss roles without changing production → TABLETOP",
+            "Participants walk through the response verbally.",
+            "Example: Teams discuss actions during a ransomware scenario."
+          ],
+          [
+            "Actually switch to alternate system/site → FAILOVER",
+            "The organization tests whether the backup can take over.",
+            "Example: Production traffic moves to the DR environment."
+          ],
+          [
+            "Practice realistic incident behavior → SIMULATION",
+            "The exercise imitates an event to test response.",
+            "Example: Staff respond to a simulated data-center outage."
+          ],
+          [
+            "Run primary and backup simultaneously → PARALLEL PROCESSING",
+            "Both systems process work so results can be compared.",
+            "Example: A recovery system runs alongside the current one."
+          ]
+        ],
+        "example": "Focus on recovery speed, continuity, redundancy, data loss tolerance, and site or power requirements."
+      }
+    ],
+    "questions": [
+      {
+        "q": "Participants discuss how they would respond to a ransomware incident without changing production systems. Which test is this?",
+        "choices": [
+          "Tabletop exercise",
+          "Failover test",
+          "Parallel processing",
+          "Cold-site test"
+        ],
+        "answer": 0,
+        "explanation": "A tabletop is a discussion-based walkthrough."
+      },
+      {
+        "q": "Production traffic is intentionally switched to the disaster recovery environment to verify takeover works. Which test is this?",
+        "choices": [
+          "Failover test",
+          "Tabletop exercise",
+          "Simulation only",
+          "Parallel processing"
+        ],
+        "answer": 0,
+        "explanation": "Failover testing verifies the alternate environment can take over."
+      },
+      {
+        "q": "Employees respond to a realistic but controlled mock data-center outage. Which exercise best fits?",
+        "choices": [
+          "Simulation",
+          "Tabletop only",
+          "Parallel processing",
+          "Clustering"
+        ],
+        "answer": 0,
+        "explanation": "A simulation imitates a real event for practice."
+      },
+      {
+        "q": "The primary and recovery systems run at the same time and their results are compared. Which testing approach is this?",
+        "choices": [
+          "Parallel processing",
+          "Failover",
+          "Tabletop",
+          "Simulation"
+        ],
+        "answer": 0,
+        "explanation": "Parallel processing runs both environments simultaneously."
+      }
+    ]
+  }
 }
