@@ -2,174 +2,373 @@
   "id": "16.03",
   "chapter": 16,
   "sub": 3,
-  "title": "Vulnerability response and remediation",
+  "title": "Vulnerability Response and Remediation",
   "chapter_name": "Vulnerability Management",
   "slides": [
     {
       "n": 1,
       "title": "Vulnerability Response and Remediation",
-      "points": [],
-      "raw": "Vulnerability Response and\nRemediation",
       "instructional": false,
-      "teach": "A vulnerability is a weakness. For each item, connect the weakness to its likely impact and the best mitigation.",
-      "defs": []
+      "teach": "",
+      "points": [
+        "Once a vulnerability is understood and prioritized, the organization chooses a treatment: fix it, reduce exposure, transfer risk, compensate, or formally approve an exception."
+      ],
+      "defs": [],
+      "raw": ""
     },
     {
       "n": 2,
-      "title": "Response and Remediation",
-      "points": [
-        "Patching",
-        "Insurance",
-        "Segmentation",
-        "Compensating",
-        "Controls",
-        "Exceptions and",
-        "Exemptions"
-      ],
-      "raw": "Response and Remediation\nPatching\nInsurance\nSegmentation\nCompensating\nControls\nExceptions and\nExemptions",
+      "title": "Patching",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "Segmentation",
-          "Dividing a network into controlled zones to limit access and lateral movement."
-        ]
+      "teach": "Applies a vendor or developer fix that removes or corrects the vulnerability.",
+      "points": [
+        "Basically",
+        "Examples"
       ],
+      "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Vulnerability response turns findings into risk reduction: patch, reconfigure, isolate, remove, replace, apply compensating controls, or formally accept risk. Validation confirms the chosen fix actually worked.",
-        "why": "A scan finding has no value if it is never remediated or if the remediation is assumed successful without verification.",
-        "example": "A team patches a vulnerable service and then rescans the host to verify the vulnerability is no longer present.",
-        "exam": "After remediation, validate—often by rescanning, testing, or auditing. Do not simply close the ticket because a patch command ran.",
+        "learn": "Applies a vendor or developer fix that removes or corrects the vulnerability.",
         "breakdown": [
           {
-            "term": "Patching",
-            "explanation": "Apply vendor updates that fix known security flaws or bugs."
+            "term": "Basically",
+            "explanation": "Applies a vendor or developer fix that removes or corrects the vulnerability."
           },
           {
-            "term": "Insurance",
-            "explanation": "Within Response and Remediation, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Vulnerability response and remediation rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Segmentation",
-            "explanation": "Network segmentation separates systems into different trust zones so traffic must cross controlled boundaries. VLANs, subnets, ACLs, and firewalls are common mechanisms."
-          },
-          {
-            "term": "Compensating",
-            "explanation": "A compensating control is an alternative safeguard used when the preferred or required control cannot be implemented exactly as intended."
-          },
-          {
-            "term": "Controls",
-            "explanation": "Within Response and Remediation, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Vulnerability response and remediation rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Exceptions and Exemptions",
-            "explanation": "Within Response and Remediation, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Vulnerability response and remediation rather than memorizing the phrase by itself."
+            "term": "Examples",
+            "explanation": "Security update, Firmware patch"
           }
         ],
-        "defs": [
-          {
-            "term": "Segmentation",
-            "definition": "Dividing a network into controlled zones to limit access and lateral movement."
-          }
-        ],
-        "check_q": "Without looking back, explain Response and Remediation and describe at least two key ideas from this section.",
-        "check_a": "Vulnerability response turns findings into risk reduction: patch, reconfigure, isolate, remove, replace, apply compensating controls, or formally accept risk. Validation confirms the chosen fix actually worked. Key ideas include: Patching; Insurance; Segmentation; Compensating; Controls.",
-        "points": [
-          "Patching",
-          "Insurance",
-          "Segmentation",
-          "Compensating",
-          "Controls",
-          "Exceptions and Exemptions"
-        ]
+        "defs": [],
+        "why": "This concept affects how vulnerabilities are identified, analyzed, prioritized, remediated, validated, or reported.",
+        "example": "Security update",
+        "exam": "FIX THE FLAW",
+        "check_q": "What is the key exam clue for Patching?",
+        "check_a": "FIX THE FLAW"
       }
     },
     {
       "n": 3,
-      "title": "Other Considerations",
-      "points": [
-        "Incident",
-        "response",
-        "planning",
-        "Continuous",
-        "monitoring",
-        "Communication",
-        "and reporting",
-        "Testing and",
-        "validation",
-        "Documentation",
-        "and compliance",
-        "Training and",
-        "awareness"
-      ],
-      "raw": "Other Considerations\nIncident\nresponse\nplanning\nContinuous\nmonitoring\nCommunication\nand reporting\nTesting and\nvalidation\nDocumentation\nand compliance\nTraining and\nawareness",
+      "title": "Insurance",
       "instructional": true,
-      "teach": "These are design tradeoffs. Learn why each factor matters rather than memorizing the words alone.",
+      "teach": "Transfers some financial impact of risk to an insurer.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "This section focuses on **Other Considerations** within **Vulnerability response and remediation**. Vulnerability response turns findings into risk reduction: patch, reconfigure, isolate, remove, replace, apply compensating controls, or formally accept risk. Validation confirms the chosen fix actually worked.",
-        "why": "A scan finding has no value if it is never remediated or if the remediation is assumed successful without verification.",
-        "example": "A team patches a vulnerable service and then rescans the host to verify the vulnerability is no longer present.",
-        "exam": "After remediation, validate—often by rescanning, testing, or auditing. Do not simply close the ticket because a patch command ran.",
+        "learn": "Transfers some financial impact of risk to an insurer.",
         "breakdown": [
           {
-            "term": "Incident response",
-            "explanation": "Define how an organization prepares for, detects, contains, eradicates, and recovers from security incidents."
+            "term": "Basically",
+            "explanation": "Transfers some financial impact of risk to an insurer."
           },
           {
-            "term": "planning",
-            "explanation": "This is a factor that must be evaluated when using Vulnerability response and remediation; ignoring it can create operational, security, cost, or compatibility risk."
-          },
-          {
-            "term": "Continuous monitoring",
-            "explanation": "Security monitoring continuously observes systems, networks, applications, and logs for suspicious activity, failures, policy violations, and indicators of compromise."
-          },
-          {
-            "term": "Communication and reporting",
-            "explanation": "Security reporting communicates findings, risk, remediation status, trends, and evidence to the people who need to act. Good reports are accurate, prioritized, and appropriate for the audience."
-          },
-          {
-            "term": "Testing and validation",
-            "explanation": "This is a factor that must be evaluated when using Vulnerability response and remediation; ignoring it can create operational, security, cost, or compatibility risk."
-          },
-          {
-            "term": "Documentation and compliance",
-            "explanation": "Security documentation keeps diagrams, policies, procedures, configurations, and versions synchronized with the real environment."
-          },
-          {
-            "term": "Training and awareness",
-            "explanation": "This is a factor that must be evaluated when using Vulnerability response and remediation; ignoring it can create operational, security, cost, or compatibility risk."
+            "term": "Examples",
+            "explanation": "Cyber insurance"
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Other Considerations and describe at least two key ideas from this section.",
-        "check_a": "This section focuses on **Other Considerations** within **Vulnerability response and remediation**. Vulnerability response turns findings into risk reduction: patch, reconfigure, isolate, remove, replace, apply compensating controls, or formally accept risk. Validation confirms the chosen fix actually worked. Key ideas include: Incident response; planning; Continuous monitoring; Communication and reporting; Testing and validation.",
-        "points": [
-          "Incident response",
-          "planning",
-          "Continuous monitoring",
-          "Communication and reporting",
-          "Testing and validation",
-          "Documentation and compliance",
-          "Training and awareness"
-        ]
+        "why": "This concept affects how vulnerabilities are identified, analyzed, prioritized, remediated, validated, or reported.",
+        "example": "Cyber insurance",
+        "exam": "TRANSFER SOME RISK",
+        "check_q": "What is the key exam clue for Insurance?",
+        "check_a": "TRANSFER SOME RISK"
       }
     },
     {
       "n": 4,
-      "title": "Validation of Remediation",
-      "points": [],
-      "raw": "Validation of Remediation",
-      "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": []
+      "title": "Segmentation",
+      "instructional": true,
+      "teach": "Separates vulnerable systems or zones to reduce exposure and lateral movement.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Separates vulnerable systems or zones to reduce exposure and lateral movement.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Separates vulnerable systems or zones to reduce exposure and lateral movement."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Isolate legacy system, Restricted VLAN"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how vulnerabilities are identified, analyzed, prioritized, remediated, validated, or reported.",
+        "example": "Isolate legacy system",
+        "exam": "LIMIT THE BLAST RADIUS",
+        "check_q": "What is the key exam clue for Segmentation?",
+        "check_a": "LIMIT THE BLAST RADIUS"
+      }
+    },
+    {
+      "n": 5,
+      "title": "Compensating Controls",
+      "instructional": true,
+      "teach": "Alternative controls used when the preferred control cannot be implemented.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Alternative controls used when the preferred control cannot be implemented.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Alternative controls used when the preferred control cannot be implemented."
+          },
+          {
+            "term": "Examples",
+            "explanation": "WAF protecting unpatchable app, Extra monitoring"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how vulnerabilities are identified, analyzed, prioritized, remediated, validated, or reported.",
+        "example": "WAF protecting unpatchable app",
+        "exam": "PLAN B CONTROL",
+        "check_q": "What is the key exam clue for Compensating Controls?",
+        "check_a": "PLAN B CONTROL"
+      }
+    },
+    {
+      "n": 6,
+      "title": "Exceptions and Exemptions",
+      "instructional": true,
+      "teach": "Formally approved deviations from security requirements when a control cannot or should not be applied.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Formally approved deviations from security requirements when a control cannot or should not be applied.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Formally approved deviations from security requirements when a control cannot or should not be applied."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Temporary patch exception, Legacy-system exemption"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects how vulnerabilities are identified, analyzed, prioritized, remediated, validated, or reported.",
+        "example": "Temporary patch exception",
+        "exam": "APPROVED DEVIATION",
+        "check_q": "What is the key exam clue for Exceptions and Exemptions?",
+        "check_a": "APPROVED DEVIATION"
+      }
     }
   ],
-  "slide_count": 4,
-  "instructional_count": 2,
+  "slide_count": 6,
+  "instructional_count": 5,
   "concepts": [
-    "Response and Remediation",
-    "Other Considerations"
+    "Patching",
+    "Insurance",
+    "Segmentation",
+    "Compensating Controls",
+    "Exceptions and Exemptions"
   ],
-  "source_filename": "16.03_Vulnerability_response_and_remediation.pdf"
+  "source_filename": "16-03.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 4.3",
+      "title": "Vulnerability Response and Remediation",
+      "intro": "Once a vulnerability is understood and prioritized, the organization chooses a treatment: fix it, reduce exposure, transfer risk, compensate, or formally approve an exception."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Vulnerability Response and Remediation",
+        "prompt": "Follow the vulnerability lifecycle: identify → analyze → prioritize → remediate → validate → report.",
+        "badge": "4.3",
+        "cards": [
+          {
+            "name": "Patching",
+            "definition": "Applies a vendor or developer fix that removes or corrects the vulnerability.",
+            "examples": [
+              "Security update",
+              "Firmware patch"
+            ],
+            "memory": "FIX THE FLAW"
+          },
+          {
+            "name": "Insurance",
+            "definition": "Transfers some financial impact of risk to an insurer.",
+            "examples": [
+              "Cyber insurance"
+            ],
+            "memory": "TRANSFER SOME RISK"
+          },
+          {
+            "name": "Segmentation",
+            "definition": "Separates vulnerable systems or zones to reduce exposure and lateral movement.",
+            "examples": [
+              "Isolate legacy system",
+              "Restricted VLAN"
+            ],
+            "memory": "LIMIT THE BLAST RADIUS"
+          },
+          {
+            "name": "Compensating Controls",
+            "definition": "Alternative controls used when the preferred control cannot be implemented.",
+            "examples": [
+              "WAF protecting unpatchable app",
+              "Extra monitoring"
+            ],
+            "memory": "PLAN B CONTROL"
+          },
+          {
+            "name": "Exceptions and Exemptions",
+            "definition": "Formally approved deviations from security requirements when a control cannot or should not be applied.",
+            "examples": [
+              "Temporary patch exception",
+              "Legacy-system exemption"
+            ],
+            "memory": "APPROVED DEVIATION"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Vulnerability Response and Remediation comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Patching",
+            "Remove vulnerability",
+            "Vendor fix"
+          ],
+          [
+            "Insurance",
+            "Transfer financial risk",
+            "Risk transfer"
+          ],
+          [
+            "Segmentation",
+            "Reduce exposure",
+            "Contain vulnerable system"
+          ],
+          [
+            "Compensating controls",
+            "Alternative mitigation",
+            "Preferred control unavailable"
+          ],
+          [
+            "Exception/exemption",
+            "Approved deviation",
+            "Documented acceptance"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Vulnerability Response and Remediation exam shortcuts",
+        "items": [
+          [
+            "Vendor fix exists → PATCH",
+            "Apply the update that removes the vulnerability.",
+            "Example: A critical browser flaw is fixed with the vendor patch."
+          ],
+          [
+            "Cannot patch but can isolate → SEGMENTATION",
+            "Reduce exposure and attack paths.",
+            "Example: A legacy device is moved to a restricted VLAN."
+          ],
+          [
+            "Preferred control cannot be used → COMPENSATING CONTROL",
+            "Use an alternative that reduces the same risk.",
+            "Example: A WAF protects an application that cannot be patched immediately."
+          ],
+          [
+            "Organization formally accepts deviation → EXCEPTION / EXEMPTION",
+            "Document the reason, scope, approval, and review period.",
+            "Example: A legacy system receives a temporary patch exception."
+          ],
+          [
+            "Need to transfer financial consequences → INSURANCE",
+            "Insurance does not remove the vulnerability, but can shift some financial risk.",
+            "Example: Cyber insurance covers certain incident costs."
+          ]
+        ],
+        "example": "Focus on which stage of the vulnerability-management lifecycle the scenario is describing."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A vendor releases an update that removes a critical vulnerability. Which response is most direct?",
+        "choices": [
+          "Patching",
+          "Insurance",
+          "Segmentation",
+          "Exception"
+        ],
+        "answer": 0,
+        "explanation": "Patching applies the fix that removes the vulnerability."
+      },
+      {
+        "q": "A legacy system cannot be patched, so it is moved to a restricted VLAN with limited access. Which response is being used?",
+        "choices": [
+          "Segmentation",
+          "Insurance",
+          "Reporting",
+          "Rescanning"
+        ],
+        "answer": 0,
+        "explanation": "Segmentation reduces exposure and lateral movement when direct remediation is limited."
+      },
+      {
+        "q": "An application cannot be patched immediately, so a WAF is configured to block exploit attempts. Which response is this?",
+        "choices": [
+          "Compensating control",
+          "Exception only",
+          "Insurance",
+          "Verification"
+        ],
+        "answer": 0,
+        "explanation": "A compensating control is an alternative control used when the preferred fix cannot be implemented."
+      },
+      {
+        "q": "A system receives formal approval to delay a required patch because of operational constraints. Which concept best fits?",
+        "choices": [
+          "Exception/exemption",
+          "Insurance",
+          "Enumeration",
+          "CVSS"
+        ],
+        "answer": 0,
+        "explanation": "Exceptions and exemptions are formally approved deviations from security requirements."
+      },
+      {
+        "q": "An organization purchases cyber insurance to reduce financial impact from certain incidents. Which response category is this?",
+        "choices": [
+          "Insurance",
+          "Patching",
+          "Verification",
+          "Segmentation"
+        ],
+        "answer": 0,
+        "explanation": "Insurance transfers some financial risk to an insurer."
+      }
+    ]
+  }
 }
