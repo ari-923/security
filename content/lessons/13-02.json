@@ -2,199 +2,312 @@
   "id": "13.02",
   "chapter": 13,
   "sub": 2,
-  "title": "Site considerations",
+  "title": "Continuity of Operations and Capacity Planning",
   "chapter_name": "Resilience & Recovery",
   "slides": [
     {
       "n": 1,
-      "title": "Site Considerations",
-      "points": [],
-      "raw": "Site Considerations",
+      "title": "Continuity of Operations and Capacity Planning",
       "instructional": false,
-      "teach": "These are design tradeoffs. Learn why each factor matters rather than memorizing the words alone.",
-      "defs": []
+      "teach": "",
+      "points": [
+        "Resilience is not only technology. Organizations must plan for people, infrastructure, and system capacity so critical operations can continue through disruption."
+      ],
+      "defs": [],
+      "raw": ""
     },
     {
       "n": 2,
-      "title": "Hot Site",
-      "points": [
-        "Fully equipped",
-        "Up-to-date infrastructure",
-        "Ready-to-move"
-      ],
-      "raw": "Hot Site\nFully equipped\nUp-to-date infrastructure\nReady-to-move",
+      "title": "Continuity of Operations",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "Planning and capabilities that allow essential functions to continue during and after disruption.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "A hot site is a disaster-recovery location that is fully equipped and ready to take over operations quickly, often with current systems and replicated data.",
-        "why": "Fast recovery reduces downtime but costs more because duplicate capacity must be maintained.",
-        "example": "A financial company maintains a second data center with active infrastructure and near-current data so critical services can fail over quickly.",
-        "exam": "Hot = fastest/most ready/most expensive.",
+        "learn": "Planning and capabilities that allow essential functions to continue during and after disruption.",
         "breakdown": [
           {
-            "term": "Fully equipped",
-            "explanation": "Within Hot Site, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Site considerations rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "Planning and capabilities that allow essential functions to continue during and after disruption."
           },
           {
-            "term": "Up-to-date infrastructure",
-            "explanation": "Infrastructure monitoring observes networks, cloud configuration, appliances, links, and supporting resources. NSM analyzes network behavior, while CSPM evaluates cloud security posture and misconfiguration."
-          },
-          {
-            "term": "Ready-to-move",
-            "explanation": "Within Hot Site, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Site considerations rather than memorizing the phrase by itself."
+            "term": "Examples",
+            "explanation": "Business continuity, Alternate operating procedures"
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Hot Site and describe at least two key ideas from this section.",
-        "check_a": "A hot site is a disaster-recovery location that is fully equipped and ready to take over operations quickly, often with current systems and replicated data. Key ideas include: Fully equipped; Up-to-date infrastructure; Ready-to-move.",
-        "points": [
-          "Fully equipped",
-          "Up-to-date infrastructure",
-          "Ready-to-move"
-        ]
+        "why": "This concept affects resilience, recovery speed, availability, or continuity of operations.",
+        "example": "Business continuity",
+        "exam": "KEEP THE BUSINESS GOING",
+        "check_q": "What is the key exam clue for Continuity of Operations?",
+        "check_a": "KEEP THE BUSINESS GOING"
       }
     },
     {
       "n": 3,
-      "title": "Cold Site",
-      "points": [
-        "Basic infrastructure",
-        "Lacks operational components",
-        "Take time to be ready"
-      ],
-      "raw": "Cold Site\nBasic infrastructure\nLacks operational components\nTake time to be ready",
+      "title": "Capacity Planning — People",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "Ensures enough trained staff are available to support operations and recovery.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "A cold site provides basic facility space, power, and connectivity but little or no ready computing equipment or current data.",
-        "why": "It is inexpensive to maintain but takes the longest to become operational after a disaster.",
-        "example": "A company contracts for an alternate building with power and network access but would need equipment delivered and backups restored.",
-        "exam": "Cold = cheapest/slowest/basic facility.",
+        "learn": "Ensures enough trained staff are available to support operations and recovery.",
         "breakdown": [
           {
-            "term": "Basic infrastructure",
-            "explanation": "Infrastructure monitoring observes networks, cloud configuration, appliances, links, and supporting resources. NSM analyzes network behavior, while CSPM evaluates cloud security posture and misconfiguration."
+            "term": "Basically",
+            "explanation": "Ensures enough trained staff are available to support operations and recovery."
           },
           {
-            "term": "Lacks operational components",
-            "explanation": "Within Cold Site, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Site considerations rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Take time to be ready",
-            "explanation": "Within Cold Site, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Site considerations rather than memorizing the phrase by itself."
+            "term": "Examples",
+            "explanation": "Cross-trained employees, On-call staff"
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Cold Site and describe at least two key ideas from this section.",
-        "check_a": "A cold site provides basic facility space, power, and connectivity but little or no ready computing equipment or current data. Key ideas include: Basic infrastructure; Lacks operational components; Take time to be ready.",
-        "points": [
-          "Basic infrastructure",
-          "Lacks operational components",
-          "Take time to be ready"
-        ]
+        "why": "This concept affects resilience, recovery speed, availability, or continuity of operations.",
+        "example": "Cross-trained employees",
+        "exam": "ENOUGH PEOPLE",
+        "check_q": "What is the key exam clue for Capacity Planning — People?",
+        "check_a": "ENOUGH PEOPLE"
       }
     },
     {
       "n": 4,
-      "title": "Warm Site",
-      "points": [
-        "Middle ground between hot and cold sites",
-        "Partial infrastructure",
-        "Faster activation than cold site"
-      ],
-      "raw": "Warm Site\nMiddle ground between hot and cold sites\nPartial infrastructure\nFaster activation than cold site",
+      "title": "Capacity Planning — Technology",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "Ensures sufficient computing, networking, storage, and software capacity.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "A warm site has some infrastructure and configuration in place but requires additional setup, data restoration, or equipment before full operation.",
-        "why": "It balances recovery speed and cost between hot and cold sites.",
-        "example": "A recovery facility has servers and network connectivity but requires current backups to be restored before applications can run.",
-        "exam": "Warm = partially ready, middle cost and recovery time.",
+        "learn": "Ensures sufficient computing, networking, storage, and software capacity.",
         "breakdown": [
           {
-            "term": "Middle ground between hot and cold sites",
-            "explanation": "A cold site provides basic facility space, power, and connectivity but little or no ready computing equipment or current data."
+            "term": "Basically",
+            "explanation": "Ensures sufficient computing, networking, storage, and software capacity."
           },
           {
-            "term": "Partial infrastructure",
-            "explanation": "Infrastructure monitoring observes networks, cloud configuration, appliances, links, and supporting resources. NSM analyzes network behavior, while CSPM evaluates cloud security posture and misconfiguration."
-          },
-          {
-            "term": "Faster activation than cold site",
-            "explanation": "A cold site provides basic facility space, power, and connectivity but little or no ready computing equipment or current data."
+            "term": "Examples",
+            "explanation": "Extra compute, Bandwidth planning"
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Warm Site and describe at least two key ideas from this section.",
-        "check_a": "A warm site has some infrastructure and configuration in place but requires additional setup, data restoration, or equipment before full operation. Key ideas include: Middle ground between hot and cold sites; Partial infrastructure; Faster activation than cold site.",
-        "points": [
-          "Middle ground between hot and cold sites",
-          "Partial infrastructure",
-          "Faster activation than cold site"
-        ]
+        "why": "This concept affects resilience, recovery speed, availability, or continuity of operations.",
+        "example": "Extra compute",
+        "exam": "ENOUGH TECHNOLOGY",
+        "check_q": "What is the key exam clue for Capacity Planning — Technology?",
+        "check_a": "ENOUGH TECHNOLOGY"
       }
     },
     {
       "n": 5,
-      "title": "Geographic Dispersion",
-      "points": [
-        "Multiple geographic location",
-        "Risk mitigation",
-        "Complexity"
-      ],
-      "raw": "Geographic Dispersion\nMultiple geographic location\nRisk mitigation\nComplexity",
+      "title": "Capacity Planning — Infrastructure",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "Ensures facilities, power, cooling, workspace, and physical resources can support operations.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Geographic dispersion places redundant resources far enough apart that one local or regional event is unlikely to affect all of them.",
-        "why": "Redundancy inside one building does not help if the entire building loses power or is destroyed.",
-        "example": "Production runs in two cloud regions hundreds of miles apart rather than two racks in the same data center.",
-        "exam": "Regional disaster/outage protection = geographic dispersion.",
+        "learn": "Ensures facilities, power, cooling, workspace, and physical resources can support operations.",
         "breakdown": [
           {
-            "term": "Multiple geographic location",
-            "explanation": "Within Geographic Dispersion, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Site considerations rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "Ensures facilities, power, cooling, workspace, and physical resources can support operations."
           },
           {
-            "term": "Risk mitigation",
-            "explanation": "This affects the likelihood or impact of harm and therefore changes how the organization should prioritize controls."
-          },
-          {
-            "term": "Complexity",
-            "explanation": "Within Geographic Dispersion, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Site considerations rather than memorizing the phrase by itself."
+            "term": "Examples",
+            "explanation": "Data center capacity, Alternate workspace"
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Geographic Dispersion and describe at least two key ideas from this section.",
-        "check_a": "Geographic dispersion places redundant resources far enough apart that one local or regional event is unlikely to affect all of them. Key ideas include: Multiple geographic location; Risk mitigation; Complexity.",
-        "points": [
-          "Multiple geographic location",
-          "Risk mitigation",
-          "Complexity"
-        ]
+        "why": "This concept affects resilience, recovery speed, availability, or continuity of operations.",
+        "example": "Data center capacity",
+        "exam": "ENOUGH INFRASTRUCTURE",
+        "check_q": "What is the key exam clue for Capacity Planning — Infrastructure?",
+        "check_a": "ENOUGH INFRASTRUCTURE"
       }
-    },
-    {
-      "n": 6,
-      "title": "Platform Diversity",
-      "points": [],
-      "raw": "Platform Diversity",
-      "instructional": false,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": []
     }
   ],
-  "slide_count": 6,
+  "slide_count": 5,
   "instructional_count": 4,
   "concepts": [
-    "Hot Site",
-    "Cold Site",
-    "Warm Site",
-    "Geographic Dispersion"
+    "Continuity of Operations",
+    "Capacity Planning — People",
+    "Capacity Planning — Technology",
+    "Capacity Planning — Infrastructure"
   ],
-  "source_filename": "13.02_Site_considerations.pdf"
+  "source_filename": "13-02.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 3.4",
+      "title": "Continuity of Operations and Capacity Planning",
+      "intro": "Resilience is not only technology. Organizations must plan for people, infrastructure, and system capacity so critical operations can continue through disruption."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Continuity of Operations and Capacity Planning",
+        "prompt": "Identify the resilience or recovery requirement first, then choose the design, test, backup, or power control that best fits.",
+        "badge": "3.4",
+        "cards": [
+          {
+            "name": "Continuity of Operations",
+            "definition": "Planning and capabilities that allow essential functions to continue during and after disruption.",
+            "examples": [
+              "Business continuity",
+              "Alternate operating procedures"
+            ],
+            "memory": "KEEP THE BUSINESS GOING"
+          },
+          {
+            "name": "Capacity Planning — People",
+            "definition": "Ensures enough trained staff are available to support operations and recovery.",
+            "examples": [
+              "Cross-trained employees",
+              "On-call staff"
+            ],
+            "memory": "ENOUGH PEOPLE"
+          },
+          {
+            "name": "Capacity Planning — Technology",
+            "definition": "Ensures sufficient computing, networking, storage, and software capacity.",
+            "examples": [
+              "Extra compute",
+              "Bandwidth planning"
+            ],
+            "memory": "ENOUGH TECHNOLOGY"
+          },
+          {
+            "name": "Capacity Planning — Infrastructure",
+            "definition": "Ensures facilities, power, cooling, workspace, and physical resources can support operations.",
+            "examples": [
+              "Data center capacity",
+              "Alternate workspace"
+            ],
+            "memory": "ENOUGH INFRASTRUCTURE"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Continuity of Operations and Capacity Planning comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "People",
+            "Staffing and skills",
+            "Who can operate/recover?"
+          ],
+          [
+            "Technology",
+            "Compute/network/storage capacity",
+            "Can systems handle the load?"
+          ],
+          [
+            "Infrastructure",
+            "Facilities/power/cooling",
+            "Can the environment support operations?"
+          ],
+          [
+            "Continuity of operations",
+            "Maintain essential functions",
+            "Keep business running"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Continuity of Operations and Capacity Planning exam shortcuts",
+        "items": [
+          [
+            "Critical business functions must continue → CONTINUITY OF OPERATIONS",
+            "Focus on maintaining essential services during disruption.",
+            "Example: Payroll and customer support remain operational during an outage."
+          ],
+          [
+            "Recovery plan fails because nobody knows the system → PEOPLE CAPACITY",
+            "Staffing and expertise are the limiting factor.",
+            "Example: Cross-train employees for key recovery roles."
+          ],
+          [
+            "Backup environment cannot handle production load → TECHNOLOGY CAPACITY",
+            "Recovery systems need enough compute, bandwidth, and storage.",
+            "Example: DR servers are sized for expected peak traffic."
+          ],
+          [
+            "Alternate facility lacks power/cooling → INFRASTRUCTURE CAPACITY",
+            "Physical support resources must also be planned.",
+            "Example: A recovery site has enough generator capacity and cooling."
+          ]
+        ],
+        "example": "Focus on recovery speed, continuity, redundancy, data loss tolerance, and site or power requirements."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A company wants essential payroll and customer support functions to continue during a major outage. Which concept is most relevant?",
+        "choices": [
+          "Continuity of operations",
+          "Platform diversity",
+          "Cold site",
+          "Journaling"
+        ],
+        "answer": 0,
+        "explanation": "Continuity of operations focuses on maintaining essential business functions during disruption."
+      },
+      {
+        "q": "A disaster recovery plan cannot be executed because only one employee knows the recovery procedure. Which capacity area is deficient?",
+        "choices": [
+          "People",
+          "Technology",
+          "Infrastructure",
+          "Power"
+        ],
+        "answer": 0,
+        "explanation": "The limiting factor is staffing and expertise."
+      },
+      {
+        "q": "The disaster recovery environment cannot handle production traffic during failover. Which capacity area is deficient?",
+        "choices": [
+          "Technology",
+          "People",
+          "Infrastructure",
+          "Geographic dispersion"
+        ],
+        "answer": 0,
+        "explanation": "Compute, storage, bandwidth, or other technical capacity is insufficient."
+      },
+      {
+        "q": "An alternate facility lacks enough cooling and electrical capacity to support recovery systems. Which capacity area is deficient?",
+        "choices": [
+          "Infrastructure",
+          "Technology",
+          "People",
+          "Testing"
+        ],
+        "answer": 0,
+        "explanation": "Facilities, power, and cooling are infrastructure capacity considerations."
+      }
+    ]
+  }
 }
