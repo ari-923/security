@@ -2,602 +2,584 @@
   "id": "08.04",
   "chapter": 8,
   "sub": 4,
-  "title": "Application attacks",
-  "chapter_name": "Attack Indicators",
+  "title": "Indicators of Malicious Activity",
+  "chapter_name": "Malicious Activity Indicators",
   "slides": [
     {
       "n": 1,
-      "title": "Application Attack Indicators",
-      "points": [],
-      "raw": "Application Attack Indicators",
+      "title": "Indicators of Malicious Activity",
       "instructional": false,
-      "teach": "Treat these as observable clues. On the exam, be ready to infer the most likely attack from the pattern of indicators.",
-      "defs": []
+      "teach": "",
+      "points": [
+        "The exam may give you a symptom instead of an attack name. Use the indicator to infer what is happening.",
+        "Security+ Objective 2.4: given a scenario, analyze indicators of malicious activity."
+      ],
+      "defs": [],
+      "raw": ""
     },
     {
       "n": 2,
-      "title": "Injection Attacks",
-      "points": [
-        "SQL",
-        "Injection",
-        "Cross-Site",
-        "Scripting",
-        "(XSS)",
-        "Command",
-        "Injection",
-        "LDAP",
-        "Injection"
-      ],
-      "raw": "Injection Attacks\nSQL\nInjection\nCross-Site\nScripting\n(XSS)\nCommand\nInjection\nLDAP\nInjection",
+      "title": "Account Lockout",
       "instructional": true,
-      "teach": "Learn the attacker behavior, the evidence it leaves behind, and the control that best detects or mitigates it.",
-      "defs": [
-        [
-          "XSS",
-          "Cross-Site Scripting: malicious client-side script executes in another user’s browser."
-        ]
+      "teach": "An account becomes locked after failed authentication attempts or a security policy trigger.",
+      "points": [
+        "Basically",
+        "Examples"
       ],
+      "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Injection occurs when untrusted input is interpreted as code, commands, or query syntax by another system. The underlying problem is mixing data with executable instructions.",
-        "why": "Injection can let an attacker make the application perform operations the developer never intended.",
-        "example": "A web form passes raw user input directly into a SQL statement, allowing the user to append database commands.",
-        "exam": "SQL, command, and LDAP injection all share the same idea: unsafe input changes the structure of an interpreter/query.",
+        "learn": "An account becomes locked after failed authentication attempts or a security policy trigger.",
         "breakdown": [
           {
-            "term": "SQL",
-            "explanation": "Application monitoring measures application behavior, performance, errors, and security events. APM focuses on health/performance, while a WAF inspects and protects web requests."
+            "term": "Basically",
+            "explanation": "Too many failed attempts cause the account to lock."
           },
           {
-            "term": "Injection",
-            "explanation": "Within Injection Attacks, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Application attacks rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Cross-Site",
-            "explanation": "Within Injection Attacks, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Application attacks rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Scripting",
-            "explanation": "Within Injection Attacks, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Application attacks rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "(XSS)",
-            "explanation": "Cross-Site Scripting (XSS) lets attacker-controlled script execute in another user's browser in the context of a trusted site."
-          },
-          {
-            "term": "Command",
-            "explanation": "Within Injection Attacks, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Application attacks rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Injection",
-            "explanation": "Within Injection Attacks, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Application attacks rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "LDAP",
-            "explanation": "Application monitoring measures application behavior, performance, errors, and security events. APM focuses on health/performance, while a WAF inspects and protects web requests."
-          },
-          {
-            "term": "Injection",
-            "explanation": "Within Injection Attacks, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Application attacks rather than memorizing the phrase by itself."
+            "term": "Examples",
+            "explanation": "Repeated failed logins"
           }
         ],
-        "defs": [
-          {
-            "term": "XSS",
-            "definition": "Cross-Site Scripting: malicious client-side script executes in another user’s browser."
-          }
-        ],
-        "check_q": "Without looking back, explain Injection Attacks and describe at least two key ideas from this section.",
-        "check_a": "Injection occurs when untrusted input is interpreted as code, commands, or query syntax by another system. The underlying problem is mixing data with executable instructions. Key ideas include: SQL; Injection; Cross-Site; Scripting; (XSS).",
-        "points": [
-          "SQL",
-          "Injection",
-          "Cross-Site",
-          "Scripting",
-          "(XSS)",
-          "Command",
-          "Injection",
-          "LDAP",
-          "Injection"
-        ]
+        "defs": [],
+        "why": "Lockouts can indicate password attacks.",
+        "example": "Many accounts lock after repeated failed logins.",
+        "exam": "Repeated failures → ACCOUNT LOCKOUT.",
+        "check_q": "Which indicator occurs after excessive failed logins?",
+        "check_a": "Account lockout."
       }
     },
     {
       "n": 3,
-      "title": "SQL Injection",
-      "points": [
-        "Presence of unusual characters in user inputs",
-        "Unexpected behavior",
-        "Error messages revealing SQL syntax"
-      ],
-      "raw": "SQL Injection\nPresence of unusual characters in user inputs\nUnexpected behavior\nError messages revealing SQL syntax",
+      "title": "Concurrent Session Usage",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "The same account is active in multiple sessions or locations at the same time.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "SQL injection changes a database query by inserting malicious SQL through application input. Prepared/parameterized queries keep user data separate from SQL syntax.",
-        "why": "Database compromise can expose or modify large amounts of sensitive information.",
-        "example": "The input `' OR 1=1 --` changes an unsafe login query so its condition always evaluates true.",
-        "exam": "Best mitigation: parameterized/prepared queries. WAF can help, but secure coding fixes the root cause.",
+        "learn": "The same account is active in multiple sessions or locations at the same time.",
         "breakdown": [
           {
-            "term": "Presence of unusual characters in user inputs",
-            "explanation": "Within SQL Injection, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Application attacks rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "One account appears to be used simultaneously."
           },
           {
-            "term": "Unexpected behavior",
-            "explanation": "Within SQL Injection, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Application attacks rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Error messages revealing SQL syntax",
-            "explanation": "Within SQL Injection, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Application attacks rather than memorizing the phrase by itself."
+            "term": "Examples",
+            "explanation": "Two simultaneous logins"
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain SQL Injection and describe at least two key ideas from this section.",
-        "check_a": "SQL injection changes a database query by inserting malicious SQL through application input. Prepared/parameterized queries keep user data separate from SQL syntax. Key ideas include: Presence of unusual characters in user inputs; Unexpected behavior; Error messages revealing SQL syntax.",
-        "points": [
-          "Presence of unusual characters in user inputs",
-          "Unexpected behavior",
-          "Error messages revealing SQL syntax"
-        ]
+        "why": "Unexpected concurrent sessions may indicate stolen credentials.",
+        "example": "One user has sessions from unrelated networks at the same time.",
+        "exam": "Same account, same time → CONCURRENT SESSION.",
+        "check_q": "Which indicator describes simultaneous use of one account?",
+        "check_a": "Concurrent session usage."
       }
     },
     {
       "n": 4,
-      "title": "Cross-site Scripting (XSS)",
-      "points": [
-        "Inclusion of script tags etc. in user inputs",
-        "Unexpected changes in the Web pages",
-        "Unauthorized access to user session data"
-      ],
-      "raw": "Cross-site Scripting (XSS)\nInclusion of script tags etc. in user inputs\nUnexpected changes in the Web pages\nUnauthorized access to user session data",
+      "title": "Blocked Content",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "XSS",
-          "Cross-Site Scripting: malicious client-side script executes in another user’s browser."
-        ]
+      "teach": "Security controls prevent access to content, destinations, files, or traffic.",
+      "points": [
+        "Basically",
+        "Examples"
       ],
+      "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Cross-Site Scripting (XSS) lets attacker-controlled script execute in another user's browser in the context of a trusted site.",
-        "why": "The browser may give that script access to session data or the ability to perform actions as the victim.",
-        "example": "A comment field stores unsanitized JavaScript, and every user who views the page runs the attacker's script.",
-        "exam": "XSS targets the browser/client. Output encoding and safe templating are core mitigations.",
+        "learn": "Security controls prevent access to content, destinations, files, or traffic.",
         "breakdown": [
           {
-            "term": "Inclusion of script tags etc. in user inputs",
-            "explanation": "Within Cross-site Scripting (XSS), this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Application attacks rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "A security control stopped something."
           },
           {
-            "term": "Unexpected changes in the Web pages",
-            "explanation": "Within Cross-site Scripting (XSS), this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Application attacks rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Unauthorized access to user session data",
-            "explanation": "This concerns who or what can reach a resource and what actions are permitted once access is granted."
+            "term": "Examples",
+            "explanation": "Web filter block, DLP block"
           }
         ],
-        "defs": [
-          {
-            "term": "XSS",
-            "definition": "Cross-Site Scripting: malicious client-side script executes in another user’s browser."
-          }
-        ],
-        "check_q": "Without looking back, explain Cross-site Scripting (XSS) and describe at least two key ideas from this section.",
-        "check_a": "Cross-Site Scripting (XSS) lets attacker-controlled script execute in another user's browser in the context of a trusted site. Key ideas include: Inclusion of script tags etc. in user inputs; Unexpected changes in the Web pages; Unauthorized access to user session data.",
-        "points": [
-          "Inclusion of script tags etc. in user inputs",
-          "Unexpected changes in the Web pages",
-          "Unauthorized access to user session data"
-        ]
+        "defs": [],
+        "why": "Blocked content can reveal attempted access to risky resources.",
+        "example": "A web filter repeatedly blocks a malicious domain.",
+        "exam": "Security control stopped it → BLOCKED CONTENT.",
+        "check_q": "Which indicator describes content prevented by a security control?",
+        "check_a": "Blocked content."
       }
     },
     {
       "n": 5,
-      "title": "Command Injection",
-      "points": [
-        "Presence of special characters in user inputs",
-        "Unexpected system commands or operations being",
-        "executed",
-        "Error messages revealing command execution failures"
-      ],
-      "raw": "Command Injection\nPresence of special characters in user inputs\nUnexpected system commands or operations being\nexecuted\nError messages revealing command execution failures",
+      "title": "Impossible Travel",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "Authentication occurs from geographically distant locations in a time window that makes normal travel impossible.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Command injection occurs when untrusted input is passed to an operating-system shell or command interpreter and becomes part of an executable command.",
-        "why": "Successful command injection can give attackers direct system-level capabilities.",
-        "example": "A diagnostic web page runs `ping ` plus user input; the attacker appends shell syntax to run another command.",
-        "exam": "Shell/OS commands = command injection. Use safe APIs, input validation, and avoid invoking a shell with raw user data.",
+        "learn": "Authentication occurs from geographically distant locations in a time window that makes normal travel impossible.",
         "breakdown": [
           {
-            "term": "Presence of special characters in user inputs",
-            "explanation": "Within Command Injection, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Application attacks rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "The account moves faster than a person could travel."
           },
           {
-            "term": "Unexpected system commands or operations being",
-            "explanation": "Within Command Injection, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Application attacks rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "executed",
-            "explanation": "Within Command Injection, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Application attacks rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Error messages revealing command execution failures",
-            "explanation": "Within Command Injection, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Application attacks rather than memorizing the phrase by itself."
+            "term": "Examples",
+            "explanation": "Seattle then London 20 minutes later"
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Command Injection and describe at least two key ideas from this section.",
-        "check_a": "Command injection occurs when untrusted input is passed to an operating-system shell or command interpreter and becomes part of an executable command. Key ideas include: Presence of special characters in user inputs; Unexpected system commands or operations being; executed; Error messages revealing command execution failures.",
-        "points": [
-          "Presence of special characters in user inputs",
-          "Unexpected system commands or operations being",
-          "executed",
-          "Error messages revealing command execution failures"
-        ]
+        "why": "It can indicate stolen credentials or tokens.",
+        "example": "Successful logins occur from distant countries fifteen minutes apart.",
+        "exam": "Can't travel that fast → IMPOSSIBLE TRAVEL.",
+        "check_q": "Which indicator involves impossible geographic login movement?",
+        "check_a": "Impossible travel."
       }
     },
     {
       "n": 6,
-      "title": "LDAP Injection",
-      "points": [
-        "Injection of LDAP metacharacters or filters in user",
-        "inputs",
-        "Unexpected access to directory information",
-        "Authentication bypass or exposure of sensitive",
-        "directory contents"
-      ],
-      "raw": "LDAP Injection\nInjection of LDAP metacharacters or filters in user\ninputs\nUnexpected access to directory information\nAuthentication bypass or exposure of sensitive\ndirectory contents",
+      "title": "Resource Consumption",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "Authentication",
-          "Proving an identity—answering “who are you?”"
-        ]
+      "teach": "Unexpectedly high CPU, memory, bandwidth, disk, or other resource usage.",
+      "points": [
+        "Basically",
+        "Examples"
       ],
+      "defs": [],
+      "raw": "",
       "course": {
-        "learn": "LDAP injection alters an LDAP directory query by supplying input that changes the intended filter or command structure.",
-        "why": "It can bypass authentication or expose directory information when applications build LDAP queries unsafely.",
-        "example": "A login form concatenates untrusted input into an LDAP filter, allowing a crafted value to match unintended accounts.",
-        "exam": "Same root problem as SQL injection, but the target interpreter/query language is LDAP.",
+        "learn": "Unexpectedly high CPU, memory, bandwidth, disk, or other resource usage.",
         "breakdown": [
           {
-            "term": "Injection of LDAP metacharacters or filters in user",
-            "explanation": "Within LDAP Injection, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Application attacks rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "System resources suddenly spike."
           },
           {
-            "term": "inputs",
-            "explanation": "Within LDAP Injection, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Application attacks rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Unexpected access to directory information",
-            "explanation": "This concerns who or what can reach a resource and what actions are permitted once access is granted."
-          },
-          {
-            "term": "Authentication bypass or exposure of sensitive",
-            "explanation": "Authentication is the process of proving an identity. Factors can be something you know, have, are, do, or somewhere you are; MFA requires factors from more than one category."
-          },
-          {
-            "term": "directory contents",
-            "explanation": "Within LDAP Injection, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Application attacks rather than memorizing the phrase by itself."
+            "term": "Examples",
+            "explanation": "CPU spike, Bandwidth saturation"
           }
         ],
-        "defs": [
-          {
-            "term": "Authentication",
-            "definition": "Proving an identity—answering “who are you?”"
-          }
-        ],
-        "check_q": "Without looking back, explain LDAP Injection and describe at least two key ideas from this section.",
-        "check_a": "LDAP injection alters an LDAP directory query by supplying input that changes the intended filter or command structure. Key ideas include: Injection of LDAP metacharacters or filters in user; inputs; Unexpected access to directory information; Authentication bypass or exposure of sensitive; directory contents.",
-        "points": [
-          "Injection of LDAP metacharacters or filters in user",
-          "inputs",
-          "Unexpected access to directory information",
-          "Authentication bypass or exposure of sensitive",
-          "directory contents"
-        ]
+        "defs": [],
+        "why": "High usage may indicate malware or DoS activity.",
+        "example": "Web-server bandwidth suddenly saturates with abnormal traffic.",
+        "exam": "Resources spike → RESOURCE CONSUMPTION.",
+        "check_q": "Which indicator describes unexpectedly high resource usage?",
+        "check_a": "Resource consumption."
       }
     },
     {
       "n": 7,
-      "title": "Buffer Overflow",
-      "points": [
-        "Unusual",
-        "program",
-        "crashes",
-        "Execution of",
-        "arbitrary code",
-        "Unusual",
-        "network traffic",
-        "patterns"
-      ],
-      "raw": "Buffer Overflow\nUnusual\nprogram\ncrashes\nExecution of\narbitrary code\nUnusual\nnetwork traffic\npatterns",
+      "title": "Resource Inaccessibility",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "Buffer overflow",
-          "A memory-safety flaw where more data is written into a buffer than it was designed to hold."
-        ]
+      "teach": "A system, file, or service becomes unavailable or unreachable.",
+      "points": [
+        "Basically",
+        "Examples"
       ],
+      "defs": [],
+      "raw": "",
       "course": {
-        "learn": "A buffer overflow happens when software writes more data into a memory region than it was designed to hold, potentially corrupting adjacent memory and control data.",
-        "why": "Memory corruption can crash programs or allow arbitrary code execution and privilege escalation.",
-        "example": "An application copies an oversized network field into a fixed-length stack buffer without bounds checking.",
-        "exam": "Memory-safety flaw + oversized input = buffer overflow. Modern mitigations include safe languages/APIs, bounds checks, ASLR, DEP/NX, and stack protections.",
+        "learn": "A system, file, or service becomes unavailable or unreachable.",
         "breakdown": [
           {
-            "term": "Unusual program",
-            "explanation": "Within Buffer Overflow, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Application attacks rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "Users cannot access something they normally can."
           },
           {
-            "term": "crashes",
-            "explanation": "Within Buffer Overflow, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Application attacks rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Execution of arbitrary code",
-            "explanation": "Within Buffer Overflow, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Application attacks rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Unusual network traffic",
-            "explanation": "Within Buffer Overflow, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Application attacks rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "patterns",
-            "explanation": "Within Buffer Overflow, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Application attacks rather than memorizing the phrase by itself."
+            "term": "Examples",
+            "explanation": "Files inaccessible, Service outage"
           }
         ],
-        "defs": [
-          {
-            "term": "Buffer overflow",
-            "definition": "A memory-safety flaw where more data is written into a buffer than it was designed to hold."
-          }
-        ],
-        "check_q": "Without looking back, explain Buffer Overflow and describe at least two key ideas from this section.",
-        "check_a": "A buffer overflow happens when software writes more data into a memory region than it was designed to hold, potentially corrupting adjacent memory and control data. Key ideas include: Unusual program; crashes; Execution of arbitrary code; Unusual network traffic; patterns.",
-        "points": [
-          "Unusual program",
-          "crashes",
-          "Execution of arbitrary code",
-          "Unusual network traffic",
-          "patterns"
-        ]
+        "defs": [],
+        "why": "Loss of access may indicate ransomware or DoS.",
+        "example": "Employees cannot open shared files after malware runs.",
+        "exam": "Can't access it → RESOURCE INACCESSIBILITY.",
+        "check_q": "Which indicator is loss of access to files or services?",
+        "check_a": "Resource inaccessibility."
       }
     },
     {
       "n": 8,
-      "title": "Replay",
-      "points": [
-        "Repeated or",
-        "duplicated",
-        "requests",
-        "Unexpected",
-        "reuse of",
-        "authentication",
-        "tokens",
-        "Unusual patterns",
-        "in data",
-        "transmission"
-      ],
-      "raw": "Replay\nRepeated or\nduplicated\nrequests\nUnexpected\nreuse of\nauthentication\ntokens\nUnusual patterns\nin data\ntransmission",
+      "title": "Out-of-cycle Logging",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "Authentication",
-          "Proving an identity—answering “who are you?”"
-        ]
+      "teach": "Logs or events appear at unusual times or outside expected operational cycles.",
+      "points": [
+        "Basically",
+        "Examples"
       ],
+      "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Replay attacks capture valid data or authentication material and transmit it again later so the receiver accepts an old action as new.",
-        "why": "If a protocol does not prove freshness, an attacker may not need to know the underlying secret.",
-        "example": "A captured authentication request is resent later and accepted because the protocol uses no nonce or timestamp.",
-        "exam": "Freshness controls such as nonces, timestamps, sequence numbers, and short-lived tokens help stop replay.",
+        "learn": "Logs or events appear at unusual times or outside expected operational cycles.",
         "breakdown": [
           {
-            "term": "Repeated or duplicated",
-            "explanation": "Within Replay, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Application attacks rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "Activity happens when it normally should not."
           },
           {
-            "term": "requests",
-            "explanation": "Within Replay, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Application attacks rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Unexpected reuse of",
-            "explanation": "Within Replay, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Application attacks rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "authentication tokens",
-            "explanation": "Authentication is the process of proving an identity. Factors can be something you know, have, are, do, or somewhere you are; MFA requires factors from more than one category."
-          },
-          {
-            "term": "Unusual patterns in data",
-            "explanation": "Within Replay, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Application attacks rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "transmission",
-            "explanation": "Within Replay, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Application attacks rather than memorizing the phrase by itself."
+            "term": "Examples",
+            "explanation": "Admin login at 3 AM, Unexpected job run"
           }
         ],
-        "defs": [
-          {
-            "term": "Authentication",
-            "definition": "Proving an identity—answering “who are you?”"
-          }
-        ],
-        "check_q": "Without looking back, explain Replay and describe at least two key ideas from this section.",
-        "check_a": "Replay attacks capture valid data or authentication material and transmit it again later so the receiver accepts an old action as new. Key ideas include: Repeated or duplicated; requests; Unexpected reuse of; authentication tokens; Unusual patterns in data.",
-        "points": [
-          "Repeated or duplicated",
-          "requests",
-          "Unexpected reuse of",
-          "authentication tokens",
-          "Unusual patterns in data",
-          "transmission"
-        ]
+        "defs": [],
+        "why": "Unexpected timing can indicate unauthorized activity.",
+        "example": "Admin actions appear overnight with no scheduled maintenance.",
+        "exam": "Wrong time → OUT-OF-CYCLE LOGGING.",
+        "check_q": "Which indicator involves events outside expected times?",
+        "check_a": "Out-of-cycle logging."
       }
     },
     {
       "n": 9,
-      "title": "Privilege Escalation",
-      "points": [
-        "Unusual account activities",
-        "Unauthorized access to privileged functions",
-        "Changes in user roles or permissions"
-      ],
-      "raw": "Privilege Escalation\nUnusual account activities\nUnauthorized access to privileged functions\nChanges in user roles or permissions",
+      "title": "Published / Documented Indicators",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
+      "teach": "Known indicators published by vendors, ISACs, threat-intelligence sources, or security documentation.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Privilege escalation occurs when an attacker moves from lower privileges to higher privileges, such as from a normal user to administrator/root.",
-        "why": "Higher privilege increases the attacker's ability to disable defenses, access sensitive data, and persist.",
-        "example": "A local vulnerability lets a standard user execute code as SYSTEM.",
-        "exam": "The key clue is gaining more permission than originally authorized.",
+        "learn": "Known indicators published by vendors, ISACs, threat-intelligence sources, or security documentation.",
         "breakdown": [
           {
-            "term": "Unusual account activities",
-            "explanation": "Within Privilege Escalation, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Application attacks rather than memorizing the phrase by itself."
+            "term": "Basically",
+            "explanation": "The indicator is already known and documented."
           },
           {
-            "term": "Unauthorized access to privileged functions",
-            "explanation": "This concerns who or what can reach a resource and what actions are permitted once access is granted."
-          },
-          {
-            "term": "Changes in user roles or permissions",
-            "explanation": "Permissions define the actions a subject may perform on a resource, such as read, write, execute, modify, or administer. They are one mechanism used to implement authorization."
+            "term": "Examples",
+            "explanation": "Known bad hash, Documented malicious IP"
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Privilege Escalation and describe at least two key ideas from this section.",
-        "check_a": "Privilege escalation occurs when an attacker moves from lower privileges to higher privileges, such as from a normal user to administrator/root. Key ideas include: Unusual account activities; Unauthorized access to privileged functions; Changes in user roles or permissions.",
-        "points": [
-          "Unusual account activities",
-          "Unauthorized access to privileged functions",
-          "Changes in user roles or permissions"
-        ]
+        "why": "Known indicators accelerate detection and correlation.",
+        "example": "A host contacts an IP listed in a trusted threat-intelligence feed.",
+        "exam": "Known bad hash/IP → PUBLISHED INDICATOR.",
+        "check_q": "Which indicator is matched against a known malicious hash or IP?",
+        "check_a": "Published/documented indicator."
       }
     },
     {
       "n": 10,
-      "title": "Forgery",
-      "points": [
-        "Unexpected changes in data integrity",
-        "Use of fake or manipulated documents or tokens",
-        "Anomalies in transaction details"
-      ],
-      "raw": "Forgery\nUnexpected changes in data integrity\nUse of fake or manipulated documents or tokens\nAnomalies in transaction details",
+      "title": "Missing Logs",
       "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
-      "defs": [
-        [
-          "Integrity",
-          "Ensuring data stays accurate, complete, and protected from unauthorized modification."
-        ]
-      ],
-      "course": {
-        "learn": "Forgery creates or alters data, documents, messages, tokens, or transactions so they appear legitimate when they are not.",
-        "why": "Successful forgery undermines integrity and trust in the system's evidence.",
-        "example": "An attacker modifies a payment instruction and creates a fake approval token that appears to come from an authorized user.",
-        "exam": "Digital signatures, integrity checks, authenticated protocols, and protected audit trails help detect or prevent forgery.",
-        "breakdown": [
-          {
-            "term": "Unexpected changes in data integrity",
-            "explanation": "Within Forgery, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Application attacks rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Use of fake or manipulated documents or tokens",
-            "explanation": "Within Forgery, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Application attacks rather than memorizing the phrase by itself."
-          },
-          {
-            "term": "Anomalies in transaction details",
-            "explanation": "Within Forgery, this is a specific factor you should be able to recognize and explain. Connect it to the purpose of Application attacks rather than memorizing the phrase by itself."
-          }
-        ],
-        "defs": [
-          {
-            "term": "Integrity",
-            "definition": "Ensuring data stays accurate, complete, and protected from unauthorized modification."
-          }
-        ],
-        "check_q": "Without looking back, explain Forgery and describe at least two key ideas from this section.",
-        "check_a": "Forgery creates or alters data, documents, messages, tokens, or transactions so they appear legitimate when they are not. Key ideas include: Unexpected changes in data integrity; Use of fake or manipulated documents or tokens; Anomalies in transaction details.",
-        "points": [
-          "Unexpected changes in data integrity",
-          "Use of fake or manipulated documents or tokens",
-          "Anomalies in transaction details"
-        ]
-      }
-    },
-    {
-      "n": 11,
-      "title": "Directory Traversal",
+      "teach": "Expected logs are absent, deleted, disabled, or incomplete.",
       "points": [
-        "Attempts to access files using \"../\"",
-        "Unusual file access patterns",
-        "Unauthorized access to sensitive files or directories"
+        "Basically",
+        "Examples"
       ],
-      "raw": "Directory Traversal\nAttempts to access files using \"../\"\nUnusual file access patterns\nUnauthorized access to sensitive files or directories",
-      "instructional": true,
-      "teach": "Read the source points, then explain the slide without looking. On Security+, recognition is not enough—you should be able to apply the concept to a scenario.",
       "defs": [],
+      "raw": "",
       "course": {
-        "learn": "Directory traversal manipulates file paths so an application accesses files outside the intended directory, often using sequences such as `../`.",
-        "why": "If path validation is weak, an attacker may read configuration files, credentials, or other sensitive content.",
-        "example": "A download parameter meant for report.pdf is changed to ../../etc/passwd.",
-        "exam": "File path escapes intended folder = directory traversal/path traversal.",
+        "learn": "Expected logs are absent, deleted, disabled, or incomplete.",
         "breakdown": [
           {
-            "term": "Attempts to access files using \"../\"",
-            "explanation": "This concerns who or what can reach a resource and what actions are permitted once access is granted."
+            "term": "Basically",
+            "explanation": "The records that should exist are gone."
           },
           {
-            "term": "Unusual file access patterns",
-            "explanation": "This concerns who or what can reach a resource and what actions are permitted once access is granted."
-          },
-          {
-            "term": "Unauthorized access to sensitive files or directories",
-            "explanation": "This concerns who or what can reach a resource and what actions are permitted once access is granted."
+            "term": "Examples",
+            "explanation": "Audit logs removed, Logging stopped"
           }
         ],
         "defs": [],
-        "check_q": "Without looking back, explain Directory Traversal and describe at least two key ideas from this section.",
-        "check_a": "Directory traversal manipulates file paths so an application accesses files outside the intended directory, often using sequences such as `../`. Key ideas include: Attempts to access files using \"../\"; Unusual file access patterns; Unauthorized access to sensitive files or directories.",
-        "points": [
-          "Attempts to access files using \"../\"",
-          "Unusual file access patterns",
-          "Unauthorized access to sensitive files or directories"
-        ]
+        "why": "Attackers may remove logs to hide activity.",
+        "example": "Authentication logs are missing during the incident window.",
+        "exam": "Where did the logs go? → MISSING LOGS.",
+        "check_q": "Which indicator describes expected audit records being absent?",
+        "check_a": "Missing logs."
       }
-    },
-    {
-      "n": 12,
-      "title": "Cryptographic Attack Indicators",
-      "points": [],
-      "raw": "Cryptographic Attack\nIndicators",
-      "instructional": false,
-      "teach": "Treat these as observable clues. On the exam, be ready to infer the most likely attack from the pattern of indicators.",
-      "defs": []
     }
   ],
-  "slide_count": 12,
-  "instructional_count": 10,
+  "slide_count": 10,
+  "instructional_count": 9,
   "concepts": [
-    "Injection Attacks",
-    "SQL Injection",
-    "Cross-site Scripting (XSS)",
-    "Command Injection",
-    "LDAP Injection",
-    "Buffer Overflow",
-    "Replay",
-    "Privilege Escalation",
-    "Forgery",
-    "Directory Traversal"
+    "Account Lockout",
+    "Concurrent Session Usage",
+    "Blocked Content",
+    "Impossible Travel",
+    "Resource Consumption",
+    "Resource Inaccessibility",
+    "Out-of-cycle Logging",
+    "Published / Documented Indicators",
+    "Missing Logs"
   ],
-  "source_filename": "08.04_Application_attacks.pdf"
+  "source_filename": "08-04.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 2.4",
+      "title": "Indicators of Malicious Activity",
+      "intro": "The exam may give you a symptom instead of an attack name. Use the indicator to infer what is happening."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Indicators of Malicious Activity",
+        "prompt": "Use the observed behavior in the scenario to identify the attack or indicator.",
+        "badge": "2.4",
+        "cards": [
+          {
+            "name": "Account Lockout",
+            "definition": "An account becomes locked after failed authentication attempts or a security policy trigger.",
+            "examples": [
+              "Repeated failed logins"
+            ],
+            "memory": "TOO MANY FAILURES"
+          },
+          {
+            "name": "Concurrent Session Usage",
+            "definition": "The same account is active in multiple sessions or locations at the same time.",
+            "examples": [
+              "Two simultaneous logins"
+            ],
+            "memory": "SAME ACCOUNT · SAME TIME"
+          },
+          {
+            "name": "Blocked Content",
+            "definition": "Security controls prevent access to content, destinations, files, or traffic.",
+            "examples": [
+              "Web filter block",
+              "DLP block"
+            ],
+            "memory": "SECURITY CONTROL BLOCKED IT"
+          },
+          {
+            "name": "Impossible Travel",
+            "definition": "Authentication occurs from geographically distant locations in a time window that makes normal travel impossible.",
+            "examples": [
+              "Seattle then London 20 minutes later"
+            ],
+            "memory": "CAN'T TRAVEL THAT FAST"
+          },
+          {
+            "name": "Resource Consumption",
+            "definition": "Unexpectedly high CPU, memory, bandwidth, disk, or other resource usage.",
+            "examples": [
+              "CPU spike",
+              "Bandwidth saturation"
+            ],
+            "memory": "RESOURCES SPIKE"
+          },
+          {
+            "name": "Resource Inaccessibility",
+            "definition": "A system, file, or service becomes unavailable or unreachable.",
+            "examples": [
+              "Files inaccessible",
+              "Service outage"
+            ],
+            "memory": "CAN'T ACCESS IT"
+          },
+          {
+            "name": "Out-of-cycle Logging",
+            "definition": "Logs or events appear at unusual times or outside expected operational cycles.",
+            "examples": [
+              "Admin login at 3 AM",
+              "Unexpected job run"
+            ],
+            "memory": "WRONG TIME"
+          },
+          {
+            "name": "Published / Documented Indicators",
+            "definition": "Known indicators published by vendors, ISACs, threat-intelligence sources, or security documentation.",
+            "examples": [
+              "Known bad hash",
+              "Documented malicious IP"
+            ],
+            "memory": "KNOWN IOC"
+          },
+          {
+            "name": "Missing Logs",
+            "definition": "Expected logs are absent, deleted, disabled, or incomplete.",
+            "examples": [
+              "Audit logs removed",
+              "Logging stopped"
+            ],
+            "memory": "WHERE DID THE LOGS GO?"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Indicators of Malicious Activity comparison",
+        "headers": [
+          "Indicator",
+          "What it suggests",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Account lockout",
+            "Repeated failed authentication",
+            "Password attack possible"
+          ],
+          [
+            "Concurrent sessions",
+            "Same account active twice",
+            "Credential compromise possible"
+          ],
+          [
+            "Impossible travel",
+            "Distant logins too quickly",
+            "Stolen credentials/session"
+          ],
+          [
+            "Resource consumption",
+            "CPU/bandwidth/memory spike",
+            "DDoS/malware"
+          ],
+          [
+            "Resource inaccessibility",
+            "Files/services unavailable",
+            "Ransomware/DoS"
+          ],
+          [
+            "Out-of-cycle logging",
+            "Events at unusual times",
+            "Suspicious activity"
+          ],
+          [
+            "Missing logs",
+            "Expected records absent",
+            "Tampering/evasion"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Read the symptom first",
+        "items": [
+          [
+            "Seattle then Europe minutes later → IMPOSSIBLE TRAVEL",
+            "The account appears in locations a person could not reach in time.",
+            "Example: Successful logins occur from distant countries 15 minutes apart."
+          ],
+          [
+            "Same account active twice → CONCURRENT SESSION",
+            "Multiple simultaneous sessions may indicate stolen credentials.",
+            "Example: One account is active on unrelated networks."
+          ],
+          [
+            "CPU/network suddenly maxed → RESOURCE CONSUMPTION",
+            "Unexpected resource spikes can indicate malicious activity.",
+            "Example: Web-server bandwidth is saturated."
+          ],
+          [
+            "Files or service unavailable → RESOURCE INACCESSIBILITY",
+            "The observable symptom is loss of access.",
+            "Example: Employees can no longer open shared files."
+          ],
+          [
+            "Expected audit records disappear → MISSING LOGS",
+            "Attackers may delete or disable logs to hide activity.",
+            "Example: Authentication logs are missing during the incident window."
+          ],
+          [
+            "Known malicious hash/IP → PUBLISHED INDICATOR",
+            "The indicator has already been documented by a trusted intelligence source.",
+            "Example: A host contacts an IP listed in threat intelligence."
+          ]
+        ],
+        "example": "Memory: Lockout · Concurrent · Blocked · Impossible travel · Resource spike · Inaccessible · Wrong time · Known IOC · Missing logs."
+      }
+    ],
+    "questions": [
+      {
+        "q": "Many accounts lock after repeated failed login attempts. Which indicator is most direct?",
+        "choices": [
+          "Account lockout",
+          "Impossible travel",
+          "Missing logs",
+          "Blocked content"
+        ],
+        "answer": 0,
+        "explanation": "The observed indicator is the accounts becoming locked."
+      },
+      {
+        "q": "One account has active sessions from two unrelated networks at the same time. Which indicator best fits?",
+        "choices": [
+          "Concurrent session usage",
+          "Impossible travel",
+          "Blocked content",
+          "Resource consumption"
+        ],
+        "answer": 0,
+        "explanation": "The same account is being used simultaneously."
+      },
+      {
+        "q": "A user logs in from Seattle and then London fifteen minutes later. Which indicator best fits?",
+        "choices": [
+          "Impossible travel",
+          "Concurrent session usage",
+          "Out-of-cycle logging",
+          "Blocked content"
+        ],
+        "answer": 0,
+        "explanation": "The geographic movement is not physically possible in that time."
+      },
+      {
+        "q": "A web server suddenly consumes nearly all available bandwidth. Which indicator best fits?",
+        "choices": [
+          "Resource consumption",
+          "Resource inaccessibility",
+          "Missing logs",
+          "Blocked content"
+        ],
+        "answer": 0,
+        "explanation": "The key symptom is unexpectedly high resource usage."
+      },
+      {
+        "q": "Employees can no longer open shared files after malware executes. Which indicator best fits?",
+        "choices": [
+          "Resource inaccessibility",
+          "Resource consumption",
+          "Impossible travel",
+          "Concurrent sessions"
+        ],
+        "answer": 0,
+        "explanation": "The primary symptom is loss of access."
+      },
+      {
+        "q": "Administrative activity appears at 3 AM with no scheduled work. Which indicator best fits?",
+        "choices": [
+          "Out-of-cycle logging",
+          "Missing logs",
+          "Account lockout",
+          "Blocked content"
+        ],
+        "answer": 0,
+        "explanation": "The event occurs outside expected operational timing."
+      },
+      {
+        "q": "A host connects to an IP already listed as malicious in a trusted threat-intelligence feed. Which indicator best fits?",
+        "choices": [
+          "Published/documented indicator",
+          "Missing logs",
+          "Impossible travel",
+          "Blocked content"
+        ],
+        "answer": 0,
+        "explanation": "The IP is a known documented indicator."
+      },
+      {
+        "q": "Authentication logs are absent during the incident window. Which indicator is most concerning?",
+        "choices": [
+          "Missing logs",
+          "Out-of-cycle logging",
+          "Blocked content",
+          "Concurrent sessions"
+        ],
+        "answer": 0,
+        "explanation": "Expected audit records are absent."
+      }
+    ]
+  }
 }
