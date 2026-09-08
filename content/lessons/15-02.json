@@ -1,0 +1,270 @@
+{
+  "id": "15.02",
+  "chapter": 15,
+  "sub": 2,
+  "title": "Monitoring, Inventory, and Asset Tracking",
+  "chapter_name": "Asset Management",
+  "slides": [
+    {
+      "n": 1,
+      "title": "Monitoring, Inventory, and Asset Tracking",
+      "instructional": false,
+      "teach": "",
+      "points": [
+        "You cannot secure assets you do not know exist. Monitoring and asset tracking provide visibility into what is present, where it is, and whether something unexpected has appeared."
+      ],
+      "defs": [],
+      "raw": ""
+    },
+    {
+      "n": 2,
+      "title": "Monitoring / Asset Tracking",
+      "instructional": true,
+      "teach": "Continuously or periodically tracks assets, status, location, configuration, and lifecycle information.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Continuously or periodically tracks assets, status, location, configuration, and lifecycle information.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Continuously or periodically tracks assets, status, location, configuration, and lifecycle information."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Asset tags, CMDB updates, Endpoint management"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects asset accountability, lifecycle security, visibility, or data protection.",
+        "example": "Asset tags",
+        "exam": "KNOW WHERE IT IS",
+        "check_q": "What is the key exam clue for Monitoring / Asset Tracking?",
+        "check_a": "KNOW WHERE IT IS"
+      }
+    },
+    {
+      "n": 3,
+      "title": "Inventory",
+      "instructional": true,
+      "teach": "A maintained list of hardware, software, data assets, and relevant attributes.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "A maintained list of hardware, software, data assets, and relevant attributes.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "A maintained list of hardware, software, data assets, and relevant attributes."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Laptop inventory, Installed software list, Cloud resource inventory"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects asset accountability, lifecycle security, visibility, or data protection.",
+        "example": "Laptop inventory",
+        "exam": "WHAT DO WE HAVE?",
+        "check_q": "What is the key exam clue for Inventory?",
+        "check_a": "WHAT DO WE HAVE?"
+      }
+    },
+    {
+      "n": 4,
+      "title": "Enumeration",
+      "instructional": true,
+      "teach": "The process of actively identifying systems, services, accounts, or other resources that exist in an environment.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "The process of actively identifying systems, services, accounts, or other resources that exist in an environment.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "The process of actively identifying systems, services, accounts, or other resources that exist in an environment."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Network discovery, Service enumeration, Account enumeration"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects asset accountability, lifecycle security, visibility, or data protection.",
+        "example": "Network discovery",
+        "exam": "FIND WHAT EXISTS",
+        "check_q": "What is the key exam clue for Enumeration?",
+        "check_a": "FIND WHAT EXISTS"
+      }
+    }
+  ],
+  "slide_count": 4,
+  "instructional_count": 3,
+  "concepts": [
+    "Monitoring / Asset Tracking",
+    "Inventory",
+    "Enumeration"
+  ],
+  "source_filename": "15-02.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 4.2",
+      "title": "Monitoring, Inventory, and Asset Tracking",
+      "intro": "You cannot secure assets you do not know exist. Monitoring and asset tracking provide visibility into what is present, where it is, and whether something unexpected has appeared."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Monitoring, Inventory, and Asset Tracking",
+        "prompt": "Follow the asset lifecycle: acquire it securely, know who owns it, track it, and retire it without exposing data.",
+        "badge": "4.2",
+        "cards": [
+          {
+            "name": "Monitoring / Asset Tracking",
+            "definition": "Continuously or periodically tracks assets, status, location, configuration, and lifecycle information.",
+            "examples": [
+              "Asset tags",
+              "CMDB updates",
+              "Endpoint management"
+            ],
+            "memory": "KNOW WHERE IT IS"
+          },
+          {
+            "name": "Inventory",
+            "definition": "A maintained list of hardware, software, data assets, and relevant attributes.",
+            "examples": [
+              "Laptop inventory",
+              "Installed software list",
+              "Cloud resource inventory"
+            ],
+            "memory": "WHAT DO WE HAVE?"
+          },
+          {
+            "name": "Enumeration",
+            "definition": "The process of actively identifying systems, services, accounts, or other resources that exist in an environment.",
+            "examples": [
+              "Network discovery",
+              "Service enumeration",
+              "Account enumeration"
+            ],
+            "memory": "FIND WHAT EXISTS"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Monitoring, Inventory, and Asset Tracking comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Monitoring/asset tracking",
+            "Track status/location/lifecycle",
+            "Where is it?"
+          ],
+          [
+            "Inventory",
+            "Authoritative list of assets",
+            "What do we have?"
+          ],
+          [
+            "Enumeration",
+            "Discover assets/services/accounts",
+            "What exists right now?"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Monitoring, Inventory, and Asset Tracking exam shortcuts",
+        "items": [
+          [
+            "Need authoritative list of all company laptops → INVENTORY",
+            "Inventory is the maintained record of known assets.",
+            "Example: The CMDB lists every managed laptop and serial number."
+          ],
+          [
+            "Need to discover unknown systems → ENUMERATION",
+            "Enumeration actively identifies what exists.",
+            "Example: A scan finds an unmanaged server."
+          ],
+          [
+            "Need to know where an assigned device is and its status → ASSET TRACKING",
+            "Track the asset through its lifecycle.",
+            "Example: An endpoint platform reports a laptop's owner and last check-in."
+          ],
+          [
+            "System exists but is not in inventory → ASSET MANAGEMENT GAP",
+            "Unknown assets are difficult to patch, monitor, or secure.",
+            "Example: A rogue server is discovered during enumeration."
+          ]
+        ],
+        "example": "Ask where the asset is in its lifecycle: entering, being used, being tracked, or leaving service."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A CMDB lists every managed laptop, serial number, owner, and status. Which concept is most direct?",
+        "choices": [
+          "Inventory",
+          "Enumeration",
+          "Sanitization",
+          "Classification"
+        ],
+        "answer": 0,
+        "explanation": "Inventory is the maintained authoritative list of known assets."
+      },
+      {
+        "q": "A network scan discovers an unmanaged server that was not recorded in the CMDB. Which process found it?",
+        "choices": [
+          "Enumeration",
+          "Inventory",
+          "Ownership",
+          "Data retention"
+        ],
+        "answer": 0,
+        "explanation": "Enumeration actively identifies systems or services that exist."
+      },
+      {
+        "q": "An endpoint-management platform reports a laptop's assigned user, current status, and last check-in. Which concept best fits?",
+        "choices": [
+          "Monitoring/asset tracking",
+          "Procurement",
+          "Destruction",
+          "Certification"
+        ],
+        "answer": 0,
+        "explanation": "Asset tracking follows the asset's location, status, and lifecycle."
+      },
+      {
+        "q": "Why is an unknown asset a security concern?",
+        "choices": [
+          "It may be unpatched or unmonitored",
+          "It is automatically encrypted",
+          "It cannot contain data",
+          "It is always decommissioned"
+        ],
+        "answer": 0,
+        "explanation": "Unknown assets may fall outside patching, monitoring, ownership, and configuration controls."
+      }
+    ]
+  }
+}

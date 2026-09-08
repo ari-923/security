@@ -1,0 +1,376 @@
+{
+  "id": "15.03",
+  "chapter": 15,
+  "sub": 3,
+  "title": "Disposal, Decommissioning, and Data Retention",
+  "chapter_name": "Asset Management",
+  "slides": [
+    {
+      "n": 1,
+      "title": "Disposal, Decommissioning, and Data Retention",
+      "instructional": false,
+      "teach": "",
+      "points": [
+        "The end of an asset's lifecycle is a security event. Systems must be retired securely so data, credentials, and records are not accidentally exposed or destroyed too early."
+      ],
+      "defs": [],
+      "raw": ""
+    },
+    {
+      "n": 2,
+      "title": "Disposal / Decommissioning",
+      "instructional": true,
+      "teach": "The controlled process of removing hardware, software, services, or data from active use.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "The controlled process of removing hardware, software, services, or data from active use.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "The controlled process of removing hardware, software, services, or data from active use."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Retire server, Remove SaaS account, Dispose of storage device"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects asset accountability, lifecycle security, visibility, or data protection.",
+        "example": "Retire server",
+        "exam": "RETIRE SECURELY",
+        "check_q": "What is the key exam clue for Disposal / Decommissioning?",
+        "check_a": "RETIRE SECURELY"
+      }
+    },
+    {
+      "n": 3,
+      "title": "Sanitization",
+      "instructional": true,
+      "teach": "Removes data from media so it cannot be recovered using normal or reasonable forensic methods.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Removes data from media so it cannot be recovered using normal or reasonable forensic methods.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Removes data from media so it cannot be recovered using normal or reasonable forensic methods."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Secure erase, Cryptographic erase"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects asset accountability, lifecycle security, visibility, or data protection.",
+        "example": "Secure erase",
+        "exam": "REMOVE THE DATA",
+        "check_q": "What is the key exam clue for Sanitization?",
+        "check_a": "REMOVE THE DATA"
+      }
+    },
+    {
+      "n": 4,
+      "title": "Destruction",
+      "instructional": true,
+      "teach": "Physically destroys media or equipment so data cannot be recovered.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Physically destroys media or equipment so data cannot be recovered.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Physically destroys media or equipment so data cannot be recovered."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Shredding drives, Crushing media"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects asset accountability, lifecycle security, visibility, or data protection.",
+        "example": "Shredding drives",
+        "exam": "DESTROY THE MEDIA",
+        "check_q": "What is the key exam clue for Destruction?",
+        "check_a": "DESTROY THE MEDIA"
+      }
+    },
+    {
+      "n": 5,
+      "title": "Certification",
+      "instructional": true,
+      "teach": "Formal evidence that sanitization, destruction, or disposal was completed according to requirements.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Formal evidence that sanitization, destruction, or disposal was completed according to requirements.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Formal evidence that sanitization, destruction, or disposal was completed according to requirements."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Certificate of destruction, Sanitization record"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects asset accountability, lifecycle security, visibility, or data protection.",
+        "example": "Certificate of destruction",
+        "exam": "PROVE IT WAS DONE",
+        "check_q": "What is the key exam clue for Certification?",
+        "check_a": "PROVE IT WAS DONE"
+      }
+    },
+    {
+      "n": 6,
+      "title": "Data Retention",
+      "instructional": true,
+      "teach": "Defines how long data must be kept and when it should be deleted according to business, legal, or regulatory requirements.",
+      "points": [
+        "Basically",
+        "Examples"
+      ],
+      "defs": [],
+      "raw": "",
+      "course": {
+        "learn": "Defines how long data must be kept and when it should be deleted according to business, legal, or regulatory requirements.",
+        "breakdown": [
+          {
+            "term": "Basically",
+            "explanation": "Defines how long data must be kept and when it should be deleted according to business, legal, or regulatory requirements."
+          },
+          {
+            "term": "Examples",
+            "explanation": "Keep logs 1 year, Delete records after retention period"
+          }
+        ],
+        "defs": [],
+        "why": "This concept affects asset accountability, lifecycle security, visibility, or data protection.",
+        "example": "Keep logs 1 year",
+        "exam": "HOW LONG DO WE KEEP IT?",
+        "check_q": "What is the key exam clue for Data Retention?",
+        "check_a": "HOW LONG DO WE KEEP IT?"
+      }
+    }
+  ],
+  "slide_count": 6,
+  "instructional_count": 5,
+  "concepts": [
+    "Disposal / Decommissioning",
+    "Sanitization",
+    "Destruction",
+    "Certification",
+    "Data Retention"
+  ],
+  "source_filename": "15-03.json",
+  "fundamental_topic_layout": {
+    "hero": {
+      "kicker": "Security+ Objective 4.2",
+      "title": "Disposal, Decommissioning, and Data Retention",
+      "intro": "The end of an asset's lifecycle is a security event. Systems must be retired securely so data, credentials, and records are not accidentally exposed or destroyed too early."
+    },
+    "blocks": [
+      {
+        "type": "group",
+        "eyebrow": "Learn",
+        "title": "Disposal, Decommissioning, and Data Retention",
+        "prompt": "Follow the asset lifecycle: acquire it securely, know who owns it, track it, and retire it without exposing data.",
+        "badge": "4.2",
+        "cards": [
+          {
+            "name": "Disposal / Decommissioning",
+            "definition": "The controlled process of removing hardware, software, services, or data from active use.",
+            "examples": [
+              "Retire server",
+              "Remove SaaS account",
+              "Dispose of storage device"
+            ],
+            "memory": "RETIRE SECURELY"
+          },
+          {
+            "name": "Sanitization",
+            "definition": "Removes data from media so it cannot be recovered using normal or reasonable forensic methods.",
+            "examples": [
+              "Secure erase",
+              "Cryptographic erase"
+            ],
+            "memory": "REMOVE THE DATA"
+          },
+          {
+            "name": "Destruction",
+            "definition": "Physically destroys media or equipment so data cannot be recovered.",
+            "examples": [
+              "Shredding drives",
+              "Crushing media"
+            ],
+            "memory": "DESTROY THE MEDIA"
+          },
+          {
+            "name": "Certification",
+            "definition": "Formal evidence that sanitization, destruction, or disposal was completed according to requirements.",
+            "examples": [
+              "Certificate of destruction",
+              "Sanitization record"
+            ],
+            "memory": "PROVE IT WAS DONE"
+          },
+          {
+            "name": "Data Retention",
+            "definition": "Defines how long data must be kept and when it should be deleted according to business, legal, or regulatory requirements.",
+            "examples": [
+              "Keep logs 1 year",
+              "Delete records after retention period"
+            ],
+            "memory": "HOW LONG DO WE KEEP IT?"
+          }
+        ],
+        "columns": "four"
+      },
+      {
+        "type": "table",
+        "title": "Disposal, Decommissioning, and Data Retention comparison",
+        "headers": [
+          "Concept",
+          "Main purpose",
+          "Exam clue"
+        ],
+        "rows": [
+          [
+            "Decommissioning",
+            "Remove from active use",
+            "End-of-life process"
+          ],
+          [
+            "Sanitization",
+            "Erase recoverable data",
+            "Reuse/dispose media safely"
+          ],
+          [
+            "Destruction",
+            "Physically destroy media",
+            "Maximum disposal assurance"
+          ],
+          [
+            "Certification",
+            "Document disposal completion",
+            "Proof/compliance evidence"
+          ],
+          [
+            "Data retention",
+            "Keep data for required period",
+            "Legal/business timeline"
+          ]
+        ]
+      },
+      {
+        "type": "tip",
+        "kicker": "Exam Shortcut",
+        "title": "Disposal, Decommissioning, and Data Retention exam shortcuts",
+        "items": [
+          [
+            "Drive will be reused → SANITIZATION",
+            "Remove recoverable data while keeping the media usable.",
+            "Example: A secure erase is performed before reassignment."
+          ],
+          [
+            "Media must never be recoverable → DESTRUCTION",
+            "Physically destroy the storage device.",
+            "Example: Failed drives containing restricted data are shredded."
+          ],
+          [
+            "Auditor needs proof disposal occurred → CERTIFICATION",
+            "Maintain documented evidence of sanitization or destruction.",
+            "Example: A vendor provides a certificate of destruction."
+          ],
+          [
+            "Question asks how long records must remain → DATA RETENTION",
+            "Retention is driven by legal, regulatory, or business requirements.",
+            "Example: Security logs must be kept for a defined period."
+          ],
+          [
+            "System is leaving service → DECOMMISSIONING",
+            "Remove accounts, access, data, records, and dependencies in a controlled way.",
+            "Example: A retired server is removed from monitoring, DNS, and inventory."
+          ]
+        ],
+        "example": "Ask where the asset is in its lifecycle: entering, being used, being tracked, or leaving service."
+      }
+    ],
+    "questions": [
+      {
+        "q": "A storage drive will be reassigned to another employee and must have previous data securely removed while remaining usable. Which technique is best?",
+        "choices": [
+          "Sanitization",
+          "Destruction",
+          "Certification",
+          "Retention"
+        ],
+        "answer": 0,
+        "explanation": "Sanitization securely removes data while preserving the media for reuse."
+      },
+      {
+        "q": "A failed drive containing highly restricted data must never be recoverable. Which option is best?",
+        "choices": [
+          "Destruction",
+          "Sanitization only",
+          "Inventory",
+          "Assignment"
+        ],
+        "answer": 0,
+        "explanation": "Physical destruction provides the strongest assurance that data cannot be recovered."
+      },
+      {
+        "q": "An auditor asks for documented proof that a vendor destroyed retired drives. Which item should the organization provide?",
+        "choices": [
+          "Certification",
+          "Inventory",
+          "Enumeration",
+          "Classification"
+        ],
+        "answer": 0,
+        "explanation": "Certification provides formal evidence that destruction or sanitization occurred."
+      },
+      {
+        "q": "A policy states that security logs must be kept for 12 months and then deleted. Which concept is this?",
+        "choices": [
+          "Data retention",
+          "Ownership",
+          "Procurement",
+          "Enumeration"
+        ],
+        "answer": 0,
+        "explanation": "Data retention defines how long information must be kept."
+      },
+      {
+        "q": "A retired server is removed from DNS, monitoring, inventory, and access systems before disposal. Which process is this?",
+        "choices": [
+          "Decommissioning",
+          "Enumeration",
+          "Classification",
+          "Assignment"
+        ],
+        "answer": 0,
+        "explanation": "Decommissioning securely removes an asset from active service and associated dependencies."
+      }
+    ]
+  }
+}
