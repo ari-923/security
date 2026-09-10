@@ -521,6 +521,12 @@ function ComparisonTable({ title, headers, rows }) {
 
 function ExamPractice({ questions }) {
   const [answers, setAnswers] = useState({});
+  const [showScore, setShowScore] = useState(false);
+
+  const answeredCount = Object.keys(answers).length;
+  const allAnswered = questions.length > 0 && answeredCount === questions.length;
+  const correctCount = questions.reduce((total, q, qi) => total + (answers[qi] === q.answer ? 1 : 0), 0);
+  const scorePercent = questions.length ? Math.round((correctCount / questions.length) * 100) : 0;
 
   return <section className="sc-practice">
     <span className="sc-kicker">Security+ Exam-Style Practice</span>
@@ -537,18 +543,39 @@ function ExamPractice({ questions }) {
               let cls = "sc-choice";
               if (answered && ci === q.answer) cls += " correct";
               if (answered && ci === selected && ci !== q.answer) cls += " wrong";
-              return <button key={choice} className={cls} disabled={answered} onClick={() => setAnswers((a) => ({ ...a, [qi]: ci }))}>{String.fromCharCode(65 + ci)}. {choice}</button>;
+              return <button key={choice} className={cls} disabled={answered} onClick={() => {
+                setAnswers((a) => ({ ...a, [qi]: ci }));
+                setShowScore(false);
+              }}>{String.fromCharCode(65 + ci)}. {choice}</button>;
             })}
           </div>
           {answered && <div className="sc-explanation"><strong>{selected === q.answer ? "Correct." : "Not quite."}</strong> {q.explanation}</div>}
         </article>;
       })}
     </div>
+
+    <div className="sc-score-area">
+      <button
+        className="btn primary sc-score-button"
+        disabled={!allAnswered}
+        onClick={() => setShowScore(true)}
+      >
+        {allAnswered ? "Reveal score" : `Answer all questions (${answeredCount}/${questions.length})`}
+      </button>
+
+      {showScore && <div className="sc-score-result" role="status">
+        <span className="sc-score-percent">{scorePercent}%</span>
+        <div>
+          <strong>You got {correctCount} out of {questions.length} correct.</strong>
+          <p>{questions.length - correctCount} incorrect · {questions.length} total questions</p>
+        </div>
+      </div>}
+    </div>
   </section>;
 }
 
 function LessonNav({ previous, next }) {
-  return <div className="lesson-nav">{previous ? <Link className="btn" href={`/course/${previous.id}`}>← {previous.id} {previous.title}</Link> : <span />}{next ? <Link className="btn primary" href={`/course/${next.id}`}>{next.id} {next.title} →</Link> : <Link className="btn primary" href="/quiz">Take a scenario quiz →</Link>}</div>;
+  return <div className="lesson-nav">{previous ? <Link className="btn nav-prev" href={`/course/${previous.id}`}>{previous.id} {previous.title}</Link> : <span />}{next ? <Link className="btn primary nav-next" href={`/course/${next.id}`}>{next.id} {next.title}</Link> : <Link className="btn primary" href="/quiz">Open Practice Center</Link>}</div>;
 }
 
 function LearningSection({ lesson, section, done, onDone, onTutor }) {
