@@ -48,7 +48,7 @@ export default function AITutor({ open, onClose, lesson, section }) {
 
   return <div className="ai-backdrop" onMouseDown={(e) => { if (e.target === e.currentTarget) onClose(); }}>
     <aside className="ai-panel">
-      <div className="ai-head"><div><div className="eyebrow">S+ // AI STUDY COACH</div><strong>{lesson.id} · {section?.title || lesson.title}</strong></div><button className="icon" onClick={onClose}>×</button></div>
+      <div className="ai-head"><div><div className="eyebrow">Study coach</div><strong>{lesson.id} · {section?.title || lesson.title}</strong></div><button className="icon" onClick={onClose}>×</button></div>
       <div className="ai-context">I’m tutoring you on <strong>{section?.title || lesson.title}</strong>. Ask anything about this lesson; you do not need the original files.</div>
       <div className="ai-quick">{QUICK.map(([label, prompt]) => <button key={label} onClick={() => send(prompt)} disabled={loading}>{label}</button>)}</div>
       <div className="ai-chat">{messages.length === 0 && <div className="ai-empty">Try “Explain simpler,” ask what a term means, or ask me to quiz you.</div>}{messages.map((m, i) => <div className={`ai-msg ${m.role}`} key={i}><span>{m.role === "user" ? "You" : "S+ Coach"}</span><p>{m.content}</p></div>)}{loading && <div className="ai-msg assistant"><span>S+ Coach</span><p>Thinking…</p></div>}</div>
