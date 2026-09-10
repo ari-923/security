@@ -519,9 +519,47 @@ function ComparisonTable({ title, headers, rows }) {
   </section>;
 }
 
+function shuffleExamQuestions(questions, reshuffleToken) {
+  // reshuffleToken intentionally changes whenever the user restarts the quiz.
+  void reshuffleToken;
+
+  return questions.map((q) => {
+    const choices = q.choices.map((choice, originalIndex) => ({
+      choice,
+      originalIndex,
+    }));
+
+    // Fisher-Yates shuffle so the correct answer is not tied to A/top-left.
+    for (let i = choices.length - 1; i > 0; i -= 1) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [choices[i], choices[j]] = [choices[j], choices[i]];
+    }
+
+    return { ...q, shuffledChoices: choices };
+  });
+}
+
 function ExamPractice({ questions }) {
   const [answers, setAnswers] = useState({});
   const [showScore, setShowScore] = useState(false);
+  const [shuffleSeed, setShuffleSeed] = useState(0);
+
+  // IMPORTANT: Do not call Math.random() during the server/client render.
+  // Start with the original order so SSR and the first browser render match,
+  // then shuffle only after hydration in useEffect.
+  const [shuffledQuestions, setShuffledQuestions] = useState(() =>
+    questions.map((q) => ({
+      ...q,
+      shuffledChoices: q.choices.map((choice, originalIndex) => ({
+        choice,
+        originalIndex,
+      })),
+    }))
+  );
+
+  useEffect(() => {
+    setShuffledQuestions(shuffleExamQuestions(questions, shuffleSeed));
+  }, [questions, shuffleSeed]);
 
   const answeredCount = Object.keys(answers).length;
   const allAnswered = questions.length > 0 && answeredCount === questions.length;
@@ -533,20 +571,31 @@ function ExamPractice({ questions }) {
     <h3>Test yourself with scenario questions</h3>
     <p className="sc-muted">These are original practice questions written in the style of Security+ scenarios. They are not actual CompTIA exam questions.</p>
     <div className="sc-quiz-list">
-      {questions.map((q, qi) => {
+      {shuffledQuestions.map((q, qi) => {
         const selected = answers[qi];
         const answered = selected !== undefined;
+
         return <article className="sc-quiz-card" key={qi}>
           <p className="sc-question"><span>{qi + 1}.</span> {q.q}</p>
           <div className="sc-choices">
-            {q.choices.map((choice, ci) => {
+            {q.shuffledChoices.map(({ choice, originalIndex }, displayIndex) => {
               let cls = "sc-choice";
-              if (answered && ci === q.answer) cls += " correct";
-              if (answered && ci === selected && ci !== q.answer) cls += " wrong";
-              return <button key={choice} className={cls} disabled={answered} onClick={() => {
-                setAnswers((a) => ({ ...a, [qi]: ci }));
-                setShowScore(false);
-              }}>{String.fromCharCode(65 + ci)}. {choice}</button>;
+              if (answered && originalIndex === q.answer) cls += " correct";
+              if (answered && originalIndex === selected && originalIndex !== q.answer) cls += " wrong";
+
+              return <button
+                key={`${originalIndex}-${choice}`}
+                className={cls}
+                disabled={answered}
+                onClick={() => {
+                  // Store the ORIGINAL answer index so scoring remains correct
+                  // even though the visible A/B/C/D positions are shuffled.
+                  setAnswers((a) => ({ ...a, [qi]: originalIndex }));
+                  setShowScore(false);
+                }}
+              >
+                {String.fromCharCode(65 + displayIndex)}. {choice}
+              </button>;
             })}
           </div>
           {answered && <div className="sc-explanation"><strong>{selected === q.answer ? "Correct." : "Not quite."}</strong> {q.explanation}</div>}
@@ -554,14 +603,68 @@ function ExamPractice({ questions }) {
       })}
     </div>
 
-    <div className="sc-score-area">
-      <button
-        className="btn primary sc-score-button"
-        disabled={!allAnswered}
-        onClick={() => setShowScore(true)}
-      >
-        {allAnswered ? "Reveal score" : `Answer all questions (${answeredCount}/${questions.length})`}
-      </button>
+    {allAnswered && <div className="sc-score-area">
+      <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+        <button
+          className="btn primary sc-score-button"
+          onClick={() => setShowScore(true)}
+        >
+          Reveal score
+        </button>
+
+        {showScore && <button
+          className="btn sc-score-button"
+          aria-label="Restart quiz"
+          title="Restart quiz"
+          onClick={(event) => {
+            const practiceSection = event.currentTarget.closest(".sc-practice");
+
+            const practiceTop = practiceSection
+              ? practiceSection.getBoundingClientRect().top + window.scrollY - 60
+              : null;
+
+            setAnswers({});
+            setShowScore(false);
+            setShuffleSeed((seed) => seed + 1);
+
+            if (practiceTop !== null) {
+              window.setTimeout(() => {
+                window.scrollTo({
+                  top: Math.max(0, practiceTop),
+                  behavior: "smooth",
+                });
+              }, 80);
+            }
+          }}
+          style={{
+            width: 42,
+            height: 42,
+            minWidth: 42,
+            minHeight: 42,
+            padding: 0,
+            display: "inline-flex",
+            alignItems: "center",
+            justifyContent: "center",
+            lineHeight: 0,
+          }}
+        >
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+            style={{ display: "block", flex: "0 0 auto" }}
+          >
+            <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
+            <path d="M3 3v5h5" />
+          </svg>
+        </button>}
+      </div>
 
       {showScore && <div className="sc-score-result" role="status">
         <span className="sc-score-percent">{scorePercent}%</span>
@@ -570,12 +673,12 @@ function ExamPractice({ questions }) {
           <p>{questions.length - correctCount} incorrect · {questions.length} total questions</p>
         </div>
       </div>}
-    </div>
+    </div>}
   </section>;
 }
 
 function LessonNav({ previous, next }) {
-  return <div className="lesson-nav">{previous ? <Link className="btn nav-prev" href={`/course/${previous.id}`}>{previous.id} {previous.title}</Link> : <span />}{next ? <Link className="btn primary nav-next" href={`/course/${next.id}`}>{next.id} {next.title}</Link> : <Link className="btn primary" href="/quiz">Open Practice Center</Link>}</div>;
+  return <div className="lesson-nav">{previous ? <Link className="btn nav-prev" href={`/course/${previous.id}`}>{previous.id} {previous.title}</Link> : <span />}{next ? <Link className="btn primary nav-next" href={`/course/${next.id}`}>{next.id} {next.title}</Link> : <Link className="btn primary" href="/quiz">Take a scenario quiz</Link>}</div>;
 }
 
 function LearningSection({ lesson, section, done, onDone, onTutor }) {
