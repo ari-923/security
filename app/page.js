@@ -1,4 +1,4 @@
-import { chapters, lessons, learningSections, scenarioQuestions, sectionKey } from "@/content";
+import { chapters, lessons, learningSections, practiceQuestions, sectionKey } from "@/content";
 import HomeDashboard from "@/components/HomeDashboard";
 
 export default function HomePage() {
@@ -14,7 +14,7 @@ export default function HomePage() {
       progressShape={progressShape}
       lessonCount={lessons.length}
       learningCount={progressShape.reduce((sum, lesson) => sum + lesson.keys.length, 0)}
-      quizCount={scenarioQuestions.length}
+      quizCount={practiceQuestions.length}
     />
   );
 }
