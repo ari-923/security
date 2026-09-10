@@ -1,0 +1,3362 @@
+[
+  {
+    "id": "uploaded-001",
+    "chapter": 9,
+    "chapterName": "Mitigation Techniques",
+    "q": "Which statement best describes the principle of least privilege?",
+    "choices": [
+      "Give users only the permissions required for their assigned tasks",
+      "Give every employee the same access rights",
+      "Give all authenticated users local administrator rights",
+      "Restrict access only outside normal business hours"
+    ],
+    "answer": 0,
+    "why": "Least privilege limits permissions to the minimum needed to perform authorized work, reducing the impact of mistakes or compromised accounts.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-002",
+    "chapter": 11,
+    "chapterName": "Secure Enterprise Infrastructure",
+    "q": "Which protocol is the best choice for securely administering a remote server from a command line?",
+    "choices": [
+      "HTTP",
+      "SNMPv2c",
+      "SSH",
+      "FTP"
+    ],
+    "answer": 2,
+    "why": "SSH provides encrypted remote command-line access and is the secure replacement for plaintext remote-login protocols such as Telnet.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-003",
+    "chapter": 8,
+    "chapterName": "Malicious Activity Indicators",
+    "q": "Which malware type commonly attaches to a host file or program and replicates when that host is executed?",
+    "choices": [
+      "Trojan",
+      "Virus",
+      "Spyware",
+      "Adware"
+    ],
+    "answer": 1,
+    "why": "A virus replicates by infecting a host file or program. A worm, which was not one of the choices, can self-propagate without attaching to a host file.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-004",
+    "chapter": 6,
+    "chapterName": "Threat Vectors & Attack Surfaces",
+    "q": "Which description best matches phishing?",
+    "choices": [
+      "A wireless jamming technique",
+      "A server-cooling failure",
+      "A deceptive message intended to trick a victim into revealing information or taking an unsafe action",
+      "A network configuration protocol"
+    ],
+    "answer": 2,
+    "why": "Phishing uses deceptive communications to manipulate recipients into revealing information, opening malicious content, or performing an attacker-requested action.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-005",
+    "chapter": 11,
+    "chapterName": "Secure Enterprise Infrastructure",
+    "q": "What is the primary security purpose of a VPN?",
+    "choices": [
+      "Create a protected tunnel across an untrusted network",
+      "Increase available internet bandwidth",
+      "Filter unsolicited email",
+      "Replace endpoint anti-malware"
+    ],
+    "answer": 0,
+    "why": "A VPN protects traffic over an untrusted network by creating an authenticated and typically encrypted tunnel.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-006",
+    "chapter": 18,
+    "chapterName": "Enterprise Security Capabilities",
+    "q": "What is a primary function of a network firewall?",
+    "choices": [
+      "Remove malware from files",
+      "Measure employee bandwidth usage",
+      "Allow or block network traffic according to defined rules",
+      "Increase internet connection speed"
+    ],
+    "answer": 2,
+    "why": "A firewall enforces traffic policy by permitting or denying network communications based on configured rules and attributes.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-007",
+    "chapter": 7,
+    "chapterName": "Vulnerabilities",
+    "q": "Which description most accurately characterizes a zero-day vulnerability?",
+    "choices": [
+      "A vulnerability that has already been fully patched",
+      "A vulnerability that has been publicly documented for years",
+      "A vulnerability that can be exploited only on the day it is discovered",
+      "A newly discovered vulnerability for which an effective vendor fix may not yet be available"
+    ],
+    "answer": 3,
+    "why": "A zero-day is a vulnerability that defenders may have had zero days to address, often before an effective patch is available.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-008",
+    "chapter": 4,
+    "chapterName": "Cryptography & PKI",
+    "q": "What is the key-management difference between symmetric and asymmetric encryption?",
+    "choices": [
+      "Symmetric encryption uses one shared secret key; asymmetric encryption uses a mathematically related public/private key pair",
+      "Symmetric encryption uses only public keys; asymmetric encryption uses only private keys",
+      "Symmetric encryption is only for files; asymmetric encryption is only for networks",
+      "The two terms describe the same key system"
+    ],
+    "answer": 0,
+    "why": "Symmetric cryptography uses the same secret key for encryption and decryption, while asymmetric cryptography uses a public/private key pair.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-009",
+    "chapter": 4,
+    "chapterName": "Cryptography & PKI",
+    "q": "What security goal does encryption primarily provide?",
+    "choices": [
+      "Faster data transfer",
+      "Confidentiality by making plaintext unreadable without the required key",
+      "More storage capacity",
+      "Spam filtering"
+    ],
+    "answer": 1,
+    "why": "Encryption primarily protects confidentiality by transforming readable plaintext into ciphertext that requires the appropriate key to recover.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-010",
+    "chapter": 8,
+    "chapterName": "Malicious Activity Indicators",
+    "q": "Which attack overwhelms a target with traffic from many distributed systems to disrupt availability?",
+    "choices": [
+      "On-path attack",
+      "Phishing",
+      "Distributed denial-of-service (DDoS)",
+      "SQL injection"
+    ],
+    "answer": 2,
+    "why": "A DDoS attack uses many distributed sources to exhaust target resources or network capacity and reduce availability.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-011",
+    "chapter": 14,
+    "chapterName": "Securing Computing Resources",
+    "q": "Which wireless security standard is the newer choice for modern Wi-Fi deployments when supported?",
+    "choices": [
+      "WEP",
+      "WPA3",
+      "WPA",
+      "Open authentication"
+    ],
+    "answer": 1,
+    "why": "WPA3 is the current Security+ objective for modern Wi-Fi security and improves protections compared with older WEP/WPA generations.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-012",
+    "chapter": 2,
+    "chapterName": "Fundamental Security Concepts",
+    "q": "What is a honeypot?",
+    "choices": [
+      "A decoy system or service intended to attract and observe attackers",
+      "A malware family",
+      "A replacement for an IDS",
+      "An encrypted file-transfer protocol"
+    ],
+    "answer": 0,
+    "why": "A honeypot is a deception technology designed to look valuable so attacker behavior can be detected, diverted, or studied.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-013",
+    "chapter": 10,
+    "chapterName": "Security Architecture Models",
+    "q": "Which design principle uses multiple independent defensive layers so that failure of one control does not expose the entire environment?",
+    "choices": [
+      "Least privilege",
+      "Open design",
+      "Defense in depth",
+      "Fail-open design"
+    ],
+    "answer": 2,
+    "why": "Defense in depth layers complementary controls so one failed or bypassed safeguard does not become the single point of compromise.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-014",
+    "chapter": 4,
+    "chapterName": "Cryptography & PKI",
+    "q": "What is a primary purpose of a digital certificate in PKI?",
+    "choices": [
+      "Increase network throughput",
+      "Store cloud backups",
+      "Bind an identity to a public key so parties can authenticate and establish trusted communications",
+      "Replace all encryption keys with hashes"
+    ],
+    "answer": 2,
+    "why": "A digital certificate binds identifying information to a public key and is signed by a trusted issuer so relying parties can validate that binding.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-015",
+    "chapter": 10,
+    "chapterName": "Security Architecture Models",
+    "q": "How does a cloud access security broker (CASB) help protect cloud use?",
+    "choices": [
+      "It enforces security policy and visibility between cloud users and cloud services",
+      "It physically guards cloud data centers",
+      "It negotiates lower cloud-storage prices",
+      "It increases application bandwidth"
+    ],
+    "answer": 0,
+    "why": "A CASB provides policy enforcement, visibility, and security controls for interactions between users and cloud services.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-016",
+    "chapter": 19,
+    "chapterName": "Identity & Access Management",
+    "q": "Which access-control model grants permissions primarily according to a user's job function?",
+    "choices": [
+      "Discretionary access control (DAC)",
+      "Mandatory access control (MAC)",
+      "Role-based access control (RBAC)",
+      "Attribute-based access control (ABAC)"
+    ],
+    "answer": 2,
+    "why": "RBAC assigns permissions to roles that represent job functions, and users receive permissions through role membership.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-017",
+    "chapter": 21,
+    "chapterName": "Incident Response & Forensics",
+    "q": "What does threat hunting involve?",
+    "choices": [
+      "Waiting for automated alerts before investigating",
+      "Proactively searching an environment for evidence of threats that may have evaded existing controls",
+      "Searching only public news sites for security headlines",
+      "Performing a physical building inspection"
+    ],
+    "answer": 1,
+    "why": "Threat hunting is a proactive search for malicious activity or adversary presence that has not yet been detected by routine alerting.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-018",
+    "chapter": 17,
+    "chapterName": "Security Monitoring & Alerting",
+    "q": "How is anomaly detection used in security monitoring?",
+    "choices": [
+      "Identify activity that deviates from an established baseline and may indicate suspicious behavior",
+      "Inspect the physical structure of a data center",
+      "Correct spelling in policy documents",
+      "Track employee timecards"
+    ],
+    "answer": 0,
+    "why": "Anomaly detection compares observed behavior with expected patterns and flags meaningful deviations for investigation.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-019",
+    "chapter": 2,
+    "chapterName": "Fundamental Security Concepts",
+    "q": "Which statement best summarizes a Zero Trust approach?",
+    "choices": [
+      "Trust internal users automatically after they enter the building",
+      "Continuously evaluate identity, device, context, and policy before and during access",
+      "Give every employee identical access",
+      "Trust devices permanently after their first successful login"
+    ],
+    "answer": 1,
+    "why": "Zero Trust replaces implicit trust with policy-driven, continuously evaluated access decisions based on identity and context.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-020",
+    "chapter": 2,
+    "chapterName": "Fundamental Security Concepts",
+    "q": "What does context-aware access control evaluate when deciding whether to permit a request?",
+    "choices": [
+      "Only a username",
+      "Context such as identity, device state, location, time, and risk signals",
+      "Only the physical location of the server",
+      "Only the requested file size"
+    ],
+    "answer": 1,
+    "why": "Context-aware decisions consider attributes and risk signals surrounding a request rather than relying on a single static credential.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-021",
+    "chapter": 27,
+    "chapterName": "Audits & Assessments",
+    "q": "What is the purpose of a red team exercise?",
+    "choices": [
+      "Simulate realistic adversary behavior to test an organization’s defenses and detection capabilities",
+      "Paint critical network devices red",
+      "Perform fire-safety inspections",
+      "Create security marketing material"
+    ],
+    "answer": 0,
+    "why": "A red team emulates adversary tactics to test defensive controls, detection, response, and organizational readiness.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-022",
+    "chapter": 11,
+    "chapterName": "Secure Enterprise Infrastructure",
+    "q": "What distinguishes a next-generation firewall (NGFW) from a basic packet-filtering firewall?",
+    "choices": [
+      "NGFWs are physical barriers around network hardware",
+      "NGFWs typically add application awareness, deeper inspection, and integrated threat-prevention capabilities",
+      "NGFWs only protect game consoles",
+      "NGFWs are used only to improve Wi-Fi signal strength"
+    ],
+    "answer": 1,
+    "why": "An NGFW combines traditional firewalling with capabilities such as application awareness, deep inspection, and integrated intrusion prevention.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-023",
+    "chapter": 5,
+    "chapterName": "Threat Actors",
+    "q": "Which description best fits an advanced persistent threat (APT)?",
+    "choices": [
+      "A short, unsophisticated attack with no persistence",
+      "A highly targeted, capable adversary campaign that maintains access over an extended period to achieve specific objectives",
+      "An attack that targets only individuals and never organizations",
+      "A one-time accidental outage"
+    ],
+    "answer": 1,
+    "why": "APTs are characterized by targeted objectives, higher capability, persistence, and long-term efforts to maintain access or collect intelligence.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-024",
+    "chapter": 12,
+    "chapterName": "Protecting Data",
+    "q": "What does data tokenization do?",
+    "choices": [
+      "Replaces sensitive values with non-sensitive tokens while protected mapping or vaulting preserves the relationship",
+      "Compresses data to save storage",
+      "Hashes every record irreversibly",
+      "Creates authentication tokens that contain the original sensitive value in plaintext"
+    ],
+    "answer": 0,
+    "why": "Tokenization substitutes sensitive data with a surrogate token; the original value is stored or mapped separately under stronger controls.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-025",
+    "chapter": 11,
+    "chapterName": "Secure Enterprise Infrastructure",
+    "q": "What is the primary role of a proxy server?",
+    "choices": [
+      "Act as an intermediary that makes requests to other services on behalf of clients",
+      "Add storage capacity to network switches",
+      "Increase CPU performance",
+      "Serve only as a disaster-recovery system"
+    ],
+    "answer": 0,
+    "why": "A proxy intermediates client requests and can provide filtering, logging, policy enforcement, caching, or privacy depending on its design.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-026",
+    "chapter": 4,
+    "chapterName": "Cryptography & PKI",
+    "q": "Why are organizations evaluating post-quantum cryptography?",
+    "choices": [
+      "To prepare cryptographic systems for future attacks from sufficiently capable quantum computers",
+      "To increase Wi-Fi range",
+      "To eliminate the need for key management",
+      "To replace authentication with blockchain"
+    ],
+    "answer": 0,
+    "why": "Post-quantum cryptography is intended to resist classes of attacks that sufficiently capable quantum computers could perform against some current public-key algorithms.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-027",
+    "chapter": 9,
+    "chapterName": "Mitigation Techniques",
+    "q": "How does microsegmentation reduce security risk?",
+    "choices": [
+      "It creates smaller policy-controlled zones that restrict lateral movement between workloads",
+      "It physically shrinks network hardware",
+      "It groups marketing users into demographic segments",
+      "It replaces encryption with VLAN labels"
+    ],
+    "answer": 0,
+    "why": "Microsegmentation limits east-west communication and reduces the blast radius by applying granular controls between workloads or security zones.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-028",
+    "chapter": 19,
+    "chapterName": "Identity & Access Management",
+    "q": "How can geofencing support mobile or access security?",
+    "choices": [
+      "By defining a virtual geographic boundary and triggering policy when a device enters or leaves it",
+      "By drawing physical fence maintenance maps",
+      "By sorting files alphabetically",
+      "By encrypting GPS coordinates with a shared password"
+    ],
+    "answer": 0,
+    "why": "Geofencing uses device location relative to a defined area as a condition for actions or access policy.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-029",
+    "chapter": 23,
+    "chapterName": "Security Governance",
+    "q": "What does security by design mean in a software-development context?",
+    "choices": [
+      "Adding security controls only after deployment",
+      "Integrating security requirements and controls throughout design and development",
+      "Using encrypted graphic-design files",
+      "Choosing a visually secure user interface"
+    ],
+    "answer": 1,
+    "why": "Security by design incorporates security requirements, threat considerations, and controls from the beginning rather than bolting them on at the end.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-030",
+    "chapter": 19,
+    "chapterName": "Identity & Access Management",
+    "q": "What are behavioral biometrics?",
+    "choices": [
+      "Authentication or risk signals based on patterns such as keystroke dynamics, mouse movement, or interaction behavior",
+      "Fingerprint images stored in paper files",
+      "Biological studies unrelated to authentication",
+      "Physical security guard patrol patterns"
+    ],
+    "answer": 0,
+    "why": "Behavioral biometrics evaluate characteristic patterns in how a person interacts with a system and can support continuous or adaptive authentication.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-031",
+    "chapter": 4,
+    "chapterName": "Cryptography & PKI",
+    "q": "What does a TLS server certificate help a browser do?",
+    "choices": [
+      "Validate the server identity and establish an encrypted TLS session",
+      "Guarantee that the website has no vulnerabilities",
+      "Increase download bandwidth",
+      "Replace DNS resolution"
+    ],
+    "answer": 0,
+    "why": "A valid TLS certificate helps authenticate the server’s identity and supports encrypted communication after certificate validation and key establishment.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-032",
+    "chapter": 20,
+    "chapterName": "Automation & Orchestration",
+    "q": "What is the primary purpose of security orchestration, automation, and response (SOAR)?",
+    "choices": [
+      "Coordinate security tools and automate repeatable response workflows",
+      "Replace every SIEM log source",
+      "Provide physical drone response",
+      "Encrypt all files automatically"
+    ],
+    "answer": 0,
+    "why": "SOAR integrates security tools and automates defined workflows such as enrichment, ticketing, containment, and escalation.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-033",
+    "chapter": 18,
+    "chapterName": "Enterprise Security Capabilities",
+    "q": "What does file integrity monitoring (FIM) help detect?",
+    "choices": [
+      "Changes to critical files or configurations that may indicate tampering",
+      "Low disk capacity",
+      "Incorrect folder naming",
+      "Slow file-transfer speeds"
+    ],
+    "answer": 0,
+    "why": "FIM records or compares file attributes and content so unauthorized or unexpected changes can be detected and investigated.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-034",
+    "chapter": 2,
+    "chapterName": "Fundamental Security Concepts",
+    "q": "How does deception technology help defenders?",
+    "choices": [
+      "It presents decoys, fake credentials, or false assets intended to expose or divert attacker activity",
+      "It tricks employees into skipping policy requirements",
+      "It changes the visual appearance of a data center",
+      "It automatically approves all software updates"
+    ],
+    "answer": 0,
+    "why": "Deception technology creates monitored false assets that can reveal attacker interaction and increase the cost of reconnaissance.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-035",
+    "chapter": 9,
+    "chapterName": "Mitigation Techniques",
+    "q": "What is application allowlisting?",
+    "choices": [
+      "Permitting only explicitly approved applications or executables to run",
+      "Listing applications that need updates",
+      "Highlighting application icons",
+      "Creating a software marketing catalog"
+    ],
+    "answer": 0,
+    "why": "Application allowlisting denies execution by default unless an application or publisher meets an approved rule.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-036",
+    "chapter": 6,
+    "chapterName": "Threat Vectors & Attack Surfaces",
+    "q": "What is pharming?",
+    "choices": [
+      "Redirecting users toward a fraudulent destination even when they intend to reach a legitimate site",
+      "Sending bulk promotional email",
+      "A wireless encryption method",
+      "A cloud backup strategy"
+    ],
+    "answer": 0,
+    "why": "Pharming manipulates name resolution or related mechanisms so users are redirected to malicious destinations without relying solely on a deceptive link.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-037",
+    "chapter": 11,
+    "chapterName": "Secure Enterprise Infrastructure",
+    "q": "What is the purpose of unified threat management (UTM)?",
+    "choices": [
+      "Combine multiple security functions such as firewalling, filtering, and threat prevention into one managed platform",
+      "Create a single user-interface theme for all applications",
+      "Manage employee uniforms",
+      "Generate one annual compliance report"
+    ],
+    "answer": 0,
+    "why": "UTM consolidates multiple network security capabilities into a single platform to simplify deployment and management.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-038",
+    "chapter": 10,
+    "chapterName": "Security Architecture Models",
+    "q": "What is a key benefit of consuming security capabilities as a cloud-delivered service?",
+    "choices": [
+      "Elastic deployment and centralized service delivery without owning every security appliance",
+      "Guaranteed elimination of all cyber risk",
+      "Automatic increase of physical office space",
+      "No need for identity controls"
+    ],
+    "answer": 0,
+    "why": "Cloud-delivered security can improve scalability and centralized management, though organizations still retain security responsibilities.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-039",
+    "chapter": 8,
+    "chapterName": "Malicious Activity Indicators",
+    "q": "What is credential stuffing?",
+    "choices": [
+      "Using stolen username/password pairs from one breach in automated login attempts against other services",
+      "Creating decoy accounts to attract attackers",
+      "Adding random characters to a password",
+      "Entering credentials into a password manager"
+    ],
+    "answer": 0,
+    "why": "Credential stuffing exploits password reuse by testing known compromised credentials across other services at scale.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-040",
+    "chapter": 14,
+    "chapterName": "Securing Computing Resources",
+    "q": "What does endpoint security focus on?",
+    "choices": [
+      "Protecting devices such as laptops, workstations, servers, and mobile endpoints",
+      "Protecting only the physical end of network cables",
+      "Encrypting only backbone routers",
+      "Managing building access badges"
+    ],
+    "answer": 0,
+    "why": "Endpoint security protects computing devices using controls such as hardening, anti-malware, EDR, firewalls, patching, and configuration enforcement.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-041",
+    "chapter": 11,
+    "chapterName": "Secure Enterprise Infrastructure",
+    "q": "How does a web application firewall (WAF) differ from a traditional network firewall?",
+    "choices": [
+      "A WAF focuses on web application HTTP/HTTPS traffic and application-layer attacks, while network firewalls enforce broader network traffic policy",
+      "A WAF is only for email security",
+      "Network firewalls provide only physical security",
+      "They are identical controls"
+    ],
+    "answer": 0,
+    "why": "A WAF is specialized for web application traffic and threats such as injection patterns, while traditional firewalls typically enforce network-layer and transport-layer policy more broadly.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-042",
+    "chapter": 21,
+    "chapterName": "Incident Response & Forensics",
+    "q": "Why is chain of custody important in digital forensics?",
+    "choices": [
+      "It documents possession, transfer, and handling of evidence so its integrity and provenance can be demonstrated",
+      "It defines the forensic team reporting structure",
+      "It creates backup copies automatically",
+      "It identifies the fastest evidence-analysis tool"
+    ],
+    "answer": 0,
+    "why": "Chain of custody records who handled evidence, when, where, and why, helping establish that evidence was preserved and handled consistently.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-043",
+    "chapter": 10,
+    "chapterName": "Security Architecture Models",
+    "q": "What does containerization provide?",
+    "choices": [
+      "A packaged application environment with its dependencies isolated from other workloads by the container runtime",
+      "Full hardware virtualization for every application",
+      "A cloud-only encryption format",
+      "A method of segmenting video surveillance feeds"
+    ],
+    "answer": 0,
+    "why": "Containers package applications and dependencies while sharing a host kernel, providing process and resource isolation rather than full hardware virtualization.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-044",
+    "chapter": 14,
+    "chapterName": "Securing Computing Resources",
+    "q": "What does mobile device management (MDM) enable an organization to do?",
+    "choices": [
+      "Centrally configure, monitor, and enforce security settings on managed mobile devices",
+      "Repair phones for resale",
+      "Track consumer devices for advertising",
+      "Write mobile applications automatically"
+    ],
+    "answer": 0,
+    "why": "MDM centralizes enrollment, configuration, security policy, application controls, and remote management for organizational mobile devices.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-045",
+    "chapter": 9,
+    "chapterName": "Mitigation Techniques",
+    "q": "What security benefit does network segmentation provide?",
+    "choices": [
+      "It separates systems into controlled zones to limit exposure and lateral movement",
+      "It reduces the number of IT employees needed",
+      "It increases physical cable length",
+      "It automatically doubles bandwidth"
+    ],
+    "answer": 0,
+    "why": "Segmentation constrains communication between zones and can reduce attack surface and the spread of a compromise.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-046",
+    "chapter": 8,
+    "chapterName": "Malicious Activity Indicators",
+    "q": "What is a rootkit primarily designed to do?",
+    "choices": [
+      "Provide persistent privileged access while concealing malicious activity",
+      "Create software-installation packages",
+      "Recover damaged databases",
+      "Manage access-control policies"
+    ],
+    "answer": 0,
+    "why": "Rootkits are designed to hide malicious components or activity and often maintain privileged, persistent access.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-047",
+    "chapter": 23,
+    "chapterName": "Security Governance",
+    "q": "How does an information security policy help an organization?",
+    "choices": [
+      "Establish management expectations and requirements for protecting systems and data",
+      "Define employee lunch schedules",
+      "Guarantee every system is vulnerability-free",
+      "Replace all detailed procedures"
+    ],
+    "answer": 0,
+    "why": "Policies provide high-level management direction and requirements that guide standards, procedures, and security decisions.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-048",
+    "chapter": 19,
+    "chapterName": "Identity & Access Management",
+    "q": "What is identity and access management (IAM)?",
+    "choices": [
+      "The processes and technologies used to establish identities and control appropriate access to resources",
+      "A system for tracking attendance only",
+      "A customer relationship management platform",
+      "A physical badge-printing process only"
+    ],
+    "answer": 0,
+    "why": "IAM covers identity lifecycle, authentication, authorization, federation, access controls, privileged access, and related governance.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-049",
+    "chapter": 11,
+    "chapterName": "Secure Enterprise Infrastructure",
+    "q": "What is the operational difference between an IDS and an inline IPS?",
+    "choices": [
+      "An IDS primarily detects and alerts, while an inline IPS can actively block or drop matching traffic",
+      "An IDS is always software and an IPS is always hardware",
+      "An IDS encrypts data while an IPS manages certificates",
+      "There is no meaningful difference"
+    ],
+    "answer": 0,
+    "why": "An IDS generally monitors and alerts; an inline IPS is placed in the traffic path and can take preventive action such as dropping malicious traffic.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-050",
+    "chapter": 16,
+    "chapterName": "Vulnerability Management",
+    "q": "What is the primary purpose of a vulnerability scanner?",
+    "choices": [
+      "Identify known weaknesses, missing patches, and insecure configurations for analysis",
+      "Remove every discovered malware sample",
+      "Filter unsolicited email",
+      "Improve camera resolution"
+    ],
+    "answer": 0,
+    "why": "Vulnerability scanners identify potential weaknesses so they can be validated, prioritized, and remediated.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-051",
+    "chapter": 14,
+    "chapterName": "Securing Computing Resources",
+    "q": "What does wireless encryption protect?",
+    "choices": [
+      "The confidentiality of data transmitted over the wireless link",
+      "The physical range of a radio signal",
+      "Internet connection speed",
+      "The number of devices allowed on a network"
+    ],
+    "answer": 0,
+    "why": "Wireless encryption protects over-the-air traffic from being read by parties that do not possess the required cryptographic keys.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-052",
+    "chapter": 19,
+    "chapterName": "Identity & Access Management",
+    "q": "What makes an authentication method multifactor?",
+    "choices": [
+      "It combines two or more different factor categories, such as something you know and something you have",
+      "It uses two different passwords",
+      "It requires a password to be entered twice",
+      "It uses two security questions"
+    ],
+    "answer": 0,
+    "why": "MFA requires factors from different categories; multiple credentials from the same category do not provide true multifactor authentication.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-053",
+    "chapter": 16,
+    "chapterName": "Vulnerability Management",
+    "q": "What is threat intelligence?",
+    "choices": [
+      "Analyzed information about threats, adversaries, vulnerabilities, and indicators that supports security decisions",
+      "A list of common passwords",
+      "General knowledge needed for any IT exam",
+      "A stock-market forecasting system"
+    ],
+    "answer": 0,
+    "why": "Threat intelligence adds context and analysis to threat data so defenders can prioritize, detect, and respond more effectively.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-054",
+    "chapter": 11,
+    "chapterName": "Secure Enterprise Infrastructure",
+    "q": "What is the purpose of a screened subnet (often called a DMZ)?",
+    "choices": [
+      "Place public-facing services in a controlled network segment separated from the trusted internal network",
+      "Store obsolete servers",
+      "Monitor employee internet use only",
+      "Host only government websites"
+    ],
+    "answer": 0,
+    "why": "A screened subnet isolates public-facing systems from internal resources so compromise of an exposed service does not directly expose the trusted network.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-055",
+    "chapter": 15,
+    "chapterName": "Asset Management",
+    "q": "What is asset management in cybersecurity?",
+    "choices": [
+      "Tracking ownership, classification, inventory, lifecycle, and disposition of hardware, software, and data assets",
+      "Managing only financial investments",
+      "Buying and selling hardware without inventory records",
+      "Measuring the stock performance of security vendors"
+    ],
+    "answer": 0,
+    "why": "Security asset management maintains accountability and visibility from acquisition through assignment, monitoring, and secure disposal.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-056",
+    "chapter": 18,
+    "chapterName": "Enterprise Security Capabilities",
+    "q": "What is the primary goal of data loss prevention (DLP)?",
+    "choices": [
+      "Detect and prevent unauthorized disclosure or movement of sensitive data",
+      "Increase storage capacity",
+      "Improve backup speed",
+      "Monitor cooling systems"
+    ],
+    "answer": 0,
+    "why": "DLP identifies sensitive data and applies policy to prevent or alert on unauthorized transfer, sharing, or use.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-057",
+    "chapter": 16,
+    "chapterName": "Vulnerability Management",
+    "q": "Why is patch management important to security?",
+    "choices": [
+      "It systematically deploys and tracks updates that remediate known software vulnerabilities",
+      "It repairs damaged network cables",
+      "It schedules security staff",
+      "It creates uniform patches"
+    ],
+    "answer": 0,
+    "why": "Patch management reduces exposure to known vulnerabilities by testing, deploying, tracking, and validating security updates.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-058",
+    "chapter": 18,
+    "chapterName": "Enterprise Security Capabilities",
+    "q": "What does an access control list (ACL) do?",
+    "choices": [
+      "Defines permit/deny rules that control which subjects or traffic can access specified resources",
+      "Stores marketing email addresses",
+      "Creates Wi-Fi passwords",
+      "Provides accounting logs only"
+    ],
+    "answer": 0,
+    "why": "An ACL expresses access rules that permit or deny actions or traffic based on attributes such as identities, addresses, protocols, or resources.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-059",
+    "chapter": 21,
+    "chapterName": "Incident Response & Forensics",
+    "q": "What is the purpose of an incident response plan?",
+    "choices": [
+      "Define roles, processes, communications, and actions for handling security incidents",
+      "Describe only the backup schedule",
+      "Define the company hiring process",
+      "Replace all disaster-recovery planning"
+    ],
+    "answer": 0,
+    "why": "An incident response plan establishes how the organization prepares for, detects, analyzes, contains, eradicates, recovers from, and learns from incidents.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-060",
+    "chapter": 28,
+    "chapterName": "Security Awareness",
+    "q": "What is security awareness training intended to accomplish?",
+    "choices": [
+      "Help personnel recognize security risks and follow secure practices in their daily work",
+      "Train only the security team on software installation",
+      "Replace technical controls with employee judgment",
+      "Provide physical fitness instruction"
+    ],
+    "answer": 0,
+    "why": "Awareness training helps users recognize threats such as phishing and social engineering, protect credentials and data, and report suspicious activity.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-061",
+    "chapter": 8,
+    "chapterName": "Malicious Activity Indicators",
+    "q": "What is data exfiltration?",
+    "choices": [
+      "Unauthorized transfer or removal of data from an environment",
+      "Spam filtering",
+      "Adding storage capacity",
+      "Increasing transmission speed"
+    ],
+    "answer": 0,
+    "why": "Data exfiltration is the unauthorized movement of information out of an organization or protected system.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-062",
+    "chapter": 13,
+    "chapterName": "Resilience & Recovery",
+    "q": "What is the main purpose of a disaster recovery plan (DRP)?",
+    "choices": [
+      "Define how technology and services will be restored after a significant disruptive event",
+      "Guarantee profitability",
+      "Manage ordinary daily operations",
+      "Replace employee training"
+    ],
+    "answer": 0,
+    "why": "A DRP focuses on recovering systems, data, and technology services after disruption so business functions can be restored.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-063",
+    "chapter": 4,
+    "chapterName": "Cryptography & PKI",
+    "q": "What security properties can a properly implemented digital signature provide?",
+    "choices": [
+      "Integrity, origin authentication, and support for non-repudiation",
+      "Confidentiality of the entire message by itself",
+      "Higher network bandwidth",
+      "Physical proof that a person held a pen"
+    ],
+    "answer": 0,
+    "why": "A digital signature allows recipients to verify that signed data has not changed and that the signature corresponds to the holder of the signing private key.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-064",
+    "chapter": 27,
+    "chapterName": "Audits & Assessments",
+    "q": "What is penetration testing?",
+    "choices": [
+      "Authorized offensive testing that attempts to exploit weaknesses to evaluate real security exposure",
+      "A hardware durability test",
+      "A marketing strategy",
+      "The routine installation of antivirus software"
+    ],
+    "answer": 0,
+    "why": "Penetration testing is an authorized assessment that goes beyond identifying vulnerabilities by attempting controlled exploitation to evaluate impact and defensive effectiveness.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-065",
+    "chapter": 1,
+    "chapterName": "Security Controls",
+    "q": "Which is the clearest example of a physical security control?",
+    "choices": [
+      "A host-based firewall",
+      "A bollard that prevents vehicles from approaching a building entrance",
+      "An antivirus agent",
+      "A file-encryption policy"
+    ],
+    "answer": 1,
+    "why": "Bollards are physical barriers used to control or prevent vehicle access to protected areas.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-066",
+    "chapter": 6,
+    "chapterName": "Threat Vectors & Attack Surfaces",
+    "q": "What is tailgating in physical security?",
+    "choices": [
+      "Following an authorized person through a controlled entrance without independently authenticating",
+      "Connecting to an unapproved Wi-Fi network",
+      "Capturing network packets",
+      "Sending bulk unsolicited email"
+    ],
+    "answer": 0,
+    "why": "Tailgating bypasses physical access controls by entering a restricted area closely behind an authorized person.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-067",
+    "chapter": 24,
+    "chapterName": "Risk Management",
+    "q": "What is the primary objective of cybersecurity risk management?",
+    "choices": [
+      "Identify, analyze, prioritize, and treat risk in line with organizational tolerance",
+      "Eliminate all risk permanently",
+      "Purchase insurance for every possible threat",
+      "Monitor employee behavior only"
+    ],
+    "answer": 0,
+    "why": "Risk management helps an organization understand and treat risk according to business impact, likelihood, appetite, and tolerance rather than attempting to eliminate all risk.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-068",
+    "chapter": 17,
+    "chapterName": "Security Monitoring & Alerting",
+    "q": "What is a primary role of a SIEM platform?",
+    "choices": [
+      "Aggregate and correlate security event data so analysts can detect and investigate suspicious activity",
+      "Manage employee schedules",
+      "Encrypt all database fields",
+      "Increase network bandwidth"
+    ],
+    "answer": 0,
+    "why": "A SIEM centralizes log and event data and applies correlation, analytics, and alerting to support monitoring and investigation.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-069",
+    "chapter": 11,
+    "chapterName": "Secure Enterprise Infrastructure",
+    "q": "A remote-access VPN configured for full tunneling sends which traffic through the organization’s VPN gateway?",
+    "choices": [
+      "Only traffic destined for internal private addresses",
+      "All client network traffic while the tunnel is active",
+      "Only DNS traffic",
+      "Only file-transfer traffic"
+    ],
+    "answer": 1,
+    "why": "With full tunneling, all client traffic is routed through the VPN path; split tunneling sends only selected traffic through the tunnel.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-070",
+    "chapter": 14,
+    "chapterName": "Securing Computing Resources",
+    "q": "What security problem is a CAPTCHA primarily intended to reduce?",
+    "choices": [
+      "Automated abuse by distinguishing likely human interaction from scripted access",
+      "Malware infections on endpoints",
+      "Weak disk encryption",
+      "Unpatched operating systems"
+    ],
+    "answer": 0,
+    "why": "CAPTCHAs are challenge mechanisms intended to make automated interaction more difficult while allowing legitimate human users to proceed.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-071",
+    "chapter": 17,
+    "chapterName": "Security Monitoring & Alerting",
+    "q": "What is the primary function of anti-malware software?",
+    "choices": [
+      "Detect, prevent, quarantine, or remove malicious software",
+      "Increase internet speed",
+      "Manage email accounts",
+      "Track employee productivity"
+    ],
+    "answer": 0,
+    "why": "Anti-malware tools identify malicious code or behavior and can block, quarantine, or remove detected threats.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-072",
+    "chapter": 10,
+    "chapterName": "Security Architecture Models",
+    "q": "Which cloud-security concern is most closely associated with multi-tenancy?",
+    "choices": [
+      "Failures in logical isolation between customers sharing underlying infrastructure",
+      "Guaranteed lower operating costs",
+      "Automatic compliance with every regulation",
+      "Unlimited scalability without configuration risk"
+    ],
+    "answer": 0,
+    "why": "Multi-tenant services rely on strong logical isolation; failures in that isolation can expose one tenant’s data or resources to another.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-073",
+    "chapter": 4,
+    "chapterName": "Cryptography & PKI",
+    "q": "What is a certificate authority (CA) responsible for in PKI?",
+    "choices": [
+      "Issuing and signing digital certificates after appropriate validation",
+      "Monitoring all network traffic",
+      "Providing endpoint antivirus",
+      "Encrypting every email message"
+    ],
+    "answer": 0,
+    "why": "A CA validates certificate requests according to policy and digitally signs certificates so relying parties can establish trust.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-074",
+    "chapter": 2,
+    "chapterName": "Fundamental Security Concepts",
+    "q": "What does non-repudiation provide?",
+    "choices": [
+      "Evidence that helps prevent a party from credibly denying an action such as signing or sending data",
+      "A guarantee that passwords never expire",
+      "Permission for users to delete audit logs",
+      "Automatic encryption of every file"
+    ],
+    "answer": 0,
+    "why": "Non-repudiation uses evidence such as digital signatures and audit records to support proof that an action or communication occurred.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-075",
+    "chapter": 11,
+    "chapterName": "Secure Enterprise Infrastructure",
+    "q": "What is a VLAN used for in network security and administration?",
+    "choices": [
+      "Logically segment a switched network into separate broadcast domains",
+      "Scan endpoints for malware",
+      "Provide a high-speed internet circuit",
+      "Replace firewall rules"
+    ],
+    "answer": 0,
+    "why": "A VLAN creates logical Layer 2 segmentation, which can separate systems and support security zoning when combined with proper inter-VLAN controls.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-076",
+    "chapter": 4,
+    "chapterName": "Cryptography & PKI",
+    "q": "Which statement correctly describes a public key in an asymmetric key pair?",
+    "choices": [
+      "It may be shared openly and can be used for operations such as encrypting data to the private-key holder or verifying signatures",
+      "It must remain secret because it decrypts all ciphertext",
+      "It is the same shared secret used by both parties",
+      "It exists only to increase transmission speed"
+    ],
+    "answer": 0,
+    "why": "A public key is intended to be distributed; the corresponding private key remains secret. The public key can encrypt to the holder or verify signatures depending on the algorithm and use case.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-077",
+    "chapter": 6,
+    "chapterName": "Threat Vectors & Attack Surfaces",
+    "q": "What is social engineering?",
+    "choices": [
+      "Manipulating people or human processes to obtain information, access, or actions that benefit an attacker",
+      "Designing secure social networks",
+      "Building event infrastructure",
+      "Writing public-service software"
+    ],
+    "answer": 0,
+    "why": "Social engineering targets human trust, urgency, authority, curiosity, or other behaviors rather than relying only on technical exploitation.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-078",
+    "chapter": 17,
+    "chapterName": "Security Monitoring & Alerting",
+    "q": "An IDS sensor identifies traffic matching a known attack signature. What should normally happen next in a passive IDS deployment?",
+    "choices": [
+      "The sensor generates an alert for investigation while traffic continues unless another control blocks it",
+      "The IDS always drops the packet itself",
+      "The IDS automatically encrypts the traffic",
+      "The IDS disables the source computer permanently"
+    ],
+    "answer": 0,
+    "why": "A passive IDS observes and alerts rather than sitting inline to block traffic; preventive action usually comes from an IPS, firewall, or response workflow.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-079",
+    "chapter": 13,
+    "chapterName": "Resilience & Recovery",
+    "q": "What is the primary goal of business continuity planning (BCP)?",
+    "choices": [
+      "Maintain or restore critical business functions during and after a disruption",
+      "Guarantee a fixed profit margin",
+      "Track employee performance",
+      "Replace disaster recovery with daily task lists"
+    ],
+    "answer": 0,
+    "why": "BCP focuses on sustaining essential business operations through disruptions, while disaster recovery is more specifically focused on restoring technology and services.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-080",
+    "chapter": 4,
+    "chapterName": "Cryptography & PKI",
+    "q": "Why are hash functions important to blockchain-style ledgers?",
+    "choices": [
+      "They create fixed-length digests that help link records and make unauthorized changes evident",
+      "They provide unlimited encryption bandwidth",
+      "They eliminate the need for digital signatures in every design",
+      "They convert public keys into passwords"
+    ],
+    "answer": 0,
+    "why": "Cryptographic hashes can link blocks and make modifications detectable because changing recorded data changes the resulting digest.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-081",
+    "chapter": 14,
+    "chapterName": "Securing Computing Resources",
+    "q": "Why is sandboxing useful when evaluating untrusted code?",
+    "choices": [
+      "It isolates execution so potentially malicious behavior has restricted access to the host and other resources",
+      "It guarantees code contains no vulnerabilities",
+      "It permanently encrypts every file the code touches",
+      "It increases CPU clock speed"
+    ],
+    "answer": 0,
+    "why": "A sandbox limits what untrusted code can access, reducing the potential impact while its behavior is evaluated.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-082",
+    "chapter": 19,
+    "chapterName": "Identity & Access Management",
+    "q": "Which example is true two-factor authentication?",
+    "choices": [
+      "A password plus a hardware security key",
+      "Two different passwords",
+      "A password plus a PIN",
+      "Two knowledge-based security questions"
+    ],
+    "answer": 0,
+    "why": "A password is something you know and a hardware security key is something you have, so the combination uses two different factor categories.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-083",
+    "chapter": 8,
+    "chapterName": "Malicious Activity Indicators",
+    "q": "Which scenario is the best example of an on-path (man-in-the-middle) attack?",
+    "choices": [
+      "An attacker secretly intercepts communications between two parties and may relay or modify the traffic",
+      "An attacker floods a server with traffic from a botnet",
+      "A user receives a deceptive password-reset email",
+      "Malware encrypts files on a workstation"
+    ],
+    "answer": 0,
+    "why": "An on-path attacker positions between communicating parties to observe, relay, or modify traffic without either endpoint realizing the adversary is in the path.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "uploaded-084",
+    "chapter": 17,
+    "chapterName": "Security Monitoring & Alerting",
+    "q": "Why does a SIEM correlate events from multiple log sources?",
+    "choices": [
+      "To connect related activity across systems and identify patterns that may not be suspicious in a single log source",
+      "To replace all endpoint agents",
+      "To increase storage speed",
+      "To issue digital certificates"
+    ],
+    "answer": 0,
+    "why": "Correlation combines related events from different systems, helping analysts recognize attack patterns and prioritize alerts in context.",
+    "origin": "user-uploaded-practice-concept"
+  },
+  {
+    "id": "objective-001",
+    "chapter": 1,
+    "chapterName": "Security Controls",
+    "q": "A security manager requires quarterly access reviews and signs off on exceptions. What control category is this primarily?",
+    "choices": [
+      "Technical",
+      "Managerial",
+      "Operational",
+      "Physical"
+    ],
+    "answer": 1,
+    "why": "Management oversight, risk decisions, and formal reviews are managerial controls.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-002",
+    "chapter": 1,
+    "chapterName": "Security Controls",
+    "q": "Door locks prevent unauthorized entry to a server room. Which control function best describes the locks?",
+    "choices": [
+      "Detective",
+      "Preventive",
+      "Corrective",
+      "Compensating"
+    ],
+    "answer": 1,
+    "why": "The locks are intended to stop unauthorized physical access before it occurs, making them preventive.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-003",
+    "chapter": 1,
+    "chapterName": "Security Controls",
+    "q": "A security camera records activity for later review but does not stop entry. Which control function is most directly represented?",
+    "choices": [
+      "Detective",
+      "Directive",
+      "Corrective",
+      "Preventive"
+    ],
+    "answer": 0,
+    "why": "A camera used to observe or record events is primarily detective because it helps identify activity.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-004",
+    "chapter": 1,
+    "chapterName": "Security Controls",
+    "q": "A legacy application cannot support MFA, so the organization restricts access through a hardened jump server with MFA. What type of control is the jump-server requirement?",
+    "choices": [
+      "Directive",
+      "Compensating",
+      "Deterrent",
+      "Corrective"
+    ],
+    "answer": 1,
+    "why": "The additional control compensates for a missing preferred safeguard on the legacy application.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-005",
+    "chapter": 1,
+    "chapterName": "Security Controls",
+    "q": "A banner informing users that activity is monitored is intended mainly to discourage misuse. Which control function is this?",
+    "choices": [
+      "Deterrent",
+      "Corrective",
+      "Detective",
+      "Compensating"
+    ],
+    "answer": 0,
+    "why": "A warning banner is intended to discourage prohibited behavior, so its primary function is deterrent.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-006",
+    "chapter": 2,
+    "chapterName": "Fundamental Security Concepts",
+    "q": "A payroll file is altered without authorization. Which CIA property has been violated most directly?",
+    "choices": [
+      "Confidentiality",
+      "Integrity",
+      "Availability",
+      "Non-repudiation"
+    ],
+    "answer": 1,
+    "why": "Unauthorized modification is an integrity failure because the data is no longer trustworthy or accurate.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-007",
+    "chapter": 2,
+    "chapterName": "Fundamental Security Concepts",
+    "q": "A service is unreachable because its only database server failed. Which CIA property is most directly affected?",
+    "choices": [
+      "Availability",
+      "Confidentiality",
+      "Integrity",
+      "Authentication"
+    ],
+    "answer": 0,
+    "why": "The inability to access a required service is an availability problem.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-008",
+    "chapter": 2,
+    "chapterName": "Fundamental Security Concepts",
+    "q": "In AAA, which function records who accessed a system, when, and what actions were performed?",
+    "choices": [
+      "Authentication",
+      "Authorization",
+      "Accounting",
+      "Attestation"
+    ],
+    "answer": 2,
+    "why": "Accounting records activity and usage for auditing, monitoring, and accountability.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-009",
+    "chapter": 2,
+    "chapterName": "Fundamental Security Concepts",
+    "q": "In a Zero Trust architecture, which component evaluates policy and determines whether access should be granted?",
+    "choices": [
+      "Policy engine",
+      "Policy enforcement point",
+      "Subject",
+      "Honeynet"
+    ],
+    "answer": 0,
+    "why": "The policy engine evaluates policy and context to make access decisions; enforcement occurs at the policy enforcement point.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-010",
+    "chapter": 2,
+    "chapterName": "Fundamental Security Concepts",
+    "q": "A fake administrator credential is planted so any use of it generates a high-confidence alert. What is this decoy called?",
+    "choices": [
+      "Honeytoken",
+      "Honeynet",
+      "Bollard",
+      "Gap analysis"
+    ],
+    "answer": 0,
+    "why": "A honeytoken is fake digital data or a credential designed to reveal unauthorized interaction.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-011",
+    "chapter": 3,
+    "chapterName": "Change Management & Security Operations",
+    "q": "A firewall-rule change unexpectedly blocks a production application. Which pre-change artifact should describe how to restore the prior configuration?",
+    "choices": [
+      "Impact analysis",
+      "Backout plan",
+      "Stakeholder list",
+      "Maintenance window"
+    ],
+    "answer": 1,
+    "why": "A backout plan defines how to return to a known-good state if the change fails.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-012",
+    "chapter": 3,
+    "chapterName": "Change Management & Security Operations",
+    "q": "Why should a security change identify stakeholders before implementation?",
+    "choices": [
+      "To ensure affected owners and teams can evaluate impact and coordinate the change",
+      "To bypass approvals",
+      "To avoid documenting dependencies",
+      "To eliminate the need for testing"
+    ],
+    "answer": 0,
+    "why": "Stakeholders help assess business and technical impact and coordinate implementation and recovery.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-013",
+    "chapter": 3,
+    "chapterName": "Change Management & Security Operations",
+    "q": "A company tests a patch in a staging environment before production deployment. What change-management concern is being addressed?",
+    "choices": [
+      "Validation of expected behavior and unintended impact",
+      "Data sovereignty",
+      "Key escrow",
+      "Risk transference"
+    ],
+    "answer": 0,
+    "why": "Pre-production testing helps validate the change and identify side effects before production impact occurs.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-014",
+    "chapter": 3,
+    "chapterName": "Change Management & Security Operations",
+    "q": "Why is version control valuable for security configuration changes?",
+    "choices": [
+      "It provides traceability and allows comparison or restoration of prior versions",
+      "It automatically approves changes",
+      "It replaces backups",
+      "It prevents all human error"
+    ],
+    "answer": 0,
+    "why": "Version control records who changed what and when and allows teams to compare or restore prior configuration versions.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-015",
+    "chapter": 3,
+    "chapterName": "Change Management & Security Operations",
+    "q": "A change request lists a service restart and a dependency on an old authentication server. What portion of change planning is this documenting?",
+    "choices": [
+      "Technical implications",
+      "Physical security",
+      "Data classification",
+      "Vendor selection"
+    ],
+    "answer": 0,
+    "why": "Restarts, legacy dependencies, and related system effects are technical implications of a change.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-016",
+    "chapter": 4,
+    "chapterName": "Cryptography & PKI",
+    "q": "A database stores password hashes. What should be added to each password before hashing to make precomputed rainbow tables less effective?",
+    "choices": [
+      "Salt",
+      "Initialization vector only",
+      "Public certificate",
+      "Token vault"
+    ],
+    "answer": 0,
+    "why": "A unique salt changes the hash input so identical passwords do not yield identical stored hashes and precomputed tables are less useful.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-017",
+    "chapter": 4,
+    "chapterName": "Cryptography & PKI",
+    "q": "Which technology is specifically designed to protect and perform cryptographic key operations in dedicated tamper-resistant hardware?",
+    "choices": [
+      "HSM",
+      "WAF",
+      "SIEM",
+      "NAC"
+    ],
+    "answer": 0,
+    "why": "A hardware security module (HSM) protects cryptographic keys and performs cryptographic operations in dedicated hardware.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-018",
+    "chapter": 4,
+    "chapterName": "Cryptography & PKI",
+    "q": "A browser needs to know whether a server certificate has been revoked without downloading a full revocation list. Which protocol is designed for this?",
+    "choices": [
+      "OCSP",
+      "SNMP",
+      "SAML",
+      "RADIUS"
+    ],
+    "answer": 0,
+    "why": "OCSP allows a client to query certificate revocation status online.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-019",
+    "chapter": 4,
+    "chapterName": "Cryptography & PKI",
+    "q": "Which technique hides a secret message inside another innocuous-looking file or medium?",
+    "choices": [
+      "Steganography",
+      "Tokenization",
+      "Salting",
+      "Key stretching"
+    ],
+    "answer": 0,
+    "why": "Steganography conceals the existence of information by embedding it within another carrier such as an image or audio file.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-020",
+    "chapter": 4,
+    "chapterName": "Cryptography & PKI",
+    "q": "Why is key stretching used for password-derived keys?",
+    "choices": [
+      "Increase the computational cost of each password guess",
+      "Reduce the key to a shorter length",
+      "Allow plaintext password recovery",
+      "Replace salts with public keys"
+    ],
+    "answer": 0,
+    "why": "Key stretching intentionally makes password derivation computationally expensive, slowing offline guessing attacks.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-021",
+    "chapter": 5,
+    "chapterName": "Threat Actors",
+    "q": "An attacker steals proprietary aerospace research on behalf of a foreign government. Which threat actor and motivation fit best?",
+    "choices": [
+      "Nation-state; espionage",
+      "Hacktivist; financial gain",
+      "Unskilled attacker; revenge",
+      "Shadow IT; service disruption"
+    ],
+    "answer": 0,
+    "why": "A well-resourced government-backed actor stealing strategic research is most consistent with nation-state espionage.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-022",
+    "chapter": 5,
+    "chapterName": "Threat Actors",
+    "q": "An employee intentionally deletes customer records after being told they will be terminated. Which motivation best fits?",
+    "choices": [
+      "Revenge",
+      "Espionage",
+      "War",
+      "Ethical research"
+    ],
+    "answer": 0,
+    "why": "An insider deliberately causing harm after a perceived grievance is commonly motivated by revenge.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-023",
+    "chapter": 5,
+    "chapterName": "Threat Actors",
+    "q": "A criminal group deploys ransomware and demands payment for decryption. What is the most likely primary motivation?",
+    "choices": [
+      "Financial gain",
+      "Ethical disclosure",
+      "Availability testing",
+      "Policy compliance"
+    ],
+    "answer": 0,
+    "why": "Ransomware extortion by organized crime is primarily motivated by financial gain.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-024",
+    "chapter": 5,
+    "chapterName": "Threat Actors",
+    "q": "A developer deploys an unapproved cloud database to finish a project faster. Which threat-actor category best describes the resulting governance risk?",
+    "choices": [
+      "Shadow IT",
+      "Nation-state",
+      "Hacktivist",
+      "Organized crime"
+    ],
+    "answer": 0,
+    "why": "Shadow IT is technology adopted or operated outside approved IT and security governance processes.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-025",
+    "chapter": 5,
+    "chapterName": "Threat Actors",
+    "q": "A politically motivated group defaces a company website to publicize a cause. Which actor is most likely?",
+    "choices": [
+      "Hacktivist",
+      "Insider for financial gain",
+      "Unskilled user",
+      "Vendor auditor"
+    ],
+    "answer": 0,
+    "why": "Hacktivists commonly conduct disruptive or visible attacks to advance ideological or political goals.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-026",
+    "chapter": 6,
+    "chapterName": "Threat Vectors & Attack Surfaces",
+    "q": "A user receives a text message pretending to be a bank and asking them to verify credentials. What social-engineering vector is this?",
+    "choices": [
+      "Smishing",
+      "Vishing",
+      "Pretexting by voice",
+      "Watering hole"
+    ],
+    "answer": 0,
+    "why": "Smishing is phishing delivered through SMS or similar text messaging.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-027",
+    "chapter": 6,
+    "chapterName": "Threat Vectors & Attack Surfaces",
+    "q": "An attacker calls the help desk pretending to be an executive and requests an urgent password reset. Which vector is most directly involved?",
+    "choices": [
+      "Vishing/voice-based social engineering",
+      "Image-based malware",
+      "Removable media",
+      "Typosquatting"
+    ],
+    "answer": 0,
+    "why": "A deceptive voice call is a vishing or voice-based social-engineering attempt.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-028",
+    "chapter": 6,
+    "chapterName": "Threat Vectors & Attack Surfaces",
+    "q": "Employees regularly visit a niche industry forum. An attacker compromises that forum to infect visitors from the target company. What is this?",
+    "choices": [
+      "Watering-hole attack",
+      "Password spraying",
+      "Tailgating",
+      "Credential replay"
+    ],
+    "answer": 0,
+    "why": "A watering-hole attack compromises a site frequently visited by the intended targets.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-029",
+    "chapter": 6,
+    "chapterName": "Threat Vectors & Attack Surfaces",
+    "q": "A malicious domain is registered as paypa1.example to resemble a trusted brand. What technique is being used?",
+    "choices": [
+      "Typosquatting",
+      "DNSSEC",
+      "Tokenization",
+      "Key stretching"
+    ],
+    "answer": 0,
+    "why": "Typosquatting registers look-alike names that exploit likely typing or visual confusion.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-030",
+    "chapter": 6,
+    "chapterName": "Threat Vectors & Attack Surfaces",
+    "q": "A network appliance still uses the manufacturer’s default administrator password. What attack-surface issue does this represent?",
+    "choices": [
+      "Default credentials",
+      "Supply-chain attestation",
+      "Data sovereignty",
+      "Resource reuse"
+    ],
+    "answer": 0,
+    "why": "Unchanged default credentials create a well-known and easily exploitable access path.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-031",
+    "chapter": 7,
+    "chapterName": "Vulnerabilities",
+    "q": "A web application concatenates unsanitized user input directly into database queries. Which vulnerability is most likely?",
+    "choices": [
+      "SQL injection",
+      "VM escape",
+      "Race condition",
+      "Firmware rollback"
+    ],
+    "answer": 0,
+    "why": "Unsanitized input in database queries can allow attackers to alter SQL statements, producing SQL injection.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-032",
+    "chapter": 7,
+    "chapterName": "Vulnerabilities",
+    "q": "Two processes check a file permission and then use the file later, allowing an attacker to change the file between those operations. What vulnerability class is this?",
+    "choices": [
+      "TOC/TOU race condition",
+      "Buffer overflow",
+      "Cross-site scripting",
+      "Side loading"
+    ],
+    "answer": 0,
+    "why": "A time-of-check/time-of-use race occurs when state changes between validation and use.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-033",
+    "chapter": 7,
+    "chapterName": "Vulnerabilities",
+    "q": "A guest virtual machine gains unauthorized access to the hypervisor or another VM. What is this vulnerability called?",
+    "choices": [
+      "VM escape",
+      "Resource pooling",
+      "Containerization",
+      "Sandboxing"
+    ],
+    "answer": 0,
+    "why": "VM escape occurs when code breaks out of guest isolation and reaches the hypervisor or other protected resources.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-034",
+    "chapter": 7,
+    "chapterName": "Vulnerabilities",
+    "q": "A mobile user installs an application package from an unofficial source outside the approved store. What risky practice is this?",
+    "choices": [
+      "Side loading",
+      "Geofencing",
+      "Tokenization",
+      "Attestation"
+    ],
+    "answer": 0,
+    "why": "Side loading installs applications from sources outside the approved distribution channel, increasing malware and integrity risk.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-035",
+    "chapter": 7,
+    "chapterName": "Vulnerabilities",
+    "q": "A manufacturer no longer supports a network device and will not release future security fixes. Which condition best describes it?",
+    "choices": [
+      "End-of-life hardware",
+      "False positive",
+      "Zero trust",
+      "Hot site"
+    ],
+    "answer": 0,
+    "why": "End-of-life equipment may remain vulnerable because vendor security updates and support are no longer available.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-036",
+    "chapter": 8,
+    "chapterName": "Malicious Activity Indicators",
+    "q": "Hundreds of employee accounts lock out within minutes after one password is tried against many usernames. Which attack is most likely?",
+    "choices": [
+      "Password spraying",
+      "Credential replay",
+      "Directory traversal",
+      "Birthday attack"
+    ],
+    "answer": 0,
+    "why": "Password spraying tests a small number of common passwords across many accounts and can create broad lockout patterns.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-037",
+    "chapter": 8,
+    "chapterName": "Malicious Activity Indicators",
+    "q": "A user logs in from Seattle and then five minutes later from a country thousands of miles away. Which indicator should alert analysts?",
+    "choices": [
+      "Impossible travel",
+      "Missing logs",
+      "Resource consumption",
+      "Blocked content"
+    ],
+    "answer": 0,
+    "why": "Two geographically distant successful logins within an impossible travel time are a common identity anomaly.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-038",
+    "chapter": 8,
+    "chapterName": "Malicious Activity Indicators",
+    "q": "A malicious program encrypts user files and displays a payment demand. Which malware type is this?",
+    "choices": [
+      "Ransomware",
+      "Rootkit",
+      "Bloatware",
+      "Logic bomb"
+    ],
+    "answer": 0,
+    "why": "Ransomware denies access to data or systems and demands payment for restoration or to prevent disclosure.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-039",
+    "chapter": 8,
+    "chapterName": "Malicious Activity Indicators",
+    "q": "A malicious payload runs only when the system date reaches a specific value. What type of malware behavior is this?",
+    "choices": [
+      "Logic bomb",
+      "Worm",
+      "Spyware",
+      "On-path attack"
+    ],
+    "answer": 0,
+    "why": "A logic bomb executes when a predefined condition such as a date, event, or state is met.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-040",
+    "chapter": 8,
+    "chapterName": "Malicious Activity Indicators",
+    "q": "An attacker sends the same captured authentication exchange later to gain access without knowing the password. What attack is this?",
+    "choices": [
+      "Replay attack",
+      "SQL injection",
+      "Directory traversal",
+      "DDoS amplification"
+    ],
+    "answer": 0,
+    "why": "Replay attacks reuse previously captured valid authentication or transaction data to impersonate a legitimate party.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-041",
+    "chapter": 9,
+    "chapterName": "Mitigation Techniques",
+    "q": "A vulnerable server cannot be patched immediately. Which action best reduces exposure while the exception remains open?",
+    "choices": [
+      "Place it in a restricted segment with tightly limited access",
+      "Expose it directly to the internet",
+      "Disable logging",
+      "Add more local administrator accounts"
+    ],
+    "answer": 0,
+    "why": "Segmentation and strict access controls can serve as compensating safeguards while patching is delayed.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-042",
+    "chapter": 9,
+    "chapterName": "Mitigation Techniques",
+    "q": "Which hardening action most directly reduces attack surface on a server?",
+    "choices": [
+      "Disable unused services and close unnecessary ports",
+      "Increase screen brightness",
+      "Add more user accounts",
+      "Enable every optional protocol"
+    ],
+    "answer": 0,
+    "why": "Removing unnecessary software, services, ports, and protocols reduces the number of exploitable interfaces.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-043",
+    "chapter": 9,
+    "chapterName": "Mitigation Techniques",
+    "q": "An organization wants only approved executables to run on kiosks. Which mitigation is most appropriate?",
+    "choices": [
+      "Application allowlisting",
+      "Password spraying",
+      "Port mirroring",
+      "Data masking"
+    ],
+    "answer": 0,
+    "why": "Application allowlisting restricts execution to software that matches approved rules.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-044",
+    "chapter": 9,
+    "chapterName": "Mitigation Techniques",
+    "q": "A service account currently has domain administrator privileges even though it only reads one database. What mitigation should be applied?",
+    "choices": [
+      "Least privilege",
+      "Fail-open networking",
+      "Credential sharing",
+      "Full-disk imaging"
+    ],
+    "answer": 0,
+    "why": "Removing unnecessary privilege reduces the consequences of account misuse or compromise.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-045",
+    "chapter": 9,
+    "chapterName": "Mitigation Techniques",
+    "q": "Before disposing of an SSD that held confidential data, what should the organization do?",
+    "choices": [
+      "Use an approved sanitization or destruction method appropriate for the media",
+      "Delete the desktop shortcut",
+      "Move the files to another folder",
+      "Rename the drive"
+    ],
+    "answer": 0,
+    "why": "Secure decommissioning requires sanitization or destruction that makes protected data infeasible to recover.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-046",
+    "chapter": 10,
+    "chapterName": "Security Architecture Models",
+    "q": "In a cloud shared-responsibility model, why must customers understand the responsibility matrix?",
+    "choices": [
+      "Security duties differ by service model and provider, so ownership of controls must be explicit",
+      "The provider automatically owns every security task",
+      "Customers always manage physical data-center guards",
+      "Responsibility matrices are used only for billing"
+    ],
+    "answer": 0,
+    "why": "Cloud security responsibilities vary across IaaS, PaaS, and SaaS, making explicit ownership important.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-047",
+    "chapter": 10,
+    "chapterName": "Security Architecture Models",
+    "q": "What is a major security advantage of infrastructure as code (IaC)?",
+    "choices": [
+      "Repeatable, version-controlled infrastructure configurations that can be reviewed and tested",
+      "It removes the need for access control",
+      "It prevents all cloud misconfiguration automatically",
+      "It requires manual server builds"
+    ],
+    "answer": 0,
+    "why": "IaC enables standardized, version-controlled, reviewable deployments that reduce configuration drift when governed properly.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-048",
+    "chapter": 10,
+    "chapterName": "Security Architecture Models",
+    "q": "Which architecture most strongly isolates a highly sensitive system from ordinary network connectivity?",
+    "choices": [
+      "Air-gapped environment",
+      "Flat VLAN",
+      "Public subnet",
+      "Open wireless network"
+    ],
+    "answer": 0,
+    "why": "An air gap uses physical isolation from untrusted networks to reduce remote attack paths.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-049",
+    "chapter": 10,
+    "chapterName": "Security Architecture Models",
+    "q": "A company breaks a monolithic application into independently deployable small services communicating through APIs. Which model is this?",
+    "choices": [
+      "Microservices",
+      "Mainframe centralization",
+      "Cold site",
+      "Tokenization"
+    ],
+    "answer": 0,
+    "why": "Microservices decompose application functionality into smaller independently deployable services.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-050",
+    "chapter": 10,
+    "chapterName": "Security Architecture Models",
+    "q": "Why can embedded or ICS devices present unusual patching risk?",
+    "choices": [
+      "Availability and vendor constraints may make updates difficult or impossible",
+      "They never contain software",
+      "They cannot be network connected",
+      "They automatically apply every patch"
+    ],
+    "answer": 0,
+    "why": "Operational requirements, certification, vendor limitations, and long lifecycles can make patching embedded and industrial systems difficult.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-051",
+    "chapter": 11,
+    "chapterName": "Secure Enterprise Infrastructure",
+    "q": "A security appliance must continue blocking untrusted traffic if its inspection service crashes. Which failure mode is preferred?",
+    "choices": [
+      "Fail-closed",
+      "Fail-open",
+      "Passive tap",
+      "Split tunnel"
+    ],
+    "answer": 0,
+    "why": "Fail-closed behavior denies traffic when the control fails, preserving security at the cost of availability.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-052",
+    "chapter": 11,
+    "chapterName": "Secure Enterprise Infrastructure",
+    "q": "A network team wants to observe traffic without placing an IDS inline. Which deployment is most appropriate?",
+    "choices": [
+      "Connect a passive sensor to a network tap or mirrored port",
+      "Place an IPS inline",
+      "Disable monitoring",
+      "Use a jump server as a packet filter"
+    ],
+    "answer": 0,
+    "why": "A tap or mirrored port allows passive monitoring without making the sensor part of the forwarding path.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-053",
+    "chapter": 11,
+    "chapterName": "Secure Enterprise Infrastructure",
+    "q": "Which control provides port-based network access authentication before a device gains normal LAN access?",
+    "choices": [
+      "802.1X",
+      "NAT",
+      "HTTP",
+      "FTP"
+    ],
+    "answer": 0,
+    "why": "802.1X provides port-based access control and commonly uses EAP with a RADIUS backend.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-054",
+    "chapter": 11,
+    "chapterName": "Secure Enterprise Infrastructure",
+    "q": "Administrators must reach sensitive servers only through a hardened intermediary with strong authentication and logging. What device best fits?",
+    "choices": [
+      "Jump server",
+      "Load balancer",
+      "WAF",
+      "Wireless controller"
+    ],
+    "answer": 0,
+    "why": "A jump server centralizes and controls administrative access to protected systems.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-055",
+    "chapter": 11,
+    "chapterName": "Secure Enterprise Infrastructure",
+    "q": "Which technology combines networking and security services in a cloud-delivered architecture for distributed users and sites?",
+    "choices": [
+      "SASE",
+      "RAID",
+      "SCAP",
+      "OCSP"
+    ],
+    "answer": 0,
+    "why": "Secure access service edge (SASE) combines WAN and cloud-delivered security capabilities for distributed access.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-056",
+    "chapter": 12,
+    "chapterName": "Protecting Data",
+    "q": "A database value is actively being processed in application memory. What data state is this?",
+    "choices": [
+      "Data in use",
+      "Data at rest",
+      "Data in transit",
+      "Archived data"
+    ],
+    "answer": 0,
+    "why": "Data actively processed by a CPU or application is data in use.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-057",
+    "chapter": 12,
+    "chapterName": "Protecting Data",
+    "q": "A regulation requires customer records to remain stored within a specific country. What concept is most directly involved?",
+    "choices": [
+      "Data sovereignty",
+      "Non-repudiation",
+      "Key stretching",
+      "Load balancing"
+    ],
+    "answer": 0,
+    "why": "Data sovereignty concerns legal and regulatory requirements based on the jurisdiction where data is stored or processed.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-058",
+    "chapter": 12,
+    "chapterName": "Protecting Data",
+    "q": "A support representative needs to see only the last four digits of a customer account number. Which protection method best fits?",
+    "choices": [
+      "Data masking",
+      "Full-disk encryption only",
+      "Hashing the entire database",
+      "Network segmentation only"
+    ],
+    "answer": 0,
+    "why": "Data masking obscures portions of sensitive values while preserving enough information for an authorized business purpose.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-059",
+    "chapter": 12,
+    "chapterName": "Protecting Data",
+    "q": "Which method is most appropriate when an application must later recover the original sensitive value but should not store that value directly?",
+    "choices": [
+      "Tokenization with a protected token vault or mapping service",
+      "One-way hashing",
+      "Data deletion",
+      "Checksum only"
+    ],
+    "answer": 0,
+    "why": "Tokenization replaces the sensitive value with a surrogate while maintaining a secure mechanism to retrieve or map the original when authorized.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-060",
+    "chapter": 12,
+    "chapterName": "Protecting Data",
+    "q": "A legal team labels merger documents so only a small authorized group can access them. Which type of control most directly enforces that classification?",
+    "choices": [
+      "Permission restrictions",
+      "Load balancing",
+      "Port mirroring",
+      "CAPTCHA"
+    ],
+    "answer": 0,
+    "why": "Access permissions enforce who can access data classified as sensitive or restricted.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-061",
+    "chapter": 13,
+    "chapterName": "Resilience & Recovery",
+    "q": "Which recovery site can normally resume operations fastest because systems and data are already provisioned and current?",
+    "choices": [
+      "Hot site",
+      "Warm site",
+      "Cold site",
+      "Empty office space"
+    ],
+    "answer": 0,
+    "why": "A hot site is the most ready-to-operate recovery facility and therefore typically has the shortest activation time.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-062",
+    "chapter": 13,
+    "chapterName": "Resilience & Recovery",
+    "q": "Two application servers actively serve users behind a device that distributes requests between them. Which resilience technology is being used?",
+    "choices": [
+      "Load balancing",
+      "Key escrow",
+      "Tokenization",
+      "Data masking"
+    ],
+    "answer": 0,
+    "why": "Load balancing distributes traffic across multiple resources and can improve availability and scalability.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-063",
+    "chapter": 13,
+    "chapterName": "Resilience & Recovery",
+    "q": "What is the main difference between a UPS and a generator?",
+    "choices": [
+      "A UPS provides near-immediate short-term power; a generator is intended for longer-duration backup once started",
+      "A generator is only for data encryption",
+      "A UPS cannot protect electronics",
+      "They are identical technologies"
+    ],
+    "answer": 0,
+    "why": "UPS systems bridge short power interruptions immediately, while generators can provide longer backup power after startup.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-064",
+    "chapter": 13,
+    "chapterName": "Resilience & Recovery",
+    "q": "A team discusses a ransomware scenario and walks through responsibilities without touching production systems. What type of resilience test is this?",
+    "choices": [
+      "Tabletop exercise",
+      "Failover test",
+      "Parallel processing",
+      "Live destructive test"
+    ],
+    "answer": 0,
+    "why": "A tabletop is a discussion-based exercise used to validate roles, decisions, and plans without disrupting production.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-065",
+    "chapter": 13,
+    "chapterName": "Resilience & Recovery",
+    "q": "Why should backups be geographically dispersed from primary systems?",
+    "choices": [
+      "A regional disaster is less likely to destroy both primary data and all recovery copies",
+      "It makes encryption unnecessary",
+      "It guarantees zero recovery time",
+      "It eliminates the need to test restores"
+    ],
+    "answer": 0,
+    "why": "Geographic separation reduces correlated risk from events such as fires, floods, or regional outages.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-066",
+    "chapter": 14,
+    "chapterName": "Securing Computing Resources",
+    "q": "A company wants corporate ownership of phones while allowing employees limited personal use. Which deployment model fits?",
+    "choices": [
+      "COPE",
+      "BYOD",
+      "CYOD",
+      "Guest-only"
+    ],
+    "answer": 0,
+    "why": "Corporate-owned, personally enabled (COPE) devices belong to the organization but allow approved personal use.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-067",
+    "chapter": 14,
+    "chapterName": "Securing Computing Resources",
+    "q": "What is the purpose of a wireless site survey before installing access points?",
+    "choices": [
+      "Measure RF conditions and coverage so placement and settings can be planned",
+      "Generate TLS certificates",
+      "Create user accounts",
+      "Perform data classification"
+    ],
+    "answer": 0,
+    "why": "A site survey evaluates signal conditions, interference, coverage, and placement needs for a wireless deployment.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-068",
+    "chapter": 14,
+    "chapterName": "Securing Computing Resources",
+    "q": "Which application-security control rejects input that does not match expected type, length, or format before processing?",
+    "choices": [
+      "Input validation",
+      "Load balancing",
+      "Full-disk encryption",
+      "Token vaulting"
+    ],
+    "answer": 0,
+    "why": "Input validation constrains untrusted data before it reaches sensitive application logic or interpreters.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-069",
+    "chapter": 14,
+    "chapterName": "Securing Computing Resources",
+    "q": "What does code signing allow a recipient to verify?",
+    "choices": [
+      "The software publisher and that the signed code has not been modified since signing",
+      "That the software contains no security vulnerabilities",
+      "That the software will run faster",
+      "That every dependency is open source"
+    ],
+    "answer": 0,
+    "why": "A valid code signature provides origin authentication and integrity evidence for the signed software.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-070",
+    "chapter": 14,
+    "chapterName": "Securing Computing Resources",
+    "q": "Why should a secure baseline be maintained after initial deployment?",
+    "choices": [
+      "To detect configuration drift and keep systems aligned with approved hardening settings",
+      "To avoid applying security updates",
+      "To allow each administrator to invent different settings",
+      "To disable monitoring"
+    ],
+    "answer": 0,
+    "why": "Baselines provide a known approved configuration that can be enforced and checked for drift over time.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-071",
+    "chapter": 15,
+    "chapterName": "Asset Management",
+    "q": "Why should every production asset have a documented owner?",
+    "choices": [
+      "An owner is accountable for classification, security decisions, and lifecycle requirements",
+      "Ownership automatically patches the asset",
+      "Owners replace inventory systems",
+      "Only owned devices can use encryption"
+    ],
+    "answer": 0,
+    "why": "Documented ownership establishes accountability for risk, classification, access, maintenance, and disposition decisions.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-072",
+    "chapter": 15,
+    "chapterName": "Asset Management",
+    "q": "What is the primary security benefit of maintaining an accurate asset inventory?",
+    "choices": [
+      "It identifies what must be protected, monitored, patched, and eventually decommissioned",
+      "It guarantees every asset is compliant",
+      "It removes the need for vulnerability scanning",
+      "It replaces procurement controls"
+    ],
+    "answer": 0,
+    "why": "You cannot consistently secure unknown assets; inventory supports patching, monitoring, risk assessment, and lifecycle management.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-073",
+    "chapter": 15,
+    "chapterName": "Asset Management",
+    "q": "An organization discards old magnetic disks containing sensitive data. Which action provides the strongest assurance the data cannot be recovered?",
+    "choices": [
+      "Approved physical destruction",
+      "Deleting the files",
+      "Quick formatting",
+      "Removing the drive letter"
+    ],
+    "answer": 0,
+    "why": "Physical destruction performed under an approved sanitization process can make recovery infeasible when media will not be reused.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-074",
+    "chapter": 15,
+    "chapterName": "Asset Management",
+    "q": "Why is asset classification important during acquisition and assignment?",
+    "choices": [
+      "It determines handling, security, retention, and access requirements based on value and sensitivity",
+      "It sets the purchase price only",
+      "It determines the employee vacation schedule",
+      "It eliminates the need for an owner"
+    ],
+    "answer": 0,
+    "why": "Classification drives required controls throughout the asset lifecycle.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-075",
+    "chapter": 15,
+    "chapterName": "Asset Management",
+    "q": "A server has been retired but must retain records for seven years. What requirement should guide disposal timing?",
+    "choices": [
+      "Data retention policy",
+      "Password complexity standard",
+      "Wireless heat map",
+      "Firewall allow list"
+    ],
+    "answer": 0,
+    "why": "Retention requirements determine how long records must be preserved before secure disposal is permitted.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-076",
+    "chapter": 16,
+    "chapterName": "Vulnerability Management",
+    "q": "A scanner reports a critical vulnerability, but manual validation shows the vulnerable component is not installed. What is the scanner result?",
+    "choices": [
+      "False positive",
+      "False negative",
+      "Confirmed exploit",
+      "Risk acceptance"
+    ],
+    "answer": 0,
+    "why": "A false positive is a reported issue that is not actually present or exploitable as reported.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-077",
+    "chapter": 16,
+    "chapterName": "Vulnerability Management",
+    "q": "What does a CVE identifier provide?",
+    "choices": [
+      "A standardized identifier for a publicly disclosed vulnerability",
+      "A guaranteed severity score",
+      "A vendor warranty",
+      "A proof-of-exploit package"
+    ],
+    "answer": 0,
+    "why": "CVE identifiers provide a common reference for known vulnerabilities; severity is commonly represented separately with CVSS.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-078",
+    "chapter": 16,
+    "chapterName": "Vulnerability Management",
+    "q": "After deploying a patch for a vulnerability, what is the best next step to validate remediation?",
+    "choices": [
+      "Rescan or otherwise verify the affected systems",
+      "Delete the original scan report",
+      "Disable vulnerability management",
+      "Assume deployment success"
+    ],
+    "answer": 0,
+    "why": "Validation confirms the vulnerability is actually remediated rather than relying solely on deployment status.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-079",
+    "chapter": 16,
+    "chapterName": "Vulnerability Management",
+    "q": "Why might an organization use a compensating control for a vulnerability?",
+    "choices": [
+      "The preferred remediation cannot be implemented immediately, so another control reduces risk",
+      "The vulnerability has no business impact",
+      "The organization wants to increase attack surface",
+      "The patch was already validated"
+    ],
+    "answer": 0,
+    "why": "Compensating controls reduce risk when the ideal control or remediation is temporarily infeasible.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-080",
+    "chapter": 16,
+    "chapterName": "Vulnerability Management",
+    "q": "What is a major advantage of a responsible disclosure or bug bounty program?",
+    "choices": [
+      "It provides an authorized process for researchers to report vulnerabilities so they can be remediated",
+      "It guarantees zero vulnerabilities",
+      "It replaces penetration testing and scanning",
+      "It makes CVSS unnecessary"
+    ],
+    "answer": 0,
+    "why": "Responsible disclosure creates a controlled channel for reporting and coordinating fixes for discovered vulnerabilities.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-081",
+    "chapter": 17,
+    "chapterName": "Security Monitoring & Alerting",
+    "q": "A SIEM generates thousands of low-value alerts that analysts routinely ignore. What action is most appropriate?",
+    "choices": [
+      "Tune alert logic and thresholds using validated context",
+      "Disable all logging",
+      "Increase every alert severity to critical",
+      "Delete historical events"
+    ],
+    "answer": 0,
+    "why": "Alert tuning reduces noise and false positives while preserving meaningful detections.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-082",
+    "chapter": 17,
+    "chapterName": "Security Monitoring & Alerting",
+    "q": "Which network telemetry summarizes conversations such as source, destination, ports, bytes, and duration without storing full packet payloads?",
+    "choices": [
+      "NetFlow",
+      "Full packet capture",
+      "File integrity monitoring",
+      "OCSP"
+    ],
+    "answer": 0,
+    "why": "NetFlow-style telemetry summarizes network flows and is useful for behavior and traffic analysis without retaining every packet payload.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-083",
+    "chapter": 17,
+    "chapterName": "Security Monitoring & Alerting",
+    "q": "A network device needs to send an asynchronous notification to a monitoring platform when an interface goes down. Which mechanism fits?",
+    "choices": [
+      "SNMP trap",
+      "SAML assertion",
+      "CSR",
+      "DKIM signature"
+    ],
+    "answer": 0,
+    "why": "SNMP traps are unsolicited notifications sent from managed devices to monitoring systems when defined events occur.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-084",
+    "chapter": 17,
+    "chapterName": "Security Monitoring & Alerting",
+    "q": "Why archive security logs according to policy?",
+    "choices": [
+      "Support historical investigations, compliance, and trend analysis",
+      "Increase processor clock speed",
+      "Replace backups of business data",
+      "Avoid time synchronization"
+    ],
+    "answer": 0,
+    "why": "Archived logs can provide evidence and context for investigations and meet retention or compliance requirements.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-085",
+    "chapter": 17,
+    "chapterName": "Security Monitoring & Alerting",
+    "q": "An endpoint alert is confirmed malicious. Which response most immediately limits its ability to communicate with other systems?",
+    "choices": [
+      "Quarantine or isolate the endpoint",
+      "Increase its network bandwidth",
+      "Disable its local logs",
+      "Add it to an allow list"
+    ],
+    "answer": 0,
+    "why": "Quarantine isolates the endpoint to contain the threat while preserving access needed for investigation or remediation.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-086",
+    "chapter": 18,
+    "chapterName": "Enterprise Security Capabilities",
+    "q": "An organization wants to reject spoofed email claiming to come from its domain and publish a policy for receivers. Which control coordinates SPF and DKIM results?",
+    "choices": [
+      "DMARC",
+      "SNMP",
+      "OCSP",
+      "SAML"
+    ],
+    "answer": 0,
+    "why": "DMARC uses SPF and/or DKIM alignment and publishes a domain policy for handling messages that fail authentication checks.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-087",
+    "chapter": 18,
+    "chapterName": "Enterprise Security Capabilities",
+    "q": "Which email security technology lets a receiving server verify that selected message headers and content were cryptographically signed by the sending domain?",
+    "choices": [
+      "DKIM",
+      "SPF",
+      "DNS filtering",
+      "NAC"
+    ],
+    "answer": 0,
+    "why": "DKIM adds a domain-level digital signature that receivers can validate using a public key published in DNS.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-088",
+    "chapter": 18,
+    "chapterName": "Enterprise Security Capabilities",
+    "q": "A company wants to prevent unmanaged devices from joining the corporate LAN until they meet posture requirements. Which control is most appropriate?",
+    "choices": [
+      "Network access control (NAC)",
+      "WAF",
+      "File integrity monitoring",
+      "Tokenization"
+    ],
+    "answer": 0,
+    "why": "NAC can authenticate devices and users, evaluate posture, and restrict network access based on policy.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-089",
+    "chapter": 18,
+    "chapterName": "Enterprise Security Capabilities",
+    "q": "Which endpoint technology focuses on collecting endpoint telemetry and supporting detection, investigation, and response actions?",
+    "choices": [
+      "EDR",
+      "WAF",
+      "Load balancer",
+      "Certificate authority"
+    ],
+    "answer": 0,
+    "why": "Endpoint detection and response (EDR) collects endpoint activity and provides detection and response capabilities.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-090",
+    "chapter": 18,
+    "chapterName": "Enterprise Security Capabilities",
+    "q": "A company blocks access to newly registered domains with poor reputation through a centralized web-security service. Which capability is being used?",
+    "choices": [
+      "Web filtering using reputation and categorization",
+      "Full-disk encryption",
+      "Key escrow",
+      "Physical access control"
+    ],
+    "answer": 0,
+    "why": "Web filters can use URL categories, reputation, and policy rules to restrict risky destinations.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-091",
+    "chapter": 19,
+    "chapterName": "Identity & Access Management",
+    "q": "An employee leaves the company. What IAM action should occur promptly?",
+    "choices": [
+      "De-provision or disable the user account and associated access",
+      "Increase the account privileges",
+      "Share the credentials with the replacement employee",
+      "Leave the account active for convenience"
+    ],
+    "answer": 0,
+    "why": "Timely de-provisioning prevents former personnel from retaining unauthorized access.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-092",
+    "chapter": 19,
+    "chapterName": "Identity & Access Management",
+    "q": "A company uses an external identity provider to authenticate users to several cloud applications. What concept is this?",
+    "choices": [
+      "Federation",
+      "Data masking",
+      "Network segmentation",
+      "Key stretching"
+    ],
+    "answer": 0,
+    "why": "Federation allows identity and authentication information to be trusted across organizational or service boundaries.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-093",
+    "chapter": 19,
+    "chapterName": "Identity & Access Management",
+    "q": "Which protocol commonly carries authentication and authorization assertions from an identity provider to a web service provider for enterprise SSO?",
+    "choices": [
+      "SAML",
+      "SNMP",
+      "FTP",
+      "OCSP"
+    ],
+    "answer": 0,
+    "why": "SAML exchanges signed assertions between identity providers and service providers and is widely used for enterprise web SSO.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-094",
+    "chapter": 19,
+    "chapterName": "Identity & Access Management",
+    "q": "An administrator receives elevated permissions only for a 30-minute approved maintenance task. Which privileged-access concept is this?",
+    "choices": [
+      "Just-in-time permissions",
+      "Permanent standing privilege",
+      "Credential stuffing",
+      "Discretionary ownership"
+    ],
+    "answer": 0,
+    "why": "Just-in-time privileged access grants elevated rights only when needed and for a limited duration.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-095",
+    "chapter": 19,
+    "chapterName": "Identity & Access Management",
+    "q": "A policy permits access only if the user is in Finance, the device is compliant, and the request originates from the United States. What access model best fits?",
+    "choices": [
+      "Attribute-based access control (ABAC)",
+      "Role-based access control only",
+      "Mandatory access control only",
+      "Discretionary access control only"
+    ],
+    "answer": 0,
+    "why": "ABAC evaluates multiple attributes of the subject, resource, action, and environment to make policy decisions.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-096",
+    "chapter": 20,
+    "chapterName": "Automation & Orchestration",
+    "q": "A phishing alert automatically creates a ticket, enriches the sender domain, and isolates a confirmed-malicious endpoint. What is the primary benefit?",
+    "choices": [
+      "Faster and more consistent response through automation and orchestration",
+      "Guaranteed elimination of false positives",
+      "No need for analyst oversight",
+      "Removal of all integration complexity"
+    ],
+    "answer": 0,
+    "why": "Automated workflows reduce repetitive work and reaction time while enforcing consistent response steps.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-097",
+    "chapter": 20,
+    "chapterName": "Automation & Orchestration",
+    "q": "What is a security guardrail in cloud automation?",
+    "choices": [
+      "An automated policy constraint that prevents or corrects unsafe configurations",
+      "A physical rail around servers",
+      "A password shared by all administrators",
+      "A vulnerability disclosure rule"
+    ],
+    "answer": 0,
+    "why": "Guardrails encode policy so deployments remain within approved security boundaries.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-098",
+    "chapter": 20,
+    "chapterName": "Automation & Orchestration",
+    "q": "Why can automation create a single point of failure?",
+    "choices": [
+      "A flawed central workflow or dependency may affect many systems at once",
+      "Automation never uses dependencies",
+      "Automation cannot change production",
+      "Only manual work can fail"
+    ],
+    "answer": 0,
+    "why": "Centralized automation can amplify mistakes or outages if many systems depend on the same workflow or service.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-099",
+    "chapter": 20,
+    "chapterName": "Automation & Orchestration",
+    "q": "An onboarding workflow creates accounts, assigns groups, and opens required tickets. Which automation use case is this?",
+    "choices": [
+      "User provisioning",
+      "Data masking",
+      "Packet capture",
+      "Certificate revocation"
+    ],
+    "answer": 0,
+    "why": "Automating account creation and access assignment is user provisioning.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-100",
+    "chapter": 20,
+    "chapterName": "Automation & Orchestration",
+    "q": "What is a major security advantage of automating baseline enforcement?",
+    "choices": [
+      "Configuration standards can be applied consistently at scale",
+      "Every exception disappears automatically",
+      "Human approval is never needed",
+      "Legacy systems become patchable"
+    ],
+    "answer": 0,
+    "why": "Automation can repeatedly enforce standard configurations across many systems, reducing drift and manual inconsistency.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-101",
+    "chapter": 21,
+    "chapterName": "Incident Response & Forensics",
+    "q": "After confirming malware on a workstation, the team disconnects it from normal network access. Which incident response phase is this?",
+    "choices": [
+      "Containment",
+      "Preparation",
+      "Lessons learned",
+      "Recovery"
+    ],
+    "answer": 0,
+    "why": "Isolation limits spread and attacker activity, making it a containment action.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-102",
+    "chapter": 21,
+    "chapterName": "Incident Response & Forensics",
+    "q": "After an incident is contained, analysts remove persistence mechanisms and malicious files. Which phase is this?",
+    "choices": [
+      "Eradication",
+      "Detection",
+      "Preparation",
+      "Accounting"
+    ],
+    "answer": 0,
+    "why": "Eradication removes the cause and artifacts of compromise before full recovery.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-103",
+    "chapter": 21,
+    "chapterName": "Incident Response & Forensics",
+    "q": "What is the purpose of root cause analysis after an incident?",
+    "choices": [
+      "Identify the underlying conditions that allowed the incident so recurrence can be reduced",
+      "Determine only who receives blame",
+      "Replace containment",
+      "Delete forensic evidence"
+    ],
+    "answer": 0,
+    "why": "Root cause analysis looks beyond symptoms to the underlying failure or condition that enabled the incident.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-104",
+    "chapter": 21,
+    "chapterName": "Incident Response & Forensics",
+    "q": "A legal team instructs IT not to delete relevant email and logs because of expected litigation. What has been initiated?",
+    "choices": [
+      "Legal hold",
+      "Key escrow",
+      "Risk acceptance",
+      "Failover"
+    ],
+    "answer": 0,
+    "why": "A legal hold preserves potentially relevant data from normal deletion or retention processes.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-105",
+    "chapter": 21,
+    "chapterName": "Incident Response & Forensics",
+    "q": "Why should forensic acquisition use methods that preserve original evidence?",
+    "choices": [
+      "To maintain integrity and support repeatable analysis without altering the source",
+      "To make files easier to edit",
+      "To eliminate chain-of-custody requirements",
+      "To reduce the need for documentation"
+    ],
+    "answer": 0,
+    "why": "Forensics should preserve original evidence and analyze verified copies so findings can be defended and repeated.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-106",
+    "chapter": 22,
+    "chapterName": "Investigation Data Sources",
+    "q": "Which data source is most useful for confirming the exact payload transmitted during a suspicious network session?",
+    "choices": [
+      "Packet capture",
+      "Asset inventory",
+      "Policy document",
+      "Password standard"
+    ],
+    "answer": 0,
+    "why": "Packet captures retain packet-level headers and, when not encrypted, payload content for detailed network investigation.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-107",
+    "chapter": 22,
+    "chapterName": "Investigation Data Sources",
+    "q": "An analyst needs to determine whether a firewall denied repeated inbound connections from one address. Which source should be checked first?",
+    "choices": [
+      "Firewall logs",
+      "HR records",
+      "Certificate inventory",
+      "Physical badge records"
+    ],
+    "answer": 0,
+    "why": "Firewall logs record permit/deny decisions and connection metadata relevant to network access attempts.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-108",
+    "chapter": 22,
+    "chapterName": "Investigation Data Sources",
+    "q": "Which source would best show process creation and security events on a Windows endpoint?",
+    "choices": [
+      "Endpoint and OS security logs",
+      "DNS zone file only",
+      "Vendor SLA",
+      "Wireless heat map"
+    ],
+    "answer": 0,
+    "why": "Endpoint and operating-system security logs can record authentication, process, policy, and host-level security activity.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-109",
+    "chapter": 22,
+    "chapterName": "Investigation Data Sources",
+    "q": "A vulnerability scan report shows a critical finding on the same host involved in an incident. How can that report help the investigation?",
+    "choices": [
+      "It can identify known weaknesses that may explain an initial access or escalation path",
+      "It proves the vulnerability was exploited",
+      "It replaces forensic evidence",
+      "It identifies the attacker’s legal identity"
+    ],
+    "answer": 0,
+    "why": "Vulnerability data provides context about known exposure but must be correlated with other evidence to determine whether exploitation occurred.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-110",
+    "chapter": 22,
+    "chapterName": "Investigation Data Sources",
+    "q": "Why is metadata valuable during an investigation?",
+    "choices": [
+      "It provides contextual attributes such as timestamps, file ownership, message routing, or source details",
+      "It always contains decrypted payloads",
+      "It makes logs unnecessary",
+      "It guarantees attribution"
+    ],
+    "answer": 0,
+    "why": "Metadata can establish timing, relationships, ownership, or routing even when the primary content is unavailable or encrypted.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-111",
+    "chapter": 23,
+    "chapterName": "Security Governance",
+    "q": "Which governance document is normally the highest-level statement of management intent for information security?",
+    "choices": [
+      "Policy",
+      "Procedure",
+      "Work instruction",
+      "Packet capture"
+    ],
+    "answer": 0,
+    "why": "A policy expresses management direction and mandatory expectations; standards and procedures provide more specific implementation detail.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-112",
+    "chapter": 23,
+    "chapterName": "Security Governance",
+    "q": "A document requires all passwords to be at least a defined minimum length. What type of governance document is this most likely?",
+    "choices": [
+      "Standard",
+      "Guideline only",
+      "Incident report",
+      "Risk register"
+    ],
+    "answer": 0,
+    "why": "A standard defines specific mandatory requirements that support a broader policy.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-113",
+    "chapter": 23,
+    "chapterName": "Security Governance",
+    "q": "A step-by-step document explains exactly how to disable an employee account during offboarding. What type of document is this?",
+    "choices": [
+      "Procedure",
+      "Policy",
+      "Guideline",
+      "Risk appetite statement"
+    ],
+    "answer": 0,
+    "why": "A procedure describes the specific steps for performing a recurring process.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-114",
+    "chapter": 23,
+    "chapterName": "Security Governance",
+    "q": "Who is typically accountable for deciding the classification and appropriate use of a business data set?",
+    "choices": [
+      "Data owner",
+      "Data processor",
+      "Network switch",
+      "External auditor"
+    ],
+    "answer": 0,
+    "why": "The data owner is accountable for classification, access, and business use decisions for the data.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-115",
+    "chapter": 23,
+    "chapterName": "Security Governance",
+    "q": "Why should policies and standards be periodically reviewed?",
+    "choices": [
+      "Business, technology, threats, and external requirements change over time",
+      "Review automatically removes all exceptions",
+      "Policies expire daily",
+      "Only auditors may read policies"
+    ],
+    "answer": 0,
+    "why": "Governance remains effective only when documents are monitored and revised as conditions and requirements change.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-116",
+    "chapter": 24,
+    "chapterName": "Risk Management",
+    "q": "An asset is worth $200,000 and a fire is expected to cause a 25% loss. What is the single loss expectancy (SLE)?",
+    "choices": [
+      "$50,000",
+      "$25,000",
+      "$200,000",
+      "$800,000"
+    ],
+    "answer": 0,
+    "why": "SLE = asset value × exposure factor = $200,000 × 0.25 = $50,000.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-117",
+    "chapter": 24,
+    "chapterName": "Risk Management",
+    "q": "A loss event has an SLE of $40,000 and an annualized rate of occurrence of 0.5. What is the annualized loss expectancy (ALE)?",
+    "choices": [
+      "$20,000",
+      "$40,000",
+      "$80,000",
+      "$200,000"
+    ],
+    "answer": 0,
+    "why": "ALE = SLE × ARO = $40,000 × 0.5 = $20,000 per year.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-118",
+    "chapter": 24,
+    "chapterName": "Risk Management",
+    "q": "A company purchases cyber insurance to reduce the financial impact of certain incidents. Which risk strategy is this?",
+    "choices": [
+      "Transfer",
+      "Avoid",
+      "Accept",
+      "Mitigate only"
+    ],
+    "answer": 0,
+    "why": "Insurance transfers some financial consequences of defined risks to another party.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-119",
+    "chapter": 24,
+    "chapterName": "Risk Management",
+    "q": "A business stops offering a risky service entirely because its exposure exceeds tolerance. Which strategy is this?",
+    "choices": [
+      "Avoid",
+      "Transfer",
+      "Accept",
+      "Monitor only"
+    ],
+    "answer": 0,
+    "why": "Risk avoidance removes the activity that creates the risk.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-120",
+    "chapter": 24,
+    "chapterName": "Risk Management",
+    "q": "Which BIA metric specifies the maximum acceptable amount of data loss measured in time?",
+    "choices": [
+      "RPO",
+      "RTO",
+      "MTTR",
+      "MTBF"
+    ],
+    "answer": 0,
+    "why": "Recovery point objective (RPO) defines how far back in time data may need to be restored, effectively describing acceptable data loss.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-121",
+    "chapter": 25,
+    "chapterName": "Third-Party Risk Management",
+    "q": "Which contract clause gives a customer the ability to inspect or assess a vendor’s controls?",
+    "choices": [
+      "Right-to-audit clause",
+      "Non-disclosure clause only",
+      "Force majeure clause",
+      "Password standard"
+    ],
+    "answer": 0,
+    "why": "A right-to-audit clause provides contractual authority to evaluate specified vendor controls or evidence.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-122",
+    "chapter": 25,
+    "chapterName": "Third-Party Risk Management",
+    "q": "A cloud provider commits to 99.99% monthly service availability. Which agreement normally contains that measurable service commitment?",
+    "choices": [
+      "SLA",
+      "NDA",
+      "MOU",
+      "Risk register"
+    ],
+    "answer": 0,
+    "why": "A service-level agreement defines measurable service performance targets such as availability and response times.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-123",
+    "chapter": 25,
+    "chapterName": "Third-Party Risk Management",
+    "q": "Before selecting a critical vendor, the organization reviews financial stability, security history, and independent assessments. What process is this?",
+    "choices": [
+      "Due diligence",
+      "Credential stuffing",
+      "Data masking",
+      "Threat hunting"
+    ],
+    "answer": 0,
+    "why": "Due diligence evaluates a third party before selection to understand capability, risk, conflicts, and control maturity.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-124",
+    "chapter": 25,
+    "chapterName": "Third-Party Risk Management",
+    "q": "A vendor will receive confidential product designs. Which agreement most directly addresses restrictions on disclosure?",
+    "choices": [
+      "NDA",
+      "SLA",
+      "Work order only",
+      "Firewall rule"
+    ],
+    "answer": 0,
+    "why": "A non-disclosure agreement establishes obligations for protecting and limiting disclosure of confidential information.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-125",
+    "chapter": 25,
+    "chapterName": "Third-Party Risk Management",
+    "q": "Why should third-party security be monitored after a contract is signed?",
+    "choices": [
+      "Vendor risk and control effectiveness can change throughout the relationship",
+      "Due diligence permanently eliminates vendor risk",
+      "Contracts prevent every breach",
+      "Monitoring is required only before selection"
+    ],
+    "answer": 0,
+    "why": "Third-party risk changes over time, so ongoing monitoring is needed to detect control, business, or threat changes.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-126",
+    "chapter": 26,
+    "chapterName": "Security Compliance & Privacy",
+    "q": "What is the difference between a data controller and a data processor?",
+    "choices": [
+      "The controller determines purposes and means of processing; the processor handles data on the controller’s behalf",
+      "The processor always owns the data",
+      "They are identical roles",
+      "The controller only stores backups"
+    ],
+    "answer": 0,
+    "why": "Privacy frameworks commonly distinguish the entity deciding why/how personal data is processed from a processor acting on its instructions.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-127",
+    "chapter": 26,
+    "chapterName": "Security Compliance & Privacy",
+    "q": "An organization can demonstrate that employees explicitly acknowledged a new privacy policy. What compliance mechanism does this support?",
+    "choices": [
+      "Attestation/acknowledgement",
+      "Data exfiltration",
+      "Key stretching",
+      "Failover"
+    ],
+    "answer": 0,
+    "why": "Recorded acknowledgement provides evidence that required personnel received and attested to policy or training requirements.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-128",
+    "chapter": 26,
+    "chapterName": "Security Compliance & Privacy",
+    "q": "Which is a plausible consequence of serious regulatory non-compliance?",
+    "choices": [
+      "Fines, sanctions, reputational harm, or loss of authorization",
+      "Guaranteed lower insurance costs",
+      "Automatic data encryption",
+      "Increased network bandwidth"
+    ],
+    "answer": 0,
+    "why": "Non-compliance can produce financial, legal, contractual, licensing, and reputational consequences.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-129",
+    "chapter": 26,
+    "chapterName": "Security Compliance & Privacy",
+    "q": "Why is a data inventory important to privacy compliance?",
+    "choices": [
+      "It helps identify what personal data exists, where it is stored, why it is processed, and how long it should be retained",
+      "It replaces access controls",
+      "It prevents all data breaches",
+      "It removes legal obligations"
+    ],
+    "answer": 0,
+    "why": "Privacy obligations are difficult to meet without knowing what data is held, its location, purpose, ownership, and retention requirements.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-130",
+    "chapter": 26,
+    "chapterName": "Security Compliance & Privacy",
+    "q": "A privacy requirement allows an individual to request deletion of eligible personal data when no valid retention basis remains. What concept is this?",
+    "choices": [
+      "Right to be forgotten",
+      "Risk transference",
+      "Least privilege",
+      "Chain of custody"
+    ],
+    "answer": 0,
+    "why": "The right to be forgotten or erasure allows deletion requests under applicable conditions, subject to legal and retention exceptions.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-131",
+    "chapter": 27,
+    "chapterName": "Audits & Assessments",
+    "q": "An organization’s own audit team evaluates compliance with internal policy. What type of audit is this?",
+    "choices": [
+      "Internal audit",
+      "Independent third-party audit",
+      "Regulatory examination",
+      "Unknown-environment penetration test"
+    ],
+    "answer": 0,
+    "why": "An audit performed by the organization’s own personnel or internal audit function is an internal audit.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-132",
+    "chapter": 27,
+    "chapterName": "Audits & Assessments",
+    "q": "A penetration tester receives no network diagrams, credentials, or implementation details before testing. What environment knowledge level is this?",
+    "choices": [
+      "Unknown environment",
+      "Known environment",
+      "Partially known environment",
+      "Attested environment"
+    ],
+    "answer": 0,
+    "why": "An unknown-environment test begins with little or no internal knowledge, similar to an external attacker’s starting point.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-133",
+    "chapter": 27,
+    "chapterName": "Audits & Assessments",
+    "q": "A tester is given user credentials and limited architecture information but not full source code or administrator access. What is this?",
+    "choices": [
+      "Partially known environment",
+      "Known environment",
+      "Unknown environment",
+      "Internal audit"
+    ],
+    "answer": 0,
+    "why": "A partially known test provides some information or access but not complete knowledge of the environment.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-134",
+    "chapter": 27,
+    "chapterName": "Audits & Assessments",
+    "q": "What is passive reconnaissance?",
+    "choices": [
+      "Collecting information without directly probing the target systems",
+      "Running a port scan against the target",
+      "Attempting exploitation",
+      "Changing firewall rules"
+    ],
+    "answer": 0,
+    "why": "Passive reconnaissance relies on public or third-party sources and avoids direct interaction with target systems.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-135",
+    "chapter": 27,
+    "chapterName": "Audits & Assessments",
+    "q": "Why use an independent third-party audit?",
+    "choices": [
+      "Obtain an assessment from an entity outside the organization that can provide independent assurance",
+      "Eliminate the need for evidence",
+      "Guarantee regulatory approval",
+      "Replace every internal control"
+    ],
+    "answer": 0,
+    "why": "Independent assessment can provide external assurance and reduce conflicts of interest compared with self-assessment alone.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-136",
+    "chapter": 28,
+    "chapterName": "Security Awareness",
+    "q": "An employee reports a suspicious email instead of clicking its link. What should the security team do first?",
+    "choices": [
+      "Follow the organization’s reported-phishing process to analyze and contain the message or campaign",
+      "Reply to the attacker",
+      "Delete all company email",
+      "Disable the employee account permanently"
+    ],
+    "answer": 0,
+    "why": "A defined reported-phishing workflow allows security teams to analyze indicators, search for related messages, block threats, and provide feedback.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-137",
+    "chapter": 28,
+    "chapterName": "Security Awareness",
+    "q": "Why should phishing simulations be recurring rather than one-time?",
+    "choices": [
+      "Threats and user behavior change, and recurring exercises measure improvement over time",
+      "One simulation permanently eliminates phishing risk",
+      "Recurring training replaces email security controls",
+      "Users should memorize one example only"
+    ],
+    "answer": 0,
+    "why": "Recurring awareness programs reinforce behavior and provide measurable trends as threats and personnel change.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-138",
+    "chapter": 28,
+    "chapterName": "Security Awareness",
+    "q": "A remote worker receives an unexpected USB drive labeled “Payroll 2026.” What is the safest response?",
+    "choices": [
+      "Do not connect it; follow the organization’s removable-media and reporting policy",
+      "Open it on a personal computer first",
+      "Disable endpoint protection and inspect it",
+      "Upload its contents to a public file-sharing site"
+    ],
+    "answer": 0,
+    "why": "Unknown removable media can deliver malware; users should follow approved handling and reporting procedures rather than connecting it.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-139",
+    "chapter": 28,
+    "chapterName": "Security Awareness",
+    "q": "Which behavior is a potential insider-threat indicator that should be reported according to policy?",
+    "choices": [
+      "Unexpected attempts to access data unrelated to the user’s job combined with unusual copying activity",
+      "Taking an approved lunch break",
+      "Using an assigned company laptop",
+      "Completing annual training"
+    ],
+    "answer": 0,
+    "why": "Unexpected access and unusual data movement can indicate risky or malicious insider behavior and warrant investigation.",
+    "origin": "original-objective-aligned"
+  },
+  {
+    "id": "objective-140",
+    "chapter": 28,
+    "chapterName": "Security Awareness",
+    "q": "What should password-awareness training emphasize?",
+    "choices": [
+      "Use unique strong passwords or passphrases and an approved password manager rather than reusing credentials",
+      "Share passwords with teammates for availability",
+      "Use the same complex password everywhere",
+      "Write administrator passwords on the monitor"
+    ],
+    "answer": 0,
+    "why": "Unique credentials and approved password managers reduce the impact of credential theft and password reuse.",
+    "origin": "original-objective-aligned"
+  }
+]
