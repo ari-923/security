@@ -1,6 +1,6 @@
 # Security+ SY0-701 Course — Next.js + Vercel
 
-This repository is the organized, multi-file version of the Security+ SY0-701 study website. The current build contains all 28 chapters across all five Security+ exam domains, 100 lesson decks, 708 core learning sections, 10 supplemental flashcards (718 total flashcards), 62 scenario questions, browser-saved progress, and a secure Vercel server route for the **S+ AI Study Coach**.
+This repository is the organized, multi-file version of the Security+ SY0-701 study website. The current build contains all 28 chapters across all five Security+ exam domains, 100 lesson decks, 708 core learning sections, 10 supplemental flashcards (718 total flashcards), an 858-question randomized Practice Center, browser-saved progress, and a secure Vercel server route for the **S+ AI Study Coach**.
 
 ## Project structure
 
@@ -9,12 +9,13 @@ app/
   api/tutor/route.js       Secure AI Tutor endpoint
   course/[lessonId]/       Individual lesson route
   flashcards/              Flashcard study mode
-  quiz/                    Scenario quiz mode
+  quiz/                    Practice Quiz + full Practice Exam
 components/                Reusable UI + progress + AI Tutor
 content/
   lessons/                 100 separate lesson JSON files
   chapters.json
-  scenario-questions.json
+  scenario-questions.json  Legacy scenario bank
+  extra-practice-questions.json  Expanded Practice Center bank
 lib/                       Rate-limit helper
 .env.example               Environment variable template
 ```
@@ -53,6 +54,13 @@ npm run dev
 ```
 
 Then open `http://localhost:3000`.
+
+## Practice Center
+
+The Practice Center builds its bank from lesson questions plus `content/extra-practice-questions.json`. It currently contains **858 questions** across all 28 chapters. Custom quizzes can use any chapter combination, while the 90-question Practice Exam guarantees chapter coverage and uses the SY0-701 domain weighting (12% / 22% / 18% / 28% / 20%) as its target mix. Recent-question history is stored locally in the browser so new attempts prioritize unseen items, and answer choices are reshuffled each time.
+
+The expanded bank contains cleaned/reworded concepts from user-provided practice material and original questions aligned to the public SY0-701 objectives and reputable study-resource coverage. It is study material, not live-exam content or an exam dump.
+See `PRACTICE_QUESTION_SOURCES.md` for the source/coverage notes used for this expansion.
 
 ## AI Tutor behavior
 
