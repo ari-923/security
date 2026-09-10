@@ -312,7 +312,9 @@ details.raw pre{white-space:pre-wrap;background:var(--surface2);padding:11px;bor
 .sc-choice.wrong{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 10%,var(--surface))}
 .sc-explanation{margin-top:10px;padding:11px 12px;border:1px solid var(--border);border-radius:var(--r-sm);background:var(--surface);font-size:13px;color:var(--muted)}
 .sc-score-area{margin-top:18px;padding-top:18px;border-top:1px solid var(--border);display:grid;gap:12px}
+.sc-score-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
 .sc-score-button{justify-self:start}
+.sc-refresh-button{white-space:nowrap}
 .sc-score-button:disabled{opacity:.55;cursor:not-allowed}
 .sc-score-result{display:flex;align-items:center;gap:16px;padding:16px 18px;border:1px solid var(--accent);border-radius:var(--r-md);background:color-mix(in srgb,var(--accent) 7%,var(--surface))}
 .sc-score-percent{font-size:30px;font-weight:800;line-height:1;color:var(--accent)}
