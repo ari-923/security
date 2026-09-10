@@ -18,12 +18,12 @@ export default function HomeDashboard({ chapters, progressShape, lessonCount, le
       <div className="eyebrow">My LinkedIn: www.linkedin.com/in/arianaherrerauw</div>
       <h1>Learn the course, not just the topic names.</h1>
       <p>I have studied, watched videos, read articles, taken notes, and reviewed everything prior to posting everything here on this website I have created. I hope this helps you as much as it has helped me.</p>
-      <div className="pills"><span className="pill">{lessonCount} lesson decks</span><span className="pill">{learningCount} core learning sections</span><span className="pill">{quizCount} scenario questions</span><span className="pill">{chapters.length} chapters</span></div>
+      <div className="pills"><span className="pill">{lessonCount} lesson decks</span><span className="pill">{learningCount} core learning sections</span><span className="pill">{quizCount} practice questions</span><span className="pill">{chapters.length} chapters</span></div>
     </div>
     <div className="stats">
       <Stat value={`${completedLessons}/${lessonCount}`} label="Lessons completed" pct={completedLessons / lessonCount * 100} />
       <Stat value={`${mastered.size}/${learningCount}`} label="Learning sections mastered" pct={mastered.size / learningCount * 100} />
-      <Stat value={bestScore == null ? "—" : `${bestScore}%`} label="Best scenario quiz" pct={bestScore || 0} />
+      <Stat value={bestScore == null ? "—" : `${bestScore}%`} label="Best practice score" pct={bestScore || 0} />
       <Stat value={`${completedChapters}/${chapters.length}`} label="Chapters completed" pct={completedChapters / chapters.length * 100} />
     </div>
     <div className="domain-summary home-domains">
@@ -37,7 +37,7 @@ export default function HomeDashboard({ chapters, progressShape, lessonCount, le
       <Link className="action" href="/course"><strong>Start the Full Course</strong><span>Study the lessons in order and learn each concept directly on the website.</span></Link>
       <Link className="action" href={`/course/${firstOpen?.id || "01.02"}`}><strong>Resume Learning</strong><span>Jump to the first lesson that still has an unmastered learning section.</span></Link>
       <Link className="action" href="/flashcards"><strong>Active-Recall Flashcards</strong><span>Review every learning section after you study it.</span></Link>
-      <Link className="action" href="/quiz"><strong>Scenario Practice</strong><span>Practice Security+ style questions with explanations.</span></Link>
+      <Link className="action" href="/quiz"><strong>Practice Center</strong><span>Build chapter quizzes or take a full practice exam.</span></Link>
     </div>
   </section>;
 }
