@@ -50,7 +50,7 @@ export default function SiteShell({ navigation, searchIndex, children }) {
         <Link className={`nav ${active("/") && pathname === "/" ? "active" : ""}`} href="/">Home</Link>
         <Link className={`nav ${active("/course") ? "active" : ""}`} href="/course">Full Course</Link>
         <Link className={`nav ${active("/flashcards") ? "active" : ""}`} href="/flashcards">Course Flashcards</Link>
-        <Link className={`nav ${active("/quiz") ? "active" : ""}`} href="/quiz">Scenario Quiz</Link>
+        <Link className={`nav ${active("/quiz") ? "active" : ""}`} href="/quiz">Practice Center</Link>
         <div className="side-title">Uploaded Chapters</div>
         {navigation.map((chapter) => {
           const open = openChapters.has(chapter.chapter);
