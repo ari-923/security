@@ -1,6 +1,7 @@
 import chapters from "./chapters.json";
 import scenarioQuestions from "./scenario-questions.json";
 import extraPracticeQuestions from "./extra-practice-questions.json";
+import pbqMultipleChoiceQuestions from "./pbq-multiple-choice-questions.json";
 import lesson_01_02 from "./lessons/01-02.json";
 import lesson_02_01 from "./lessons/02-01.json";
 import lesson_02_02 from "./lessons/02-02.json";
@@ -141,7 +142,11 @@ function collectPracticeQuestions(value, lesson, path = "root", found = []) {
 
 const lessonPracticeQuestions = lessons.flatMap((lesson) => collectPracticeQuestions(lesson, lesson));
 
-export const practiceQuestions = [...lessonPracticeQuestions, ...extraPracticeQuestions];
+export const practiceQuestions = [
+  ...lessonPracticeQuestions,
+  ...extraPracticeQuestions,
+  ...pbqMultipleChoiceQuestions,
+];
 
 export { chapters, scenarioQuestions };
 
